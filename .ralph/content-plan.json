@@ -1394,8 +1394,10 @@
     "site launch seo",
     "core web vitals seo"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790378941.415056
   },
   {
    "kind": "article",
@@ -1409,8 +1411,10 @@
     "template pages seo",
     "content automation"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790378941.415057
   },
   {
    "kind": "article",
@@ -1424,8 +1428,10 @@
     "content planning",
     "pillar pages"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790378941.415057
   },
   {
    "kind": "article",
@@ -1439,8 +1445,10 @@
     "conversion research",
     "experimentation program"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790378941.415058
   },
   {
    "kind": "article",
