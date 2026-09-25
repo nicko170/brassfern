@@ -421,10 +421,11 @@
     "type scale design",
     "font subsetting"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790377841.399272
+   "claimed_at": 1790377841.399272,
+   "done_at": "2026-09-26T09:22:29"
   },
   {
    "kind": "article",
@@ -438,10 +439,11 @@
     "easing curves",
     "reduced motion accessibility"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790377841.399273
+   "claimed_at": 1790377841.399273,
+   "done_at": "2026-09-26T09:22:32"
   },
   {
    "kind": "article",
@@ -455,10 +457,11 @@
     "page structure",
     "cta placement"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790377841.399273
+   "claimed_at": 1790377841.399273,
+   "done_at": "2026-09-26T09:22:34"
   },
   {
    "kind": "article",
@@ -472,10 +475,11 @@
     "editorial rhythm",
     "magazine layout web"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790377841.399273
+   "claimed_at": 1790377841.399273,
+   "done_at": "2026-09-26T09:22:36"
   },
   {
    "kind": "article",
@@ -615,10 +619,11 @@
     "picture element",
     "image composition"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790378002.034256
+   "claimed_at": 1790378002.034256,
+   "done_at": "2026-09-26T09:21:51"
   },
   {
    "kind": "article",
@@ -945,8 +950,10 @@
     "user research methods",
     "customer interviews"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790378494.808976
   },
   {
    "kind": "article",
@@ -960,8 +967,10 @@
     "time to value",
     "retention analytics"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790378494.808977
   },
   {
    "kind": "article",
@@ -975,8 +984,10 @@
     "operational dashboards",
     "analytics ui design"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790378494.808977
   },
   {
    "kind": "article",
@@ -990,8 +1001,10 @@
     "first run experience",
     "product onboarding"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790378494.808977
   },
   {
    "kind": "article",
@@ -1005,8 +1018,10 @@
     "user activation design",
     "checklist ui"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790378499.505329
   },
   {
    "kind": "article",
@@ -1020,8 +1035,10 @@
     "user roles design",
     "admin ux"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790378499.5053298
   },
   {
    "kind": "article",
@@ -1035,8 +1052,10 @@
     "alert design",
     "notification fatigue"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790378499.5053298
   },
   {
    "kind": "article",
@@ -1050,8 +1069,10 @@
     "a11y remediation",
     "accessibility testing"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790378499.5053298
   },
   {
    "kind": "article",
@@ -1065,8 +1086,10 @@
     "pricing tiers psychology",
     "pricing page conversion"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790378517.778704
   },
   {
    "kind": "article",
@@ -1080,8 +1103,10 @@
     "faceted search",
     "no results page"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790378517.778705
   },
   {
    "kind": "article",
@@ -1095,8 +1120,10 @@
     "settings ux",
     "product navigation"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790378517.778705
   },
   {
    "kind": "article",
@@ -1110,8 +1137,10 @@
     "command palette design",
     "power user features"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790378517.7787058
   },
   {
    "kind": "article",
@@ -2780,6 +2809,186 @@
     "museum collection online",
     "faceted search ux",
     "deep zoom viewer"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "fluid-type-scales-in-practice",
+   "title": "Fluid type scales in practice: from ratio to tokens",
+   "cluster": "web-design",
+   "intent": "A practical guide to designing with fluid type scales (clamp(), Utopia-style) on marketing sites: choosing ratios, optically correcting sizes across viewports, pairing display serifs with quiet grotesques, and testing at 375px/1440px. Include Brassfern examples and token-table snippets.",
+   "keywords": [
+    "fluid typography",
+    "type scale",
+    "utopia css",
+    "web typography"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "pricing-pages-that-convert-quietly",
+   "title": "Pricing pages that convert quietly",
+   "cluster": "web-design",
+   "intent": "How to design a pricing page that sells without shouting: anchoring, plan naming, feature comparison table patterns, toggle mechanics, social proof placement, and the mistakes that leak conversions. Annotated wireframe descriptions and before/after refactor of a fictional B2B pricing page.",
+   "keywords": [
+    "pricing page design",
+    "saas pricing ux",
+    "comparison table design",
+    "conversion design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "editorial-grids-on-the-web",
+   "title": "Editorial grids on the web: rhythm, breakout, and restraint",
+   "cluster": "web-design",
+   "intent": "The editorial grid for the web: baseline rhythm, 12-column vs 6-column trade-offs, full-bleed breakout elements, captions and pull quotes, and how art-directed pages differ from template pages. Include CSS Grid snippets for breakout layouts.",
+   "keywords": [
+    "editorial web design",
+    "css grid layout",
+    "baseline grid",
+    "art direction web"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "microinteraction-taxonomy",
+   "title": "A taxonomy of micro-interactions (and when to say no)",
+   "cluster": "web-design",
+   "intent": "Hover states, cursor follow, scroll reveals and button physics — a taxonomy of micro-interactions with guidance on duration curves, when motion reads as quality vs. gimmick, and prefers-reduced-motion fallbacks for every pattern. Reference Brassfern's motion law.",
+   "keywords": [
+    "microinteractions",
+    "hover states",
+    "scroll animation",
+    "prefers-reduced-motion"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "dark-mode-second-design-system",
+   "title": "Dark mode is a second design system",
+   "cluster": "web-design",
+   "intent": "Dark mode is a second design system, not an inverted filter. Cover semantic token naming, elevation with muted hues, contrast pitfalls of pure black/white, syntax-highlight palettes, and how to test both themes in CI.",
+   "keywords": [
+    "dark mode design",
+    "design tokens",
+    "colour contrast",
+    "theming"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "forms-nobody-designs",
+   "title": "The highest-traffic UI nobody designs: forms",
+   "cluster": "web-design",
+   "intent": "Forms are the highest-traffic UI nobody designs. Cover label/placeholder etiquette, inline validation timing, error message writing, single-column dogma (and exceptions), autofill and address handling, and mobile keyboards. With checklist.",
+   "keywords": [
+    "form design ux",
+    "inline validation",
+    "error messages ux",
+    "web forms"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "photography-style-without-a-photoshoot",
+   "title": "A photography style without a photoshoot",
+   "cluster": "web-design",
+   "intent": "How to build a photography style for a brand without a photoshoot: crops, duotones, grain, generated textures, and a consistent treatment matrix so any source image looks on-brand. Before/after examples from fictional Brassfern projects.",
+   "keywords": [
+    "brand photography style",
+    "image treatment",
+    "duotone",
+    "art direction"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "landing-page-anatomy-2026",
+   "title": "Landing-page anatomy: nine sections, one job",
+   "cluster": "web-design",
+   "intent": "Breaking down great landing-page anatomy: above-the-fold promises, objection order, proof stacking, demo moments, and the end-of-page CTA ladder. Deconstruct three fictional Brassfern pages section by section.",
+   "keywords": [
+    "landing page anatomy",
+    "landing page conversion",
+    "above the fold",
+    "cta design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "navigation-that-survives-mobile",
+   "title": "Navigation that survives the 375px test",
+   "cluster": "web-design",
+   "intent": "Hamburger alternatives for content-heavy sites: visible-priority nav, hybrid patterns for 375px, mega menus done lightly, breadcrumbs as wayfinding, and measuring findability instead of arguing about icons.",
+   "keywords": [
+    "navigation design",
+    "mobile nav patterns",
+    "mega menu ux",
+    "information architecture"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "inclusive-design-beyond-checklists",
+   "title": "Inclusive design beyond the checklist",
+   "cluster": "web-design",
+   "intent": "Inclusive design beyond the checklist: inclusive language in UI copy, cognitive load budgets, focus management for SPAs, touch targets, and making accessibility a design critique criterion at Brassfern rather than a QA ticket.",
+   "keywords": [
+    "inclusive design",
+    "wcag aa",
+    "focus management",
+    "accessible ux"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "empty-loading-error-states",
+   "title": "Empty, loading, error: the states that carry your trust",
+   "cluster": "web-design",
+   "intent": "A field guide to empty states, loading states and error states: the 20% of screens that carry 80% of trust. Patterns for zero-data dashboards, skeletons vs. spinners, and error copy that admits fault without over-apologising.",
+   "keywords": [
+    "empty states ux",
+    "loading states",
+    "error state design",
+    "ui copy"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "handoff-that-does-not-decay",
+   "title": "Design handoff that doesn't decay in a sprint",
+   "cluster": "web-design",
+   "intent": "Design handoff that doesn't decay: living tokens, component specs over pixel mocks, motion specs with cubic-bezier values, and the annotation habits that keep the shipped site matching the design. Includes a sample spec format.",
+   "keywords": [
+    "design handoff",
+    "design tokens",
+    "component specs",
+    "design engineering collaboration"
    ],
    "status": "planned",
    "added_by": "builder"
