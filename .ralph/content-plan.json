@@ -2210,10 +2210,11 @@
    "cluster": "demos",
    "intent": "Fintech budgeting dashboard for fictional Northwind Ledger. Art direction: slate-and-mint dark UI, tabular numerals, calm fintech confidence; charts are answer-first. Features: cash-flow chart (area + budget line), category donut with drill-down, transactions table with inline categorisation and keyboard nav, monthly budget pacing bars, savings-goal tracker, date-range switching with 6 months realistic fake data. Hand-rolled SVG charts (no chart lib needed) or lightweight. Accessible tables, WCAG AA contrast, reduced-motion safe.",
    "keywords": [],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "demo3",
-   "claimed_at": 1790377867.178987
+   "claimed_at": 1790377867.178987,
+   "done_at": "2026-09-26T09:35:53"
   },
   {
    "kind": "demo",
