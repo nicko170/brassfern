@@ -2372,8 +2372,10 @@
    "cluster": "demos",
    "intent": "Restaurant site + reservations for fictional Surry Hills dining room Wattle & Daub. Art direction: firelit amber on charred timber, editorial menu typesetting, candlelight warmth. Features: hero with candle-flame ambient canvas (embers), seasonal menu with courses, wine list, table booking flow (party size → date → seating → details → confirmation), no-show-policy honesty line, private dining enquiry. Reservations stored in localStorage with manage/cancel view. Mobile-first — most bookings happen on phones.",
    "keywords": [],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "demo1",
+   "claimed_at": 1790380725.4732091
   },
   {
    "kind": "demo",
