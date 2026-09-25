@@ -80,10 +80,11 @@
     "hospitality digital",
     "local seo"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790377494.792862
+   "claimed_at": 1790377494.792862,
+   "done_at": "2026-09-26T09:11:09"
   },
   {
    "kind": "article",
@@ -97,10 +98,11 @@
     "data ethics",
     "open data"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790377494.792864
+   "claimed_at": 1790377494.792864,
+   "done_at": "2026-09-26T09:11:09"
   },
   {
    "kind": "article",
@@ -114,10 +116,11 @@
     "activation metrics",
     "lifecycle email"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790377494.7928698
+   "claimed_at": 1790377494.7928698,
+   "done_at": "2026-09-26T09:11:09"
   },
   {
    "kind": "article",
@@ -131,10 +134,11 @@
     "audio player design",
     "artist pages"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790377494.792871
+   "claimed_at": 1790377494.792871,
+   "done_at": "2026-09-26T09:11:09"
   },
   {
    "kind": "article",
@@ -220,10 +224,11 @@
     "plain language",
     "design system"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790377523.032091
+   "claimed_at": 1790377523.032091,
+   "done_at": "2026-09-26T09:11:49"
   },
   {
    "kind": "article",
@@ -237,10 +242,11 @@
     "faceted search ux",
     "cultural heritage web"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790377523.0320919
+   "claimed_at": 1790377523.0320919,
+   "done_at": "2026-09-26T09:11:49"
   },
   {
    "kind": "article",
@@ -254,10 +260,11 @@
     "local commerce",
     "occasion browsing"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790377523.0320928
+   "claimed_at": 1790377523.0320928,
+   "done_at": "2026-09-26T09:11:49"
   },
   {
    "kind": "article",
@@ -271,10 +278,11 @@
     "audio ux",
     "membership design"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790377523.0320928
+   "claimed_at": 1790377523.0320928,
+   "done_at": "2026-09-26T09:11:49"
   },
   {
    "kind": "article",
@@ -409,8 +417,10 @@
     "type scale design",
     "font subsetting"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790377841.399272
   },
   {
    "kind": "article",
@@ -424,8 +434,10 @@
     "easing curves",
     "reduced motion accessibility"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790377841.399273
   },
   {
    "kind": "article",
@@ -439,8 +451,10 @@
     "page structure",
     "cta placement"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790377841.399273
   },
   {
    "kind": "article",
@@ -454,8 +468,10 @@
     "editorial rhythm",
     "magazine layout web"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790377841.399273
   },
   {
    "kind": "article",
@@ -2045,6 +2061,132 @@
     "client alignment",
     "decision making projects"
    ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "hearthbrew-store",
+   "title": "Hearthbrew Storefront — coffee shop with cart & subscription",
+   "cluster": "demos",
+   "intent": "Specialty-coffee storefront for fictional Hearthbrew Coffee. Art direction: warm cream paper, espresso ink, caramel accents, roast-date freshness badges; tactile and unhurried. Features: product grid with roast profiles, PDP with grind/weight options, slide-out cart with honest shipping thresholds, subscribe-and-save flow with interval picker and skip/pause, checkout summary mock. Realistic fake catalogue data (8-10 coffees with tasting notes). Stack: React + TS, localStorage cart persistence. Code-split; own CSS; respects reduced motion.",
+   "keywords": [],
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "demo2",
+   "claimed_at": 1790377860.587156
+  },
+  {
+   "kind": "demo",
+   "slug": "northwind-ledger-budget",
+   "title": "Northwind Ledger — budgeting dashboard with charts",
+   "cluster": "demos",
+   "intent": "Fintech budgeting dashboard for fictional Northwind Ledger. Art direction: slate-and-mint dark UI, tabular numerals, calm fintech confidence; charts are answer-first. Features: cash-flow chart (area + budget line), category donut with drill-down, transactions table with inline categorisation and keyboard nav, monthly budget pacing bars, savings-goal tracker, date-range switching with 6 months realistic fake data. Hand-rolled SVG charts (no chart lib needed) or lightweight. Accessible tables, WCAG AA contrast, reduced-motion safe.",
+   "keywords": [],
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "demo3",
+   "claimed_at": 1790377867.178987
+  },
+  {
+   "kind": "demo",
+   "slug": "pylon-health-booking",
+   "title": "Pylon Health — telehealth appointment flow",
+   "cluster": "demos",
+   "intent": "Telehealth booking flow for fictional regional provider Pylon Health. Art direction: clinical-calm — soft sage and warm white, generous whitespace, plain language. Features: symptom/reason picker, practitioner cards with fictional clinicians, week calendar with availability, appointment summary, mocked confirmation with calendar-add. Step machine with back-button integrity, form validation, focus management between steps, full keyboard support. Feels production-grade: loading states, error recovery, reduced-motion aware transitions.",
+   "keywords": [],
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "demo1",
+   "claimed_at": 1790377945.5203378
+  },
+  {
+   "kind": "demo",
+   "slug": "meridian-climate-explorer",
+   "title": "Meridian Climate — emissions data scrollytelling explorer",
+   "cluster": "demos",
+   "intent": "Scrollytelling data story for fictional Meridian Climate: Australian LGA emissions explorer. Art direction: deep-ink editorial with heat accents (teal→amber ramp), Fraunces-adjacent serif headlines. Features: scroll-driven narrative chapters with pinned chart that morphs (bar → map → trend), choropleth-style grid map of fake LGAs with hover detail, per-council breakdown explorer with sorting/filtering, takeaway annotations. Fake but plausible data (12-16 regions, 10 years). IntersectionObserver-driven, full reduced-motion static fallback, keyboard navigable chapters.",
+   "keywords": [],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "sundial-itinerary-builder",
+   "title": "Sundial Travel — slow-travel itinerary builder & booking",
+   "cluster": "demos",
+   "intent": "Itinerary builder for fictional slow-travel company Sundial. Art direction: golden-hour warmth — sand, terracotta, deep teal; journal-editorial type. Features: destination cards (6 fictional coastal/rail journeys), drag-to-reorder day planner, rail-leg timeline with durations, per-day cost rollup + honest total, 'request this trip' flow with mocked availability. LocalStorage persistence, optimistic UI, reduced-motion safe. Feels like a product you'd plan a honeymoon on.",
+   "keywords": [],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "osprey-pack-configurator",
+   "title": "Osprey Outdoor — 3D pack configurator",
+   "cluster": "demos",
+   "intent": "3D product configurator for fictional Osprey Outdoor packs. Art direction: trail-dusk palette — graphite, moss, blaze orange; spec-sheet typography. Features: three.js/react-three-fiber stylised low-poly backpack (built from primitives, no external models), colour/material swap on panels, volume & torso-fit pickers updating specs, exploded view toggle, price updating live, 'this configuration' share state in URL. Performance-disciplined (budget <1.2MB extra), static poster fallback for reduced-motion, pointer-none-safe on touch.",
+   "keywords": [],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "wattle-and-daub-reserve",
+   "title": "Wattle & Daub — restaurant site with reservations",
+   "cluster": "demos",
+   "intent": "Restaurant site + reservations for fictional Surry Hills dining room Wattle & Daub. Art direction: firelit amber on charred timber, editorial menu typesetting, candlelight warmth. Features: hero with candle-flame ambient canvas (embers), seasonal menu with courses, wine list, table booking flow (party size → date → seating → details → confirmation), no-show-policy honesty line, private dining enquiry. Reservations stored in localStorage with manage/cancel view. Mobile-first — most bookings happen on phones.",
+   "keywords": [],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "brightmarsh-onboarding-flow",
+   "title": "Brightmarsh — course onboarding flow",
+   "cluster": "demos",
+   "intent": "Multi-step onboarding for fictional short-course platform Brightmarsh. Art direction: chalk-and-ink academia — bone white, ink navy, highlighter yellow; confident and curious. Features: goal picker (cards), time-commitment dial with honest weekly math, course recommendations from fake catalogue (12 courses), plan summary with first-week calendar preview, progress saved across steps, resume-later state. State-machine navigation integrity, animated progress (reduced-motion safe), keyboard-first. Ends with a genuinely satisfying plan-ready screen.",
+   "keywords": [],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "fernleigh-cellar-club",
+   "title": "Fernleigh Cellar — wine club subscription & PDP",
+   "cluster": "demos",
+   "intent": "Subscription e-commerce for fictional Adelaide Hills winery Fernleigh. Art direction: cool-climate elegance — fog grey, vine green, wax-seal red; bottle-photography-forward. Features: shoppable PDP with vintage/quantity and club-price comparison, three club tiers (Explorer/Cellar/Collector) with per-shipment sliders, skip/next-shipment management drawer, delivery cadence calendar, cellar-tracking widget (bottles owned, drink-by windows) from realistic fake data. Cart + checkout summary mock. LocalStorage persistence.",
+   "keywords": [],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "holloway-player",
+   "title": "Holloway Records — music player UI",
+   "cluster": "demos",
+   "intent": "Music player for fictional Sydney label Holloway Records. Art direction: sleeve-art maximalism — deep aubergine, cream, hot coral; tactile like vinyl. Features: album grid (CSS/SVG-generated sleeve art, 8 fictional releases), persistent bottom player with play/pause/skip/seek (WebAudio-generated or silent-fake playback simulation), queue management, shuffle/repeat, lyrics/liner-notes drawer, now-playing full-screen mode. Keyboard shortcuts, aria-live announcements for track changes, reduced-motion vinyl spin fallback.",
+   "keywords": [],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "tallow-seat-map",
+   "title": "Tallow & Co. Supper Series — event seat map ticketing",
+   "cluster": "demos",
+   "intent": "Event ticketing with interactive seat map for fictional Tallow & Co. long-table dinners. Art direction: butcher-paper cream, charcoal ink, stamp red; ticket-stub typography. Features: SVG seat map of a fictional dining room (long table + banquettes), hover/select seats with price tiers, multi-seat selection with group logic, 10-minute hold timer, order summary + diner details step, accessible list-view equivalent of the map for keyboard/screen-reader users, confirmation with stub-style ticket. Mocked availability, realistic.",
+   "keywords": [],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "pylon-care-assistant",
+   "title": "Pylon Care — AI support assistant UI",
+   "cluster": "demos",
+   "intent": "Mocked AI support assistant for fictional Pylon Health. Art direction: calm clinical — soft sage, warm white, trust-first. Features: chat interface with token-streaming style reveal (mocked from a scripted response bank with topic detection), citation chips with sources drawer, confidence + 'was this accurate?' feedback loop, escalation-to-human card, suggested prompts, conversation persistence. Demonstrates responsible-AI patterns: honest capability statement, no medical advice guardrails, redaction note. Fully client-side, deterministic mock.",
+   "keywords": [],
    "status": "planned",
    "added_by": "builder"
   }
