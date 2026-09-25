@@ -1526,10 +1526,11 @@
     "event taxonomy",
     "data quality marketing"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790379020.210803
+   "claimed_at": 1790379020.210803,
+   "done_at": "2026-09-26T09:39:13"
   },
   {
    "kind": "article",
@@ -1799,8 +1800,10 @@
     "ai transparency design",
     "confidence ui"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790379546.404746
   },
   {
    "kind": "article",
@@ -1814,8 +1817,10 @@
     "when to fine tune",
     "prompt engineering strategy"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790379546.404747
   },
   {
    "kind": "article",
@@ -1829,8 +1834,10 @@
     "ai feature instrumentation",
     "copilot metrics"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790379546.404748
   },
   {
    "kind": "article",
@@ -1844,8 +1851,10 @@
     "ai ethics design",
     "ai governance"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790379546.404748
   },
   {
    "kind": "article",
