@@ -1076,10 +1076,11 @@
     "a11y remediation",
     "accessibility testing"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790378499.5053298
+   "claimed_at": 1790378499.5053298,
+   "done_at": "2026-09-26T09:30:15"
   },
   {
    "kind": "article",
@@ -1219,10 +1220,11 @@
     "brand mark hierarchy",
     "identity design"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790378581.048918
+   "claimed_at": 1790378581.048918,
+   "done_at": "2026-09-26T09:30:42"
   },
   {
    "kind": "article",
@@ -1462,8 +1464,10 @@
     "marketing measurement",
     "dark social"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790379020.210801
   },
   {
    "kind": "article",
@@ -1477,8 +1481,10 @@
     "customer lifecycle emails",
     "retention email"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790379020.2108018
   },
   {
    "kind": "article",
@@ -1492,8 +1498,10 @@
     "ab testing landing pages",
     "experiment velocity"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790379020.2108018
   },
   {
    "kind": "article",
@@ -1507,8 +1515,10 @@
     "event taxonomy",
     "data quality marketing"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790379020.210803
   },
   {
    "kind": "article",
@@ -2177,10 +2187,11 @@
    "cluster": "demos",
    "intent": "Specialty-coffee storefront for fictional Hearthbrew Coffee. Art direction: warm cream paper, espresso ink, caramel accents, roast-date freshness badges; tactile and unhurried. Features: product grid with roast profiles, PDP with grind/weight options, slide-out cart with honest shipping thresholds, subscribe-and-save flow with interval picker and skip/pause, checkout summary mock. Realistic fake catalogue data (8-10 coffees with tasting notes). Stack: React + TS, localStorage cart persistence. Code-split; own CSS; respects reduced motion.",
    "keywords": [],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "demo2",
-   "claimed_at": 1790377860.587156
+   "claimed_at": 1790377860.587156,
+   "done_at": "2026-09-26T09:31:03"
   },
   {
    "kind": "demo",
@@ -2214,8 +2225,10 @@
    "cluster": "demos",
    "intent": "Scrollytelling data story for fictional Meridian Climate: Australian LGA emissions explorer. Art direction: deep-ink editorial with heat accents (teal→amber ramp), Fraunces-adjacent serif headlines. Features: scroll-driven narrative chapters with pinned chart that morphs (bar → map → trend), choropleth-style grid map of fake LGAs with hover detail, per-council breakdown explorer with sorting/filtering, takeaway annotations. Fake but plausible data (12-16 regions, 10 years). IntersectionObserver-driven, full reduced-motion static fallback, keyboard navigable chapters.",
    "keywords": [],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "demo1",
+   "claimed_at": 1790378955.0399098
   },
   {
    "kind": "demo",
