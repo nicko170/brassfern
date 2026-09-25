@@ -1,3 +1,2052 @@
 {
- "items": []
+ "items": [
+  {
+   "kind": "article",
+   "slug": "northwind-ledger-dashboard-rebuild",
+   "title": "Northwind Ledger: rebuilding the dashboard accountants actually open",
+   "cluster": "work",
+   "intent": "Case study for fictional fintech Northwind Ledger: dense small-business accounting dashboard redesigned around morning rituals and cash-flow anxiety. Cover research with bookkeepers, information hierarchy, sparklines over charts, performance work, and illustrative outcome metrics with Challenge / Approach / Outcome sections.",
+   "keywords": [
+    "fintech dashboard case study",
+    "accounting software ux",
+    "dashboard design",
+    "data hierarchy"
+   ],
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790377492.064337
+  },
+  {
+   "kind": "article",
+   "slug": "pylon-health-telehealth-flow",
+   "title": "Pylon Health: telehealth that treats anxiety as a UX problem",
+   "cluster": "work",
+   "intent": "Case study for fictional regional telehealth provider Pylon Health: booking flow, waiting-room UX, plain-language triage, WCAG AA+ work, offline-tolerant architecture for regional connections. Challenge / Approach / Outcome with illustrative metrics.",
+   "keywords": [
+    "telehealth case study",
+    "healthcare ux",
+    "accessible design",
+    "booking flow"
+   ],
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790377492.0643399
+  },
+  {
+   "kind": "article",
+   "slug": "fernleigh-wines-dtc-storefront",
+   "title": "Fernleigh Wines: a cool-climate label learns to sell online",
+   "cluster": "work",
+   "intent": "Case study for fictional Adelaide Hills winery: headless storefront, cellar-door storytelling, wine club subscriptions, seasonal campaign art. Tasteful, editorial, produce-driven. Illustrative metrics for conversion and club signups.",
+   "keywords": [
+    "wine ecommerce case study",
+    "headless storefront",
+    "subscription design",
+    "dtc wine"
+   ],
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790377492.0643399
+  },
+  {
+   "kind": "article",
+   "slug": "osprey-outdoor-configurator-launch",
+   "title": "Osprey Outdoor: the pack configurator that cut support tickets",
+   "cluster": "work",
+   "intent": "Case study for fictional outdoor gear brand: 3D pack configurator (fit, volume, colours), how 3D reduced sizing support tickets and returns, technical detail on react-three-fiber performance budgets.",
+   "keywords": [
+    "3d configurator case study",
+    "product customisation",
+    "react three fiber",
+    "ecommerce ux"
+   ],
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790377492.064341
+  },
+  {
+   "kind": "article",
+   "slug": "wattle-and-daub-reservations",
+   "title": "Wattle & Daub: a dining room website that fills tables",
+   "cluster": "work",
+   "intent": "Case study for fictional Surry Hills restaurant: reservations flow, menu as editorial, photography direction, local SEO, no-show reduction via SMS lifecycle. Warm hospitality art direction.",
+   "keywords": [
+    "restaurant website case study",
+    "reservation ux",
+    "hospitality digital",
+    "local seo"
+   ],
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790377494.792862
+  },
+  {
+   "kind": "article",
+   "slug": "meridian-climate-data-explorer",
+   "title": "Meridian Climate: making council emissions data impossible to ignore",
+   "cluster": "work",
+   "intent": "Case study for fictional open climate data platform: scrollytelling explorer for LGA emissions, chart choices, colour and ethics of data presentation, performance with large datasets.",
+   "keywords": [
+    "climate data visualisation case study",
+    "scrollytelling",
+    "data ethics",
+    "open data"
+   ],
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790377494.792864
+  },
+  {
+   "kind": "article",
+   "slug": "brightmarsh-onboarding",
+   "title": "Brightmarsh: onboarding course-takers without the confetti",
+   "cluster": "work",
+   "intent": "Case study for fictional short-course education platform: activation-focused onboarding, honest progress mechanics (no dark gamification), email lifecycle pairing. JTBD interviews and metrics.",
+   "keywords": [
+    "onboarding case study",
+    "edtech ux",
+    "activation metrics",
+    "lifecycle email"
+   ],
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790377494.7928698
+  },
+  {
+   "kind": "article",
+   "slug": "holloway-records-label-site",
+   "title": "Holloway Records: an independent label site that sells records, not ads",
+   "cluster": "work",
+   "intent": "Case study for fictional Sydney indie label: artist pages, embedded audio player, vinyl drop mechanics, membership. Editorial art direction, music-first IA.",
+   "keywords": [
+    "record label website case study",
+    "music ux",
+    "audio player design",
+    "artist pages"
+   ],
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790377494.792871
+  },
+  {
+   "kind": "article",
+   "slug": "sundial-travel-booking",
+   "title": "Sundial Travel: slow travel, planned properly",
+   "cluster": "work",
+   "intent": "Case study for fictional slow-travel planner: itinerary builder UX, booking flow with honest pricing, moodboard-to-booking journey, content engine for long-tails like rail journeys.",
+   "keywords": [
+    "travel booking case study",
+    "itinerary ux",
+    "slow travel",
+    "booking flow design"
+   ],
+   "status": "done",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790377500.7487009,
+   "done_at": "2026-09-26T09:06:28"
+  },
+  {
+   "kind": "article",
+   "slug": "tallow-and-co-providore",
+   "title": "Tallow & Co.: a 1987 butcher becomes a modern providore",
+   "cluster": "work",
+   "intent": "Case study: heritage butcher/providore digital transformation — pre-order flows, seasonal boxes, brand refresh that kept the regulars. Voice and restraint in traditional brands.",
+   "keywords": [
+    "retail digital transformation case study",
+    "heritage brand",
+    "pre-order flows",
+    "local retail"
+   ],
+   "status": "done",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790377500.748703,
+   "done_at": "2026-09-26T09:09:26"
+  },
+  {
+   "kind": "article",
+   "slug": "glade-skincare-ingredient-honesty",
+   "title": "GLADE: skincare e-commerce with nothing to hide",
+   "cluster": "work",
+   "intent": "Case study for fictional skincare brand: ingredient transparency UX, PDP design that leads with evidence, subscription skincare model, accessibility for ingredient tables.",
+   "keywords": [
+    "skincare ecommerce case study",
+    "ingredient transparency",
+    "pdp design",
+    "subscription ux"
+   ],
+   "status": "done",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790377500.748704,
+   "done_at": "2026-09-26T09:09:26"
+  },
+  {
+   "kind": "article",
+   "slug": "hearthbrew-subscription-club",
+   "title": "Hearthbrew: the subscription club that retained like a magazine",
+   "cluster": "work",
+   "intent": "Follow-up Hearthbrew Coffee case study: subscribe-and-save UX, skip/pause honesty, churn diagnostics, packaging-as-content. Companion to the brand-system case study.",
+   "keywords": [
+    "coffee subscription case study",
+    "retention design",
+    "churn reduction",
+    "dtc subscriptions"
+   ],
+   "status": "done",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790377500.748704,
+   "done_at": "2026-09-26T09:09:28"
+  },
+  {
+   "kind": "article",
+   "slug": "copperline-community-bank",
+   "title": "Copperline Mutual: a community bank that sounds human",
+   "cluster": "work",
+   "intent": "Case study for fictional mutual bank: voice overhaul plus web platform rebuild, plain-language product pages, accessibility-first component library, trust as differentiator.",
+   "keywords": [
+    "bank website case study",
+    "financial services ux",
+    "plain language",
+    "design system"
+   ],
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790377523.032091
+  },
+  {
+   "kind": "article",
+   "slug": "postcards-museum-archive",
+   "title": "Postcards from the Museums: an archive people actually browse",
+   "cluster": "work",
+   "intent": "Case study for fictional museum-group digital archive: image handling, faceted search that invites wandering, accessibility for digitised collections, funding-friendly outcomes.",
+   "keywords": [
+    "museum archive case study",
+    "digital collections",
+    "faceted search ux",
+    "cultural heritage web"
+   ],
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790377523.0320919
+  },
+  {
+   "kind": "article",
+   "slug": "fern-and-forage-florist",
+   "title": "Fern & Forage: same-day flower delivery without the panic",
+   "cluster": "work",
+   "intent": "Case study for fictional florist: delivery cutoff UX, location-aware inventory, occasion-led browsing, seasonal photography system. High-craft small-retail e-commerce.",
+   "keywords": [
+    "florist ecommerce case study",
+    "delivery ux",
+    "local commerce",
+    "occasion browsing"
+   ],
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790377523.0320928
+  },
+  {
+   "kind": "article",
+   "slug": "signal-and-noise-podcast-network",
+   "title": "Signal & Noise: a podcast network site built around listening",
+   "cluster": "work",
+   "intent": "Case study for fictional podcast network: show pages, persistent audio, transcript SEO, membership tier. Editorial + audio UX, measurement of listen-through.",
+   "keywords": [
+    "podcast website case study",
+    "transcript seo",
+    "audio ux",
+    "membership design"
+   ],
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790377523.0320928
+  },
+  {
+   "kind": "article",
+   "slug": "arlo-and-sons-tradies-marketplace",
+   "title": "Arlo & Sons: a tradies marketplace that earned trust slowly",
+   "cluster": "work",
+   "intent": "Case study for fictional trades marketplace: quote comparison UX, review integrity, trade-side dashboards, slow-trust onboarding. Two-sided marketplace design lessons.",
+   "keywords": [
+    "marketplace case study",
+    "trust design",
+    "two-sided marketplace",
+    "reviews ux"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "kite-and-anchor-insurtech",
+   "title": "Kite & Anchor: insurance onboarding people finish",
+   "cluster": "work",
+   "intent": "Case study for fictional insurtech: quote flow redesign, progressive disclosure, plain-English policy summaries, illustrative completion-rate improvements.",
+   "keywords": [
+    "insurance ux case study",
+    "onboarding flow",
+    "progressive disclosure",
+    "fintech forms"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "willow-and-wren-bookshop",
+   "title": "Willow & Wren: the bookshop site that reads like a bookseller",
+   "cluster": "work",
+   "intent": "Case study for fictional independent bookshop: staff-picks engine, shelf-talkers as content model, online-offline inventory honesty, newsletter flywheel.",
+   "keywords": [
+    "bookshop website case study",
+    "independent retail",
+    "content model design",
+    "local retail"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "summit-and-still-yoga",
+   "title": "Summit & Still: booking UX for a yoga studio chain",
+   "cluster": "work",
+   "intent": "Case study for fictional yoga studio group: class timetable UX, intro-offer flows done ethically, teacher pages, retention emails. Calm design system.",
+   "keywords": [
+    "fitness booking case study",
+    "yoga studio website",
+    "class booking ux",
+    "wellness design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "harvest-loop-food-rescue",
+   "title": "Harvest Loop: logistics dashboards for a food-rescue charity",
+   "cluster": "work",
+   "intent": "Case study for fictional food-rescue non-profit: driver app, donor dashboard, impact reporting for funders, designing for volunteers with old phones.",
+   "keywords": [
+    "non-profit case study",
+    "logistics dashboard",
+    "charity tech",
+    "volunteer ux"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "quarry-and-compass-property",
+   "title": "Quarry & Compass: real-estate search that respects the dreamers",
+   "cluster": "work",
+   "intent": "Case study for fictional property platform: map search UX, saved-search rituals, honest listing pages, performance on regional mobile networks.",
+   "keywords": [
+    "real estate case study",
+    "map search ux",
+    "property platform",
+    "saved search design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "larklight-saas-marketing-site",
+   "title": "Larklight: a SaaS marketing site that doubled demo bookings",
+   "cluster": "work",
+   "intent": "Case study for fictional field-service SaaS: positioning rewrite, pricing page honesty, demo-request flow, CRO program with illustrative lift numbers.",
+   "keywords": [
+    "saas website case study",
+    "cro",
+    "pricing page design",
+    "demo booking flow"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "easement-legal-service-finder",
+   "title": "Easement Legal: a law firm site without the mahogany",
+   "cluster": "work",
+   "intent": "Case study for fictional community legal centre: service finder UX, plain-language fee tables, interpreter-friendly design, trust signals that are not stock gavels.",
+   "keywords": [
+    "legal website case study",
+    "service finder ux",
+    "plain language design",
+    "trust design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "typography-that-loads",
+   "title": "Type systems for marketing sites that still load fast",
+   "cluster": "web-design",
+   "intent": "Practical guide: pairing variable fonts with performance budgets — unicode-range subsetting, font-display strategies, optical sizing, and a typographic scale that survives 375px and 1440px.",
+   "keywords": [
+    "web typography",
+    "variable fonts",
+    "font performance",
+    "type scale design",
+    "font subsetting"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "motion-that-earns-its-keep",
+   "title": "Motion that earns its keep (and the 160ms rule)",
+   "cluster": "web-design",
+   "intent": "The studio's motion philosophy: functional vs decorative motion, duration and easing heuristics, choreography limits, prefers-reduced-motion as design input. Show bad/good pairs.",
+   "keywords": [
+    "web animation design",
+    "motion design principles",
+    "easing curves",
+    "reduced motion accessibility"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "landing-page-anatomy",
+   "title": "The anatomy of a landing page that converts",
+   "cluster": "web-design",
+   "intent": "Tear apart the structure of high-converting pages: promise hierarchy, proof placement, objection handling, CTA economics. Fictional before/afters with reasoning, not listicle fluff.",
+   "keywords": [
+    "landing page design",
+    "conversion design",
+    "page structure",
+    "cta placement"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "editorial-grids-web",
+   "title": "Editorial grids on the web: rhythm without rigidity",
+   "cluster": "web-design",
+   "intent": "Bringing print's editorial rhythm to responsive layouts: baseline thinking, column logic that collapses gracefully, when to break the grid for emphasis. CSS techniques included.",
+   "keywords": [
+    "editorial design web",
+    "css grid layout",
+    "editorial rhythm",
+    "magazine layout web"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "colour-systems-dark-mode",
+   "title": "Colour systems that survive dark mode and rebrands",
+   "cluster": "web-design",
+   "intent": "Semantic colour tokens vs literal palettes, ramps with consistent perceived contrast, dark-mode strategy, and surviving a brand refresh without a rewrite.",
+   "keywords": [
+    "colour system design",
+    "dark mode design",
+    "semantic colour tokens",
+    "accessible colour palettes"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "scrollytelling-without-traps",
+   "title": "Scrollytelling without the hostage-taking",
+   "cluster": "web-design",
+   "intent": "When scroll-driven narrative helps comprehension vs traps users — pacing, exit lanes, reduced-motion fallbacks, the reading-position contract. Reference climate/report use cases.",
+   "keywords": [
+    "scrollytelling design",
+    "scroll narrative ux",
+    "data storytelling web",
+    "scrolljacking"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "forms-people-finish",
+   "title": "Designing forms people actually finish",
+   "cluster": "web-design",
+   "intent": "Form craft end to end: label and error copy, input types, step economics, autofill respect, why every field must barter for its place. Microcopy examples from fictional projects.",
+   "keywords": [
+    "form design ux",
+    "form conversion",
+    "input design",
+    "error message design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "footer-design-matters",
+   "title": "The footer is a sitemap with manners",
+   "cluster": "web-design",
+   "intent": "The neglected craft of footer design: navigation strategy, trust signals, colophons, SEO value. A taxonomy of great footer patterns with fictional examples.",
+   "keywords": [
+    "footer design",
+    "website footer best practices",
+    "navigation design",
+    "trust signals"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "designing-404-pages",
+   "title": "404 pages with personality (that still get people home)",
+   "cluster": "web-design",
+   "intent": "What a good 404 must do: orient, recover, charm. Anatomy of effective error pages, brand voice in failure states, measuring 404 recovery rates.",
+   "keywords": [
+    "404 page design",
+    "error page ux",
+    "brand voice",
+    "website errors"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "hero-patterns-beyond-gradient",
+   "title": "Hero sections beyond the gradient blob",
+   "cluster": "web-design",
+   "intent": "Field guide to memorable heroes: typographic heroes, generative canvases, product-in-context, editorial statements — with performance and reduced-motion notes per pattern.",
+   "keywords": [
+    "hero section design",
+    "website hero ideas",
+    "above the fold design",
+    "homepage design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "accessible-design-handoff",
+   "title": "Accessibility starts in the design file",
+   "cluster": "web-design",
+   "intent": "Design-side WCAG practices that prevent 80% of retrofits: annotations, focus-order intent, contrast workflows, specs engineers can't build wrong.",
+   "keywords": [
+    "accessible design process",
+    "wcag design",
+    "design handoff accessibility",
+    "inclusive design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "image-art-direction-web",
+   "title": "Art-directing images for the responsive web",
+   "cluster": "web-design",
+   "intent": "Crop-as-composition, focal point markup, art-directed aspect ratios per breakpoint, when AI-generated imagery serves a brand vs erodes it. Practical picture/srcset guidance.",
+   "keywords": [
+    "art direction web images",
+    "responsive images",
+    "picture element",
+    "image composition"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "microinteractions-that-matter",
+   "title": "Micro-interactions: fine vs expensive-feeling",
+   "cluster": "web-design",
+   "intent": "The tactile layer: hover, pressed and focus states, sound-off motion, small feedback loops that signal quality. Do/don't durations and material honesty.",
+   "keywords": [
+    "microinteractions design",
+    "ui details",
+    "hover states",
+    "interface polish"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "case-study-page-design",
+   "title": "How to design case study pages that win work",
+   "cluster": "web-design",
+   "intent": "For studios and freelancers: the anatomy of a persuasive case study page — narrative arc, proof placement, metrics honesty, a CTA that doesn't beg. Reference Brassfern's /work structure.",
+   "keywords": [
+    "case study design",
+    "portfolio case study",
+    "agency portfolio",
+    "work page design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "design-critique-method",
+   "title": "Running design critiques that sharpen instead of flatten",
+   "cluster": "web-design",
+   "intent": "The studio's critique framework: roles, timing, the 'specific or silent' rule, critiquing outcomes not taste. Includes a one-page printable checklist.",
+   "keywords": [
+    "design critique",
+    "feedback culture",
+    "design review process",
+    "team rituals"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "core-web-vitals-field-guide",
+   "title": "Core Web Vitals in the field: budgets that survive sprints",
+   "cluster": "engineering",
+   "intent": "Practical CWV program: LCP element archaeology, INP triage, CI-enforced budgets, real-user monitoring on a shoestring. Numbers from fictional engagements, debugging recipes that actually work.",
+   "keywords": [
+    "core web vitals",
+    "web performance",
+    "lcp optimization",
+    "inp debugging",
+    "performance budgets"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "react-server-components-tradeoffs",
+   "title": "React Server Components: the trade-offs nobody puts in the talk",
+   "cluster": "engineering",
+   "intent": "Sober take on RSC: where they genuinely help (data-heavy marketing + app hybrids), where they hurt (mental model cost, cache complexity), and decision heuristics per project shape.",
+   "keywords": [
+    "react server components",
+    "rsc tradeoffs",
+    "react architecture",
+    "next.js patterns"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "islands-architecture-when",
+   "title": "Islands architecture: sprinkle, don't soak",
+   "cluster": "engineering",
+   "intent": "When to island (content-first sites with pockets of interactivity) vs full SPA — hydration costs, interaction latency budgets, and a pragmatic hybrid pattern we use on content-heavy sites.",
+   "keywords": [
+    "islands architecture",
+    "partial hydration",
+    "astro vs next",
+    "hydration performance"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "design-tokens-pipeline-ci",
+   "title": "Testing design tokens in CI like the API they are",
+   "cluster": "engineering",
+   "intent": "Engineering deep-dive: grammar linting, ancestry checks, contrast-pair tests, versioned releases with content hashing. Companion piece to the existing design-tokens article.",
+   "keywords": [
+    "design tokens ci",
+    "tokens testing",
+    "style dictionary pipeline",
+    "design system governance"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "image-pipeline-modern-web",
+   "title": "Building an image pipeline that designers don't curse",
+   "cluster": "engineering",
+   "intent": "AVIF/WebC fallbacks, focal-point-aware crops, build-time vs CDN transforms, caching strategy, and the editorial fields (focal points, alt rules) that keep pages fast and composed.",
+   "keywords": [
+    "image optimization pipeline",
+    "avif webp",
+    "responsive images cdn",
+    "image performance"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "edge-rendering-honest-guide",
+   "title": "Edge rendering: an honest guide for content sites",
+   "cluster": "engineering",
+   "intent": "What edge actually buys you (TTFB, geo-personalisation) and what it costs (cold starts, fragmented caches, observability gaps). Decision framework with fictional benchmarks.",
+   "keywords": [
+    "edge rendering",
+    "edge functions",
+    "ttfb optimization",
+    "cdn architecture"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "caching-strategy-content-sites",
+   "title": "The caching layers cake: HTTP, ISR and the discipline of invalidation",
+   "cluster": "engineering",
+   "intent": "A layered caching mental model for content-heavy sites: CDN, full-page, data, and invalidation strategies that don't wake you at 3am. Includes the purge-on-publish pattern.",
+   "keywords": [
+    "web caching strategy",
+    "http caching",
+    "isr nextjs",
+    "cache invalidation"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "type-safe-cms-content",
+   "title": "End-to-end type safety from CMS to component",
+   "cluster": "engineering",
+   "intent": "Generating TypeScript types from headless CMS schemas, validating content at the boundary, and the content model conventions that prevent the 6pm 'fields renamed' incident.",
+   "keywords": [
+    "typescript headless cms",
+    "type safe content",
+    "content modelling",
+    "sanity typescript"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "playwright-testing-that-lasts",
+   "title": "Playwright suites that survive the redesign",
+   "cluster": "engineering",
+   "intent": "Writing browser tests against intent not pixels: accessible locators, page objects that earn their abstraction, visual diff quotas, and keeping the suite under ten minutes.",
+   "keywords": [
+    "playwright testing",
+    "browser testing strategy",
+    "e2e test architecture",
+    "testing best practices"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "bundle-budget-discipline",
+   "title": "Bundle budgets: the 170kb rule and how we hold it",
+   "cluster": "engineering",
+   "intent": "Route-level code splitting, dependency audits, the cost of a 'small' package, and the culture of the size diff comment on every PR. Where we spend the bytes on purpose.",
+   "keywords": [
+    "javascript bundle size",
+    "code splitting",
+    "bundle budget",
+    "webpack vite analysis"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "web-components-vs-react",
+   "title": "Web Components vs React in 2026: a studio's scorecard",
+   "cluster": "engineering",
+   "intent": "Honest scorecard across portability, a11y, SSR, theming, hiring — where we use each (design system primitives years-long vs product surfaces shipped weekly), with real-world caveat stories.",
+   "keywords": [
+    "web components vs react",
+    "custom elements",
+    "design system technology",
+    "lit vs react"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "state-machines-ui-flows",
+   "title": "State machines for checkout and onboarding flows",
+   "cluster": "engineering",
+   "intent": "Why multi-step flows rot into boolean soup, how explicit state machines fix back-button bugs and analytics blindspots, with a worked example from a fictional checkout rebuild.",
+   "keywords": [
+    "state machines frontend",
+    "xstate patterns",
+    "multi step forms",
+    "checkout state management"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "form-architecture-scale",
+   "title": "Form architecture at scale: schemas, errors and autofills",
+   "cluster": "engineering",
+   "intent": "Schema-first form engineering: zod-driven validation shared client/server, error copy as data, autofill token correctness, and a11y announcements that don't double-speak.",
+   "keywords": [
+    "react form architecture",
+    "zod validation",
+    "form error handling",
+    "accessible forms engineering"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "pdf-generation-web",
+   "title": "Generating PDFs from web tech without tears",
+   "cluster": "engineering",
+   "intent": "Invoice/report generation options scored: print CSS, headless Chrome services, canvas composition — with typography gotchas, performance costs, and when PDF is the wrong answer.",
+   "keywords": [
+    "pdf generation javascript",
+    "print css",
+    "headless chrome pdf",
+    "report generation web"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "i18n-architecture-hard-parts",
+   "title": "i18n beyond the strings file",
+   "cluster": "engineering",
+   "intent": "The hard 20% of internationalisation: plural rules, date/currency, RTL layout, content modelling for locales, and the design tokens that change per language. From AU/NZ/SG experience.",
+   "keywords": [
+    "internationalization architecture",
+    "i18n design systems",
+    "rtl css",
+    "localization engineering"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "keyboard-first-interfaces",
+   "title": "Engineering keyboard-first interfaces",
+   "cluster": "engineering",
+   "intent": "Roving tabindex, focus trapping without traps, shortcut systems with discoverability, and the testing setup that treats keyboard as primary — patterns we use on dashboards.",
+   "keywords": [
+    "keyboard navigation web",
+    "focus management",
+    "accessibility engineering",
+    "shortcut design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "feature-flags-craft",
+   "title": "Feature flags without the graveyard",
+   "cluster": "engineering",
+   "intent": "Flag discipline for product squads: lifecycle stages, naming grammar, expiry automation, analytics hooks, and the monthly flag funeral that keeps codebases young.",
+   "keywords": [
+    "feature flags best practices",
+    "feature toggles",
+    "progressive rollout",
+    "technical debt flags"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "jtbd-interviews-that-work",
+   "title": "Jobs-to-be-done interviews: our exact script",
+   "cluster": "product",
+   "intent": "The studio's JTBD interview format: timeline technique, the hiring/firing language questions, transcription-to-insight workflow, and red flags you're hearing a pitch not a job.",
+   "keywords": [
+    "jobs to be done interviews",
+    "jtbd script",
+    "user research methods",
+    "customer interviews"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "activation-metrics-honest",
+   "title": "Activation metrics that mean something",
+   "cluster": "product",
+   "intent": "Choosing an activation metric that predicts retention, the aha-moment fallacies, time-to-value measurement, and how to defend an honest metric when the dashboard prefers flattering ones.",
+   "keywords": [
+    "activation metrics",
+    "product metrics",
+    "time to value",
+    "retention analytics"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "dashboard-design-hierarchy",
+   "title": "Dashboard design: answer first, chart second",
+   "cluster": "product",
+   "intent": "The question-first method for operational dashboards: decision inventory, alert thresholds vs ambient data, sparklines over donuts, and the five-element dashboard that outperforms the forty-chart one.",
+   "keywords": [
+    "dashboard design ux",
+    "data visualization hierarchy",
+    "operational dashboards",
+    "analytics ui design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "empty-states-design",
+   "title": "Empty states are product marketing",
+   "cluster": "product",
+   "intent": "First-run, cleared, error and no-results states as teaching moments: copy frameworks, illustration restraint, and measuring how empty states move activation.",
+   "keywords": [
+    "empty state design",
+    "ux writing",
+    "first run experience",
+    "product onboarding"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "onboarding-checklist-patterns",
+   "title": "Onboarding checklists without the nag",
+   "cluster": "product",
+   "intent": "Checklist UX that respects users: sequencing by value not feature order, dismissible without guilt, celebrating completion quietly, and when checklists hurt. Patterns from fictional case work.",
+   "keywords": [
+    "onboarding checklist ux",
+    "product onboarding patterns",
+    "user activation design",
+    "checklist ui"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "permission-ux-design",
+   "title": "Permission UX: roles, extras and the politics of access",
+   "cluster": "product",
+   "intent": "Designing role systems that admins understand: RBAC UX patterns, invitation flows, the 'who can see this' affordance, and audit trails as a kindness not a compliance tax.",
+   "keywords": [
+    "permissions ux",
+    "rbac interface design",
+    "user roles design",
+    "admin ux"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "notification-design-respect",
+   "title": "Notifications designed like you're not the main character",
+   "cluster": "product",
+   "intent": "Notification systems people don't mute: severity ladders, digest economics, channel choice (push/email/in-app), and the anti-patterns that train users to ignore you.",
+   "keywords": [
+    "notification ux",
+    "push notification design",
+    "alert design",
+    "notification fatigue"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "accessibility-audit-process",
+   "title": "Running an accessibility audit that leads to fixes",
+   "cluster": "product",
+   "intent": "Our audit format: automated sweeps vs manual journeys, severity taxonomy the team understands, fix-forward roadmapping, and re-testing rituals. Includes the report template structure.",
+   "keywords": [
+    "accessibility audit process",
+    "wcag audit",
+    "a11y remediation",
+    "accessibility testing"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "pricing-page-ux-research",
+   "title": "What 30 pricing pages taught us about clarity",
+   "cluster": "product",
+   "intent": "Findings from a fictional research review of pricing pages: tier naming, feature comparison that isn't a maze, annual-toggle psychology done honestly, and enterprise-contact patterns.",
+   "keywords": [
+    "pricing page ux",
+    "saas pricing design",
+    "pricing tiers psychology",
+    "pricing page conversion"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "search-ux-product",
+   "title": "Product search UX: from query box to answers",
+   "cluster": "product",
+   "intent": "In-app search design: scoping, recent and suggested, typo tolerance UX, filters vs facets, no-results states as navigation, and relevance as a product decision not just an index.",
+   "keywords": [
+    "search ux design",
+    "site search design",
+    "faceted search",
+    "no results page"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "settings-information-architecture",
+   "title": "Settings IA: where features go to be findable",
+   "cluster": "product",
+   "intent": "Settings page architecture for growing products: grouping by user intent not org chart, search within settings, destructive-action zoning, and the migration plan when categories must change.",
+   "keywords": [
+    "settings page design",
+    "information architecture",
+    "settings ux",
+    "product navigation"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "progressive-disclosure-complexity",
+   "title": "Progressive disclosure for genuinely complex tools",
+   "cluster": "product",
+   "intent": "Hiding complexity without hiding power: advanced modes, command palettes as the pro lane, sensible defaults as product strategy, and measuring whether disclosure actually helps novices.",
+   "keywords": [
+    "progressive disclosure ux",
+    "complex ui design",
+    "command palette design",
+    "power user features"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "error-messages-that-help",
+   "title": "Error messages that de-escalate",
+   "cluster": "product",
+   "intent": "Error UX across tones of disaster: what happened, whose fault it isn't, what to do next. Copy patterns, log correlation for support, and when an error deserves design.",
+   "keywords": [
+    "error message design",
+    "ux writing errors",
+    "error handling ux",
+    "microcopy errors"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "data-dense-tables-ux",
+   "title": "Data tables for people who live in them",
+   "cluster": "product",
+   "intent": "Pro-grade table UX: density modes, sticky decisions, column management, inline editing integrity, keyboard speed runs, and export honesty. For ops and finance products.",
+   "keywords": [
+    "data table design",
+    "enterprise table ux",
+    "spreadsheet ui patterns",
+    "data grid design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "naming-process-field-guide",
+   "title": "Naming: our field guide from brainstorm to trademark check",
+   "cluster": "brand",
+   "intent": "The studio's naming workflow: brief axes, generation volumes, screening funnels, pronunciation and domain realities, presenting names so they survive the committee.",
+   "keywords": [
+    "naming process",
+    "brand naming",
+    "product naming guide",
+    "naming workshop"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "logo-systems-not-logos",
+   "title": "Design logo systems, not logos",
+   "cluster": "brand",
+   "intent": "Responsive identity thinking: primary/mark/glyph tiers, motion behaviour, co-branding rules, and the test contexts (app icon, favicon, invoice footer) a logo must survive.",
+   "keywords": [
+    "logo system design",
+    "responsive logos",
+    "brand mark hierarchy",
+    "identity design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "brand-voice-charts",
+   "title": "Voice charts: making tone teachable",
+   "cluster": "brand",
+   "intent": "Building usable voice guidelines: axis charts over adjective lists, rewrite examples per channel, error-state voice, and testing voice with real product copy not lorem.",
+   "keywords": [
+    "brand voice guidelines",
+    "tone of voice",
+    "ux writing voice",
+    "copy style guide"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "motion-identity-design",
+   "title": "The motion layer of brand identity",
+   "cluster": "brand",
+   "intent": "Kinetic identity systems: easing as signature, logo behaviour, transition grammar, and exporting motion principles to engineers as tokens. Where motion brand meets prefers-reduced-motion.",
+   "keywords": [
+    "motion brand identity",
+    "kinetic identity",
+    "brand animation guidelines",
+    "motion tokens"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "rebrand-rollout-plan",
+   "title": "Rebrand rollouts: the unglamorous crucial middle",
+   "cluster": "brand",
+   "intent": "The operational craft between reveal and done: asset transition maps, transition periods where old and new coexist, internal enablement, and measuring a rebrand after the applause.",
+   "keywords": [
+    "rebrand rollout",
+    "brand implementation",
+    "rebrand checklist",
+    "brand launch plan"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "brand-architecture-decisions",
+   "title": "Brand architecture decisions: house, endorsed, or let go",
+   "cluster": "brand",
+   "intent": "Branded house vs house of brands for growing companies: decision frameworks, migration costs, sub-brand rules, and the acquisition scenarios that flip the answer.",
+   "keywords": [
+    "brand architecture",
+    "branded house vs house of brands",
+    "sub brand strategy",
+    "brand portfolio"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "illustration-systems",
+   "title": "Illustration systems that don't go stale",
+   "cluster": "brand",
+   "intent": "Building an illustration language as a system: primitives, rules and generators over one-off art; commissioning briefs; maintenance models; and when illustration is the wrong spend.",
+   "keywords": [
+    "illustration system design",
+    "brand illustration",
+    "illustration guidelines",
+    "visual language"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "measuring-brand-health",
+   "title": "Measuring brand without voodoo",
+   "cluster": "brand",
+   "intent": "Brand measurement for people allergic to brand science: aided recall, share of search, consistency audits, and the quarterly brand health one-pager leadership actually reads.",
+   "keywords": [
+    "brand measurement",
+    "brand health metrics",
+    "share of search",
+    "brand tracking"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "brand-strategy-one-pager",
+   "title": "Brand strategy on one page (or it isn't strategy)",
+   "cluster": "brand",
+   "intent": "Our one-page strategy format: audience tension, position, proof, personality, and the 'we will not' column. Example from a fictional engagement plus facilitation notes.",
+   "keywords": [
+    "brand strategy framework",
+    "positioning statement",
+    "brand strategy template",
+    "brand workshop"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "founder-led-brand",
+   "title": "When the founder IS the brand (and when to stop)",
+   "cluster": "brand",
+   "intent": "Founder-led brands: harvesting founder voice into systems, the risks of personality dependence, graceful transitions, and what to codify first.",
+   "keywords": [
+    "founder brand",
+    "personal branding strategy",
+    "brand voice founder",
+    "brand transition"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "typography-brand-distinctiveness",
+   "title": "Type as brand: when the typeface is the logo",
+   "cluster": "brand",
+   "intent": "Typographic identity systems: licensing realities, custom vs retail type math, pairing for product surfaces, and building distinctiveness with letterforms alone.",
+   "keywords": [
+    "brand typography",
+    "custom typefaces",
+    "typographic identity",
+    "font licensing brand"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "brand-guidelines-living",
+   "title": "Kill the brand PDF: living guidelines that get used",
+   "cluster": "brand",
+   "intent": "Why guideline PDFs rot and what replaces them: guideline sites with do/don't pattern libraries, token downloads, versioning, and usage analytics for brand governance.",
+   "keywords": [
+    "brand guidelines website",
+    "living brand guidelines",
+    "brand portal",
+    "brand governance"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "technical-seo-checklist-2026",
+   "title": "The technical SEO checklist we run on every build",
+   "cluster": "growth",
+   "intent": "Our pre-launch technical SEO sweep: crawlability, canonicals, schema, sitemaps, pagination, JS rendering risks, vitals. Opinionated and practical, as a copy-paste checklist.",
+   "keywords": [
+    "technical seo checklist",
+    "seo audit",
+    "site launch seo",
+    "core web vitals seo"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "programmatic-seo-ethics",
+   "title": "Programmatic SEO without polluting the web",
+   "cluster": "growth",
+   "intent": "When programmatic pages earn their indexation: data-backed templates, uniqueness thresholds, internal linking architecture, and the quality bar that survives Google updates.",
+   "keywords": [
+    "programmatic seo",
+    "seo at scale",
+    "template pages seo",
+    "content automation"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "content-clusters-strategy",
+   "title": "Content clusters that compound: planning in public",
+   "cluster": "growth",
+   "intent": "How we plan topic clusters for studio clients: pillar economics, keyword-to-intent mapping, internal link graphs, refresh cadence, and the spreadsheet template structure.",
+   "keywords": [
+    "content cluster strategy",
+    "topic clusters seo",
+    "content planning",
+    "pillar pages"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "cro-experiment-design",
+   "title": "Designing CRO experiments you can believe",
+   "cluster": "growth",
+   "intent": "Hypothesis quality, power and duration honesty, avoiding peeking, change isolation vs big-bang redesigns, and documenting learnings so the program compounds.",
+   "keywords": [
+    "cro experiment design",
+    "ab testing statistics",
+    "conversion research",
+    "experimentation program"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "attribution-models-honest",
+   "title": "Attribution that admits what it doesn't know",
+   "cluster": "growth",
+   "intent": "A humane guide to attribution limits: model taxonomy, dark social acceptance, self-reported attribution fields, geo holdouts, and decision-making without false precision.",
+   "keywords": [
+    "marketing attribution",
+    "attribution models",
+    "marketing measurement",
+    "dark social"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lifecycle-email-architecture",
+   "title": "Lifecycle email: the six flows every product needs",
+   "cluster": "growth",
+   "intent": "The core lifecycle flows (welcome, activation, usage, renewal, winback, referral) with trigger logic, copy principles, and measurement setup — channel-agnostic advice.",
+   "keywords": [
+    "lifecycle email marketing",
+    "email flows",
+    "customer lifecycle emails",
+    "retention email"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "landing-page-testing-program",
+   "title": "Landing page testing: velocity over genius",
+   "cluster": "growth",
+   "intent": "Building a landing page experiment cadence: message-match testing, structural variants, when to test big swings, and the backlog scoring model we use with retainer clients.",
+   "keywords": [
+    "landing page testing",
+    "cro program",
+    "ab testing landing pages",
+    "experiment velocity"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "analytics-governance",
+   "title": "Analytics governance: tracking plans before tools",
+   "cluster": "growth",
+   "intent": "Why analytics rots and the fix: event naming grammar, ownership, QA rituals, schema registries, and the monthly data hygiene hour that keeps dashboards trusted.",
+   "keywords": [
+    "analytics governance",
+    "tracking plan",
+    "event taxonomy",
+    "data quality marketing"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "schema-markup-playbook",
+   "title": "Schema markup that actually moves the needle",
+   "cluster": "growth",
+   "intent": "Structured data pragmatically: which types earn rich results in 2026, validation workflow, JSON-LD hygiene, and the schema we add to every client build by default.",
+   "keywords": [
+    "schema markup guide",
+    "structured data seo",
+    "json-ld best practices",
+    "rich results"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "site-migration-seo",
+   "title": "Site migrations that don't tank organic traffic",
+   "cluster": "growth",
+   "intent": "The migration runbook: redirect mapping at scale, pre/post crawl comparisons, analytics continuity, rollback triggers, and the 30-day monitoring plan. Based on fictional client recoveries.",
+   "keywords": [
+    "site migration seo",
+    "website relaunch seo",
+    "redirect mapping",
+    "seo migration checklist"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "newsletter-growth-engine",
+   "title": "Newsletters as a growth engine, not an afterthought",
+   "cluster": "growth",
+   "intent": "Building a newsletter worth subscribing to: promise design, issue architecture, growth loops from content, referral mechanics, and cadence math.",
+   "keywords": [
+    "newsletter growth",
+    "email newsletter strategy",
+    "newsletter design",
+    "owned audience"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "paid-organic-balance",
+   "title": "Paid vs organic: an honest budget conversation",
+   "cluster": "growth",
+   "intent": "When paid accelerates learning vs rents traffic: CAC sanity math, payback windows, creative testing on paid informing organic, and the handoff points between channels.",
+   "keywords": [
+    "paid vs organic marketing",
+    "marketing budget allocation",
+    "cac payback",
+    "channel strategy"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "conversion-copywriting",
+   "title": "Conversion copywriting: clarity beats clever",
+   "cluster": "growth",
+   "intent": "The copy layer of CRO: message hierarchy from customer research, objection mapping, headline frameworks that aren't formulas, and testing copy without twelve variants.",
+   "keywords": [
+    "conversion copywriting",
+    "landing page copy",
+    "value proposition writing",
+    "message testing"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "funnel-metrics-that-matter",
+   "title": "Funnel metrics: measure the movement, not the moment",
+   "cluster": "growth",
+   "intent": "Designing funnels that inform: stage definitions across teams, velocity metrics, cohort views over snapshots, and the weekly funnel review format that finds the constraint.",
+   "keywords": [
+    "funnel metrics",
+    "conversion funnel analysis",
+    "saas metrics",
+    "growth dashboards"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "local-seo-hospitality",
+   "title": "Local SEO for venues: filling tables search by search",
+   "cluster": "growth",
+   "intent": "Local pack fundamentals for restaurants and venues: profile optimisation, menu and event schema, review rituals, and location pages that don't read like doorway pages.",
+   "keywords": [
+    "local seo restaurants",
+    "google business profile optimization",
+    "hospitality seo",
+    "local search"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "content-ops-editorial-calendar",
+   "title": "Content ops: the editorial calendar that survives contact",
+   "cluster": "growth",
+   "intent": "Editorial operations for small teams: ideation-to-publish SLAs, briefs that prevent rewrites, refresh loops, and the capacity math that keeps quality non-negotiable.",
+   "keywords": [
+    "content operations",
+    "editorial calendar",
+    "content workflow",
+    "content team process"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "shipping-llm-features",
+   "title": "Shipping LLM features: a production checklist",
+   "cluster": "ai",
+   "intent": "The studio's pre-launch checklist for LLM features: evals, traces, cost ceilings, fallbacks, user feedback loops, and the metrics that tell you quality is drifting.",
+   "keywords": [
+    "llm features production",
+    "ai product checklist",
+    "llm observability",
+    "shipping ai features"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "llm-evals-framework",
+   "title": "Evals before features: how we measure LLM quality",
+   "cluster": "ai",
+   "intent": "Building evaluation harnesses: golden datasets, rubric graders, human review lanes, regression tracking per release, and presenting quality to non-ML stakeholders.",
+   "keywords": [
+    "llm evaluation",
+    "ai evals",
+    "golden datasets",
+    "llm quality metrics"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "rag-pitfalls-production",
+   "title": "RAG pitfalls we hit so you don't have to",
+   "cluster": "ai",
+   "intent": "Retrieval in production: chunking trade-offs, hybrid search, citation integrity, knowledge freshness ops, and the eval failures that taught us each lesson.",
+   "keywords": [
+    "rag pitfalls",
+    "retrieval augmented generation",
+    "vector search production",
+    "rag evaluation"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "agent-ux-patterns",
+   "title": "Agent UX: designing for delegation, not magic",
+   "cluster": "ai",
+   "intent": "Interface patterns for agentic features: scope setting, progress visibility, undo and checkpoints, interruption graceful-ness, and earning autonomy incrementally.",
+   "keywords": [
+    "ai agent ux",
+    "agent interface design",
+    "human ai interaction",
+    "agentic design patterns"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "streaming-ux-patterns",
+   "title": "Streaming UX: making latency feel like thought",
+   "cluster": "ai",
+   "intent": "Designing for token streaming: skeleton-to-stream choreography, citation reveal timing, cancellation honesty, error recovery mid-stream, and perceived-performance numbers.",
+   "keywords": [
+    "streaming ui design",
+    "llm chat ux",
+    "token streaming interface",
+    "ai latency design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "prompt-design-systems",
+   "title": "Prompt libraries are a design systemToo",
+   "cluster": "ai",
+   "intent": "Treating prompts as managed system assets: structure, versioning, test coverage, shared vocabularies, and the anti-pattern of prompts scattered through codebases.",
+   "keywords": [
+    "prompt engineering systems",
+    "prompt library",
+    "prompt versioning",
+    "system prompts design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ai-brand-voice-guardrails",
+   "title": "Keeping AI output on-brand: voice guardrails that hold",
+   "cluster": "ai",
+   "intent": "How brand voice survives generation: voice charts as system prompts, style evals, example banks, human review lanes, and designing the fallback when output drifts.",
+   "keywords": [
+    "ai brand voice",
+    "llm tone of voice",
+    "ai content guardrails",
+    "on-brand ai writing"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "llm-cost-engineering",
+   "title": "Cost engineering for LLM features",
+   "cluster": "ai",
+   "intent": "The discipline of unit economics for AI features: model routing, caching layers, context trimming, batch APIs, and dashboards that translate tokens into dollars per user.",
+   "keywords": [
+    "llm cost optimization",
+    "ai unit economics",
+    "model routing",
+    "llm caching"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ai-trust-design",
+   "title": "Designing AI features users can trust",
+   "cluster": "ai",
+   "intent": "Trust as an interface property: citations and provenance, confidence communication, correction affordances, honest capability statements, and measuring trust over time.",
+   "keywords": [
+    "ai trust design",
+    "responsible ai ux",
+    "ai transparency design",
+    "confidence ui"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "fine-tuning-vs-rag",
+   "title": "Fine-tuning vs RAG vs prompt: a decision guide",
+   "cluster": "ai",
+   "intent": "When each technique earns its complexity: cost curves, data requirements, iteration speed, maintenance burden — with a decision tree from fictional client engagements.",
+   "keywords": [
+    "fine tuning vs rag",
+    "llm architecture decisions",
+    "when to fine tune",
+    "prompt engineering strategy"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ai-feature-analytics",
+   "title": "Analytics for AI features: what to measure",
+   "cluster": "ai",
+   "intent": "Instrumentation for AI features: acceptance rates, correction signals, task-completion vs chat volume, cost and quality overlays, and the weekly AI quality review ritual.",
+   "keywords": [
+    "ai analytics",
+    "llm metrics",
+    "ai feature instrumentation",
+    "copilot metrics"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "responsible-ai-review",
+   "title": "Our responsible-AI review, in the open",
+   "cluster": "ai",
+   "intent": "The studio's AI review process published: risk taxonomy, red-team scripts, disclosure patterns, data handling checklists, and how we say no to features.",
+   "keywords": [
+    "responsible ai process",
+    "ai risk assessment",
+    "ai ethics design",
+    "ai governance"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ai-assistant-onboarding",
+   "title": "Onboarding users to an AI assistant",
+   "cluster": "ai",
+   "intent": "First-run design for copilots: capability discovery without homework, starter prompts as teaching, mental-model calibration, and measuring whether onboarding prevents abandonment.",
+   "keywords": [
+    "ai onboarding ux",
+    "copilot onboarding",
+    "ai feature adoption",
+    "assistant first run"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "multimodal-ux-design",
+   "title": "Multimodal interfaces: beyond the chat box",
+   "cluster": "ai",
+   "intent": "Designing AI interfaces that use the right modality: voice, image, structured output, inline suggestions — when chat is wrong and what to build instead.",
+   "keywords": [
+    "multimodal ai ux",
+    "voice ui design",
+    "ai interface patterns",
+    "beyond chat ui"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "headless-commerce-tradeoffs",
+   "title": "Headless commerce: the honest trade-offs",
+   "cluster": "ecommerce",
+   "intent": "When headless earns its complexity: team topology requirements, total cost of ownership, performance ceilings, and the scenarios where a tuned theme wins. Decision scorecard.",
+   "keywords": [
+    "headless commerce",
+    "composable commerce",
+    "shopify headless",
+    "ecommerce architecture"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "pdp-design-conversion",
+   "title": "PDP design: the page that pays for everything",
+   "cluster": "ecommerce",
+   "intent": "Product detail page anatomy for conversion: image sequence logic, buy-box hierarchy, review integration, delivery honesty, and the mobile-thumb ergonomics that matter.",
+   "keywords": [
+    "product page design",
+    "pdp optimization",
+    "ecommerce conversion",
+    "product detail page"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "checkout-friction-audit",
+   "title": "The checkout friction audit: 40 checks",
+   "cluster": "ecommerce",
+   "intent": "Our checkout audit instrument: field count math, wallet placement routine, error recovery, address lookup integrity, trust proximity — as a checklist product teams can run today.",
+   "keywords": [
+    "checkout optimization",
+    "checkout friction",
+    "ecommerce checkout ux",
+    "cart abandonment"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "subscription-ux-design",
+   "title": "Subscription UX that retains without trapping",
+   "cluster": "ecommerce",
+   "intent": "Ethical subscription design: skip/pause affordances, dosage guidance as retention, honest renewal reminders, cancellation dignity — and why it beats dark patterns on LTV.",
+   "keywords": [
+    "subscription ux",
+    "subscribe and save design",
+    "retention design",
+    "churn prevention"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "merchandising-digital-shelves",
+   "title": "Digital merchandising: shelves, not search results",
+   "cluster": "ecommerce",
+   "intent": "PLP and collection page craft: sequencing strategy, badges with meaning, photography rhythm, faceting that matches mental models, and promo slots that don't cheapen.",
+   "keywords": [
+    "ecommerce merchandising",
+    "collection page design",
+    "plp optimization",
+    "product listing ux"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "cart-design-patterns",
+   "title": "The cart is a negotiation, not a spreadsheet",
+   "cluster": "ecommerce",
+   "intent": "Cart UX that closes: drawer vs page economics, quantity and gift options, threshold cues done honestly, saving-for-later rituals, and mobile-first cart anatomy.",
+   "keywords": [
+    "cart page design",
+    "shopping cart ux",
+    "cart drawer design",
+    "ecommerce cart optimization"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "site-speed-revenue-link",
+   "title": "Site speed is a merchandising decision",
+   "cluster": "ecommerce",
+   "intent": "Translating milliseconds into margin: revenue attribution models for performance, where to spend speed budget on commerce templates, and the business case template for engineers.",
+   "keywords": [
+    "ecommerce performance",
+    "site speed conversion",
+    "web vitals ecommerce",
+    "performance roi"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ecommerce-search-design",
+   "title": "Search on storefronts: the shopper's shortcut",
+   "cluster": "ecommerce",
+   "intent": "Storefront search design: instant results composition, synonym curation, zero-results recovery, promoting without skewing, and measuring search exit rates.",
+   "keywords": [
+    "ecommerce site search",
+    "storefront search ux",
+    "instant search design",
+    "zero results page"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "returns-ux-design",
+   "title": "Returns UX: the loyalty moment hiding in plain sight",
+   "cluster": "ecommerce",
+   "intent": "Returns flows that build trust: self-serve design, exchange-over-refund nudges done honestly, sizing feedback loops into PDPs, and returns data as merchandising intel.",
+   "keywords": [
+    "returns ux",
+    "ecommerce returns design",
+    "exchange experience",
+    "reverse logistics ux"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "loyalty-program-design",
+   "title": "Loyalty programs people don't resent",
+   "cluster": "ecommerce",
+   "intent": "Loyalty design beyond points: tier psychology without manipulation, earned-status cues, program discovery UX, and measuring whether loyalty actually changes behaviour.",
+   "keywords": [
+    "loyalty program design",
+    "loyalty ux",
+    "rewards program ux",
+    "customer retention design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "gift-buying-ux",
+   "title": "Designing for the gift buyer, not just the fan",
+   "cluster": "ecommerce",
+   "intent": "Gift flows as a distinct journey: gift finders, recipient-safe packaging options, delivery-date honesty, card messages as craft, and the Q4 readiness checklist.",
+   "keywords": [
+    "gift buying ux",
+    "gifting ecommerce",
+    "gift finder design",
+    "holiday ecommerce"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "writing-a-great-brief",
+   "title": "How to write a project brief that gets better proposals",
+   "cluster": "playbooks",
+   "intent": "A buyer-side playbook: problem over solution, constraints that help, budget honesty, evaluation criteria, and the annex of context that separates good proposals from guesses. Includes a template outline.",
+   "keywords": [
+    "project brief template",
+    "agency brief",
+    "rfp design project",
+    "briefing agencies"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "choosing-an-agency",
+   "title": "Choosing an agency: signals over showreels",
+   "cluster": "playbooks",
+   "intent": "How buyers should evaluate studios: process evidence, who actually does the work, reference questions that reveal truth, pricing structure red flags, chemistry-call design.",
+   "keywords": [
+    "how to choose an agency",
+    "agency evaluation",
+    "hiring a design studio",
+    "agency selection"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "estimating-software-projects",
+   "title": "Estimating: how studios price and how to read a quote",
+   "cluster": "playbooks",
+   "intent": "Demystifying estimation: scope decomposition, risk loading, fixed vs retainer math, what variation clauses mean, and questions buyers should ask about any number.",
+   "keywords": [
+    "software project estimation",
+    "agency pricing models",
+    "fixed price vs time materials",
+    "project quote"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "discovery-sprint-playbook",
+   "title": "Discovery sprints: two weeks that de-risk six months",
+   "cluster": "playbooks",
+   "intent": "Our discovery sprint format published: inputs, activities, the decision memo output, who must attend, and when discovery is a stall dressed as diligence.",
+   "keywords": [
+    "discovery sprint",
+    "product discovery",
+    "discovery phase",
+    "project kickoff"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "design-handover-done-right",
+   "title": "Handovers that don't decay: the living handover playbook",
+   "cluster": "playbooks",
+   "intent": "Agency-to-team handovers done right: documentation that gets used, tokens and repos transfer, pairing windows, the 30-60-90 support taper, and measuring handover success.",
+   "keywords": [
+    "agency handover",
+    "design handoff process",
+    "project documentation",
+    "knowledge transfer"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "working-remote-agency",
+   "title": "Getting the most from a remote studio",
+   "cluster": "playbooks",
+   "intent": "The buyer's guide to distributed engagements: async rituals that work, time zone overlap design, demo cadence, decision turnaround, and security/admin hygiene.",
+   "keywords": [
+    "remote agency collaboration",
+    "working with distributed teams",
+    "async design process",
+    "client collaboration"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "launch-week-checklist",
+   "title": "Launch week: the checklist we run for every site",
+   "cluster": "playbooks",
+   "intent": "The complete pre/post launch runbook: redirects, DNS, analytics continuity, stakeholder comms, monitoring, rollback criteria, and day-two priorities nobody plans for.",
+   "keywords": [
+    "website launch checklist",
+    "site launch plan",
+    "go live checklist",
+    "launch runbook"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "content-handover-workflow",
+   "title": "Content handover: getting real words before design ends",
+   "cluster": "playbooks",
+   "intent": "The workflow that gets final copy before launch week: content inventory formats, voice alignment, review cycles that don't sprawl, and the editor-phase checklist.",
+   "keywords": [
+    "content workflow website",
+    "copy handoff",
+    "content production process",
+    "web content plan"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "accessibility-procurement",
+   "title": "Buying accessible software: a procurement playbook",
+   "cluster": "playbooks",
+   "intent": "For procurement and product leaders: writing accessibility into briefs, evaluating claims beyond VPATs, acceptance criteria that bite, and maintaining standards post-launch.",
+   "keywords": [
+    "accessibility procurement",
+    "wcag requirements rfp",
+    "buying accessible software",
+    "a11y compliance"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "retainer-vs-project",
+   "title": "Retainer or project? An honest decision guide",
+   "cluster": "playbooks",
+   "intent": "When each model wins: risk profiles, budget shapes, relationship maturity, switching costs, and the hybrid shapes that work. Includes the questions to ask before signing either.",
+   "keywords": [
+    "agency retainer vs project",
+    "design retainer",
+    "engagement models agency",
+    "hiring agency model"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "stakeholder-alignment-design",
+   "title": "Aligning stakeholders without design by committee",
+   "cluster": "playbooks",
+   "intent": "Keeping decisions fast on the client side: decision-maker mapping, demo-based alignment, the 'input vs decision' distinction, and rescuing projects stalled in review loops.",
+   "keywords": [
+    "stakeholder management design",
+    "design approval process",
+    "client alignment",
+    "decision making projects"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  }
+ ]
 }
