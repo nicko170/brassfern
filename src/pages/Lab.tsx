@@ -1,7 +1,7 @@
 import { Suspense, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { Seo } from '../lib/head'
-import { demos, getDemo } from '../lib/demos'
+import { demos, getDemo, type DemoEntry } from '../lib/demos'
 import { breadcrumbLd } from '../lib/jsonld'
 import { DemoCard } from '../components/Cards'
 import Reveal from '../components/Reveal'
@@ -23,18 +23,54 @@ export function LabIndex() {
           Every case study deserves proof. These are real, working mini-products built to production standards — each with its own art direction, its own fictional client, and its own case study.
         </p>
       </header>
+      {demos.length > 0 && (
+        <section className="container" style={{ marginTop: 'var(--space-6)' }}>
+          <LabFeature demo={demos[0]} />
+        </section>
+      )}
       <section className="section container">
-        {demos.length > 0 ? (
+        {demos.length > 1 ? (
           <div className="card-grid card-grid--3">
-            {demos.map((d) => (
+            {demos.slice(1).map((d) => (
               <DemoCard key={d.slug} d={d} />
             ))}
           </div>
+        ) : demos.length === 1 ? (
+          <p className="lead">More demos join the bench each sprint — this is the first of many.</p>
         ) : (
           <p className="lead">The first demos are on the bench. Check back after the next Friday demo.</p>
         )}
       </section>
     </>
+  )
+}
+
+/** Big night-band feature for the newest demo in the Lab. */
+function LabFeature({ demo }: { demo: DemoEntry }) {
+  return (
+    <div className="night lab-feature">
+      <div className="lab-feature__copy">
+        <Reveal className="overline overline--night">Latest from the bench</Reveal>
+        <h2 className="display h-2" style={{ marginTop: '1rem' }}>{demo.title}</h2>
+        <p className="lab-feature__desc">{demo.description}</p>
+        <p className="mono" style={{ color: 'var(--night-mute)', fontSize: 'var(--fs-micro)', letterSpacing: '0.14em', textTransform: 'uppercase' }}>
+          {demo.client} · {demo.tags.slice(0, 4).join(' · ')}
+        </p>
+        <p style={{ marginTop: 'var(--space-5)', display: 'flex', gap: 'var(--space-4)', flexWrap: 'wrap' }}>
+          <Link to={`/lab/${demo.slug}`} className="btn btn--brass">
+            Open the demo <span className="arrow" aria-hidden>→</span>
+          </Link>
+          {demo.caseStudy && (
+            <Link to={`/work/${demo.caseStudy}`} className="link-line" style={{ color: 'var(--brass-hi)', alignSelf: 'center' }}>
+              Read the case study
+            </Link>
+          )}
+        </p>
+      </div>
+      <Link to={`/lab/${demo.slug}`} className="lab-feature__art" aria-hidden tabIndex={-1}>
+        <span>{demo.client.slice(0, 2).toUpperCase()}</span>
+      </Link>
+    </div>
   )
 }
 

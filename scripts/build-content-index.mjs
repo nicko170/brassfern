@@ -17,6 +17,43 @@ const OUT = path.join(OUT_DIR, 'content.ts')
 
 const CLUSTERS = ['web-design', 'engineering', 'product', 'brand', 'growth', 'ai', 'ecommerce', 'playbooks']
 
+// Canonical author roster, parsed from src/data/people.ts (single source of truth).
+const peopleSrc = fs.readFileSync(path.join(ROOT, 'src/data/people.ts'), 'utf8')
+const AUTHOR_ROSTER = [...peopleSrc.matchAll(/name:\s*'([^']+)'/g)].map((m) => m[1])
+if (AUTHOR_ROSTER.length === 0) {
+  console.error('✖ Could not parse author roster from src/data/people.ts')
+  process.exit(1)
+}
+
+// Writers sometimes add a job title ("June Okafor, Design Director") or invent
+// near-roster names. Normalise to the canonical name so the build survives.
+const AUTHOR_ALIASES = {
+  'june okonkwo': 'June Okafor',
+  'priya raghunathan': 'Priya Nair',
+  'priya raghavan': 'Priya Nair',
+  'imogen hart': 'June Okafor',
+  'marisol vane': 'Leonie Marsh',
+  'felix ashwood': 'Felix Brandt',
+  'felix marlowe': 'Felix Brandt',
+  'theo marchetti': 'Tomás Reyes',
+  'rafe delacroix': 'Felix Brandt',
+  'wren callaghan': 'Priya Nair',
+}
+
+function canonicalAuthor(raw, file) {
+  if (!raw) return raw
+  // strip any ", Job Title" suffix
+  const base = String(raw).split(',')[0].replace(/^"|"$/g, '').trim()
+  if (AUTHOR_ROSTER.includes(base)) return base
+  const alias = AUTHOR_ALIASES[base.toLowerCase()]
+  if (alias) {
+    warnings.push(`${file}: author "${raw}" normalised to "${alias}"`)
+    return alias
+  }
+  fatals.push(`${file}: author "${raw}" is not on the team roster — use a name from src/data/people.ts exactly (no job titles)`)
+  return base
+}
+
 const ARTICLE_REQUIRED = ['title', 'description', 'slug', 'cluster', 'tags', 'date', 'author', 'keywords', 'readingTime']
 const WORK_REQUIRED = ['title', 'description', 'slug', 'tags', 'date', 'author', 'keywords', 'readingTime', 'client', 'industry', 'services', 'year', 'stack']
 
@@ -42,6 +79,7 @@ function cleanMeta(data, file, cluster) {
   if (typeof m.date !== 'string') m.date = m.date instanceof Date ? m.date.toISOString().slice(0, 10) : String(m.date ?? '')
   if (typeof m.readingTime !== 'number') m.readingTime = Number(m.readingTime) || 0
   if (m.year) m.year = Number(m.year)
+  if (m.author) m.author = canonicalAuthor(m.author, file)
   return m
 }
 
@@ -61,6 +99,9 @@ function validate(meta, required, file) {
   const fileSlug = path.basename(file, '.md')
   if (meta.slug && meta.slug !== fileSlug) {
     warnings.push(`${file}: frontmatter slug "${meta.slug}" != filename "${fileSlug}" (filename wins in URLs)`)
+  }
+  if (meta.author && !AUTHOR_ROSTER.includes(String(meta.author))) {
+    fatals.push(`${file}: author "${meta.author}" is not on the team roster after normalisation — fix frontmatter`)
   }
 }
 

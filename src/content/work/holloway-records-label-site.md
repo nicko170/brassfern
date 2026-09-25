@@ -5,7 +5,7 @@ slug: holloway-records-label-site
 cluster: work
 tags: ["case study", "music", "editorial design", "audio player", "membership"]
 date: 2024-11-08
-author: Felix Marlowe
+author: Felix Brandt
 keywords: ["record label website case study", "music ux", "audio player design", "artist pages"]
 readingTime: 8 min read
 client: Holloway Records

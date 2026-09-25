@@ -9,7 +9,7 @@ tags:
   - UX design
   - Accessibility
 date: 2024-11-05
-author: "Priya Raghunathan, Principal Strategist"
+author: Priya Nair
 keywords:
   - skincare ecommerce case study
   - ingredient transparency

@@ -5,7 +5,7 @@ slug: meridian-climate-data-explorer
 cluster: work
 tags: ["case study", "climate", "data visualisation", "scrollytelling", "open data"]
 date: 2026-03-02
-author: Theo Marchetti
+author: Tomás Reyes
 keywords: ["climate data visualisation case study", "scrollytelling", "data ethics", "open data"]
 readingTime: 9 min read
 client: Meridian Climate

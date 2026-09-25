@@ -8,7 +8,7 @@ tags:
   - Interaction design
   - Accessibility
 date: 2025-06-03
-author: "June Okonkwo, Design Director"
+author: June Okafor
 keywords:
   - web animation design
   - motion design principles

@@ -5,7 +5,7 @@ slug: fernleigh-wines-dtc-storefront
 cluster: work
 tags: [e-commerce, wine, subscriptions, editorial design, headless commerce]
 date: 2025-02-19
-author: Felix Ashwood
+author: Felix Brandt
 keywords: [wine ecommerce case study, headless storefront, subscription design, dtc wine, fernleigh wines]
 readingTime: 7
 client: Fernleigh Wines

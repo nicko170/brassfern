@@ -9,7 +9,7 @@ tags:
   - Navigation
   - UX debt
 date: 2026-05-12
-author: "Aiko Tanaka, Senior Product Designer"
+author: Aiko Tanaka
 keywords:
   - settings page design
   - information architecture

@@ -9,7 +9,7 @@ tags:
   - E-commerce
   - Local business
 date: 2025-08-21
-author: "June Okonkwo, Design Director"
+author: June Okafor
 keywords:
   - retail digital transformation case study
   - heritage brand

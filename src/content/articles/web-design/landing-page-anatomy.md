@@ -8,7 +8,7 @@ tags:
   - Web design
   - Copywriting
 date: 2024-11-05
-author: "Priya Raghunathan, Principal Strategist"
+author: Priya Nair
 keywords:
   - landing page design
   - conversion design

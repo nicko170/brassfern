@@ -25,7 +25,11 @@ function WordmarkWall() {
 }
 
 export default function Home() {
-  const featured = caseStudies.slice(0, 3)
+  // Prefer case studies with real hero art for the front-page reel.
+  const featured = caseStudies
+    .filter((cs) => cs.heroImage)
+    .concat(caseStudies.filter((cs) => !cs.heroImage))
+    .slice(0, 3)
   const latest = articles.slice(0, 3)
   const featuredTestimonials = testimonials.slice(0, 3)
 

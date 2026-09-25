@@ -5,7 +5,7 @@ slug: osprey-outdoor-configurator-launch
 cluster: work
 tags: [3d configurator, e-commerce, webgl, performance, product customisation]
 date: 2025-08-27
-author: Rafe Delacroix
+author: Felix Brandt
 keywords: [3d configurator case study, product customisation, react three fiber, ecommerce ux, osprey outdoor]
 readingTime: 8
 heroImage: /images/work/osprey-outdoor-configurator-launch.jpg

@@ -1,6 +1,6 @@
 import { Link, useParams } from 'react-router-dom'
 import { Seo } from '../lib/head'
-import { byTag, formatDate, getArticle, relatedArticles } from '../lib/content'
+import { articles, byTag, formatDate, getArticle, relatedArticles } from '../lib/content'
 import { articleLd, breadcrumbLd } from '../lib/jsonld'
 import { CLUSTER_LABELS, CLUSTERS, type Cluster } from '../lib/types'
 import { absoluteUrl, withBase } from '../lib/base'
@@ -14,6 +14,9 @@ export default function Article() {
   const meta = cluster && slug && CLUSTERS.includes(cluster as Cluster) ? getArticle(cluster, slug) : undefined
   if (!meta) return <NotFound />
   const related = relatedArticles(meta)
+  const idx = articles.findIndex((a) => a.cluster === meta.cluster && a.slug === meta.slug)
+  const newer = idx > 0 ? articles[idx - 1] : undefined
+  const older = idx >= 0 && idx < articles.length - 1 ? articles[idx + 1] : undefined
 
   return (
     <>
@@ -54,11 +57,31 @@ export default function Article() {
           <Markdown kind="article" slug={meta.slug} cluster={meta.cluster} />
         </div>
         <div className="container">
-          <div className="tag-row" style={{ marginBlock: 'var(--space-5) var(--space-7)' }}>
+          <div className="tag-row" style={{ marginBlock: 'var(--space-5) var(--space-6)' }}>
             {meta.tags.map((t) => (
               <Link key={t} to={`/journal/tag/${encodeURIComponent(t)}`} className="tag">{t}</Link>
             ))}
           </div>
+          {(newer || older) && (
+            <nav className="article-nav" aria-label="More from the journal">
+              {older ? (
+                <Link to={`/journal/${older.cluster}/${older.slug}`} className="article-nav__item">
+                  <span className="article-nav__label mono">← Older</span>
+                  <span className="article-nav__title">{older.title}</span>
+                </Link>
+              ) : (
+                <span />
+              )}
+              {newer ? (
+                <Link to={`/journal/${newer.cluster}/${newer.slug}`} className="article-nav__item article-nav__item--next">
+                  <span className="article-nav__label mono">Newer →</span>
+                  <span className="article-nav__title">{newer.title}</span>
+                </Link>
+              ) : (
+                <span />
+              )}
+            </nav>
+          )}
         </div>
         {related.length > 0 && (
           <section className="section container" style={{ paddingTop: 0 }}>

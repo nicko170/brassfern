@@ -9,7 +9,7 @@ tags:
   - UX design
   - Content strategy
 date: 2025-04-17
-author: "Marisol Vane, Head of Content"
+author: Leonie Marsh
 keywords:
   - travel booking case study
   - itinerary ux

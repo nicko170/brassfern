@@ -30,12 +30,14 @@
 - Case studies: `src/content/work/<slug>.md` (cluster: `work`, plus client,
   industry, services[], year, stack[], optional demo).
 - Frontmatter (all required): title, description (120–160 chars), slug, cluster,
-  tags[], date (ISO, 2024–2026), author (must be a team member, see
-  `src/data/people.ts`), keywords[], readingTime; optional heroImage (path under
+  tags[], date (ISO, 2024–2026), author (**a name from `src/data/people.ts`
+  exactly — the build enforces this; title suffixes are stripped, unknown names
+  fail**), keywords[], readingTime; optional heroImage (path under
   `/images/…`), heroAlt.
 - `npm run predev`/`prebuild` regenerates `src/generated/content.ts` (metas only)
-  and **validates**: missing required fields and duplicate slugs fail the build;
-  description length and word count warn.
+  and **validates** (author roster, required fields, duplicate slugs fail the
+  build); `scripts/ensure-demo-css.mjs` stubs demo CSS missing from in-flight
+  demo folders so builds stay green.
 - Markdown renderer is custom (`src/lib/markdown.ts`): headings, lists, quotes,
   code fences, tables, links, images. Internal links are base-prefixed
   automatically — write them as root-relative (`/services/growth`), never absolute.

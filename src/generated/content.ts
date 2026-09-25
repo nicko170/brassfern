@@ -3,6 +3,144 @@ import type { ArticleMeta, CaseStudyMeta } from '../lib/types'
 
 export const articleIndex: ArticleMeta[] = [
   {
+    "title": "Voice charts: making tone teachable",
+    "description": "Adjective lists don't teach tone; charts do. How we build voice guidelines that survive handover: axis sliders, rewrite tables, error-state voice and real-copy audits.",
+    "slug": "brand-voice-charts",
+    "cluster": "brand",
+    "tags": [
+      "brand voice",
+      "tone of voice",
+      "ux writing",
+      "copy style guide",
+      "verbal identity"
+    ],
+    "date": "2025-08-14",
+    "author": "Leonie Marsh",
+    "keywords": [
+      "brand voice guidelines",
+      "tone of voice",
+      "ux writing voice",
+      "copy style guide"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "Design logo systems, not logos",
+    "description": "A logo is judged at 16 pixels and on an invoice footer, not the presentation wall. How we build tiered identity systems — marks, motion, rules — that survive.",
+    "slug": "logo-systems-not-logos",
+    "cluster": "brand",
+    "tags": [
+      "logo design",
+      "brand identity",
+      "design systems",
+      "responsive branding",
+      "visual identity"
+    ],
+    "date": "2025-04-23",
+    "author": "Felix Brandt",
+    "keywords": [
+      "logo system design",
+      "responsive logos",
+      "brand mark hierarchy",
+      "identity design",
+      "logo tiers"
+    ],
+    "readingTime": 9,
+    "heroImage": "/images/articles/brand/logo-systems-not-logos.jpg",
+    "heroAlt": "Overhead flat lay of letterpress-printed identity specimens: cardstock tiles sized from large to tiny, each bearing an abstract geometric mark in fern green or brass foil on cream paper."
+  },
+  {
+    "title": "The motion layer of brand identity",
+    "description": "Easing is a signature, transitions are grammar. How to build a kinetic identity system, export it as motion tokens engineers actually use, and survive prefers-reduced-motion.",
+    "slug": "motion-identity-design",
+    "cluster": "brand",
+    "tags": [
+      "motion design",
+      "kinetic identity",
+      "brand systems",
+      "motion tokens",
+      "design engineering"
+    ],
+    "date": "2025-04-02",
+    "author": "Hannah Yeo",
+    "keywords": [
+      "motion brand identity",
+      "kinetic identity",
+      "brand animation guidelines",
+      "motion tokens"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "Naming: our field guide from brainstorm to trademark check",
+    "description": "Naming is a funnel, not a lightning strike. Our studio workflow: brief axes, generation volumes, screening and pronunciation tests, and committee-proof presentations.",
+    "slug": "naming-process-field-guide",
+    "cluster": "brand",
+    "tags": [
+      "naming",
+      "brand strategy",
+      "naming workshop",
+      "verbal identity",
+      "trademark"
+    ],
+    "date": "2025-06-11",
+    "author": "Leonie Marsh",
+    "keywords": [
+      "naming process",
+      "brand naming",
+      "product naming guide",
+      "naming workshop",
+      "trademark screening"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Rebrand rollouts: the unglamorous crucial middle",
+    "description": "The reveal is day one of a six-month project. How to plan a rebrand rollout: asset transition maps, coexistence periods, internal enablement and honest post-launch measurement.",
+    "slug": "rebrand-rollout-plan",
+    "cluster": "brand",
+    "tags": [
+      "rebrand",
+      "brand implementation",
+      "rollout plan",
+      "project management",
+      "brand ops"
+    ],
+    "date": "2024-11-20",
+    "author": "Mara Ellison",
+    "keywords": [
+      "rebrand rollout",
+      "brand implementation",
+      "rebrand checklist",
+      "brand launch plan"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "Core Web Vitals in the field: budgets that survive sprints",
+    "description": "A practical Core Web Vitals program: LCP element archaeology, INP triage, CI-enforced budgets, and real-user monitoring on a shoestring. Recipes that work.",
+    "slug": "core-web-vitals-field-guide",
+    "cluster": "engineering",
+    "tags": [
+      "performance",
+      "core web vitals",
+      "ci budgets",
+      "observability",
+      "web standards"
+    ],
+    "date": "2025-08-07",
+    "author": "Tomás Reyes",
+    "keywords": [
+      "core web vitals",
+      "web performance",
+      "lcp optimization",
+      "inp debugging",
+      "performance budgets",
+      "web vitals ci"
+    ],
+    "readingTime": 10
+  },
+  {
     "title": "Design tokens that survive contact with engineering",
     "description": "Most token pipelines rot within a year. Here's the architecture we use at Brassfern to keep design decisions flowing from Figma to production without drift.",
     "slug": "design-tokens-that-survive-engineering",
@@ -24,6 +162,740 @@ export const articleIndex: ArticleMeta[] = [
       "css custom properties"
     ],
     "readingTime": 8
+  },
+  {
+    "title": "Attribution that admits what it doesn't know",
+    "description": "Attribution is always lying a little. Model taxonomy, dark social acceptance, self-reported fields, geo holdouts and decision-making without false precision.",
+    "slug": "attribution-models-honest",
+    "cluster": "growth",
+    "tags": [
+      "attribution",
+      "measurement",
+      "analytics",
+      "marketing strategy",
+      "experimentation"
+    ],
+    "date": "2025-02-26",
+    "author": "Priya Nair",
+    "keywords": [
+      "marketing attribution",
+      "attribution models",
+      "marketing measurement",
+      "dark social"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "Lifecycle email: the six flows every product needs",
+    "description": "Welcome, activation, usage, renewal, winback, referral — the core lifecycle email system with trigger logic, copy principles and measurement that survives audits.",
+    "slug": "lifecycle-email-architecture",
+    "cluster": "growth",
+    "tags": [
+      "lifecycle marketing",
+      "email",
+      "retention",
+      "crm",
+      "activation"
+    ],
+    "date": "2025-07-09",
+    "author": "Sam Whitfield",
+    "keywords": [
+      "lifecycle email marketing",
+      "email flows",
+      "customer lifecycle emails",
+      "retention email"
+    ],
+    "readingTime": 11
+  },
+  {
+    "title": "Programmatic SEO without polluting the web",
+    "description": "When programmatic pages earn indexation: data-backed templates, uniqueness thresholds, internal-link architecture, and a quality bar that survives core updates.",
+    "slug": "programmatic-seo-ethics",
+    "cluster": "growth",
+    "tags": [
+      "programmatic seo",
+      "content strategy",
+      "site architecture",
+      "search quality",
+      "structured data"
+    ],
+    "date": "2026-06-04",
+    "author": "Priya Nair",
+    "keywords": [
+      "programmatic seo",
+      "seo at scale",
+      "template pages seo",
+      "content automation"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "The technical SEO checklist we run on every build",
+    "description": "Our pre-launch technical SEO sweep: crawlability, canonicals, structured data, sitemaps, pagination, JS rendering traps and Core Web Vitals — copy-paste ready.",
+    "slug": "technical-seo-checklist-2026",
+    "cluster": "growth",
+    "tags": [
+      "technical seo",
+      "crawlability",
+      "structured data",
+      "launch checklist",
+      "core web vitals"
+    ],
+    "date": "2026-03-11",
+    "author": "Priya Nair",
+    "keywords": [
+      "technical seo checklist",
+      "seo audit",
+      "site launch seo",
+      "core web vitals seo"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Running an accessibility audit that leads to fixes",
+    "description": "Most accessibility audits produce a PDF and no change. Our audit format — automated sweeps, manual journeys, a severity taxonomy teams understand, and fix-forward roadmaps.",
+    "slug": "accessibility-audit-process",
+    "cluster": "product",
+    "tags": [
+      "accessibility",
+      "a11y",
+      "wcag",
+      "audit",
+      "inclusive design"
+    ],
+    "date": "2025-04-23",
+    "author": "Mara Ellison",
+    "keywords": [
+      "accessibility audit process",
+      "wcag audit",
+      "a11y remediation",
+      "accessibility testing"
+    ],
+    "readingTime": 11,
+    "heroImage": "/images/articles/product/accessibility-audit-process.jpg",
+    "heroAlt": "Editorial still-life of printed accessibility audit sheets with annotations, a brass ruler and a screen reader handset on cream paper, fern-green and brass palette."
+  },
+  {
+    "title": "Activation metrics that mean something",
+    "description": "Most activation metrics are flattering fictions. How to find the behaviour that actually predicts retention, measure time-to-value honestly, and defend it in the boardroom.",
+    "slug": "activation-metrics-honest",
+    "cluster": "product",
+    "tags": [
+      "product metrics",
+      "activation",
+      "retention",
+      "analytics",
+      "growth"
+    ],
+    "date": "2025-06-24",
+    "author": "Priya Nair",
+    "keywords": [
+      "activation metrics",
+      "product metrics",
+      "time to value",
+      "retention analytics",
+      "aha moment fallacy"
+    ],
+    "readingTime": 8
+  },
+  {
+    "title": "Dashboard design: answer first, chart second",
+    "description": "Most dashboards are chart galleries that answer nothing. The question-first method: decision inventories, alert thresholds, and the five-element view that wins.",
+    "slug": "dashboard-design-hierarchy",
+    "cluster": "product",
+    "tags": [
+      "dashboard design",
+      "data visualisation",
+      "product design",
+      "information hierarchy",
+      "analytics"
+    ],
+    "date": "2025-01-28",
+    "author": "June Okafor",
+    "keywords": [
+      "dashboard design ux",
+      "data visualization hierarchy",
+      "operational dashboards",
+      "analytics ui design",
+      "sparklines"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Data tables for people who live in them",
+    "description": "Ops and finance users live inside your tables all day. Density modes, sticky decisions, column management, honest exports and keyboard speed runs.",
+    "slug": "data-dense-tables-ux",
+    "cluster": "product",
+    "tags": [
+      "data tables",
+      "enterprise ux",
+      "dashboards",
+      "interaction design",
+      "product design"
+    ],
+    "date": "2025-08-20",
+    "author": "Dev Khatri",
+    "keywords": [
+      "data table design",
+      "enterprise table ux",
+      "spreadsheet ui patterns",
+      "data grid design",
+      "table usability"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Empty states are product marketing",
+    "description": "First-run, cleared, error and no-results states teach or lose people. Copy frameworks, illustration restraint, and measuring empty states as funnel steps.",
+    "slug": "empty-states-design",
+    "cluster": "product",
+    "tags": [
+      "empty states",
+      "ux writing",
+      "onboarding",
+      "product design",
+      "microcopy"
+    ],
+    "date": "2024-10-08",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "empty state design",
+      "ux writing",
+      "first run experience",
+      "product onboarding",
+      "no results ux"
+    ],
+    "readingTime": 8
+  },
+  {
+    "title": "Error messages that de-escalate",
+    "description": "An error message is a conversation at someone's worst moment with your product. The structure, tone rules and support hooks that make errors actually help.",
+    "slug": "error-messages-that-help",
+    "cluster": "product",
+    "tags": [
+      "ux writing",
+      "error handling",
+      "microcopy",
+      "product design",
+      "support"
+    ],
+    "date": "2025-07-09",
+    "author": "Ruby Castellanos",
+    "keywords": [
+      "error message design",
+      "ux writing errors",
+      "error handling ux",
+      "microcopy errors",
+      "error states"
+    ],
+    "readingTime": 8
+  },
+  {
+    "title": "Jobs-to-be-done interviews: our exact script",
+    "description": "Most customer interviews collect feature requests in research costumes. Our JTBD format: the timeline technique, hiring-and-firing language, and red flags.",
+    "slug": "jtbd-interviews-that-work",
+    "cluster": "product",
+    "tags": [
+      "user research",
+      "jobs to be done",
+      "product strategy",
+      "customer interviews",
+      "discovery"
+    ],
+    "date": "2025-03-11",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "jobs to be done interviews",
+      "jtbd script",
+      "user research methods",
+      "customer interviews",
+      "product discovery technique"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Notifications designed like you're not the main character",
+    "description": "Notification systems people don't mute: severity ladders, digest economics, channel choice and the anti-patterns that train users to ignore everything you send.",
+    "slug": "notification-design-respect",
+    "cluster": "product",
+    "tags": [
+      "notifications",
+      "product design",
+      "ux writing",
+      "engagement",
+      "retention"
+    ],
+    "date": "2025-08-13",
+    "author": "June Okafor",
+    "keywords": [
+      "notification ux",
+      "push notification design",
+      "alert design",
+      "notification fatigue"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "Onboarding checklists without the nag",
+    "description": "Checklists can activate users or train them to ignore your UI. Sequencing by value, dismissible design and honest progress — lessons from shipped onboarding work.",
+    "slug": "onboarding-checklist-patterns",
+    "cluster": "product",
+    "tags": [
+      "onboarding",
+      "product design",
+      "activation",
+      "ux patterns",
+      "retention"
+    ],
+    "date": "2025-03-19",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "onboarding checklist ux",
+      "product onboarding patterns",
+      "user activation design",
+      "checklist ui"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "Permission UX: roles, extras and the politics of access",
+    "description": "Role systems are where products quietly rot. RBAC patterns admins actually understand, invitation flows that convert, and audit trails designed as a kindness.",
+    "slug": "permission-ux-design",
+    "cluster": "product",
+    "tags": [
+      "permissions",
+      "rbac",
+      "enterprise ux",
+      "admin design",
+      "security ux"
+    ],
+    "date": "2025-06-04",
+    "author": "Felix Brandt",
+    "keywords": [
+      "permissions ux",
+      "rbac interface design",
+      "user roles design",
+      "admin ux"
+    ],
+    "readingTime": 11
+  },
+  {
+    "title": "What 30 pricing pages taught us about clarity",
+    "description": "A research review of SaaS pricing pages: tier naming that means something, comparison tables that aren't mazes, honest annual toggles and enterprise patterns.",
+    "slug": "pricing-page-ux-research",
+    "cluster": "product",
+    "tags": [
+      "Pricing",
+      "Conversion",
+      "SaaS",
+      "UX research"
+    ],
+    "date": "2026-04-08",
+    "author": "Priya Nair",
+    "keywords": [
+      "pricing page ux",
+      "saas pricing design",
+      "pricing tiers psychology",
+      "pricing page conversion"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Progressive disclosure for genuinely complex tools",
+    "description": "Hiding complexity without hiding power: sensible defaults as strategy, advanced modes, command palettes as the pro lane, and how to measure if disclosure works.",
+    "slug": "progressive-disclosure-complexity",
+    "cluster": "product",
+    "tags": [
+      "Interaction design",
+      "Complex UI",
+      "Power users",
+      "Product design"
+    ],
+    "date": "2026-06-09",
+    "author": "June Okafor",
+    "keywords": [
+      "progressive disclosure ux",
+      "complex ui design",
+      "command palette design",
+      "power user features"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Product search UX: from query box to answers",
+    "description": "In-app search is a product decision wearing an engineering costume: scoping, suggestions, typo tolerance, filters vs facets, and no-results states that navigate.",
+    "slug": "search-ux-product",
+    "cluster": "product",
+    "tags": [
+      "Search",
+      "Interaction design",
+      "Information retrieval",
+      "UX"
+    ],
+    "date": "2026-03-02",
+    "author": "Felix Brandt",
+    "keywords": [
+      "search ux design",
+      "site search design",
+      "faceted search",
+      "no results page"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Settings IA: where features go to be findable",
+    "description": "Settings screens are where growing products quietly drown. Grouping by user intent, search-within-settings, destructive zoning and how to migrate categories safely.",
+    "slug": "settings-information-architecture",
+    "cluster": "product",
+    "tags": [
+      "Information architecture",
+      "Product design",
+      "Navigation",
+      "UX debt"
+    ],
+    "date": "2026-05-12",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "settings page design",
+      "information architecture",
+      "settings ux",
+      "product navigation"
+    ],
+    "readingTime": 8
+  },
+  {
+    "title": "Accessibility starts in the design file",
+    "description": "Most accessibility rework is a design-file problem found too late. The annotations, contrast workflows and focus specs that stop retrofits before they start.",
+    "slug": "accessible-design-handoff",
+    "cluster": "web-design",
+    "tags": [
+      "Accessibility",
+      "Design systems",
+      "Handoff",
+      "WCAG"
+    ],
+    "date": "2026-01-27",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "accessible design process",
+      "wcag design",
+      "design handoff accessibility",
+      "inclusive design"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "How to design case study pages that win work",
+    "description": "A case study page is a sales conversation in disguise. The anatomy we use: narrative arc, proof placement, honest metrics, and a CTA that never begs.",
+    "slug": "case-study-page-design",
+    "cluster": "web-design",
+    "tags": [
+      "case studies",
+      "portfolio design",
+      "agency marketing",
+      "content design",
+      "storytelling"
+    ],
+    "date": "2024-11-08",
+    "author": "Mara Ellison",
+    "keywords": [
+      "case study design",
+      "portfolio case study",
+      "agency portfolio",
+      "work page design",
+      "case study structure"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Colour systems that survive dark mode and rebrands",
+    "description": "Literal palettes break the moment a brand shifts or dark mode ships. Here's the semantic colour architecture that has survived both — twice — on real client work.",
+    "slug": "colour-systems-dark-mode",
+    "cluster": "web-design",
+    "tags": [
+      "colour systems",
+      "dark mode",
+      "design tokens",
+      "accessibility",
+      "design systems"
+    ],
+    "date": "2025-09-30",
+    "author": "June Okafor",
+    "keywords": [
+      "colour system design",
+      "dark mode design",
+      "semantic colour tokens",
+      "accessible colour palettes",
+      "brand refresh design system"
+    ],
+    "readingTime": 9,
+    "heroImage": "/images/articles/web-design/colour-systems-dark-mode.jpg",
+    "heroAlt": "A printer's proof sheet on a dark desk: two parallel ramps of colour-swatch cards in forest green, brass, bone and ink, one bright and one dark"
+  },
+  {
+    "title": "Running design critiques that sharpen instead of flatten",
+    "description": "Our studio's critique framework: roles, timing, the 'specific or silent' rule, and critiquing outcomes instead of taste. Includes a one-page checklist.",
+    "slug": "design-critique-method",
+    "cluster": "web-design",
+    "tags": [
+      "design critique",
+      "feedback culture",
+      "design process",
+      "team rituals",
+      "facilitation"
+    ],
+    "date": "2025-06-19",
+    "author": "June Okafor",
+    "keywords": [
+      "design critique",
+      "design review process",
+      "feedback culture",
+      "design team rituals",
+      "how to run a critique"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "404 pages with personality (that still get people home)",
+    "description": "A 404 has three jobs: orient, recover, charm — in that order. The anatomy of an error page that rescues sessions, and how to measure whether yours works.",
+    "slug": "designing-404-pages",
+    "cluster": "web-design",
+    "tags": [
+      "UX writing",
+      "Brand voice",
+      "Error states",
+      "Conversion"
+    ],
+    "date": "2026-03-18",
+    "author": "Leonie Marsh",
+    "keywords": [
+      "404 page design",
+      "error page ux",
+      "brand voice",
+      "website errors"
+    ],
+    "readingTime": 8
+  },
+  {
+    "title": "Editorial grids on the web: rhythm without rigidity",
+    "description": "Bringing print's editorial rhythm to responsive layouts: column logic that collapses gracefully, spacing rhythm that survives the box model, and breaking the grid on purpose.",
+    "slug": "editorial-grids-web",
+    "cluster": "web-design",
+    "tags": [
+      "Editorial design",
+      "Layout",
+      "CSS grid"
+    ],
+    "date": "2025-08-19",
+    "author": "June Okafor",
+    "keywords": [
+      "editorial design web",
+      "css grid layout",
+      "editorial rhythm",
+      "magazine layout web"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "The footer is a sitemap with manners",
+    "description": "Footers are the most neglected designed surface on the web. A taxonomy of trustworthy footer patterns — navigation, reassurance, colophons — and what each one earns.",
+    "slug": "footer-design-matters",
+    "cluster": "web-design",
+    "tags": [
+      "footer design",
+      "navigation",
+      "information architecture",
+      "trust signals",
+      "web design craft"
+    ],
+    "date": "2024-11-18",
+    "author": "Leonie Marsh",
+    "keywords": [
+      "footer design",
+      "website footer best practices",
+      "navigation design",
+      "trust signals",
+      "website colophon"
+    ],
+    "readingTime": 8
+  },
+  {
+    "title": "Designing forms people actually finish",
+    "description": "Forms are where products lose users and revenue quietly. The field-economics, label copy, error writing and autofill respect we use to keep completion high.",
+    "slug": "forms-people-finish",
+    "cluster": "web-design",
+    "tags": [
+      "form design",
+      "ux writing",
+      "conversion",
+      "accessibility",
+      "interaction design"
+    ],
+    "date": "2025-05-14",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "form design ux",
+      "form conversion",
+      "input design",
+      "error message design",
+      "form microcopy"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Hero sections beyond the gradient blob",
+    "description": "A field guide to memorable homepage heroes: typographic statements, generative canvases, product-in-context and editorial openers — with the performance cost of each.",
+    "slug": "hero-patterns-beyond-gradient",
+    "cluster": "web-design",
+    "tags": [
+      "Homepage design",
+      "Motion",
+      "Typography",
+      "Performance"
+    ],
+    "date": "2026-02-04",
+    "author": "June Okafor",
+    "keywords": [
+      "hero section design",
+      "website hero ideas",
+      "above the fold design",
+      "homepage design"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Art-directing images for the responsive web",
+    "description": "Cropping is composition. Focal-point markup, per-breakpoint aspect ratios, srcset discipline and an honest reckoning with when AI imagery serves a brand.",
+    "slug": "image-art-direction-web",
+    "cluster": "web-design",
+    "tags": [
+      "Art direction",
+      "Responsive images",
+      "Photography",
+      "Performance"
+    ],
+    "date": "2025-11-20",
+    "author": "Mara Ellison",
+    "keywords": [
+      "art direction web images",
+      "responsive images",
+      "picture element",
+      "image composition"
+    ],
+    "readingTime": 9,
+    "heroImage": "/images/articles/web-design/image-art-direction-web.jpg",
+    "heroAlt": "A printed vineyard photograph on a cream studio desk with brass crop squares marking a portrait composition, a pencil and loupe nearby"
+  },
+  {
+    "title": "The anatomy of a landing page that converts",
+    "description": "Promise hierarchy, proof placement, objection handling and CTA economics — a section-by-section teardown of landing pages that convert, with a fictional before-and-after.",
+    "slug": "landing-page-anatomy",
+    "cluster": "web-design",
+    "tags": [
+      "Conversion design",
+      "Web design",
+      "Copywriting"
+    ],
+    "date": "2024-11-05",
+    "author": "Priya Nair",
+    "keywords": [
+      "landing page design",
+      "conversion design",
+      "page structure",
+      "cta placement"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "Micro-interactions: the fine layer that makes interfaces feel expensive",
+    "description": "Hover, pressed and focus states are where interface quality hides. Our working rules for micro-interactions: durations, material honesty, and when to cut motion.",
+    "slug": "microinteractions-that-matter",
+    "cluster": "web-design",
+    "tags": [
+      "microinteractions",
+      "interaction design",
+      "motion design",
+      "ui polish",
+      "accessibility"
+    ],
+    "date": "2025-03-14",
+    "author": "Hannah Yeo",
+    "keywords": [
+      "microinteractions design",
+      "ui details",
+      "hover states",
+      "interface polish",
+      "motion design principles"
+    ],
+    "readingTime": 9,
+    "heroImage": "/images/articles/web-design/microinteractions-that-matter.jpg",
+    "heroAlt": "Machined brass interface tokens — a toggle switch, pressed button and slider knob — arranged on warm cream paper like a watchmaker's bench."
+  },
+  {
+    "title": "Motion that earns its keep (and the 160ms rule)",
+    "description": "Brassfern's motion philosophy: the 160ms rule, an easing vocabulary of three curves, choreography limits, and why prefers-reduced-motion is a design input, not a checkbox.",
+    "slug": "motion-that-earns-its-keep",
+    "cluster": "web-design",
+    "tags": [
+      "Motion design",
+      "Interaction design",
+      "Accessibility"
+    ],
+    "date": "2025-06-03",
+    "author": "June Okafor",
+    "keywords": [
+      "web animation design",
+      "motion design principles",
+      "easing curves",
+      "reduced motion accessibility"
+    ],
+    "readingTime": 8,
+    "heroImage": "/images/articles/web-design/motion-that-earns-its-keep.jpg",
+    "heroAlt": "Abstract paper-craft composition on warm off-white: three curved ribbon trajectories in brass, forest green and terracotta describing easing curves through space, with a small still circle at the origin"
+  },
+  {
+    "title": "Scrollytelling without the hostage-taking",
+    "description": "Scroll-driven narrative can make complex data click — or trap readers in an unskippable slideshow. The pacing, exit lanes and motion fallbacks that keep it honest.",
+    "slug": "scrollytelling-without-traps",
+    "cluster": "web-design",
+    "tags": [
+      "scrollytelling",
+      "motion design",
+      "data storytelling",
+      "accessibility",
+      "interaction design"
+    ],
+    "date": "2025-07-22",
+    "author": "Hannah Yeo",
+    "keywords": [
+      "scrollytelling design",
+      "scroll narrative ux",
+      "data storytelling web",
+      "scrolljacking",
+      "reduced motion fallback"
+    ],
+    "readingTime": 8
+  },
+  {
+    "title": "Type systems for marketing sites that still load fast",
+    "description": "How to build a marketing-site type system that carries the brand without blowing the performance budget — variable fonts, subsetting and metric-matched fallbacks.",
+    "slug": "typography-that-loads",
+    "cluster": "web-design",
+    "tags": [
+      "Typography",
+      "Performance",
+      "Web design"
+    ],
+    "date": "2025-02-11",
+    "author": "June Okafor",
+    "keywords": [
+      "web typography",
+      "variable fonts",
+      "font performance",
+      "type scale design",
+      "font subsetting"
+    ],
+    "readingTime": 9
   }
 ]
 
@@ -41,7 +913,7 @@ export const caseIndex: CaseStudyMeta[] = [
       "lifecycle email"
     ],
     "date": "2025-05-20",
-    "author": "Priya Raghavan",
+    "author": "Priya Nair",
     "keywords": [
       "onboarding case study",
       "edtech ux",
@@ -154,7 +1026,7 @@ export const caseIndex: CaseStudyMeta[] = [
       "headless commerce"
     ],
     "date": "2025-02-19",
-    "author": "Felix Ashwood",
+    "author": "Felix Brandt",
     "keywords": [
       "wine ecommerce case study",
       "headless storefront",
@@ -191,7 +1063,7 @@ export const caseIndex: CaseStudyMeta[] = [
       "Accessibility"
     ],
     "date": "2024-11-05",
-    "author": "Priya Raghunathan, Principal Strategist",
+    "author": "Priya Nair",
     "keywords": [
       "skincare ecommerce case study",
       "ingredient transparency",
@@ -266,7 +1138,7 @@ export const caseIndex: CaseStudyMeta[] = [
       "Food & drink"
     ],
     "date": "2026-02-12",
-    "author": "Tomás Reyes, Growth Lead",
+    "author": "Tomás Reyes",
     "keywords": [
       "coffee subscription case study",
       "retention design",
@@ -292,7 +1164,7 @@ export const caseIndex: CaseStudyMeta[] = [
       "Node",
       "Postgres"
     ],
-    "demo": "hearthbrew-coffee-storefront"
+    "demo": "hearthbrew-store"
   },
   {
     "title": "Holloway Records: an independent label site that sells records, not ads",
@@ -307,7 +1179,7 @@ export const caseIndex: CaseStudyMeta[] = [
       "membership"
     ],
     "date": "2024-11-08",
-    "author": "Felix Marlowe",
+    "author": "Felix Brandt",
     "keywords": [
       "record label website case study",
       "music ux",
@@ -345,7 +1217,7 @@ export const caseIndex: CaseStudyMeta[] = [
       "open data"
     ],
     "date": "2026-03-02",
-    "author": "Theo Marchetti",
+    "author": "Tomás Reyes",
     "keywords": [
       "climate data visualisation case study",
       "scrollytelling",
@@ -386,7 +1258,7 @@ export const caseIndex: CaseStudyMeta[] = [
       "performance"
     ],
     "date": "2025-05-21",
-    "author": "Wren Callaghan",
+    "author": "Priya Nair",
     "keywords": [
       "fintech dashboard case study",
       "accounting software ux",
@@ -408,7 +1280,8 @@ export const caseIndex: CaseStudyMeta[] = [
       "Node",
       "Postgres",
       "D3"
-    ]
+    ],
+    "demo": "northwind-ledger-budget"
   },
   {
     "title": "Osprey Outdoor: the pack configurator that cut support tickets",
@@ -423,7 +1296,7 @@ export const caseIndex: CaseStudyMeta[] = [
       "product customisation"
     ],
     "date": "2025-08-27",
-    "author": "Rafe Delacroix",
+    "author": "Felix Brandt",
     "keywords": [
       "3d configurator case study",
       "product customisation",
@@ -490,7 +1363,7 @@ export const caseIndex: CaseStudyMeta[] = [
   },
   {
     "title": "Pylon Health: telehealth that treats anxiety as a UX problem",
-    "description": "How Brassfern rebuilt Pylon Health's booking flow and waiting room around patient anxiety — plain-language triage, honest queuing, and sessions that survive patchy regional connections.",
+    "description": "How Brassfern rebuilt Pylon Health's telehealth booking flow around patient anxiety — plain-language triage, an honest waiting room, and dropouts that heal.",
     "slug": "pylon-health-telehealth-flow",
     "cluster": "work",
     "tags": [
@@ -501,7 +1374,7 @@ export const caseIndex: CaseStudyMeta[] = [
       "resilience"
     ],
     "date": "2024-10-08",
-    "author": "Imogen Hart",
+    "author": "Aiko Tanaka",
     "keywords": [
       "telehealth case study",
       "healthcare ux",
@@ -524,7 +1397,8 @@ export const caseIndex: CaseStudyMeta[] = [
       "Node",
       "WebRTC",
       "Postgres"
-    ]
+    ],
+    "demo": "pylon-health-booking"
   },
   {
     "title": "Signal & Noise: a podcast network site built around listening",
@@ -577,7 +1451,7 @@ export const caseIndex: CaseStudyMeta[] = [
       "Content strategy"
     ],
     "date": "2025-04-17",
-    "author": "Marisol Vane, Head of Content",
+    "author": "Leonie Marsh",
     "keywords": [
       "travel booking case study",
       "itinerary ux",
@@ -614,7 +1488,7 @@ export const caseIndex: CaseStudyMeta[] = [
       "Local business"
     ],
     "date": "2025-08-21",
-    "author": "June Okonkwo, Design Director",
+    "author": "June Okafor",
     "keywords": [
       "retail digital transformation case study",
       "heritage brand",

@@ -8,7 +8,7 @@ tags:
   - Layout
   - CSS grid
 date: 2025-08-19
-author: "Imogen Hart, Senior Design Lead"
+author: June Okafor
 keywords:
   - editorial design web
   - css grid layout

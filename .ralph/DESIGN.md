@@ -81,6 +81,19 @@ Each demo has its OWN art direction (defined per-demo in its folder), scoped CSS
 (`import './demo.css'`), and must respect prefers-reduced-motion. Never import the
 Brassfern look into a demo.
 
+- **Featured lab band** (`.lab-feature`): night-card on /lab spotlighting the newest
+  demo — brass-italic client initials over a radial night texture, mono meta row.
+- **Article prev/next** (`.article-nav`): hairline-topped two-col links, Older ← / Newer →.
+- **Counts in filters** (`.filter-btn__count`): superscript mono counts in cluster nav.
+
+## Content authoring rules (enforced by build-content-index.mjs)
+
+- `author` must be a name from `src/data/people.ts` verbatim. A trailing
+  ", Job Title" is stripped automatically; known aliases map to canonical names;
+  anything else fails the build.
+- `description` 120–160 chars warned at 110/170 bounds. Journal 1,100+ words,
+  case studies 900+ words.
+
 ## CSS conventions
 
 Hand-rolled (no frameworks). Tokens in `src/styles/tokens.css`, everything else in

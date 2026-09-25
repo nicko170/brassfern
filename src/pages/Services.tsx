@@ -43,8 +43,13 @@ export function ServicePage() {
   const { slug } = useParams()
   const service = slug ? getService(slug) : undefined
   if (!service) return <NotFound />
+  const norm = (s: string) => s.toLowerCase().replace(/[^a-z0-9]/g, '')
+  const key = norm(service.name)
   const related = caseStudies.filter((c) =>
-    c.services.some((s) => s.toLowerCase().includes(service.name.split(' ')[0].toLowerCase().replace('brand', 'brand'))),
+    c.services.some((s) => {
+      const v = norm(s)
+      return v.includes(key) || key.includes(v)
+    }),
   ).slice(0, 3)
 
   return (

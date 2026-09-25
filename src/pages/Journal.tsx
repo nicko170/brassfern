@@ -10,15 +10,30 @@ import NotFound from './NotFound'
 
 const PAGE_SIZE = 12
 
+const CLUSTER_INTROS: Record<Cluster, string> = {
+  'web-design': 'Type, grids, motion and the thousand small decisions that make a page feel inevitable — written by the designers who sweat them.',
+  engineering: 'Performance budgets, rendering trade-offs and the boring, load-bearing code that lets everything else be interesting.',
+  product: 'Dashboards, onboarding, research rituals and the features we deleted. Notes from the product room.',
+  brand: 'Naming, voice, identity systems — and what actually happened after the guidelines shipped.',
+  growth: 'SEO, CRO, lifecycle and attribution, reported in revenue. Never in vibes.',
+  ai: 'Shipping LLM features that survive contact with real users: evals, agents, retrieval and restraint.',
+  ecommerce: 'Storefronts, PDPs, subscriptions and the sacred art of the frictionless checkout.',
+  playbooks: 'Briefs, budgets, discovery sprints and handovers — how to buy, and run, agency work well.',
+}
+
+function clusterCount(c: Cluster) {
+  return byCluster(c).length
+}
+
 function ClusterNav({ active }: { active?: string }) {
   return (
     <nav className="filter-bar" aria-label="Journal clusters" style={{ marginBottom: 'var(--space-6)' }}>
       <Link to="/journal" className={`filter-btn${!active ? ' active' : ''}`} style={{ textDecoration: 'none' }}>
-        All
+        All <span className="filter-btn__count">{articles.length}</span>
       </Link>
       {CLUSTERS.map((c) => (
         <Link key={c} to={`/journal/${c}`} className={`filter-btn${active === c ? ' active' : ''}`} style={{ textDecoration: 'none' }}>
-          {CLUSTER_LABELS[c]}
+          {CLUSTER_LABELS[c]} <span className="filter-btn__count">{clusterCount(c)}</span>
         </Link>
       ))}
     </nav>
@@ -86,13 +101,14 @@ export function JournalCluster() {
     <>
       <Seo
         title={`${CLUSTER_LABELS[cluster as Cluster]} — Journal`}
-        description={`Brassfern journal articles on ${CLUSTER_LABELS[cluster as Cluster].toLowerCase()} — practical field notes from the studio.`}
+        description={CLUSTER_INTROS[cluster as Cluster]}
         path={`/journal/${cluster}`}
         jsonLd={[breadcrumbLd([{ name: 'Home', path: '/' }, { name: 'Journal', path: '/journal' }, { name: CLUSTER_LABELS[cluster as Cluster], path: `/journal/${cluster}` }])]}
       />
       <header className="article-head container">
         <Reveal className="overline">Journal — {CLUSTER_LABELS[cluster as Cluster]}</Reveal>
         <h1 className="display">{CLUSTER_LABELS[cluster as Cluster]}</h1>
+        <p className="lead lead--wide">{CLUSTER_INTROS[cluster as Cluster]}</p>
       </header>
       <section className="section container">
         <ClusterNav active={cluster} />

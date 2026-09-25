@@ -3,6 +3,7 @@ import { Seo } from '../lib/head'
 import { formatDate, getCase, relatedCases } from '../lib/content'
 import { getDemo } from '../lib/demos'
 import { breadcrumbLd, creativeWorkLd } from '../lib/jsonld'
+import { absoluteUrl, withBase } from '../lib/base'
 import Markdown from '../components/Markdown'
 import { WorkCard } from '../components/Cards'
 import Reveal from '../components/Reveal'
@@ -22,6 +23,7 @@ export default function WorkCase() {
         description={cs.description}
         path={`/work/${cs.slug}`}
         type="article"
+        image={cs.heroImage ? absoluteUrl(cs.heroImage) : undefined}
         jsonLd={[
           creativeWorkLd(cs),
           breadcrumbLd([
@@ -50,6 +52,14 @@ export default function WorkCase() {
             ))}
           </div>
         </header>
+
+        {cs.heroImage && (
+          <div className="container">
+            <figure className="article-hero-img">
+              <img src={withBase(cs.heroImage)} alt={cs.heroAlt ?? ''} />
+            </figure>
+          </div>
+        )}
 
         {demo && (
           <div className="container" style={{ marginTop: 'var(--space-6)' }}>

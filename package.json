@@ -5,9 +5,9 @@
   "type": "module",
   "description": "Brassfern — an independent digital product studio. Software with a heartbeat.",
   "scripts": {
-    "predev": "node scripts/build-content-index.mjs",
+    "predev": "node scripts/build-content-index.mjs && node scripts/ensure-demo-css.mjs",
     "dev": "vite",
-    "prebuild": "node scripts/build-content-index.mjs",
+    "prebuild": "node scripts/build-content-index.mjs && node scripts/ensure-demo-css.mjs",
     "build": "tsc --noEmit && vite build && vite build --ssr src/entry-server.tsx --outDir dist-ssr && node scripts/prerender.mjs",
     "typecheck": "tsc --noEmit",
     "preview": "vite preview"

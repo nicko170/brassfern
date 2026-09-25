@@ -5,7 +5,7 @@ slug: brightmarsh-onboarding
 cluster: work
 tags: ["case study", "education", "onboarding", "activation", "lifecycle email"]
 date: 2025-05-20
-author: Priya Raghavan
+author: Priya Nair
 keywords: ["onboarding case study", "edtech ux", "activation metrics", "lifecycle email"]
 readingTime: 8 min read
 client: Brightmarsh
