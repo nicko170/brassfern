@@ -9,7 +9,7 @@ tags:
   - Retention
   - Food & drink
 date: 2026-02-12
-author: "Tomás Reyes, Growth Lead"
+author: Tomás Reyes
 keywords:
   - coffee subscription case study
   - retention design
@@ -32,7 +32,7 @@ stack:
   - Sanity
   - Node
   - Postgres
-demo: hearthbrew-coffee-storefront
+demo: hearthbrew-store
 ---
 
 Hearthbrew Coffee roasts in Brunswick, Melbourne, three days a week, and their café on-site has a line every Saturday morning. We'll drink to that. In 2023 they launched a subscription club with the standard toolkit: 15% off lock-in, upsell emails, a delete account flow that required phoning a person with a clipboard, and — when customers cancelled anyway — an exit survey too generic to read.

@@ -5,7 +5,7 @@ slug: pylon-health-telehealth-flow
 cluster: work
 tags: [health, accessibility, booking flow, ux research, resilience]
 date: 2024-10-08
-author: Imogen Hart
+author: Aiko Tanaka
 keywords: [telehealth case study, healthcare ux, accessible design, booking flow, regional connectivity, pylon health]
 readingTime: 8
 client: Pylon Health
@@ -13,6 +13,7 @@ industry: Health
 services: [Product design & engineering, Brand & identity]
 year: 2024
 stack: [React, TypeScript, Node, WebRTC, Postgres]
+demo: pylon-health-booking
 ---
 
 Pylon Health runs GP video consults across regional Australia — places where the nearest clinic can be a two-hour drive and the nearest specialist a flight. Their platform worked, technically. The video connected, the prescriptions flowed, the clinicians were excellent. But a third of booked appointments never completed, and the support inbox read like an anxiety journal: *"Is the doctor still coming?"* *"Did I break it?"* *"I pressed the button and nothing happened."*

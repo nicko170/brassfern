@@ -5,7 +5,7 @@ slug: northwind-ledger-dashboard-rebuild
 cluster: work
 tags: [fintech, dashboard design, data visualisation, product design, performance]
 date: 2025-05-21
-author: Wren Callaghan
+author: Priya Nair
 keywords: [fintech dashboard case study, accounting software ux, dashboard design, data hierarchy, northwind ledger]
 readingTime: 8
 client: Northwind Ledger
@@ -13,6 +13,7 @@ industry: Fintech
 services: [Product design & engineering, Websites]
 year: 2025
 stack: [React, TypeScript, Node, Postgres, D3]
+demo: northwind-ledger-budget
 ---
 
 Northwind Ledger is bookkeeping software for small businesses — invoicing, expenses, payroll, the whole ledger. By the time they called us, they'd spent two years building a dashboard designed to impress investors rather than owners. Seventeen configurable charts at login. A drag-and-drop grid nobody dragged. And a login-to-first-number wait that their analytics politely described as "up to nine seconds on a cold cache."

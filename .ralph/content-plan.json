@@ -1464,10 +1464,11 @@
     "marketing measurement",
     "dark social"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790379020.210801
+   "claimed_at": 1790379020.210801,
+   "done_at": "2026-09-26T09:32:19"
   },
   {
    "kind": "article",
@@ -2237,8 +2238,10 @@
    "cluster": "demos",
    "intent": "Itinerary builder for fictional slow-travel company Sundial. Art direction: golden-hour warmth — sand, terracotta, deep teal; journal-editorial type. Features: destination cards (6 fictional coastal/rail journeys), drag-to-reorder day planner, rail-leg timeline with durations, per-day cost rollup + honest total, 'request this trip' flow with mocked availability. LocalStorage persistence, optimistic UI, reduced-motion safe. Feels like a product you'd plan a honeymoon on.",
    "keywords": [],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "demo2",
+   "claimed_at": 1790379069.116101
   },
   {
    "kind": "demo",
