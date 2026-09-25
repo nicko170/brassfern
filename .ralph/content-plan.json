@@ -557,8 +557,10 @@
     "brand voice",
     "website errors"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790378002.034254
   },
   {
    "kind": "article",
@@ -572,8 +574,10 @@
     "above the fold design",
     "homepage design"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790378002.034256
   },
   {
    "kind": "article",
@@ -587,8 +591,10 @@
     "design handoff accessibility",
     "inclusive design"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790378002.034256
   },
   {
    "kind": "article",
@@ -602,8 +608,10 @@
     "picture element",
     "image composition"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790378002.034256
   },
   {
    "kind": "article",
