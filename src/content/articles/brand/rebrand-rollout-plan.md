@@ -1,6 +1,6 @@
 ---
 title: "Rebrand rollouts: the unglamorous crucial middle"
-description: "The reveal is day one of a six-month project. How to plan a rebrand rollout: asset transition maps, coexistence periods, internal enablement and honest post-launch measurement."
+description: "Launch day is the easy part. The rebrand rollout plan: asset census, coexistence windows, internal enablement and honest measurement long after the applause."
 slug: rebrand-rollout-plan
 cluster: brand
 tags: [rebrand, brand implementation, rollout plan, project management, brand ops]

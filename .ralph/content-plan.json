@@ -1238,10 +1238,11 @@
     "ux writing voice",
     "copy style guide"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790378923.318461
+   "claimed_at": 1790378923.318461,
+   "done_at": "2026-09-26T09:36:32"
   },
   {
    "kind": "article",
@@ -1255,10 +1256,11 @@
     "brand animation guidelines",
     "motion tokens"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790378923.318462
+   "claimed_at": 1790378923.318462,
+   "done_at": "2026-09-26T09:36:32"
   },
   {
    "kind": "article",
@@ -1272,10 +1274,11 @@
     "rebrand checklist",
     "brand launch plan"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790378923.318462
+   "claimed_at": 1790378923.318462,
+   "done_at": "2026-09-26T09:37:02"
   },
   {
    "kind": "article",
@@ -1289,10 +1292,11 @@
     "sub brand strategy",
     "brand portfolio"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790378923.318463
+   "claimed_at": 1790378923.318463,
+   "done_at": "2026-09-26T09:36:32"
   },
   {
    "kind": "article",
@@ -1500,10 +1504,11 @@
     "ab testing landing pages",
     "experiment velocity"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790379020.2108018
+   "claimed_at": 1790379020.2108018,
+   "done_at": "2026-09-26T09:37:04"
   },
   {
    "kind": "article",
@@ -2260,8 +2265,10 @@
    "cluster": "demos",
    "intent": "3D product configurator for fictional Osprey Outdoor packs. Art direction: trail-dusk palette — graphite, moss, blaze orange; spec-sheet typography. Features: three.js/react-three-fiber stylised low-poly backpack (built from primitives, no external models), colour/material swap on panels, volume & torso-fit pickers updating specs, exploded view toggle, price updating live, 'this configuration' share state in URL. Performance-disciplined (budget <1.2MB extra), static poster fallback for reduced-motion, pointer-none-safe on touch.",
    "keywords": [],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "demo3",
+   "claimed_at": 1790379389.45912
   },
   {
    "kind": "demo",

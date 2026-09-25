@@ -8,6 +8,8 @@ date: 2025-04-02
 author: Hannah Yeo
 keywords: [motion brand identity, kinetic identity, brand animation guidelines, motion tokens]
 readingTime: 10
+heroImage: /images/articles/brand/motion-identity-design.jpg
+heroAlt: "Overlapping translucent sheets tracing the easing curves of a fern form in motion, with brass timeline markers on cream paper."
 ---
 
 Ask a brand team to describe their identity and you'll hear about the wordmark, the palette and the typeface. Ask how a menu opens in their app and you'll get a shrug, a `transition: all .3s ease`, and a modal that slides up because that's what the component library shipped. Yet motion is the brand attribute users feel most often. A customer sees your logo occasionally; they feel your easing curve a hundred times a session. If your identity system doesn't specify what things feel like when they move, you've left the most-touched layer of the brand to chance and to framework defaults.
