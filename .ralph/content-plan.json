@@ -489,10 +489,11 @@
     "semantic colour tokens",
     "accessible colour palettes"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790377986.321076
+   "claimed_at": 1790377986.321076,
+   "done_at": "2026-09-26T09:16:15"
   },
   {
    "kind": "article",
@@ -506,10 +507,11 @@
     "data storytelling web",
     "scrolljacking"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790377986.321077
+   "claimed_at": 1790377986.321077,
+   "done_at": "2026-09-26T09:17:43"
   },
   {
    "kind": "article",
@@ -523,10 +525,11 @@
     "input design",
     "error message design"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790377986.321077
+   "claimed_at": 1790377986.321077,
+   "done_at": "2026-09-26T09:19:19"
   },
   {
    "kind": "article",
@@ -540,10 +543,11 @@
     "navigation design",
     "trust signals"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790377986.321077
+   "claimed_at": 1790377986.321077,
+   "done_at": "2026-09-26T09:20:43"
   },
   {
    "kind": "article",
@@ -557,10 +561,11 @@
     "brand voice",
     "website errors"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790378002.034254
+   "claimed_at": 1790378002.034254,
+   "done_at": "2026-09-26T09:16:30"
   },
   {
    "kind": "article",
@@ -574,10 +579,11 @@
     "above the fold design",
     "homepage design"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790378002.034256
+   "claimed_at": 1790378002.034256,
+   "done_at": "2026-09-26T09:18:11"
   },
   {
    "kind": "article",
@@ -591,10 +597,11 @@
     "design handoff accessibility",
     "inclusive design"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790378002.034256
+   "claimed_at": 1790378002.034256,
+   "done_at": "2026-09-26T09:19:39"
   },
   {
    "kind": "article",
@@ -625,10 +632,11 @@
     "hover states",
     "interface polish"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790378025.2108328
+   "claimed_at": 1790378025.2108328,
+   "done_at": "2026-09-26T09:21:07"
   },
   {
    "kind": "article",
@@ -642,10 +650,11 @@
     "agency portfolio",
     "work page design"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790378025.210834
+   "claimed_at": 1790378025.210834,
+   "done_at": "2026-09-26T09:21:07"
   },
   {
    "kind": "article",
@@ -659,10 +668,11 @@
     "design review process",
     "team rituals"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790378025.210834
+   "claimed_at": 1790378025.210834,
+   "done_at": "2026-09-26T09:21:10"
   },
   {
    "kind": "article",
@@ -677,10 +687,11 @@
     "inp debugging",
     "performance budgets"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790378025.210834
+   "claimed_at": 1790378025.210834,
+   "done_at": "2026-09-26T09:21:10"
   },
   {
    "kind": "article",
@@ -2592,6 +2603,186 @@
    ],
    "status": "planned",
    "added_by": "writer3"
+  },
+  {
+   "kind": "article",
+   "slug": "marlowe-hotels-direct-booking-relaunch",
+   "title": "Marlowe Hotels: winning back the direct booking",
+   "cluster": "work",
+   "intent": "Case study: Marlowe Hotels, a fictional boutique hotel group (Sydney Coast + Blue Mountains), needed direct bookings to stop leaking to OTAs. Brassfern rebuilt the site and booking flow — editorial photography-led design, a three-step date/room/rate flow, seasonal package engine, and a performance budget that hit sub-1.5s LCP on 4G. Sections: Challenge (OTA dependency, 62% mobile share, dated CMS), Approach (discovery sprint, design system 'Coastline', Astro-grade static marketing pages + client-side booking island), Outcome (illustrative metrics: +38% direct booking share, -41% bounce on offer pages), stack: React, TypeScript, Node, Postgres, headless CMS. No live demo.",
+   "keywords": [
+    "hotel website case study",
+    "direct booking optimisation",
+    "hospitality web design",
+    "booking flow ux"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "quill-legal-document-platform",
+   "title": "Quill Legal: a document platform lawyers actually enjoy",
+   "cluster": "work",
+   "intent": "Case study: Quill Legal, a fictional AU legal-tech SaaS, had a powerful document-automation engine trapped in a 2016 UI. Brassfern redesigned the product end-to-end: template builder with live preview, matter dashboard, clause library, and an accessible design system ('Precedent') shipped as tokens. Challenge/Approach/Outcome with illustrative metrics (task success +44%, onboarding drop-off -29%), stack: React, TypeScript, Node, Postgres, Storybook. Emphasise senior-squad pairing with Quill's engineers.",
+   "keywords": [
+    "saas redesign case study",
+    "legaltech product design",
+    "design system case study",
+    "dashboard ux"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "saltbush-collective-marketplace",
+   "title": "Saltbush Collective: a marketplace for food with a postcode",
+   "cluster": "work",
+   "intent": "Case study: Saltbush Collective, a fictional farmers-market marketplace connecting regenerative farms to city buyers. Brassfern built the two-sided marketplace front end: producer storefronts, seasonal availability calendar, suburb-level delivery slots, and a checkout tuned for mixed baskets. Art direction: earthy, honest, print-catalogue warmth. Illustrative outcomes (+52% repeat purchase in 90 days, avg basket +$14). Stack: React, TypeScript, headless commerce, Node, Postgres.",
+   "keywords": [
+    "marketplace case study",
+    "food ecommerce ux",
+    "checkout design",
+    "two-sided marketplace"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "beacon-health-ai-triage",
+   "title": "Beacon Health: an AI triage assistant that knows when to stop talking",
+   "cluster": "work",
+   "intent": "Case study: Beacon Health, a fictional primary-care network, deployed an AI symptom triage assistant designed and evaluated by Brassfern. Cover responsible-AI process: intent taxonomy, red-flag escalation paths, clinician-in-the-loop review, offline mock evals (48 scenario suites), and the 'confidence shown as sentences' UI pattern. Challenge/Approach/Outcome with illustrative eval metrics (escalation precision 96%, CSAT 4.6/5). Stack: React, TypeScript, Node, LLM API, retrieval. Links well to /services/ai.",
+   "keywords": [
+    "ai healthcare case study",
+    "llm evaluation",
+    "responsible ai design",
+    "triage chatbot ux"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "brightline-solar-quote-engine",
+   "title": "Brightline Solar: from PDF quote form to 40-second estimate",
+   "cluster": "work",
+   "intent": "Case study: Brightline Solar, a fictional installer, replaced a PDF quote form with an instant roof-and-bill quote engine Brassfern designed and built: address + bill input, shade/eligibility heuristics (mocked), finance options, and a booking calendar. Illustrative outcomes: qualified leads +71%, cost per lead -33%. Stack: React, TypeScript, Node, Postgres, Mapbox-style tiles (mocked). Emphasise conversion research and form psychology.",
+   "keywords": [
+    "lead generation case study",
+    "quote calculator ux",
+    "climate tech marketing",
+    "conversion rate optimisation"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "fernway-college-admissions-platform",
+   "title": "Fernway College: admissions journeys without the paper cuts",
+   "cluster": "work",
+   "intent": "Case study: Fernway College, a fictional independent school, needed admissions, alumni and news under one editorial roof. Brassfern delivered a headless CMS platform with a design system ('Ivy'), an enrolment journey with saved progress, and an editorial model the comms team could actually run. Illustrative outcomes: admissions enquiries +46%, publishing time -60%. Stack: React, TypeScript, headless CMS, Node.",
+   "keywords": [
+    "education website case study",
+    "school admissions ux",
+    "headless cms case study",
+    "editorial platform"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "coriander-collective-restaurant-group",
+   "title": "Coriander Collective: six restaurants, one platform, zero beige",
+   "cluster": "work",
+   "intent": "Case study: Coriander Collective, a fictional restaurant group (6 venues), got one platform with six personalities: shared design system, per-venue theming via tokens, unified reservations, gift cards, and private-dining leads. Illustrative outcomes: reservation completion +34%, group gift-card revenue +5x in year one. Stack: React, TypeScript, Node, Postgres. Pairs nicely with the Wattle & Daub case study.",
+   "keywords": [
+    "restaurant group website",
+    "multi-brand design system",
+    "reservations ux",
+    "hospitality case study"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "arkwright-supply-b2b-commerce",
+   "title": "Arkwright Supply: B2B ordering that respects a tradie's lunch break",
+   "cluster": "work",
+   "intent": "Case study: Arkwright Supply, a fictional B2B industrial supplier, moved catalogue and ordering online: 40k SKUs, account pricing, bulk order CSV upload, quote requests, and reps' dashboards. Brassfern ran discovery with actual buyers and depot staff. Illustrative outcomes: phone-order volume -48%, reorder time -70%. Stack: React, TypeScript, Node, Postgres, Elasticsearch-style search (mocked).",
+   "keywords": [
+    "b2b ecommerce case study",
+    "catalogue ux",
+    "bulk ordering",
+    "industrial supplier digital"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ledgerline-brand-and-site-refresh",
+   "title": "Ledgerline: an accounting firm with opinions, finally visible",
+   "cluster": "work",
+   "intent": "Case study: Ledgerline, a fictional accounting firm with a sharp reputation and a beige website. Brassfern ran naming-adjacent brand refresh (kept the name, sharpened the voice), new identity, and a content-led site that turned partners' expertise into a publishing engine. Illustrative outcomes: inbound qualified enquiries +58%, time on insights ~3x. Stack: React, TypeScript, headless CMS.",
+   "keywords": [
+    "professional services branding",
+    "accounting firm website",
+    "brand refresh case study",
+    "content strategy"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "tidal-games-storefront",
+   "title": "Tidal Games: a storefront that outlasted launch day",
+   "cluster": "work",
+   "intent": "Case study: Tidal Games, a fictional indie game storefront, needed a store that could survive launch-day spikes and still feel hand-made. Brassfern built a headless storefront with wishlists, launch drops with queue-free fairness (scheduled inventory reveals), and a publisher back office. Illustrative outcomes: launch-day uptime 100%, checkout conversion +19%. Stack: React, TypeScript, headless commerce, Node, edge caching.",
+   "keywords": [
+    "game store ecommerce",
+    "headless commerce case study",
+    "launch day scaling",
+    "drop mechanics ux"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "prairie-mutual-claims-reimagined",
+   "title": "Prairie Mutual: claims that take six minutes, not six phone calls",
+   "cluster": "work",
+   "intent": "Case study: Prairie Mutual, a fictional regional insurer, redesigned claims lodgement from a 14-page PDF to a 6-minute guided flow: plain-language questions, photo upload with smart guidance (mocked), save-and-resume, and proactive status updates. Illustrative outcomes: NPS on claims +22 points, call-centre 'where is my claim' volume -37%. Stack: React, TypeScript, Node, Postgres. Strong accessibility angle (WCAG AA++).",
+   "keywords": [
+    "insurance claims ux",
+    "claims app case study",
+    "accessible forms",
+    "insurtech design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "verdigris-archive-digital-collection",
+   "title": "Verdigris Archive: 80,000 botanical plates, searchable in a blink",
+   "cluster": "work",
+   "intent": "Case study: Verdigris Archive, a fictional botanical-illustration museum, digitised 80k plates with Brassfern: fast faceted search (colour, species, artist, decade), zoomable deep-zoom viewer, educator collections, and public-domain downloads. Illustrative outcomes: search success +63%, educator signups 2.4k in term one. Stack: React, TypeScript, IIIF-style tiling (mocked), Node, Postgres.",
+   "keywords": [
+    "digital archive case study",
+    "museum collection online",
+    "faceted search ux",
+    "deep zoom viewer"
+   ],
+   "status": "planned",
+   "added_by": "builder"
   }
  ]
 }
