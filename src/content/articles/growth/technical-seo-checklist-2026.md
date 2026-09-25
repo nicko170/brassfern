@@ -8,6 +8,8 @@ date: 2026-03-11
 author: Priya Nair
 keywords: [technical seo checklist, seo audit, site launch seo, core web vitals seo]
 readingTime: 9
+heroImage: /images/articles/growth/technical-seo-checklist-2026.jpg
+heroAlt: "Overhead still life of a brass loupe on a hand-drawn site map in fern-green ink, with brass check marks and scattered fern leaves on cream paper."
 ---
 
 Every site we ship gets the same treatment in its final week: a technical SEO sweep that takes about a day and has never once found nothing. Not because our builds are sloppy — because launch week is the one moment everyone is changing everything at once, and SEO bugs are bugs of omission. A canonical that nobody wrote. A `noindex` that nobody removed. A sitemap nobody regenerated. The pages work fine in the browser, which is exactly why nobody notices.
