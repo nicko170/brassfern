@@ -1,0 +1,240 @@
+/* Hearthbrew Identity Lab — art direction: dark espresso, cream paper,
+   caramel highlights. Deliberately not Brassfern's look. */
+.hb {
+  --espresso: #221610;
+  --espresso-2: #2e1f16;
+  --cream: #f3e9dc;
+  --cream-dim: #c9bba6;
+  --caramel: #c98a3e;
+  --leaf: #5f7a52;
+  --line: rgba(243, 233, 220, 0.14);
+  min-height: calc(100svh - 3rem);
+  background:
+    radial-gradient(120% 90% at 85% -10%, rgba(201, 138, 62, 0.12), transparent 60%),
+    var(--espresso);
+  color: var(--cream);
+  font-family: Georgia, 'Times New Roman', serif;
+}
+.hb * {
+  box-sizing: border-box;
+  margin: 0;
+}
+.hb button {
+  font: inherit;
+  cursor: pointer;
+}
+.hb__wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(1.25rem, 4vw, 3rem);
+  display: grid;
+  gap: clamp(1.5rem, 4vw, 2.5rem);
+}
+.hb__head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: end;
+  gap: 1rem;
+}
+.hb__brand {
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  letter-spacing: 0.04em;
+  line-height: 1;
+}
+.hb__brand small {
+  display: block;
+  font-family: ui-monospace, Menlo, monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: var(--caramel);
+  margin-bottom: 0.8rem;
+}
+.hb__tag {
+  color: var(--cream-dim);
+  font-style: italic;
+  max-width: 34ch;
+}
+.hb__grid {
+  display: grid;
+  gap: clamp(1.25rem, 3vw, 2rem);
+}
+@media (min-width: 960px) {
+  .hb__grid {
+    grid-template-columns: 1.5fr 1fr;
+    align-items: start;
+  }
+}
+.hb__stage {
+  position: relative;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--cream);
+  aspect-ratio: 4 / 5;
+}
+.hb__stage canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.hb__seed {
+  position: absolute;
+  left: 0.9rem;
+  bottom: 0.8rem;
+  font-family: ui-monospace, Menlo, monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.2em;
+  color: rgba(34, 22, 16, 0.55);
+  text-transform: uppercase;
+}
+.hb__panel {
+  display: grid;
+  gap: 1.75rem;
+}
+.hb__controls {
+  display: grid;
+  gap: 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 1.25rem;
+  background: var(--espresso-2);
+}
+.hb__control {
+  display: grid;
+  gap: 0.45rem;
+}
+.hb__control label {
+  font-family: ui-monospace, Menlo, monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--cream-dim);
+  display: flex;
+  justify-content: space-between;
+}
+.hb__control output {
+  color: var(--caramel);
+}
+.hb input[type='range'] {
+  appearance: none;
+  width: 100%;
+  height: 2px;
+  background: var(--line);
+  border-radius: 2px;
+}
+.hb input[type='range']::-webkit-slider-thumb {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--caramel);
+  border: 2px solid var(--espresso);
+  box-shadow: 0 0 0 1px var(--caramel);
+}
+.hb input[type='range']:focus-visible {
+  outline: 2px solid var(--caramel);
+  outline-offset: 4px;
+}
+.hb__actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+.hb__btn {
+  border: 1px solid var(--caramel);
+  background: var(--caramel);
+  color: var(--espresso);
+  border-radius: 999px;
+  padding: 0.7rem 1.4rem;
+  font-family: ui-monospace, Menlo, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  transition: transform 160ms ease, background 160ms ease;
+}
+.hb__btn:hover {
+  transform: translateY(-1px);
+  background: #dc9c4d;
+}
+.hb__btn--ghost {
+  background: transparent;
+  color: var(--cream);
+  border-color: var(--line);
+}
+.hb__btn--ghost:hover {
+  background: rgba(243, 233, 220, 0.08);
+}
+.hb__palette {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.hb__swatch {
+  border: 0;
+  padding: 0;
+  display: grid;
+  align-content: end;
+  gap: 0.3rem;
+  height: 108px;
+  text-align: left;
+  padding: 0.55rem;
+  font-family: ui-monospace, Menlo, monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.08em;
+  transition: transform 160ms ease;
+}
+.hb__swatch:hover {
+  transform: scale(1.03);
+}
+.hb__swatch b {
+  font-size: 0.66rem;
+  letter-spacing: 0.1em;
+}
+.hb__type {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 1.25rem;
+  background: var(--espresso-2);
+  display: grid;
+  gap: 1rem;
+}
+.hb__type h3 {
+  font-family: ui-monospace, Menlo, monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--cream-dim);
+  font-weight: 400;
+}
+.hb__type-sample {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  line-height: 1.15;
+}
+.hb__type-sample em {
+  color: var(--caramel);
+}
+.hb__type small {
+  font-family: ui-monospace, Menlo, monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  color: var(--cream-dim);
+  text-transform: uppercase;
+}
+.hb__copied {
+  position: fixed;
+  left: 50%;
+  bottom: 1.5rem;
+  transform: translateX(-50%);
+  background: var(--cream);
+  color: var(--espresso);
+  font-family: ui-monospace, Menlo, monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+  pointer-events: none;
+}

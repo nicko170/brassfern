@@ -1,0 +1,77 @@
+/* ————————————————————————————————————————————————
+   Brassfern design tokens.
+   Art direction: "Botanic industrial editorial" — a warm paper
+   canvas, deep fern ink, and machined-brass accents. Fraunces
+   carries the voice; Instrument Sans does the work; IBM Plex
+   Mono labels the exhibits.
+   ———————————————————————————————————————————————— */
+
+:root {
+  /* palette */
+  --paper: #f5efdf;
+  --paper-2: #ece3cc;
+  --paper-3: #e3d7b8;
+  --ink: #182116;
+  --ink-2: #3d4736;
+  --ink-3: #6a7261;
+  --fern: #1e4d33;
+  --fern-2: #2f6a48;
+  --fern-soft: #d7e0cd;
+  --brass: #b08a3e;
+  --brass-2: #c9a84c;
+  --brass-hi: #e6cc8a;
+  --clay: #b4552d;
+  --line: rgba(24, 33, 22, 0.16);
+  --line-strong: rgba(24, 33, 22, 0.38);
+
+  /* dark section tokens */
+  --night: #141c15;
+  --night-2: #1c261d;
+  --night-line: rgba(245, 239, 223, 0.16);
+  --night-text: #e9e2cd;
+  --night-mute: #9aa48e;
+
+  /* type */
+  --font-display: 'Fraunces', 'Iowan Old Style', Georgia, serif;
+  --font-sans: 'Instrument Sans', 'Avenir Next', 'Segoe UI', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', 'SFMono-Regular', Menlo, monospace;
+
+  /* fluid type scale */
+  --fs-micro: 0.6875rem;   /* 11px mono labels */
+  --fs-small: 0.8125rem;
+  --fs-body: 1.0625rem;
+  --fs-lead: clamp(1.1875rem, 1rem + 0.6vw, 1.5rem);
+  --fs-h3: clamp(1.375rem, 1.1rem + 1vw, 1.875rem);
+  --fs-h2: clamp(2rem, 1.4rem + 2.6vw, 3.375rem);
+  --fs-h1: clamp(2.75rem, 1.6rem + 5.4vw, 6rem);
+  --fs-hero: clamp(3rem, 1.2rem + 8.5vw, 8.25rem);
+
+  /* space */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+  --space-9: 7rem;
+  --gutter: clamp(1.25rem, 4vw, 3rem);
+  --measure: 76rem;
+  --measure-narrow: 46rem;
+
+  /* motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --dur-fast: 160ms;
+  --dur-med: 420ms;
+  --dur-slow: 900ms;
+
+  --radius: 3px;
+  --head-h: 4.5rem;
+}
+
+::selection {
+  background: var(--brass-2);
+  color: var(--ink);
+}

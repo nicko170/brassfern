@@ -1,6 +1,7 @@
 node_modules/
 dist/
 dist-server/
+dist-ssr/
 .ralph/logs/
 .ralph/image-originals/
 .DS_Store
