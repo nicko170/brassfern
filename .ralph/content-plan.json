@@ -950,10 +950,11 @@
     "user research methods",
     "customer interviews"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790378494.808976
+   "claimed_at": 1790378494.808976,
+   "done_at": "2026-09-26T09:24:37"
   },
   {
    "kind": "article",
@@ -967,10 +968,11 @@
     "time to value",
     "retention analytics"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790378494.808977
+   "claimed_at": 1790378494.808977,
+   "done_at": "2026-09-26T09:24:28"
   },
   {
    "kind": "article",
@@ -984,10 +986,11 @@
     "operational dashboards",
     "analytics ui design"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790378494.808977
+   "claimed_at": 1790378494.808977,
+   "done_at": "2026-09-26T09:26:24"
   },
   {
    "kind": "article",
@@ -1001,10 +1004,11 @@
     "first run experience",
     "product onboarding"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790378494.808977
+   "claimed_at": 1790378494.808977,
+   "done_at": "2026-09-26T09:28:17"
   },
   {
    "kind": "article",
@@ -1018,10 +1022,11 @@
     "user activation design",
     "checklist ui"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790378499.505329
+   "claimed_at": 1790378499.505329,
+   "done_at": "2026-09-26T09:23:55"
   },
   {
    "kind": "article",
@@ -1035,10 +1040,11 @@
     "user roles design",
     "admin ux"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790378499.5053298
+   "claimed_at": 1790378499.5053298,
+   "done_at": "2026-09-26T09:25:44"
   },
   {
    "kind": "article",
@@ -1052,10 +1058,11 @@
     "alert design",
     "notification fatigue"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790378499.5053298
+   "claimed_at": 1790378499.5053298,
+   "done_at": "2026-09-26T09:27:43"
   },
   {
    "kind": "article",
@@ -1086,10 +1093,11 @@
     "pricing tiers psychology",
     "pricing page conversion"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790378517.778704
+   "claimed_at": 1790378517.778704,
+   "done_at": "2026-09-26T09:23:54"
   },
   {
    "kind": "article",
@@ -1103,10 +1111,11 @@
     "faceted search",
     "no results page"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790378517.778705
+   "claimed_at": 1790378517.778705,
+   "done_at": "2026-09-26T09:25:24"
   },
   {
    "kind": "article",
@@ -1120,10 +1129,11 @@
     "settings ux",
     "product navigation"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790378517.778705
+   "claimed_at": 1790378517.778705,
+   "done_at": "2026-09-26T09:26:50"
   },
   {
    "kind": "article",
@@ -1137,10 +1147,11 @@
     "command palette design",
     "power user features"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790378517.7787058
+   "claimed_at": 1790378517.7787058,
+   "done_at": "2026-09-26T09:28:29"
   },
   {
    "kind": "article",
@@ -1154,8 +1165,11 @@
     "error handling ux",
     "microcopy errors"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "done",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790378581.048917,
+   "done_at": "2026-09-26T09:25:04"
   },
   {
    "kind": "article",
@@ -1169,8 +1183,11 @@
     "spreadsheet ui patterns",
     "data grid design"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "done",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790378581.048917,
+   "done_at": "2026-09-26T09:26:41"
   },
   {
    "kind": "article",
@@ -1184,8 +1201,10 @@
     "product naming guide",
     "naming workshop"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790378581.048918
   },
   {
    "kind": "article",
@@ -1199,8 +1218,10 @@
     "brand mark hierarchy",
     "identity design"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790378581.048918
   },
   {
    "kind": "article",
