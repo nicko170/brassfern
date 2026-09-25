@@ -12,10 +12,11 @@
     "dashboard design",
     "data hierarchy"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790377492.064337
+   "claimed_at": 1790377492.064337,
+   "done_at": "2026-09-26T09:12:57"
   },
   {
    "kind": "article",
@@ -29,10 +30,11 @@
     "accessible design",
     "booking flow"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790377492.0643399
+   "claimed_at": 1790377492.0643399,
+   "done_at": "2026-09-26T09:13:08"
   },
   {
    "kind": "article",
@@ -46,10 +48,11 @@
     "subscription design",
     "dtc wine"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790377492.0643399
+   "claimed_at": 1790377492.0643399,
+   "done_at": "2026-09-26T09:12:57"
   },
   {
    "kind": "article",
@@ -63,10 +66,11 @@
     "react three fiber",
     "ecommerce ux"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790377492.064341
+   "claimed_at": 1790377492.064341,
+   "done_at": "2026-09-26T09:12:57"
   },
   {
    "kind": "article",
@@ -485,8 +489,10 @@
     "semantic colour tokens",
     "accessible colour palettes"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790377986.321076
   },
   {
    "kind": "article",
@@ -500,8 +506,10 @@
     "data storytelling web",
     "scrolljacking"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790377986.321077
   },
   {
    "kind": "article",
@@ -515,8 +523,10 @@
     "input design",
     "error message design"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790377986.321077
   },
   {
    "kind": "article",
@@ -530,8 +540,10 @@
     "navigation design",
     "trust signals"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790377986.321077
   },
   {
    "kind": "article",
@@ -2189,6 +2201,381 @@
    "keywords": [],
    "status": "planned",
    "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "design-tokens-pipeline",
+   "title": "Design tokens are an API: building a pipeline from Figma to production",
+   "cluster": "engineering",
+   "intent": "Practical design-token pipeline: tokens in a single source of truth, transformed to CSS, Tailwind and native, versioned and released like software.",
+   "keywords": [
+    "design tokens",
+    "style dictionary",
+    "design system pipeline",
+    "css variables"
+   ],
+   "status": "planned",
+   "added_by": "writer3"
+  },
+  {
+   "kind": "article",
+   "slug": "testing-strategy-that-scales",
+   "title": "A testing strategy that ships: what to test, what to skip, what to delete",
+   "cluster": "engineering",
+   "intent": "How we structure end-to-end and component tests so they catch real bugs without slowing the team: coverage philosophy, flake management, CI budget.",
+   "keywords": [
+    "testing strategy",
+    "playwright",
+    "vitest",
+    "ci quality"
+   ],
+   "status": "planned",
+   "added_by": "writer3"
+  },
+  {
+   "kind": "article",
+   "slug": "accessibility-as-engineering-practice",
+   "title": "Accessibility is an engineering discipline, not a ticket queue",
+   "cluster": "engineering",
+   "intent": "Treating accessibility as infrastructure: axe in CI, linting, component-level contracts, and who on the squad owns what.",
+   "keywords": [
+    "accessibility engineering",
+    "wcag",
+    "axe ci",
+    "a11y automation"
+   ],
+   "status": "planned",
+   "added_by": "writer3"
+  },
+  {
+   "kind": "article",
+   "slug": "jobs-to-be-done-interviews",
+   "title": "Jobs-to-be-done interviews that surface what users won't say",
+   "cluster": "product",
+   "intent": "How we run jobs-to-be-done interviews: recruiting, the switch interview technique, timeline mapping, and turning transcripts into product bets.",
+   "keywords": [
+    "jobs to be done",
+    "customer interviews",
+    "jtbd",
+    "product research"
+   ],
+   "status": "planned",
+   "added_by": "writer3"
+  },
+  {
+   "kind": "article",
+   "slug": "dashboard-design-dozen-lessons",
+   "title": "Dashboard design: twelve lessons from twelve dashboards",
+   "cluster": "product",
+   "intent": "Dashboard design patterns from a dozen B2B products: hierarchy of attention, progressive disclosure, empty states, and when to kill a chart.",
+   "keywords": [
+    "dashboard design",
+    "data ux",
+    "b2b product design",
+    "information hierarchy"
+   ],
+   "status": "planned",
+   "added_by": "writer3"
+  },
+  {
+   "kind": "article",
+   "slug": "onboarding-patterns-activation",
+   "title": "Onboarding that activates: patterns we keep, patterns we've banned",
+   "cluster": "product",
+   "intent": "Activation-focused onboarding patterns: value-first flows, commitment devices done honestly, and the anti-patterns that erode trust.",
+   "keywords": [
+    "onboarding ux",
+    "activation",
+    "product onboarding",
+    "user activation metrics"
+   ],
+   "status": "planned",
+   "added_by": "writer3"
+  },
+  {
+   "kind": "article",
+   "slug": "wcag-aa-product-teams",
+   "title": "WCAG AA for product teams: the parts everyone gets wrong",
+   "cluster": "product",
+   "intent": "Designing for WCAG AA in product teams: what AA actually demands, the components that most often fail, and baked-in review rituals.",
+   "keywords": [
+    "wcag aa",
+    "accessible product design",
+    "inclusive design",
+    "design review"
+   ],
+   "status": "planned",
+   "added_by": "writer3"
+  },
+  {
+   "kind": "article",
+   "slug": "naming-process-start-to-finish",
+   "title": "Naming a company: our process from blank page to trademark",
+   "cluster": "brand",
+   "intent": "Our naming process end to end: briefs, generation volumes, linguistic and trademark screening, testing without death-by-focus-group.",
+   "keywords": [
+    "naming process",
+    "brand naming",
+    "verbal identity",
+    "trademark screening"
+   ],
+   "status": "planned",
+   "added_by": "writer3"
+  },
+  {
+   "kind": "article",
+   "slug": "logo-is-dead-system",
+   "title": "The logo is dead; long live the identity system",
+   "cluster": "brand",
+   "intent": "Why modern identities are systems not logos: responsive marks, motion behaviour, sound, and the idea that survives every touchpoint.",
+   "keywords": [
+    "logo systems",
+    "visual identity",
+    "responsive logos",
+    "brand system"
+   ],
+   "status": "planned",
+   "added_by": "writer3"
+  },
+  {
+   "kind": "article",
+   "slug": "brand-voice-survives-handover",
+   "title": "Brand voice that survives the handover: writing guidelines people use",
+   "cluster": "brand",
+   "intent": "Building a brand voice that survives handover to a busy marketing team: principles, before/after examples, and the 15-minute voice test.",
+   "keywords": [
+    "brand voice",
+    "tone of voice",
+    "copywriting guidelines",
+    "verbal identity"
+   ],
+   "status": "planned",
+   "added_by": "writer3"
+  },
+  {
+   "kind": "article",
+   "slug": "rebrands-that-worked",
+   "title": "Rebrands that worked (and the ones that were just new paint)",
+   "cluster": "brand",
+   "intent": "An anatomy of rebrands that worked: knowing when to rebrand, sequencing the rollout, and measuring whether it moved anything.",
+   "keywords": [
+    "rebrand case studies",
+    "brand refresh",
+    "rebrand strategy",
+    "brand rollout"
+   ],
+   "status": "planned",
+   "added_by": "writer3"
+  },
+  {
+   "kind": "article",
+   "slug": "technical-seo-launch-checklist",
+   "title": "The technical SEO checklist we run before every launch",
+   "cluster": "growth",
+   "intent": "The technical SEO checklist we run on every launch: crawlability, rendering, structured data, internal linking, and the issues that hide until traffic drops.",
+   "keywords": [
+    "technical seo checklist",
+    "seo audit",
+    "structured data seo",
+    "crawl budget"
+   ],
+   "status": "planned",
+   "added_by": "writer3"
+  },
+  {
+   "kind": "article",
+   "slug": "content-strategy-compounds",
+   "title": "Content strategy that compounds: how we plan a year of publishing",
+   "cluster": "growth",
+   "intent": "Building a content strategy on search intent and distribution maths rather than volume: topic selection, decay, refresh cycles, attribution.",
+   "keywords": [
+    "content strategy",
+    "seo content",
+    "content marketing roi",
+    "editorial strategy"
+   ],
+   "status": "planned",
+   "added_by": "writer3"
+  },
+  {
+   "kind": "article",
+   "slug": "cro-experiments-that-matter",
+   "title": "CRO experiments worth running: a field guide to honest testing",
+   "cluster": "growth",
+   "intent": "How we design CRO experiments worth running: hypothesis quality, minimum detectable effect, test sequencing, and reporting that earns trust.",
+   "keywords": [
+    "cro experiments",
+    "ab testing",
+    "conversion rate optimisation",
+    "experiment design"
+   ],
+   "status": "planned",
+   "added_by": "writer3"
+  },
+  {
+   "kind": "article",
+   "slug": "lifecycle-email-product",
+   "title": "Lifecycle email is a product: building programmes, not campaigns",
+   "cluster": "growth",
+   "intent": "Lifecycle email that behaves like product: state-based programmes, plain-text craft, deliverability, and the metrics beyond open rates.",
+   "keywords": [
+    "lifecycle email",
+    "email marketing",
+    "customer retention",
+    "email deliverability"
+   ],
+   "status": "planned",
+   "added_by": "writer3"
+  },
+  {
+   "kind": "article",
+   "slug": "attribution-noise-decisions",
+   "title": "Attribution is 90% noise: making decisions anyway",
+   "cluster": "growth",
+   "intent": "A clear-eyed guide to marketing attribution: why last-click lies, pragmatic models for small teams, and how to decide without perfect data.",
+   "keywords": [
+    "marketing attribution",
+    "analytics",
+    "marketing mix",
+    "measurement"
+   ],
+   "status": "planned",
+   "added_by": "writer3"
+  },
+  {
+   "kind": "article",
+   "slug": "shipping-llm-features-lessons",
+   "title": "Shipping LLM features: what production taught us",
+   "cluster": "ai",
+   "intent": "Lessons from shipping LLM features to production: latency budgets, streaming UX, cost engineering, fallbacks, and setting user expectations.",
+   "keywords": [
+    "llm features",
+    "ai product development",
+    "streaming ux",
+    "ai ux"
+   ],
+   "status": "planned",
+   "added_by": "writer3"
+  },
+  {
+   "kind": "article",
+   "slug": "evals-practical-guide",
+   "title": "Evals are the new unit tests: a practical guide for product teams",
+   "cluster": "ai",
+   "intent": "A practical introduction to evaluation for LLM features: golden sets, rubric graders, regression gates, and making evals part of CI.",
+   "keywords": [
+    "llm evals",
+    "ai evaluation",
+    "model testing",
+    "prompt regression"
+   ],
+   "status": "planned",
+   "added_by": "writer3"
+  },
+  {
+   "kind": "article",
+   "slug": "agent-ux-control",
+   "title": "Agent UX: designing for software that acts on your behalf",
+   "cluster": "ai",
+   "intent": "Designing interfaces for agents that act on a user's behalf: permissions, progress visibility, undo, and the trust calibration problem.",
+   "keywords": [
+    "agent ux",
+    "ai agents",
+    "human in the loop",
+    "ai interaction design"
+   ],
+   "status": "planned",
+   "added_by": "writer3"
+  },
+  {
+   "kind": "article",
+   "slug": "ai-brand-voice",
+   "title": "AI and brand voice: keeping the robot on-script",
+   "cluster": "ai",
+   "intent": "Why AI-generated copy drifts off-brand and how to constrain it: voice systems, style exemplars, eval-driven tone checks, human review loops.",
+   "keywords": [
+    "ai brand voice",
+    "ai copywriting",
+    "brand safety ai",
+    "tone control"
+   ],
+   "status": "planned",
+   "added_by": "writer3"
+  },
+  {
+   "kind": "article",
+   "slug": "headless-commerce-when-worth-it",
+   "title": "Headless commerce: when it's worth it and when it's theatre",
+   "cluster": "ecommerce",
+   "intent": "When headless commerce earns its complexity: team requirements, total cost of ownership, and the architecture sweet spots for mid-market brands.",
+   "keywords": [
+    "headless commerce",
+    "composable commerce",
+    "shopify headless",
+    "ecommerce architecture"
+   ],
+   "status": "planned",
+   "added_by": "writer3"
+  },
+  {
+   "kind": "article",
+   "slug": "subscription-models-retention",
+   "title": "Subscription models that retain: design for the second order",
+   "cluster": "ecommerce",
+   "intent": "Designing subscription commerce that retains ethically: pause over cancel, honest pricing, and the dunning flows that save revenue without resentment.",
+   "keywords": [
+    "subscription ecommerce",
+    "retention design",
+    "dunning",
+    "subscription ux"
+   ],
+   "status": "planned",
+   "added_by": "writer3"
+  },
+  {
+   "kind": "article",
+   "slug": "checkout-friction-killers",
+   "title": "Checkout friction: where conversions actually die and how to find out",
+   "cluster": "ecommerce",
+   "intent": "A research-backed audit of checkout friction: the fields to cut, express payment order, error handling, and measuring abandonment honestly.",
+   "keywords": [
+    "checkout optimisation",
+    "checkout friction",
+    "cart abandonment",
+    "payment ux"
+   ],
+   "status": "planned",
+   "added_by": "writer3"
+  },
+  {
+   "kind": "article",
+   "slug": "how-we-estimate-software",
+   "title": "Estimating software honestly: ranges, risks and why we cap scope",
+   "cluster": "playbooks",
+   "intent": "How we estimate software honestly: signal ranges, risk buffers, fixed-scope sprints, and how clients should read any estimate they're given.",
+   "keywords": [
+    "software estimation",
+    "project pricing",
+    "fixed price vs hourly",
+    "scope management"
+   ],
+   "status": "planned",
+   "added_by": "writer3"
+  },
+  {
+   "kind": "article",
+   "slug": "handover-without-shelfware",
+   "title": "Handover without the hangover: documentation your team will read",
+   "cluster": "playbooks",
+   "intent": "What a clean agency-to-client handover looks like: documentation that gets read, runnable runbooks, training, and ownership of secrets and accounts.",
+   "keywords": [
+    "agency handover",
+    "project documentation",
+    "knowledge transfer",
+    "runbooks"
+   ],
+   "status": "planned",
+   "added_by": "writer3"
   }
  ]
 }
