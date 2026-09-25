@@ -1201,10 +1201,11 @@
     "product naming guide",
     "naming workshop"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790378581.048918
+   "claimed_at": 1790378581.048918,
+   "done_at": "2026-09-26T09:28:48"
   },
   {
    "kind": "article",
@@ -1235,8 +1236,10 @@
     "ux writing voice",
     "copy style guide"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790378923.318461
   },
   {
    "kind": "article",
@@ -1250,8 +1253,10 @@
     "brand animation guidelines",
     "motion tokens"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790378923.318462
   },
   {
    "kind": "article",
@@ -1265,8 +1270,10 @@
     "rebrand checklist",
     "brand launch plan"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790378923.318462
   },
   {
    "kind": "article",
@@ -1280,8 +1287,10 @@
     "sub brand strategy",
     "brand portfolio"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790378923.318463
   },
   {
    "kind": "article",
@@ -2184,10 +2193,11 @@
    "cluster": "demos",
    "intent": "Telehealth booking flow for fictional regional provider Pylon Health. Art direction: clinical-calm — soft sage and warm white, generous whitespace, plain language. Features: symptom/reason picker, practitioner cards with fictional clinicians, week calendar with availability, appointment summary, mocked confirmation with calendar-add. Step machine with back-button integrity, form validation, focus management between steps, full keyboard support. Feels production-grade: loading states, error recovery, reduced-motion aware transitions.",
    "keywords": [],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "demo1",
-   "claimed_at": 1790377945.5203378
+   "claimed_at": 1790377945.5203378,
+   "done_at": "2026-09-26T09:28:50"
   },
   {
    "kind": "demo",
