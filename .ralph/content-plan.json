@@ -914,8 +914,10 @@
     "headless chrome pdf",
     "report generation web"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790380853.9380171
   },
   {
    "kind": "article",
@@ -929,8 +931,10 @@
     "rtl css",
     "localization engineering"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790380853.938018
   },
   {
    "kind": "article",
@@ -944,8 +948,10 @@
     "accessibility engineering",
     "shortcut design"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790380853.938018
   },
   {
    "kind": "article",
@@ -959,8 +965,10 @@
     "progressive rollout",
     "technical debt flags"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790380853.938018
   },
   {
    "kind": "article",
@@ -2380,10 +2388,11 @@
    "cluster": "demos",
    "intent": "3D product configurator for fictional Osprey Outdoor packs. Art direction: trail-dusk palette — graphite, moss, blaze orange; spec-sheet typography. Features: three.js/react-three-fiber stylised low-poly backpack (built from primitives, no external models), colour/material swap on panels, volume & torso-fit pickers updating specs, exploded view toggle, price updating live, 'this configuration' share state in URL. Performance-disciplined (budget <1.2MB extra), static poster fallback for reduced-motion, pointer-none-safe on touch.",
    "keywords": [],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "demo3",
-   "claimed_at": 1790379389.45912
+   "claimed_at": 1790379389.45912,
+   "done_at": "2026-09-26T10:03:17"
   },
   {
    "kind": "demo",
