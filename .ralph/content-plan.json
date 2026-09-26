@@ -5533,10 +5533,11 @@
     "customer research",
     "retention strategy"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790389336.439862
+   "claimed_at": 1790389336.439862,
+   "done_at": "2026-09-26T12:50:34"
   },
   {
    "kind": "article",
@@ -5550,10 +5551,11 @@
     "redirect strategy",
     "domain migration"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790389336.439863
+   "claimed_at": 1790389336.439863,
+   "done_at": "2026-09-26T12:50:34"
   },
   {
    "kind": "article",
@@ -5567,10 +5569,11 @@
     "welcome sequence",
     "list building"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790389336.439863
+   "claimed_at": 1790389336.439863,
+   "done_at": "2026-09-26T12:50:34"
   },
   {
    "kind": "article",
@@ -5584,10 +5587,11 @@
     "ad creative",
     "paid social"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790389336.439863
+   "claimed_at": 1790389336.439863,
+   "done_at": "2026-09-26T12:50:34"
   },
   {
    "kind": "article",
@@ -5601,10 +5605,11 @@
     "measurement plan",
     "analytics governance"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790389400.0704079
+   "claimed_at": 1790389400.0704079,
+   "done_at": "2026-09-26T12:53:02"
   },
   {
    "kind": "article",
@@ -5618,10 +5623,11 @@
     "conversion optimisation",
     "UX audit"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790389400.070409
+   "claimed_at": 1790389400.070409,
+   "done_at": "2026-09-26T12:53:35"
   },
   {
    "kind": "article",
@@ -6007,8 +6013,10 @@
     "source grounding",
     "AI transparency"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790390839.574956
   },
   {
    "kind": "article",
@@ -6022,8 +6030,10 @@
     "suggestion chips",
     "command palette AI"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790390839.5749571
   },
   {
    "kind": "article",
@@ -6037,8 +6047,10 @@
     "generated content labels",
     "responsible AI UX"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790390839.5749571
   },
   {
    "kind": "article",
@@ -6052,8 +6064,10 @@
     "synthetic data UX",
     "AI-assisted design"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790390839.5749571
   },
   {
    "kind": "article",
@@ -6342,10 +6356,11 @@
     "multilingual website seo",
     "localisation seo"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790389400.070409
+   "claimed_at": 1790389400.070409,
+   "done_at": "2026-09-26T12:53:35"
   },
   {
    "kind": "article",
@@ -6397,10 +6412,11 @@
     "branded search volume",
     "marketing effectiveness metrics"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790390167.632858
+   "claimed_at": 1790390167.632858,
+   "done_at": "2026-09-26T12:50:48"
   },
   {
    "kind": "article",
