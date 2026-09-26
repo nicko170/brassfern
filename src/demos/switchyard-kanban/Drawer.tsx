@@ -42,6 +42,7 @@ export function Drawer({
   onMoveColumn: (colId: string) => void
 }) {
   const closeRef = useRef<HTMLButtonElement>(null)
+  const rootRef = useRef<HTMLElement>(null)
   const [title, setTitle] = useState(card.title)
   const [desc, setDesc] = useState(card.desc)
   const [checkText, setCheckText] = useState('')
@@ -57,6 +58,38 @@ export function Drawer({
   useEffect(() => {
     closeRef.current?.focus()
   }, [card.id])
+
+  // Esc closes; Tab is contained inside the drawer while it is open.
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        e.preventDefault()
+        onClose()
+        return
+      }
+      if (e.key !== 'Tab') return
+      const root = rootRef.current
+      if (!root) return
+      const focusables = Array.from(
+        root.querySelectorAll<HTMLElement>(
+          'button:not([disabled]):not([tabindex="-1"]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex="0"]',
+        ),
+      ).filter((el) => el.offsetParent !== null)
+      if (focusables.length === 0) return
+      const first = focusables[0]
+      const last = focusables[focusables.length - 1]
+      const active = document.activeElement
+      if (e.shiftKey && active === first) {
+        e.preventDefault()
+        last.focus()
+      } else if (!e.shiftKey && active === last) {
+        e.preventDefault()
+        first.focus()
+      }
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [onClose])
 
   const commitTitle = () => {
     const t = title.trim()
@@ -75,6 +108,7 @@ export function Drawer({
     <div className="swy-drawer-wrap" role="presentation">
       <button className="swy-scrim" aria-label="Close card details" onClick={onClose} tabIndex={-1} />
       <aside
+        ref={rootRef}
         className="swy-drawer"
         role="dialog"
         aria-modal="true"

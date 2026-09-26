@@ -199,7 +199,7 @@ export function seedState(): BoardState {
         { assignee: 'itv', labels: ['crew-app'], priority: 'local',
           activity: [act('2026-09-02T12:00:00+10:00', 'Shipped in 2.14. Two support tickets in the first week, both cosmetic.')] }),
       c(1033, 'arrived', 2, 'Depot onboarding checklist',
-        'New depots get a guided setup: crews in mechanism, awards, approval chains— all before the first roster is drafted.',
+        'New depots get a guided setup: crews imported, awards loaded, approval chains drawn — all before the first roster is drafted.',
         { assignee: 'rlg', labels: ['research'], priority: 'freight',
           activity: [act('2026-08-28T09:30:00+10:00', 'Shipped in 2.13. Gladstone depot onboarded in one afternoon.')] }),
       c(1034, 'arrived', 3, 'SSO via Okta',

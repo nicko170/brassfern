@@ -106,7 +106,18 @@ function reduce(state: BoardState, a: Action): BoardState {
     }
     case 'add': {
       const seq = state.nextSeq
-      const order = orderFor(state, a.colId, a.after, a.after ? null : state.cards.filter((c) => c.columnId === a.colId).sort((x, y) => x.order - y.order).pop()?.id ?? null)
+      const colCards = state.cards
+        .filter((c) => c.columnId === a.colId)
+        .sort((x, y) => x.order - y.order)
+      let order: number
+      if (a.after) {
+        const i = colCards.findIndex((c) => c.id === a.after)
+        const prev = colCards[i]
+        const next = i >= 0 ? colCards[i + 1] : undefined
+        order = prev ? (next ? (prev.order + next.order) / 2 : prev.order + 1) : colCards.length ? colCards[colCards.length - 1].order + 1 : 1
+      } else {
+        order = colCards.length ? colCards[colCards.length - 1].order + 1 : 1
+      }
       const card: Card = {
         id: `SW-${seq}`,
         title: a.title,
@@ -932,15 +943,14 @@ export default function SwitchyardKanban() {
       </div>
 
       {/* mobile progress dots */}
-      <div className="swy-dots" role="tablist" aria-label="Column position">
+      <div className="swy-dots" aria-label="Column position">
         {state.columns.map((col, i) => {
           const active = Math.round(scrollPos * (state.columns.length - 1)) === i
           return (
             <button
               key={col.id}
               type="button"
-              role="tab"
-              aria-selected={active}
+              aria-current={active ? 'true' : undefined}
               aria-label={`Go to column ${col.name}`}
               className={'swy-dot' + (active ? ' is-on' : '')}
               onClick={() =>
@@ -1049,7 +1059,7 @@ function Composer({
   onCancel,
   nextId,
 }: {
-  inputRef: RefObject<HTMLInputElement | null>
+  inputRef: RefObject<HTMLInputElement>
   title: string
   setTitle: (v: string) => void
   priority: Priority
