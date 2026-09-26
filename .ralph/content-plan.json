@@ -2741,10 +2741,11 @@
     "structured data seo",
     "crawl budget"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer3",
    "worker": "writer3",
-   "claimed_at": 1790383921.745665
+   "claimed_at": 1790383921.745665,
+   "done_at": "2026-09-26T11:03:46"
   },
   {
    "kind": "article",
@@ -2758,10 +2759,11 @@
     "content marketing roi",
     "editorial strategy"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer3",
    "worker": "writer3",
-   "claimed_at": 1790383921.745666
+   "claimed_at": 1790383921.745666,
+   "done_at": "2026-09-26T11:03:49"
   },
   {
    "kind": "article",
@@ -2775,10 +2777,11 @@
     "conversion rate optimisation",
     "experiment design"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer3",
    "worker": "writer3",
-   "claimed_at": 1790383921.745666
+   "claimed_at": 1790383921.745666,
+   "done_at": "2026-09-26T11:03:51"
   },
   {
    "kind": "article",
@@ -2792,10 +2795,11 @@
     "customer retention",
     "email deliverability"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer3",
    "worker": "writer3",
-   "claimed_at": 1790383921.745666
+   "claimed_at": 1790383921.745666,
+   "done_at": "2026-09-26T11:03:57"
   },
   {
    "kind": "article",
@@ -4224,8 +4228,10 @@
     "dark funnel marketing",
     "community roi measurement"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790384579.2238111
   },
   {
    "kind": "article",
@@ -4239,8 +4245,10 @@
     "tools as content strategy",
     "programmatic seo tools"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790384579.2238111
   },
   {
    "kind": "article",
@@ -5132,8 +5140,10 @@
     "content strategy",
     "organic traffic"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790384579.2238111
   },
   {
    "kind": "article",
@@ -5147,8 +5157,10 @@
     "SEO structure",
     "content hubs"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790384579.223812
   },
   {
    "kind": "article",
