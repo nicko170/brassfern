@@ -8052,10 +8052,11 @@
     "AI assistance UI",
     "form UX"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790406871.03183
+   "claimed_at": 1790406871.03183,
+   "done_at": "2026-09-26T17:22:40"
   },
   {
    "kind": "article",
@@ -8070,10 +8071,11 @@
     "assistant UX",
     "LLM evaluation"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790406871.03183
+   "claimed_at": 1790406871.03183,
+   "done_at": "2026-09-26T17:22:40"
   },
   {
    "kind": "article",
@@ -8088,10 +8090,11 @@
     "brand voice AI",
     "copilot UX"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790406871.031831
+   "claimed_at": 1790406871.031831,
+   "done_at": "2026-09-26T17:22:40"
   },
   {
    "kind": "article",
@@ -8106,10 +8109,11 @@
     "RAG context design",
     "AI transparency"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790406871.031831
+   "claimed_at": 1790406871.031831,
+   "done_at": "2026-09-26T17:22:40"
   },
   {
    "kind": "article",
@@ -8162,10 +8166,11 @@
     "feedback loop product",
     "LLM product metrics"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790406958.100854
+   "claimed_at": 1790406958.100854,
+   "done_at": "2026-09-26T17:22:30"
   },
   {
    "kind": "article",
@@ -8688,8 +8693,10 @@
    "cluster": "demos",
    "intent": "A fitness habit tracker for fictional wellness client 'Trailswell' (bushwalking-yoga brand). Art direction: warm risograph print — dusty cream paper, single ink colour (burnt sienna) with sage accents, chunky rounded type, hand-stamped icons, visible misregistration texture. Features: add/edit/archive habits, daily check-in row, a GitHub-style streak heatmap (13 weeks, tap any cell for detail), per-habit 7-day ring chart, weekly review card with gentle honesty ('3 of 5 anchor days'), full keyboard support, data persisted to localStorage with export-as-JSON. Celebrations are calm: no confetti, a slow stamp animation that respects prefers-reduced-motion. Standalone at 375px. React + TypeScript, CSS custom properties, no chart lib (hand-rolled SVG). Must link caseStudy field once the Trailswell case study exists.",
    "keywords": [],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "demo3",
+   "claimed_at": 1790407285.598911
   },
   {
    "kind": "demo",
