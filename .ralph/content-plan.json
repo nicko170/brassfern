@@ -2487,10 +2487,11 @@
    "cluster": "demos",
    "intent": "Multi-step onboarding for fictional short-course platform Brightmarsh. Art direction: chalk-and-ink academia — bone white, ink navy, highlighter yellow; confident and curious. Features: goal picker (cards), time-commitment dial with honest weekly math, course recommendations from fake catalogue (12 courses), plan summary with first-week calendar preview, progress saved across steps, resume-later state. State-machine navigation integrity, animated progress (reduced-motion safe), keyboard-first. Ends with a genuinely satisfying plan-ready screen.",
    "keywords": [],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "demo3",
-   "claimed_at": 1790381056.90881
+   "claimed_at": 1790381056.90881,
+   "done_at": "2026-09-26T10:54:06"
   },
   {
    "kind": "demo",
@@ -2734,8 +2735,10 @@
     "structured data seo",
     "crawl budget"
    ],
-   "status": "planned",
-   "added_by": "writer3"
+   "status": "claimed",
+   "added_by": "writer3",
+   "worker": "writer3",
+   "claimed_at": 1790383921.745665
   },
   {
    "kind": "article",
@@ -2749,8 +2752,10 @@
     "content marketing roi",
     "editorial strategy"
    ],
-   "status": "planned",
-   "added_by": "writer3"
+   "status": "claimed",
+   "added_by": "writer3",
+   "worker": "writer3",
+   "claimed_at": 1790383921.745666
   },
   {
    "kind": "article",
@@ -2764,8 +2769,10 @@
     "conversion rate optimisation",
     "experiment design"
    ],
-   "status": "planned",
-   "added_by": "writer3"
+   "status": "claimed",
+   "added_by": "writer3",
+   "worker": "writer3",
+   "claimed_at": 1790383921.745666
   },
   {
    "kind": "article",
@@ -2779,8 +2786,10 @@
     "customer retention",
     "email deliverability"
    ],
-   "status": "planned",
-   "added_by": "writer3"
+   "status": "claimed",
+   "added_by": "writer3",
+   "worker": "writer3",
+   "claimed_at": 1790383921.745666
   },
   {
    "kind": "article",
@@ -2794,8 +2803,10 @@
     "marketing mix",
     "measurement"
    ],
-   "status": "planned",
-   "added_by": "writer3"
+   "status": "claimed",
+   "added_by": "writer3",
+   "worker": "writer4",
+   "claimed_at": 1790384007.818775
   },
   {
    "kind": "article",
@@ -2809,8 +2820,10 @@
     "streaming ux",
     "ai ux"
    ],
-   "status": "planned",
-   "added_by": "writer3"
+   "status": "claimed",
+   "added_by": "writer3",
+   "worker": "writer4",
+   "claimed_at": 1790384007.8187761
   },
   {
    "kind": "article",
@@ -2824,8 +2837,10 @@
     "model testing",
     "prompt regression"
    ],
-   "status": "planned",
-   "added_by": "writer3"
+   "status": "claimed",
+   "added_by": "writer3",
+   "worker": "writer4",
+   "claimed_at": 1790384007.8187761
   },
   {
    "kind": "article",
@@ -2839,8 +2854,10 @@
     "human in the loop",
     "ai interaction design"
    ],
-   "status": "planned",
-   "added_by": "writer3"
+   "status": "claimed",
+   "added_by": "writer3",
+   "worker": "writer4",
+   "claimed_at": 1790384007.8187761
   },
   {
    "kind": "article",
