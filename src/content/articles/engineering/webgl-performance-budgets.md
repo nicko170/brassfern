@@ -17,6 +17,8 @@ keywords:
   - GPU budgets
   - performance budget
 readingTime: 10
+heroImage: /images/articles/engineering/webgl-performance-budgets.jpg
+heroAlt: "Editorial engraved-style illustration: a low-poly brass wireframe chair floats above a paper plinth, ringed by fine fern-ink measurement marks and hairline rules, like an engineer's budget diagram."
 ---
 
 A 3D moment on a website is a promise. Done well, it says the people who built this care about craft all the way down. Done badly — a fan-spinning, frame-dropping, battery-draining cube of regret — it says the opposite, louder, to every visitor on a mid-range phone. Which is most visitors. We love WebGL and we ship it with the enthusiasm of a studio that also publishes [performance budgets](/journal/engineering/bundle-budget-discipline) and enforces them. Those two facts get along fine, because the entire trick is this: the 3D scene is a feature with a budget, like fonts or images, and it lives or dies by the same arithmetic.
