@@ -8,6 +8,8 @@ date: 2026-06-11
 author: Aiko Tanaka
 keywords: [skeleton screen design, loading state ux, perceived performance, shimmer animation, layout shift prevention]
 readingTime: 9
+heroImage: /images/articles/web-design/skeleton-screens-done-right.jpg
+heroAlt: "Abstract editorial still life of skeleton-screen placeholder shapes — a hero block, text bars and list rows in sage and fern tones on warm cream paper with a brass rule."
 ---
 
 The skeleton screen has a PR problem of its own making. Ten years ago it was the civilised alternative to the spinner: show the shape of what's coming and waiting stops feeling like waiting. Then somewhere along the way "skeleton" became a generic shimmer rectangle slapped over any region that fetches data, and the device quietly turned into a spinner with a design team's signature on it. The gap between those two outcomes is entirely a matter of craft, and craft is checkable.
