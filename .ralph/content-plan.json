@@ -8368,8 +8368,10 @@
     "overlay UX mobile",
     "touch gestures design"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790404821.0149918
   },
   {
    "kind": "article",
@@ -8384,8 +8386,10 @@
     "banner blindness",
     "release notes UX"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790404821.014993
   },
   {
    "kind": "article",
@@ -8400,8 +8404,10 @@
     "tabs in sync UX",
     "product engineering UX"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790404821.014994
   },
   {
    "kind": "article",
@@ -8416,8 +8422,10 @@
     "session continuity",
     "mobile web flows"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790404821.014994
   },
   {
    "kind": "article",
