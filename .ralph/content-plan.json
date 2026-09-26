@@ -4980,10 +4980,11 @@
     "JavaScript performance",
     "comlink"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790403970.6930292
+   "claimed_at": 1790403970.6930292,
+   "done_at": "2026-09-26T16:32:11"
   },
   {
    "kind": "article",
