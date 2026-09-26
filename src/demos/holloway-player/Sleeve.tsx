@@ -1,4 +1,4 @@
-import { useMemo } from 'react'
+import { useMemo, type CSSProperties } from 'react'
 import type { HAlbum } from './data'
 import { hashStr, mulberry } from './data'
 
@@ -289,7 +289,7 @@ export function Vinyl({
     <div
       className={`hp-vinyl ${spinning ? 'is-live' : ''} ${className ?? ''}`}
       aria-hidden="true"
-      style={{ ['--hp-label' as string]: album.palette.accent, ['--hp-label-2' as string]: album.palette.bg }}
+      style={{ '--hp-label': album.palette.accent, '--hp-label-2': album.palette.bg } as CSSProperties}
     >
       <span className="hp-vinyl__label" />
     </div>

@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useRef, useState, type CSSProperties } from 'react'
 import type { HAlbum } from './data'
 import {
   ALBUMS,
@@ -300,10 +300,8 @@ export default function HollowayPlayer() {
     const s = sRef.current
     if (!s.deck.q.length) return
     setStarted(true)
-    setPlaying((p) => {
-      setAnnounce(p ? 'Paused.' : 'Playing.')
-      return !p
-    })
+    setAnnounce(s.playing ? 'Paused.' : 'Playing.')
+    setPlaying(!s.playing)
   }, [])
 
   const startDeck = useCallback((next: Deck) => {
@@ -525,11 +523,11 @@ export default function HollowayPlayer() {
     advance(true)
   }, [pos, playing, current, repeat, advance])
 
-  // Announce track changes.
+  // Announce track changes once the deck has been started.
   useEffect(() => {
-    if (!current) return
+    if (!current || !started) return
     setAnnounce(`Now playing “${current.track.title}” by ${current.album.artist}.`)
-  }, [currentId])
+  }, [currentId, started])
 
   // Focus management for modal-ish overlays.
   useEffect(() => {
@@ -960,7 +958,7 @@ export default function HollowayPlayer() {
                 setMuted(false)
               }}
               aria-label="Volume"
-              style={{ ['--hp-fill' as string]: `${(muted ? 0 : volume) * 100}%` }}
+              style={{ '--hp-fill': `${(muted ? 0 : volume) * 100}%` } as CSSProperties}
             />
           </div>
           <button
