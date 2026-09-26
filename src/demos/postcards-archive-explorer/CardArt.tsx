@@ -448,7 +448,7 @@ export function Postmark({ town, label, seed }: { town: string; label: string; s
       </g>
       <text fontSize="7.6" fontFamily="'Courier New', Courier, monospace" fill="#2b322c" opacity="0.62" letterSpacing="1.5">
         <textPath href={`#${id}`} startOffset="2%">
-          {townUp} · (FIC) ·
+          {townUp} · N.S.W. ·
         </textPath>
       </text>
       <text x={48} y={52} textAnchor="middle" fontSize="9.5" fontFamily="'Courier New', Courier, monospace" fill="#2b322c" opacity="0.66">

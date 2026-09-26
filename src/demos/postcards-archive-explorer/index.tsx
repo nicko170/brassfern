@@ -12,8 +12,8 @@ import {
   facetCount,
   replyCount,
   sortCards,
-  filtersEqual,
   threadFilters,
+  filtersEqual,
   describeFilters,
   citationFor,
   parseUrl,
@@ -169,7 +169,9 @@ export default function PostcardsArchiveExplorer() {
       if (!t) return
       setThreadId(id)
       setFilters(threadFilters(t))
-      browseRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      const reduced =
+        typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches
+      browseRef.current?.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' })
     },
     [threadId],
   )
@@ -340,7 +342,7 @@ export default function PostcardsArchiveExplorer() {
           <ul className="pcx-threads__rail" role="list">
             {THREADS.map((t) => {
               const n = applyFilters(CARDS, threadFilters(t)).length
-              const active = threadId === t.id
+              const active = threadId === t.id && filtersEqual(filters, threadFilters(t))
               return (
                 <li key={t.id} className="pcx-thread" data-active={active || undefined}>
                   <button
@@ -623,7 +625,7 @@ export default function PostcardsArchiveExplorer() {
                   type="button"
                   className="pcx-btn pcx-btn--ghost"
                   onClick={() => stepCard(-1)}
-                  disabled={sorted.length < 2}
+                  disabled={sorted.length < 2 || openIndex < 0}
                   aria-label="Previous card in the drawer"
                 >
                   ← Previous
@@ -635,7 +637,7 @@ export default function PostcardsArchiveExplorer() {
                   type="button"
                   className="pcx-btn pcx-btn--ghost"
                   onClick={() => stepCard(1)}
-                  disabled={sorted.length < 2}
+                  disabled={sorted.length < 2 || openIndex < 0}
                   aria-label="Next card in the drawer"
                 >
                   Next →

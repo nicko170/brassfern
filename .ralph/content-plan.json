@@ -7425,10 +7425,11 @@
     "digital collections",
     "timeline UI"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "demo3",
-   "claimed_at": 1790405710.5904799
+   "claimed_at": 1790405710.5904799,
+   "done_at": "2026-09-26T17:20:50"
   },
   {
    "kind": "demo",
@@ -8142,10 +8143,11 @@
     "agent transparency",
     "AI workflow design"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790406958.100854
+   "claimed_at": 1790406958.100854,
+   "done_at": "2026-09-26T17:20:19"
   },
   {
    "kind": "article",
@@ -9134,8 +9136,10 @@
     "LLM UX",
     "first run"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790407108.415492
   },
   {
    "kind": "article",
@@ -9150,8 +9154,10 @@
     "evals",
     "vendor risk"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790407108.415493
   },
   {
    "kind": "article",
@@ -9166,8 +9172,10 @@
     "unit economics",
     "finops"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790407108.415493
   },
   {
    "kind": "article",
@@ -9182,8 +9190,10 @@
     "privacy",
     "images"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790407108.415493
   },
   {
    "kind": "article",
