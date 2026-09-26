@@ -4822,8 +4822,11 @@
     "PWA caching",
     "workbox alternatives"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "done",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790391666.1523619,
+   "done_at": "2026-09-26T13:06:55"
   },
   {
    "kind": "article",
@@ -4837,8 +4840,11 @@
     "performance budget",
     "consent management"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "done",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790391666.152363,
+   "done_at": "2026-09-26T13:11:00"
   },
   {
    "kind": "article",
@@ -4852,8 +4858,11 @@
     "code quality",
     "static typing"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "done",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790391666.152363,
+   "done_at": "2026-09-26T13:13:29"
   },
   {
    "kind": "article",
@@ -4867,8 +4876,11 @@
     "code sharing",
     "agency engineering"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "done",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790391666.152364,
+   "done_at": "2026-09-26T13:20:30"
   },
   {
    "kind": "article",
@@ -5857,8 +5869,10 @@
     "navigation design",
     "web design craft"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790392932.156121
   },
   {
    "kind": "article",
@@ -5872,8 +5886,10 @@
     "brand storytelling",
     "trust signals"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790392932.1561222
   },
   {
    "kind": "article",
@@ -5887,8 +5903,10 @@
     "employer brand web",
     "job page UX"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790392932.1561222
   },
   {
    "kind": "article",
@@ -5902,8 +5920,10 @@
     "empty states",
     "error UX"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790392932.1561222
   },
   {
    "kind": "article",
@@ -6013,10 +6033,11 @@
     "source grounding",
     "AI transparency"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790390839.574956
+   "claimed_at": 1790390839.574956,
+   "done_at": "2026-09-26T13:19:10"
   },
   {
    "kind": "article",
@@ -6030,10 +6051,11 @@
     "suggestion chips",
     "command palette AI"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790390839.5749571
+   "claimed_at": 1790390839.5749571,
+   "done_at": "2026-09-26T13:20:26"
   },
   {
    "kind": "article",
@@ -6047,10 +6069,11 @@
     "generated content labels",
     "responsible AI UX"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790390839.5749571
+   "claimed_at": 1790390839.5749571,
+   "done_at": "2026-09-26T13:22:01"
   },
   {
    "kind": "article",
@@ -6064,10 +6087,11 @@
     "synthetic data UX",
     "AI-assisted design"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790390839.5749571
+   "claimed_at": 1790390839.5749571,
+   "done_at": "2026-09-26T13:24:12"
   },
   {
    "kind": "article",
@@ -6560,10 +6584,11 @@
     "voice assistant design patterns",
     "audio input ux"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790391220.510349
+   "claimed_at": 1790391220.510349,
+   "done_at": "2026-09-26T13:25:03"
   },
   {
    "kind": "article",
@@ -6578,10 +6603,11 @@
     "ai credits pricing",
     "unit economics ai features"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790391220.51035
+   "claimed_at": 1790391220.51035,
+   "done_at": "2026-09-26T13:28:16"
   },
   {
    "kind": "article",
@@ -6900,8 +6926,11 @@
     "AI product workflow",
     "prompt versioning"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "done",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790391418.378461,
+   "done_at": "2026-09-26T13:19:34"
   },
   {
    "kind": "article",
@@ -6915,8 +6944,11 @@
     "vector search UX",
     "RAG architecture"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "done",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790391418.3784618,
+   "done_at": "2026-09-26T13:19:34"
   },
   {
    "kind": "article",
@@ -6930,8 +6962,11 @@
     "human handoff chatbot",
     "support automation"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "done",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790391418.378463,
+   "done_at": "2026-09-26T13:19:34"
   },
   {
    "kind": "article",
@@ -6945,8 +6980,11 @@
     "AI feature flags",
     "model outage"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "done",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790391418.378463,
+   "done_at": "2026-09-26T13:19:34"
   },
   {
    "kind": "article",
@@ -7068,10 +7106,11 @@
     "open graph images",
     "link preview design"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790390167.632859
+   "claimed_at": 1790390167.632859,
+   "done_at": "2026-09-26T13:01:02"
   },
   {
    "kind": "article",
@@ -7246,6 +7285,518 @@
     "RAG citations",
     "AI guardrails",
     "Brassfern work"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "article-index-design",
+   "title": "Article indexes people actually browse",
+   "cluster": "web-design",
+   "intent": "How to design journal/blog indices that invite browsing, not just sort descending: lead stories, rhythm between big cards and lists, when to show descriptions, how to handle 200+ entries without pagination fatigue. Reference real pattern decisions.",
+   "keywords": [
+    "blog index design",
+    "article listing UX",
+    "editorial web design",
+    "content discovery",
+    "card grid design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "anchor-navigation-long-pages",
+   "title": "Anchor navigation on long pages: TOCs that get used",
+   "cluster": "web-design",
+   "intent": "Anchor navigation, tables of contents and scroll-spy on long pages: when a TOC earns its pixels, sticky placement rules, active-state honesty, deep-linking hygiene, and mobile fallbacks. Draw on how the Brassfern journal itself does it.",
+   "keywords": [
+    "table of contents UX",
+    "anchor links",
+    "scrollspy design",
+    "long-form navigation",
+    "web design patterns"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "reading-progress-honest",
+   "title": "Reading progress indicators: craft or clutter?",
+   "cluster": "web-design",
+   "intent": "Reading progress bars and position indicators: the case for and against, what makes one honest (accurate progress, no false precision), scroll-linked motion etiquette, reduced-motion behaviour, and when content needs none at all.",
+   "keywords": [
+    "reading progress bar",
+    "scroll indicator UX",
+    "micro-interaction design",
+    "motion restraint",
+    "web design details"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "hover-states-with-purpose",
+   "title": "Hover states with purpose",
+   "cluster": "web-design",
+   "intent": "Hover states as teaching surfaces: affordance design, what belongs in hover (and what must never live only there), focus parity, touch-device honesty, and a taxonomy of purposeful vs decorative hover.",
+   "keywords": [
+    "hover states",
+    "interaction design",
+    "UX affordances",
+    "focus states",
+    "web design craft"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "testimonial-presentation-craft",
+   "title": "Testimonials beyond the card carousel",
+   "cluster": "web-design",
+   "intent": "Presenting testimonials without boring cards: quote typography, attribution that builds trust, deep-linking quotes to case studies, programme-level honesty about fictional/illustrative metrics, and pull-quote vs testimonial distinctions.",
+   "keywords": [
+    "testimonial design",
+    "social proof UX",
+    "quote typography",
+    "portfolio site design",
+    "trust signals"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "team-pages-that-signal-craft",
+   "title": "Team pages that signal craft",
+   "cluster": "web-design",
+   "intent": "Team page design for studios: portraits as illustration vs photography policy, org without ladder charts, showing craft bios over titles, linking people to their authored work, and the honesty of clearly fictional rosters on concept sites.",
+   "keywords": [
+    "team page design",
+    "agency website",
+    "illustrated portraits",
+    "studio culture UX",
+    "about page design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "locale-switcher-design",
+   "title": "Locale switchers without the flag clipart",
+   "cluster": "web-design",
+   "intent": "Language and locale switchers on marketing sites: where the control lives, flag politics, name-in-own-language rules, hreflang interplay, font stack implications of new scripts, and when not to localise.",
+   "keywords": [
+    "language switcher UX",
+    "multilingual websites",
+    "localisation design",
+    "i18n UX",
+    "web design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "aspect-ratio-systems",
+   "title": "Aspect-ratio systems for editorial imagery",
+   "cluster": "web-design",
+   "intent": "A ratio system for imagery: locking cards, heroes and galleries to a small set of aspect ratios (16:10, 4:5, 1:1), what each ratio says editorially, object-fit discipline, and how ratios survive art-directed crops.",
+   "keywords": [
+    "aspect ratio design",
+    "image systems web",
+    "editorial layout",
+    "art direction web",
+    "responsive images"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "charts-on-marketing-pages",
+   "title": "Data visualisation on marketing pages, honestly",
+   "cluster": "web-design",
+   "intent": "Charts on marketing pages: honest axes, motion only in service of comprehension, print fallbacks, accessible data tables behind the visual, and resisting decoration-as-data on agency and SaaS sites.",
+   "keywords": [
+    "data visualisation web",
+    "chart design marketing",
+    "accessible charts",
+    "SaaS marketing pages",
+    "design honesty"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "map-design-restraint",
+   "title": "Maps on the web: restraint and alternatives",
+   "cluster": "web-design",
+   "intent": "Custom map design on the web: muted tiles that serve content, marker restraint, keyboard and text alternatives for map search, performance cost of map SDKs, and when a list beats a map outright.",
+   "keywords": [
+    "map design web",
+    "map UX",
+    "location search UI",
+    "mapbox styling",
+    "accessible maps"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "trust-marks-without-clipart",
+   "title": "Trust marks without the clipart",
+   "cluster": "web-design",
+   "intent": "Trust marks, certifications and partner badges without stamp-clipart aesthetics: typographic treatments of credentials, grouping and provenance links, when badges erode trust, and the fictional-partners honesty note.",
+   "keywords": [
+    "trust badges design",
+    "certification logos UX",
+    "credibility signals",
+    "B2B website design",
+    "conversion trust"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "urgency-ui-honest",
+   "title": "Urgency UI that stays honest",
+   "cluster": "web-design",
+   "intent": "Countdown timers and urgency UI on the web: when scarcity is real vs manufactured, design treatments that inform rather than panic, accessibility of live-updating times, and alternatives that convert without pressure.",
+   "keywords": [
+    "countdown timer UX",
+    "urgency design",
+    "conversion patterns",
+    "dark patterns",
+    "ethical web design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "video-heroes-cost-benefit",
+   "title": "The true cost of video heroes",
+   "cluster": "web-design",
+   "intent": "Video heroes: a cost-benefit ledger in MB, seconds and focus. When motion footage earns hero placement, poster frames that stand alone, prefers-reduced-motion and data-saver fallbacks, and the static image that usually wins.",
+   "keywords": [
+    "video hero design",
+    "hero section performance",
+    "motion web design",
+    "LCP video",
+    "web design trade-offs"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "drag-handles-and-sliders",
+   "title": "Drag handles, sliders and the affordance problem",
+   "cluster": "web-design",
+   "intent": "Resizable panels, drag handles and sliders as web UI: affordance signalling, keyboard operability of custom handles, persistence of user-set sizes, touch target minimums, and testing drag interactions.",
+   "keywords": [
+    "drag handle UX",
+    "resizable panels",
+    "comparison slider design",
+    "keyboard accessible widgets",
+    "interaction design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "multisite-brand-systems",
+   "title": "One system, many sites: multi-property brand design",
+   "cluster": "web-design",
+   "intent": "Running several properties off one brand system: shared tokens across sub-brands, navigation between properties without identity confusion, domain strategy, and what a studio's own multi-surface site must hold together.",
+   "keywords": [
+    "multi-brand web design",
+    "design system tokens",
+    "brand architecture web",
+    "design ops",
+    "sub-brand websites"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "section-banding-rhythm",
+   "title": "Light, dark, light: section banding as rhythm",
+   "cluster": "web-design",
+   "intent": "Section banding as editorial rhythm: light/dark alternation rules, how many surface colours a page can carry, seams, hairlines and spacing between bands, and designing the night section into a paper site.",
+   "keywords": [
+    "dark sections design",
+    "page rhythm",
+    "editorial web layout",
+    "colour surfaces",
+    "design system layout"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "menu-overlays-done-right",
+   "title": "Menu overlays: the typography of navigation",
+   "cluster": "web-design",
+   "intent": "Full-screen menu overlays: when the hamburger earns an overlay, typography scale in menu space, staggered link entrances, focus management and scroll-locking done right, and exit paths.",
+   "keywords": [
+    "menu overlay design",
+    "mobile navigation",
+    "hamburger menu UX",
+    "header design",
+    "accessibility navigation"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "gradients-after-saas-era",
+   "title": "Gradients after the SaaS era",
+   "cluster": "web-design",
+   "intent": "Gradients after the SaaS era: when a gradient still has meaning, duotone photography treatments, gradient text crimes, printable palettes, and building a distinctive palette whose gradients don't look default.",
+   "keywords": [
+    "gradient design trends",
+    "web colour palettes",
+    "distinctive web design",
+    "anti-template design",
+    "visual identity web"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "pricing-experiments-ethical",
+   "title": "Experimenting on pricing pages without lying",
+   "cluster": "growth",
+   "intent": "Running pricing-page experiments ethically: what you may vary (framing, proof, ordering) vs what you must not (the price by segment), sample-size realities for B2B studios, and how to quit inconclusive tests without cargo-culting significance.",
+   "keywords": [
+    "pricing page testing",
+    "A/B testing ethics",
+    "pricing experiments",
+    "CRO honesty",
+    "growth experiments"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "internal-search-mining",
+   "title": "Your search box is a research department",
+   "cluster": "growth",
+   "intent": "Internal site search as a research instrument: mining queries and zero-results for content gaps, instrumenting a static site's search, synonyms from real misspellings, and the quarterly zero-results review ritual.",
+   "keywords": [
+    "site search analytics",
+    "zero results search",
+    "content gap analysis",
+    "search UX data",
+    "content strategy"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "og-images-share-systems",
+   "title": "Share cards are a growth channel",
+   "cluster": "growth",
+   "intent": "OG images as a channel: designing share-card systems at scale (templates, per-cluster art), testing titles in the wild, cache invalidation across Slack/LinkedIn/iMessage, and measuring dark-social lift honestly.",
+   "keywords": [
+    "OG image design",
+    "social share cards",
+    "dark social",
+    "link preview optimisation",
+    "content distribution"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "rss-owned-distribution",
+   "title": "RSS: the distribution channel you already own",
+   "cluster": "growth",
+   "intent": "RSS, feeds and syndication in 2026: why a proper feed still earns its keep, full-text vs excerpt strategy, followership you own vs rent, and feeding newsletters and readers without a growth team.",
+   "keywords": [
+    "RSS strategy",
+    "content syndication",
+    "owned audience",
+    "web feeds",
+    "publishing stack"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "alternative-to-pages-program",
+   "title": "Alternative-to pages that don't smear anyone",
+   "cluster": "growth",
+   "intent": "Alternative-to and versus page programmes: keyword research for comparison intent, fair-comparison editorial rules that build trust, keeping pages fresh as competitors change, and the anti-pattern of fake objectivity.",
+   "keywords": [
+    "alternative to pages",
+    "comparison SEO",
+    "competitor keywords",
+    "B2B SEO strategy",
+    "programmatic comparisons"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lead-capture-without-popups",
+   "title": "Lead capture without the popup",
+   "cluster": "growth",
+   "intent": "Capturing leaving visitors without exit-intent popups: read-progress offers, content-linked CTAs, end-of-article consoles, and measuring whether respectful capture keeps brand trust intact.",
+   "keywords": [
+    "exit intent alternatives",
+    "lead capture UX",
+    "content CTA design",
+    "conversion without popups",
+    "growth design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "referrals-for-service-businesses",
+   "title": "Referrals for studios: introductions, not codes",
+   "cluster": "growth",
+   "intent": "Referral programmes for agencies and studios: why SaaS-style referral codes don't fit services, designing introductions instead, credit and gratitude mechanics, and making past clients your most honest channel.",
+   "keywords": [
+    "agency referrals",
+    "B2B referral program",
+    "services marketing",
+    "client introductions",
+    "studio growth"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "voice-of-customer-mining",
+   "title": "Voice-of-customer mining for pages that convert",
+   "cluster": "growth",
+   "intent": "Mining sales calls and discovery notes for conversion copy: consent and tooling, tagging pains vs goals, turning verbatim phrases into headlines, and feeding research back into page tests.",
+   "keywords": [
+    "voice of customer research",
+    "conversion copywriting",
+    "sales call mining",
+    "messaging research",
+    "copy testing"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "heuristic-evaluation-marketing-sites",
+   "title": "The ninety-minute heuristic review",
+   "cluster": "growth",
+   "intent": "Heuristic evaluations as cheap CRO: a scored rubric for marketing pages (clarity, proof, friction, trust), running one in ninety minutes, and prioritising fixes before you have traffic for tests.",
+   "keywords": [
+    "heuristic evaluation",
+    "CRO audit",
+    "usability review",
+    "conversion audit",
+    "marketing page review"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "multi-location-seo-studios",
+   "title": "Local SEO when you have three postcodes",
+   "cluster": "growth",
+   "intent": "Multi-location local SEO for studios and service firms with offices in several cities: honest suburbs-and-cities pages, GBP discipline, avoiding doorway pages, and measuring location-page value.",
+   "keywords": [
+    "multi-location SEO",
+    "local pages service business",
+    "Google Business Profile",
+    "doorway pages",
+    "studio SEO"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "content-portfolio-quarterly-review",
+   "title": "Review your content like a portfolio",
+   "cluster": "growth",
+   "intent": "A quarterly content benchmarking ritual: treating your article portfolio like a portfolio (winners, flatliners, sleepers), metric definitions that survive GA4, and the prune/refresh/expand decision each piece gets.",
+   "keywords": [
+    "content benchmarking",
+    "content portfolio management",
+    "content audit",
+    "GA4 content metrics",
+    "editorial analytics"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "first-party-data-foundations",
+   "title": "First-party data without the surveillance",
+   "cluster": "growth",
+   "intent": "First-party data foundations for cookieless measurement: consent-mode analytics, server-side tagging reality check, what to stop measuring, and telling clients which numbers are estimates.",
+   "keywords": [
+    "first-party data",
+    "cookieless analytics",
+    "server-side tagging",
+    "privacy measurement",
+    "analytics strategy"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "branded-search-demand",
+   "title": "Make them search your name",
+   "cluster": "growth",
+   "intent": "Growing branded search demand deliberately: name recall in content, distinctive terminology that becomes a search term, offline-to-search loops, and measuring branded-query growth as a brand health metric.",
+   "keywords": [
+    "branded search",
+    "brand awareness SEO",
+    "demand generation",
+    "brand recall marketing",
+    "search demand"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "one-piece-many-surfaces",
+   "title": "One piece, many surfaces: respectful repurposing",
+   "cluster": "growth",
+   "intent": "Turning one big article into a quarter of content: excerpting, POV threads, newsletter cuts, talk outlines and graphics — with an editorial rule for what must stay fresh rather than recycled.",
+   "keywords": [
+    "content repurposing",
+    "editorial distribution",
+    "content atomisation",
+    "newsletter content",
+    "content operations"
    ],
    "status": "planned",
    "added_by": "builder"
