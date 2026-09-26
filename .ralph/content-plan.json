@@ -2186,10 +2186,11 @@
     "gift finder design",
     "holiday ecommerce"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790382448.180567
+   "claimed_at": 1790382448.180567,
+   "done_at": "2026-09-26T10:37:24"
   },
   {
    "kind": "article",
@@ -2860,10 +2861,11 @@
     "shopify headless",
     "ecommerce architecture"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer3",
    "worker": "writer1",
-   "claimed_at": 1790382448.180568
+   "claimed_at": 1790382448.180568,
+   "done_at": "2026-09-26T10:37:26"
   },
   {
    "kind": "article",
@@ -2877,10 +2879,11 @@
     "dunning",
     "subscription ux"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer3",
    "worker": "writer1",
-   "claimed_at": 1790382448.180568
+   "claimed_at": 1790382448.180568,
+   "done_at": "2026-09-26T10:37:28"
   },
   {
    "kind": "article",
@@ -2894,10 +2897,11 @@
     "cart abandonment",
     "payment ux"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer3",
    "worker": "writer1",
-   "claimed_at": 1790382448.180568
+   "claimed_at": 1790382448.180568,
+   "done_at": "2026-09-26T10:37:31"
   },
   {
    "kind": "article",
@@ -3192,8 +3196,10 @@
     "colour contrast",
     "theming"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790383027.891606
   },
   {
    "kind": "article",
@@ -3207,8 +3213,10 @@
     "error messages ux",
     "web forms"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790383027.891607
   },
   {
    "kind": "article",
@@ -3222,8 +3230,10 @@
     "duotone",
     "art direction"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790383027.891608
   },
   {
    "kind": "article",
@@ -3237,8 +3247,10 @@
     "above the fold",
     "cta design"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790383027.891608
   },
   {
    "kind": "article",
