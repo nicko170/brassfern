@@ -9759,8 +9759,10 @@
     "sort persistence",
     "url state filters"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790417430.508853
   },
   {
    "kind": "article",
@@ -9775,8 +9777,10 @@
     "small visualisations",
     "table visualisation ux"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790417430.508854
   },
   {
    "kind": "article",
@@ -9791,8 +9795,10 @@
     "theme toggle ux",
     "dark ui data visualisation"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790417430.508855
   },
   {
    "kind": "article",
@@ -9807,8 +9813,10 @@
     "name input ux",
     "localisation product design"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790417430.508855
   },
   {
    "kind": "article",

@@ -26,6 +26,8 @@ interface Props {
   emphasis: Suburb[] | null
   reduced: boolean
   headline: string
+  /** where the display value starts on mount — 1 lets the plan visibly "cool" the grid on arrival */
+  initFrom?: number
 }
 
 const SUBURB_INDEX = new Map(SUBURBS.map((s, i) => [s.id, i]))
@@ -40,9 +42,9 @@ function roundRectPath(ctx: CanvasRenderingContext2D, x: number, y: number, w: n
   ctx.closePath()
 }
 
-export default function HeatGrid({ amount, emphasis, reduced, headline }: Props) {
+export default function HeatGrid({ amount, emphasis, reduced, headline, initFrom }: Props) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
-  const shown = useRef(amount)
+  const shown = useRef(initFrom ?? amount)
   const hoverRef = useRef(-1)
   const [hover, setHover] = useState(-1)
   const emphasisRef = useRef<Suburb[] | null>(emphasis)

@@ -159,12 +159,12 @@ function canopyDots(seed: number, count: number): Dot[] {
   let guard = 0
   while (dots.length < count && guard < count * 40) {
     guard++
-    const x = rand() * 100
-    const y = rand() * 100
+    const x = rand() * 160
+    const y = rand() * 90
     // keep the middle lanes clearer — an impression of streets
-    if (Math.abs(((x % 25) - 12.5)) < 2.2 && rand() < 0.75) continue
-    if (Math.abs(((y % 33) - 16.5)) < 2.6 && rand() < 0.7) continue
-    dots.push({ x, y, r: 0.7 + rand() * 1.5, o: 0.35 + rand() * 0.5 })
+    if (Math.abs(((x % 40) - 20)) < 3 && rand() < 0.75) continue
+    if (Math.abs(((y % 45) - 22.5)) < 3.4 && rand() < 0.7) continue
+    dots.push({ x, y, r: 1 + rand() * 2.1, o: 0.35 + rand() * 0.5 })
   }
   return dots
 }
@@ -181,13 +181,13 @@ export function CanopyCompare() {
   const newDots = useMemo(() => canopyDots(seed + 5, Math.round((district.c2046 / 100) * MAX_DOTS)), [seed, district.c2046])
 
   const layer = (dots: Dot[], fill: string, label: string) => (
-    <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden className="mchs-canopy__dotsvg">
+    <svg viewBox="0 0 160 90" aria-hidden className="mchs-canopy__dotsvg">
       <g fill={fill}>
         {dots.map((d, i) => (
           <circle key={i} cx={d.x} cy={d.y} r={d.r} opacity={d.o} />
         ))}
       </g>
-      <text x="3" y="94" className="mchs-canopy__year">{label}</text>
+      <text x="4" y="84" className="mchs-canopy__year">{label}</text>
     </svg>
   )
 
