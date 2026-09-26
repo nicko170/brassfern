@@ -846,8 +846,10 @@
     "bundle budget",
     "webpack vite analysis"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790380809.9015949
   },
   {
    "kind": "article",
@@ -861,8 +863,10 @@
     "design system technology",
     "lit vs react"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790380809.9015958
   },
   {
    "kind": "article",
@@ -876,8 +880,10 @@
     "multi step forms",
     "checkout state management"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790380809.9015958
   },
   {
    "kind": "article",
@@ -891,8 +897,10 @@
     "form error handling",
     "accessible forms engineering"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790380809.9015958
   },
   {
    "kind": "article",
