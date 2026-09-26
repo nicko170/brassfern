@@ -8122,10 +8122,11 @@
     "newsletter content",
     "content operations"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790413817.870804
+   "claimed_at": 1790413817.870804,
+   "done_at": "2026-09-26T20:03:02"
   },
   {
    "kind": "article",
@@ -8811,8 +8812,10 @@
     "a11y investment",
     "overlay widgets fail"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790416034.3685708
   },
   {
    "kind": "demo",
@@ -8859,10 +8862,11 @@
    "cluster": "demos",
    "intent": "A living design-system documentation site for fictional client 'Copperplate' (a tooling company). Art direction: typefounder's specimen book — warm bone paper, copper metallic accent, wide letter-spaced small caps, hairline rules, specimen sheets with big glyphs. Features: left rail nav (Foundations / Tokens / Components / Patterns), live token playground (edit colour/space/type tokens; a preview panel of 8 sample components re-renders instantly + copy-as-CSS button), component pages showing the DS's own buttons/forms/alerts rendered live with code snippets, do/don't comparison blocks, a searchable icon grid (24 hand-drawn SVG glyphs), dark-paper mode toggle, and an accessibility notes callout per component. Local search across pages (client-side index). React + TypeScript, hand-rolled CSS. Must respect reduced motion and work standalone to 375px (rail collapses to a select).",
    "keywords": [],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "demo2",
-   "claimed_at": 1790413651.901213
+   "claimed_at": 1790413651.901213,
+   "done_at": "2026-09-26T20:03:03"
   },
   {
    "kind": "article",
@@ -9701,8 +9705,10 @@
     "accessibility",
     "product design"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790416034.368572
   },
   {
    "kind": "article",
@@ -9717,8 +9723,10 @@
     "product design",
     "restraint"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790416034.368572
   },
   {
    "kind": "article",
@@ -9733,8 +9741,10 @@
     "keyboard reorder",
     "dnd-kit patterns"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790416034.368572
   },
   {
    "kind": "article",
@@ -10810,10 +10820,11 @@
     "grandfathering",
     "SaaS"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790414377.5233989
+   "claimed_at": 1790414377.5233989,
+   "done_at": "2026-09-26T19:57:54"
   },
   {
    "kind": "article",
@@ -10829,10 +10840,11 @@
     "product-led growth",
     "pricing"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790414377.5233998
+   "claimed_at": 1790414377.5233998,
+   "done_at": "2026-09-26T20:06:33"
   },
   {
    "kind": "article",

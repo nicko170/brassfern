@@ -159,12 +159,21 @@ interface CpCardProps {
 }
 
 export function CpCard({ eyebrow, title, children, footer, interactive, onClick }: CpCardProps) {
+  /* Interactive cards are one big <button>: phrasing content only inside,
+     so headings become styled spans. Static cards keep real headings. */
+  const eyebrowEl = eyebrow ? <span className="cp-card__eyebrow">{eyebrow}</span> : null
+  const titleEl = interactive ? (
+    <span className="cp-card__title">{title}</span>
+  ) : (
+    <h4 className="cp-card__title">{title}</h4>
+  )
+  const eyebrowBlock = interactive ? eyebrowEl : eyebrow ? <p className="cp-card__eyebrow">{eyebrow}</p> : null
   const inner = (
     <>
-      {eyebrow ? <p className="cp-card__eyebrow">{eyebrow}</p> : null}
-      <h4 className="cp-card__title">{title}</h4>
-      {children ? <div className="cp-card__body">{children}</div> : null}
-      {footer ? <div className="cp-card__footer">{footer}</div> : null}
+      {eyebrowBlock}
+      {titleEl}
+      {children ? <span className="cp-card__body">{children}</span> : null}
+      {footer ? <span className="cp-card__footer">{footer}</span> : null}
     </>
   )
   if (interactive) {
