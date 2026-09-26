@@ -1,5 +1,52 @@
 # Progress
 
+## Done (iteration 10 — builder: visible breadcrumbs, JobPosting schema, /colophon + /sitemap pages, QA)
+
+- **Visible breadcrumbs everywhere deep** — new `src/components/Crumbs.tsx`
+  (`.crumbs`): mono trail, brass "/" separators, current page plain with
+  `aria-current="page"` (ellipsis at 32ch, hidden ≤560px since the h1
+  repeats it). Rendered as the first child of `.article-head` on Article,
+  WorkCase, ServicePage, IndustryPage, JobPage, PersonPage and TagPage —
+  the visible twin of the BreadcrumbList JSON-LD those pages already emit.
+- **JobPosting JSON-LD + published salary bands** — `jobs.ts` gains
+  structured fields per role: `salary {text,min,max,currency}`, `posted`,
+  `closes` (ISO), `remote`, `applicantLocations[]`, optional `office`.
+  New `jobPostingLd()` in jsonld.ts (hiringOrganization, TELECOMMUTE +
+  applicant country requirements for remote roles, PostalAddress for the
+  two office roles, baseSalary QuantitativeValue, validThrough). Job pages
+  show a `.fact-list` (band/team/location/type/posted/closes); careers
+  index rows now print the band; careers lede says bands are published —
+  matching the studio voice.
+- **New page `/colophon`** — "Notes on the making of": three type
+  specimens (Fraunces display/italic, Instrument Sans body, IBM Plex Mono
+  labels), a 12-swatch token palette grid, the machinery fact-list (stack,
+  prerendering, fonts via Google, GitHub Pages, no trackers, generated
+  imagery), a night "The author" section with the mandatory concept-studio
+  statement verbatim, four craft commitments (AA, reduced-motion, perf,
+  honesty), "keep wandering" rows to approach/studio/sitemap.
+- **New page `/sitemap` (human-readable)** — auto-derived from the same
+  data as the route table: Start here (13), Services (6), Industries (9),
+  journal clusters with live counts + tag total, ready lab demos, team,
+  jobs, fine print, and a two-column all-case-studies list. Header count
+  ("N+ pages") computed from those sources — can't drift. `.map-grid` /
+  `.map-list` / `.map-count` CSS. Footer gains Colophon + Sitemap links;
+  both routes added to App + prerenderRoutes (and thus sitemap.xml).
+- **Build-gate rescue** — link audit failed on a fresh writer file
+  (growth/alternative-to-pages-program linking to unwritten
+  `voice-of-customer-mining`); retargeted the link to the existing
+  customer-stories-that-rank playbook with adjusted anchor copy.
+- **Description QA round 2** — trimmed 6 over-length descriptions
+  (171–174 → 153–157 chars) across growth/playbooks/product files.
+- **Backlog restocked** — +26 articles: product 15 (cluster was furthest
+  behind: filters, D&D accessibility, sparklines, dark mode strategy, i18n
+  UX, account deletion, scheduling/timezones, drawer-vs-page, avatars,
+  offline states, surveys, confirmations, saved views, status pages,
+  admin panels), brand 4, ai 4, ecommerce 3. Planned total ≈162.
+- **Build green: 1523 prerendered routes + 404** (was 1410), sitemap
+  contains /colophon + /sitemap, JobPosting/TELECOMMUTE/band verified in
+  dist, crumbs + aria-current verified on article and case pages, zero
+  content-index desc warnings remain, link audit clean.
+
 ## Done (iteration 9 — builder: crawlable journal pagination, intent prefetch, bench list, QA)
 
 - **Route-based journal pagination (prerendered)** — replaced client-only
@@ -1125,3 +1172,52 @@ Completed 4 product articles (all validated done by finish_article):
 - product/multi-window-state-consistency (Felix Brandt) — state taxonomy (session syncs / entities converge / ephemeral stays per-tab), BroadcastChannel + storage-event plumbing rules (single coordinator, echo suppression, invalidate-don't-replicate), conflict policies (disclosed LWW, optimistic locking, soft locks with heartbeats), logout-global + single-flight token refresh (Web Locks), visible sync furniture, two-context Playwright test plan.
 - product/device-handoff-flows (June Okafor) — device-shaped mismatch audit (camera/keyboard/privacy/location steps; Sundial Travel example), QR = same room / magic link = later (offer both), bearer-token security floor (step-scoped, stated expiry, never a backdoor login, no app-install toll gate), delayed resume as re-onboarding (one-line recap, collapsed done steps, re-sell abandoned step), copyable resume URL, token-joined journey measurement.
 - desc-length fix applied to in-product-announcements-centre (was 181 chars). No hero images generated this iteration (prioritised 4 articles; image budget intact for future).
+
+## demo3 — iteration 8 (2026-09-26)
+Completed the **ledgerline-pricing-calculator** demo (Ledgerline fictional expense-SaaS pricing page; meta.caseStudy = `ledgerline-pricing-page-rebuild`). A prior claim had left a solid `Slider.tsx` (range + tabular number twin, snap-on-commit) and `data.ts` (4 plans, discount codes, ROI maths, quote ref hash, URL (de)serialisation) — I built the rest: index.tsx (URL-serialised live state via history.replaceState, seat/report sliders with stepped snapping, monthly/annual seg with pay-10-get-12 savings callouts, discount-code field with ok/expired/unknown validation states (LEDGER10 / MIGRATE20 / EOFY24-expired), four editable ROI assumption sliders with CSS before/after bars, sticky dark-green quote panel with count-up numerals (reduced-motion-safe), copy-shareable-link with clipboard fallback, print button, aria-live announcements), full plan-comparison matrix (radiogroup, recommended highlight, pin/unpin, seat-cap availability) and an always-visible, print-ready quote sheet with itemised table. demo.css (~1100 lines scoped .ll): "precise fintech paper" — off-white ledger stock, ledger-green ink, red double rules, dotted leaders, ticked ruler slider tracks, serif italic accents; responsive 375→1440, print CSS leaves only the sheet, all motion flattened under prefers-reduced-motion. Generated showcase still-life public/images/work/ledgerline-pricing-calculator.jpg (laptop with green-on-cream calculator UI + red-ruled ledger; registered in generated workImages — feeds lab preview + case-gallery strip).
+- NOTE for writers: the case study `ledgerline-pricing-page-rebuild` does NOT exist yet — write it with frontmatter `demo: ledgerline-pricing-calculator` to surface the .demo-strip band; suggested industry "SaaS", services Websites + Growth (CRO); the story is honest pricing maths, shareable quote URLs, and the print-ready quote sheet as sales enablement.
+- Typecheck clean (node scripts/build-content-index.mjs && npm run typecheck); finish_demo validated done.
+
+## writer3 — iteration 18 (2026-09-26)
+Completed 4 playbooks articles (all validated done by finish_article):
+- playbooks/pilot-projects-that-prove-fit (Mara Ellison) — pitch-theatre vs road-test framing; what a pilot proves (craft/cadence/staffing honesty/fit, NOT month seven); thin-slice design, access granted in advance, decision-grade artefacts, both-sides exposure; honest pricing (paid at rates, decomposed, no margin games, AU$35–60k calibration); week-zero exit-criteria memo (assessed/decider/yes/no shapes); convert-by-continuing (bank team/terms/findings); when to skip pilots.
+- playbooks/kickoff-workshop-that-sets-the-tone (Ruby Castellanos) — half-day agenda table (walk-and-edit plan / success-sentence-in-numbers / "what would make this fail" risk round / role mapping + cadence calendared in-room / ways of working / first-fortnight close); decider-stays + no-spectators rules; four live artefacts (decision log from hour one, success sentence, risk room, role map); kickoff failure modes (replay, missing decider, risk theatre, follow-up finish).
+- playbooks/reference-calls-agency (Priya Nair) — 12 questions incl. ended-engagement referee, first-missed-date, month-three invoice shape, final-vs-proposal cost, pitch-people retention, who-would-you-hire, "hire for something bigger?"; send questions to the agency not the referee (reaction is data); hedge field guide (unspecified positivity, dead past-tense enthusiasm, process-praise/outcome-silence, invoice "I'd have to check"); shape-matched references.
+- playbooks/switching-agencies-mid-flight (Felix Brandt) — contract-first (IP assignment timing, notice, exit clauses); 6-part asset inventory with password-reset test for every credential; wikis-meeting knowledge extraction (load-bearing/never-touch/bodies) + recorded live walkthrough; incoming code-audit (builds? deploys? risk register, stabilise-before-building); two-sprint paid overlap rule; diplomatic email scripts; on-the-way-out demand checklist; hostile-path options; own-your-foundations-from-day-one thesis.
+- One desc-length fix on switching-agencies (was 181 chars). Fixed a stray non-ASCII heading typo in pilot article before validation. No hero images this iteration (image budget preserved).
+
+## writer4 — iteration 20 (2026-09-26)
+Completed 8 articles across two claim batches (all validated done by finish_article):
+
+**Playbooks (4):**
+- playbooks/launch-day-qa-checklist (Ruby Castellanos) — companion to launch-week runbook: two-pass QA (dark-site pre-flip + compressed post-cutover), 20-URL stratified redirect sample, deliberate 404 sweep, OG/staging-config hunts, real form submissions both paths, analytics real-time + parity + annotation, real-phone perf spot check, 30-min a11y pass, named-on-point 72h war-room rota, support inbox as telemetry.
+- playbooks/analytics-implementation-plan (Priya Nair) — sequel to measurement-plan-before-build: repo-living tracking spec table (trigger/typed properties/owner/provenance), naming conventions (past-tense verbs, few events + rich properties, enum cardinality budget, no PII, errors as first-class), consent-mode decisions in advance (one gate at data layer, modelled denial blindness), staging row-by-row QA (a third of events wrong), day-30 calibration review with delete-or-attach rule, annotation template with Expected effect line.
+- playbooks/vendor-lockin-exit-plan (Felix Brandt) — lock-in as spectrum; run-the-export portability test before signing (content/media/commercial data + rebuild-one-page elsewhere + ToS export terms); contract clauses (standard-format return, history completeness, 90-day wind-down, API parity); seams that pay (content model, URLs, payment/auth tokens, event layer) vs abstractions that don't (page builders, multi-vendor redundancy); annual exit rehearsal with dollar figure.
+- playbooks/design-critique-that-works (June Okafor) — Thursday crit format: presenter-framed questions (ban "thoughts?"), silent-read distribution collection, juniors-first speaking order, kind-specific-necessary filter ("necessary" kills taste-demonstration, warmly), presenter-silent rule, worst-advice log for calibrating instincts, sixty-minute/two-presenter/honest-fidelity logistics, rotating facilitation. Hero image generated: public/images/articles/playbooks/design-critique-that-works.jpg.
+
+**Brand (4):**
+- brand/brand-refresh-vs-rebrand (Mara Ellison) — refresh/evolution/rebrand defined with 1×/3×/10× cost curves; five-question diagnostic (equity held? logo-or-product naked test, strategy-vs-taste, what equity attaches to, absorption capacity); per-path risk curves (invisibility / uncanny valley / equity destruction + ops chaos); announce even the refresh ("same promise, sharper tools").
+- brand/naming-products-features (Aiko Tanaka) — descriptive–invented spectrum with learning-tax framing; gate question ("will users say it to each other without you in the room?") + durability + differentiation (~1 in 5 features earns a name); masterbrand+descriptor grammar, tiers live in pricing UI; hard naming budget with annual re-justification; mid-life rename as migration (pre-announce, overlap aliases, permanent search/URL aliases, API names effectively permanent).
+- brand/brand-voice-in-errors (Leonie Marsh) — bad moments as where voice encodes; structural failure (strings written by engineers at failure point) fixed by writer-editable string pipeline; warmth-scales-down/clarity-never rule; four-register severity table (light/steady/serious/grave) with moves+nevers; four-move apology (specifics, active ownership, their impact, dated repair) + never staple promotion; pre-written 3am downtime templates; adult price-rise letter.
+- brand/type-pairing-brand-systems (June Okafor) — roles before faces (voice for conviction / voice for service); contrast on 1–2 named axes (proportion, stroke logic, page-texture squint test, temperature) + one shared DNA note; superfamilies vs strangers fork (consistency-at-scale vs identity-as-weapon); third-face rule (tool not voice); ugliest-context-first testing (11px table, collision, language stress, non-designer); licence budgeting at 3× traffic across channels.
+- One hero image this iteration (design-critique). Budget intact.
+
+## demo1 — iteration 19 (2026-09-26)
+Built demo **glade-ingredient-explorer** (case study glade-skincare-ingredient-honesty, client GLADE) — validated done by finish_demo:
+- 46-ingredient ledger (data.ts): plain-English "what it actually does", INCI, provenance, honest concentration band, 5-level evidence rating, benefits, pairs; searchable index with category + benefit chips and a matching-empty state.
+- Conflict ledger: 23 curated pairings (avoid/caution/fine incl. niacinamide×vitamin-C myth-bust), consumed by both the ingredient sheet and the routine analysis.
+- 8 fully-disclosed GLADE formulations (every component references the index, real % per row in sortable-looking honest tables with scope/caption); radar-card comparison via hand-rolled SVG pentagon (sage A / terracotta B) with two formula selects and a value legend.
+- Routine builder: AM/PM halves, step reorder/remove (button-based, accessible), conflict + hygiene notices (no UV in AM, stacked acids, out-of-order steps, shelf cost), starter ritual, named saved rituals in localStorage, base64url share links via `#r=` (auto-loaded on mount), clipboard text export.
+- Art direction: apothecary restraint — bone paper #f7f3e9, sage #647751/#3c4c35, terracotta #b9613c, ochre evidence dots; Iowan/Palatino serif for names, mono for INCI/percentages; all scoped under .gix; reduced-motion honoured; side-sheet dialog with focus restore; aria-live toast.
+- Showcase image generated: public/images/work/glade-ingredient-explorer.jpg (feeds .case-gallery via workImages manifest).
+- Typecheck clean. No new deps.
+
+Built demo **holloway-waveform-player** (case study holloway-records-label-site, client Holloway Records) — validated done by finish_demo:
+- "Deck 02 promo room": the label's mastering-suite waveform deck as a silent simulation. Nine HWP promo plates (dub/alt masters of the same fictional artists as holloway-player — Sable Coast, Gull Weather, Meera Vale, The Hinterlands, Bracken & the Fox, October Radio, Wren Lightsey, Pelican Club) with cat numbers, BPM/key spec, engineer liner notes, cut rooms and needle-jump cues.
+- Canvas waveform deck (Waveform.tsx): seeded multi-section peaks with beat transients, beat/bar ruler with mono bar numbers, cue flags, pointer scrub with timecode tooltip, role=slider keyboard seek (±5s/±15s, Home/End), glowing playhead (off under reduced motion), and an 8s crossfade window that waxes the incoming plate's opening bars over the run-out with X-curves and a live mix %.
+- Session engine: rAF platter clock, auto-advance with rack-finished state, cut-to-deck / up-next / +rack from the shelf, session spin counter in the masthead.
+- Queue.tsx: true pointer drag-to-reorder via pointer-capture grips + full keyboard equivalents (↑/↓/cut/pull), polite live-region announcements for every move.
+- Art direction: charcoal studio dark (#171210), oxblood #a62b3c stamps, bone type; condensed grotesk display + tabular mono timecode (MM:SS·FF @25fps); tape-scanline texture; conic-sheen vinyl discs slipping from hand-stamped bone sleeves (seeded stamp rotation/barcode). Scoped under .hwp. Distinct from holloway-player's aubergine/coral listening room: no WebAudio, waveform-first, rack deck tooling.
+- Full keyboard map (Space/arrows/Shift/N/P/X) with input/button guard; tablist has roving tabindex + arrow nav; reduced-motion = hard cuts, no motion cues. 60fps clock isolated from the memoised shelf grid.
+- Showcase image generated: public/images/work/holloway-waveform-player.jpg (feeds .case-gallery via workImages manifest).
+- Typecheck clean (also regenerated content index). No new deps.

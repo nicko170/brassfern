@@ -1,6 +1,6 @@
 ---
 title: "Continue on your phone: handoff UX that doesn't lose people"
-description: "Session and device handoff done properly: continue-on-another-device flows, magic links vs QR codes, delayed-resume UX after context switches, and honest security boundaries."
+description: "Session and device handoff done properly: continue-on-another-device flows, magic links vs QR codes, delayed-resume UX and the honest security boundaries."
 slug: device-handoff-flows
 cluster: product
 tags: [cross-device UX, handoff, mobile web, onboarding, product design]

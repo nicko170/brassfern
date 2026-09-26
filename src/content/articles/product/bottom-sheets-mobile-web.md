@@ -1,6 +1,6 @@
 ---
 title: "Bottom sheets that don't fight the user"
-description: "When a bottom sheet beats a modal on mobile web: drag affordances, scrim honesty, snap-point logic, keyboard and screen-reader behaviour, and the patterns that fight back."
+description: "When a bottom sheet beats a modal on mobile web: drag affordances, scrim honesty, snap-point logic, keyboard and screen-reader behaviour, and anti-patterns."
 slug: bottom-sheets-mobile-web
 cluster: product
 tags: [mobile UX, bottom sheets, interaction design, overlays, accessibility]

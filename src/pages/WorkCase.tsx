@@ -12,6 +12,7 @@ import { absoluteUrl, withBase } from '../lib/base'
 import { useBody } from '../lib/useBody'
 import { parseToc } from '../lib/toc'
 import Markdown from '../components/Markdown'
+import Crumbs from '../components/Crumbs'
 import Toc from '../components/Toc'
 import ReadingProgress from '../components/ReadingProgress'
 import Portrait from '../components/Portrait'
@@ -55,6 +56,10 @@ export default function WorkCase() {
       <ReadingProgress />
       <article>
         <header className="article-head container">
+          <Crumbs items={[
+            { name: 'Work', path: '/work' },
+            { name: cs.title },
+          ]} />
           <Reveal className="overline">Case study — {cs.client}</Reveal>
           <h1 className="display">{cs.title}</h1>
           <div className="article-meta">

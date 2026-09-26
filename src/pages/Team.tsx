@@ -5,6 +5,7 @@ import { personBySlug, personSlug, team, type Person } from '../data/people'
 import { articles, caseStudies } from '../lib/content'
 import { ArticleCard, WorkCard } from '../components/Cards'
 import Portrait from '../components/Portrait'
+import Crumbs from '../components/Crumbs'
 import Reveal from '../components/Reveal'
 import NotFound from './NotFound'
 
@@ -77,6 +78,10 @@ export function PersonPage() {
         ]}
       />
       <header className="article-head container">
+        <Crumbs items={[
+          { name: 'Team', path: '/team' },
+          { name: person.name },
+        ]} />
         <Reveal className="overline">
           <Link to="/team" style={{ color: 'inherit' }}>Team</Link> — {person.role}
         </Reveal>

@@ -147,6 +147,26 @@ Brassfern look into a demo.
 - **Intent prefetch** (iter 9): `src/lib/prefetch.ts` warms page chunks and
   markdown bodies on hover/focus of any internal link; invisible, save-data
   aware, session-deduped.
+- **Visible breadcrumbs** (`.crumbs`, iter 10): `src/components/Crumbs.tsx` —
+  mono uppercase trail with brass "/" separators, the on-page twin of the
+  BreadcrumbList JSON-LD; first child of `.article-head` on every deep page
+  (article, case study, service, industry, job, person, tag). Current-page
+  item is plain text with `aria-current="page"`, ellipsised at 32ch and
+  hidden under 560px (the h1 right below carries the title).
+- **Colophon page** (`/colophon`, iter 10): type specimens (`.specimen` with
+  display/body/mono samples), token palette swatch grid (`.swatch`),
+  machinery fact-list, night "author" section with the verbatim concept
+  statement. Never list tools/claims we don't actually use.
+- **Human sitemap** (`/sitemap`, iter 10): `.map-grid` of `.map-block`s with
+  `.map-list` hairline rows and `.map-count` mono counts — every list derived
+  from the same data sources as the route table (services, industries,
+  caseStudies, readyDemos, CLUSTERS+counts, team, jobs) so it never drifts.
+  Case studies list uses multi-column `.map-list--cols`.
+- **JobPosting** (iter 10): job pages carry JobPosting JSON-LD (salary band,
+  posting window, TELECOMMUTE + applicant countries for remote roles) fed by
+  structured fields in `src/data/jobs.ts`; the band is also visible on the
+  job page fact-list and the careers index rows — the ethos is published
+  bands on every role.
 
 ## Content authoring rules (enforced by build-content-index.mjs)
 

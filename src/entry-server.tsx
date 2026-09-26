@@ -56,6 +56,8 @@ export function prerenderRoutes(): string[] {
     '/resources',
     '/contact',
     '/press',
+    '/colophon',
+    '/sitemap',
     '/legal/privacy',
     '/legal/terms',
   ])

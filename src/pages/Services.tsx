@@ -4,6 +4,7 @@ import { getService, services } from '../data/services'
 import { breadcrumbLd, faqLd } from '../lib/jsonld'
 import { caseStudies } from '../lib/content'
 import { WorkCard } from '../components/Cards'
+import Crumbs from '../components/Crumbs'
 import Reveal from '../components/Reveal'
 import NotFound from './NotFound'
 
@@ -68,6 +69,10 @@ export function ServicePage() {
         ]}
       />
       <header className="article-head container">
+        <Crumbs items={[
+          { name: 'Services', path: '/services' },
+          { name: service.name },
+        ]} />
         <Reveal className="overline">Service {service.num}</Reveal>
         <h1 className="display">{service.name}</h1>
         <p className="lead lead--wide">{service.tagline}</p>

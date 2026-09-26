@@ -1,7 +1,9 @@
 import { Link, useParams } from 'react-router-dom'
 import { Seo } from '../lib/head'
 import { getJob, jobs } from '../data/jobs'
-import { breadcrumbLd } from '../lib/jsonld'
+import { breadcrumbLd, jobPostingLd } from '../lib/jsonld'
+import { formatDate } from '../lib/content'
+import Crumbs from '../components/Crumbs'
 import Reveal from '../components/Reveal'
 import NotFound from './NotFound'
 
@@ -18,7 +20,7 @@ export function Careers() {
         <Reveal className="overline">Careers</Reveal>
         <h1 className="display">Do the best work of your life, <em>then go home</em></h1>
         <p className="lead lead--wide">
-          No hero hours, no open-plan theatre, no “fast-paced family”. Senior people, small squads, four-day summer Fridays, and work you will still be proud of in five years. (Roles shown are fictional — this is a concept studio.)
+          No hero hours, no open-plan theatre, no “fast-paced family”. Senior people, small squads, four-day summer Fridays, and a published salary band on every role. Work you will still be proud of in five years. (Roles shown are fictional — this is a concept studio.)
         </p>
       </header>
 
@@ -30,7 +32,7 @@ export function Careers() {
               <span className="row-link__num">{String(i + 1).padStart(2, '0')}</span>
               <h3>{j.title}</h3>
               <span className="row-link__arrow" aria-hidden>→</span>
-              <p>{j.team} · {j.location} · {j.type}</p>
+              <p>{j.team} · {j.location} · {j.type} · {j.salary.text}</p>
             </Link>
           ))}
         </div>
@@ -67,13 +69,30 @@ export function JobPage() {
         title={`${job.title} — Careers`}
         description={job.summary}
         path={`/careers/${job.slug}`}
-        jsonLd={[breadcrumbLd([{ name: 'Home', path: '/' }, { name: 'Careers', path: '/careers' }, { name: job.title, path: `/careers/${job.slug}` }])]}
+        jsonLd={[
+          breadcrumbLd([{ name: 'Home', path: '/' }, { name: 'Careers', path: '/careers' }, { name: job.title, path: `/careers/${job.slug}` }]),
+          jobPostingLd(job),
+        ]}
       />
       <header className="article-head container">
+        <Crumbs items={[
+          { name: 'Careers', path: '/careers' },
+          { name: job.title },
+        ]} />
         <Reveal className="overline">{job.team} · {job.location} · {job.type}</Reveal>
         <h1 className="display">{job.title}</h1>
         <p className="lead lead--wide">{job.summary}</p>
       </header>
+      <section className="section--tight container">
+        <ul className="fact-list">
+          <li><span>Salary band</span><span>{job.salary.text}</span></li>
+          <li><span>Team</span><span>{job.team}</span></li>
+          <li><span>Location</span><span>{job.location}</span></li>
+          <li><span>Type</span><span>{job.type}</span></li>
+          <li><span>Posted</span><span>{formatDate(job.posted)}</span></li>
+          <li><span>Applications close</span><span>{formatDate(job.closes)}</span></li>
+        </ul>
+      </section>
       <section className="section container">
         <div className="two-col">
           <div>

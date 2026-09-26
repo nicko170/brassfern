@@ -917,6 +917,55 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 12
   },
   {
+    "title": "Generative AI in brand work: our position, in plain language",
+    "description": "Where generative AI genuinely helps brand work, where it quietly rots it, and the disclosure we give every client. Our studio position, stated plainly.",
+    "slug": "ai-in-brand-work-position",
+    "cluster": "brand",
+    "tags": [
+      "AI in design",
+      "brand ethics",
+      "generative AI",
+      "studio process",
+      "disclosure"
+    ],
+    "date": "2026-02-18",
+    "author": "Mara Ellison",
+    "keywords": [
+      "AI in branding",
+      "generative AI design",
+      "brand ethics",
+      "AI disclosure",
+      "design process AI"
+    ],
+    "readingTime": 9,
+    "heroImage": "/images/articles/brand/ai-in-brand-work-position.jpg",
+    "heroAlt": "Overhead still life of a designer's paper-toned table: fanned moodboard tiles, a brass swatch book, pencil sketches of an abstract leaf mark on tracing paper, and a small fern at the edge."
+  },
+  {
+    "title": "The annual report as a web moment",
+    "description": "The annual report is the year's biggest brand surface, usually wasted as a PDF. Structure the story, keep the data honest, ship it as a web moment.",
+    "slug": "annual-report-web-moment",
+    "cluster": "brand",
+    "tags": [
+      "annual report",
+      "impact report",
+      "brand storytelling",
+      "data visualisation",
+      "scrollytelling"
+    ],
+    "date": "2026-06-11",
+    "author": "Mara Ellison",
+    "keywords": [
+      "annual report website",
+      "impact report design",
+      "scrollytelling report",
+      "nonprofit annual report"
+    ],
+    "readingTime": 11,
+    "heroImage": "/images/articles/brand/annual-report-web-moment.jpg",
+    "heroAlt": "Stacked annual report booklets on cream paper, open to a spread of fern-green charts, beside a brass ruler and a pressed fern frond."
+  },
+  {
     "title": "Brand photography without the five-figure shoot",
     "description": "Big photography energy on a real budget: shot lists written like screenplays, a lighting language not a filter, and a library that doesn't age in six months.",
     "slug": "art-directing-brand-photography",
@@ -1011,6 +1060,51 @@ export const articleIndex: ArticleMeta[] = [
     "heroAlt": "Printed colour swatch cards fanned in an arc on cream paper — fern green, brass and clay tones — with one section crowded by near-identical corporate blues, a brass compass resting beside them."
   },
   {
+    "title": "Brand is the small moments: gestures worth systemising",
+    "description": "Your brand lives in invoice footers, app icons and 404 pages more than in any campaign. A gesture audit method, what to polish, and the upkeep cost of whimsy.",
+    "slug": "brand-gestures-small-moments",
+    "cluster": "brand",
+    "tags": [
+      "brand touchpoints",
+      "microcopy",
+      "brand audit",
+      "brand voice",
+      "design details"
+    ],
+    "date": "2026-05-28",
+    "author": "Leonie Marsh",
+    "keywords": [
+      "brand touchpoints audit",
+      "small brand moments",
+      "microcopy brand",
+      "brand details"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "Brand governance without the brand police",
+    "description": "Governance fails when it's enforcement. How to build decision rights, self-serve assets and exception handling that make the right thing the easy thing.",
+    "slug": "brand-governance-no-police",
+    "cluster": "brand",
+    "tags": [
+      "brand governance",
+      "design ops",
+      "asset management",
+      "brand guidelines",
+      "operations"
+    ],
+    "date": "2025-11-12",
+    "author": "June Okafor",
+    "keywords": [
+      "brand governance",
+      "brand management",
+      "design ops",
+      "asset management",
+      "brand guidelines"
+    ],
+    "readingTime": 9
+  },
+  {
     "title": "Kill the brand PDF: living guidelines that get used",
     "description": "Guideline PDFs rot in shared drives while brands drift. What actually replaces them: living guideline sites with tokens, patterns, versioning and honest governance.",
     "slug": "brand-guidelines-living",
@@ -1055,6 +1149,28 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 9
   },
   {
+    "title": "Refresh or rebrand? A decision tree for tired identities",
+    "description": "Is it the logo or the product? Diagnostics that route a tired identity to refresh, evolution or full rebrand — with the cost and risk curves for each path.",
+    "slug": "brand-refresh-vs-rebrand",
+    "cluster": "brand",
+    "tags": [
+      "rebrand",
+      "brand refresh",
+      "brand strategy",
+      "identity design",
+      "brand audit"
+    ],
+    "date": "2025-04-08",
+    "author": "Mara Ellison",
+    "keywords": [
+      "brand refresh vs rebrand",
+      "rebrand decision",
+      "brand evolution",
+      "identity update"
+    ],
+    "readingTime": 11
+  },
+  {
     "title": "Brand strategy on one page (or it isn't strategy)",
     "description": "Our one-page brand strategy format: audience tension, position, proof, personality and the 'we will not' column — with an annotated example and facilitation notes.",
     "slug": "brand-strategy-one-pager",
@@ -1095,6 +1211,28 @@ export const articleIndex: ArticleMeta[] = [
       "tone of voice",
       "ux writing voice",
       "copy style guide"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "Brand voice in the bad moments: errors, churn and apologies",
+    "description": "Brands break character exactly when character matters. Voice principles for error states, downtime, price rises, cancellations and apologies that aren't theatre.",
+    "slug": "brand-voice-in-errors",
+    "cluster": "brand",
+    "tags": [
+      "brand voice",
+      "UX writing",
+      "error messages",
+      "tone of voice",
+      "customer experience"
+    ],
+    "date": "2026-03-03",
+    "author": "Leonie Marsh",
+    "keywords": [
+      "brand voice error messages",
+      "UX writing brand",
+      "apology copy",
+      "tone of voice product"
     ],
     "readingTime": 10
   },
@@ -1278,6 +1416,29 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 9
   },
   {
+    "title": "An illustration system is rules, not a folder of PNGs",
+    "description": "Illustration that stays consistent after the artist leaves: principles with forbiddens, per-artist commissioning briefs, rarity budgets, and storage that survives churn.",
+    "slug": "illustration-systems-not-galleries",
+    "cluster": "brand",
+    "tags": [
+      "illustration",
+      "art direction",
+      "brand identity",
+      "design systems",
+      "commissioning"
+    ],
+    "date": "2025-11-04",
+    "author": "June Okafor",
+    "keywords": [
+      "illustration",
+      "art direction",
+      "brand identity",
+      "design systems",
+      "commissioning"
+    ],
+    "readingTime": 8
+  },
+  {
     "title": "Illustration systems that don't go stale",
     "description": "One-off illustration ages like milk. Here's how we build illustration languages as systems: primitives, composition rules, generators and maintenance models that survive.",
     "slug": "illustration-systems",
@@ -1322,6 +1483,29 @@ export const articleIndex: ArticleMeta[] = [
       "brand system"
     ],
     "readingTime": 9
+  },
+  {
+    "title": "Will your logo survive your product?",
+    "description": "Identity work gets judged at 16 pixels. Favicons, avatar crops, dark surfaces, motion restraint, and the logo-usage contract that keeps engineers on side.",
+    "slug": "logo-survival-in-product-ui",
+    "cluster": "brand",
+    "tags": [
+      "logo design",
+      "favicon",
+      "brand system",
+      "product design",
+      "design tokens"
+    ],
+    "date": "2026-08-06",
+    "author": "June Okafor",
+    "keywords": [
+      "logo favicon",
+      "product UI branding",
+      "brand identity system",
+      "logo small sizes",
+      "design tokens"
+    ],
+    "readingTime": 10
   },
   {
     "title": "Design logo systems, not logos",
@@ -1442,6 +1626,29 @@ export const articleIndex: ArticleMeta[] = [
     "heroAlt": "Overlapping translucent sheets tracing the easing curves of a fern form in motion, with brass timeline markers on cream paper."
   },
   {
+    "title": "Naming features and tiers: clarity beats poetry at checkout",
+    "description": "Feature names and pricing tiers live in the hardest-working UI you own. Rules for naming what your product does so users buy faster and support sighs less.",
+    "slug": "naming-features-and-tiers",
+    "cluster": "brand",
+    "tags": [
+      "feature naming",
+      "pricing tiers",
+      "product naming",
+      "brand architecture",
+      "SaaS"
+    ],
+    "date": "2025-10-08",
+    "author": "Leonie Marsh",
+    "keywords": [
+      "feature naming",
+      "pricing tier names",
+      "product naming",
+      "brand architecture",
+      "plan naming"
+    ],
+    "readingTime": 9
+  },
+  {
     "title": "Naming across borders: the checks that save you later",
     "description": "A name that sings in Sydney can stink in Singapore. Linguistic screens, trademark classes, domain realities and the false friends that kill product names.",
     "slug": "naming-international-checks",
@@ -1508,6 +1715,51 @@ export const articleIndex: ArticleMeta[] = [
       "trademark screening"
     ],
     "readingTime": 10
+  },
+  {
+    "title": "Naming products and features inside a masterbrand",
+    "description": "Not every feature deserves a name. The descriptive–invented spectrum, a naming budget against sprawl, and renaming features mid-life without confusing everyone.",
+    "slug": "naming-products-features",
+    "cluster": "brand",
+    "tags": [
+      "naming",
+      "brand architecture",
+      "product naming",
+      "naming governance",
+      "brand strategy"
+    ],
+    "date": "2025-06-17",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "feature naming",
+      "product naming conventions",
+      "brand naming architecture",
+      "naming governance"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "The trademark reality check your naming process needs",
+    "description": "The thousand-name funnel from brainstorm to survivor: linguistic screens, trademark classes, domain compromise positions, app-store collisions, graceful exits.",
+    "slug": "naming-trademark-reality-check",
+    "cluster": "brand",
+    "tags": [
+      "naming",
+      "trademark",
+      "domains",
+      "brand strategy",
+      "legal"
+    ],
+    "date": "2026-07-21",
+    "author": "Leonie Marsh",
+    "keywords": [
+      "naming",
+      "trademark",
+      "domains",
+      "brand strategy",
+      "legal"
+    ],
+    "readingTime": 9
   },
   {
     "title": "Packaging thinking for brands that live on screens",
@@ -1598,6 +1850,29 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 10
   },
   {
+    "title": "Rebrand rollout: the domino order matters",
+    "description": "A rebrand is a logistics operation wearing a brand costume. The domino order — domain, redirects, app stores, email, legal — that decides whether launch week sings.",
+    "slug": "rebrand-rollout-sequencing",
+    "cluster": "brand",
+    "tags": [
+      "rebrand",
+      "rollout",
+      "brand launch",
+      "operations",
+      "checklist"
+    ],
+    "date": "2026-01-27",
+    "author": "Mara Ellison",
+    "keywords": [
+      "rebrand",
+      "brand launch",
+      "rollout",
+      "checklist",
+      "brand strategy"
+    ],
+    "readingTime": 9
+  },
+  {
     "title": "Rebrands that worked (and the ones that were just new paint)",
     "description": "An anatomy of rebrands that actually changed the business — knowing when to rebrand, how to sequence the rollout, and how to tell transformation from paint.",
     "slug": "rebrands-that-worked",
@@ -1620,6 +1895,29 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 11,
     "heroImage": "/images/articles/brand/rebrands-that-worked.jpg",
     "heroAlt": "Still life of a rebrand in progress: letterpress type, fern-green and brass swatches, and masking tape peeled back to reveal a clean edge on cream paper."
+  },
+  {
+    "title": "Sonic branding for studios without a jingle budget",
+    "description": "Lightweight sonic identity without the six-figure jingle: the three-moment rule, UI sound principles, accessibility defaults, and one commissioned motif.",
+    "slug": "sonic-branding-small-studios",
+    "cluster": "brand",
+    "tags": [
+      "sonic branding",
+      "sound design",
+      "brand identity",
+      "audio UX",
+      "accessibility"
+    ],
+    "date": "2026-08-18",
+    "author": "Hannah Yeo",
+    "keywords": [
+      "sonic branding",
+      "sound design",
+      "brand identity",
+      "audio UX",
+      "accessibility"
+    ],
+    "readingTime": 8
   },
   {
     "title": "Sonic branding: the layer most products mute",
@@ -1645,6 +1943,28 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 9
   },
   {
+    "title": "Type pairing for brand systems: two voices, one argument",
+    "description": "How we pair display and text faces in identity work: contrast logic, superfamilies vs strangers, the third-face rule, and testing in the ugliest context first.",
+    "slug": "type-pairing-brand-systems",
+    "cluster": "brand",
+    "tags": [
+      "typography",
+      "type pairing",
+      "brand identity",
+      "typefaces",
+      "design systems"
+    ],
+    "date": "2024-11-19",
+    "author": "June Okafor",
+    "keywords": [
+      "type pairing",
+      "brand typography",
+      "font pairing guide",
+      "typeface selection brand"
+    ],
+    "readingTime": 10
+  },
+  {
     "title": "Type as brand: when the typeface is the logo",
     "description": "Retail fonts, custom type, and the maths in between. How we decide when letterforms should carry a brand — and how to make typography do a logo's job.",
     "slug": "typography-brand-distinctiveness",
@@ -1665,6 +1985,29 @@ export const articleIndex: ArticleMeta[] = [
       "font licensing brand"
     ],
     "readingTime": 9
+  },
+  {
+    "title": "Testing brand voice on people, not vibes",
+    "description": "Vibes aren't evidence. Test brand voice on real people with comprehension checks, cloze deletion and the 'could a competitor say this' filter.",
+    "slug": "voice-testing-with-humans",
+    "cluster": "brand",
+    "tags": [
+      "brand voice",
+      "tone of voice",
+      "user testing",
+      "copywriting",
+      "brand strategy"
+    ],
+    "date": "2026-07-09",
+    "author": "Priya Nair",
+    "keywords": [
+      "brand voice",
+      "tone of voice testing",
+      "user testing copy",
+      "voice scorecard",
+      "brand strategy"
+    ],
+    "readingTime": 11
   },
   {
     "title": "Bundles and kits: designing the build-your-own moment",
@@ -3752,6 +4095,29 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 10
   },
   {
+    "title": "Alternative-to pages that don't smear anyone",
+    "description": "Building a comparison-page programme that ranks and keeps trust: intent research, fair-comparison editorial rules, freshness ops, and killing fake objectivity.",
+    "slug": "alternative-to-pages-program",
+    "cluster": "growth",
+    "tags": [
+      "SEO",
+      "comparison pages",
+      "B2B marketing",
+      "content strategy",
+      "programmatic SEO"
+    ],
+    "date": "2026-04-28",
+    "author": "Sam Whitfield",
+    "keywords": [
+      "alternative to pages",
+      "comparison SEO",
+      "competitor keywords",
+      "B2B SEO strategy",
+      "programmatic comparisons"
+    ],
+    "readingTime": 9
+  },
+  {
     "title": "Analytics governance: tracking plans before tools",
     "description": "Analytics rots quietly until nobody trusts the dashboards. The fix is governance, not tooling: event naming grammar, ownership, QA rituals and the monthly data hour.",
     "slug": "analytics-governance",
@@ -3860,6 +4226,28 @@ export const articleIndex: ArticleMeta[] = [
       "conquesting"
     ],
     "readingTime": 8
+  },
+  {
+    "title": "Campaign naming conventions: boring is the feature",
+    "description": "UTM and campaign names are infrastructure, not admin. A grammar that survives staff turnover, separators, tooling that enforces it, and cleaning old messes.",
+    "slug": "campaign-naming-conventions",
+    "cluster": "growth",
+    "tags": [
+      "UTM parameters",
+      "analytics",
+      "campaign tracking",
+      "marketing ops",
+      "data hygiene"
+    ],
+    "date": "2025-10-29",
+    "author": "Sam Whitfield",
+    "keywords": [
+      "UTM naming conventions",
+      "campaign tracking",
+      "marketing analytics hygiene",
+      "UTM parameters"
+    ],
+    "readingTime": 9
   },
   {
     "title": "Your changelog is a marketing channel",
@@ -4134,6 +4522,28 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 9
   },
   {
+    "title": "Customer stories that rank and convert",
+    "description": "Customer stories are a growth program, not a trophy shelf: interviews that surface quotable numbers, structure for skimmers, SEO packaging and tidy permissions.",
+    "slug": "customer-stories-that-rank",
+    "cluster": "growth",
+    "tags": [
+      "case studies",
+      "customer stories",
+      "social proof",
+      "content marketing",
+      "SEO"
+    ],
+    "date": "2025-08-20",
+    "author": "Priya Nair",
+    "keywords": [
+      "customer case studies",
+      "case study SEO",
+      "customer stories marketing",
+      "social proof content"
+    ],
+    "readingTime": 9
+  },
+  {
     "title": "Digital PR for links: an honest playbook",
     "description": "Link earning without spam: data studies people cite, expert commentary workflows, asset-led outreach, realistic conversion rates, and how to tell if it's working.",
     "slug": "digital-pr-backlinks-honest",
@@ -4265,6 +4675,29 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 9
   },
   {
+    "title": "Your search box is a research department",
+    "description": "Nobody lies to a search box. Mining internal site search — zero-results reviews, synonym dictionaries, query taxonomy — into a content roadmap that compounds.",
+    "slug": "internal-search-mining",
+    "cluster": "growth",
+    "tags": [
+      "site search",
+      "content strategy",
+      "research",
+      "seo",
+      "analytics"
+    ],
+    "date": "2025-11-04",
+    "author": "Leonie Marsh",
+    "keywords": [
+      "site search analytics",
+      "zero results search",
+      "content gap analysis",
+      "search UX data",
+      "content strategy"
+    ],
+    "readingTime": 9
+  },
+  {
     "title": "International SEO without tears: hreflang, ccTLDs and content reuse",
     "description": "Going international without tanking search: ccTLD vs subfolder trade-offs, hreflang that doesn't break, translations that respect local intent, staged validation.",
     "slug": "international-seo-hreflang",
@@ -4308,6 +4741,29 @@ export const articleIndex: ArticleMeta[] = [
       "experiment velocity"
     ],
     "readingTime": 10
+  },
+  {
+    "title": "Lead capture without the popup",
+    "description": "Replacing exit-intent popups with respectful capture: read-progress offers, content-linked CTAs, end-of-article consoles — and how to know trust survived.",
+    "slug": "lead-capture-without-popups",
+    "cluster": "growth",
+    "tags": [
+      "lead capture",
+      "conversion design",
+      "content marketing",
+      "UX",
+      "email growth"
+    ],
+    "date": "2026-05-26",
+    "author": "Priya Nair",
+    "keywords": [
+      "exit intent alternatives",
+      "lead capture UX",
+      "content CTA design",
+      "conversion without popups",
+      "growth design"
+    ],
+    "readingTime": 9
   },
   {
     "title": "Lifecycle email: the six flows every product needs",
@@ -4354,6 +4810,28 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 9,
     "heroImage": "/images/articles/growth/lifecycle-email-product.jpg",
     "heroAlt": "Editorial still life of brass letterpress blocks arranged as a branching flowchart on cream paper, with fern-green ink lines and a sprig of fern, soft grain."
+  },
+  {
+    "title": "Location pages that earn their rankings",
+    "description": "Location pages fail when they're doorway-page spam: same template, swapped suburb. What makes a local page genuinely useful, and when fewer pages win.",
+    "slug": "local-pages-without-doorway-spam",
+    "cluster": "growth",
+    "tags": [
+      "local SEO",
+      "location pages",
+      "programmatic SEO",
+      "doorway pages",
+      "content strategy"
+    ],
+    "date": "2025-04-23",
+    "author": "Priya Nair",
+    "keywords": [
+      "location pages SEO",
+      "local SEO pages",
+      "doorway pages",
+      "programmatic SEO local"
+    ],
+    "readingTime": 9
   },
   {
     "title": "Local SEO for venues: filling tables search by search",
@@ -4474,6 +4952,29 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 9
   },
   {
+    "title": "Share cards are a growth channel",
+    "description": "Every shared link is an ad you didn't design. Running share cards like a channel: title testing, platform caches, and measuring dark-social lift honestly.",
+    "slug": "og-images-share-systems",
+    "cluster": "growth",
+    "tags": [
+      "og images",
+      "social sharing",
+      "distribution",
+      "growth",
+      "experimentation"
+    ],
+    "date": "2026-06-30",
+    "author": "Priya Nair",
+    "keywords": [
+      "OG image design",
+      "social share cards",
+      "dark social",
+      "link preview optimisation",
+      "content distribution"
+    ],
+    "readingTime": 9
+  },
+  {
     "title": "Paid vs organic: an honest budget conversation",
     "description": "Paid buys speed, organic builds equity. The CAC sanity math, payback windows, and creative-testing handoffs that decide where your next marketing dollar belongs.",
     "slug": "paid-organic-balance",
@@ -4494,6 +4995,29 @@ export const articleIndex: ArticleMeta[] = [
       "channel strategy"
     ],
     "readingTime": 12
+  },
+  {
+    "title": "Experimenting on pricing pages without lying",
+    "description": "You can test framing, proof and order on a pricing page. You can't charge different visitors different prices and keep their trust. Where the line sits.",
+    "slug": "pricing-experiments-ethical",
+    "cluster": "growth",
+    "tags": [
+      "cro",
+      "pricing",
+      "experimentation",
+      "ethics",
+      "b2b"
+    ],
+    "date": "2026-03-14",
+    "author": "Sam Whitfield",
+    "keywords": [
+      "pricing page testing",
+      "A/B testing ethics",
+      "pricing experiments",
+      "CRO honesty",
+      "growth experiments"
+    ],
+    "readingTime": 9
   },
   {
     "title": "Programmatic SEO without polluting the web",
@@ -4564,6 +5088,29 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 9,
     "heroImage": "/images/articles/growth/referral-mechanics-fit.jpg",
     "heroAlt": "Editorial illustration of a circular brass-rimmed referral loop with geometric figures handing a parcel between stations, connected by fern tendrils on warm paper."
+  },
+  {
+    "title": "Referrals for studios: introductions, not codes",
+    "description": "SaaS-style referral codes don't fit agencies. How studios actually grow by referral: designing introductions, credit mechanics, gratitude, and client memory.",
+    "slug": "referrals-for-service-businesses",
+    "cluster": "growth",
+    "tags": [
+      "referrals",
+      "agency growth",
+      "client relationships",
+      "B2B marketing",
+      "studio strategy"
+    ],
+    "date": "2026-06-30",
+    "author": "Mara Ellison",
+    "keywords": [
+      "agency referrals",
+      "B2B referral program",
+      "services marketing",
+      "client introductions",
+      "studio growth"
+    ],
+    "readingTime": 8
   },
   {
     "title": "The compounding returns of refreshing old content",
@@ -4723,6 +5270,51 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 9
   },
   {
+    "title": "Voice-of-customer mining for pages that convert",
+    "description": "Mining sales calls and research notes for conversion copy: consent, tooling, tagging pains vs goals, verbatim headlines, and feeding it back into tests.",
+    "slug": "voice-of-customer-mining",
+    "cluster": "growth",
+    "tags": [
+      "voice of customer",
+      "conversion copywriting",
+      "research",
+      "messaging",
+      "copywriting"
+    ],
+    "date": "2026-07-07",
+    "author": "Leonie Marsh",
+    "keywords": [
+      "voice of customer research",
+      "conversion copywriting",
+      "sales call mining",
+      "messaging research",
+      "copy testing"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "The webinar repurposing engine: one event, twelve assets",
+    "description": "One webinar is a quarter of content wearing a trench coat. The slicing taxonomy, SEO mapping, lightweight tooling and honest measurement behind our repurposing engine.",
+    "slug": "webinar-repurposing-engine",
+    "cluster": "growth",
+    "tags": [
+      "content repurposing",
+      "webinars",
+      "content strategy",
+      "content ops",
+      "B2B marketing"
+    ],
+    "date": "2025-07-02",
+    "author": "Sam Whitfield",
+    "keywords": [
+      "webinar repurposing",
+      "content repurposing strategy",
+      "event content marketing",
+      "content atomization"
+    ],
+    "readingTime": 9
+  },
+  {
     "title": "Winback flows: the cheapest revenue you're not earning",
     "description": "Lapsed customers already know you, trust your checkout and cost nothing to acquire. Designing winback flows that reactivate without discount-spamming the loyal.",
     "slug": "winback-email-flows",
@@ -4766,6 +5358,28 @@ export const articleIndex: ArticleMeta[] = [
       "a11y compliance"
     ],
     "readingTime": 10
+  },
+  {
+    "title": "Reading agency contracts: IP, liability and the licence traps",
+    "description": "A plain-English tour of the contract clauses that matter in creative engagements: IP assignment vs licence, portfolio rights, liability caps, kill fees, warranty windows.",
+    "slug": "agency-contracts-ip-terms",
+    "cluster": "playbooks",
+    "tags": [
+      "contracts",
+      "intellectual property",
+      "procurement",
+      "agency terms",
+      "legal"
+    ],
+    "date": "2026-06-09",
+    "author": "Ruby Castellanos",
+    "keywords": [
+      "agency contract terms",
+      "design contract IP",
+      "agency agreement",
+      "creative services contract"
+    ],
+    "readingTime": 9
   },
   {
     "title": "The first 30 days: onboarding a client engagement",
@@ -4903,6 +5517,31 @@ export const articleIndex: ArticleMeta[] = [
       "CMS design"
     ],
     "readingTime": 9
+  },
+  {
+    "title": "Running a design critique people actually want to attend",
+    "description": "Our Thursday critique format, a decade in the tuning: framed questions, a silent read, kind-specific-necessary filters, and stopping senior voices anchoring.",
+    "slug": "design-critique-that-works",
+    "cluster": "playbooks",
+    "tags": [
+      "design critique",
+      "design culture",
+      "feedback",
+      "facilitation",
+      "team rituals"
+    ],
+    "date": "2025-08-26",
+    "author": "June Okafor",
+    "keywords": [
+      "design critique process",
+      "design review meeting",
+      "design feedback culture",
+      "critique facilitation",
+      "design team rituals"
+    ],
+    "readingTime": 10,
+    "heroImage": "/images/articles/playbooks/design-critique-that-works.jpg",
+    "heroAlt": "Printed design proofs pinned to a brass-framed cork board in a warm studio, annotated with pencil marks and sticky notes."
   },
   {
     "title": "Handovers that don't decay: the living handover playbook",
@@ -5131,7 +5770,7 @@ export const articleIndex: ArticleMeta[] = [
   },
   {
     "title": "The kickoff workshop agenda we run before every build",
-    "description": "Our actual half-day kickoff agenda for a 12-week build: the hour-one decision log, the risk room, role mapping, and the 'what would make this fail' round. Reusable inside.",
+    "description": "Our actual half-day kickoff agenda for a 12-week build: the hour-one decision log, the risk room, role mapping and the 'what would make this fail' round.",
     "slug": "kickoff-workshop-that-sets-the-tone",
     "cluster": "playbooks",
     "tags": [
@@ -5286,6 +5925,28 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 9
   },
   {
+    "title": "Reference calls: what to ask an agency's past clients",
+    "description": "Twelve questions for agency reference calls that surface reality — first missed dates, month-three invoices, vanishing seniors — and how to read the hedges.",
+    "slug": "reference-calls-agency",
+    "cluster": "playbooks",
+    "tags": [
+      "agency selection",
+      "reference checks",
+      "procurement",
+      "vendor vetting",
+      "client relationships"
+    ],
+    "date": "2025-09-11",
+    "author": "Priya Nair",
+    "keywords": [
+      "agency reference check",
+      "hiring a design agency",
+      "reference call questions",
+      "vetting an agency"
+    ],
+    "readingTime": 10
+  },
+  {
     "title": "Retainer or project? An honest decision guide",
     "description": "Retainer or fixed-scope project? An honest guide to when each engagement model wins — risk profiles, budget shapes, switching costs, and the questions to ask first.",
     "slug": "retainer-vs-project",
@@ -5304,6 +5965,28 @@ export const articleIndex: ArticleMeta[] = [
       "design retainer",
       "engagement models agency",
       "hiring agency model"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Skip the RFP: a better way to buy creative work",
+    "description": "RFPs select for proposal-writing, not building. A better process: a short 'request for conversations', a shortlist of three, paid discovery with two.",
+    "slug": "rfp-alternative-better-way",
+    "cluster": "playbooks",
+    "tags": [
+      "RFP",
+      "procurement",
+      "agency selection",
+      "buying design",
+      "process"
+    ],
+    "date": "2026-05-12",
+    "author": "Mara Ellison",
+    "keywords": [
+      "RFP alternative",
+      "agency procurement",
+      "buying design services",
+      "request for proposal"
     ],
     "readingTime": 9
   },
@@ -5374,6 +6057,51 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 9,
     "heroImage": "/images/articles/playbooks/status-updates-clients-read.jpg",
     "heroAlt": "A small brass desk bell beside a stack of index cards tied with twine, a pencil and a fern sprig on cream paper."
+  },
+  {
+    "title": "Switching agencies mid-flight: a transition playbook",
+    "description": "How to leave an agency — or inherit a fired one's work — without losing the project: asset inventories, handover audits, the two-sprint overlap rule.",
+    "slug": "switching-agencies-mid-flight",
+    "cluster": "playbooks",
+    "tags": [
+      "agency relationships",
+      "handover",
+      "transitions",
+      "project recovery",
+      "procurement"
+    ],
+    "date": "2026-03-05",
+    "author": "Felix Brandt",
+    "keywords": [
+      "switching agencies",
+      "agency handover",
+      "firing your agency",
+      "project transition"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "Plan your exit before you sign: vendor lock-in for agencies and clients",
+    "description": "Every platform decision is also an exit decision. Portability tests, export drills, contract clauses and the abstraction seams that actually matter.",
+    "slug": "vendor-lockin-exit-plan",
+    "cluster": "playbooks",
+    "tags": [
+      "vendor lock-in",
+      "platform strategy",
+      "procurement",
+      "CMS",
+      "exit planning"
+    ],
+    "date": "2025-11-11",
+    "author": "Felix Brandt",
+    "keywords": [
+      "vendor lock in",
+      "platform exit strategy",
+      "cms data portability",
+      "headless migration planning",
+      "procurement technology risk"
+    ],
+    "readingTime": 10
   },
   {
     "title": "Weekly demos: the habit that runs our projects",
@@ -5514,7 +6242,7 @@ export const articleIndex: ArticleMeta[] = [
   },
   {
     "title": "Bottom sheets that don't fight the user",
-    "description": "When a bottom sheet beats a modal on mobile web: drag affordances, scrim honesty, snap-point logic, keyboard and screen-reader behaviour, and the patterns that fight back.",
+    "description": "When a bottom sheet beats a modal on mobile web: drag affordances, scrim honesty, snap-point logic, keyboard and screen-reader behaviour, and anti-patterns.",
     "slug": "bottom-sheets-mobile-web",
     "cluster": "product",
     "tags": [
@@ -5766,7 +6494,7 @@ export const articleIndex: ArticleMeta[] = [
   },
   {
     "title": "Continue on your phone: handoff UX that doesn't lose people",
-    "description": "Session and device handoff done properly: continue-on-another-device flows, magic links vs QR codes, delayed-resume UX after context switches, and honest security boundaries.",
+    "description": "Session and device handoff done properly: continue-on-another-device flows, magic links vs QR codes, delayed-resume UX and the honest security boundaries.",
     "slug": "device-handoff-flows",
     "cluster": "product",
     "tags": [
@@ -6615,6 +7343,50 @@ export const articleIndex: ArticleMeta[] = [
       "inclusive design"
     ],
     "readingTime": 9
+  },
+  {
+    "title": "Anchor navigation on long pages: TOCs that get used",
+    "description": "Tables of contents are either the hardest-working furniture on a long page or pure decoration. How we design anchor navigation that earns its pixels.",
+    "slug": "anchor-navigation-long-pages",
+    "cluster": "web-design",
+    "tags": [
+      "ux patterns",
+      "navigation",
+      "editorial design",
+      "accessibility"
+    ],
+    "date": "2026-08-04",
+    "author": "Nate Sullivan",
+    "keywords": [
+      "table of contents ux",
+      "anchor links",
+      "scrollspy design",
+      "long-form navigation",
+      "web design patterns"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Article indexes people actually browse",
+    "description": "Most blog indexes are a reverse-chronological conveyor belt. Here's how we design journal indexes that invite real browsing — lead stories, rhythm, and honest pagination.",
+    "slug": "article-index-design",
+    "cluster": "web-design",
+    "tags": [
+      "editorial design",
+      "content discovery",
+      "ux patterns",
+      "information architecture"
+    ],
+    "date": "2026-07-09",
+    "author": "Ruby Castellanos",
+    "keywords": [
+      "blog index design",
+      "article listing ux",
+      "editorial web design",
+      "content discovery",
+      "card grid design"
+    ],
+    "readingTime": 10
   },
   {
     "title": "Bylines and author pages: small design, big trust",
@@ -7655,6 +8427,52 @@ export const articleIndex: ArticleMeta[] = [
       "sticky cta design"
     ],
     "readingTime": 8
+  },
+  {
+    "title": "Team pages that signal craft",
+    "description": "A team page is a craft sample, not an org chart. Portraits as policy, bios that show judgment, people linked to their work, and org design without the ladder.",
+    "slug": "team-pages-that-signal-craft",
+    "cluster": "web-design",
+    "tags": [
+      "team pages",
+      "agency websites",
+      "illustrated portraits",
+      "studio culture",
+      "about pages"
+    ],
+    "date": "2025-06-10",
+    "author": "Mara Ellison",
+    "keywords": [
+      "team page design",
+      "agency website",
+      "illustrated portraits",
+      "studio culture UX",
+      "about page design"
+    ],
+    "readingTime": 7
+  },
+  {
+    "title": "Testimonials beyond the card carousel",
+    "description": "Testimonials don't need a grey card carousel. How to present client quotes as editorial evidence — typography, attribution, deep links, and honest context.",
+    "slug": "testimonial-presentation-craft",
+    "cluster": "web-design",
+    "tags": [
+      "testimonials",
+      "social proof",
+      "typography",
+      "portfolio design",
+      "trust signals"
+    ],
+    "date": "2025-04-15",
+    "author": "June Okafor",
+    "keywords": [
+      "testimonial design",
+      "social proof UX",
+      "quote typography",
+      "portfolio site design",
+      "trust signals"
+    ],
+    "readingTime": 7
   },
   {
     "title": "Type systems for marketing sites that still load fast",
@@ -8991,4 +9809,4 @@ export const caseIndex: CaseStudyMeta[] = [
   }
 ]
 
-export const workImages: string[] = ["arlo-and-sons-tradies-marketplace","brightline-solar-quote-engine","brightline-solar-quoter","brightmarsh-onboarding","copperline-community-bank","copperline-mobile-bank","fern-and-forage-florist","fernleigh-cellar-club","fernleigh-wines-dtc-storefront","glade-skincare-ingredient-honesty","glasshouse-seat-map","hearthbrew-brand-system","hearthbrew-subscription-club","holloway-player","holloway-records-label-site","kite-and-anchor-insurtech","meridian-climate-data-explorer","northwind-ledger-budget","northwind-ledger-dashboard-rebuild","osprey-outdoor-configurator-launch","postcards-museum-archive","pylon-care-assistant","pylon-health-booking","pylon-health-telehealth-flow","quarry-property-map","signal-and-noise-podcast-network","summit-and-still-yoga","sundial-itinerary-builder","sundial-travel-booking","tallow-and-co-providore","tallow-feast-builder","tallow-seat-map","tidal-games-store","wattle-and-daub-reservations","wattle-and-daub-reserve","willow-and-wren-bookshop"]
+export const workImages: string[] = ["arlo-and-sons-tradies-marketplace","brightline-solar-quote-engine","brightline-solar-quoter","brightmarsh-onboarding","copperline-community-bank","copperline-mobile-bank","fern-and-forage-florist","fernleigh-cellar-club","fernleigh-wines-dtc-storefront","glade-ingredient-explorer","glade-skincare-ingredient-honesty","glasshouse-seat-map","hearthbrew-brand-system","hearthbrew-subscription-club","holloway-player","holloway-records-label-site","holloway-waveform-player","kite-and-anchor-insurtech","ledgerline-pricing-calculator","meridian-climate-data-explorer","northwind-ledger-budget","northwind-ledger-dashboard-rebuild","osprey-outdoor-configurator-launch","postcards-museum-archive","pylon-care-assistant","pylon-health-booking","pylon-health-telehealth-flow","quarry-property-map","signal-and-noise-podcast-network","summit-and-still-yoga","sundial-itinerary-builder","sundial-travel-booking","tallow-and-co-providore","tallow-feast-builder","tallow-seat-map","tidal-games-store","wattle-and-daub-reservations","wattle-and-daub-reserve","willow-and-wren-bookshop"]

@@ -35,13 +35,15 @@ const Search = lazyPage(() => import('./pages/Search'))
 const Resources = lazyPage(() => import('./pages/Resources'))
 const Contact = lazyPage(() => import('./pages/Contact'))
 const Press = lazyPage(() => import('./pages/Press'))
+const Colophon = lazyPage(() => import('./pages/Colophon'))
+const Sitemap = lazyPage(() => import('./pages/Sitemap'))
 const Legal = lazyPage(() => import('./pages/Legal'))
 
 const allPages: Preloadable<ComponentType>[] = [
   Home, Work, WorkCase, LabIndex, LabDemo, ServicesIndex, ServicePage,
   IndustriesIndex, IndustryPage, Approach, Pricing, Studio, Team, PersonPage,
   Careers, JobPage, JournalIndex, JournalCluster, Article, TagPage,
-  Search, Resources, Contact, Press, Legal,
+  Search, Resources, Contact, Press, Colophon, Sitemap, Legal,
 ]
 
 let warmed: Promise<unknown> | null = null
@@ -117,6 +119,8 @@ export default function App({ head }: { head?: HeadCollector }) {
         <Route path="resources" element={<Suspense fallback={<PageFallback />}><Resources /></Suspense>} />
         <Route path="contact" element={<Suspense fallback={<PageFallback />}><Contact /></Suspense>} />
         <Route path="press" element={<Suspense fallback={<PageFallback />}><Press /></Suspense>} />
+        <Route path="colophon" element={<Suspense fallback={<PageFallback />}><Colophon /></Suspense>} />
+        <Route path="sitemap" element={<Suspense fallback={<PageFallback />}><Sitemap /></Suspense>} />
         <Route path="legal/:page" element={<Suspense fallback={<PageFallback />}><Legal /></Suspense>} />
         <Route path="*" element={<NotFound />} />
       </Route>

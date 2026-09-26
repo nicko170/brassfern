@@ -21,7 +21,10 @@
 | `/search` (?q=) | Live-debounced client search; empty state shows popular tags + latest | metas |
 | `/resources` | Playbooks hub | playbooks cluster |
 | `/contact` | Brief form (client validation + success state) | — |
-| `/press`, `/legal/privacy`, `/legal/terms` | Static | — |
+| `/press` | Static | — |
+| `/colophon` | Type specimens, token swatches, machinery, concept statement | hardcoded lists + tokens |
+| `/sitemap` | Human-readable index (auto-derived from all data sources) | generated index, data files |
+| `/legal/privacy`, `/legal/terms` | Static | — |
 | `/*` → 404 (also emitted as `dist/404.html`) | Lost in the undergrowth | — |
 
 ## Content pipeline (writers: read this)
@@ -77,6 +80,12 @@
 - Every prerendered page also carries
   `<link rel="alternate" type="application/rss+xml">` pointing at rss.xml
   (added in `headToHtml`/`applyHead`, `src/lib/head.tsx`).
+- Visible breadcrumbs (iter 10): `src/components/Crumbs.tsx` sits at the top
+  of every deep page's `.article-head` — keep the items aligned with the
+  page's `breadcrumbLd()` JSON-LD when editing.
+- Job pages emit JobPosting JSON-LD (iter 10) from structured fields in
+  `src/data/jobs.ts` (salary band, posted/closes, remote eligibility);
+  `jobPostingLd()` in `src/lib/jsonld.ts`.
 - Shell furniture (iter 8): `src/components/Cursor.tsx` (desktop-only brass
   cursor ring, mounts client-side only) and `src/components/StudioTime.tsx`
   (`ClockStrip` in the footer — em-dash placeholders in static HTML, live times

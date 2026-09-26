@@ -9,6 +9,7 @@ import { absoluteUrl, withBase } from '../lib/base'
 import { useBody } from '../lib/useBody'
 import { parseToc } from '../lib/toc'
 import Markdown from '../components/Markdown'
+import Crumbs from '../components/Crumbs'
 import Toc from '../components/Toc'
 import ReadingProgress from '../components/ReadingProgress'
 import { ArticleCard } from '../components/Cards'
@@ -48,6 +49,11 @@ export default function Article() {
       <ReadingProgress />
       <article>
         <header className="article-head container">
+          <Crumbs items={[
+            { name: 'Journal', path: '/journal' },
+            { name: CLUSTER_LABELS[meta.cluster], path: `/journal/${meta.cluster}` },
+            { name: meta.title },
+          ]} />
           <Reveal className="overline">
             <Link to={`/journal/${meta.cluster}`} style={{ color: 'inherit' }}>{CLUSTER_LABELS[meta.cluster]}</Link>
           </Reveal>
@@ -133,6 +139,11 @@ export function TagPage() {
         path={`/journal/tag/${tag}`}
       />
       <header className="article-head container">
+        <Crumbs items={[
+          { name: 'Journal', path: '/journal' },
+          { name: 'Tags', path: '/journal' },
+          { name: `#${decoded}` },
+        ]} />
         <Reveal className="overline">Tag</Reveal>
         <h1 className="display">#{decoded}</h1>
         <p className="lead">{list.length} piece{list.length > 1 ? 's' : ''} filed under “{decoded}”.</p>

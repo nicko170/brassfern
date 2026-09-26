@@ -1,6 +1,6 @@
 ---
 title: "Campaign naming conventions: boring is the feature"
-description: "UTM and campaign names are infrastructure, not admin. A grammar that survives staff turnover, separator rules, tooling that enforces it, and how to clean historical messes."
+description: "UTM and campaign names are infrastructure, not admin. A grammar that survives staff turnover, separators, tooling that enforces it, and cleaning old messes."
 slug: campaign-naming-conventions
 cluster: growth
 tags: [UTM parameters, analytics, campaign tracking, marketing ops, data hygiene]

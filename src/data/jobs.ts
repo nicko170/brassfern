@@ -1,3 +1,11 @@
+export interface JobSalary {
+  /** Display text, e.g. "A$150,000–180,000 + super". */
+  text: string
+  min: number
+  max: number
+  currency: 'AUD' | 'GBP'
+}
+
 export interface Job {
   slug: string
   title: string
@@ -7,6 +15,16 @@ export interface Job {
   summary: string
   doing: string[]
   bring: string[]
+  /** Published band — careers page copy promises bands on every role. */
+  salary: JobSalary
+  /** ISO dates for the posting window (also feed JobPosting JSON-LD). */
+  posted: string
+  closes: string
+  /** Remote roles list eligible country codes (jobLocationType TELECOMMUTE). */
+  remote: boolean
+  applicantLocations: string[]
+  /** Hybrid/on-site roles name a studio. */
+  office?: string
 }
 
 /** Fictional open roles. */
@@ -30,6 +48,11 @@ export const jobs: Job[] = [
       'Comfort being the most senior engineer in a three-person squad',
       'Writing clear enough to run a project without meetings',
     ],
+    salary: { text: 'A$150,000–180,000 + super', min: 150000, max: 180000, currency: 'AUD' },
+    posted: '2026-09-07',
+    closes: '2027-01-30',
+    remote: true,
+    applicantLocations: ['AU', 'NZ'],
   },
   {
     slug: 'brand-designer',
@@ -50,6 +73,12 @@ export const jobs: Job[] = [
       'Opinions about type, held loosely',
       'Curiosity about how brands become interfaces',
     ],
+    salary: { text: 'A$120,000–145,000 + super', min: 120000, max: 145000, currency: 'AUD' },
+    posted: '2026-08-24',
+    closes: '2027-01-16',
+    remote: false,
+    applicantLocations: ['AU'],
+    office: 'Surry Hills, Sydney',
   },
   {
     slug: 'growth-strategist',
@@ -70,6 +99,12 @@ export const jobs: Job[] = [
       'Copywriting instincts — you can write the test variant yourself',
       'A allergy to vanity metrics',
     ],
+    salary: { text: '£80,000–100,000', min: 80000, max: 100000, currency: 'GBP' },
+    posted: '2026-08-31',
+    closes: '2027-02-13',
+    remote: true,
+    applicantLocations: ['GB'],
+    office: 'London',
   },
   {
     slug: 'design-engineer',
@@ -90,6 +125,11 @@ export const jobs: Job[] = [
       'A portfolio of interfaces that feel alive — and load fast',
       'Respect for prefers-reduced-motion as a design constraint',
     ],
+    salary: { text: 'A$140,000–170,000 + super', min: 140000, max: 170000, currency: 'AUD' },
+    posted: '2026-09-14',
+    closes: '2027-02-27',
+    remote: true,
+    applicantLocations: ['AU', 'NZ', 'SG'],
   },
   {
     slug: 'ai-engineer',
@@ -110,6 +150,11 @@ export const jobs: Job[] = [
       'Strong Python and TypeScript',
       'The ability to explain confidence scores to a client\u2019s lawyer',
     ],
+    salary: { text: 'A$155,000–185,000 + super', min: 155000, max: 185000, currency: 'AUD' },
+    posted: '2026-09-21',
+    closes: '2027-03-06',
+    remote: true,
+    applicantLocations: ['AU', 'NZ', 'SG'],
   },
 ]
 

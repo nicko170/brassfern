@@ -1,5 +1,6 @@
 import { absoluteUrl } from './base'
 import { personSlug, type Person } from '../data/people'
+import type { Job } from '../data/jobs'
 import type { ArticleMeta, CaseStudyMeta } from './types'
 
 export function organizationLd() {
@@ -75,6 +76,67 @@ export function breadcrumbLd(items: { name: string; path: string }[]) {
       name: it.name,
       item: absoluteUrl(it.path),
     })),
+  }
+}
+
+/**
+ * JobPosting schema for job pages. Salary bands + posting windows come from
+ * jobs.ts (fictional roles on a concept site, marked as such on-page).
+ */
+export function jobPostingLd(job: Job) {
+  const description = [
+    `<p>${job.summary}</p>`,
+    '<p>What you will do:</p>',
+    `<ul>${job.doing.map((d) => `<li>${d}</li>`).join('')}</ul>`,
+    '<p>What you will bring:</p>',
+    `<ul>${job.bring.map((b) => `<li>${b}</li>`).join('')}</ul>`,
+  ].join('')
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'JobPosting',
+    title: job.title,
+    description,
+    datePosted: job.posted,
+    validThrough: `${job.closes}T23:59:59Z`,
+    employmentType: job.type.toUpperCase().replace(/[^A-Z]/g, '_') || 'FULL_TIME',
+    hiringOrganization: {
+      '@type': 'Organization',
+      name: 'Brassfern',
+      sameAs: absoluteUrl('/'),
+      logo: absoluteUrl('favicon.svg'),
+    },
+    ...(job.office
+      ? {
+          jobLocation: {
+            '@type': 'Place',
+            address: {
+              '@type': 'PostalAddress',
+              addressLocality: job.office,
+              addressCountry: job.applicantLocations[0],
+            },
+          },
+        }
+      : {}),
+    ...(job.remote
+      ? {
+          jobLocationType: 'TELECOMMUTE',
+          applicantLocationRequirements: job.applicantLocations.map((c) => ({
+            '@type': 'Country',
+            name: c,
+          })),
+        }
+      : {}),
+    baseSalary: {
+      '@type': 'MonetaryAmount',
+      currency: job.salary.currency,
+      value: {
+        '@type': 'QuantitativeValue',
+        minValue: job.salary.min,
+        maxValue: job.salary.max,
+        unitText: 'YEAR',
+      },
+    },
+    url: absoluteUrl(`/careers/${job.slug}`),
   }
 }
 

@@ -216,6 +216,8 @@ function Footer() {
             ))}
             <li><Link to="/journal">All writing</Link></li>
             <li><Link to="/resources">Resources</Link></li>
+            <li><Link to="/colophon">Colophon</Link></li>
+            <li><Link to="/sitemap">Sitemap</Link></li>
             <li><Link to="/legal/privacy">Privacy</Link></li>
             <li><Link to="/legal/terms">Terms</Link></li>
           </ul>

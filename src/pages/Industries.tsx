@@ -3,6 +3,7 @@ import { Seo } from '../lib/head'
 import { getIndustry, industries } from '../data/industries'
 import { caseStudies } from '../lib/content'
 import { WorkCard } from '../components/Cards'
+import Crumbs from '../components/Crumbs'
 import { breadcrumbLd } from '../lib/jsonld'
 import Reveal from '../components/Reveal'
 import NotFound from './NotFound'
@@ -57,6 +58,10 @@ export function IndustryPage() {
         jsonLd={[breadcrumbLd([{ name: 'Home', path: '/' }, { name: 'Industries', path: '/industries' }, { name: industry.name, path: `/industries/${industry.slug}` }])]}
       />
       <header className="article-head container">
+        <Crumbs items={[
+          { name: 'Industries', path: '/industries' },
+          { name: industry.name },
+        ]} />
         <Reveal className="overline">Industry</Reveal>
         <h1 className="display">{industry.name}</h1>
         <p className="lead lead--wide">{industry.blurb}</p>

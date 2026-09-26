@@ -1,6 +1,6 @@
 ---
 title: "The kickoff workshop agenda we run before every build"
-description: "Our actual half-day kickoff agenda for a 12-week build: the hour-one decision log, the risk room, role mapping, and the 'what would make this fail' round. Reusable inside."
+description: "Our actual half-day kickoff agenda for a 12-week build: the hour-one decision log, the risk room, role mapping and the 'what would make this fail' round."
 slug: kickoff-workshop-that-sets-the-tone
 cluster: playbooks
 tags: [kickoff, workshops, facilitation, project management, client relationships]

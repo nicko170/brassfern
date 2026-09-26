@@ -1,6 +1,6 @@
 ---
 title: "Reference calls: what to ask an agency's past clients"
-description: "Twelve questions for agency reference calls that surface reality — first missed dates, month-three invoices, vanishing seniors — plus how to read the hedges in the answers."
+description: "Twelve questions for agency reference calls that surface reality — first missed dates, month-three invoices, vanishing seniors — and how to read the hedges."
 slug: reference-calls-agency
 cluster: playbooks
 tags: [agency selection, reference checks, procurement, vendor vetting, client relationships]

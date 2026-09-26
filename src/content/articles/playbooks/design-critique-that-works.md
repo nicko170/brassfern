@@ -1,6 +1,6 @@
 ---
 title: "Running a design critique people actually want to attend"
-description: "Our Thursday critique format, after a decade of tuning: framed questions, a silent read, kind-specific-necessary filters, and how to stop senior voices anchoring the room."
+description: "Our Thursday critique format, a decade in the tuning: framed questions, a silent read, kind-specific-necessary filters, and stopping senior voices anchoring."
 slug: design-critique-that-works
 cluster: playbooks
 tags: [design critique, design culture, feedback, facilitation, team rituals]
