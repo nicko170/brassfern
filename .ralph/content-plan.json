@@ -1718,10 +1718,11 @@
     "hospitality seo",
     "local search"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790382255.930583
+   "claimed_at": 1790382255.930583,
+   "done_at": "2026-09-26T10:35:13"
   },
   {
    "kind": "article",
@@ -1735,10 +1736,11 @@
     "content workflow",
     "content team process"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790382255.930584
+   "claimed_at": 1790382255.930584,
+   "done_at": "2026-09-26T10:35:17"
   },
   {
    "kind": "article",
@@ -2148,10 +2150,11 @@
     "exchange experience",
     "reverse logistics ux"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790382415.847577
+   "claimed_at": 1790382415.847577,
+   "done_at": "2026-09-26T10:33:34"
   },
   {
    "kind": "article",
@@ -2165,10 +2168,11 @@
     "rewards program ux",
     "customer retention design"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790382415.847578
+   "claimed_at": 1790382415.847578,
+   "done_at": "2026-09-26T10:35:24"
   },
   {
    "kind": "article",
@@ -2655,10 +2659,11 @@
     "verbal identity",
     "trademark screening"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer3",
    "worker": "writer4",
-   "claimed_at": 1790382255.930584
+   "claimed_at": 1790382255.930584,
+   "done_at": "2026-09-26T10:35:17"
   },
   {
    "kind": "article",
@@ -2672,10 +2677,11 @@
     "responsive logos",
     "brand system"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer3",
    "worker": "writer4",
-   "claimed_at": 1790382255.930584
+   "claimed_at": 1790382255.930584,
+   "done_at": "2026-09-26T10:35:20"
   },
   {
    "kind": "article",
@@ -3691,8 +3697,10 @@
     "shopify vs marketplace",
     "direct to consumer strategy"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790382706.950964
   },
   {
    "kind": "article",
@@ -3706,8 +3714,10 @@
     "product photo shot list",
     "ecommerce art direction"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790382706.950965
   },
   {
    "kind": "article",
@@ -3721,8 +3731,10 @@
     "build a box ux",
     "bundle pricing strategy"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790382706.950965
   },
   {
    "kind": "article",
@@ -3736,8 +3748,10 @@
     "faceted filtering ux",
     "mega menu ux"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790382706.950965
   },
   {
    "kind": "article",

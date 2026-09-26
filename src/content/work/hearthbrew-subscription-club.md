@@ -16,6 +16,7 @@ keywords:
   - churn reduction
   - dtc subscriptions
 readingTime: 9
+demo: hearthbrew-store
 heroImage: /images/work/hearthbrew-subscription-club.jpg
 heroAlt: "A kraft coffee bag, riso-printed field-notes card and a cup of filter coffee on a roastery benchtop in warm morning light"
 client: Hearthbrew Coffee
