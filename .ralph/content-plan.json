@@ -300,8 +300,10 @@
     "two-sided marketplace",
     "reviews ux"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790386841.4814122
   },
   {
    "kind": "article",
@@ -315,8 +317,10 @@
     "progressive disclosure",
     "fintech forms"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790386841.4814122
   },
   {
    "kind": "article",
@@ -330,8 +334,10 @@
     "content model design",
     "local retail"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790386841.4814122
   },
   {
    "kind": "article",
@@ -345,8 +351,10 @@
     "class booking ux",
     "wellness design"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790386841.4814122
   },
   {
    "kind": "article",
@@ -2527,10 +2535,11 @@
    "cluster": "demos",
    "intent": "Event ticketing with interactive seat map for fictional Tallow & Co. long-table dinners. Art direction: butcher-paper cream, charcoal ink, stamp red; ticket-stub typography. Features: SVG seat map of a fictional dining room (long table + banquettes), hover/select seats with price tiers, multi-seat selection with group logic, 10-minute hold timer, order summary + diner details step, accessible list-view equivalent of the map for keyboard/screen-reader users, confirmation with stub-style ticket. Mocked availability, realistic.",
    "keywords": [],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "demo2",
-   "claimed_at": 1790385143.315489
+   "claimed_at": 1790385143.315489,
+   "done_at": "2026-09-26T11:41:30"
   },
   {
    "kind": "demo",
