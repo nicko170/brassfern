@@ -60,7 +60,7 @@ A restructure that's easy to roll back, roughly neutral in the data, and strongl
 
 The cheapest trust move on a pricing page costs one sentence. Ours reads, in the pricing FAQ, some version of: *"Our prices are the same for everyone at a given moment. We occasionally change how we present them; we never change who pays them."* It heads off the "did my colleague get a different quote?" paranoia, it disciplines the team (the sentence is a promise you now have to keep), and it quietly differentiates you from every competitor whose growth team is running the darker playbook.
 
-If you run experiments at all, consider publishing the stance — even the log. The companies that treat their experimentation program as something a customer might read, and nod at, are the ones whose pricing pages are still trusted in year five. Which, in the end, is the only metric a pricing page is for.
+If you run experiments at all, consider publishing the stance — even the log. The companies that treat their experimentation program as something a customer might read, and nod at, are the ones whose pricing pages are still trusted in year five. It's the stance we keep on our own [pricing and engagement models](/pricing), and the one we install with every client who runs tests under our [growth retainers](/services/growth). Which, in the end, is the only metric a pricing page is for: the version of itself a buyer can trust.
 
 ## Key takeaways
 
