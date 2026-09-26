@@ -1358,10 +1358,11 @@
     "illustration guidelines",
     "visual language"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790381497.125252
+   "claimed_at": 1790381497.125252,
+   "done_at": "2026-09-26T10:26:55"
   },
   {
    "kind": "article",
@@ -1375,10 +1376,11 @@
     "share of search",
     "brand tracking"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790381497.1252532
+   "claimed_at": 1790381497.1252532,
+   "done_at": "2026-09-26T10:26:57"
   },
   {
    "kind": "article",
@@ -1392,10 +1394,11 @@
     "brand strategy template",
     "brand workshop"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790381497.1252532
+   "claimed_at": 1790381497.1252532,
+   "done_at": "2026-09-26T10:27:00"
   },
   {
    "kind": "article",
@@ -1409,10 +1412,11 @@
     "brand voice founder",
     "brand transition"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790381497.1252532
+   "claimed_at": 1790381497.1252532,
+   "done_at": "2026-09-26T10:27:02"
   },
   {
    "kind": "article",
@@ -1426,10 +1430,11 @@
     "typographic identity",
     "font licensing brand"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790381545.126676
+   "claimed_at": 1790381545.126676,
+   "done_at": "2026-09-26T10:26:44"
   },
   {
    "kind": "article",
@@ -1443,10 +1448,11 @@
     "brand portal",
     "brand governance"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790381545.126677
+   "claimed_at": 1790381545.126677,
+   "done_at": "2026-09-26T10:26:46"
   },
   {
    "kind": "article",
@@ -1604,10 +1610,11 @@
     "json-ld best practices",
     "rich results"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790381545.126678
+   "claimed_at": 1790381545.126678,
+   "done_at": "2026-09-26T10:26:49"
   },
   {
    "kind": "article",
@@ -1621,10 +1628,11 @@
     "redirect mapping",
     "seo migration checklist"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790381545.126678
+   "claimed_at": 1790381545.126678,
+   "done_at": "2026-09-26T10:26:51"
   },
   {
    "kind": "article",
@@ -2100,8 +2108,10 @@
     "web vitals ecommerce",
     "performance roi"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790382415.8475761
   },
   {
    "kind": "article",
@@ -2115,8 +2125,10 @@
     "instant search design",
     "zero results page"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790382415.847577
   },
   {
    "kind": "article",
@@ -2130,8 +2142,10 @@
     "exchange experience",
     "reverse logistics ux"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790382415.847577
   },
   {
    "kind": "article",
@@ -2145,8 +2159,10 @@
     "rewards program ux",
     "customer retention design"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790382415.847578
   },
   {
    "kind": "article",
