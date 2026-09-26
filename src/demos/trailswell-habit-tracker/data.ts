@@ -157,6 +157,8 @@ function validHabit(h: unknown): h is Habit {
   )
 }
 
+const ICON_KEYS: IconKey[] = ['sun', 'boot', 'mug', 'moon', 'book', 'leaf', 'drop', 'bell']
+
 export function loadState(): TwState {
   if (typeof window === 'undefined') return seedState()
   try {
@@ -166,10 +168,13 @@ export function loadState(): TwState {
     if (!parsed || typeof parsed !== 'object') return seedState()
     const habits = (parsed as TwState).habits
     if (!Array.isArray(habits)) return seedState()
+    const today = todayIso()
     const clean = habits.filter(validHabit).map((h) => ({
       ...h,
       cue: typeof h.cue === 'string' ? h.cue : '',
+      icon: ICON_KEYS.includes(h.icon) ? h.icon : ('leaf' as IconKey),
       target: typeof h.target === 'number' ? Math.min(7, Math.max(3, h.target)) : 5,
+      created: typeof h.created === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(h.created) ? h.created : today,
       archived: h.archived === true,
       log: Object.fromEntries(
         Object.entries(h.log).filter(([k, v]) => /^\d{4}-\d{2}-\d{2}$/.test(k) && v === true),

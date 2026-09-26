@@ -3176,8 +3176,10 @@
     "brand refresh case study",
     "content strategy"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790412208.545407
   },
   {
    "kind": "article",
@@ -3191,8 +3193,10 @@
     "launch day scaling",
     "drop mechanics ux"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790412208.545407
   },
   {
    "kind": "article",
@@ -3206,8 +3210,10 @@
     "accessible forms",
     "insurtech design"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790412208.545408
   },
   {
    "kind": "article",
@@ -3221,8 +3227,10 @@
     "faceted search ux",
     "deep zoom viewer"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790412208.545408
   },
   {
    "kind": "article",
