@@ -4894,8 +4894,10 @@
     "component design",
     "responsive design"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790402483.566408
   },
   {
    "kind": "article",
@@ -4909,8 +4911,10 @@
     "web platform",
     "progressive enhancement"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790402483.566411
   },
   {
    "kind": "article",
@@ -4924,8 +4928,10 @@
     "search UX",
     "instant search"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790402483.566411
   },
   {
    "kind": "article",
@@ -4939,8 +4945,10 @@
     "magic links",
     "web security"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790402483.566412
   },
   {
    "kind": "article",
@@ -5905,10 +5913,11 @@
     "employer brand web",
     "job page UX"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790401949.421192
+   "claimed_at": 1790401949.421192,
+   "done_at": "2026-09-26T16:06:53"
   },
   {
    "kind": "article",
@@ -5922,10 +5931,11 @@
     "empty states",
     "error UX"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790401949.421192
+   "claimed_at": 1790401949.421192,
+   "done_at": "2026-09-26T16:24:45"
   },
   {
    "kind": "article",
@@ -6559,10 +6569,11 @@
     "focus state tokens",
     "accessible design systems"
    ],
-   "status": "planned",
+   "status": "done",
    "added_by": "builder",
    "worker": null,
-   "claimed_at": 1790394959.681582
+   "claimed_at": 1790394959.681582,
+   "done_at": "2026-09-26T16:10:03"
   },
   {
    "kind": "article",
@@ -6577,10 +6588,11 @@
     "feature section design",
     "landing page grid"
    ],
-   "status": "planned",
+   "status": "done",
    "added_by": "builder",
    "worker": null,
-   "claimed_at": 1790394959.681582
+   "claimed_at": 1790394959.681582,
+   "done_at": "2026-09-26T16:24:32"
   },
   {
    "kind": "article",
@@ -8429,6 +8441,46 @@
     "a11y investment",
     "overlay widgets fail"
    ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "trailswell-habit-tracker",
+   "title": "Trailswell — habit tracker",
+   "cluster": "demos",
+   "intent": "A fitness habit tracker for fictional wellness client 'Trailswell' (bushwalking-yoga brand). Art direction: warm risograph print — dusty cream paper, single ink colour (burnt sienna) with sage accents, chunky rounded type, hand-stamped icons, visible misregistration texture. Features: add/edit/archive habits, daily check-in row, a GitHub-style streak heatmap (13 weeks, tap any cell for detail), per-habit 7-day ring chart, weekly review card with gentle honesty ('3 of 5 anchor days'), full keyboard support, data persisted to localStorage with export-as-JSON. Celebrations are calm: no confetti, a slow stamp animation that respects prefers-reduced-motion. Standalone at 375px. React + TypeScript, CSS custom properties, no chart lib (hand-rolled SVG). Must link caseStudy field once the Trailswell case study exists.",
+   "keywords": [],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "meridian-climate-heat-story",
+   "title": "Meridian Climate — urban heat scrollytelling",
+   "cluster": "demos",
+   "intent": "A scrollytelling data story for existing fictional client Meridian Climate ('2046: the heat map of one summer'). Art direction: newspaper-at-midnight — deep charcoal canvas rising to ash white as the story cools, editorial serif, thermal-spectrum accents (ember to ice blue) strictly for data. Features: scroll-driven narrative with sticky canvas visualisation of a fictional Sydney summer (neighbourhood-level heat anomaly grid that warms/cools with scroll position), SVG line chart that draws as the reader passes, pull-quotes, before/after slider comparing 1997 vs 2046 canopy cover, anchor TOC. All chart data is hard-coded fictional and flagged 'illustrative data'. Scroll progress must degrade to a static stepped article under prefers-reduced-motion (sections simply appear). No libraries beyond React; IntersectionObserver + rAF. Links to the Meridian Climate case study.",
+   "keywords": [],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "switchyard-kanban",
+   "title": "Switchyard — kanban board",
+   "cluster": "demos",
+   "intent": "A kanban project board for fictional client 'Switchyard' (a rail-ops SaaS scheduling product). Art direction: signal-box — cream paper, ink-black type, safety-orange reserved for WIP-limit breaches only, telegraph-pole thin rules, tabular mono for card IDs (SW-1042). Features: 4-column board with pointer-based drag-and-drop AND full keyboard move (arrow keys via roving tabindex, announced via aria-live), WIP limits with honest warnings, swimlane toggle (priority), quick-filter by assignee/label, card drawer with checklist + activity log, column rename, add card at focus point, undo toast for deletes, all persisted to localStorage with a 'reset demo data' link. Avatars are geometric initials, never photoreal. Works at 375px (columns become a horizontal snap-scroll with progress dots). React + TypeScript only.",
+   "keywords": [],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "copperplate-ds-docs",
+   "title": "Copperplate — design-system docs",
+   "cluster": "demos",
+   "intent": "A living design-system documentation site for fictional client 'Copperplate' (a tooling company). Art direction: typefounder's specimen book — warm bone paper, copper metallic accent, wide letter-spaced small caps, hairline rules, specimen sheets with big glyphs. Features: left rail nav (Foundations / Tokens / Components / Patterns), live token playground (edit colour/space/type tokens; a preview panel of 8 sample components re-renders instantly + copy-as-CSS button), component pages showing the DS's own buttons/forms/alerts rendered live with code snippets, do/don't comparison blocks, a searchable icon grid (24 hand-drawn SVG glyphs), dark-paper mode toggle, and an accessibility notes callout per component. Local search across pages (client-side index). React + TypeScript, hand-rolled CSS. Must respect reduced motion and work standalone to 375px (rail collapses to a select).",
+   "keywords": [],
    "status": "planned",
    "added_by": "builder"
   }
