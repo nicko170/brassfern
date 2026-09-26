@@ -368,8 +368,10 @@
     "charity tech",
     "volunteer ux"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790387033.3965938
   },
   {
    "kind": "article",
@@ -383,8 +385,10 @@
     "property platform",
     "saved search design"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790387033.396595
   },
   {
    "kind": "article",
@@ -398,8 +402,10 @@
     "pricing page design",
     "demo booking flow"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790387033.396595
   },
   {
    "kind": "article",
@@ -413,8 +419,10 @@
     "plain language design",
     "trust design"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790387033.396595
   },
   {
    "kind": "article",
