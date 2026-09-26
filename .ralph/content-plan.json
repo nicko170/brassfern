@@ -3650,10 +3650,11 @@
     "end to end type safety",
     "form validation architecture"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790387383.728843
+   "claimed_at": 1790387383.728843,
+   "done_at": "2026-09-26T11:59:31"
   },
   {
    "kind": "article",
@@ -3667,10 +3668,11 @@
     "error handling frontend",
     "fallback ui patterns"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790387383.728843
+   "claimed_at": 1790387383.728843,
+   "done_at": "2026-09-26T11:59:31"
   },
   {
    "kind": "article",
@@ -3684,10 +3686,11 @@
     "font-display strategy",
     "cls fonts"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790387383.728844
+   "claimed_at": 1790387383.728844,
+   "done_at": "2026-09-26T11:59:35"
   },
   {
    "kind": "article",
@@ -3773,10 +3776,11 @@
     "gdpr cookie consent",
     "cmp dark patterns"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790387383.728844
+   "claimed_at": 1790387383.728844,
+   "done_at": "2026-09-26T11:59:35"
   },
   {
    "kind": "article",
@@ -3790,10 +3794,11 @@
     "internal linking ux",
     "content modules"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790387440.463397
+   "claimed_at": 1790387440.463397,
+   "done_at": "2026-09-26T12:00:20"
   },
   {
    "kind": "article",
@@ -3824,10 +3829,11 @@
     "icon sprite svg",
     "design system icons"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790387440.463398
+   "claimed_at": 1790387440.463398,
+   "done_at": "2026-09-26T12:00:20"
   },
   {
    "kind": "article",
@@ -3841,10 +3847,11 @@
     "accessible focus indicator",
     "focus ring css"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790387440.463398
+   "claimed_at": 1790387440.463398,
+   "done_at": "2026-09-26T12:00:20"
   },
   {
    "kind": "article",
@@ -4666,10 +4673,11 @@
    "cluster": "demos",
    "intent": "A real-estate map search demo for fictional property group Quarry & Compass: interactive map with clustered listing pins, draw-to-search polygon, filters (price, beds, type, commute-time slider) updating results live, listing cards with photo placeholders (CSS art), a saved-searches panel persisted to localStorage, and a property detail sheet with inspection-time booking. Fully keyboard-accessible list alternative. Art direction: sun-bleached topographic map feel — sandstone cream, eucalyptus green, surveyor-orange accents; mono coordinates and lot numbers; no Brassfern branding. Case study: quarry-and-compass-property.",
    "keywords": [],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "demo3",
-   "claimed_at": 1790386407.68145
+   "claimed_at": 1790386407.68145,
+   "done_at": "2026-09-26T11:57:19"
   },
   {
    "kind": "demo",
@@ -4724,8 +4732,10 @@
     "error tracking",
     "web performance"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790387784.997361
   },
   {
    "kind": "article",
@@ -4739,8 +4749,10 @@
     "database schema",
     "backfill strategy"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790387784.997362
   },
   {
    "kind": "article",
@@ -4754,8 +4766,10 @@
     "REST API",
     "developer experience"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790387784.997362
   },
   {
    "kind": "article",
@@ -4769,8 +4783,10 @@
     "FLIP technique",
     "60fps"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790387784.997362
   },
   {
    "kind": "article",
