@@ -45,3 +45,13 @@ export function getDemo(slug: string): DemoEntry | undefined {
 export const isDemoReady = (d: DemoEntry): boolean => d.Component != null
 export const readyDemos: DemoEntry[] = demos.filter(isDemoReady)
 export const benchDemos: DemoEntry[] = demos.filter((d) => !isDemoReady(d))
+
+/**
+ * Ready demos that name this case study in their meta. This is the
+ * auto-wiring half of the demo↔work relationship: demo builders set
+ * `caseStudy` in meta.ts and the case study's demo strip appears with no
+ * frontmatter edits (a `demo:` field can still promote/override).
+ */
+export function demosForCase(caseSlug: string): DemoEntry[] {
+  return readyDemos.filter((d) => d.caseStudy === caseSlug)
+}

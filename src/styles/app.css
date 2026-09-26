@@ -1343,6 +1343,10 @@ a.chip:hover {
 }
 
 /* ——— case-study demo strip ——— */
+.demo-strips {
+  display: grid;
+  gap: var(--space-4);
+}
 .demo-strip {
   display: grid;
   grid-template-columns: 1fr auto auto;
@@ -2890,6 +2894,7 @@ a.chip:hover {
   .foot-news,
   .filter-bar,
   .filter-status,
+  .demo-strips,
   .demo-strip,
   .lab-feature__art {
     display: none !important;

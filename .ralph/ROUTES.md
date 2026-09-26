@@ -6,7 +6,7 @@
 | --- | --- | --- |
 | `/` | Home (generative fern hero) | clients, services, testimonials, latest content |
 | `/work` | Case-study index (service + industry filters, URL-synced `?service=&industry=` with per-option counts) | `src/content/work/*.md` |
-| `/work/:slug` | Case study + `.demo-strip` band when a demo exists | same; `demo` field links to lab |
+| `/work/:slug` | Case study + `.demo-strips` (stacked `.demo-strip` bands, numbered when a study has 2+ demos) | same; demos auto-wire via demo meta `caseStudy` (union with `demo` frontmatter) |
 | `/lab` | Demo index | `src/demos/*/meta.ts` (auto-discovered) |
 | `/lab/:slug` | Demo full-screen + overlay bar (noindex) | `src/demos/<slug>/index.tsx` (lazy chunk) |
 | `/services`, `/services/:slug` (6) | Service pages w/ process, deliverables, FAQ+JSON-LD | `src/data/services.ts` |

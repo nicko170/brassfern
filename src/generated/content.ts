@@ -2393,6 +2393,78 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 11
   },
   {
+    "title": "Address forms for the world: one field doesn't fit all",
+    "description": "International checkout forms: per-country field order, autocomplete's confident lies, the phone field's real job, PO-box honesty, and testing with real parcels.",
+    "slug": "address-forms-international",
+    "cluster": "ecommerce",
+    "tags": [
+      "checkout",
+      "forms",
+      "UX",
+      "internationalisation",
+      "engineering"
+    ],
+    "date": "2025-10-30",
+    "author": "Felix Brandt",
+    "keywords": [
+      "address form design",
+      "international checkout",
+      "address autocomplete",
+      "shipping form ux",
+      "postcode validation"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "B2B portals buyers love: quick order, CSV upload and reordering",
+    "description": "Wholesale portals are won in the reorder flow, not the catalogue. Quick-order pads, forgiving CSV upload, standing orders, account pricing and rep handoff.",
+    "slug": "b2b-portal-quick-order",
+    "cluster": "ecommerce",
+    "tags": [
+      "B2B",
+      "wholesale",
+      "ecommerce strategy",
+      "UX",
+      "reordering"
+    ],
+    "date": "2025-08-14",
+    "author": "Nate Sullivan",
+    "keywords": [
+      "B2B commerce",
+      "quick order",
+      "wholesale",
+      "CSV upload",
+      "reorder",
+      "account pricing"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Back-in-stock flows: the lifecycle asset nobody funds",
+    "description": "Notify-me is a lifecycle asset, not a plugin checkbox: micro-commitment signups, honest timing, restock emails that convert, and waitlists as demand signal.",
+    "slug": "back-in-stock-flows",
+    "cluster": "ecommerce",
+    "tags": [
+      "back in stock",
+      "waitlist",
+      "lifecycle email",
+      "ecommerce UX",
+      "inventory"
+    ],
+    "date": "2026-04-14",
+    "author": "Nate Sullivan",
+    "keywords": [
+      "back in stock emails",
+      "waitlist UX",
+      "restock notifications",
+      "lifecycle email flows",
+      "inventory demand signal"
+    ],
+    "readingTime": 9,
+    "heroImage": "/images/articles/ecommerce/back-in-stock-flows.jpg",
+    "heroAlt": "Top-down still life of a polished brass desk bell, kraft parcels tied with green twine and a dried fern sprig on warm cream paper."
+  },
+  {
     "title": "Bundles and kits: designing the build-your-own moment",
     "description": "The bundle builder as interface design: shelf metaphors, fill visuals, flat pricing, coupled inventory — and when a kit makes the product disappear.",
     "slug": "bundles-and-kits-design",
@@ -2434,6 +2506,29 @@ export const articleIndex: ArticleMeta[] = [
       "kit merchandising",
       "build a box ux",
       "bundle pricing strategy"
+    ],
+    "readingTime": 8
+  },
+  {
+    "title": "Cart cross-sells that don't read as desperation",
+    "description": "Cross-sells pay when they answer one complementary question and shut up. Placement ranked by distraction cost, price-band logic, and measuring incrementality.",
+    "slug": "cart-cross-sells-that-dont-annoy",
+    "cluster": "ecommerce",
+    "tags": [
+      "cross-sell",
+      "merchandising",
+      "cart UX",
+      "aov",
+      "experimentation"
+    ],
+    "date": "2025-10-14",
+    "author": "Sam Whitfield",
+    "keywords": [
+      "cross-sell",
+      "merchandising",
+      "cart UX",
+      "AOV",
+      "incrementality"
     ],
     "readingTime": 8
   },
@@ -2484,6 +2579,29 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 9
   },
   {
+    "title": "Address autocomplete that earns its keep",
+    "description": "Address capture is where checkout helps or hectors: lookup with a manual escape, international format chaos, correction over scolding, and a plan for API failure.",
+    "slug": "checkout-address-autocomplete",
+    "cluster": "ecommerce",
+    "tags": [
+      "ecommerce",
+      "checkout",
+      "forms",
+      "UX",
+      "engineering"
+    ],
+    "date": "2026-03-24",
+    "author": "Felix Brandt",
+    "keywords": [
+      "checkout",
+      "address autocomplete",
+      "form UX",
+      "conversion",
+      "autofill"
+    ],
+    "readingTime": 9
+  },
+  {
     "title": "The checkout friction audit: 40 checks, one afternoon",
     "description": "Checkout is where e-commerce revenue quietly bleeds out. The forty-check audit we run before any redesign: field math, wallets, error recovery, trust.",
     "slug": "checkout-friction-audit",
@@ -2530,6 +2648,31 @@ export const articleIndex: ArticleMeta[] = [
       "ecommerce analytics"
     ],
     "readingTime": 11
+  },
+  {
+    "title": "Click-and-collect without the car-park chaos",
+    "description": "BOPIS is a promise your website makes about a physical place. Store-level stock honesty, honest handoff windows, SMS that stands alone, and the expired-order state.",
+    "slug": "click-and-collect-ux",
+    "cluster": "ecommerce",
+    "tags": [
+      "click and collect",
+      "omnichannel",
+      "checkout",
+      "inventory",
+      "retail"
+    ],
+    "date": "2026-01-22",
+    "author": "Nate Sullivan",
+    "keywords": [
+      "click and collect ux",
+      "bopis design",
+      "store pickup flow",
+      "omnichannel checkout",
+      "pickup notification copy"
+    ],
+    "readingTime": 9,
+    "heroImage": "/images/articles/ecommerce/click-and-collect-ux.jpg",
+    "heroAlt": "A paper shopping bag and closed laptop on a timber bench beside a shop's side entrance in warm morning light, fern-green awning and brass door handle."
   },
   {
     "title": "Taxonomy is the store: e-commerce navigation done properly",
@@ -2645,6 +2788,29 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 11,
     "heroImage": "/images/articles/ecommerce/gift-buying-ux.jpg",
     "heroAlt": "Kraft-paper gift parcels tied with brass twine and a fern sprig on a cream studio backdrop — the gift buyer's journey, wrapped."
+  },
+  {
+    "title": "Gift cards are products. Treat them like it.",
+    "description": "Gift cards sit in a footer link and a plugin default. They deserve product thinking: delivery scheduling, balance checks without login walls, honest expiry, calm recovery.",
+    "slug": "gift-cards-product-thinking",
+    "cluster": "ecommerce",
+    "tags": [
+      "gift cards",
+      "product design",
+      "ecommerce UX",
+      "redemption",
+      "stored value"
+    ],
+    "date": "2025-11-03",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "gift card UX",
+      "gift card product design",
+      "balance check",
+      "gift card expiry",
+      "redemption flow"
+    ],
+    "readingTime": 9
   },
   {
     "title": "Gift flows: the seasonal feature that deserves year-round craft",
@@ -2874,6 +3040,75 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 10
   },
   {
+    "title": "Mobile checkout, field by brutal field",
+    "description": "A field-by-field teardown of mobile checkout: input modes, autocomplete contracts, wallet placement, errors with fat fingers, and measuring drop-off per field.",
+    "slug": "mobile-checkout-field-by-field",
+    "cluster": "ecommerce",
+    "tags": [
+      "mobile checkout",
+      "form design",
+      "autofill",
+      "input modes",
+      "conversion"
+    ],
+    "date": "2026-06-30",
+    "author": "Nate Sullivan",
+    "keywords": [
+      "mobile checkout UX",
+      "form design mobile",
+      "autocomplete attributes",
+      "inputmode",
+      "field-level analytics",
+      "express checkout"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Multi-currency storefronts without the exchange-rate lies",
+    "description": "Display currency vs settlement currency, duties honesty at checkout, geo-prompts with consent, and the switcher that quietly inflates rates — done properly.",
+    "slug": "multi-currency-without-lies",
+    "cluster": "ecommerce",
+    "tags": [
+      "multi-currency",
+      "international",
+      "pricing",
+      "checkout",
+      "localisation"
+    ],
+    "date": "2026-01-20",
+    "author": "Felix Brandt",
+    "keywords": [
+      "multi-currency",
+      "international",
+      "duties",
+      "geo",
+      "pricing UX"
+    ],
+    "readingTime": 8
+  },
+  {
+    "title": "The order-tracking page is an owned channel",
+    "description": "The most-visited page in your store is one you probably didn't design. Status timelines, honest exceptions, delivery-day ritual, and where merchandising must stop.",
+    "slug": "order-tracking-page-design",
+    "cluster": "ecommerce",
+    "tags": [
+      "ecommerce",
+      "UX",
+      "post-purchase",
+      "retention",
+      "cx"
+    ],
+    "date": "2026-03-19",
+    "author": "Nate Sullivan",
+    "keywords": [
+      "order tracking UX",
+      "post-purchase experience",
+      "WISMO reduction",
+      "shipment tracking page"
+    ],
+    "readingTime": 9
+  },
+  {
     "title": "Payments and trust at the AU/NZ checkout",
     "description": "Cards, Afterpay, Zip, PayPal and Apple Pay — how to order payment methods, price the fees honestly, and earn trust without clip-art badges at the AU/NZ checkout.",
     "slug": "payment-trust-signals-au",
@@ -3019,6 +3254,29 @@ export const articleIndex: ArticleMeta[] = [
     "heroAlt": "A small studio still life on cream paper — a stoneware vessel, folded linen, a brass reflector card and fern-green swatches arranged as if mid product shoot."
   },
   {
+    "title": "Returns are a product feature — design them like one",
+    "description": "Most stores treat returns as a policy PDF. The best build a self-serve returns portal that saves revenue, feeds merchandising data, and keeps customers.",
+    "slug": "returns-as-product-feature",
+    "cluster": "ecommerce",
+    "tags": [
+      "returns",
+      "reverse logistics",
+      "UX",
+      "exchanges",
+      "retention"
+    ],
+    "date": "2025-03-11",
+    "author": "Nate Sullivan",
+    "keywords": [
+      "returns",
+      "reverse logistics",
+      "e-commerce UX",
+      "exchanges",
+      "retention"
+    ],
+    "readingTime": 8
+  },
+  {
     "title": "Returns are a retention channel in disguise",
     "description": "Stop cost-centre thinking on returns. Cohort economics, the post-return lifecycle, save-rate measurement and the budget line returns deserve.",
     "slug": "returns-as-retention",
@@ -3064,6 +3322,29 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 8
   },
   {
+    "title": "Reviews that earn trust instead of renting it",
+    "description": "A five-star wall of praise converts nobody. Review systems earn trust via solicitation timing, proud 3-stars and merchant replies that de-escalate.",
+    "slug": "reviews-that-earn-trust",
+    "cluster": "ecommerce",
+    "tags": [
+      "reviews",
+      "social proof",
+      "ugc",
+      "trust",
+      "SEO"
+    ],
+    "date": "2025-07-22",
+    "author": "Leonie Marsh",
+    "keywords": [
+      "reviews",
+      "social proof",
+      "UGC",
+      "trust",
+      "schema.org"
+    ],
+    "readingTime": 8
+  },
+  {
     "title": "Site speed is a merchandising decision",
     "description": "Milliseconds are margin. How to attribute revenue to performance honestly, where to spend speed budget on commerce templates, and how to make the case.",
     "slug": "site-speed-revenue-link",
@@ -3086,6 +3367,28 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 8,
     "heroImage": "/images/articles/ecommerce/site-speed-revenue-link.jpg",
     "heroAlt": "Overhead flat lay on warm cream paper: a brass stopwatch beside kraft-paper parcels tied with dark green twine, a brass ruler and a small potted fern, soft window light and generous negative space."
+  },
+  {
+    "title": "Size and fit UX: the returns you can design away",
+    "description": "Fit is apparel's most expensive doubt. Comparison sizing, fit feedback loops, measurement photography, and the metrics that prove a size tool actually reduces returns.",
+    "slug": "size-fit-confidence-ux",
+    "cluster": "ecommerce",
+    "tags": [
+      "ecommerce",
+      "UX",
+      "product design",
+      "returns",
+      "apparel"
+    ],
+    "date": "2026-03-14",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "size guide UX",
+      "fit finder ecommerce",
+      "reduce returns fashion",
+      "apparel sizing UX"
+    ],
+    "readingTime": 10
   },
   {
     "title": "Size guides and the design of fit confidence",
@@ -3159,6 +3462,30 @@ export const articleIndex: ArticleMeta[] = [
     "heroAlt": "Editorial flat-lay still life of stacked kraft coffee boxes, a brass-framed calendar card and a fern-green cup on warm cream paper."
   },
   {
+    "title": "Skip, pause, cancel: retention through respect",
+    "description": "The skip button as a first-class retention tool, pause-over-cancel patterns, honest save offers, winback measurement, and exit surveys with a 'none of your business' option.",
+    "slug": "subscription-skip-pause-ux",
+    "cluster": "ecommerce",
+    "tags": [
+      "subscriptions",
+      "retention",
+      "cancel flows",
+      "churn",
+      "ecommerce UX"
+    ],
+    "date": "2026-08-18",
+    "author": "Priya Nair",
+    "keywords": [
+      "subscription cancellation UX",
+      "skip pause subscription",
+      "churn retention",
+      "save offers",
+      "exit surveys",
+      "winback"
+    ],
+    "readingTime": 9
+  },
+  {
     "title": "Subscription UX that retains without trapping",
     "description": "Ethical subscription design — skip-and-pause controls, dosage guidance, honest renewal reminders, dignified cancellation — and the LTV case against traps.",
     "slug": "subscription-ux-design",
@@ -3180,6 +3507,51 @@ export const articleIndex: ArticleMeta[] = [
       "ethical ecommerce"
     ],
     "readingTime": 10
+  },
+  {
+    "title": "B2B wholesale portals: design for the reorder",
+    "description": "Wholesale buyers are professionals doing a job. Quick-order tables, SKU paste, standing orders, net terms and account hierarchies — built for the reorder.",
+    "slug": "wholesale-portal-design",
+    "cluster": "ecommerce",
+    "tags": [
+      "ecommerce",
+      "B2B",
+      "product design",
+      "UX",
+      "wholesale"
+    ],
+    "date": "2026-03-21",
+    "author": "Nate Sullivan",
+    "keywords": [
+      "wholesale portal design",
+      "B2B ecommerce UX",
+      "reorder UX",
+      "B2B ordering platform"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "Wishlists and save-for-later: intent capture that respects the moment",
+    "description": "A wishlist is a promise to pay attention twice. How to design anonymous saves, merge-on-login, price-drop alerts and pruning without becoming spam.",
+    "slug": "wishlist-save-for-later",
+    "cluster": "ecommerce",
+    "tags": [
+      "wishlist",
+      "retention",
+      "email",
+      "ecommerce strategy",
+      "UX"
+    ],
+    "date": "2026-03-05",
+    "author": "Nate Sullivan",
+    "keywords": [
+      "wishlist ux",
+      "save for later",
+      "price drop alerts",
+      "intent capture ecommerce",
+      "wishlist conversion"
+    ],
+    "readingTime": 9
   },
   {
     "title": "Experiments that don't shift the layout",
@@ -4971,6 +5343,29 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 8
   },
   {
+    "title": "Make them search your name: growing branded search demand",
+    "description": "Branded search is the closest thing marketing has to a census of memory. Here's how to grow it deliberately — and measure it without flattering yourself.",
+    "slug": "branded-search-demand",
+    "cluster": "growth",
+    "tags": [
+      "branded search",
+      "brand awareness",
+      "demand generation",
+      "SEO",
+      "marketing effectiveness"
+    ],
+    "date": "2026-08-04",
+    "author": "Sam Whitfield",
+    "keywords": [
+      "branded search",
+      "brand awareness SEO",
+      "demand generation",
+      "brand recall marketing",
+      "search demand"
+    ],
+    "readingTime": 9
+  },
+  {
     "title": "Campaign naming conventions: boring is the feature",
     "description": "UTM and campaign names are infrastructure, not admin. A grammar that survives staff turnover, separators, tooling that enforces it, and cleaning old messes.",
     "slug": "campaign-naming-conventions",
@@ -5128,6 +5523,29 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 9
   },
   {
+    "title": "Review your content like a portfolio",
+    "description": "A quarterly content benchmarking ritual: sort every article into winners, flatliners and sleepers, then give each piece one of three decisions — prune, refresh or expand.",
+    "slug": "content-portfolio-quarterly-review",
+    "cluster": "growth",
+    "tags": [
+      "content strategy",
+      "content audit",
+      "analytics",
+      "editorial",
+      "SEO"
+    ],
+    "date": "2026-07-08",
+    "author": "Leonie Marsh",
+    "keywords": [
+      "content benchmarking",
+      "content portfolio management",
+      "content audit",
+      "GA4 content metrics",
+      "editorial analytics"
+    ],
+    "readingTime": 8
+  },
+  {
     "title": "Content pruning: the unglamorous SEO lever",
     "description": "Dead-weight URLs drag the whole site down. How we audit, decide merge-redirect-delete, protect traffic through the change, and monitor the next 90 days.",
     "slug": "content-pruning-seo-lever",
@@ -5174,6 +5592,30 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 9,
     "heroImage": "/images/articles/growth/content-strategy-compounds.jpg",
     "heroAlt": "Overhead flat-lay of paper topic cards arranged in ascending terraces on cream paper, with pencil arcs, brass paperclips and fern-green tape marking rows."
+  },
+  {
+    "title": "Test the words before you test the pixels",
+    "description": "Copy-first testing: mine the message from reviews and sales calls, test value props on plain pages, stay honest with small samples. Button colours come last.",
+    "slug": "conversion-copy-first-testing",
+    "cluster": "growth",
+    "tags": [
+      "copy testing",
+      "CRO",
+      "messaging",
+      "a/b testing",
+      "value proposition",
+      "conversion copywriting"
+    ],
+    "date": "2026-05-19",
+    "author": "Sam Whitfield",
+    "keywords": [
+      "copy testing before design testing",
+      "value proposition testing",
+      "message mining",
+      "CRO experiment prioritisation",
+      "conversion copywriting"
+    ],
+    "readingTime": 10
   },
   {
     "title": "Conversion copywriting: clarity beats clever",
@@ -5331,6 +5773,29 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 9
   },
   {
+    "title": "Founder-led content when the founder has forty minutes a week",
+    "description": "A realistic operating model for founder content: capturing raw material in minutes, ghostwriting that keeps the voice, cadence math, and honest measurement.",
+    "slug": "founder-led-content-playbook",
+    "cluster": "growth",
+    "tags": [
+      "founder content",
+      "thought leadership",
+      "ghostwriting",
+      "content operations",
+      "B2B marketing"
+    ],
+    "date": "2026-08-21",
+    "author": "Leonie Marsh",
+    "keywords": [
+      "founder-led content",
+      "ghostwriting workflow",
+      "founder brand",
+      "B2B thought leadership",
+      "content cadence"
+    ],
+    "readingTime": 10
+  },
+  {
     "title": "Funnel metrics: measure the movement, not the moment",
     "description": "Snapshots lie; cohorts and velocity tell the truth. How to define funnel stages across teams, pick the metrics that find the constraint, and run the weekly review.",
     "slug": "funnel-metrics-that-matter",
@@ -5354,6 +5819,52 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 12
   },
   {
+    "title": "The gate question: what to charge an email address for",
+    "description": "Gating decisions with real trade-off math: the reach cost of a form, the lead-quality myth, which formats earn a gate, and the hybrid save pattern.",
+    "slug": "gated-vs-ungated-content",
+    "cluster": "growth",
+    "tags": [
+      "gated content",
+      "lead generation",
+      "content strategy",
+      "email capture",
+      "B2B marketing"
+    ],
+    "date": "2026-04-02",
+    "author": "Priya Nair",
+    "keywords": [
+      "gated vs ungated content",
+      "when to gate content",
+      "lead generation forms",
+      "content marketing strategy",
+      "email capture trade-offs"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "The help centre is a growth channel: SEO that deflects tickets",
+    "description": "Your help centre is a growth channel in disguise. How to write support docs that rank for problem-aware searches and measurably deflect tickets.",
+    "slug": "help-centre-seo-deflection",
+    "cluster": "growth",
+    "tags": [
+      "help centre",
+      "knowledge base",
+      "support SEO",
+      "ticket deflection",
+      "documentation"
+    ],
+    "date": "2026-08-14",
+    "author": "Priya Nair",
+    "keywords": [
+      "help centre SEO",
+      "knowledge base content",
+      "support ticket deflection",
+      "documentation strategy",
+      "support content ops"
+    ],
+    "readingTime": 10
+  },
+  {
     "title": "Audit first, test second: heuristic CRO that finds the free wins",
     "description": "Before your next A/B test, walk the funnel as a stranger. Our heuristic CRO audit method: the friction walkthrough, severity scoring, and fixes that don't need stats.",
     "slug": "heuristic-cro-audits",
@@ -5372,6 +5883,29 @@ export const articleIndex: ArticleMeta[] = [
       "heuristic evaluation",
       "conversion optimisation",
       "UX audit"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "The ninety-minute heuristic review",
+    "description": "A scored rubric for marketing pages — clarity, proof, friction, trust — and the ninety-minute format that turns an expert review into a prioritised fix list.",
+    "slug": "heuristic-evaluation-marketing-sites",
+    "cluster": "growth",
+    "tags": [
+      "CRO",
+      "heuristic evaluation",
+      "marketing sites",
+      "conversion",
+      "audit"
+    ],
+    "date": "2026-03-12",
+    "author": "Sam Whitfield",
+    "keywords": [
+      "heuristic evaluation",
+      "CRO audit",
+      "usability review",
+      "conversion audit",
+      "marketing page review"
     ],
     "readingTime": 9
   },
@@ -5624,6 +6158,29 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 10
   },
   {
+    "title": "Local SEO when you have three postcodes",
+    "description": "Multi-location SEO for service firms with real offices in several cities: location pages that earn rankings, Google Business Profile discipline, and measuring value.",
+    "slug": "multi-location-seo-studios",
+    "cluster": "growth",
+    "tags": [
+      "local SEO",
+      "multi-location",
+      "service business",
+      "google business profile",
+      "content strategy"
+    ],
+    "date": "2026-05-20",
+    "author": "Priya Nair",
+    "keywords": [
+      "multi-location SEO",
+      "local pages service business",
+      "Google Business Profile",
+      "doorway pages",
+      "studio SEO"
+    ],
+    "readingTime": 9
+  },
+  {
     "title": "Newsletters as a growth engine, not an afterthought",
     "description": "The newsletter is the only growth asset you own outright. How to design the promise, architect the issue, build referral loops, and do the cadence math honestly.",
     "slug": "newsletter-growth-engine",
@@ -5740,6 +6297,30 @@ export const articleIndex: ArticleMeta[] = [
       "channel strategy"
     ],
     "readingTime": 12
+  },
+  {
+    "title": "Podcast growth: show notes, transcripts and episode pages that rank",
+    "description": "Turn a podcast into a search asset: episode pages with real titles, full transcripts, chapter markers, guest cross-links, and a distribution loop without paid.",
+    "slug": "podcast-growth-show-notes",
+    "cluster": "growth",
+    "tags": [
+      "podcast SEO",
+      "show notes",
+      "transcripts",
+      "audio content",
+      "episode pages",
+      "content strategy"
+    ],
+    "date": "2026-06-11",
+    "author": "Leonie Marsh",
+    "keywords": [
+      "podcast SEO",
+      "episode pages that rank",
+      "podcast show notes best practice",
+      "podcast transcripts",
+      "growing a podcast without paid promotion"
+    ],
+    "readingTime": 10
   },
   {
     "title": "Experimenting on pricing pages without lying",
@@ -9782,6 +10363,8 @@ export const caseIndex: CaseStudyMeta[] = [
       "slow connections performance"
     ],
     "readingTime": 9,
+    "heroImage": "/images/work/brumby-air-regional-booking.jpg",
+    "heroAlt": "Paper-craft still life: a tiny propeller plane banking over a folded-paper outback map, brass threads pinned as routes between raised paper airstrips.",
     "client": "Brumby Air",
     "industry": "Hospitality",
     "services": [
@@ -10171,6 +10754,8 @@ export const caseIndex: CaseStudyMeta[] = [
       "payment transparency"
     ],
     "readingTime": 0,
+    "heroImage": "/images/work/harbourlight-donation-platform.jpg",
+    "heroAlt": "Paper-craft still life: a layered cut-card lighthouse throwing a fan of pale-brass paper light over a scalloped fern sea, brass coins flowing toward it.",
     "client": "Harbourlight",
     "industry": "Non-profit",
     "services": [
@@ -10369,6 +10954,8 @@ export const caseIndex: CaseStudyMeta[] = [
       "self-serve commerce case study"
     ],
     "readingTime": 8,
+    "heroImage": "/images/work/ironbark-trade-portal.jpg",
+    "heroAlt": "Paper-craft still life: kraft coffee sacks, a brass scoop and a spike of blank order dockets beside cloth-bound paper ledgers on cream stock.",
     "client": "Ironbark Coffee Roasters",
     "industry": "Retail & e-commerce",
     "services": [
@@ -10405,6 +10992,8 @@ export const caseIndex: CaseStudyMeta[] = [
       "custom stationery case study"
     ],
     "readingTime": 8,
+    "heroImage": "/images/work/keepsake-letterpress-configurator.jpg",
+    "heroAlt": "Paper-craft letterpress still life: fan of embossed cotton cards with brass-foil accents and fern-painted edges beside a miniature tabletop press on cream stock.",
     "client": "Keepsake",
     "industry": "Retail & e-commerce",
     "services": [
@@ -10480,6 +11069,8 @@ export const caseIndex: CaseStudyMeta[] = [
       "design system health"
     ],
     "readingTime": 0,
+    "heroImage": "/images/work/kowa-health-clinics-platform.jpg",
+    "heroAlt": "Paper-craft still life: three small cut-card clinic buildings with brass doorframes linked by a raised paper path around a brass calendar wheel.",
     "client": "Kowa Health",
     "industry": "Health",
     "services": [
@@ -11109,7 +11700,8 @@ export const caseIndex: CaseStudyMeta[] = [
       "Stripe"
     ],
     "heroImage": "/images/work/signal-and-noise-podcast-network.jpg",
-    "heroAlt": "A brass broadcast microphone beside embossed sound-wave rings and a vinyl record on cream paper."
+    "heroAlt": "A brass broadcast microphone beside embossed sound-wave rings and a vinyl record on cream paper.",
+    "demo": "signal-noise-studio"
   },
   {
     "title": "Summit & Still: booking UX for a yoga studio group with a calm nervous system",
@@ -11466,4 +12058,4 @@ export const caseIndex: CaseStudyMeta[] = [
   }
 ]
 
-export const workImages: string[] = ["arkwright-supply-b2b-commerce","arlo-and-sons-tradies-marketplace","brightline-solar-quote-engine","brightline-solar-quoter","brightmarsh-course-finder","brightmarsh-onboarding","copperline-community-bank","copperline-mobile-bank","copperplate-design-system","fern-and-forage-florist","fernleigh-cellar-club","fernleigh-wines-dtc-storefront","glade-ingredient-explorer","glade-skincare-ingredient-honesty","glasshouse-seat-map","harvest-loop-food-rescue","hearthbrew-brand-system","hearthbrew-subscription-club","holloway-player","holloway-records-label-site","holloway-waveform-player","kite-and-anchor-insurtech","larklight-saas-marketing-site","ledgerline-pricing-calculator","meridian-climate-data-explorer","northwind-ledger-budget","northwind-ledger-dashboard-rebuild","osprey-outdoor-configurator-launch","pinch-and-sprig-bakery-website","postcards-archive-explorer","postcards-museum-archive","pylon-care-assistant","pylon-health-booking","pylon-health-telehealth-flow","quarry-property-map","signal-and-noise-podcast-network","summit-and-still-yoga","sundial-itinerary-builder","sundial-travel-booking","switchyard-rail-ops-kanban","tallow-and-co-providore","tallow-feast-builder","tallow-seat-map","tidal-games-store","trailswell-habit-tracker","verdigris-archive-digital-collection","wattle-and-daub-reservations","wattle-and-daub-reserve","willow-and-wren-bookshop"]
+export const workImages: string[] = ["arkwright-supply-b2b-commerce","arlo-and-sons-tradies-marketplace","brightline-solar-quote-engine","brightline-solar-quoter","brightmarsh-course-finder","brightmarsh-onboarding","brumby-air-regional-booking","copperline-community-bank","copperline-mobile-bank","copperplate-design-system","fern-and-forage-florist","fernleigh-cellar-club","fernleigh-wines-dtc-storefront","glade-ingredient-explorer","glade-skincare-ingredient-honesty","glasshouse-seat-map","harbourlight-donation-platform","harvest-loop-food-rescue","hearthbrew-brand-system","hearthbrew-subscription-club","holloway-player","holloway-records-label-site","holloway-waveform-player","ironbark-trade-portal","keepsake-letterpress-configurator","kite-and-anchor-insurtech","kowa-health-clinics-platform","larklight-saas-marketing-site","ledgerline-pricing-calculator","meridian-climate-data-explorer","northwind-ledger-budget","northwind-ledger-dashboard-rebuild","osprey-outdoor-configurator-launch","pinch-and-sprig-bakery-website","postcards-archive-explorer","postcards-museum-archive","pylon-care-assistant","pylon-health-booking","pylon-health-telehealth-flow","quarry-property-map","signal-and-noise-podcast-network","signal-noise-studio","summit-and-still-yoga","sundial-itinerary-builder","sundial-travel-booking","switchyard-kanban","switchyard-rail-ops-kanban","tallow-and-co-providore","tallow-feast-builder","tallow-seat-map","tidal-games-store","trailswell-habit-tracker","verdigris-archive-digital-collection","wattle-and-daub-reservations","wattle-and-daub-reserve","willow-and-wren-bookshop"]

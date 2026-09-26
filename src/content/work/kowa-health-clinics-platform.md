@@ -18,6 +18,8 @@ keywords:
   - healthcare accessibility
   - design system health
 readingTime: 10 min read
+heroImage: /images/work/kowa-health-clinics-platform.jpg
+heroAlt: "Paper-craft still life: three small cut-card clinic buildings with brass doorframes linked by a raised paper path around a brass calendar wheel."
 client: Kowa Health
 industry: Health
 services:

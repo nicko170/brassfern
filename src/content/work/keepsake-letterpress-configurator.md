@@ -8,6 +8,8 @@ date: 2025-06-05
 author: Aiko Tanaka
 keywords: [product configurator, letterpress stationery, wedding invitations ecommerce, svg product preview, custom stationery case study]
 readingTime: 8
+heroImage: /images/work/keepsake-letterpress-configurator.jpg
+heroAlt: "Paper-craft letterpress still life: fan of embossed cotton cards with brass-foil accents and fern-painted edges beside a miniature tabletop press on cream stock."
 client: Keepsake
 industry: Retail & e-commerce
 services: [E-commerce, Brand & identity]

@@ -2,7 +2,7 @@ import { useMemo } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { Seo } from '../lib/head'
 import { formatDate, getCase, relatedCases } from '../lib/content'
-import { getDemo } from '../lib/demos'
+import { demosForCase, getDemo, type DemoEntry } from '../lib/demos'
 import { breadcrumbLd, creativeWorkLd } from '../lib/jsonld'
 import { personSlug } from '../data/people'
 import { testimonials } from '../data/clients'
@@ -26,14 +26,24 @@ export default function WorkCase() {
   const html = useBody('work', slug ?? '')
   const tocItems = useMemo(() => (html ? parseToc(html) : []), [html])
   if (!cs) return <NotFound />
-  // Only link demos that actually have an entry component — an in-flight
-  // (meta-only) demo would land the reader on a 404.
-  const linkedDemo = cs.demo ? getDemo(cs.demo) : undefined
-  const demo = linkedDemo?.Component ? linkedDemo : undefined
+  // Demos belong to this case study two ways: a `demo:` frontmatter promote,
+  // and any demo whose meta.ts names this study (`caseStudy`). Union both —
+  // auto-wired metas mean a new demo appears here with zero content edits.
+  // Only ready demos (index.tsx present) are ever linked.
+  const caseDemos: DemoEntry[] = (() => {
+    const map = new Map<string, DemoEntry>()
+    if (cs.demo) {
+      const d = getDemo(cs.demo)
+      if (d?.Component) map.set(d.slug, d)
+    }
+    for (const d of demosForCase(cs.slug)) map.set(d.slug, d)
+    return [...map.values()]
+  })()
   const related = relatedCases(cs)
   const quote = testimonials.find((t) => t.caseStudy === cs.slug)
   const squad = squadFor(cs)
-  const demoImg = demo && workImages.includes(demo.slug) ? `/images/work/${demo.slug}.jpg` : undefined
+  const galleryDemo = caseDemos.find((d) => workImages.includes(d.slug))
+  const demoImg = galleryDemo ? `/images/work/${galleryDemo.slug}.jpg` : undefined
   const showToc = tocItems.filter((t) => t.level === 2).length >= 3
 
   return (
@@ -87,25 +97,33 @@ export default function WorkCase() {
           </div>
         )}
 
-        {demo && (
+        {caseDemos.length > 0 && (
           <div className="container" style={{ marginTop: 'var(--space-6)' }}>
-            <Link to={`/lab/${demo.slug}`} className="demo-strip">
-              <span className="demo-strip__copy">
-                <span className="overline overline--night">Touch the work — live demo</span>
-                <span className="demo-strip__title">{demo.title}</span>
-                <span className="demo-strip__meta">
-                  {demo.client} · {demo.tags.slice(0, 3).join(' · ')}
-                </span>
-              </span>
-              <span className="demo-strip__art" aria-hidden>
-                <span>{demo.client.slice(0, 2).toUpperCase()}</span>
-              </span>
-              <span className="demo-strip__cta">
-                Open the demo <span className="arrow" aria-hidden>→</span>
-              </span>
-            </Link>
+            <div className="demo-strips">
+              {caseDemos.map((d, i) => (
+                <Link key={d.slug} to={`/lab/${d.slug}`} className="demo-strip">
+                  <span className="demo-strip__copy">
+                    <span className="overline overline--night">
+                      Touch the work — live demo{caseDemos.length > 1 ? ` ${String(i + 1).padStart(2, '0')}` : ''}
+                    </span>
+                    <span className="demo-strip__title">{d.title}</span>
+                    <span className="demo-strip__meta">
+                      {d.client} · {d.tags.slice(0, 3).join(' · ')}
+                    </span>
+                  </span>
+                  <span className="demo-strip__art" aria-hidden>
+                    <span>{d.client.slice(0, 2).toUpperCase()}</span>
+                  </span>
+                  <span className="demo-strip__cta">
+                    Open the demo <span className="arrow" aria-hidden>→</span>
+                  </span>
+                </Link>
+              ))}
+            </div>
             <p className="mono muted" style={{ marginTop: 'var(--space-3)', fontSize: 'var(--fs-micro)', letterSpacing: '0.12em', textTransform: 'uppercase' }}>
-              This case study ships with a working mini-product — mocked data, real craft.
+              {caseDemos.length > 1
+                ? 'This case study ships with two working mini-products — mocked data, real craft.'
+                : 'This case study ships with a working mini-product — mocked data, real craft.'}
             </p>
           </div>
         )}
@@ -155,7 +173,7 @@ export default function WorkCase() {
           </div>
         </section>
 
-        {cs.heroImage && demoImg && (
+        {cs.heroImage && demoImg && galleryDemo && (
           <section className="container" aria-label="Project gallery">
             <div className="case-gallery">
               <figure className="case-gallery__item">
@@ -164,7 +182,7 @@ export default function WorkCase() {
               </figure>
               <figure className="case-gallery__item">
                 <img src={withBase(demoImg)} alt="" loading="lazy" />
-                <figcaption className="mono">The live demo — running now in the <Link to={`/lab/${demo!.slug}`}>Lab</Link></figcaption>
+                <figcaption className="mono">The live demo — running now in the <Link to={`/lab/${galleryDemo.slug}`}>Lab</Link></figcaption>
               </figure>
             </div>
           </section>

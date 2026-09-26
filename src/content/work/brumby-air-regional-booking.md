@@ -8,6 +8,8 @@ date: 2026-01-22
 author: Tomás Reyes
 keywords: [airline booking ux, regional airline website, fare comparison, travel booking flow, slow connections performance]
 readingTime: 9
+heroImage: /images/work/brumby-air-regional-booking.jpg
+heroAlt: "Paper-craft still life: a tiny propeller plane banking over a folded-paper outback map, brass threads pinned as routes between raised paper airstrips."
 client: Brumby Air
 industry: Hospitality
 services: [Websites, Product design & engineering]

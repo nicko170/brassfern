@@ -8,6 +8,8 @@ date: 2025-11-13
 author: Nate Sullivan
 keywords: [b2b ecommerce portal, wholesale ordering, reorder ux, shopify b2b, self-serve commerce case study]
 readingTime: 8
+heroImage: /images/work/ironbark-trade-portal.jpg
+heroAlt: "Paper-craft still life: kraft coffee sacks, a brass scoop and a spike of blank order dockets beside cloth-bound paper ledgers on cream stock."
 client: Ironbark Coffee Roasters
 industry: Retail & e-commerce
 services: [E-commerce, Product design & engineering]

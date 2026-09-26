@@ -6,7 +6,7 @@ const meta: DemoMeta = {
     'A warm risograph-print habit tracker for fictional wellness brand Trailswell: stamp your daily check-ins, a thirteen-week footprint heatmap, per-habit seven-day rings, an honest weekly review, and localStorage persistence with JSON export.',
   tags: ['Wellness', 'Habits', 'Hand-rolled SVG', 'localStorage', 'Keyboard-first'],
   client: 'Trailswell',
-  caseStudy: 'trailswell-habit-tracker',
+  caseStudy: 'trailswell-habit-app',
 }
 
 export default meta

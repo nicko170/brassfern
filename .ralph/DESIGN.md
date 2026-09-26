@@ -182,6 +182,20 @@ Brassfern look into a demo.
   tags to lowercase with uppercased acronyms (`TAG_ACRONYMS` map) and
   "saas"→"SaaS"; TagPage redirects mis-cased URLs to canonical. One page per
   tag, chips/search/related all consistent.
+- **Demo ⇄ case-study auto-wiring** (iter 13): `demosForCase(slug)` in
+  `src/lib/demos.ts` — any ready demo whose meta.ts names a case study via
+  `caseStudy` automatically gets a `.demo-strip` on that study (`.demo-strips`
+  grid stacks them; multiple demos get mono-numbered overlines "live demo 01",
+  "02" and the caption pluralises). The `demo:` frontmatter field still works
+  as a promote/override and leads the stack. Demo builders should set
+  `caseStudy` in meta and assume zero content-side edits; writers may still
+  set `demo:` and it unions safely. `WorkCase` picks the gallery demo as the
+  first wired demo with a shot in `workImages`.
+- **Print CSS** (predates iter 12, extended 13): `@media print` block in
+  app.css — ink-on-white, chrome/grain/TOC/demo strips hidden, prose links
+  gain printed hrefs, `break-inside: avoid` on headings/figures/quotes.
+  Keep new interactive furniture (`.qf`, overlays, strips) added to the hide
+  list; paper-readable is part of the editorial promise.
 - **Tag index & kin rails** (iter 12): `/journal/tags` — "the index of
   indexes". Fraunces-italic live filter (`.tag-filter`, 2px ink rule going
   brass on `:focus-within`, mono aria-live count), "Most used" top-18 chip

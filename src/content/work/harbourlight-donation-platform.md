@@ -18,6 +18,8 @@ keywords:
   - charity website case study
   - payment transparency
 readingTime: 9 min read
+heroImage: /images/work/harbourlight-donation-platform.jpg
+heroAlt: "Paper-craft still life: a layered cut-card lighthouse throwing a fan of pale-brass paper light over a scalloped fern sea, brass coins flowing toward it."
 client: Harbourlight
 industry: Non-profit
 services:

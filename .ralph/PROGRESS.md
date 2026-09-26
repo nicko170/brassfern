@@ -1,5 +1,48 @@
 # Progress
 
+## Done (iteration 13 — builder: demo⇄case-study auto-wiring, 5 heroes, link/audit hygiene, ledgerline backlog)
+
+- **Demo strips are now auto-wired.** `demosForCase()` in `src/lib/demos.ts`
+  collects ready demos whose meta.ts `caseStudy` names the case study;
+  WorkCase unions that with the `demo:` frontmatter field (frontmatter leads,
+  both deduped) and renders a `.demo-strips` stack. No more manual
+  frontmatter wiring for new demos — brightmarsh, copperline, fernleigh,
+  glade, meridian, osprey, postcards, quarry, signal-and-noise, sundial,
+  tallow and holloway instantly gained strips they never had.
+- **Multi-demo case studies supported.** Holloway Records, Tallow & Co. and
+  Brightmarsh each have two live demos — they now show two stacked strips
+  with mono-numbered overlines ("Touch the work — live demo 01 / 02") and a
+  plural caption. The project gallery picks the first wired demo with a shot
+  in `workImages`.
+- **Fixed a dangling demo back-reference:** `trailswell-habit-tracker`'s meta
+  pointed at a non-existent `trailswell-habit-tracker` case study; the real
+  one is `trailswell-habit-app`. Overlay now links both ways.
+- **Added work backlog item** `ledgerline-pricing-page-rebuild` (the
+  Ledgerline expense-SaaS pricing case the calculator demo already points
+  at — intent explicitly distinguishes it from the Ledgerline accounting
+  firm in ledgerline-brand-and-site-refresh).
+- **5 case-study heroes generated + wired** (paper-craft still-life series):
+  keepsake-letterpress-configurator, brumby-air-regional-booking,
+  ironbark-trade-portal, harbourlight-donation-platform,
+  kowa-health-clinics-platform. 11 case studies still lack heroes: beacon,
+  coriander, easement, fernway, ledgerline-brand-refresh, marlowe, prairie,
+  quarry-and-compass, quill, quillon, saltbush.
+- **Link-audit fix:** writer-shipped growth article linked a
+  planned-but-unpublished post (content-portfolio-quarterly-review);
+  relinked to the published content-strategy-compounds. Audit green again.
+- **Print CSS touch-up:** `.demo-strips` added to the print hide-list.
+- **Base-path plumbing re-verified** under `BASE_PATH=/brassfern/
+  SITE_URL=https://nicko170.github.io`: canonical, og:image and sitemap URLs
+  all carry the sub-path correctly.
+- **Build green: 1,672 prerendered routes + 404** (was 1,601), typecheck
+  clean, sitemap/robots/rss regenerating.
+- Known niggles (not blocking): 5 articles exceed the 160-char description
+  bound slightly (gift-cards-product-thinking, subscription-skip-pause-ux,
+  findable-by-ctrl-f, map-design-restraint, video-heroes-cost-benefit) —
+  writers may trim opportunistically. The eager content index
+  (~360KB src in the main chunk) will grow with the journal; consider
+  per-cluster splitting when we pass ~600 articles.
+
 ## Done (iteration 12 — builder: /journal/tags index, tag kin rails, placeholder-link cleanup, 3 case-study heroes, +75 backlog)
 
 - **New page `/journal/tags`** (`src/pages/Tags.tsx`) — the "index of
@@ -1447,3 +1490,28 @@ Four case studies done, all validated via finish_article. ~1.17–1.23k words ea
 - work/tidal-games-storefront (Nate Sullivan, 2026-03-12) — indie game label direct storefront; headless + edge-cached catalogue, independently scaled Node checkout, fair queue-free drops (5-min window, pooled random allocation, published rules), gift purchase first-class. 100% launch-day uptime, checkout conversion +19%. Wired `demo: tidal-games-store` (client matches demo meta); heroImage = pre-existing public/images/work/tidal-games-store.jpg.
 - work/prairie-mutual-claims-reimagined (Aiko Tanaka, 2025-09-04) — regional insurer claims replatform; one-question-per-screen plain-language flow, lodge-now-evidence-later, explicit claim state machine powering honest status page + proactive SMS/email, WCAG 2.2 AA floor with helper mode and phone as an accessibility feature. "Where is my claim?" calls -37%, post-claim NPS +22.
 - work/verdigris-archive-digital-collection (Leonie Marsh, 2026-05-21) — botanical museum, 80k plates online; visual-metadata enrichment layer (colour/composition tags kept separate from scholarly metadata), Meilisearch faceted search with clickable colour swatches, tiled deep-zoom viewer, seeded curriculum-aligned educator collections, instant public-domain downloads with copyable citation. Search success +63%, 2.4k educator accounts in term one. Hero generated: public/images/work/verdigris-archive-digital-collection.jpg (flat-lay botanical plates + brass loupe, fern/brass/cream), heroImage/heroAlt set.
+
+## demo2 — iteration 9 (2026-09-26)
+Built demo **signal-noise-studio** (Signal & Noise podcast network; meta.caseStudy = signal-and-noise-podcast-network, which exists and matches the brief: nine shows, transcripts, The Frequency membership). finish_demo passed; typecheck clean for the folder (one pre-existing error in switchyard-kanban belongs to another demo builder's in-flight folder — left untouched).
+- Files: src/demos/signal-noise-studio/{index,Covers,Waveform,Player,ClipMaker,data,meta,demo.css} — nine shows with nine parametric SVG cover motifs (seeded, stable), 27 episodes with timed mock transcripts, show/season filtering, show-reel scroll row.
+- Player: fixed docked bar, silent simulation (200ms ticker, 400ms under reduced motion), ±15s, rate cycle 1–2×, SVG seeded bars scrub (pointer + role=slider keyboard), live caption follows playhead through the transcript, auto-advances to the previous episode in the show.
+- Clip maker: dialog (Escape, focus trap, focus restore) with dual draggable handles on the waveform (15–60s constraint, role=slider keyboard, window-drag, nearest-handle track click, length presets), auto-title from first transcript line in window until user edits, transcript excerpt for the window, "Play clip" with end-guard, and shareable links baked into `#snsclip=<b64url JSON>` (clipboard + history.replaceState; hashchange opens received clips).
+- Art direction: broadcast-industrial — deep teal night, cream condensed system stack, signal-red + brass accents, scanline texture, outlined display type; all scoped under .sns. Full reduced-motion block; 375px layouts for rows/player/dialog.
+- Showcase image generated: public/images/work/signal-noise-studio.jpg (laptop+phone teal player mockup, brass mic, cream paper — no text/logos).
+- WIRING NOTE FOR WRITERS: case study src/content/work/signal-and-noise-podcast-network.md has no `demo:` frontmatter field — add `demo: signal-noise-studio` to light up the demo-strip + gallery (image manifest picks the slug up automatically).
+
+## demo3 — iteration 11 (2026-09-26)
+Built demo **switchyard-kanban** (Switchyard, fictional rail-ops scheduling SaaS). finish_demo passed on first call; typecheck clean.
+- Files: src/demos/switchyard-kanban/{index,Drawer,Avatar,data,meta,demo.css}; meta.caseStudy = switchyard-rail-ops-kanban (case study is still planned — writers: wire `demo: switchyard-kanban` when writing it; hero already at public/images/work/switchyard-kanban.jpg).
+- Board: 4 renamable columns (The Yard / Shunting / Signal check / Arrived) with WIP limits; Shunting is deliberately seeded one over its limit of 3 so the safety-orange breach state shows on first paint.
+- Interactions: pointer drag-and-drop (7px threshold, rAF-throttled target measuring against live DOM so it stays correct under swimlanes + filters, ghost card, dashed drop slot, Esc cancels, click/drag disambiguation via timestamp) AND full keyboard contract — roving tabindex per column, arrows move focus, Shift+arrows shunt the card (with per-column WIP breach announced), Home/End, Enter opens the record, A inserts a card below the focused one; every move announced via a polite live region. Lane-mode drops retag the card's priority to the lane it lands in (announced).
+- Card drawer: focus-trapped dialog (Esc, scrim, focus restore) with inline title/notes editing, geometric-initials avatar picker, service-class segmented radio (EXP/LOC/FRT), tag chips, due date (overdue styling is ink, never orange), move-to-column select for non-mouse users, checklist ("Manifest") with progress bar, reverse-chronological activity ledger auto-appended on moves/edits, two-step delete with 7s undo toast.
+- Filters (driver select + tag chips, with clear-all), priority-swimlane toggle, per-column "Write a card" composer, localStorage persistence (versioned key switchyard-board-v1, validated load), "Reset demo data" link.
+- Art direction: signal box — cream timetable paper with faint ruled lines, ink black, telegraph hairlines, condensed display + tabular mono SW-#### numbers; safety orange appears ONLY for WIP breaches; 84vw snap-scroll columns + progress dots under 760px; full reduced-motion block. Scoped under .swy.
+
+## writer1 — iteration 26 (2026-09-26)
+Completed 4 ecommerce articles (claimed batch), all finished clean on first finish_article call; link audit 0 broken; word counts 1,703–1,812.
+- ecommerce/back-in-stock-flows (Nate Sullivan, 2026-04-14) — notify-me as lifecycle asset: micro-commitment signup (variant capture, receipt-style confirm, no account gate), honest timing language, real-time restock email craft, waitlist depth/velocity as demand signal for buyers. Hero generated: public/images/articles/ecommerce/back-in-stock-flows.jpg (brass desk bell + kraft parcels flat-lay), heroImage/heroAlt set.
+- ecommerce/gift-cards-product-thinking (Aiko Tanaka, 2025-11-03) — gift cards as products with three users (buyer/recipient/support): occasion-first purchase, balance check sans login wall, partial redemption both directions, per-market expiry honesty, fraud friction vs conversion, service-recovery superpower, build checklist.
+- ecommerce/mobile-checkout-field-by-field (Nate Sullivan, 2026-06-30) — field-by-field mobile teardown: inputmode/autocomplete keyboard contract, one name field, address lookup + instant manual escape, unit-above-street, wallets before card form, fat-finger error physics, field-level analytics instrumentation.
+- ecommerce/subscription-skip-pause-ux (Priya Nair, 2026-08-18) — skip as equal-sized humanity button (one tap, obvious scope), dated pause with designed reactivation, one calibrated save offer max, 60-day save honesty, 'none of your business' exit-survey option, cancelled cohort as winback list.
