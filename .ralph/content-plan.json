@@ -7506,8 +7506,10 @@
     "AI guardrails",
     "Brassfern work"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790412213.582344
   },
   {
    "kind": "article",
@@ -8800,8 +8802,10 @@
    "cluster": "demos",
    "intent": "A kanban project board for fictional client 'Switchyard' (a rail-ops SaaS scheduling product). Art direction: signal-box — cream paper, ink-black type, safety-orange reserved for WIP-limit breaches only, telegraph-pole thin rules, tabular mono for card IDs (SW-1042). Features: 4-column board with pointer-based drag-and-drop AND full keyboard move (arrow keys via roving tabindex, announced via aria-live), WIP limits with honest warnings, swimlane toggle (priority), quick-filter by assignee/label, card drawer with checklist + activity log, column rename, add card at focus point, undo toast for deletes, all persisted to localStorage with a 'reset demo data' link. Avatars are geometric initials, never photoreal. Works at 375px (columns become a horizontal snap-scroll with progress dots). React + TypeScript only.",
    "keywords": [],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "demo3",
+   "claimed_at": 1790412212.3118021
   },
   {
    "kind": "demo",
@@ -8826,8 +8830,10 @@
     "e-commerce UX",
     "conversion"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790412213.582344
   },
   {
    "kind": "article",
@@ -8842,8 +8848,10 @@
     "streaks UX",
     "retention"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790412213.582345
   },
   {
    "kind": "article",
@@ -8858,8 +8866,10 @@
     "accessibility",
     "keyboard"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790412213.582345
   },
   {
    "kind": "article",
@@ -10912,6 +10922,397 @@
     "apparel ecommerce",
     "PDP",
     "conversion"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ai-feature-retirement",
+   "title": "Retiring an AI feature without breaking trust",
+   "cluster": "ai",
+   "intent": "Sunsetting AI features: deciding with usage data versus cost reality, the communication timeline (announce, degrade, offer export, remove), migrating saved artifacts, honouring 'the model did that for me' workflows, and what retirement teaches the next launch.",
+   "keywords": [
+    "AI features",
+    "sunsetting",
+    "deprecation",
+    "product lifecycle",
+    "trust",
+    "communication"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ai-data-privacy-commitments",
+   "title": "Writing AI privacy commitments users can check",
+   "cluster": "ai",
+   "intent": "Privacy promises for AI features that are specific enough to be believed: training-use statements, retention windows in the UI, per-request data inventory, enterprise carve-outs, and the legal-eng-product triangle that writes them.",
+   "keywords": [
+    "privacy",
+    "AI policy",
+    "data retention",
+    "trust",
+    "compliance",
+    "UX writing"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ai-generated-alt-text",
+   "title": "AI-written alt text: where it helps, where it lies",
+   "cluster": "ai",
+   "intent": "Vision models writing alt text at scale: genuinely useful for backlogs and drafts, dangerous as a final step. Confidence cues for wrongness, editorial review queues, decorative-image detection, and the honesty of 'alt text pending review'.",
+   "keywords": [
+    "alt text",
+    "accessibility",
+    "vision models",
+    "content moderation",
+    "automation",
+    "a11y"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "multilingual-ai-support",
+   "title": "Multilingual AI support: evaluation and UX beyond English",
+   "cluster": "ai",
+   "intent": "Non-English AI features fail quietly: retrieval quality drops, tone goes register-wrong, and evals stay monolingual. Language detection honesty, per-language eval sets, handoff rules, and the localisation partnership you need before launch.",
+   "keywords": [
+    "multilingual",
+    "localisation",
+    "AI support",
+    "evaluation",
+    "i18n",
+    "RAG"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ai-usage-limits-design",
+   "title": "Usage limits for AI features: quotas that don't feel like a shakedown",
+   "cluster": "ai",
+   "intent": "Designing AI quotas: units users can predict (actions not tokens), countdown surfaces that inform not nag, graceful degradation at the cap, upgrade moments tied to value just received, and enterprise uncapping.",
+   "keywords": [
+    "usage limits",
+    "quotas",
+    "AI pricing",
+    "upgrade UX",
+    "rate limits",
+    "monetisation"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "human-in-loop-review-uis",
+   "title": "Review queues for AI output: the tooling behind 'human in the loop'",
+   "cluster": "ai",
+   "intent": "Everyone says human-in-the-loop; nobody designs the loop. Review queue UX: triage by risk not FIFO, diff-first presentation, batch approval dangers, reviewer fatigue metrics, and feedback plumbing back into evals.",
+   "keywords": [
+    "human in the loop",
+    "review queues",
+    "AI oversight",
+    "moderation tooling",
+    "workflow design",
+    "evals"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ai-model-selection-product-teams",
+   "title": "Model selection is a product decision, not an errand",
+   "cluster": "ai",
+   "intent": "Choosing models from the product chair: quality-latency-cost frontiers per surface, when smaller models win UX, benchmark scepticism, eval-gated upgrades, and building the decision record that survives the next hype cycle.",
+   "keywords": [
+    "model selection",
+    "LLM",
+    "product strategy",
+    "evaluation",
+    "cost",
+    "latency"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "eval-ownership-who-runs-them",
+   "title": "Who owns the evals? The org design behind AI quality",
+   "cluster": "ai",
+   "intent": "Eval suites rot when nobody owns them: the named-owner rule, domain experts writing failure cases, product owning golden sets while engineering owns the harness, eval review rituals, and hiring implications.",
+   "keywords": [
+    "evals",
+    "AI quality",
+    "ownership",
+    "team design",
+    "LLM ops",
+    "process"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "pitch-deck-brand-alignment",
+   "title": "Your pitch deck is part of the brand system",
+   "cluster": "brand",
+   "intent": "Sales and investor decks are the most-seen brand artifact at many companies and the least designed: deck token alignment with the identity, template governance, photography rules, and the 20-slide system that survives being edited by sales.",
+   "keywords": [
+    "pitch deck",
+    "brand system",
+    "sales enablement",
+    "templates",
+    "investor deck",
+    "governance"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "event-and-swag-design",
+   "title": "Booths, badges and merch: brand systems in physical space",
+   "cluster": "brand",
+   "intent": "Extending a digital-first identity into conferences and objects: fabric tolerances, one-colour fallbacks, the badge legibility test, swag people keep vs landfill, and budgeting physical brand moments honestly.",
+   "keywords": [
+    "events",
+    "swag",
+    "merch",
+    "conference design",
+    "physical brand",
+    "print production"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "typography-licensing-for-brands",
+   "title": "Font licensing: the identity decision nobody budgets for",
+   "cluster": "brand",
+   "intent": "Type licensing realities for brand programmes: desktop vs web vs app seats, per-pageview pricing traps, open-source alternatives that hold up, handover licensing for clients, and when commissioning custom type pays.",
+   "keywords": [
+    "font licensing",
+    "typography",
+    "brand identity",
+    "budgeting",
+    "open source fonts",
+    "custom type"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "sub-brand-consolidation",
+   "title": "Killing sub-brands gracefully: consolidation without confusion",
+   "cluster": "brand",
+   "intent": "The unbundling is done; now the cleanup. Sunsetting sub-brands: migration sequencing, redirect and SEO handling, customer communication, internal politics of endings, and measuring against the single-brand bet.",
+   "keywords": [
+    "sub-brands",
+    "brand architecture",
+    "consolidation",
+    "migration",
+    "rebrand",
+    "strategy"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "studio-self-branding",
+   "title": "Branding yourself is the hardest brief: studio identity notes",
+   "cluster": "brand",
+   "intent": "Agencies' own brands are famously late and compromised. Portfolio-vs-personality positioning, the self-imposed deadline trick, what our identity choices say to prospective clients, and maintaining a self-brand as the work changes.",
+   "keywords": [
+    "agency branding",
+    "self-branding",
+    "studio identity",
+    "positioning",
+    "portfolio",
+    "marketing"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "destination-branding-tourism",
+   "title": "Giving a place a look: destination and precinct branding",
+   "cluster": "brand",
+   "intent": "Branding regions, precincts and tourism operators: community legitimacy over cleverness, photography as the identity load-bearer, seasonality, council and stakeholder navigation, and wayfinding as brand delivery.",
+   "keywords": [
+    "destination branding",
+    "tourism",
+    "place branding",
+    "wayfinding",
+    "community",
+    "regional"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "wordmark-vs-symbol-decision",
+   "title": "Wordmark, symbol or both: the first identity decision",
+   "cluster": "brand",
+   "intent": "How to actually decide your logo's form: name length and distinctiveness, small-space survival, budget realism (symbols need years of reinforcement), the staged path from wordmark to earned symbol, and global legibility checks.",
+   "keywords": [
+    "wordmark",
+    "logotype",
+    "symbol",
+    "brand mark",
+    "identity design",
+    "logo decisions"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "agency-reviews-360",
+   "title": "The 360 agency review: grading your agency (and being gradeable)",
+   "cluster": "playbooks",
+   "intent": "A quarterly review ritual for client-agency relationships: scorecards that measure outcomes not vibes, the client-side obligations section nobody includes, handling a failing grade, and what agencies should ask to be graded on.",
+   "keywords": [
+    "agency relationship",
+    "quarterly review",
+    "scorecard",
+    "client management",
+    "accountability",
+    "retainer"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "in-house-vs-agency-blend",
+   "title": "In-house team and an agency: getting the blend right",
+   "cluster": "playbooks",
+   "intent": "The blended model most companies actually need: what to keep inside (product judgement, domain memory), what to rent (surge capacity, specialist craft), handoff protocols, and the anti-pattern of the agency as shadow team.",
+   "keywords": [
+    "in-house",
+    "agency",
+    "team design",
+    "resourcing",
+    "handover",
+    "operations"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "launch-communications-plan",
+   "title": "Launching the thing: a communications plan for redesigns and relaunches",
+   "cluster": "playbooks",
+   "intent": "The launch email is written in week minus six, not launch morning: audience segmentation (customers, staff, press, partners), FAQ pre-drafting, rollback comms, and the day-two story most teams forget.",
+   "keywords": [
+    "launch",
+    "communications",
+    "announcement",
+    "relaunch",
+    "stakeholders",
+    "rollout"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "content-inventory-migration",
+   "title": "The content inventory: the spreadsheet that saves your migration",
+   "cluster": "playbooks",
+   "intent": "Every URL, owner, traffic number and decision (keep/kill/merge/redirect) before the platform move: tooling for crawling, scoring content honestly, redirect mapping, and the governance that keeps the prune permanent.",
+   "keywords": [
+    "content inventory",
+    "migration",
+    "redirects",
+    "content audit",
+    "SEO",
+    "CMS"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "choosing-a-cms-2026",
+   "title": "Choosing a CMS in 2026: a buyer's evaluation framework",
+   "cluster": "playbooks",
+   "intent": "Evaluation criteria that predict success: editorial workflow fit over feature matrices, preview fidelity, content modelling limits, API and exit strategy, true total cost, and the two-week hands-on pilot that settles arguments.",
+   "keywords": [
+    "CMS",
+    "headless CMS",
+    "buying software",
+    "evaluation",
+    "content modelling",
+    "vendor selection"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "reading-an-agency-proposal",
+   "title": "How to read an agency proposal (past the deck)",
+   "cluster": "playbooks",
+   "intent": "What proposals reveal and conceal: team pages vs actual staffing, estimating tells, what fixed scope really excludes, reference-check questions that work, and comparing bids on different planets.",
+   "keywords": [
+    "agency proposal",
+    "procurement",
+    "evaluation",
+    "hiring agencies",
+    "references",
+    "budgeting"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "maintaining-momentum-post-launch",
+   "title": "The 90 days after launch decide everything",
+   "cluster": "playbooks",
+   "intent": "Post-launch is where redesigns quietly fail: the launch-plus-30/60/90 operating rhythm, triage rules for the feedback flood, analytics baselining, quick-win sequencing, and protecting the team from victory laps.",
+   "keywords": [
+    "post-launch",
+    "iteration",
+    "analytics",
+    "triage",
+    "optimisation",
+    "team rituals"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "coordinating-multiple-vendors",
+   "title": "Two agencies, one deadline: coordinating brand, dev and media vendors",
+   "cluster": "playbooks",
+   "intent": "Multi-vendor projects fail at the seams: single-integrator models vs council models, shared timelines, API-of-the-project specification documents, blame protocols, and the client-side coordinator you must staff.",
+   "keywords": [
+    "vendor management",
+    "multi-agency",
+    "project management",
+    "coordination",
+    "handoffs",
+    "governance"
    ],
    "status": "planned",
    "added_by": "builder"
