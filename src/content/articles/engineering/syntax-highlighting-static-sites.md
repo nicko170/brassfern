@@ -73,7 +73,7 @@ Because tokens are classes, the code theme is a set of entries in your token lay
 
 Craft notes from doing this across a dozen sites:
 
-- **Pull hues from the brand palette, darkened or brightened to pass contrast.** Code on this site is fern, brass and clay on paper — nobody else's code looks like it, which is the point. If your code blocks are interchangeable with every Tailwind blog, you left brand equity on the table. Our [/colophon](/colophon) page shows the live specimens.
+- **Pull hues from the brand palette, darkened or brightened to pass contrast.** Code on this site is fern, brass and clay on paper — nobody else's code looks like it, which is the point. If your code blocks are interchangeable with every Tailwind blog, you left brand equity on the table — the type and token specimens live on our colophon page.
 - **Contrast-check code themes separately.** Body-text contrast rules apply, and comments are the universal failure — designers love a whisper-quiet comment colour that fails WCAG. Comments are half the teaching in a snippet; give them the respect of 4.5:1.
 - **Dark mode is a token swap, not a second theme file.** Because the classes are semantic, dark mode is just different values for the same variables. If you find yourself maintaining two Shiki themes, you've gone wrong — go back to classes.
 - **Italic and weight are free flavour.** A keyword in italic small caps or a string in a warmer tone costs nothing at runtime. Spend it sparingly; code must stay scannable first.

@@ -7752,10 +7752,11 @@
     "LCP video",
     "web design trade-offs"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790411780.8119721
+   "claimed_at": 1790411780.8119721,
+   "done_at": "2026-09-26T18:46:04"
   },
   {
    "kind": "article",
@@ -7770,10 +7771,11 @@
     "keyboard accessible widgets",
     "interaction design"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790411780.811973
+   "claimed_at": 1790411780.811973,
+   "done_at": "2026-09-26T18:46:06"
   },
   {
    "kind": "article",
@@ -7788,10 +7790,11 @@
     "design ops",
     "sub-brand websites"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790411780.811973
+   "claimed_at": 1790411780.811973,
+   "done_at": "2026-09-26T18:46:06"
   },
   {
    "kind": "article",
@@ -7806,10 +7809,11 @@
     "colour surfaces",
     "design system layout"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790411780.811973
+   "claimed_at": 1790411780.811973,
+   "done_at": "2026-09-26T18:46:07"
   },
   {
    "kind": "article",
@@ -8884,8 +8888,10 @@
     "component library",
     "adoption"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790412304.139015
   },
   {
    "kind": "article",
@@ -8900,8 +8906,10 @@
     "coffee",
     "self-serve"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790412304.139016
   },
   {
    "kind": "article",
@@ -8916,8 +8924,10 @@
     "fare comparison",
     "performance"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790412304.1390169
   },
   {
    "kind": "article",
@@ -8932,8 +8942,10 @@
     "e-commerce",
     "SVG"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790412304.1390169
   },
   {
    "kind": "article",
@@ -11313,6 +11325,57 @@
     "coordination",
     "handoffs",
     "governance"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "pinch-and-sprig-bakery-website",
+   "title": "Pinch & Sprig — a bakery group that sells out by 10am, online first",
+   "cluster": "work",
+   "intent": "Case study: Pinch & Sprig, a fictional three-site Sydney bakery group (Hospitality; services: Brand & identity, Websites, E-commerce; year 2025). Challenge: sell-out mornings, dead wholesale ordering, PDF menus. Approach: pastry-photography-led identity refresh, one-tap pre-order with pickup windows and cut-off honesty, wholesale quick-order portal, menus as pages not PDFs. Outcome: illustrative metrics (pre-orders 41% of morning volume, wholesale reorder time 25min→4min, zero 'are you open' calls). Stack: React, TypeScript, headless CMS, Shopify, Mapbox. Include Challenge/Approach/Outcome and a fictional testimonial.",
+   "keywords": [
+    "case study",
+    "bakery",
+    "hospitality",
+    "pre-order",
+    "ecommerce",
+    "brand identity"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "kowa-health-clinics-platform",
+   "title": "Kowa Health — unifying nine clinics onto one patient platform",
+   "cluster": "work",
+   "intent": "Case study: Kowa Health, a fictional NZ primary-care group (Health; services: Product design & engineering, Websites; year 2025). Challenge: nine clinics, five booking systems, phone-only everything. Approach: patient portal with unified booking, forms-before-arrival, clinician schedule design explicitly co-designed with receptionists, WCAG AAA-contrast ambition on booking flows. Outcome: illustrative metrics (phone volume -38%, no-show rate down, patient CSAT). Stack: React, TypeScript, Node, Postgres, Twilio. Challenge/Approach/Outcome + fictional testimonial.",
+   "keywords": [
+    "case study",
+    "health",
+    "patient portal",
+    "booking platform",
+    "design system",
+    "accessibility"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "quillon-games-community-platform",
+   "title": "Quillon Games — a community platform for a two-studio indie label",
+   "cluster": "work",
+   "intent": "Case study: Quillon Games, a fictional AU indie games label (Media & culture; services: Product design & engineering, Brand & identity; year 2026). Challenge: Discord-scattered community, patch-note reach near zero, store pages that couldn't carry a story. Approach: hub with dev blogs, patch-note pages that rank, roadmap voting, fan-creation gallery with moderation tooling, seasonal theming per game. Outcome: illustrative metrics (patch-note reach, wishlist conversion, moderation time). Stack: React, TypeScript, Node, Postgres, Meilisearch. Challenge/Approach/Outcome + fictional testimonial.",
+   "keywords": [
+    "case study",
+    "games",
+    "community platform",
+    "media",
+    "dev blog",
+    "moderation"
    ],
    "status": "planned",
    "added_by": "builder"

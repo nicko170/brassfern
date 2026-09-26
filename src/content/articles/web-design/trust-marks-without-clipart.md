@@ -55,7 +55,7 @@ Some trust marks subtract value even when true:
 
 - **The invented guarantee star.** Self-awarded seals ("Premium Quality Certified") are the worst objects on the internet. Any seal you granted yourself reads as compensation for a missing argument.
 - **The stale award.** "Best Agency 2019" on a 2026 site tells the reader either you peaked, or you stopped paying attention to your own page. Date everything; retire gallantly.
-- **The partly-fake row.** One invented or inflated mark makes the true ones suspect. This is a special risk for concept sites, demos and portfolio mockups: if you show imagined partner logos, label the context honestly. Our own studio site states plainly in its [colophon](/colophon) that the studio is a concept and the site is self-built — that honesty is the trust mark. Accuracy about your epistemics is the strongest credibility signal a site can send.
+- **The partly-fake row.** One invented or inflated mark makes the true ones suspect. This is a special risk for concept sites, demos and portfolio mockups: if you show imagined partner logos, label the context honestly. Our own studio site states plainly on its [studio page](/studio) that the studio is a concept and the site is self-built — that honesty is the trust mark. Accuracy about your epistemics is the strongest credibility signal a site can send.
 - **Security theatre badges.** A "Secure site 🔒" graphic under a checkout teaches nothing and hires suspicion. Real security belongs in the credentials block with a standard's name, not in a padlock illustration.
 
 ## The hierarchy that actually persuades
