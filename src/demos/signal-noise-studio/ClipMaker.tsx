@@ -48,8 +48,7 @@ export default function ClipMaker({ ep, show, initial, pos, onPlayClip, onSeek, 
       ? Math.max(0, Math.min(ep.duration - len, initial.a))
       : Math.max(0, Math.min(ep.duration - len, pos - len / 2))
     return [a0, Math.min(ep.duration, a0 + len)]
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []) // established once per dialog open
+  }, []) // window is established once per dialog open
   const [range, setRange] = useState<[number, number]>(init)
   const [title, setTitle] = useState<string>(() => (initial ? initial.t : defaultTitle(ep, init[0], init[1])))
   const [titleTouched, setTitleTouched] = useState(Boolean(initial))
@@ -124,7 +123,30 @@ export default function ClipMaker({ ep, show, initial, pos, onPlayClip, onSeek, 
         onClick={onClose}
         aria-label="Close clip maker"
       />
-      <div className="sns-clip" role="dialog" aria-modal="true" aria-label={`Clip maker — ${ep.title}`}>
+      <div
+        className="sns-clip"
+        role="dialog"
+        aria-modal="true"
+        aria-label={`Clip maker — ${ep.title}`}
+        onKeyDown={(e) => {
+          if (e.key !== 'Tab') return
+          const panel = e.currentTarget
+          const focusables = panel.querySelectorAll<HTMLElement>(
+            'button, input, [tabindex]:not([tabindex="-1"])',
+          )
+          if (focusables.length === 0) return
+          const first = focusables[0]
+          const last = focusables[focusables.length - 1]
+          if (!first || !last) return
+          if (e.shiftKey && document.activeElement === first) {
+            e.preventDefault()
+            last.focus()
+          } else if (!e.shiftKey && document.activeElement === last) {
+            e.preventDefault()
+            first.focus()
+          }
+        }}
+      >
         <header className="sns-clip__head">
           <CoverArt show={show} className="sns-clip__art" />
           <div className="sns-clip__ids">

@@ -65,7 +65,7 @@ export default function Player({
               ? `CLIP ${fmtTime(guard.a)}–${fmtTime(guard.b)}`
               : caption
                 ? `“${caption.tx}”`
-                : 'S6·N · sim · no audio'}
+                : 'S+N · sim · no audio'}
           </span>
         </div>
       </div>

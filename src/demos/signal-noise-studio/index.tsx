@@ -215,12 +215,11 @@ export default function SignalNoiseStudio() {
           <span className="mono sns-over">01 — The network</span>
           <h2 className="sns-h2" id="sns-network-h">Nine voices, one switchboard</h2>
         </div>
-        <div className="sns-reel" role="list">
+        <div className="sns-reel">
           {SHOWS.map((s) => (
             <button
               key={s.id}
               type="button"
-              role="listitem"
               className={`sns-card${showFilter === s.id ? ' is-active' : ''}`}
               style={{ '--acc': s.accent } as CSSProperties}
               onClick={() => pickShow(showFilter === s.id ? 'all' : s.id)}
