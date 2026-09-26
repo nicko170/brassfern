@@ -2863,10 +2863,11 @@
     "human in the loop",
     "ai interaction design"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer3",
    "worker": "writer4",
-   "claimed_at": 1790384007.8187761
+   "claimed_at": 1790384007.8187761,
+   "done_at": "2026-09-26T11:02:11"
   },
   {
    "kind": "article",

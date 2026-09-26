@@ -1,6 +1,6 @@
 ---
 title: "Agent UX: designing for software that acts on your behalf"
-description: "When software acts instead of suggests, the interface becomes a control system: permission scopes, visible progress, real undo, and calibrated trust. A working pattern library."
+description: "When software acts instead of suggests, the interface becomes a control system: permission scopes, visible progress, real undo, and calibrated trust."
 slug: agent-ux-control
 cluster: ai
 tags:
