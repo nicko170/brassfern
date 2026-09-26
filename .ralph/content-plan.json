@@ -7219,10 +7219,11 @@
     "scrollytelling report",
     "nonprofit annual report"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790405768.177175
+   "claimed_at": 1790405768.177175,
+   "done_at": "2026-09-26T17:04:27"
   },
   {
    "kind": "article",
@@ -7236,10 +7237,11 @@
     "microcopy brand",
     "brand details"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790405768.177176
+   "claimed_at": 1790405768.177176,
+   "done_at": "2026-09-26T17:04:29"
   },
   {
    "kind": "article",
@@ -7289,10 +7291,11 @@
     "doorway pages",
     "programmatic SEO local"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790405944.902894
+   "claimed_at": 1790405944.902894,
+   "done_at": "2026-09-26T17:05:20"
   },
   {
    "kind": "article",
@@ -7306,10 +7309,11 @@
     "event content marketing",
     "content atomization"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790405944.9028962
+   "claimed_at": 1790405944.9028962,
+   "done_at": "2026-09-26T17:05:21"
   },
   {
    "kind": "article",
@@ -7323,10 +7327,11 @@
     "customer stories marketing",
     "social proof content"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790405944.9028962
+   "claimed_at": 1790405944.9028962,
+   "done_at": "2026-09-26T17:05:23"
   },
   {
    "kind": "article",
@@ -7340,10 +7345,11 @@
     "marketing analytics hygiene",
     "UTM parameters"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790405944.9028962
+   "claimed_at": 1790405944.9028962,
+   "done_at": "2026-09-26T17:05:25"
   },
   {
    "kind": "article",
@@ -7775,8 +7781,10 @@
     "CRO honesty",
     "growth experiments"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790406202.8119738
   },
   {
    "kind": "article",
@@ -7791,8 +7799,10 @@
     "search UX data",
     "content strategy"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790406202.811976
   },
   {
    "kind": "article",
@@ -7807,8 +7817,10 @@
     "link preview optimisation",
     "content distribution"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790406202.811976
   },
   {
    "kind": "article",
@@ -7823,8 +7835,10 @@
     "web feeds",
     "publishing stack"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790406202.811976
   },
   {
    "kind": "article",
@@ -7839,8 +7853,10 @@
     "B2B SEO strategy",
     "programmatic comparisons"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790406265.872515
   },
   {
    "kind": "article",
@@ -7855,8 +7871,10 @@
     "conversion without popups",
     "growth design"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790406265.872515
   },
   {
    "kind": "article",
@@ -7871,8 +7889,10 @@
     "client introductions",
     "studio growth"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790406265.872515
   },
   {
    "kind": "article",
@@ -7887,8 +7907,10 @@
     "messaging research",
     "copy testing"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790406265.872515
   },
   {
    "kind": "article",
@@ -8927,10 +8949,11 @@
     "copywriting",
     "brand strategy"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790405768.177176
+   "claimed_at": 1790405768.177176,
+   "done_at": "2026-09-26T17:04:29"
   },
   {
    "kind": "article",
@@ -8945,10 +8968,11 @@
     "brand identity",
     "design tokens"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790405768.177176
+   "claimed_at": 1790405768.177176,
+   "done_at": "2026-09-26T17:04:29"
   },
   {
    "kind": "article",
@@ -8963,10 +8987,11 @@
     "checklist",
     "brand strategy"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790405848.808762
+   "claimed_at": 1790405848.808762,
+   "done_at": "2026-09-26T17:04:20"
   },
   {
    "kind": "article",
@@ -8981,10 +9006,11 @@
     "design systems",
     "commissioning"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790405848.8087628
+   "claimed_at": 1790405848.8087628,
+   "done_at": "2026-09-26T17:04:20"
   },
   {
    "kind": "article",
@@ -8999,10 +9025,11 @@
     "brand strategy",
     "legal"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790405848.8087628
+   "claimed_at": 1790405848.8087628,
+   "done_at": "2026-09-26T17:04:20"
   },
   {
    "kind": "article",
@@ -9017,10 +9044,11 @@
     "audio UX",
     "accessibility"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790405848.808764
+   "claimed_at": 1790405848.808764,
+   "done_at": "2026-09-26T17:04:20"
   },
   {
    "kind": "article",
