@@ -4745,10 +4745,11 @@
     "error tracking",
     "web performance"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790387784.997361
+   "claimed_at": 1790387784.997361,
+   "done_at": "2026-09-26T12:01:17"
   },
   {
    "kind": "article",
@@ -6137,8 +6138,10 @@
    "cluster": "demos",
    "intent": "Event ticketing seat-map demo for fictional client 'The Glasshouse' (an independent theatre). Art direction: velvet-night palette — deep oxblood, warm gold, cream; serif playbill display type; subtle grain. Features: interactive SVG venue map with stalls/circle/boxes, pinch-and-button zoom with pan, price-tier colouring with a colourblind-safe toggle, seat hover/focus details, multi-seat selection with per-seat pricing, accessible list-view fallback for the seat picker (arrow-key navigable, aria-describedby details), running total + best-available suggestion, bottlenecks timer display (illustrative), reduced-motion static mode. Stack: React + TypeScript, hand-rolled SVG, no heavy libs. Links to a new case study slug glasshouse-ticketing-relaunch.",
    "keywords": [],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "demo3",
+   "claimed_at": 1790388062.264554
   },
   {
    "kind": "demo",
