@@ -3104,10 +3104,11 @@
     "climate tech marketing",
     "conversion rate optimisation"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790387284.874201
+   "claimed_at": 1790387284.874201,
+   "done_at": "2026-09-26T11:55:39"
   },
   {
    "kind": "article",
@@ -3121,10 +3122,11 @@
     "headless cms case study",
     "editorial platform"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790387284.874202
+   "claimed_at": 1790387284.874202,
+   "done_at": "2026-09-26T11:55:39"
   },
   {
    "kind": "article",
@@ -3138,10 +3140,11 @@
     "reservations ux",
     "hospitality case study"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790387284.874202
+   "claimed_at": 1790387284.874202,
+   "done_at": "2026-09-26T11:55:43"
   },
   {
    "kind": "article",
@@ -3155,10 +3158,11 @@
     "bulk ordering",
     "industrial supplier digital"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790387284.874202
+   "claimed_at": 1790387284.874202,
+   "done_at": "2026-09-26T11:55:43"
   },
   {
    "kind": "article",
@@ -3854,8 +3858,10 @@
     "print friendly web pages",
     "printing web content"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790387478.309978
   },
   {
    "kind": "article",
@@ -3869,8 +3875,10 @@
     "design tokens theming",
     "campaign microsite design"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790387478.309979
   },
   {
    "kind": "article",
@@ -3884,8 +3892,10 @@
     "optimistic ui",
     "loading state design"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790387478.309979
   },
   {
    "kind": "article",
@@ -4697,8 +4707,10 @@
     "offline sync",
     "web app architecture"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790387478.309979
   },
   {
    "kind": "article",
