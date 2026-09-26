@@ -1354,8 +1354,10 @@
     "illustration guidelines",
     "visual language"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790381497.125252
   },
   {
    "kind": "article",
@@ -1369,8 +1371,10 @@
     "share of search",
     "brand tracking"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790381497.1252532
   },
   {
    "kind": "article",
@@ -1384,8 +1388,10 @@
     "brand strategy template",
     "brand workshop"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790381497.1252532
   },
   {
    "kind": "article",
@@ -1399,8 +1405,10 @@
     "brand voice founder",
     "brand transition"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790381497.1252532
   },
   {
    "kind": "article",
