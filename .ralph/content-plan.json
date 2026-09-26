@@ -4021,10 +4021,11 @@
     "design system adoption",
     "stakeholder management design"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790385213.683726
+   "claimed_at": 1790385213.683726,
+   "done_at": "2026-09-26T11:21:52"
   },
   {
    "kind": "article",
@@ -4038,10 +4039,11 @@
     "event tracking plan",
     "analytics requirements"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790385213.683728
+   "claimed_at": 1790385213.683728,
+   "done_at": "2026-09-26T11:21:54"
   },
   {
    "kind": "article",
@@ -4055,10 +4057,11 @@
     "agency contract scope",
     "project assumptions document"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790385213.683728
+   "claimed_at": 1790385213.683728,
+   "done_at": "2026-09-26T11:21:56"
   },
   {
    "kind": "article",
@@ -4072,10 +4075,11 @@
     "agency project management",
     "client scope change"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790385213.683728
+   "claimed_at": 1790385213.683728,
+   "done_at": "2026-09-26T11:21:59"
   },
   {
    "kind": "article",
@@ -4140,8 +4144,10 @@
     "constrained decoding",
     "ai generated ui"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790385649.572758
   },
   {
    "kind": "article",
@@ -4155,8 +4161,10 @@
     "consent ux ai",
     "personalisation ethics"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790385649.5727592
   },
   {
    "kind": "article",
@@ -4170,8 +4178,10 @@
     "ai provenance ux",
     "trust signals ai answers"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790385649.57276
   },
   {
    "kind": "article",
@@ -4185,8 +4195,10 @@
     "content moderation ux",
     "ai oversight workflow"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790385649.57276
   },
   {
    "kind": "article",
@@ -5929,6 +5941,340 @@
    "cluster": "demos",
    "intent": "SaaS pricing calculator demo for fictional client 'Ledgerline' (expense-management SaaS). Art direction: precise fintech paper — off-white, ledger-green, ink; tabular numerals everywhere; ruled-line motifs. Features: seat/usage sliders with stepped snapping, monthly-vs-annual toggle with savings callouts, plan comparison matrix with highlighted recommended plan, ROI estimator (hours saved × blended rate) with editable assumptions, discount code field with validation states, full state serialised to the URL (shareable quote), print-friendly quote summary view, keyboard-operable sliders with number-input twins. Stack: React + TypeScript, zero charting libs — CSS bars. Links to a new case study slug ledgerline-pricing-page-rebuild.",
    "keywords": [],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "holloway-waveform-player",
+   "title": "Holloway Records waveform player",
+   "cluster": "demos",
+   "intent": "A music player UI for the fictional Holloway Records label: a vinyl-shelf browse view, waveform seek bar rendered on canvas, play queue with drag-to-reorder, crossfade toggle, and a 'liner notes' panel per track. Art direction: charcoal studio-dark with oxblood and bone type, condensed grotesk + mono timings, subtle vinyl-sheen gradients. Mocked audio (WebAudio oscillator-free — visual playback simulation with time-based waveform animation), full keyboard control, reduced-motion static waveform. Ties to case study holloway-records-label-site.",
+   "keywords": [],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "copperline-mobile-bank",
+   "title": "Copperline Mutual mobile banking",
+   "cluster": "demos",
+   "intent": "A mobile-first community-bank app for Copperline Mutual: account carousel (everyday/savings/pots), transaction list with search and category filters, 'pay anyone' flow with contact avatars, drag-to-allocate into savings pots with animated balances, and a statements export sheet. Art direction: midnight-fern ink, mint accents, cream cards, rounded tab-bar bottom nav, friendly serif numerals. Fake data with realistic merchant names; respects reduced motion; thumb-reach ergonomics at 375px. Ties to case study copperline-community-bank.",
+   "keywords": [],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "tallow-feast-builder",
+   "title": "Tallow & Co. feast box builder",
+   "cluster": "demos",
+   "intent": "A build-your-own charcuterie/providore box for Tallow & Co.: pick a box size, fill slots from a pantry grid (cheeses, smallgoods, preserves, crackers) with a live box-fill visual and price tally, 'curator's choice' autofill per theme (picnic, fireside, celebration), gift-note composer and delivery-date picker with honest cutoffs. Art direction: butcher-paper kraft, deep green ink, wax-seal red accents, engraved-woodcut illustration style via CSS/SVG textures. Cart persists; reduced-motion swaps swells for fades. Ties to case study tallow-and-co-providore.",
+   "keywords": [],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "dashboard-empty-states",
+   "title": "Empty states are onboarding: designing the blank dashboard",
+   "cluster": "product",
+   "intent": "Why the zero-data moment is the highest-leverage screen in a SaaS dashboard: three empty-state archetypes (first-run, cleared, broken), sample-data and demo-mode patterns, writing empty-state copy that moves one muscle, and measuring activation lift. Examples from fictional client dashboards.",
+   "keywords": [
+    "empty state design",
+    "dashboard onboarding",
+    "saas activation",
+    "zero data ux",
+    "product onboarding"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "settings-design-adult",
+   "title": "Settings screens grow up: IA for the product nobody loves",
+   "cluster": "product",
+   "intent": "Settings rot quietly: accreted toggles, orphaned features, dangerous defaults. Covers settings information architecture (grouped by job not by codebase), search-over-nav for long settings lists, staged rollouts of settings changes, and a quarterly settings-audit ritual with a scoring rubric.",
+   "keywords": [
+    "settings ux",
+    "product settings information architecture",
+    "saas settings design",
+    "feature flags settings",
+    "ux audit"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "command-palette-craft",
+   "title": "Command palettes: the 200-millisecond product tour",
+   "cluster": "product",
+   "intent": "Designing command palettes that become power-user muscle memory: ranking heuristics (recency, frequency, context), fuzzy matching that forgives, keyboard-first ergonomics, action results vs navigation results, and when a palette is a crutch for bad IA.",
+   "keywords": [
+    "command palette design",
+    "keyboard navigation ux",
+    "power user features",
+    "cmd k pattern",
+    "search ux"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "undo-not-confirm",
+   "title": "Undo beats confirm: designing reversible software",
+   "cluster": "product",
+   "intent": "Confirmation dialogs train users to click through danger. Argues for undo-first design: toast-undo timing, modelling reversible vs irreversible actions, soft-delete architecture implications, batch-action safety, and the trust dividend of forgiving software. Includes a decision checklist for destructive actions.",
+   "keywords": [
+    "undo pattern ux",
+    "confirmation dialog alternatives",
+    "destructive action design",
+    "reversible actions",
+    "trust in software design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "international-seo-hreflang",
+   "title": "International SEO without tears: hreflang, ccTLDs and content reuse",
+   "cluster": "growth",
+   "intent": "Practical international expansion for marketing sites: ccTLD vs subfolder trade-offs, getting hreflang right (and the three ways it breaks), translation workflows that respect local search intent, and how to validate with a staged crawl before launch.",
+   "keywords": [
+    "hreflang implementation",
+    "international seo",
+    "cctld vs subdirectory",
+    "multilingual website seo",
+    "localisation seo"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "competitor-alternatives-pages",
+   "title": "Alternative-to pages that rank and don't embarrass you",
+   "cluster": "growth",
+   "intent": "The honest playbook for 'X alternatives' and 'us vs them' comparison capture: page structure that concedes strengths, hand-verified feature matrices, disclosure and tone rules, keeping pages updated (stale claims sink trust), and measuring pipeline from comparison traffic.",
+   "keywords": [
+    "competitor comparison pages",
+    "alternatives page seo",
+    "saas comparison marketing",
+    "vs page template",
+    "competitive positioning content"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "winback-email-flows",
+   "title": "Winback flows: the cheapest revenue you're not earning",
+   "cluster": "growth",
+   "intent": "Lifecycle design for lapsed customers: defining lapsed honestly per product cadence, the three-touch winback arc (remind, incentivise, say goodbye), suppression hygiene, sunset policies, and measuring incrementality with holdouts so discounts don't subsidise the already-loyal.",
+   "keywords": [
+    "winback email campaign",
+    "lapsed customer reactivation",
+    "lifecycle email flows",
+    "email sunset policy",
+    "retention email marketing"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "share-of-search",
+   "title": "Share of search: a brand metric a CFO will accept",
+   "cluster": "growth",
+   "intent": "Using branded search volume as a leading brand-health indicator: methodology (category definition, normalisation, smoothing), correlation evidence and its limits, reporting cadence, and how to combine share of search with survey data without double-counting.",
+   "keywords": [
+    "share of search",
+    "brand measurement metrics",
+    "brand tracking",
+    "branded search volume",
+    "marketing effectiveness metrics"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "launch-day-qa-checklist",
+   "title": "The launch-day QA checklist we run on every site",
+   "cluster": "playbooks",
+   "intent": "Brassfern's actual pre-launch sweep as a reusable runbook: redirects map validation, 404 sweep, OG/meta audit, forms end-to-end, analytics parity, performance spot checks, accessibility quick pass, DNS/TLS, rollback plan, and the war-room rota for the first 72 hours.",
+   "keywords": [
+    "website launch checklist",
+    "launch day qa",
+    "site launch runbook",
+    "pre launch testing",
+    "website go live checklist"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "analytics-implementation-plan",
+   "title": "Writing an analytics implementation plan before you tag anything",
+   "cluster": "playbooks",
+   "intent": "Measurement plans prevent dashboard soup: deciding questions first, event naming conventions and taxonomy, property hygiene, consent-mode implications, QA in staging, and the 30-day post-launch calibration review. Includes a copyable annotation template.",
+   "keywords": [
+    "analytics implementation plan",
+    "measurement plan template",
+    "event tracking taxonomy",
+    "ga4 setup process",
+    "tagging strategy"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "vendor-lockin-exit-plan",
+   "title": "Plan your exit before you sign: vendor lock-in for agencies and clients",
+   "cluster": "playbooks",
+   "intent": "Practical lock-in hygiene for CMS, commerce and hosting choices: data portability tests, content-export drills, contractual exit clauses, abstraction seams that matter (and ones that don't), and running an annual exit rehearsal.",
+   "keywords": [
+    "vendor lock in",
+    "platform exit strategy",
+    "cms data portability",
+    "headless migration planning",
+    "procurement technology risk"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "design-critique-that-works",
+   "title": "Running a design critique people actually want to attend",
+   "cluster": "playbooks",
+   "intent": "A critique format borrowed from Brassfern's Thursday crit: framed questions from the presenter, silent read-first protocol, kind-specific-necessary feedback filters, worst-advice tracking, and how to stop senior voices anchoring the room.",
+   "keywords": [
+    "design critique process",
+    "design review meeting",
+    "design feedback culture",
+    "critique facilitation",
+    "design team rituals"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "skeleton-screens-done-right",
+   "title": "Skeleton screens that don't flash and lie",
+   "cluster": "web-design",
+   "intent": "Skeleton UI done honestly: matching skeleton shape to final layout to avoid layout shift, minimum display durations, when to prefer spinners or optimistic UI, shimmer-animation restraint, and measuring perceived performance of loading states.",
+   "keywords": [
+    "skeleton screen design",
+    "loading state ux",
+    "perceived performance",
+    "shimmer animation",
+    "layout shift prevention"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "focus-states-design",
+   "title": "Focus states are a design system feature, not a browser default",
+   "cluster": "web-design",
+   "intent": "Treat :focus-visible as part of the visual language: designing branded focus rings that pass 3:1 contrast, tokenised focus styles across themes and dark sections, focus management in modals and menus, and the common overrides that silently break keyboard navigation.",
+   "keywords": [
+    "focus visible css",
+    "focus ring design",
+    "keyboard accessibility design",
+    "focus state tokens",
+    "accessible design systems"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "bento-grids-honest",
+   "title": "Bento grids: when the box layout earns its keep",
+   "cluster": "web-design",
+   "intent": "A fair assessment of bento grid layouts: what the pattern does well (feature-density scanning), where it collapses (long content, mobile stacking), span systems that survive real CMS data, and typography rules for mixed-size tiles.",
+   "keywords": [
+    "bento grid layout",
+    "bento design trend",
+    "css grid editorial layout",
+    "feature section design",
+    "landing page grid"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "scrollytelling-restraint",
+   "title": "Scrollytelling with restraint: narrative pages that respect the scrollbar",
+   "cluster": "web-design",
+   "intent": "Case for scrollytelling sections that enhance rather than hijack: pinning budgets (never more than one pinned scene), chapter navigation, reduced-motion fallbacks as a first-class variant, performance of scroll-linked animation, and an honesty test for whether the story needs scroll at all.",
+   "keywords": [
+    "scrollytelling design",
+    "scroll animation ux",
+    "scroll linked storytelling",
+    "reduced motion fallbacks",
+    "narrative web design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "voice-interface-when",
+   "title": "When to build a voice interface (and when a form wins)",
+   "cluster": "ai",
+   "intent": "Decision framework for voice UI in products: where speech beats typing (hands-busy, accessibility, long dictation), latency and turn-taking design, barge-in and confirmation patterns, transcription honesty (confidence display), and the privacy posture voice demands.",
+   "keywords": [
+    "voice interface design",
+    "voice ui ux",
+    "speech interface product",
+    "voice assistant design patterns",
+    "audio input ux"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ai-feature-pricing",
+   "title": "Pricing AI features: cost curves, credits and honest limits",
+   "cluster": "ai",
+   "intent": "How product teams price LLM features without burning margin: model cost per action as a unit-economics input, credit systems vs unlimited-with-guardrails, fair-use caps and communicating them, tiering AI features, and monitoring margin drift as models change.",
+   "keywords": [
+    "ai feature pricing",
+    "llm cost per user",
+    "ai saas pricing models",
+    "ai credits pricing",
+    "unit economics ai features"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ai-prototyping-workflows",
+   "title": "Prototyping with AI: where it speeds design and where it rots it",
+   "cluster": "ai",
+   "intent": "Field notes on AI-assisted prototyping inside a design team: code-prototype acceleration, hallucinated-component traps, prompt libraries for layout exploration, keeping generated code out of production, and a provenance rule for design files.",
+   "keywords": [
+    "ai design tools",
+    "ai prototyping workflow",
+    "vibe coding design",
+    "ai generated ui",
+    "design engineering ai"
+   ],
    "status": "planned",
    "added_by": "builder"
   }
