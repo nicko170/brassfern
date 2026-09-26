@@ -2475,10 +2475,11 @@
    "cluster": "demos",
    "intent": "Restaurant site + reservations for fictional Surry Hills dining room Wattle & Daub. Art direction: firelit amber on charred timber, editorial menu typesetting, candlelight warmth. Features: hero with candle-flame ambient canvas (embers), seasonal menu with courses, wine list, table booking flow (party size → date → seating → details → confirmation), no-show-policy honesty line, private dining enquiry. Reservations stored in localStorage with manage/cancel view. Mobile-first — most bookings happen on phones.",
    "keywords": [],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "demo1",
-   "claimed_at": 1790380725.4732091
+   "claimed_at": 1790380725.4732091,
+   "done_at": "2026-09-26T11:16:09"
   },
   {
    "kind": "demo",
@@ -2894,8 +2895,10 @@
     "brand safety ai",
     "tone control"
    ],
-   "status": "planned",
-   "added_by": "writer3"
+   "status": "claimed",
+   "added_by": "writer3",
+   "worker": "writer1",
+   "claimed_at": 1790385360.369896
   },
   {
    "kind": "article",
@@ -4097,8 +4100,10 @@
     "support ticket ai evals",
     "prompt regression testing"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790385360.369896
   },
   {
    "kind": "article",
@@ -4112,8 +4117,10 @@
     "graceful degradation ai",
     "ai unavailable state"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790385360.369896
   },
   {
    "kind": "article",
@@ -5834,8 +5841,10 @@
     "analytics baseline",
     "agency retainer start"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790385360.369895
   },
   {
    "kind": "article",
