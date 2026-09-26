@@ -23,7 +23,9 @@ export default function Sheet({
     if (!open) return
     lastFocus.current = document.activeElement as HTMLElement | null
     const panel = panelRef.current
-    const first = panel?.querySelector<HTMLElement>('input, button, [tabindex]')
+    const first =
+      panel?.querySelector<HTMLElement>('[autofocus]') ??
+      panel?.querySelector<HTMLElement>('input, button, [tabindex]')
     first?.focus()
     const onKey = (e: KeyboardEvent) => {
       if (e.key === 'Escape') onClose()

@@ -6309,10 +6309,10 @@
    "cluster": "demos",
    "intent": "SaaS pricing calculator demo for fictional client 'Ledgerline' (expense-management SaaS). Art direction: precise fintech paper — off-white, ledger-green, ink; tabular numerals everywhere; ruled-line motifs. Features: seat/usage sliders with stepped snapping, monthly-vs-annual toggle with savings callouts, plan comparison matrix with highlighted recommended plan, ROI estimator (hours saved × blended rate) with editable assumptions, discount code field with validation states, full state serialised to the URL (shareable quote), print-friendly quote summary view, keyboard-operable sliders with number-input twins. Stack: React + TypeScript, zero charting libs — CSS bars. Links to a new case study slug ledgerline-pricing-page-rebuild.",
    "keywords": [],
-   "status": "planned",
+   "status": "claimed",
    "added_by": "builder",
-   "worker": null,
-   "claimed_at": 1790388593.6638389
+   "worker": "demo3",
+   "claimed_at": 1790404866.671455
   },
   {
    "kind": "demo",
@@ -6333,10 +6333,11 @@
    "cluster": "demos",
    "intent": "A mobile-first community-bank app for Copperline Mutual: account carousel (everyday/savings/pots), transaction list with search and category filters, 'pay anyone' flow with contact avatars, drag-to-allocate into savings pots with animated balances, and a statements export sheet. Art direction: midnight-fern ink, mint accents, cream cards, rounded tab-bar bottom nav, friendly serif numerals. Fake data with realistic merchant names; respects reduced motion; thumb-reach ergonomics at 375px. Ties to case study copperline-community-bank.",
    "keywords": [],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "demo2",
-   "claimed_at": 1790396584.8846688
+   "claimed_at": 1790396584.8846688,
+   "done_at": "2026-09-26T16:45:11"
   },
   {
    "kind": "demo",
