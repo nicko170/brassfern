@@ -6288,8 +6288,10 @@
    "cluster": "demos",
    "intent": "A mobile-first community-bank app for Copperline Mutual: account carousel (everyday/savings/pots), transaction list with search and category filters, 'pay anyone' flow with contact avatars, drag-to-allocate into savings pots with animated balances, and a statements export sheet. Art direction: midnight-fern ink, mint accents, cream cards, rounded tab-bar bottom nav, friendly serif numerals. Fake data with realistic merchant names; respects reduced motion; thumb-reach ergonomics at 375px. Ties to case study copperline-community-bank.",
    "keywords": [],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "demo2",
+   "claimed_at": 1790396584.8846688
   },
   {
    "kind": "demo",
