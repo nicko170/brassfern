@@ -47,11 +47,14 @@
   `scripts/audit-links.mjs`**: every root-relative markdown link must resolve
   to a real route (articles, case studies, services, industries, team, jobs,
   tags, demos) or the build fails. Run it standalone before finishing content.
-- Markdown renderer is custom (`src/lib/markdown.ts`): headings, lists, quotes,
-  code fences, tables, links, images. Internal links are base-prefixed
-  automatically — write them as root-relative (`/services/growth`), never absolute.
-- Article pages lazy-load their body chunk; prerender preloads bodies
-  (`src/lib/preload.ts`) so static HTML has full content.
+- Markdown renderer is custom (`src/lib/markdown.ts`): headings (ids for
+  TOC/deep-linking), lists, quotes, code fences, tables, links, images.
+  Internal links are base-prefixed automatically — write them as root-relative
+  (`/services/growth`), never absolute.
+- Article pages load bodies via the `useBody()` hook (`src/lib/useBody.ts`);
+  `Markdown` takes the preloaded `html` prop so pages can hand the same HTML
+  to `parseToc()` for the sticky TOC. Prerender preloads bodies
+  (`src/lib/preload.ts`) so static HTML always carries full content.
 - 3–6 internal links per article. Journal: 1,100–2,200 words + "Key takeaways" +
   FAQ. Case studies: 900+ words, Challenge/Approach/Outcome.
 

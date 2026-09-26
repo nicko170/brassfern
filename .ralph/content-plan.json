@@ -5869,10 +5869,11 @@
     "navigation design",
     "web design craft"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790392932.156121
+   "claimed_at": 1790392932.156121,
+   "done_at": "2026-09-26T14:43:01"
   },
   {
    "kind": "article",
@@ -6300,8 +6301,10 @@
    "cluster": "demos",
    "intent": "A build-your-own charcuterie/providore box for Tallow & Co.: pick a box size, fill slots from a pantry grid (cheeses, smallgoods, preserves, crackers) with a live box-fill visual and price tally, 'curator's choice' autofill per theme (picnic, fireside, celebration), gift-note composer and delivery-date picker with honest cutoffs. Art direction: butcher-paper kraft, deep green ink, wax-seal red accents, engraved-woodcut illustration style via CSS/SVG textures. Cart persists; reduced-motion swaps swells for fades. Ties to case study tallow-and-co-providore.",
    "keywords": [],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "demo3",
+   "claimed_at": 1790397150.7033448
   },
   {
    "kind": "article",
@@ -8019,6 +8022,406 @@
     "AI answers UX",
     "docs search AI",
     "findability design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "theme-persistence-fouc",
+   "title": "Theme persistence without the flash",
+   "cluster": "engineering",
+   "intent": "Theme persistence without FOUC: storing colour-scheme and density preferences, inline boot scripts vs cookies, server-rendering the right class, system-preference reconciliation, and testing theme regressions.",
+   "keywords": [
+    "dark mode persistence",
+    "FOUC prevention",
+    "theme engineering",
+    "localStorage boot script",
+    "SSR theming"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "offline-mutation-queues",
+   "title": "Queuing writes for a flaky world",
+   "cluster": "engineering",
+   "intent": "Offline mutation queues: capturing writes with no connectivity, optimistic local state, conflict surfacing on sync, idempotency keys, and which parts of a product genuinely need offline writes.",
+   "keywords": [
+    "offline mutations",
+    "sync queue engineering",
+    "offline-first UX",
+    "idempotency",
+    "local-first engineering"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "syntax-highlighting-static-sites",
+   "title": "Syntax highlighting with zero runtime",
+   "cluster": "engineering",
+   "intent": "Zero-JS syntax highlighting for static sites: build-time tokenisation, language support economics, themeable colour tokens for code, copy buttons that stay accessible, and escaping pitfalls.",
+   "keywords": [
+    "syntax highlighting static",
+    "code blocks web",
+    "build-time rendering",
+    "technical blog engineering",
+    "developer docs design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "static-search-indexing",
+   "title": "A search index built at build time",
+   "cluster": "engineering",
+   "intent": "Building a static site search index at build time: tokenisation choices, index size budgets, stemming and synonyms, shipping the index in shards, and measuring whether search quality improves.",
+   "keywords": [
+    "static site search",
+    "search index build",
+    "client-side search engineering",
+    "search performance",
+    "content search"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ab-testing-without-layout-shift",
+   "title": "Experiments that don't shift the layout",
+   "cluster": "engineering",
+   "intent": "A/B testing without layout shift: server-side variant assignment, experiment flags that don't leak into the DOM, metric integrity, and the honest performance cost of client-side testing tools.",
+   "keywords": [
+    "AB testing engineering",
+    "layout shift",
+    "experimentation infrastructure",
+    "server-side testing",
+    "CWV experiments"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "design-token-versioning",
+   "title": "Design tokens are an API — version them",
+   "cluster": "engineering",
+   "intent": "Versioning design tokens like an API: semantic versioning for token contracts, codemods for breaking renames, migration windows, and communicating token deprecations across squads.",
+   "keywords": [
+    "design token versioning",
+    "design ops",
+    "token API",
+    "breaking changes design system",
+    "design engineering"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "custom-markdown-pipelines",
+   "title": "Rolling your own markdown pipeline",
+   "cluster": "engineering",
+   "intent": "Rolling a custom markdown/content pipeline: when off-the-shelf MDX isn't worth it, deterministic rendering, frontmatter validation at build time, link auditing of prose, and keeping the format under your own control.",
+   "keywords": [
+    "markdown pipeline",
+    "custom markdown renderer",
+    "content validation",
+    "static site content",
+    "build tooling"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "html-email-2026",
+   "title": "HTML emails: engineering for a hostile medium",
+   "cluster": "engineering",
+   "intent": "HTML email engineering in 2026: table layouts without despair, dark-mode email support reality, bulletproof buttons, image blocking fallbacks, and testing matrices that fit a small team.",
+   "keywords": [
+    "HTML email engineering",
+    "email dark mode",
+    "email client testing",
+    "transactional email design",
+    "email development"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "findable-by-ctrl-f",
+   "title": "Keep your pages findable by Ctrl-F",
+   "cluster": "engineering",
+   "intent": "Being findable by Ctrl-F: why virtualisation breaks in-page search, content-visibility and browser find, rendering long lists with find intact (until-found), and when a custom find box is justified.",
+   "keywords": [
+    "in-page search accessibility",
+    "content-visibility hidden until-found",
+    "long list rendering",
+    "browser find UX",
+    "front-end accessibility"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "scroll-driven-animations-production",
+   "title": "CSS scroll-driven animations, production-graded",
+   "cluster": "engineering",
+   "intent": "CSS scroll-driven animations in real projects: spec maturity and fallbacks, what scroll-linked motion is good for, the reduced-motion contract, and measuring the jank budget.",
+   "keywords": [
+    "scroll-driven animations",
+    "CSS animation spec",
+    "scroll-linked motion",
+    "web animation performance",
+    "progressive enhancement"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "timezone-testing-discipline",
+   "title": "Time zones: the tests you forgot to run",
+   "cluster": "engineering",
+   "intent": "Time zones as a test discipline: the bugs that only exist in Auckland in April, device-time simulation, relative-time formatting traps, date-picker testing, and a time-zones checklist for QA.",
+   "keywords": [
+    "timezone bugs",
+    "date testing QA",
+    "relative time formatting",
+    "date picker engineering",
+    "internationalisation testing"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "fictional-data-fixtures",
+   "title": "Fake data that feels real",
+   "cluster": "engineering",
+   "intent": "Engineering realistic fake data for demos and development: seeded generators, distributions that look like life, locale-appropriate fixtures, resettable state, and why lorem ipsum erodes demo credibility.",
+   "keywords": [
+    "fake data fixtures",
+    "seeded generators",
+    "demo data engineering",
+    "development fixtures",
+    "prototype data"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "sandbox-demo-data-design",
+   "title": "Sandboxes that convert: demo data done right",
+   "cluster": "product",
+   "intent": "Sandbox and demo-data environments: a playground that converts (pre-filled sample data with an obvious reset, sandbox vs trial taxonomy, when sample data teaches better than onboarding, and the swap-to-real moment).",
+   "keywords": [
+    "product sandbox UX",
+    "demo data design",
+    "trial onboarding",
+    "sample data UX",
+    "product activation"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "spreadsheet-migration-onboarding",
+   "title": "The spreadsheet migration is the real onboarding",
+   "cluster": "product",
+   "intent": "Spreadsheet-to-app migrations as onboarding: parsing messy real-world CSVs, column mapping UX, dry-run imports with undo, echoing validation errors back inline, and the first-week trust dividend of a clean import.",
+   "keywords": [
+    "CSV import UX",
+    "data migration onboarding",
+    "spreadsheet import design",
+    "import validation UX",
+    "product onboarding"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "contextual-help-point-of-need",
+   "title": "Help at the point of need",
+   "cluster": "product",
+   "intent": "Contextual help at the point of need: inline hints vs help centres, when a tooltip is a failure of design, searchable help inside the flow, and measuring deflection without trapping users.",
+   "keywords": [
+    "contextual help UX",
+    "inline help design",
+    "tooltip UX",
+    "in-app documentation",
+    "support deflection"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "shortcut-discoverability",
+   "title": "Keyboard shortcuts nobody finds",
+   "cluster": "product",
+   "intent": "Keyboard shortcut discoverability: legends and cheat sheets users actually find, teaching shortcuts in context, remapping UI, and the trap of shortcuts nobody knows exist.",
+   "keywords": [
+    "keyboard shortcuts UX",
+    "shortcut discoverability",
+    "power user features",
+    "pro shortcut UI",
+    "keyboard help design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "bottom-sheets-mobile-web",
+   "title": "Bottom sheets that don't fight the user",
+   "cluster": "product",
+   "intent": "Bottom sheets on mobile web: when they beat modals, drag affordances and scrim honesty, keyboard and screen-reader behaviour, height snap logic, and the overlay patterns that fight back.",
+   "keywords": [
+    "bottom sheet UX",
+    "mobile modal design",
+    "mobile interaction patterns",
+    "overlay UX mobile",
+    "touch gestures design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "in-product-announcements-centre",
+   "title": "Announcements inside the product, minus the noise",
+   "cluster": "product",
+   "intent": "In-product announcements without banner blindness: an announcements centre pattern, targeting by behaviour not blast radius, changelog vs announcement boundaries, and expiry rules for release notes.",
+   "keywords": [
+    "in-app announcements",
+    "product changelog UX",
+    "feature announcements",
+    "banner blindness",
+    "release notes UX"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "multi-window-state-consistency",
+   "title": "Two tabs, one truth: state across windows",
+   "cluster": "product",
+   "intent": "Multi-window and multi-tab state consistency: storage events, optimistic locks, last-write-wins disclosure, and the baffling UX of two tabs disagreeing about the same record.",
+   "keywords": [
+    "multi-tab state sync",
+    "storage events",
+    "UI consistency",
+    "tabs in sync UX",
+    "product engineering UX"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "device-handoff-flows",
+   "title": "Continue on your phone: handoff UX",
+   "cluster": "product",
+   "intent": "Session and device handoff: continue-on-another-device flows, magic links vs QR codes, delayed-resume UX after context switches, and the email-yourself-a-link pattern done securely.",
+   "keywords": [
+    "device handoff UX",
+    "cross-device flows",
+    "magic link UX",
+    "session continuity",
+    "mobile web flows"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "embeddable-widget-ux",
+   "title": "Designing the embed: widgets that travel",
+   "cluster": "product",
+   "intent": "Embeddable widgets and citations: designing the embed your users share, attribution that markets you honestly, performance budgets for third-party surfaces, and the sandbox preview flow.",
+   "keywords": [
+    "embeddable widget UX",
+    "embed design",
+    "widget attribution",
+    "third-party embeds",
+    "product share surfaces"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "public-roadmaps-honest",
+   "title": "Public roadmaps without the promissory notes",
+   "cluster": "product",
+   "intent": "Public roadmaps as a trust feature: commitment honesty (now/next/later), voting vs signal quality, the maintenance burden of published roadmaps, and what to say when plans slip.",
+   "keywords": [
+    "public roadmap UX",
+    "product transparency",
+    "roadmap communication",
+    "feature voting pitfalls",
+    "trust design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "beta-labels-expectations",
+   "title": "What the beta label promises",
+   "cluster": "product",
+   "intent": "Beta labels and preview flags: what beta actually promises, graduation criteria into GA, opt-in multiplier effects (self-selecting early users), and when perpetual beta erodes trust.",
+   "keywords": [
+    "beta feature UX",
+    "feature flags users",
+    "GA graduation",
+    "early access design",
+    "feature lifecycle"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "support-impersonation-trust",
+   "title": "View-as flows that customers trust",
+   "cluster": "product",
+   "intent": "Support impersonation and view-as flows: designing permissions with explicit consent, audit trails the customer can read, time-boxed access, and the trust work of showing what support can see.",
+   "keywords": [
+    "impersonation UX",
+    "support access design",
+    "view-as user flow",
+    "permissions audit UX",
+    "trust and safety UX"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "accessibility-overlays-fail",
+   "title": "Overlay widgets won't make you accessible",
+   "cluster": "product",
+   "intent": "Why accessibility overlay widgets fail: the overlay industry's promises vs measured outcomes, what overlays can never fix, how to audit a vendor claim, and putting the budget into the product instead.",
+   "keywords": [
+    "accessibility overlays critique",
+    "accessiBe alternatives",
+    "WCAG product strategy",
+    "a11y investment",
+    "overlay widgets fail"
    ],
    "status": "planned",
    "added_by": "builder"

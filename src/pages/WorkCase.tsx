@@ -1,3 +1,4 @@
+import { useMemo } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { Seo } from '../lib/head'
 import { formatDate, getCase, relatedCases } from '../lib/content'
@@ -8,7 +9,11 @@ import { testimonials } from '../data/clients'
 import { squadFor } from '../lib/squad'
 import { workImages } from '../generated/content'
 import { absoluteUrl, withBase } from '../lib/base'
+import { useBody } from '../lib/useBody'
+import { parseToc } from '../lib/toc'
 import Markdown from '../components/Markdown'
+import Toc from '../components/Toc'
+import ReadingProgress from '../components/ReadingProgress'
 import Portrait from '../components/Portrait'
 import { WorkCard } from '../components/Cards'
 import Reveal from '../components/Reveal'
@@ -17,12 +22,15 @@ import NotFound from './NotFound'
 export default function WorkCase() {
   const { slug } = useParams()
   const cs = slug ? getCase(slug) : undefined
+  const html = useBody('work', slug ?? '')
+  const tocItems = useMemo(() => (html ? parseToc(html) : []), [html])
   if (!cs) return <NotFound />
   const demo = cs.demo ? getDemo(cs.demo) : undefined
   const related = relatedCases(cs)
   const quote = testimonials.find((t) => t.caseStudy === cs.slug)
   const squad = squadFor(cs)
   const demoImg = demo && workImages.includes(demo.slug) ? `/images/work/${demo.slug}.jpg` : undefined
+  const showToc = tocItems.filter((t) => t.level === 2).length >= 3
 
   return (
     <>
@@ -41,6 +49,7 @@ export default function WorkCase() {
           ]),
         ]}
       />
+      <ReadingProgress />
       <article>
         <header className="article-head container">
           <Reveal className="overline">Case study — {cs.client}</Reveal>
@@ -94,7 +103,18 @@ export default function WorkCase() {
         )}
 
         <div className="container section--tight" style={{ marginTop: 'var(--space-5)' }}>
-          <Markdown kind="work" slug={cs.slug} />
+          {showToc ? (
+            <div className="article-layout">
+              <div className="article-layout__main">
+                <Markdown html={html} />
+              </div>
+              <aside className="article-layout__aside">
+                <Toc items={tocItems} />
+              </aside>
+            </div>
+          ) : (
+            <Markdown html={html} />
+          )}
         </div>
 
         {quote && (

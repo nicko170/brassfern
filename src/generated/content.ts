@@ -118,6 +118,28 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 12
   },
   {
+    "title": "Disclosure patterns: telling users when a machine is speaking",
+    "description": "AI disclosure that survives legal review and user testing: label placement, export watermarking, model transparency, and wording that informs, not alarms.",
+    "slug": "ai-disclosure-patterns",
+    "cluster": "ai",
+    "tags": [
+      "ai ux",
+      "transparency",
+      "responsible ai",
+      "trust",
+      "content design"
+    ],
+    "date": "2026-08-14",
+    "author": "Dev Khatri",
+    "keywords": [
+      "ai disclosure patterns",
+      "ai transparency ux",
+      "generated content labels",
+      "responsible ai design"
+    ],
+    "readingTime": 10
+  },
+  {
     "title": "Analytics for AI features: what to measure",
     "description": "Chat volume tells you nothing. The instrumentation stack we use for AI features: acceptance, correction signals, task completion, cost-quality overlays, weekly review.",
     "slug": "ai-feature-analytics",
@@ -140,6 +162,72 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 10
   },
   {
+    "title": "Every AI feature needs a kill switch",
+    "description": "Config-driven disable paths, graceful degradation, incident comms for model-caused bugs, provider outage posture, and the quarterly drill where you flip the switch.",
+    "slug": "ai-feature-kill-switch",
+    "cluster": "ai",
+    "tags": [
+      "Operations",
+      "Reliability",
+      "Feature flags"
+    ],
+    "date": "2026-09-18",
+    "author": "Felix Brandt",
+    "keywords": [
+      "ai feature kill switch",
+      "llm incident response",
+      "ai feature flags",
+      "model outage",
+      "graceful degradation"
+    ],
+    "readingTime": 11
+  },
+  {
+    "title": "Pricing AI features: cost curves, credits and honest limits",
+    "description": "How to price LLM features without burning margin: cost per action as a unit-economics input, credits vs guardrailed unlimited, fair-use caps, tiering and drift.",
+    "slug": "ai-feature-pricing",
+    "cluster": "ai",
+    "tags": [
+      "ai pricing",
+      "unit economics",
+      "saas pricing",
+      "credits",
+      "margin"
+    ],
+    "date": "2026-08-04",
+    "author": "Priya Nair",
+    "keywords": [
+      "ai feature pricing",
+      "llm cost per user",
+      "ai saas pricing models",
+      "ai credits pricing",
+      "unit economics ai features"
+    ],
+    "readingTime": 13
+  },
+  {
+    "title": "LLMs in the design process: acceleration with a seatbelt",
+    "description": "How we use LLMs in the studio: synthetic drafts, copy pressure-testing, edge-case generation — and the verification rules that keep AI-assisted design honest.",
+    "slug": "ai-in-design-process",
+    "cluster": "ai",
+    "tags": [
+      "ai",
+      "design process",
+      "prototyping",
+      "research",
+      "workflow"
+    ],
+    "date": "2026-09-02",
+    "author": "June Okafor",
+    "keywords": [
+      "llm design process",
+      "ai prototyping workflow",
+      "synthetic user research limits",
+      "ai-assisted ux design"
+    ],
+    "readingTime": 10
+  },
+  {
     "title": "Personalisation vs privacy: drawing the line deliberately",
     "description": "Draw the personalisation privacy line before legal does: on-device and anonymous patterns, explainable personalisation, and consent UX that actually means something.",
     "slug": "ai-personalisation-privacy-lines",
@@ -158,6 +246,50 @@ export const articleIndex: ArticleMeta[] = [
       "privacy by design ai",
       "consent ux ai",
       "personalisation ethics"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "Prototyping with AI: where it speeds design and where it rots it",
+    "description": "Field notes on AI-assisted prototyping: real speed in code exploration, hallucinated-component traps, prompt libraries for layout, and a provenance rule for files.",
+    "slug": "ai-prototyping-workflows",
+    "cluster": "ai",
+    "tags": [
+      "prototyping",
+      "ai tooling",
+      "design engineering",
+      "design process",
+      "workflow"
+    ],
+    "date": "2026-08-27",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "ai design tools",
+      "ai prototyping workflow",
+      "vibe coding design",
+      "ai generated ui",
+      "design engineering ai"
+    ],
+    "readingTime": 12
+  },
+  {
+    "title": "AI triage for support: routing, not deflecting",
+    "description": "AI support triage should route customers, not wall them off. Intent detection that errs toward humans, handoff packages, and the deflection metric trap.",
+    "slug": "ai-support-triage-routing",
+    "cluster": "ai",
+    "tags": [
+      "Support",
+      "Agent UX",
+      "Trust"
+    ],
+    "date": "2026-08-05",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "ai customer support",
+      "support triage ai",
+      "human handoff chatbot",
+      "support automation ux",
+      "deflection rate metric"
     ],
     "readingTime": 10
   },
@@ -254,6 +386,28 @@ export const articleIndex: ArticleMeta[] = [
     "heroAlt": "A stack of fern-green and cream index cards with brass clips and numbered tabs, beside a brass loupe resting on ruled paper with a pressed fern frond."
   },
   {
+    "title": "Citation design: making RAG answers checkable",
+    "description": "Citations only work if they're checkable: claim-to-chunk mapping, snippet fidelity tests, anchor UX, and what to do when the source contradicts the summary.",
+    "slug": "citation-ux-rag",
+    "cluster": "ai",
+    "tags": [
+      "ai ux",
+      "citations",
+      "rag",
+      "retrieval",
+      "verification"
+    ],
+    "date": "2026-07-22",
+    "author": "Felix Brandt",
+    "keywords": [
+      "citation ux",
+      "rag interface design",
+      "source grounding ux",
+      "ai answer verification"
+    ],
+    "readingTime": 11
+  },
+  {
     "title": "Shipping 'sometimes wrong': communicating AI features",
     "description": "Launch copy for features that are sometimes wrong: setting accuracy expectations, changelog phrasing, support macros, and the trust maths of underpromising deliberately.",
     "slug": "communicating-probabilistic-features",
@@ -274,6 +428,27 @@ export const articleIndex: ArticleMeta[] = [
       "probabilistic ux copy"
     ],
     "readingTime": 10
+  },
+  {
+    "title": "Evals-first development: the build order that actually works",
+    "description": "Write the golden set before the prompt, version prompts like code, and gate merges on eval scores. The workflow that makes LLM features shippable.",
+    "slug": "evals-first-development",
+    "cluster": "ai",
+    "tags": [
+      "Evals",
+      "Workflow",
+      "AI engineering"
+    ],
+    "date": "2026-06-12",
+    "author": "Dev Khatri",
+    "keywords": [
+      "eval-driven development",
+      "llm evals workflow",
+      "ai product workflow",
+      "prompt versioning",
+      "eval first development"
+    ],
+    "readingTime": 11
   },
   {
     "title": "Evals are the new unit tests: a practical guide for product teams",
@@ -483,6 +658,28 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 9
   },
   {
+    "title": "The prompt box is your whole interface — design it like one",
+    "description": "An empty prompt box teaches nothing. Placeholder pedagogy, suggestion chips, command discovery and attachment UX that make AI assistants learnable.",
+    "slug": "prompt-box-as-interface",
+    "cluster": "ai",
+    "tags": [
+      "ai ux",
+      "prompt design",
+      "chat interface",
+      "onboarding",
+      "input design"
+    ],
+    "date": "2026-06-30",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "prompt input design",
+      "ai chat ux",
+      "suggestion chips",
+      "empty prompt box problem"
+    ],
+    "readingTime": 10
+  },
+  {
     "title": "Prompt libraries are a design system too",
     "description": "Prompts scattered through a codebase rot like untracked CSS. How we build prompt libraries: structure, versioning, test coverage, and a shared vocabulary.",
     "slug": "prompt-design-systems",
@@ -503,6 +700,53 @@ export const articleIndex: ArticleMeta[] = [
       "system prompts design",
       "prompt testing",
       "ai design systems"
+    ],
+    "readingTime": 12
+  },
+  {
+    "title": "Prompt injection: the threat model your LLM feature needs",
+    "description": "A defensive playbook for shipped LLM features: untrusted-content labelling, tool privilege separation, output screening, canary tokens and red-team CI.",
+    "slug": "prompt-injection-defence",
+    "cluster": "ai",
+    "tags": [
+      "llm security",
+      "prompt injection",
+      "threat modelling",
+      "red teaming",
+      "ai engineering"
+    ],
+    "date": "2026-09-11",
+    "author": "Felix Brandt",
+    "keywords": [
+      "prompt injection",
+      "LLM security",
+      "AI red teaming",
+      "LLM threat model",
+      "indirect prompt injection",
+      "LLM output filtering"
+    ],
+    "readingTime": 13,
+    "heroImage": "/images/articles/ai/prompt-injection-defence.jpg",
+    "heroAlt": "A fern sprig protected inside a glass dome on a brass stand, with dark paper fragments curling toward the glass and a brass padlock beside it — untrusted instructions kept outside."
+  },
+  {
+    "title": "Chunking is a design decision: RAG retrieval craft",
+    "description": "Chunk sizing, structure-aware splitting, metadata, hybrid retrieval and reranking — the retrieval engineering that decides whether your RAG feature answers or shrugs.",
+    "slug": "rag-chunking-design",
+    "cluster": "ai",
+    "tags": [
+      "RAG",
+      "Retrieval",
+      "AI architecture"
+    ],
+    "date": "2026-07-08",
+    "author": "Dev Khatri",
+    "keywords": [
+      "rag chunking",
+      "retrieval design",
+      "vector search ux",
+      "rag architecture",
+      "hybrid retrieval"
     ],
     "readingTime": 12
   },
@@ -644,6 +888,29 @@ export const articleIndex: ArticleMeta[] = [
       "ai generated ui"
     ],
     "readingTime": 11
+  },
+  {
+    "title": "When to build a voice interface (and when a form wins)",
+    "description": "A decision framework for voice UI: where speech beats typing, turn-taking and latency design, barge-in patterns, transcription honesty, and voice privacy.",
+    "slug": "voice-interface-when",
+    "cluster": "ai",
+    "tags": [
+      "voice interfaces",
+      "multimodal ux",
+      "conversation design",
+      "accessibility",
+      "ai product design"
+    ],
+    "date": "2026-07-14",
+    "author": "Dev Khatri",
+    "keywords": [
+      "voice interface design",
+      "voice ui ux",
+      "speech interface product",
+      "voice assistant design patterns",
+      "audio input ux"
+    ],
+    "readingTime": 12
   },
   {
     "title": "Brand photography without the five-figure shoot",
@@ -1373,6 +1640,29 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 9
   },
   {
+    "title": "Bundles and kits: designing the build-your-own moment",
+    "description": "The bundle builder as interface design: shelf metaphors, fill visuals, flat pricing, coupled inventory — and when a kit makes the product disappear.",
+    "slug": "bundles-and-kits-design",
+    "cluster": "ecommerce",
+    "tags": [
+      "ecommerce",
+      "merchandising",
+      "interaction design",
+      "bundles",
+      "ux patterns"
+    ],
+    "date": "2026-02-10",
+    "author": "June Okafor",
+    "keywords": [
+      "product bundles",
+      "bundle builder",
+      "ecommerce AOV",
+      "kit design",
+      "build your own box UX"
+    ],
+    "readingTime": 9
+  },
+  {
     "title": "Bundles and kits: merchandising beyond the single SKU",
     "description": "Bundles and kits done properly: curated vs build-your-own, pricing psychology, inventory implications, PDP architecture, and subscription bundle design.",
     "slug": "bundles-kits-merchandising",
@@ -1416,6 +1706,29 @@ export const articleIndex: ArticleMeta[] = [
       "mobile cart ux"
     ],
     "readingTime": 10
+  },
+  {
+    "title": "Cart drawer or cart page? Stop guessing",
+    "description": "The drawer-vs-page argument is a measurement problem, not a taste debate. The decision framework, drawer anatomy, cross-sell discipline and what to track.",
+    "slug": "cart-drawer-vs-cart-page",
+    "cluster": "ecommerce",
+    "tags": [
+      "cart design",
+      "ecommerce ux",
+      "cro",
+      "interaction design",
+      "mobile commerce"
+    ],
+    "date": "2026-01-15",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "cart drawer",
+      "cart page design",
+      "ecommerce UX",
+      "average order value",
+      "cart abandonment"
+    ],
+    "readingTime": 9
   },
   {
     "title": "The checkout friction audit: 40 checks, one afternoon",
@@ -1510,6 +1823,52 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 8
   },
   {
+    "title": "Site search: the highest-intent feature most stores neglect",
+    "description": "On-site search users convert at multiples of browsers, yet most stores never open their search logs. The analytics loop, merchandising rules and KPIs that fix it.",
+    "slug": "ecommerce-site-search",
+    "cluster": "ecommerce",
+    "tags": [
+      "site search",
+      "search analytics",
+      "merchandising",
+      "ecommerce ux",
+      "catalogue"
+    ],
+    "date": "2026-08-12",
+    "author": "Nate Sullivan",
+    "keywords": [
+      "ecommerce site search",
+      "search analytics",
+      "search merchandising",
+      "zero results queries",
+      "autocomplete UX"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "Express wallets: faster checkout, if you place them right",
+    "description": "Apple Pay and Google Pay can be your best-converting payment method or an ignored button. Placement, address capture and measuring the real effect.",
+    "slug": "express-wallets-checkout",
+    "cluster": "ecommerce",
+    "tags": [
+      "express checkout",
+      "apple pay",
+      "checkout ux",
+      "payments",
+      "mobile commerce"
+    ],
+    "date": "2026-05-06",
+    "author": "Nate Sullivan",
+    "keywords": [
+      "Apple Pay checkout",
+      "express checkout",
+      "Google Pay UX",
+      "wallet payments",
+      "mobile checkout conversion"
+    ],
+    "readingTime": 9
+  },
+  {
     "title": "Designing for the gift buyer, not just the fan",
     "description": "Gift buyers are a different user with different anxieties. Gift finders, delivery-date honesty, card messages and the Q4 checklist — designing the gifting journey properly.",
     "slug": "gift-buying-ux",
@@ -1533,6 +1892,29 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 11,
     "heroImage": "/images/articles/ecommerce/gift-buying-ux.jpg",
     "heroAlt": "Kraft-paper gift parcels tied with brass twine and a fern sprig on a cream studio backdrop — the gift buyer's journey, wrapped."
+  },
+  {
+    "title": "Gift flows: the seasonal feature that deserves year-round craft",
+    "description": "Gifting is a revenue line with a calendar. Multi-address checkout, date-promise logic, gift-card UX, the recipient experience, and a peak-season runbook.",
+    "slug": "gift-commerce-flows",
+    "cluster": "ecommerce",
+    "tags": [
+      "gifting",
+      "ecommerce ux",
+      "peak season",
+      "checkout",
+      "operations"
+    ],
+    "date": "2025-10-09",
+    "author": "Ruby Castellanos",
+    "keywords": [
+      "gift shopping UX",
+      "ecommerce gifting",
+      "gift cards",
+      "holiday ecommerce",
+      "multi-address checkout"
+    ],
+    "readingTime": 9
   },
   {
     "title": "Headless commerce: the honest trade-offs",
@@ -1580,6 +1962,52 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 12
   },
   {
+    "title": "Honest inventory: stock states without the fake-scarcity slime",
+    "description": "Stock states designed honestly: real low-stock signals, backorders with dates, preorders without traps, and inventory messaging that builds trust.",
+    "slug": "honest-inventory-ux",
+    "cluster": "ecommerce",
+    "tags": [
+      "ecommerce",
+      "inventory",
+      "merchandising",
+      "pdp",
+      "design ethics"
+    ],
+    "date": "2025-10-02",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "inventory UX",
+      "backorder design",
+      "stock scarcity",
+      "preorder UX",
+      "out of stock messaging"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Scarcity and urgency, without lying about stock",
+    "description": "When 'low stock' messaging is service and when it's manipulation — inventory-synced badges, countdown-timer ethics, and urgency copy that survives an ACCC sniff test.",
+    "slug": "inventory-scarcity-honesty",
+    "cluster": "ecommerce",
+    "tags": [
+      "scarcity",
+      "urgency",
+      "dark patterns",
+      "ecommerce ux",
+      "ethics"
+    ],
+    "date": "2026-01-22",
+    "author": "Nate Sullivan",
+    "keywords": [
+      "scarcity marketing ethics",
+      "urgency design ecommerce",
+      "low stock badge ux",
+      "dark patterns ecommerce",
+      "accc ecommerce"
+    ],
+    "readingTime": 12
+  },
+  {
     "title": "Loyalty programs people don't resent",
     "description": "Most loyalty programs are bribery with a spreadsheet. Designing points worth earning, tiers without manipulation, and proof the program changes behaviour.",
     "slug": "loyalty-program-design",
@@ -1600,6 +2028,52 @@ export const articleIndex: ArticleMeta[] = [
       "customer retention design"
     ],
     "readingTime": 8
+  },
+  {
+    "title": "Loyalty programs that don't treat customers like lab rats",
+    "description": "The line between a loyalty program and a manipulation engine is design, not intent. An audit of the dark patterns, plus the honest maths that make one worth it.",
+    "slug": "loyalty-without-dark-patterns",
+    "cluster": "ecommerce",
+    "tags": [
+      "loyalty programs",
+      "dark patterns",
+      "retention",
+      "customer trust",
+      "ecommerce ethics"
+    ],
+    "date": "2026-06-24",
+    "author": "Sam Whitfield",
+    "keywords": [
+      "loyalty program design",
+      "loyalty dark patterns",
+      "retention ecommerce",
+      "points programs",
+      "customer loyalty UX"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "Marketplace or your own storefront? The honest scorecard",
+    "description": "A weighted scorecard for the marketplace-vs-storefront decision: margin, data, brand surface, discovery, ops load — and the hybrid plays that follow.",
+    "slug": "marketplace-vs-own-storefront",
+    "cluster": "ecommerce",
+    "tags": [
+      "ecommerce",
+      "strategy",
+      "marketplaces",
+      "dtc",
+      "channel strategy"
+    ],
+    "date": "2025-08-14",
+    "author": "Priya Nair",
+    "keywords": [
+      "marketplace strategy",
+      "DTC vs marketplace",
+      "ecommerce channels",
+      "brand control",
+      "channel decision framework"
+    ],
+    "readingTime": 9
   },
   {
     "title": "Marketplace or your own store? Run the real numbers",
@@ -1647,6 +2121,31 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 10
   },
   {
+    "title": "Payments and trust at the AU/NZ checkout",
+    "description": "Cards, Afterpay, Zip, PayPal and Apple Pay — how to order payment methods, price the fees honestly, and earn trust without clip-art badges at the AU/NZ checkout.",
+    "slug": "payment-trust-signals-au",
+    "cluster": "ecommerce",
+    "tags": [
+      "payments",
+      "checkout",
+      "ecommerce ux",
+      "trust",
+      "australia"
+    ],
+    "date": "2025-08-14",
+    "author": "Nate Sullivan",
+    "keywords": [
+      "payment methods ux",
+      "afterpay checkout",
+      "checkout trust signals",
+      "australian ecommerce payments",
+      "apple pay ecommerce"
+    ],
+    "readingTime": 12,
+    "heroImage": "/images/articles/ecommerce/payment-trust-signals-au.jpg",
+    "heroAlt": "Flat-lay on warm paper: a plain bank card in a small brass stand, brass coins, a curled blank receipt, a pressed fern sprig and a machined-brass switch."
+  },
+  {
     "title": "PDP design: the page that pays for everything",
     "description": "Product detail page anatomy for conversion: image sequence logic, buy-box hierarchy, review integration, delivery honesty, and mobile-thumb ergonomics that matter.",
     "slug": "pdp-design-conversion",
@@ -1671,6 +2170,78 @@ export const articleIndex: ArticleMeta[] = [
     "heroAlt": "A matte stoneware vessel arranged on cream paper with a brass ruler and paper swatches — a product presented with editorial care."
   },
   {
+    "title": "PDP galleries: the eight-image sequence that answers every doubt",
+    "description": "The gallery is the busiest component on your store. Sequencing by doubt, zoom mechanics that don't fight the customer, video restraint, and perf budgets.",
+    "slug": "pdp-galleries-that-sell",
+    "cluster": "ecommerce",
+    "tags": [
+      "pdp",
+      "image gallery",
+      "ecommerce ux",
+      "interaction design",
+      "conversion"
+    ],
+    "date": "2025-11-04",
+    "author": "Nate Sullivan",
+    "keywords": [
+      "product page images",
+      "PDP gallery",
+      "ecommerce photography",
+      "product zoom UX"
+    ],
+    "readingTime": 9,
+    "heroImage": "/images/articles/ecommerce/pdp-galleries-that-sell.jpg",
+    "heroAlt": "A cream studio flat-lay of a stoneware coffee set shot from eight angles, contact-sheet style, with brass cropping marks — a product gallery planned, not snapped."
+  },
+  {
+    "title": "Preorders and backorders: UX for not-in-stock",
+    "description": "Preorders and backorders without burning trust: dates as promises, deposit patterns, honest expectation-setting, split shipments, and copy that keeps inboxes quiet.",
+    "slug": "preorder-backorder-ux",
+    "cluster": "ecommerce",
+    "tags": [
+      "preorders",
+      "backorders",
+      "ecommerce ux",
+      "fulfilment",
+      "trust"
+    ],
+    "date": "2025-10-02",
+    "author": "Nate Sullivan",
+    "keywords": [
+      "preorder ux",
+      "backorder design",
+      "out of stock ux",
+      "ecommerce fulfilment communication",
+      "deposit payments ux"
+    ],
+    "readingTime": 12
+  },
+  {
+    "title": "Pre-orders are a trust exercise, not a checkout variant",
+    "description": "Pre-orders and crowdfund launches fail on expectation design, not payment plumbing. Charge timing, delay scripts and the trust ledger that carries a launch.",
+    "slug": "preorder-flows-trust",
+    "cluster": "ecommerce",
+    "tags": [
+      "preorder ux",
+      "product launch",
+      "crowdfunding",
+      "customer trust",
+      "ecommerce"
+    ],
+    "date": "2026-09-08",
+    "author": "Ruby Castellanos",
+    "keywords": [
+      "preorder UX",
+      "crowdfund flow",
+      "product launch design",
+      "expectation design",
+      "charge timing"
+    ],
+    "readingTime": 10,
+    "heroImage": "/images/articles/ecommerce/preorder-flows-trust.jpg",
+    "heroAlt": "A still life on warm paper: a brass balance scale, parcels tied with dark green twine, a notebook open to a timeline and a pressed fern sprig."
+  },
+  {
     "title": "Product photography that actually sells",
     "description": "Product photography that sells: shot lists per category, a consistent lighting language, scale cues that cut returns, video's real ROI, and the shoot brief.",
     "slug": "product-photography-that-sells",
@@ -1693,6 +2264,29 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 8,
     "heroImage": "/images/articles/ecommerce/product-photography-that-sells.jpg",
     "heroAlt": "A small studio still life on cream paper — a stoneware vessel, folded linen, a brass reflector card and fern-green swatches arranged as if mid product shoot."
+  },
+  {
+    "title": "Returns are a retention channel in disguise",
+    "description": "Stop cost-centre thinking on returns. Cohort economics, the post-return lifecycle, save-rate measurement and the budget line returns deserve.",
+    "slug": "returns-as-retention",
+    "cluster": "ecommerce",
+    "tags": [
+      "returns",
+      "retention",
+      "customer lifetime value",
+      "lifecycle",
+      "ecommerce strategy"
+    ],
+    "date": "2026-02-19",
+    "author": "Priya Nair",
+    "keywords": [
+      "returns UX",
+      "ecommerce retention",
+      "self-serve returns",
+      "returns policy design",
+      "post-purchase experience"
+    ],
+    "readingTime": 9
   },
   {
     "title": "Returns UX: the loyalty moment hiding in plain sight",
@@ -1741,6 +2335,29 @@ export const articleIndex: ArticleMeta[] = [
     "heroAlt": "Overhead flat lay on warm cream paper: a brass stopwatch beside kraft-paper parcels tied with dark green twine, a brass ruler and a small potted fern, soft window light and generous negative space."
   },
   {
+    "title": "Size guides and the design of fit confidence",
+    "description": "Fit uncertainty is apparel e-commerce's biggest tax. How to design size guides, fit finders and honest model references that cut fit-driven returns with design, not policy.",
+    "slug": "size-guides-fit-confidence",
+    "cluster": "ecommerce",
+    "tags": [
+      "size guides",
+      "apparel",
+      "ecommerce ux",
+      "returns",
+      "product design"
+    ],
+    "date": "2025-11-20",
+    "author": "Nate Sullivan",
+    "keywords": [
+      "size guide ux",
+      "fit finder ecommerce",
+      "apparel sizing design",
+      "reduce returns ux",
+      "fit confidence"
+    ],
+    "readingTime": 12
+  },
+  {
     "title": "Subscription models that retain: design for the second order",
     "description": "Subscription retention is decided between order one and order two. Design the second order, save failed payments without resentment, and price subscriptions honestly.",
     "slug": "subscription-models-retention",
@@ -1762,6 +2379,31 @@ export const articleIndex: ArticleMeta[] = [
       "second order retention"
     ],
     "readingTime": 11
+  },
+  {
+    "title": "The subscription portal: where churn is won honestly",
+    "description": "The subscription portal is your retention product: manage screens, swaps, dunning with dignity, and exit surveys that respect the people leaving.",
+    "slug": "subscription-portal-design",
+    "cluster": "ecommerce",
+    "tags": [
+      "subscriptions",
+      "ecommerce ux",
+      "retention",
+      "customer portal",
+      "dunning"
+    ],
+    "date": "2025-07-22",
+    "author": "Nate Sullivan",
+    "keywords": [
+      "subscription portal",
+      "manage subscription UX",
+      "dunning emails",
+      "subscription retention",
+      "customer account design"
+    ],
+    "readingTime": 9,
+    "heroImage": "/images/articles/ecommerce/subscription-portal-design.jpg",
+    "heroAlt": "Editorial flat-lay still life of stacked kraft coffee boxes, a brass-framed calendar card and a fern-green cup on warm cream paper."
   },
   {
     "title": "Subscription UX that retains without trapping",
@@ -1809,6 +2451,48 @@ export const articleIndex: ArticleMeta[] = [
       "inclusive engineering"
     ],
     "readingTime": 11
+  },
+  {
+    "title": "Animation is engineering: shipping motion at 60fps",
+    "description": "Motion at 60fps is an engineering discipline: compositor-only properties, FLIP for layout changes, when canvas or WebGL earn their weight, and testing.",
+    "slug": "animation-engineering-60fps",
+    "cluster": "engineering",
+    "tags": [
+      "animation",
+      "performance",
+      "web platform",
+      "design engineering"
+    ],
+    "date": "2026-06-11",
+    "author": "Hannah Yeo",
+    "keywords": [
+      "animation performance",
+      "web animation 60fps",
+      "FLIP technique",
+      "prefers-reduced-motion"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "Designing APIs that frontend teams don't route around",
+    "description": "API design judged by its frontend: pagination contracts, error shapes you can build UI on, BFF vs direct, honest versioning, and the endpoint autopsy.",
+    "slug": "api-design-frontends-love",
+    "cluster": "engineering",
+    "tags": [
+      "api design",
+      "developer experience",
+      "rest",
+      "frontend"
+    ],
+    "date": "2026-05-14",
+    "author": "Tomás Reyes",
+    "keywords": [
+      "API design",
+      "backend for frontend",
+      "REST API pagination",
+      "API error handling"
+    ],
+    "readingTime": 10
   },
   {
     "title": "Bundle budgets: the 170kb rule and how we hold it",
@@ -2002,6 +2686,27 @@ export const articleIndex: ArticleMeta[] = [
     "heroAlt": "Engraved-style map of the Asia-Pacific on cream paper, with brass arcs and fern lines linking network nodes between Sydney, Auckland and Singapore."
   },
   {
+    "title": "Error boundaries: designing UI that fails gracefully",
+    "description": "Error boundaries are a product decision, not a try/catch. Granularity, fallbacks that save user work, retry semantics and reporting that actually gets read.",
+    "slug": "error-boundaries-resilient-ui",
+    "cluster": "engineering",
+    "tags": [
+      "react",
+      "reliability",
+      "error-handling",
+      "ux"
+    ],
+    "date": "2026-02-09",
+    "author": "Tomás Reyes",
+    "keywords": [
+      "react error boundaries",
+      "resilient ui design",
+      "error handling frontend",
+      "fallback ui patterns"
+    ],
+    "readingTime": 8
+  },
+  {
     "title": "Feature flags without the graveyard",
     "description": "Flag discipline for product squads: lifecycle stages, a naming grammar, expiry automation, analytics hooks, and the monthly flag funeral that keeps codebases young.",
     "slug": "feature-flags-craft",
@@ -2026,6 +2731,27 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 10
   },
   {
+    "title": "Font loading: recipes from the network tab",
+    "description": "Webfonts are where performance budgets go to die quietly. Subsetting in CI, unicode-range slicing, per-role font-display policies, and the CLS nobody plans for.",
+    "slug": "font-loading-performance-recipes",
+    "cluster": "engineering",
+    "tags": [
+      "performance",
+      "typography",
+      "webfonts",
+      "cls"
+    ],
+    "date": "2025-08-14",
+    "author": "June Okafor",
+    "keywords": [
+      "webfont performance",
+      "font subsetting",
+      "font-display strategy",
+      "cls fonts"
+    ],
+    "readingTime": 8
+  },
+  {
     "title": "Form architecture at scale: schemas, errors and autofills",
     "description": "Schema-first form engineering: shared zod validation, error copy as data, correct autofill tokens, and announcements that don't double-speak.",
     "slug": "form-architecture-scale",
@@ -2046,6 +2772,27 @@ export const articleIndex: ArticleMeta[] = [
       "accessible forms engineering",
       "autofill tokens",
       "schema validation"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "Frontend observability for teams without an SRE",
+    "description": "Frontend observability without an SRE: the three signals that matter, sourcemaps done privately, and the dashboards a small team will actually open.",
+    "slug": "frontend-observability-small-teams",
+    "cluster": "engineering",
+    "tags": [
+      "observability",
+      "performance",
+      "monitoring",
+      "real user monitoring"
+    ],
+    "date": "2026-04-09",
+    "author": "Tomás Reyes",
+    "keywords": [
+      "frontend observability",
+      "real user monitoring",
+      "error tracking",
+      "web performance monitoring"
     ],
     "readingTime": 10
   },
@@ -2189,6 +2936,51 @@ export const articleIndex: ArticleMeta[] = [
     "heroAlt": "A machined brass keycap standing upright on cream paper, casting a long shadow among faint grid lines and small green arrow shapes."
   },
   {
+    "title": "Local-first sync engines: what we learned shipping one",
+    "description": "Production field notes from building a real sync engine: CRDT vs last-write-wins in practice, conflict UX that doesn't panic users, offline queues, and when to skip it all.",
+    "slug": "local-first-sync-engines",
+    "cluster": "engineering",
+    "tags": [
+      "local-first",
+      "sync",
+      "CRDT",
+      "offline",
+      "architecture"
+    ],
+    "date": "2026-08-14",
+    "author": "Felix Brandt",
+    "keywords": [
+      "local-first software",
+      "CRDT",
+      "offline sync",
+      "web app architecture"
+    ],
+    "readingTime": 11
+  },
+  {
+    "title": "Monorepo or not? A studio's decision framework",
+    "description": "Monorepos solve code-sharing and coordination problems most studios don't have, at tooling costs they don't predict. When we say yes, and what we do when we say no.",
+    "slug": "monorepo-decisions-studios",
+    "cluster": "engineering",
+    "tags": [
+      "monorepo",
+      "tooling",
+      "architecture",
+      "engineering practice",
+      "decision making"
+    ],
+    "date": "2026-08-26",
+    "author": "Tomás Reyes",
+    "keywords": [
+      "monorepo vs polyrepo",
+      "turborepo decision",
+      "code sharing strategy",
+      "agency engineering tooling",
+      "repository architecture"
+    ],
+    "readingTime": 11
+  },
+  {
     "title": "Local-first on the web: sync engines, honestly",
     "description": "What local-first architecture actually costs and buys: IndexedDB patterns, CRDT trade-offs, schema migrations, sync-status UX, and when server-first is simply right.",
     "slug": "offline-first-sync-engines",
@@ -2278,6 +3070,50 @@ export const articleIndex: ArticleMeta[] = [
       "react architecture",
       "next.js patterns",
       "server side rendering react"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "One schema everywhere: shared validation contracts",
+    "description": "One Zod schema shared across client forms, API handlers and generated types. The architecture, error mapping and versioning that end validation drift for good.",
+    "slug": "schema-validation-shared-contracts",
+    "cluster": "engineering",
+    "tags": [
+      "typescript",
+      "validation",
+      "architecture",
+      "forms"
+    ],
+    "date": "2025-11-18",
+    "author": "Felix Brandt",
+    "keywords": [
+      "zod validation",
+      "shared schemas typescript",
+      "end to end type safety",
+      "form validation architecture"
+    ],
+    "readingTime": 8
+  },
+  {
+    "title": "Service workers: an honest production guide",
+    "description": "Service workers are the most powerful and least forgiving API in the browser. Cache strategies by content type, update flows, offline fallbacks and production debugging.",
+    "slug": "service-workers-honest-guide",
+    "cluster": "engineering",
+    "tags": [
+      "service workers",
+      "offline",
+      "pwa",
+      "caching",
+      "performance"
+    ],
+    "date": "2026-02-19",
+    "author": "Tomás Reyes",
+    "keywords": [
+      "service workers",
+      "offline first",
+      "PWA caching strategies",
+      "workbox alternatives",
+      "cache API production"
     ],
     "readingTime": 10
   },
@@ -2374,6 +3210,28 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 11
   },
   {
+    "title": "Third-party scripts: governance before they eat your site",
+    "description": "The audit finds the mess; governance keeps it from coming back. A consent-aware loader, per-vendor budgets in CI, and the quarterly ritual that keeps tags honest.",
+    "slug": "third-party-script-governance",
+    "cluster": "engineering",
+    "tags": [
+      "third-party scripts",
+      "governance",
+      "performance",
+      "privacy",
+      "tag management"
+    ],
+    "date": "2026-04-30",
+    "author": "Felix Brandt",
+    "keywords": [
+      "third-party script governance",
+      "consent-aware script loading",
+      "tag management process",
+      "vendor scripts performance budget"
+    ],
+    "readingTime": 10
+  },
+  {
     "title": "Auditing third-party scripts before they audit you",
     "description": "Third-party scripts are a governed supply chain, not a paste bin. Our audit method: measure the cost, gate on consent, fence with CSP, and assign every tag an owner.",
     "slug": "third-party-scripts-audit",
@@ -2416,6 +3274,28 @@ export const articleIndex: ArticleMeta[] = [
       "content validation"
     ],
     "readingTime": 9
+  },
+  {
+    "title": "The TypeScript strictness ratchet: stricter every sprint, never a big bang",
+    "description": "Strict mode on a legacy codebase is a migration disguised as a flag. The ratchet approach: incremental flags, scoped configs, codemods and type-debt metrics.",
+    "slug": "typescript-strictness-ratchet",
+    "cluster": "engineering",
+    "tags": [
+      "typescript",
+      "code quality",
+      "migration",
+      "static typing",
+      "engineering practice"
+    ],
+    "date": "2026-06-11",
+    "author": "Felix Brandt",
+    "keywords": [
+      "TypeScript strict mode migration",
+      "incremental typescript adoption",
+      "type safety ratchet",
+      "typescript compiler flags"
+    ],
+    "readingTime": 10
   },
   {
     "title": "The URL is your best state manager",
@@ -2529,6 +3409,50 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 12
   },
   {
+    "title": "Zero-downtime Postgres migrations, without heroics",
+    "description": "Zero-downtime Postgres migrations with expand-migrate-contract: safe backfills, the locking hazards that catch everyone once, and our pre-flight checklist.",
+    "slug": "zero-downtime-postgres-migrations",
+    "cluster": "engineering",
+    "tags": [
+      "postgres",
+      "migrations",
+      "databases",
+      "deployment"
+    ],
+    "date": "2026-02-26",
+    "author": "Felix Brandt",
+    "keywords": [
+      "postgres migrations",
+      "zero downtime deployment",
+      "expand migrate contract",
+      "online schema change"
+    ],
+    "readingTime": 11
+  },
+  {
+    "title": "A/B testing statistics for people who ship",
+    "description": "Reading A/B tests honestly: minimum detectable effects, the peeking problem, novelty effects, segment traps, and the decision log that ends the arguments.",
+    "slug": "ab-testing-honest-statistics",
+    "cluster": "growth",
+    "tags": [
+      "a/b testing",
+      "experimentation",
+      "cro",
+      "statistics",
+      "decision making"
+    ],
+    "date": "2026-07-14",
+    "author": "Sam Whitfield",
+    "keywords": [
+      "a/b testing statistics",
+      "experiment design",
+      "statistical significance",
+      "conversion rate optimisation",
+      "novelty effect"
+    ],
+    "readingTime": 10
+  },
+  {
     "title": "Analytics governance: tracking plans before tools",
     "description": "Analytics rots quietly until nobody trusts the dashboards. The fix is governance, not tooling: event naming grammar, ownership, QA rituals and the monthly data hour.",
     "slug": "analytics-governance",
@@ -2549,6 +3473,28 @@ export const articleIndex: ArticleMeta[] = [
       "data quality marketing"
     ],
     "readingTime": 10
+  },
+  {
+    "title": "Name your events before you buy the analytics tool",
+    "description": "Event naming decides whether your data answers questions in year three. The taxonomy anatomy we design before any tool evaluation: verbs, properties, screens, migration.",
+    "slug": "analytics-taxonomy-first",
+    "cluster": "growth",
+    "tags": [
+      "analytics",
+      "event naming",
+      "taxonomy",
+      "measurement",
+      "data quality"
+    ],
+    "date": "2026-02-11",
+    "author": "Priya Nair",
+    "keywords": [
+      "analytics taxonomy",
+      "event naming",
+      "measurement plan",
+      "analytics governance"
+    ],
+    "readingTime": 9
   },
   {
     "title": "Attribution that admits what it doesn't know",
@@ -2594,6 +3540,29 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 11
   },
   {
+    "title": "Bidding on your own name: when brand PPC pays",
+    "description": "Should you bid on your own brand terms? The incrementality test that answers it, the economics of defensive spend, conquesting ethics, and a spreadsheet to decide.",
+    "slug": "brand-term-bidding-decision",
+    "cluster": "growth",
+    "tags": [
+      "paid search",
+      "ppc",
+      "brand bidding",
+      "incrementality",
+      "growth strategy"
+    ],
+    "date": "2026-05-08",
+    "author": "Priya Nair",
+    "keywords": [
+      "brand bidding",
+      "paid search strategy",
+      "ppc incrementality",
+      "brand keywords",
+      "conquesting"
+    ],
+    "readingTime": 8
+  },
+  {
     "title": "Your changelog is a marketing channel",
     "description": "Release notes that sell: segmented announcements, the in-product/email/SEO triple-duty, mining changelogs for case-study fodder, and cadence that signals momentum.",
     "slug": "changelog-as-marketing",
@@ -2613,6 +3582,29 @@ export const articleIndex: ArticleMeta[] = [
       "shipping notes content"
     ],
     "readingTime": 8
+  },
+  {
+    "title": "Exit interviews for products: learning from the people who left",
+    "description": "Churn interviews and exit surveys done properly: a five-question exit flow, recruiting churned users honestly, and separating squeaky wheels from signal.",
+    "slug": "churn-interviews-exit-surveys",
+    "cluster": "growth",
+    "tags": [
+      "churn",
+      "customer research",
+      "retention",
+      "exit surveys",
+      "qualitative research"
+    ],
+    "date": "2026-04-22",
+    "author": "Sam Whitfield",
+    "keywords": [
+      "churn analysis",
+      "exit survey",
+      "customer research",
+      "retention strategy",
+      "churned user interviews"
+    ],
+    "readingTime": 11
   },
   {
     "title": "Community-led growth: the honest ten-year version",
@@ -2635,6 +3627,31 @@ export const articleIndex: ArticleMeta[] = [
       "community roi measurement"
     ],
     "readingTime": 10
+  },
+  {
+    "title": "Alternative-to pages that rank and don't embarrass you",
+    "description": "Comparison and 'X alternatives' pages capture high-intent search. The honest playbook: structure that concedes strengths, verified matrices, tone rules, upkeep, pipeline.",
+    "slug": "competitor-alternatives-pages",
+    "cluster": "growth",
+    "tags": [
+      "seo",
+      "comparison pages",
+      "competitors",
+      "content strategy",
+      "b2b"
+    ],
+    "date": "2026-02-25",
+    "author": "Priya Nair",
+    "keywords": [
+      "competitor comparison pages",
+      "alternatives page seo",
+      "saas comparison marketing",
+      "vs page template",
+      "competitive positioning content"
+    ],
+    "readingTime": 9,
+    "heroImage": "/images/articles/growth/competitor-alternatives-pages.jpg",
+    "heroAlt": "A brass balance scale on warm paper weighing fern-green cards against kraft cards, beside a loupe and pencil — the honest-comparison idea made literal."
   },
   {
     "title": "Content clusters that compound: planning in public",
@@ -2750,6 +3767,30 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 11
   },
   {
+    "title": "A creative-testing cadence that compounds",
+    "description": "Creative is the biggest lever in paid media and the worst managed. A weekly testing cadence, naming that preserves learnings, fatigue signals, and the library that compounds.",
+    "slug": "creative-testing-cadence",
+    "cluster": "growth",
+    "tags": [
+      "creative testing",
+      "performance marketing",
+      "paid social",
+      "ad creative",
+      "experimentation"
+    ],
+    "date": "2026-06-03",
+    "author": "Priya Nair",
+    "keywords": [
+      "creative testing",
+      "performance marketing",
+      "ad creative",
+      "paid social",
+      "creative fatigue",
+      "testing cadence"
+    ],
+    "readingTime": 11
+  },
+  {
     "title": "Designing CRO experiments you can believe",
     "description": "Hypothesis quality, sample-size honesty, the peeking problem, change isolation versus big-bang redesigns, and documenting learnings so your programme compounds.",
     "slug": "cro-experiment-design",
@@ -2859,6 +3900,28 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 12
   },
   {
+    "title": "Audit first, test second: heuristic CRO that finds the free wins",
+    "description": "Before your next A/B test, walk the funnel as a stranger. Our heuristic CRO audit method: the friction walkthrough, severity scoring, and fixes that don't need stats.",
+    "slug": "heuristic-cro-audits",
+    "cluster": "growth",
+    "tags": [
+      "cro",
+      "audit",
+      "conversion",
+      "ux",
+      "experimentation"
+    ],
+    "date": "2026-01-28",
+    "author": "Sam Whitfield",
+    "keywords": [
+      "CRO audit",
+      "heuristic evaluation",
+      "conversion optimisation",
+      "UX audit"
+    ],
+    "readingTime": 9
+  },
+  {
     "title": "Calculators and checkers: interactive tools as content",
     "description": "Calculators, graders and generators as content: why tools earn links articles can't, how to scope one that ships in a sprint, and measuring assisted conversions.",
     "slug": "interactive-tools-as-content",
@@ -2901,6 +3964,29 @@ export const articleIndex: ArticleMeta[] = [
       "content hubs"
     ],
     "readingTime": 9
+  },
+  {
+    "title": "International SEO without tears: hreflang, ccTLDs and content reuse",
+    "description": "Going international without tanking search: ccTLD vs subfolder trade-offs, hreflang that doesn't break, translation workflows that respect local intent, staged validation.",
+    "slug": "international-seo-hreflang",
+    "cluster": "growth",
+    "tags": [
+      "international seo",
+      "hreflang",
+      "localisation",
+      "migration",
+      "technical seo"
+    ],
+    "date": "2026-03-04",
+    "author": "Priya Nair",
+    "keywords": [
+      "hreflang implementation",
+      "international seo",
+      "cctld vs subdirectory",
+      "multilingual website seo",
+      "localisation seo"
+    ],
+    "readingTime": 10
   },
   {
     "title": "Landing page testing: velocity over genius",
@@ -2993,6 +4079,29 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 9
   },
   {
+    "title": "Information architecture for marketing sites: the growth lever in plain sight",
+    "description": "IA decides what buyers find, what search engines index and what survives a redesign. The nav-to-journey map, the three-level ceiling and URLs that outlive themes.",
+    "slug": "marketing-site-ia",
+    "cluster": "growth",
+    "tags": [
+      "information architecture",
+      "navigation",
+      "seo",
+      "content strategy",
+      "website structure"
+    ],
+    "date": "2026-01-28",
+    "author": "Leonie Marsh",
+    "keywords": [
+      "website information architecture",
+      "marketing site navigation",
+      "IA for SEO",
+      "URL structure",
+      "card sorting"
+    ],
+    "readingTime": 10
+  },
+  {
     "title": "Newsletters as a growth engine, not an afterthought",
     "description": "The newsletter is the only growth asset you own outright. How to design the promise, architect the issue, build referral loops, and do the cadence math honestly.",
     "slug": "newsletter-growth-engine",
@@ -3016,6 +4125,54 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 12,
     "heroImage": "/images/articles/growth/newsletter-growth-engine.jpg",
     "heroAlt": "Editorial print illustration of a brass letterpress printing a paper newsletter strip that curls into a growing fern frond, with stamped envelopes on cream paper."
+  },
+  {
+    "title": "Growing a newsletter without becoming a growth-goblin",
+    "description": "Newsletter growth the honest way: sign-up pages that convert without tricks, welcome sequences, referral mechanics, list hygiene and metrics that don't lie.",
+    "slug": "newsletter-growth-honestly",
+    "cluster": "growth",
+    "tags": [
+      "newsletter",
+      "email marketing",
+      "list building",
+      "welcome sequence",
+      "growth ethics"
+    ],
+    "date": "2026-05-20",
+    "author": "Leonie Marsh",
+    "keywords": [
+      "newsletter growth",
+      "email marketing",
+      "welcome sequence",
+      "list building",
+      "referral program"
+    ],
+    "readingTime": 12,
+    "heroImage": "/images/articles/growth/newsletter-growth-honestly.jpg",
+    "heroAlt": "Editorial print illustration of a brass letterpress block and an open envelope on cream paper, its paper strip unrolling into a small fern frond beside stamped envelopes."
+  },
+  {
+    "title": "OG images: the growth surface hiding in your metadata",
+    "description": "Your pages are shared thousands of times, and most preview cards are a cropped hero or nothing. A system for OG images that earn the click — and how to measure it.",
+    "slug": "og-images-growth-surface",
+    "cluster": "growth",
+    "tags": [
+      "og images",
+      "social sharing",
+      "metadata",
+      "design systems",
+      "growth"
+    ],
+    "date": "2026-05-27",
+    "author": "June Okafor",
+    "keywords": [
+      "OG image design",
+      "open graph images",
+      "social share cards",
+      "link preview design",
+      "generated og images"
+    ],
+    "readingTime": 9
   },
   {
     "title": "Paid vs organic: an honest budget conversation",
@@ -3062,6 +4219,54 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 9
   },
   {
+    "title": "Programmatic SEO without producing landfill",
+    "description": "The workshop version of programmatic SEO: dataset maturity gates, the four page archetypes that work, editorial review thresholds, and the build sequence we trust.",
+    "slug": "programmatic-seo-with-craft",
+    "cluster": "growth",
+    "tags": [
+      "programmatic seo",
+      "content operations",
+      "site architecture",
+      "data quality",
+      "seo strategy"
+    ],
+    "date": "2026-08-20",
+    "author": "Sam Whitfield",
+    "keywords": [
+      "programmatic seo",
+      "templated pages seo",
+      "seo at scale",
+      "content quality",
+      "dataset-driven content"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Referral loops that fit the product — not the pitch deck",
+    "description": "Referral mechanics that match the product: incentive design, double-sided rewards, fraud resistance, timing, and why most referral programs launch a year too early.",
+    "slug": "referral-mechanics-fit",
+    "cluster": "growth",
+    "tags": [
+      "referral programs",
+      "growth loops",
+      "word of mouth",
+      "product marketing",
+      "customer advocacy"
+    ],
+    "date": "2026-08-27",
+    "author": "Sam Whitfield",
+    "keywords": [
+      "referral program design",
+      "growth loops",
+      "viral mechanics",
+      "referral incentives",
+      "word of mouth marketing"
+    ],
+    "readingTime": 9,
+    "heroImage": "/images/articles/growth/referral-mechanics-fit.jpg",
+    "heroAlt": "Editorial illustration of a circular brass-rimmed referral loop with geometric figures handing a parcel between stations, connected by fern tendrils on warm paper."
+  },
+  {
     "title": "The compounding returns of refreshing old content",
     "description": "Old content decays silently. Here's our refresh system: decay detection in Search Console, refresh-vs-rewrite rules, redirect discipline, and a cadence that compounds.",
     "slug": "refreshing-old-content-wins",
@@ -3103,6 +4308,52 @@ export const articleIndex: ArticleMeta[] = [
       "rich results"
     ],
     "readingTime": 8
+  },
+  {
+    "title": "Migrating a site without burning its rankings",
+    "description": "Domain changes, CMS switches and relaunches are risk decisions, not just checklists. How to forecast the dip, set expectations and know when to roll back.",
+    "slug": "seo-safe-site-migrations",
+    "cluster": "growth",
+    "tags": [
+      "site migration",
+      "technical seo",
+      "risk management",
+      "website relaunch",
+      "analytics"
+    ],
+    "date": "2026-05-06",
+    "author": "Priya Nair",
+    "keywords": [
+      "SEO migration",
+      "site migration checklist",
+      "redirect strategy",
+      "domain migration",
+      "relaunch risk"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "Share of search: a brand metric a CFO will accept",
+    "description": "Brand health is usually measured with slow, soft surveys. Share of search turns branded query volume into a leading indicator finance teams actually trust.",
+    "slug": "share-of-search",
+    "cluster": "growth",
+    "tags": [
+      "brand measurement",
+      "share of search",
+      "analytics",
+      "marketing effectiveness",
+      "seo"
+    ],
+    "date": "2026-07-02",
+    "author": "Sam Whitfield",
+    "keywords": [
+      "share of search",
+      "brand measurement",
+      "branded search volume",
+      "marketing effectiveness metrics",
+      "brand tracking alternative"
+    ],
+    "readingTime": 10
   },
   {
     "title": "Site migrations that don't tank organic traffic",
@@ -3171,6 +4422,29 @@ export const articleIndex: ArticleMeta[] = [
       "crawl budget"
     ],
     "readingTime": 9
+  },
+  {
+    "title": "Winback flows: the cheapest revenue you're not earning",
+    "description": "Lapsed customers already know you, trust your checkout and cost nothing to acquire. Designing winback flows that reactivate without discount-spamming the loyal.",
+    "slug": "winback-email-flows",
+    "cluster": "growth",
+    "tags": [
+      "lifecycle email",
+      "winback",
+      "retention",
+      "email marketing",
+      "discounting"
+    ],
+    "date": "2026-03-18",
+    "author": "Priya Nair",
+    "keywords": [
+      "winback email campaign",
+      "lapsed customer reactivation",
+      "lifecycle email flows",
+      "email sunset policy",
+      "retention marketing"
+    ],
+    "readingTime": 10
   },
   {
     "title": "Buying accessible software: a procurement playbook",
@@ -3870,7 +5144,9 @@ export const articleIndex: ArticleMeta[] = [
       "cmd k pattern",
       "search ux"
     ],
-    "readingTime": 9
+    "readingTime": 9,
+    "heroImage": "/images/articles/product/command-palette-craft.jpg",
+    "heroAlt": "Editorial still life of a mechanical keyboard with cream and fern-green keycaps and a single brass accent key, beside a brass ruler and a dried fern sprig on warm paper."
   },
   {
     "title": "Command palettes: patterns for the Cmd-K era",
@@ -4449,6 +5725,29 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 8
   },
   {
+    "title": "Undo beats confirm: designing reversible software",
+    "description": "Confirmation dialogs train users to click through danger. Undo-first design: timing, reversible architecture, soft deletes, and the trust dividend of forgiving software.",
+    "slug": "undo-not-confirm",
+    "cluster": "product",
+    "tags": [
+      "undo",
+      "destructive actions",
+      "trust",
+      "interaction design",
+      "architecture"
+    ],
+    "date": "2025-11-12",
+    "author": "Felix Brandt",
+    "keywords": [
+      "undo pattern ux",
+      "confirmation dialog alternatives",
+      "destructive action design",
+      "reversible actions",
+      "soft delete architecture"
+    ],
+    "readingTime": 9
+  },
+  {
     "title": "WCAG AA for product teams: the parts everyone gets wrong",
     "description": "The WCAG AA criteria that fail most often in real products — contrast in components, focus visible, target size, keyboard traps — and the review rituals that keep them green.",
     "slug": "wcag-aa-product-teams",
@@ -4489,6 +5788,27 @@ export const articleIndex: ArticleMeta[] = [
       "inclusive design"
     ],
     "readingTime": 9
+  },
+  {
+    "title": "Bylines and author pages: small design, big trust",
+    "description": "Named authors quietly outperform faceless content on every metric we track. The anatomy of a trustworthy byline and an author page worth visiting.",
+    "slug": "author-byline-trust-design",
+    "cluster": "web-design",
+    "tags": [
+      "editorial design",
+      "trust",
+      "content strategy",
+      "author pages"
+    ],
+    "date": "2026-06-02",
+    "author": "Mara Ellison",
+    "keywords": [
+      "author page design",
+      "byline design",
+      "e-e-a-t authors",
+      "editorial trust signals"
+    ],
+    "readingTime": 8
   },
   {
     "title": "How to design case study pages that win work",
@@ -4560,6 +5880,29 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 8,
     "heroImage": "/images/articles/web-design/comparison-pages-that-convert.jpg",
     "heroAlt": "A small brass balance scale on cream paper, one pan holding a pressed fern sprig and the other a brass weight, the beam nearly level."
+  },
+  {
+    "title": "Cookie banners: an honest design guide",
+    "description": "Consent banners are the most-seen, least-designed UI on the web. Dark patterns, layered consent UX, CMP performance costs, and compliance that converts.",
+    "slug": "cookie-banners-honest-design",
+    "cluster": "web-design",
+    "tags": [
+      "consent",
+      "ux",
+      "privacy",
+      "ethics"
+    ],
+    "date": "2026-01-22",
+    "author": "Leonie Marsh",
+    "keywords": [
+      "cookie banner design",
+      "consent ux",
+      "gdpr cookie consent",
+      "cmp dark patterns"
+    ],
+    "readingTime": 8,
+    "heroImage": "/images/articles/web-design/cookie-banners-honest-design.jpg",
+    "heroAlt": "A paper-and-brass model of a small arched doorway standing in a row of tiny toggle switches cut from fern-green card, beside a pressed fern frond — a still life about consent at the door of a website."
   },
   {
     "title": "Dark mode is a second design system",
@@ -4716,6 +6059,27 @@ export const articleIndex: ArticleMeta[] = [
     "heroAlt": "Vintage brass letterpress type blocks arranged in an ascending scale on cream paper, with fern-green ink smudges — a physical metaphor for a fluid type scale."
   },
   {
+    "title": "Focus-visible: designing the ring, not removing it",
+    "description": "Keyboard focus styles are a design problem most teams delete instead of solve. How to design focus rings that are visible, beautiful and part of the identity system.",
+    "slug": "focus-visible-beautiful",
+    "cluster": "web-design",
+    "tags": [
+      "accessibility",
+      "interaction design",
+      "design systems",
+      "css"
+    ],
+    "date": "2026-07-06",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "focus visible design",
+      "keyboard focus styles",
+      "accessible focus indicator",
+      "focus ring css"
+    ],
+    "readingTime": 8
+  },
+  {
     "title": "The footer is a sitemap with manners",
     "description": "Footers are the most neglected designed surface on the web. A taxonomy of trustworthy footer patterns — navigation, reassurance, colophons — and what each one earns.",
     "slug": "footer-design-matters",
@@ -4823,6 +6187,27 @@ export const articleIndex: ArticleMeta[] = [
       "website hero ideas",
       "above the fold design",
       "homepage design"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Icon systems: SVG discipline for the web",
+    "description": "Most icon sets decay into a junk drawer of mismatched SVGs. Grid rules, stroke discipline, sprite strategy and the build-time pruning that keeps an icon system honest.",
+    "slug": "icon-systems-svg-discipline",
+    "cluster": "web-design",
+    "tags": [
+      "design systems",
+      "svg",
+      "icons",
+      "front-end"
+    ],
+    "date": "2026-06-18",
+    "author": "June Okafor",
+    "keywords": [
+      "svg icon system",
+      "icon design guidelines",
+      "icon sprite svg",
+      "design system icons"
     ],
     "readingTime": 9
   },
@@ -5002,6 +6387,28 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 9
   },
   {
+    "title": "Perceived performance is a design material",
+    "description": "Perceived performance is designed, not just engineered: skeletons, optimistic UI, progressive images, zero layout shift and the choreography of waiting states.",
+    "slug": "perceived-performance-design",
+    "cluster": "web-design",
+    "tags": [
+      "perceived performance",
+      "loading states",
+      "motion design",
+      "skeleton screens",
+      "web performance"
+    ],
+    "date": "2026-04-09",
+    "author": "Hannah Yeo",
+    "keywords": [
+      "perceived performance",
+      "skeleton screens design",
+      "optimistic ui",
+      "loading state design"
+    ],
+    "readingTime": 10
+  },
+  {
     "title": "A photography style without a photoshoot",
     "description": "No budget for a shoot? Crops, duotones, grain and a treatment matrix make any source image look on-brand. How we art-direct cheap photography.",
     "slug": "photography-style-without-a-photoshoot",
@@ -5048,6 +6455,49 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 11
   },
   {
+    "title": "Print stylesheets: the forgotten design surface",
+    "description": "Most web teams ship print CSS by accident. Here's @media print done properly: receipts, itineraries, tickets, page breaks, link URLs, and testing without a printer.",
+    "slug": "print-stylesheets-still-matter",
+    "cluster": "web-design",
+    "tags": [
+      "print css",
+      "design systems",
+      "accessibility",
+      "craft",
+      "front-end"
+    ],
+    "date": "2026-03-17",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "print stylesheet css",
+      "media print design",
+      "print friendly web pages",
+      "printing web content"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Related-content modules that readers actually use",
+    "description": "Most 'related articles' modules are decoration. Here's how we design, rank and measure recommendation modules that readers genuinely click — and when to delete them.",
+    "slug": "related-content-modules",
+    "cluster": "web-design",
+    "tags": [
+      "content design",
+      "internal linking",
+      "editorial design",
+      "ux patterns"
+    ],
+    "date": "2026-05-14",
+    "author": "Leonie Marsh",
+    "keywords": [
+      "related content design",
+      "related articles module",
+      "internal linking ux",
+      "content modules"
+    ],
+    "readingTime": 9
+  },
+  {
     "title": "Tables on phones: responsive table design that respects the data",
     "description": "A table is a set of relationships, and a 375px screen doesn't change that. Priority columns, honest card transposition, scroll affordances, and what to omit.",
     "slug": "responsive-table-design",
@@ -5088,6 +6538,28 @@ export const articleIndex: ArticleMeta[] = [
       "data storytelling web",
       "scrolljacking",
       "reduced motion fallback"
+    ],
+    "readingTime": 8
+  },
+  {
+    "title": "Seasonal theming without pretending it's a rebrand",
+    "description": "How to theme a site for a season or campaign with token overrides, not panic: scoped palettes, motion and imagery swaps, expiries, and where festive ends and confusing begins.",
+    "slug": "seasonal-theming-without-rebrand",
+    "cluster": "web-design",
+    "tags": [
+      "design tokens",
+      "theming",
+      "campaigns",
+      "brand systems",
+      "css architecture"
+    ],
+    "date": "2026-07-02",
+    "author": "June Okafor",
+    "keywords": [
+      "website theming",
+      "seasonal campaign design",
+      "design tokens theming",
+      "campaign microsite design"
     ],
     "readingTime": 8
   },
@@ -5158,6 +6630,44 @@ export const articleIndex: ArticleMeta[] = [
 
 export const caseIndex: CaseStudyMeta[] = [
   {
+    "title": "Arkwright Supply: B2B ordering that respects a tradie's lunch break",
+    "description": "A 40,000-SKU industrial supplier moved ordering online — account pricing, CSV bulk orders and search that speaks trade slang. Phone orders fell 48%.",
+    "slug": "arkwright-supply-b2b-commerce",
+    "cluster": "work",
+    "tags": [
+      "case study",
+      "b2b ecommerce",
+      "catalogue design",
+      "search",
+      "industrial"
+    ],
+    "date": "2026-06-15",
+    "author": "Nate Sullivan",
+    "keywords": [
+      "b2b ecommerce case study",
+      "catalogue ux",
+      "bulk ordering",
+      "industrial supplier digital"
+    ],
+    "readingTime": 0,
+    "client": "Arkwright Supply",
+    "industry": "Retail & e-commerce",
+    "services": [
+      "E-commerce",
+      "Product design & engineering",
+      "Growth"
+    ],
+    "year": 2026,
+    "stack": [
+      "React",
+      "TypeScript",
+      "Node",
+      "Postgres",
+      "Elasticsearch",
+      "Redis"
+    ]
+  },
+  {
     "title": "Arlo & Sons: a tradies marketplace that earned trust slowly",
     "description": "How we rebuilt a two-sided trades marketplace around verified work: comparable quotes, review integrity, trade-side dashboards and onboarding that favours patience.",
     "slug": "arlo-and-sons-tradies-marketplace",
@@ -5195,6 +6705,83 @@ export const caseIndex: CaseStudyMeta[] = [
     ],
     "heroImage": "/images/work/arlo-and-sons-tradies-marketplace.jpg",
     "heroAlt": "A brass spirit level, folded paper plans and two work pencils arranged on cream paper with a fern sprig."
+  },
+  {
+    "title": "Beacon Health: an AI triage assistant that knows when to stop talking",
+    "description": "A primary-care network wanted an AI front door without the risk. We designed an AI triage assistant with red-flag escalation, clinician review and offline evals.",
+    "slug": "beacon-health-ai-triage",
+    "cluster": "work",
+    "tags": [
+      "AI products",
+      "Health",
+      "Responsible AI",
+      "Conversational UX"
+    ],
+    "date": "2026-03-05",
+    "author": "Dev Khatri",
+    "keywords": [
+      "ai healthcare case study",
+      "llm evaluation",
+      "responsible ai design",
+      "triage chatbot ux",
+      "clinician in the loop"
+    ],
+    "readingTime": 11,
+    "client": "Beacon Health",
+    "industry": "Health",
+    "services": [
+      "AI products",
+      "Product design & engineering"
+    ],
+    "year": 2026,
+    "stack": [
+      "React",
+      "TypeScript",
+      "Node",
+      "LLM API",
+      "Retrieval"
+    ]
+  },
+  {
+    "title": "Brightline Solar: from PDF quote form to 40-second estimate",
+    "description": "How we replaced a solar installer's PDF quote form with a 40-second estimate engine — lifting qualified leads 71% and cutting cost per lead by a third.",
+    "slug": "brightline-solar-quote-engine",
+    "cluster": "work",
+    "tags": [
+      "case study",
+      "climate",
+      "lead generation",
+      "conversion design",
+      "quote calculator"
+    ],
+    "date": "2025-05-08",
+    "author": "Sam Whitfield",
+    "keywords": [
+      "lead generation case study",
+      "quote calculator ux",
+      "climate tech marketing",
+      "solar website design"
+    ],
+    "readingTime": 0,
+    "client": "Brightline Solar",
+    "industry": "Climate",
+    "services": [
+      "Product design & engineering",
+      "Websites",
+      "Growth"
+    ],
+    "year": 2025,
+    "heroImage": "/images/work/brightline-solar-quote-engine.jpg",
+    "heroAlt": "Editorial flat-lay: a miniature model rooftop with tiny solar panels, a brass slide rule and folded paper bill on cream paper — the Brightline Solar case-study hero.",
+    "stack": [
+      "React",
+      "TypeScript",
+      "Node",
+      "Postgres",
+      "MapLibre",
+      "Cloudflare Workers"
+    ],
+    "demo": "brightline-solar-quoter"
   },
   {
     "title": "Brightmarsh: onboarding course-takers without the confetti",
@@ -5277,6 +6864,81 @@ export const caseIndex: CaseStudyMeta[] = [
     "heroAlt": "A warm bank-counter still life: a brass teller lamp, stacked paper ledgers and a pressed fern on cream paper."
   },
   {
+    "title": "Coriander Collective: six restaurants, one platform, zero beige",
+    "description": "A restaurant group's six venues got one platform and six personalities: token-driven theming, unified reservations and gift cards that grew revenue 5x.",
+    "slug": "coriander-collective-restaurant-group",
+    "cluster": "work",
+    "tags": [
+      "case study",
+      "hospitality",
+      "multi-brand",
+      "design tokens",
+      "reservations"
+    ],
+    "date": "2024-10-03",
+    "author": "Mara Ellison",
+    "keywords": [
+      "restaurant group website",
+      "multi-brand design system",
+      "reservations ux",
+      "hospitality case study"
+    ],
+    "readingTime": 0,
+    "client": "Coriander Collective",
+    "industry": "Hospitality",
+    "services": [
+      "Brand & identity",
+      "Websites",
+      "E-commerce"
+    ],
+    "year": 2024,
+    "stack": [
+      "React",
+      "TypeScript",
+      "Node",
+      "Postgres",
+      "Sanity",
+      "Stripe"
+    ]
+  },
+  {
+    "title": "Easement Legal: a law firm site without the mahogany",
+    "description": "A community legal centre replaced mahogany-and-gavel clichés with a plain-language service finder, honest fee tables and interpreter-first design.",
+    "slug": "easement-legal-service-finder",
+    "cluster": "work",
+    "tags": [
+      "case study",
+      "legal services",
+      "plain language",
+      "accessibility",
+      "service design"
+    ],
+    "date": "2025-04-07",
+    "author": "Leonie Marsh",
+    "keywords": [
+      "legal website case study",
+      "service finder ux",
+      "plain language design",
+      "trust design",
+      "community legal centre"
+    ],
+    "readingTime": 0,
+    "client": "Easement Legal",
+    "industry": "Non-profit",
+    "services": [
+      "Websites",
+      "Brand & identity",
+      "Product design & engineering"
+    ],
+    "year": 2025,
+    "stack": [
+      "Astro",
+      "TypeScript",
+      "Sanity",
+      "Pagefind"
+    ]
+  },
+  {
     "title": "Fern & Forage: same-day flower delivery without the panic",
     "description": "A florist's website where the hardest UX problem is honesty — cutoffs, postcodes and seasonal stock — turned into the brand's warmest asset.",
     "slug": "fern-and-forage-florist",
@@ -5356,6 +7018,44 @@ export const caseIndex: CaseStudyMeta[] = [
     "heroAlt": "Unlabelled wine bottles with brass foil caps and a curling grapevine tendril on a cream paper surface."
   },
   {
+    "title": "Fernway College: admissions journeys without the paper cuts",
+    "description": "One editorial platform for a school's admissions, alumni and news — with an enrolment journey that saves progress and a CMS the comms team actually runs.",
+    "slug": "fernway-college-admissions-platform",
+    "cluster": "work",
+    "tags": [
+      "case study",
+      "education",
+      "headless cms",
+      "admissions ux",
+      "design systems"
+    ],
+    "date": "2025-11-20",
+    "author": "Leonie Marsh",
+    "keywords": [
+      "education website case study",
+      "school admissions ux",
+      "headless cms case study",
+      "editorial platform"
+    ],
+    "readingTime": 0,
+    "client": "Fernway College",
+    "industry": "Education",
+    "services": [
+      "Websites",
+      "Brand & identity",
+      "Product design & engineering"
+    ],
+    "year": 2025,
+    "stack": [
+      "React",
+      "TypeScript",
+      "Sanity",
+      "Node",
+      "Cloudflare",
+      "Plausible"
+    ]
+  },
+  {
     "title": "GLADE: skincare e-commerce with nothing to hide",
     "description": "A skincare brand led with evidence instead of glow-washed photography. How ingredient transparency UX and honest PDPs changed what loyalty looks like.",
     "slug": "glade-skincare-ingredient-honesty",
@@ -5393,6 +7093,44 @@ export const caseIndex: CaseStudyMeta[] = [
     ],
     "heroImage": "/images/work/glade-skincare-ingredient-honesty.jpg",
     "heroAlt": "Unlabelled apothecary bottles, raw botanical ingredients and blank specimen cards on warm paper."
+  },
+  {
+    "title": "Harvest Loop: logistics dashboards for a food-rescue charity",
+    "description": "A driver app and donor dashboard for a food-rescue charity — built for cracked Android phones, volunteer patience and funders who reply with 'prove it'.",
+    "slug": "harvest-loop-food-rescue",
+    "cluster": "work",
+    "tags": [
+      "case study",
+      "non-profit",
+      "logistics",
+      "offline-first",
+      "PWA"
+    ],
+    "date": "2025-11-10",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "non-profit case study",
+      "logistics dashboard",
+      "charity tech",
+      "volunteer ux",
+      "offline-first app"
+    ],
+    "readingTime": 0,
+    "client": "Harvest Loop",
+    "industry": "Non-profit",
+    "services": [
+      "Product design & engineering",
+      "Websites"
+    ],
+    "year": 2025,
+    "stack": [
+      "React",
+      "TypeScript",
+      "PWA (Workbox)",
+      "MapLibre",
+      "Node",
+      "Postgres + PostGIS"
+    ]
   },
   {
     "title": "A brand system that grows itself",
@@ -5552,6 +7290,81 @@ export const caseIndex: CaseStudyMeta[] = [
     ],
     "heroImage": "/images/work/kite-and-anchor-insurtech.jpg",
     "heroAlt": "A paper kite folded from a cream policy document, a brass anchor paperweight and an ink pen on warm paper."
+  },
+  {
+    "title": "Larklight: a SaaS marketing site that doubled demo bookings",
+    "description": "A field-service SaaS rewrote its positioning, rebuilt its pricing page around honesty, and doubled demo bookings without spending a dollar more on ads.",
+    "slug": "larklight-saas-marketing-site",
+    "cluster": "work",
+    "tags": [
+      "case study",
+      "SaaS",
+      "CRO",
+      "pricing page",
+      "positioning"
+    ],
+    "date": "2026-01-12",
+    "author": "Priya Nair",
+    "keywords": [
+      "saas website case study",
+      "cro",
+      "pricing page design",
+      "demo booking flow",
+      "positioning"
+    ],
+    "readingTime": 0,
+    "client": "Larklight",
+    "industry": "SaaS",
+    "services": [
+      "Websites",
+      "Brand & identity",
+      "Growth"
+    ],
+    "year": 2025,
+    "stack": [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Sanity",
+      "Cloudflare"
+    ]
+  },
+  {
+    "title": "Marlowe Hotels: winning back the direct booking",
+    "description": "A boutique coastal hotel group was paying OTAs a quiet tax on three-quarters of its bookings. We rebuilt the site and booking flow — and the share flipped.",
+    "slug": "marlowe-hotels-direct-booking-relaunch",
+    "cluster": "work",
+    "tags": [
+      "Hospitality",
+      "Booking flows",
+      "Performance",
+      "Editorial design"
+    ],
+    "date": "2025-11-06",
+    "author": "Mara Ellison",
+    "keywords": [
+      "hotel website case study",
+      "direct booking optimisation",
+      "hospitality web design",
+      "booking flow ux",
+      "hotel conversion rate"
+    ],
+    "readingTime": 10,
+    "client": "Marlowe Hotels",
+    "industry": "Hospitality",
+    "services": [
+      "Websites",
+      "Growth",
+      "Brand & identity"
+    ],
+    "year": 2025,
+    "stack": [
+      "React",
+      "TypeScript",
+      "Node",
+      "Postgres",
+      "Sanity"
+    ]
   },
   {
     "title": "Meridian Climate: making council emissions data impossible to ignore",
@@ -5756,6 +7569,116 @@ export const caseIndex: CaseStudyMeta[] = [
     "demo": "pylon-health-booking"
   },
   {
+    "title": "Quarry & Compass: real-estate search that respects the dreamers",
+    "description": "A property platform rebuilt around how people actually browse: dream scrolling, school-catchment rituals, honest listings, and maps that fly on regional 4G.",
+    "slug": "quarry-and-compass-property",
+    "cluster": "work",
+    "tags": [
+      "case study",
+      "real estate",
+      "map search",
+      "search UX",
+      "performance"
+    ],
+    "date": "2025-06-16",
+    "author": "Felix Brandt",
+    "keywords": [
+      "real estate case study",
+      "map search ux",
+      "property platform",
+      "saved search design",
+      "web performance"
+    ],
+    "readingTime": 0,
+    "client": "Quarry & Compass",
+    "industry": "SaaS",
+    "services": [
+      "Product design & engineering",
+      "Websites"
+    ],
+    "year": 2025,
+    "stack": [
+      "React",
+      "TypeScript",
+      "MapLibre",
+      "Meilisearch",
+      "Node",
+      "Postgres + PostGIS"
+    ]
+  },
+  {
+    "title": "Quill Legal: a document platform lawyers actually enjoy",
+    "description": "A legal-tech SaaS had a brilliant document-automation engine trapped in a 2016 UI. We redesigned the product end-to-end and shipped its design system, Precedent.",
+    "slug": "quill-legal-document-platform",
+    "cluster": "work",
+    "tags": [
+      "SaaS",
+      "Product design",
+      "Design systems",
+      "Accessibility"
+    ],
+    "date": "2025-08-21",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "saas redesign case study",
+      "legaltech product design",
+      "design system case study",
+      "dashboard ux",
+      "template builder design"
+    ],
+    "readingTime": 10,
+    "client": "Quill Legal",
+    "industry": "SaaS",
+    "services": [
+      "Product design & engineering",
+      "Websites"
+    ],
+    "year": 2025,
+    "stack": [
+      "React",
+      "TypeScript",
+      "Node",
+      "Postgres",
+      "Storybook"
+    ]
+  },
+  {
+    "title": "Saltbush Collective: a marketplace for food with a postcode",
+    "description": "A two-sided marketplace connecting regenerative farms to city buyers. We built producer storefronts, seasonal availability and a checkout tuned for mixed baskets.",
+    "slug": "saltbush-collective-marketplace",
+    "cluster": "work",
+    "tags": [
+      "Marketplace",
+      "E-commerce",
+      "Checkout",
+      "Food & drink"
+    ],
+    "date": "2025-05-14",
+    "author": "Nate Sullivan",
+    "keywords": [
+      "marketplace case study",
+      "food ecommerce ux",
+      "checkout design",
+      "two-sided marketplace",
+      "farm to table platform"
+    ],
+    "readingTime": 10,
+    "client": "Saltbush Collective",
+    "industry": "Retail & e-commerce",
+    "services": [
+      "E-commerce",
+      "Product design & engineering"
+    ],
+    "year": 2025,
+    "stack": [
+      "React",
+      "TypeScript",
+      "Headless commerce",
+      "Node",
+      "Postgres"
+    ]
+  },
+  {
     "title": "Signal & Noise: a podcast network site built around listening",
     "description": "Nine shows, one persistent player and transcripts that do real SEO work — how we built a podcast network's home on the web it actually owns.",
     "slug": "signal-and-noise-podcast-network",
@@ -5795,6 +7718,46 @@ export const caseIndex: CaseStudyMeta[] = [
     ],
     "heroImage": "/images/work/signal-and-noise-podcast-network.jpg",
     "heroAlt": "A brass broadcast microphone beside embossed sound-wave rings and a vinyl record on cream paper."
+  },
+  {
+    "title": "Summit & Still: booking UX for a yoga studio group with a calm nervous system",
+    "description": "Five studios, one timetable, zero countdown timers. How we rebuilt Summit & Still's booking around teacher loyalty, ethical intro offers and retention emails with empathy.",
+    "slug": "summit-and-still-yoga",
+    "cluster": "work",
+    "tags": [
+      "Booking UX",
+      "Wellness",
+      "Lifecycle email",
+      "Design systems"
+    ],
+    "date": "2025-11-20",
+    "author": "Priya Nair",
+    "keywords": [
+      "fitness booking case study",
+      "yoga studio website",
+      "class booking ux",
+      "wellness design",
+      "retention email"
+    ],
+    "readingTime": 8,
+    "client": "Summit & Still",
+    "industry": "Hospitality",
+    "services": [
+      "Websites",
+      "Product design & engineering",
+      "Growth"
+    ],
+    "year": 2025,
+    "stack": [
+      "React",
+      "TypeScript",
+      "Node",
+      "Postgres",
+      "Sanity",
+      "Resend"
+    ],
+    "heroImage": "/images/work/summit-and-still-yoga.jpg",
+    "heroAlt": "A rolled linen yoga mat, a brass singing bowl and a folded cream timetable card on warm paper."
   },
   {
     "title": "Sundial Travel: slow travel, planned properly",
@@ -5955,4 +7918,4 @@ export const caseIndex: CaseStudyMeta[] = [
   }
 ]
 
-export const workImages: string[] = ["brightmarsh-onboarding","copperline-community-bank","fern-and-forage-florist","fernleigh-cellar-club","fernleigh-wines-dtc-storefront","glade-skincare-ingredient-honesty","hearthbrew-brand-system","hearthbrew-subscription-club","holloway-player","holloway-records-label-site","meridian-climate-data-explorer","northwind-ledger-budget","northwind-ledger-dashboard-rebuild","osprey-outdoor-configurator-launch","postcards-museum-archive","pylon-care-assistant","pylon-health-booking","pylon-health-telehealth-flow","signal-and-noise-podcast-network","sundial-itinerary-builder","sundial-travel-booking","tallow-and-co-providore","tallow-seat-map","wattle-and-daub-reservations","wattle-and-daub-reserve"]
+export const workImages: string[] = ["arlo-and-sons-tradies-marketplace","brightline-solar-quote-engine","brightmarsh-onboarding","copperline-community-bank","fern-and-forage-florist","fernleigh-cellar-club","fernleigh-wines-dtc-storefront","glade-skincare-ingredient-honesty","hearthbrew-brand-system","hearthbrew-subscription-club","holloway-player","holloway-records-label-site","kite-and-anchor-insurtech","meridian-climate-data-explorer","northwind-ledger-budget","northwind-ledger-dashboard-rebuild","osprey-outdoor-configurator-launch","postcards-museum-archive","pylon-care-assistant","pylon-health-booking","pylon-health-telehealth-flow","quarry-property-map","signal-and-noise-podcast-network","summit-and-still-yoga","sundial-itinerary-builder","sundial-travel-booking","tallow-and-co-providore","tallow-seat-map","tidal-games-store","wattle-and-daub-reservations","wattle-and-daub-reserve","willow-and-wren-bookshop"]

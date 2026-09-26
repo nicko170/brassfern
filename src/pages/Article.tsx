@@ -1,3 +1,4 @@
+import { useMemo } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { Seo } from '../lib/head'
 import { articles, byTag, formatDate, getArticle, relatedArticles } from '../lib/content'
@@ -5,7 +6,11 @@ import { articleLd, breadcrumbLd } from '../lib/jsonld'
 import { CLUSTER_LABELS, CLUSTERS, type Cluster } from '../lib/types'
 import { personSlug } from '../data/people'
 import { absoluteUrl, withBase } from '../lib/base'
+import { useBody } from '../lib/useBody'
+import { parseToc } from '../lib/toc'
 import Markdown from '../components/Markdown'
+import Toc from '../components/Toc'
+import ReadingProgress from '../components/ReadingProgress'
 import { ArticleCard } from '../components/Cards'
 import Reveal from '../components/Reveal'
 import NotFound from './NotFound'
@@ -13,11 +18,14 @@ import NotFound from './NotFound'
 export default function Article() {
   const { cluster, slug } = useParams()
   const meta = cluster && slug && CLUSTERS.includes(cluster as Cluster) ? getArticle(cluster, slug) : undefined
+  const html = useBody('article', slug ?? '', cluster)
+  const tocItems = useMemo(() => (html ? parseToc(html) : []), [html])
   if (!meta) return <NotFound />
   const related = relatedArticles(meta)
   const idx = articles.findIndex((a) => a.cluster === meta.cluster && a.slug === meta.slug)
   const newer = idx > 0 ? articles[idx - 1] : undefined
   const older = idx >= 0 && idx < articles.length - 1 ? articles[idx + 1] : undefined
+  const showToc = tocItems.filter((t) => t.level === 2).length >= 3
 
   return (
     <>
@@ -37,6 +45,7 @@ export default function Article() {
           ]),
         ]}
       />
+      <ReadingProgress />
       <article>
         <header className="article-head container">
           <Reveal className="overline">
@@ -55,7 +64,18 @@ export default function Article() {
           )}
         </header>
         <div className="container section--tight" style={{ marginTop: 'var(--space-6)' }}>
-          <Markdown kind="article" slug={meta.slug} cluster={meta.cluster} />
+          {showToc ? (
+            <div className="article-layout">
+              <div className="article-layout__main">
+                <Markdown html={html} />
+              </div>
+              <aside className="article-layout__aside">
+                <Toc items={tocItems} />
+              </aside>
+            </div>
+          ) : (
+            <Markdown html={html} />
+          )}
         </div>
         <div className="container">
           <div className="tag-row" style={{ marginBlock: 'var(--space-5) var(--space-6)' }}>

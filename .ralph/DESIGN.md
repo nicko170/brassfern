@@ -119,6 +119,17 @@ Brassfern look into a demo.
   slug; hides itself otherwise).
 - **Resource index rows** (`.resource-rows`): compact numbered hairline rows
   (mono num / title / date+time / arrow), meta column hides under 640px.
+- **Reading furniture** (iter 7): `.article-layout` grid gates a sticky
+  scroll-spy TOC (`.toc`, `parseToc()` in lib/toc.ts, brass left-rail active
+  state) on article + case-study pages ≥72em when ≥3 h2s exist; prose headings
+  carry `scroll-margin-top`. `.reading-progress` is a 2px scroll-linked brass
+  gradient bar (rAF, transform-only) on long reads.
+- **Quick find** (`.qf`, iter 7): ⌘K/Ctrl+K night dialog (combobox/listbox
+  ARIA, arrow-key nav, focus restore) searching journal+work + page jumps;
+  triggered by `.find-btn` in the header (≥1020px) or the keys; mobile menu
+  links to /search instead.
+- **Fieldnotes letter** (`.foot-news`, iter 7): footer signup with inline
+  email validation, error + success states on the night surface.
 
 ## Content authoring rules (enforced by build-content-index.mjs)
 

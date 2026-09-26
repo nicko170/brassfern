@@ -1,8 +1,9 @@
-import { useEffect, useState, type ReactNode } from 'react'
+import { useCallback, useEffect, useState, type ReactNode } from 'react'
 import { Link, NavLink, Outlet, useLocation } from 'react-router-dom'
 import { HeadContext, type HeadCollector, createCollector } from '../lib/head'
 import { services } from '../data/services'
 import { CLUSTERS, CLUSTER_LABELS } from '../lib/types'
+import QuickFind, { useQuickFindShortcut } from './QuickFind'
 
 export function FernMark({ className }: { className?: string }) {
   return (
@@ -36,7 +37,7 @@ const NAV = [
   { to: '/studio', label: 'Studio' },
 ]
 
-function Header() {
+function Header({ onQuickFind }: { onQuickFind: () => void }) {
   const [open, setOpen] = useState(false)
   const { pathname } = useLocation()
   useEffect(() => setOpen(false), [pathname])
@@ -61,6 +62,9 @@ function Header() {
               </NavLink>
             ))}
           </nav>
+          <button type="button" className="find-btn" onClick={onQuickFind} aria-label="Search (⌘K)">
+            <span aria-hidden>⌕</span> Search <kbd aria-hidden>⌘K</kbd>
+          </button>
           <Link to="/contact" className="btn btn--primary site-head__cta">
             Start a project <span className="arrow" aria-hidden>→</span>
           </Link>
@@ -76,7 +80,7 @@ function Header() {
           </Link>
         </div>
         <nav className="mobile-menu__links" aria-label="Mobile">
-          {[...NAV, { to: '/contact', label: 'Contact' }].map((n, i) => (
+          {[...NAV, { to: '/search', label: 'Search' }, { to: '/contact', label: 'Contact' }].map((n, i) => (
             <Link key={n.to} to={n.to} tabIndex={open ? 0 : -1}>
               {n.label} <span aria-hidden>0{i + 1}</span>
             </Link>
@@ -85,6 +89,68 @@ function Header() {
         <p className="mobile-menu__foot">Sydney · Singapore · London — est. 2014</p>
       </div>
     </>
+  )
+}
+
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/
+
+/** Fieldnotes — the studio's (conceptual) fortnightly letter. */
+function FootNews() {
+  const [email, setEmail] = useState('')
+  const [state, setState] = useState<'idle' | 'error' | 'done'>('idle')
+  const submit = (e: React.FormEvent) => {
+    e.preventDefault()
+    if (!EMAIL_RE.test(email.trim())) {
+      setState('error')
+      return
+    }
+    setState('done')
+  }
+  return (
+    <div className="container foot-news">
+      <div>
+        <p className="overline overline--night">Fieldnotes — the letter</p>
+        <h3 className="display foot-news__head">
+          One good idea, <em>every second Friday.</em>
+        </h3>
+        <p className="foot-news__sub">
+          What we are shipping, reading and arguing about. No funnels, no spam.
+        </p>
+      </div>
+      {state === 'done' ? (
+        <p className="foot-news__done" role="status">
+          <span className="foot-news__done-tick" aria-hidden>✓</span>
+          You are on the list. First letter lands on a Friday — which feels right.
+        </p>
+      ) : (
+        <form className="foot-news__form" onSubmit={submit} noValidate>
+          <label htmlFor="foot-email" className="mono">Email address</label>
+          <div className="foot-news__row">
+            <input
+              id="foot-email"
+              type="email"
+              autoComplete="email"
+              placeholder="you@studio.com"
+              value={email}
+              aria-invalid={state === 'error'}
+              aria-describedby={state === 'error' ? 'foot-email-err' : undefined}
+              onChange={(e) => {
+                setEmail(e.target.value)
+                if (state === 'error') setState('idle')
+              }}
+            />
+            <button type="submit" className="btn btn--brass">
+              Subscribe
+            </button>
+          </div>
+          {state === 'error' && (
+            <p className="foot-news__err" id="foot-email-err" role="alert">
+              That address has a typo in it — one more look?
+            </p>
+          )}
+        </form>
+      )}
+    </div>
   )
 }
 
@@ -152,6 +218,7 @@ function Footer() {
           </ul>
         </div>
       </div>
+      <FootNews />
       <div className="container foot-colophon">
         <p>
           Brassfern is a concept studio. This site — every page, article and demo — was designed and built autonomously by Kimi&nbsp;K3 running on GreenThread. All clients, people and metrics are fictional.
@@ -164,18 +231,23 @@ function Footer() {
 
 export default function Layout({ head }: { head?: HeadCollector }) {
   const [fallback] = useState(() => createCollector())
+  const [qfOpen, setQfOpen] = useState(false)
+  const openQf = useCallback(() => setQfOpen(true), [])
+  const closeQf = useCallback(() => setQfOpen(false), [])
+  useQuickFindShortcut(openQf)
   return (
     <HeadContext.Provider value={head ?? fallback}>
       <a href="#main" className="skip-link">
         Skip to content
       </a>
       <ScrollToTop />
-      <Header />
+      <Header onQuickFind={openQf} />
       <main id="main">
         <Outlet />
       </main>
       <Footer />
       <div className="grain" aria-hidden="true" />
+      <QuickFind open={qfOpen} onClose={closeQf} />
     </HeadContext.Provider>
   )
 }
