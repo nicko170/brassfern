@@ -4490,8 +4490,10 @@
     "brand distinctiveness colour",
     "accessible brand colours"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790385861.0913641
   },
   {
    "kind": "article",
@@ -4505,8 +4507,10 @@
     "logo lockup design",
     "brand partnership design"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790385861.0913641
   },
   {
    "kind": "article",
@@ -4520,8 +4524,10 @@
     "cpg brand digital",
     "brand consistency audit"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790385861.091365
   },
   {
    "kind": "article",
@@ -4535,8 +4541,10 @@
     "recruitment brand",
     "company culture page"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790385861.091365
   },
   {
    "kind": "article",
