@@ -3439,8 +3439,10 @@
     "crdt sync engine",
     "indexeddb patterns"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790384852.531072
   },
   {
    "kind": "article",
@@ -3454,8 +3456,10 @@
     "content migration checklist",
     "redirect strategy"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790384852.531073
   },
   {
    "kind": "article",
@@ -3469,8 +3473,10 @@
     "content security policy",
     "performance marketing scripts"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790384852.531073
   },
   {
    "kind": "article",
@@ -3484,8 +3490,10 @@
     "web animation 2026",
     "progressive enhancement"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790384852.531073
   },
   {
    "kind": "article",

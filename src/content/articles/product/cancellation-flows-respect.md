@@ -28,7 +28,7 @@ Retention offers work. The data is not ambiguous: a well-timed pause, downgrade 
 
 Most exit surveys are one required dropdown of reasons nobody believes ("Other") plus a comment box nobody reads. Exit surveys can be genuinely diagnostic — leaving users are your most honest research panel — if you design for analysis rather than ceremony.
 
-**Ask the reason as a single-select with reviewed options.** Six to nine options, mutually exclusive, rewritten quarterly against the actual free-text answers. The discipline is in "reviewed": when we ran this for a fintech client, "too expensive" dominated for two quarters before we split it into "price" and "not using it enough to justif whole price" — two completely different problems (a pricing problem vs an activation problem) that had been averaging each other into invisibility.
+**Ask the reason as a single-select with reviewed options.** Six to nine options, mutually exclusive, rewritten quarterly against the actual free-text answers. The discipline is in "reviewed": when we ran this for a fintech client, "too expensive" dominated for two quarters before we split it into "price" and "not using it enough to justify the price" — two completely different problems (a pricing problem vs an activation problem) that had been averaging each other into invisibility.
 
 **One optional free-text, labelled as optional.** "Anything that would have changed your mind? (optional)" outperforms the mandatory "Tell us more" field on completion rate and produces longer, more specific answers. The trap is requiring it; requiring teaches people to type "asdf" and forever poisons your data.
 
