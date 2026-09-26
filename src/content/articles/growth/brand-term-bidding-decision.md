@@ -95,7 +95,7 @@ Often the highest-value brand spend. These are decision-stage queries where mess
 Screenshot with timestamps, file a trademark complaint through the platform's ad policy channel, and brief your lawyer if it persists. Platform takedowns are slow but real. Meanwhile, bid on your own term so their non-compliant ad isn't sitting alone at the top of your name.
 
 **Should small brands with no competitors bidding run brand campaigns at all?**
-Usually minimal or none — put the budget into non-brand terms and [content that compounds](/journal/growth/content-strategy-that-compounds). The exception is launch windows, rebrands, or promotions where message control is worth a small, capped spend.
+Usually minimal or none — put the budget into non-brand terms and [content that compounds](/journal/growth/content-strategy-compounds). The exception is launch windows, rebrands, or promotions where message control is worth a small, capped spend.
 
 **How do we report brand performance without misleading anyone?**
 Report it on its own line, always: brand spend, brand revenue, and — if you've run the test — estimated incremental brand revenue. Blending brand into "paid search performance" is how the Pacific garbage patch of marketing metrics gets bigger.
