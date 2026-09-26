@@ -6268,8 +6268,10 @@
    "cluster": "demos",
    "intent": "A music player UI for the fictional Holloway Records label: a vinyl-shelf browse view, waveform seek bar rendered on canvas, play queue with drag-to-reorder, crossfade toggle, and a 'liner notes' panel per track. Art direction: charcoal studio-dark with oxblood and bone type, condensed grotesk + mono timings, subtle vinyl-sheen gradients. Mocked audio (WebAudio oscillator-free — visual playback simulation with time-based waveform animation), full keyboard control, reduced-motion static waveform. Ties to case study holloway-records-label-site.",
    "keywords": [],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "demo1",
+   "claimed_at": 1790393458.8395798
   },
   {
    "kind": "demo",
@@ -6622,10 +6624,11 @@
     "ai generated ui",
     "design engineering ai"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790391220.51035
+   "claimed_at": 1790391220.51035,
+   "done_at": "2026-09-26T13:30:13"
   },
   {
    "kind": "article",
@@ -6909,10 +6912,11 @@
     "AI red teaming",
     "LLM threat model"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790391220.5103512
+   "claimed_at": 1790391220.5103512,
+   "done_at": "2026-09-26T13:33:38"
   },
   {
    "kind": "article",
@@ -7797,6 +7801,198 @@
     "content atomisation",
     "newsletter content",
     "content operations"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ai-form-copilots",
+   "title": "AI form copilots: suggestion, not substitution",
+   "cluster": "ai",
+   "intent": "AI autofill and form copilots: where suggestion beats generation, confidence display per field, undo paths for bulk-filled forms, and never letting the model commit silently. Ground in form-heavy product contexts (onboarding, admin).",
+   "keywords": [
+    "AI form filling",
+    "AI copilot UX",
+    "autofill design",
+    "AI assistance UI",
+    "form UX"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "llm-answer-length-design",
+   "title": "How long should the answer be? Right-sizing LLM output",
+   "cluster": "ai",
+   "intent": "Right-sizing LLM answers: length as a product decision, summary/detail layering patterns, per-surface answer budgets (chat vs inline vs email), and evaluating 'too long' and 'too short' as first-class failure modes.",
+   "keywords": [
+    "LLM response length",
+    "AI answer design",
+    "progressive disclosure AI",
+    "assistant UX",
+    "LLM evaluation"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ai-editorial-copilots",
+   "title": "Editorial copilots that don't flatten the voice",
+   "cluster": "ai",
+   "intent": "Editorial AI copilots for writers and marketing teams: drafting vs polishing modes, house-style injection, quote and fact hygiene, keeping a distinctive voice, and review flows that keep a human byline honest.",
+   "keywords": [
+    "AI writing tools",
+    "editorial AI",
+    "AI content workflow",
+    "brand voice AI",
+    "copilot UX"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "context-window-product-design",
+   "title": "The context window is a product decision",
+   "cluster": "ai",
+   "intent": "Context windows as a product constraint: deciding what the model sees, showing users what's in scope, graceful forgetting UX, and the affordances for 'the assistant doesn't know this'.",
+   "keywords": [
+    "context window UX",
+    "LLM product design",
+    "AI memory UX",
+    "RAG context design",
+    "AI transparency"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ai-feature-discovery-education",
+   "title": "Teaching what the AI can do",
+   "cluster": "ai",
+   "intent": "Teaching users what an AI feature can and can't do: education UI beyond the tooltip, example-driven discovery, prompt starters as curriculum, and measuring time-to-first-valuable-output.",
+   "keywords": [
+    "AI feature discovery",
+    "AI onboarding",
+    "prompt examples UX",
+    "AI education UI",
+    "activation metrics"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "multi-agent-status-surfaces",
+   "title": "Showing the swarm: multi-agent status UX",
+   "cluster": "ai",
+   "intent": "Multi-agent status surfaces: showing users what a swarm of agents is doing without a log firehose, step-level summaries, cost and time display, interruption controls, and failure narration.",
+   "keywords": [
+    "multi-agent UX",
+    "agent status UI",
+    "AI progress displays",
+    "agent transparency",
+    "AI workflow design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ai-feedback-signals",
+   "title": "Feedback loops users will actually feed",
+   "cluster": "ai",
+   "intent": "Designing feedback signals for AI features: thumbs-up/down that collects something useful, structured feedback prompts, closing the loop visibly, and treating feedback volume as a feature health metric.",
+   "keywords": [
+    "AI feedback UX",
+    "thumbs up down design",
+    "AI quality signals",
+    "feedback loop product",
+    "LLM product metrics"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "rag-freshness-staleness",
+   "title": "RAG and the staleness problem",
+   "cluster": "ai",
+   "intent": "Corpus freshness in RAG systems: staleness as a ranking signal, surfacing 'last updated' in answers, decay policies, and designing the re-indexing pipeline so support docs never become folklore.",
+   "keywords": [
+    "RAG freshness",
+    "knowledge base AI",
+    "staleness handling",
+    "RAG design",
+    "AI support quality"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "llm-latency-budgets",
+   "title": "Latency budgets for LLM features",
+   "cluster": "ai",
+   "intent": "Latency budgets for LLM features: defining acceptable seconds per surface, perceived-speed techniques beyond streaming, model routing for speed vs quality, and killing features that can't make the budget.",
+   "keywords": [
+    "LLM latency",
+    "AI performance UX",
+    "perceived speed AI",
+    "model routing",
+    "streaming UX"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ai-moderation-ux",
+   "title": "When the AI says no: moderation UX",
+   "cluster": "ai",
+   "intent": "Moderation UX for AI generation: blocked-state copy that explains without lecturing, revision suggestions instead of dead ends, appeal/review paths, and telemetry for moderation over-reach.",
+   "keywords": [
+    "content moderation UX",
+    "AI safety UX",
+    "blocked state design",
+    "AI policy feedback",
+    "responsible AI product"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "prompt-libraries-teams",
+   "title": "Prompt libraries that survive the team",
+   "cluster": "ai",
+   "intent": "Shared prompt libraries as internal infrastructure: versioning prompts like code, ownership and review, discoverability problems in prompt collections, and measuring which prompts actually earn reuse.",
+   "keywords": [
+    "prompt library",
+    "prompt engineering team",
+    "AI operations",
+    "prompt versioning",
+    "LLM governance"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ai-answers-vs-navigation",
+   "title": "AI answers vs good navigation: choose deliberately",
+   "cluster": "ai",
+   "intent": "When should the LLM answer replace navigation? Designing AI search vs structured browse for docs and marketing sites, result-source labelling, fallback to classic search, and measuring task completion honestly.",
+   "keywords": [
+    "AI site search",
+    "LLM vs navigation",
+    "AI answers UX",
+    "docs search AI",
+    "findability design"
    ],
    "status": "planned",
    "added_by": "builder"
