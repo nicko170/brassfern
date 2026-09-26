@@ -7798,10 +7798,11 @@
     "CRO honesty",
     "growth experiments"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790406202.8119738
+   "claimed_at": 1790406202.8119738,
+   "done_at": "2026-09-26T17:14:28"
   },
   {
    "kind": "article",
@@ -7816,10 +7817,11 @@
     "search UX data",
     "content strategy"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790406202.811976
+   "claimed_at": 1790406202.811976,
+   "done_at": "2026-09-26T17:14:28"
   },
   {
    "kind": "article",
