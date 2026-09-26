@@ -31,8 +31,6 @@ stack:
   - MapLibre
   - Node
   - Postgres + PostGIS
-heroImage: /images/work/harvest-loop-food-rescue.jpg
-heroAlt: "Sunlit crates of rescued vegetables on a depot floor beside a rugged phone showing a simple green run-sheet app."
 ---
 
 Harvest Loop is a fictional-but-plausible food-rescue charity operating across greater Melbourne: two refrigerated vans, a depot in Footscray, 340 food donors (supermarkets, farms, caterers) and 90 recipient agencies from shelters to school breakfast programs. Their mission is moving 40 tonnes of edible food a week from bin-bound to bellies. Their tooling, until recently, was a whiteboard, three WhatsApp groups and a shared spreadsheet called FINAL_runs_v7.xlsx.

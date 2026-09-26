@@ -31,8 +31,6 @@ stack:
   - Meilisearch
   - Node
   - Postgres + PostGIS
-heroImage: /images/work/quarry-and-compass-property.jpg
-heroAlt: "A hand-drawn style topographic map with brass map pins dissolving into a clean editorial property card grid."
 ---
 
 Quarry & Compass is a fictional-but-plausible Australian property platform — listings, guides and buyer tools — founded by two ex-agents who believed the portals had trained everyone to hate house hunting. When they came to us, they had 62,000 listings, a loyal email list, and a website that treated every visitor like they were ready to buy a house this weekend.
