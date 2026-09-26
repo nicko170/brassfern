@@ -8,6 +8,8 @@ date: 2026-03-12
 author: Sam Whitfield
 keywords: [heuristic evaluation, CRO audit, usability review, conversion audit, marketing page review]
 readingTime: 9
+heroImage: /images/articles/growth/heuristic-evaluation-marketing-sites.jpg
+heroAlt: "Editorial flat-lay illustration of printed website wireframe cards being scored with fern-ink checkmarks and a brass ruler, beside a rubric scorecard on warm paper"
 ---
 
 Most marketing sites have never had a conversion review. They've had redesigns — expensive, opinion-driven redesigns — but nobody has ever sat down and systematically asked whether the homepage explains what the company does, whether the pricing page answers the questions buyers actually ask, or whether the contact form demands three fields of commitment before a stranger is ready to give one. The usual excuse is traffic: "we can't A/B test anything, we don't have the numbers." Which is true, and irrelevant. You don't need statistics to find what a structured expert review finds in an afternoon.
