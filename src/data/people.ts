@@ -27,3 +27,17 @@ export const team: Person[] = [
 ]
 
 export const authorNames = team.map((p) => p.name)
+
+/** URL-safe slug for a team member ("Tomás Reyes" → "tomas-reyes"). */
+export function personSlug(name: string): string {
+  return name
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '') // strip combining diacritics ("Tomás" → "tomas")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '')
+}
+
+export function personBySlug(slug: string): Person | undefined {
+  return team.find((p) => personSlug(p.name) === slug)
+}

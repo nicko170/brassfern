@@ -24,6 +24,7 @@ const Approach = lazyPage(() => import('./pages/Approach'))
 const Pricing = lazyPage(() => import('./pages/Pricing'))
 const Studio = lazyPage(() => import('./pages/Studio'))
 const Team = lazyPage(() => import('./pages/Team'))
+const PersonPage = lazyNamed(() => import('./pages/Team'), 'PersonPage')
 const Careers = lazyNamed(() => import('./pages/Careers'), 'Careers')
 const JobPage = lazyNamed(() => import('./pages/Careers'), 'JobPage')
 const JournalIndex = lazyNamed(() => import('./pages/Journal'), 'JournalIndex')
@@ -38,7 +39,7 @@ const Legal = lazyPage(() => import('./pages/Legal'))
 
 const allPages: Preloadable<ComponentType>[] = [
   Home, Work, WorkCase, LabIndex, LabDemo, ServicesIndex, ServicePage,
-  IndustriesIndex, IndustryPage, Approach, Pricing, Studio, Team,
+  IndustriesIndex, IndustryPage, Approach, Pricing, Studio, Team, PersonPage,
   Careers, JobPage, JournalIndex, JournalCluster, Article, TagPage,
   Search, Resources, Contact, Press, Legal,
 ]
@@ -103,6 +104,7 @@ export default function App({ head }: { head?: HeadCollector }) {
         <Route path="pricing" element={<Suspense fallback={<PageFallback />}><Pricing /></Suspense>} />
         <Route path="studio" element={<Suspense fallback={<PageFallback />}><Studio /></Suspense>} />
         <Route path="team" element={<Suspense fallback={<PageFallback />}><Team /></Suspense>} />
+        <Route path="team/:slug" element={<Suspense fallback={<PageFallback />}><PersonPage /></Suspense>} />
         <Route path="careers" element={<Suspense fallback={<PageFallback />}><Careers /></Suspense>} />
         <Route path="careers/:slug" element={<Suspense fallback={<PageFallback />}><JobPage /></Suspense>} />
         <Route path="journal" element={<Suspense fallback={<PageFallback />}><JournalIndex /></Suspense>} />

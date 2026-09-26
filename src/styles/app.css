@@ -1474,6 +1474,169 @@ a.chip:hover {
   border-radius: 2px;
 }
 
+/* ——— Author bylines (link to team profile) ——— */
+.article-meta__author {
+  color: var(--ink-2);
+  text-decoration: underline;
+  text-decoration-color: rgba(176, 138, 62, 0.5);
+  text-underline-offset: 3px;
+  transition: color var(--dur-fast) var(--ease-out), text-decoration-color var(--dur-fast) var(--ease-out);
+}
+.article-meta__author:hover {
+  color: var(--fern);
+  text-decoration-color: var(--fern);
+}
+
+/* ——— Featured lead story (journal hubs) ——— */
+.feature {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-5);
+  align-items: center;
+  border-top: 2px solid var(--ink);
+  border-bottom: 1px solid var(--line);
+  padding-block: var(--space-5);
+  margin-bottom: var(--space-6);
+}
+@media (min-width: 900px) {
+  .feature {
+    grid-template-columns: 1.08fr 0.92fr;
+    gap: var(--space-7);
+  }
+}
+.feature__text h3 {
+  font-family: var(--font-display);
+  font-weight: 480;
+  font-size: clamp(1.8rem, 4.2vw, 2.9rem);
+  line-height: 1.08;
+  letter-spacing: -0.015em;
+  margin-top: var(--space-4);
+  transition: color var(--dur-fast) var(--ease-out);
+}
+.feature:hover .feature__text h3 {
+  color: var(--fern);
+}
+.feature__text > p {
+  color: var(--ink-2);
+  margin-top: var(--space-3);
+  max-width: 54ch;
+}
+.feature__meta {
+  display: block;
+  margin-top: var(--space-4);
+  font-family: var(--font-mono);
+  font-size: var(--fs-micro);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.feature__media {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--paper-2);
+}
+.feature__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--dur-slow) var(--ease-out);
+}
+.feature:hover .feature__media img {
+  transform: scale(1.03);
+}
+
+/* ——— Team index cards (linked) ——— */
+.person__link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  transition: transform var(--dur-med) var(--ease-out);
+}
+.person__link:hover {
+  transform: translateY(-3px);
+}
+.person__link:focus-visible {
+  outline: 2px solid var(--brass);
+  outline-offset: 4px;
+  border-radius: var(--radius);
+}
+.person__plate {
+  display: block;
+  margin-top: var(--space-3);
+  text-transform: none;
+}
+.person__plate b {
+  text-transform: none;
+  letter-spacing: 0;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.15rem;
+  color: var(--ink);
+  transition: color var(--dur-fast) var(--ease-out);
+}
+.person__link:hover .person__plate b {
+  color: var(--fern);
+}
+.person__plate span {
+  font-family: var(--font-mono);
+  font-size: var(--fs-micro);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.person__line {
+  margin-top: var(--space-2);
+  font-size: 0.9rem;
+}
+
+/* ——— Person profile ——— */
+.person-hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+}
+@media (min-width: 860px) {
+  .person-hero {
+    grid-template-columns: 1.35fr 0.65fr;
+    gap: var(--space-7);
+    align-items: center;
+  }
+}
+.person-hero__frame {
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  max-width: 340px;
+}
+.person-hero__frame svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.person-hero__facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4) var(--space-7);
+  margin-top: var(--space-5);
+  border-top: 1px solid var(--line);
+  padding-top: var(--space-4);
+}
+.person-hero__facts dt {
+  font-family: var(--font-mono);
+  font-size: var(--fs-micro);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.person-hero__facts dd {
+  font-family: var(--font-display);
+  font-weight: 480;
+  font-size: 1.12rem;
+  margin-top: 0.25rem;
+}
+
 /* ——— Print ——— */
 @media print {
   :root {

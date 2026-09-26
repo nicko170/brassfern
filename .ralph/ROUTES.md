@@ -12,9 +12,10 @@
 | `/services`, `/services/:slug` (6) | Service pages w/ process, deliverables, FAQ+JSON-LD | `src/data/services.ts` |
 | `/industries`, `/industries/:slug` (9) | Industry pages | `src/data/industries.ts` |
 | `/approach`, `/pricing`, `/studio`, `/team` | Studio pages | `src/data/people.ts` etc. |
+| `/team/:slug` (12) | Author/person profiles (Portrait, facts, authored work + articles) | `src/data/people.ts`, generated index |
 | `/careers`, `/careers/:slug` (5) | Jobs | `src/data/jobs.ts` |
-| `/journal` | Article index (12/page, client pagination) | generated index |
-| `/journal/:cluster` | Cluster hubs (8 clusters) | generated index |
+| `/journal` | Article index (lead-story feature + 12/page client pagination) | generated index |
+| `/journal/:cluster` | Cluster hubs (8 clusters, lead-story feature) | generated index |
 | `/journal/tag/:tag` | Tag pages (all tags prerendered) | generated index |
 | `/journal/:cluster/:slug` | Article | `src/content/articles/<cluster>/<slug>.md` |
 | `/search` (?q=) | Live-debounced client search; empty state shows popular tags + latest | metas |
@@ -80,6 +81,9 @@
 - CI sets `BASE_PATH=/brassfern/`, `SITE_URL=https://nicko170.github.io`.
 - `src/lib/base.ts`: `BASE`, `withBase()` (use for EVERY asset/fetch/md link),
   `ROUTER_BASE` for `<BrowserRouter basename>`, `absoluteUrl()`.
+- The prerender runs `<StaticRouter location={ROUTER_BASE + url}
+  basename={ROUTER_BASE}>` so prerendered `<Link>` hrefs carry the base prefix
+  too (fixed in builder iteration 5 — don't regress this).
 - `%BASE_URL%` is replaced in index.html by a vite plugin (favicon).
 
 ## Commands

@@ -3,12 +3,17 @@ import { Link, useParams } from 'react-router-dom'
 import { Seo } from '../lib/head'
 import { articles, byCluster } from '../lib/content'
 import { CLUSTER_LABELS, CLUSTERS, type Cluster } from '../lib/types'
-import { ArticleCard } from '../components/Cards'
+import { ArticleCard, ArticleFeature } from '../components/Cards'
 import { breadcrumbLd } from '../lib/jsonld'
 import Reveal from '../components/Reveal'
 import NotFound from './NotFound'
 
 const PAGE_SIZE = 12
+
+/** Lead story = latest piece with hero art, else simply the latest. */
+function pickFeatured<T extends { heroImage?: string }>(list: T[]): T | undefined {
+  return list.find((a) => a.heroImage) ?? list[0]
+}
 
 const CLUSTER_INTROS: Record<Cluster, string> = {
   'web-design': 'Type, grids, motion and the thousand small decisions that make a page feel inevitable — written by the designers who sweat them.',
@@ -42,8 +47,13 @@ function ClusterNav({ active }: { active?: string }) {
 
 export function JournalIndex() {
   const [page, setPage] = useState(1)
-  const pages = Math.max(1, Math.ceil(articles.length / PAGE_SIZE))
-  const shown = useMemo(() => articles.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE), [page])
+  const featured = pickFeatured(articles)
+  const rest = useMemo(
+    () => (featured ? articles.filter((a) => a !== featured) : articles),
+    [featured],
+  )
+  const pages = Math.max(1, Math.ceil(rest.length / PAGE_SIZE))
+  const shown = useMemo(() => rest.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE), [rest, page])
 
   return (
     <>
@@ -62,6 +72,7 @@ export function JournalIndex() {
       </header>
       <section className="section container">
         <ClusterNav />
+        {featured && page === 1 && <ArticleFeature a={featured} label="The latest big read" />}
         {shown.length > 0 ? (
           <div className="card-grid card-grid--3">
             {shown.map((a) => (
@@ -94,8 +105,10 @@ export function JournalCluster() {
   const [page, setPage] = useState(1)
   if (!cluster || !CLUSTERS.includes(cluster as Cluster)) return <NotFound />
   const list = byCluster(cluster as Cluster)
-  const pages = Math.max(1, Math.ceil(list.length / PAGE_SIZE))
-  const shown = list.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE)
+  const featured = pickFeatured(list)
+  const rest = featured ? list.filter((a) => a !== featured) : list
+  const pages = Math.max(1, Math.ceil(rest.length / PAGE_SIZE))
+  const shown = rest.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE)
 
   return (
     <>
@@ -112,15 +125,18 @@ export function JournalCluster() {
       </header>
       <section className="section container">
         <ClusterNav active={cluster} />
+        {featured && page === 1 && (
+          <ArticleFeature a={featured} label={`The ${CLUSTER_LABELS[cluster as Cluster].toLowerCase()} big read`} />
+        )}
         {shown.length > 0 ? (
           <div className="card-grid card-grid--3">
             {shown.map((a) => (
               <ArticleCard key={`${a.cluster}/${a.slug}`} a={a} />
             ))}
           </div>
-        ) : (
+        ) : !featured ? (
           <p className="lead">Nothing published in this cluster yet — the drafts are steeping.</p>
-        )}
+        ) : null}
         {pages > 1 && (
           <nav className="pagination" aria-label="Pagination" style={{ marginTop: 'var(--space-7)' }}>
             {Array.from({ length: pages }, (_, i) => i + 1).map((p) =>

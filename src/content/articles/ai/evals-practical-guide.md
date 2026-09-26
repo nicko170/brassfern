@@ -16,6 +16,8 @@ keywords:
   - prompt regression
   - golden dataset llm
 readingTime: 11
+heroImage: /images/articles/ai/evals-practical-guide.jpg
+heroAlt: "Still life on cream paper: a small brass balance scale weighing a stack of index cards against a pile of fern leaves, beside a brass ruler and a pencil."
 ---
 
 Traditional software gives you a comforting lie: the test passes or it fails. LLM features give you nothing so clean. Outputs are prose, quality is a gradient, and the same prompt run twice disagrees with itself. Teams respond in one of two bad ways — shipping on vibes ("the PM tried it ten times and it seemed fine") or abandoning measurement entirely because perfect measurement is impossible.

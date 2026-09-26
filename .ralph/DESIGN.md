@@ -100,6 +100,17 @@ Brassfern look into a demo.
   (featuring demos[0]) between the work reel and services.
 - **Print**: `@media print` block at the end of app.css hides chrome/grain/
   marquee/lab art, flattens night sections, expands prose link hrefs.
+- **Author profiles** (`/team/:slug`): `personSlug()` in data/people.ts
+  (diacritic-safe). Person page = `.person-hero` (text col + framed Portrait),
+  `.person-hero__facts` (mono dt / display dd), authored case-study + article
+  grids, team chip row. ProfilePage JSON-LD via `personLd()`. Bylines on
+  article and case-study pages link to profiles via `.article-meta__author`
+  (brass underline, fern on hover). Team index cards are full-block links
+  (`.person__link`) with hover lift.
+- **Lead stories** (`.feature`): editorial lead card on /journal + cluster
+  hubs (page 1 only) — 2px ink top rule, text col + `.feature__media` (16:10,
+  hero image or themeFor tile), mono meta row; featured = latest article with
+  heroImage, excluded from the paginated grid.
 
 ## Content authoring rules (enforced by build-content-index.mjs)
 

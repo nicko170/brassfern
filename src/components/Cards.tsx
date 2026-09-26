@@ -79,6 +79,35 @@ export function ArticleCard({ a, index }: { a: ArticleMeta; index?: number }) {
   )
 }
 
+/**
+ * Big editorial lead story for the journal hubs — hero image when one exists,
+ * otherwise the deterministic generative tile.
+ */
+export function ArticleFeature({ a, label = 'The lead' }: { a: ArticleMeta; label?: string }) {
+  const theme = themeFor(a.slug)
+  return (
+    <Link to={`/journal/${a.cluster}/${a.slug}`} className="feature">
+      <div className="feature__text">
+        <span className="overline">{label}</span>
+        <h3>{a.title}</h3>
+        <p>{a.description}</p>
+        <span className="feature__meta">
+          {CLUSTER_LABELS[a.cluster as Cluster]} · {formatDate(a.date)} · {a.readingTime} min read · {a.author}
+        </span>
+      </div>
+      <div className="feature__media">
+        {a.heroImage ? (
+          <img src={withBase(a.heroImage)} alt={a.heroAlt ?? ''} loading="lazy" />
+        ) : (
+          <div className="card__hover-art" style={{ background: theme.bg, color: theme.fg }} aria-hidden="true">
+            {initials(a.title)}
+          </div>
+        )}
+      </div>
+    </Link>
+  )
+}
+
 export function DemoCard({ d }: { d: DemoEntry }) {
   const theme = themeFor(d.slug)
   return (

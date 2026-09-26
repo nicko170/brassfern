@@ -3,6 +3,7 @@ import { Seo } from '../lib/head'
 import { articles, byTag, formatDate, getArticle, relatedArticles } from '../lib/content'
 import { articleLd, breadcrumbLd } from '../lib/jsonld'
 import { CLUSTER_LABELS, CLUSTERS, type Cluster } from '../lib/types'
+import { personSlug } from '../data/people'
 import { absoluteUrl, withBase } from '../lib/base'
 import Markdown from '../components/Markdown'
 import { ArticleCard } from '../components/Cards'
@@ -43,7 +44,7 @@ export default function Article() {
           </Reveal>
           <h1 className="display">{meta.title}</h1>
           <div className="article-meta">
-            <span>{meta.author}</span>
+            <Link to={`/team/${personSlug(meta.author)}`} className="article-meta__author">{meta.author}</Link>
             <span>{formatDate(meta.date)}</span>
             <span>{meta.readingTime} min read</span>
           </div>

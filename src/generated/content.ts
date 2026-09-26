@@ -3,6 +3,27 @@ import type { ArticleMeta, CaseStudyMeta } from '../lib/types'
 
 export const articleIndex: ArticleMeta[] = [
   {
+    "title": "Agent UX: designing for software that acts on your behalf",
+    "description": "When software acts instead of suggests, the interface becomes a control system: permission scopes, visible progress, real undo, and calibrated trust.",
+    "slug": "agent-ux-control",
+    "cluster": "ai",
+    "tags": [
+      "AI agents",
+      "Interaction design",
+      "Trust"
+    ],
+    "date": "2026-05-26",
+    "author": "Ruby Castellanos",
+    "keywords": [
+      "agent ux",
+      "ai agents",
+      "human in the loop",
+      "ai interaction design",
+      "agentic interfaces"
+    ],
+    "readingTime": 11
+  },
+  {
     "title": "Agent UX: designing for delegation, not magic",
     "description": "Agentic features fail when they promise magic. The interface patterns we use instead: scope setting, visible progress, checkpoints, undo and earned autonomy.",
     "slug": "agent-ux-patterns",
@@ -73,6 +94,30 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 11
   },
   {
+    "title": "AI and brand voice: keeping the robot on-script",
+    "description": "Models drift toward LinkedIn-speak. How we write voice specs machines can follow — exemplars, register maps, persona rules — and test them with real readers.",
+    "slug": "ai-brand-voice",
+    "cluster": "ai",
+    "tags": [
+      "brand voice",
+      "ai writing",
+      "tone of voice",
+      "editorial",
+      "llm content"
+    ],
+    "date": "2026-01-22",
+    "author": "Leonie Marsh",
+    "keywords": [
+      "ai brand voice",
+      "ai copywriting",
+      "brand safety ai",
+      "tone control",
+      "voice spec",
+      "llm style guide"
+    ],
+    "readingTime": 12
+  },
+  {
     "title": "Analytics for AI features: what to measure",
     "description": "Chat volume tells you nothing. The instrumentation stack we use for AI features: acceptance, correction signals, task completion, cost-quality overlays, weekly review.",
     "slug": "ai-feature-analytics",
@@ -117,6 +162,51 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 10
   },
   {
+    "title": "Shipping 'sometimes wrong': communicating AI features",
+    "description": "Launch copy for features that are sometimes wrong: setting accuracy expectations, changelog phrasing, support macros, and the trust maths of underpromising deliberately.",
+    "slug": "communicating-probabilistic-features",
+    "cluster": "ai",
+    "tags": [
+      "ai ux",
+      "launch copy",
+      "product marketing",
+      "content design",
+      "trust"
+    ],
+    "date": "2026-08-14",
+    "author": "Leonie Marsh",
+    "keywords": [
+      "ai feature communication",
+      "launching ai features",
+      "ai marketing honesty",
+      "probabilistic ux copy"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "Evals are the new unit tests: a practical guide for product teams",
+    "description": "Golden sets, rubric graders, regression gates and CI plumbing: how product teams build LLM evaluations that catch real regressions without a research team.",
+    "slug": "evals-practical-guide",
+    "cluster": "ai",
+    "tags": [
+      "Evals",
+      "Testing",
+      "AI engineering"
+    ],
+    "date": "2026-03-31",
+    "author": "Priya Nair",
+    "keywords": [
+      "llm evals",
+      "ai evaluation",
+      "model testing",
+      "prompt regression",
+      "golden dataset llm"
+    ],
+    "readingTime": 11,
+    "heroImage": "/images/articles/ai/evals-practical-guide.jpg",
+    "heroAlt": "Still life on cream paper: a small brass balance scale weighing a stack of index cards against a pile of fern leaves, beside a brass ruler and a pencil."
+  },
+  {
     "title": "Fine-tuning vs RAG vs prompt: a decision guide",
     "description": "Prompt, retrieve or fine-tune? The decision tree we run with clients, with real cost curves, data requirements, iteration speed and the maintenance burden nobody mentions.",
     "slug": "fine-tuning-vs-rag",
@@ -137,6 +227,29 @@ export const articleIndex: ArticleMeta[] = [
       "prompt engineering strategy"
     ],
     "readingTime": 11
+  },
+  {
+    "title": "Golden evals: mining support tickets for test sets",
+    "description": "Your support inbox is the best LLM eval dataset you'll ever get. How to mine tickets into versioned golden sets that catch regressions before users do.",
+    "slug": "golden-eval-sets-support-tickets",
+    "cluster": "ai",
+    "tags": [
+      "llm evals",
+      "ai quality",
+      "support",
+      "golden dataset",
+      "testing"
+    ],
+    "date": "2025-11-13",
+    "author": "Dev Khatri",
+    "keywords": [
+      "llm eval dataset",
+      "golden dataset ai",
+      "support ticket ai evals",
+      "prompt regression testing",
+      "ai quality assurance"
+    ],
+    "readingTime": 12
   },
   {
     "title": "Cost engineering for LLM features",
@@ -185,6 +298,31 @@ export const articleIndex: ArticleMeta[] = [
       "llm as judge"
     ],
     "readingTime": 9
+  },
+  {
+    "title": "When the model fails: fallback UX for LLM features",
+    "description": "LLMs fail — slowly, confidently and at the worst times. How to design degradation tiers, honest error states and timeouts that keep users' trust intact.",
+    "slug": "llm-failure-fallback-ux",
+    "cluster": "ai",
+    "tags": [
+      "ai ux",
+      "error states",
+      "graceful degradation",
+      "product design",
+      "llm"
+    ],
+    "date": "2026-02-19",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "llm fallback ux",
+      "ai error handling",
+      "graceful degradation ai",
+      "ai unavailable state",
+      "ai loading state design"
+    ],
+    "readingTime": 11,
+    "heroImage": "/images/articles/ai/llm-failure-fallback-ux.jpg",
+    "heroAlt": "A brass service bell and desk tools arranged on descending stacks of index cards on warm cream paper — the fallback ladder made tangible."
   },
   {
     "title": "Multimodal interfaces: beyond the chat box",
@@ -280,6 +418,27 @@ export const articleIndex: ArticleMeta[] = [
     "heroAlt": "Overhead still life of a brass inspection stamp, loupe and paperweight beside hand-lettered fern-green specimen cards and a pressed fern on cream paper."
   },
   {
+    "title": "Shipping LLM features: what production taught us",
+    "description": "The lessons that only arrive after launch: latency budgets in the wild, streaming UX edge cases, cost surprises, fallback design, and setting expectations users actually hold.",
+    "slug": "shipping-llm-features-lessons",
+    "cluster": "ai",
+    "tags": [
+      "AI products",
+      "Production lessons",
+      "UX"
+    ],
+    "date": "2026-01-27",
+    "author": "Dev Khatri",
+    "keywords": [
+      "llm features",
+      "ai product development",
+      "streaming ux",
+      "ai ux",
+      "llm production lessons"
+    ],
+    "readingTime": 11
+  },
+  {
     "title": "Shipping LLM features: a production checklist",
     "description": "The pre-launch checklist we run before any LLM feature ships: evals, traces, cost ceilings, fallbacks, feedback loops and the metrics that catch quality drift.",
     "slug": "shipping-llm-features",
@@ -327,6 +486,28 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 11,
     "heroImage": "/images/articles/ai/streaming-ux-patterns.jpg",
     "heroAlt": "Abstract editorial illustration of a dense column of fern-green glyphs dissolving into spaced brass dashes across a cream paper background — a sentence arriving token by token."
+  },
+  {
+    "title": "Structured outputs: making LLMs renderable",
+    "description": "Free-text LLM output is a compatibility bug waiting to ship. JSON schema modes, constrained decoding, boundary validation, and safely rendering streamed partial objects.",
+    "slug": "structured-outputs-reliable-ui",
+    "cluster": "ai",
+    "tags": [
+      "ai engineering",
+      "structured outputs",
+      "json schema",
+      "streaming",
+      "interface design"
+    ],
+    "date": "2026-09-02",
+    "author": "Dev Khatri",
+    "keywords": [
+      "llm structured outputs",
+      "json mode llm",
+      "constrained decoding",
+      "ai generated ui"
+    ],
+    "readingTime": 11
   },
   {
     "title": "Brand architecture decisions: house, endorsed, or let go",
@@ -413,6 +594,28 @@ export const articleIndex: ArticleMeta[] = [
       "tone of voice",
       "ux writing voice",
       "copy style guide"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "Brand voice that survives the handover: writing guidelines people use",
+    "description": "Most voice guidelines die at handover to a busy marketing team. The fix: decide who's protecting the voice, write for the rushed reader, and test in 15 minutes.",
+    "slug": "brand-voice-survives-handover",
+    "cluster": "brand",
+    "tags": [
+      "brand voice",
+      "tone of voice",
+      "copywriting guidelines",
+      "verbal identity",
+      "handover"
+    ],
+    "date": "2026-02-19",
+    "author": "Leonie Marsh",
+    "keywords": [
+      "brand voice guidelines",
+      "tone of voice handover",
+      "copywriting guidelines",
+      "verbal identity"
     ],
     "readingTime": 10
   },
@@ -621,6 +824,30 @@ export const articleIndex: ArticleMeta[] = [
       "brand launch plan"
     ],
     "readingTime": 10
+  },
+  {
+    "title": "Rebrands that worked (and the ones that were just new paint)",
+    "description": "An anatomy of rebrands that actually changed the business — knowing when to rebrand, how to sequence the rollout, and how to tell transformation from paint.",
+    "slug": "rebrands-that-worked",
+    "cluster": "brand",
+    "tags": [
+      "rebrand strategy",
+      "brand refresh",
+      "case studies",
+      "brand rollout",
+      "positioning"
+    ],
+    "date": "2025-11-06",
+    "author": "Mara Ellison",
+    "keywords": [
+      "rebrand case studies",
+      "brand refresh vs rebrand",
+      "rebrand strategy",
+      "brand rollout plan"
+    ],
+    "readingTime": 11,
+    "heroImage": "/images/articles/brand/rebrands-that-worked.jpg",
+    "heroAlt": "Still life of a rebrand in progress: letterpress type, fern-green and brass swatches, and masking tape peeled back to reveal a clean edge on cream paper."
   },
   {
     "title": "Type as brand: when the typeface is the logo",
@@ -1131,6 +1358,29 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 9
   },
   {
+    "title": "Choosing a framework without the fashion show",
+    "description": "How to choose a web framework honestly in 2026: content site vs app, team skills, hiring, SSR needs, ecosystem gravity, exit costs — plus our decision memo.",
+    "slug": "choosing-a-framework-honestly",
+    "cluster": "engineering",
+    "tags": [
+      "architecture",
+      "react",
+      "decision making",
+      "frontend"
+    ],
+    "date": "2026-03-05",
+    "author": "Tomás Reyes",
+    "keywords": [
+      "choosing a web framework",
+      "react vs svelte vs vue",
+      "framework decision guide",
+      "agency tech stack"
+    ],
+    "readingTime": 10,
+    "heroImage": "/images/articles/engineering/choosing-a-framework-honestly.jpg",
+    "heroAlt": "Paper cards fanned like a decision matrix on a cream desk, with a brass paperweight, calipers and a fern sprig."
+  },
+  {
     "title": "Core Web Vitals in the field: budgets that survive sprints",
     "description": "A practical Core Web Vitals program: LCP element archaeology, INP triage, CI-enforced budgets, and real-user monitoring on a shoestring. Recipes that work.",
     "slug": "core-web-vitals-field-guide",
@@ -1299,6 +1549,49 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 10
   },
   {
+    "title": "GraphQL vs REST, eight years in: a pragmatic retelling",
+    "description": "GraphQL vs REST in 2026, without the zealotry: where GraphQL earned its keep, where it added cost, and the plain-REST setups we'd pick again tomorrow.",
+    "slug": "graphql-vs-rest-pragmatic",
+    "cluster": "engineering",
+    "tags": [
+      "api design",
+      "graphql",
+      "rest",
+      "architecture"
+    ],
+    "date": "2026-01-22",
+    "author": "Felix Brandt",
+    "keywords": [
+      "graphql vs rest",
+      "api design frontend",
+      "persisted queries",
+      "api architecture"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "The headless CMS migration runbook",
+    "description": "A field-tested runbook for migrating to a headless CMS: content inventory, model mapping, redirect strategy, preview parity, and the cutover weekend checklist.",
+    "slug": "headless-cms-migration-runbook",
+    "cluster": "engineering",
+    "tags": [
+      "cms",
+      "migration",
+      "content",
+      "architecture"
+    ],
+    "date": "2025-08-08",
+    "author": "Tomás Reyes",
+    "keywords": [
+      "headless cms migration",
+      "cms replatforming",
+      "content migration checklist",
+      "redirect strategy",
+      "cutover plan"
+    ],
+    "readingTime": 9
+  },
+  {
     "title": "i18n beyond the strings file",
     "description": "The hard 20% of internationalisation: plural rules, dates and currency, RTL layout, locale-aware content modelling, and design tokens that change per language.",
     "slug": "i18n-architecture-hard-parts",
@@ -1393,6 +1686,30 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 10,
     "heroImage": "/images/articles/engineering/keyboard-first-interfaces.jpg",
     "heroAlt": "A machined brass keycap standing upright on cream paper, casting a long shadow among faint grid lines and small green arrow shapes."
+  },
+  {
+    "title": "Local-first on the web: sync engines, honestly",
+    "description": "What local-first architecture actually costs and buys: IndexedDB patterns, CRDT trade-offs, schema migrations, sync-status UX, and when server-first is simply right.",
+    "slug": "offline-first-sync-engines",
+    "cluster": "engineering",
+    "tags": [
+      "architecture",
+      "offline",
+      "sync",
+      "data"
+    ],
+    "date": "2025-06-20",
+    "author": "Felix Brandt",
+    "keywords": [
+      "local-first software",
+      "offline-first web app",
+      "crdt sync engine",
+      "indexeddb patterns",
+      "conflict resolution"
+    ],
+    "readingTime": 10,
+    "heroImage": "/images/articles/engineering/offline-first-sync-engines.jpg",
+    "heroAlt": "Engraved-style illustration on cream paper: a small brass laptop and compass on fern-ink islands joined by delicate brass arcs, evoking devices syncing data across distance."
   },
   {
     "title": "Generating PDFs from web tech without tears",
@@ -1511,6 +1828,27 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 10
   },
   {
+    "title": "Supply-chain security for JS teams (without the panic)",
+    "description": "A calm, runnable supply-chain security practice for JS teams: lockfile hygiene, dependency cadence, audit triage and provenance — no fear-mongering.",
+    "slug": "supply-chain-security-js-teams",
+    "cluster": "engineering",
+    "tags": [
+      "security",
+      "dependencies",
+      "npm",
+      "engineering practice"
+    ],
+    "date": "2025-11-18",
+    "author": "Tomás Reyes",
+    "keywords": [
+      "npm supply chain security",
+      "dependency audit",
+      "javascript security policy",
+      "lockfile hygiene"
+    ],
+    "readingTime": 10
+  },
+  {
     "title": "A testing strategy that ships: what to test, what to skip, what to delete",
     "description": "Our testing pyramid, rebuilt for reality: contract-first unit tests, a thin layer of Playwright journeys, flake budgets, and a CI bill we defend monthly.",
     "slug": "testing-strategy-that-scales",
@@ -1535,6 +1873,28 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 11
   },
   {
+    "title": "Auditing third-party scripts before they audit you",
+    "description": "Third-party scripts are a governed supply chain, not a paste bin. Our audit method: measure the cost, gate on consent, fence with CSP, and assign every tag an owner.",
+    "slug": "third-party-scripts-audit",
+    "cluster": "engineering",
+    "tags": [
+      "performance",
+      "security",
+      "governance",
+      "privacy"
+    ],
+    "date": "2026-01-23",
+    "author": "Felix Brandt",
+    "keywords": [
+      "third party scripts audit",
+      "tag management governance",
+      "content security policy",
+      "performance marketing scripts",
+      "consent management"
+    ],
+    "readingTime": 9
+  },
+  {
     "title": "End-to-end type safety from CMS to component",
     "description": "How we generate TypeScript types from headless CMS schemas, validate content at the boundary, and write content models that never cause the 6pm rename incident.",
     "slug": "type-safe-cms-content",
@@ -1553,6 +1913,50 @@ export const articleIndex: ArticleMeta[] = [
       "content modelling",
       "sanity typescript",
       "content validation"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "The URL is your best state manager",
+    "description": "Filters, tabs, search and pagination belong in the URL. Shareable views, working back buttons, better analytics — plus the honest list of state to keep out of it.",
+    "slug": "url-as-state-management",
+    "cluster": "engineering",
+    "tags": [
+      "url state",
+      "react",
+      "routing",
+      "shareable state",
+      "deep linking"
+    ],
+    "date": "2026-05-28",
+    "author": "Felix Brandt",
+    "keywords": [
+      "url state management",
+      "useSearchParams patterns",
+      "shareable ui state",
+      "deep linking react"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "View Transitions in production: the practical bits",
+    "description": "The View Transitions API after the hype: same-document and MPA transitions, reduced-motion fallbacks, 2026 browser reality, and where motion aids comprehension.",
+    "slug": "view-transitions-api-practical",
+    "cluster": "engineering",
+    "tags": [
+      "animation",
+      "ux",
+      "performance",
+      "progressive-enhancement"
+    ],
+    "date": "2026-04-17",
+    "author": "Hannah Yeo",
+    "keywords": [
+      "view transitions api",
+      "mpa page transitions",
+      "web animation 2026",
+      "progressive enhancement",
+      "shared element transitions"
     ],
     "readingTime": 9
   },
@@ -1579,6 +1983,49 @@ export const articleIndex: ArticleMeta[] = [
       "framework comparison"
     ],
     "readingTime": 11
+  },
+  {
+    "title": "Baseline 2026: what the platform finally gives you",
+    "description": "A working guide to web Platform Baseline in 2026: what you can ship without polyfills, how to read compat data, and a sane adoption policy for teams.",
+    "slug": "web-platform-baseline-2026",
+    "cluster": "engineering",
+    "tags": [
+      "web platform",
+      "css",
+      "browsers",
+      "progressive enhancement"
+    ],
+    "date": "2026-02-11",
+    "author": "Felix Brandt",
+    "keywords": [
+      "web platform baseline",
+      "modern css support",
+      "browser compatibility policy",
+      "progressive enhancement"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "WebSockets vs SSE: a realtime guide without religion",
+    "description": "An honest guide to realtime transport: WebSockets vs SSE vs polite polling. Lifecycle, reconnection with backoff, presence, scaling and mobile battery realities.",
+    "slug": "websockets-vs-sse-realtime",
+    "cluster": "engineering",
+    "tags": [
+      "websockets",
+      "server-sent events",
+      "realtime",
+      "architecture",
+      "typescript"
+    ],
+    "date": "2026-07-30",
+    "author": "Tomás Reyes",
+    "keywords": [
+      "websockets vs sse",
+      "server sent events",
+      "realtime web architecture",
+      "reconnection backoff"
+    ],
+    "readingTime": 12
   },
   {
     "title": "Analytics governance: tracking plans before tools",
@@ -1625,6 +2072,70 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 10
   },
   {
+    "title": "Attribution is 90% noise: making decisions anyway",
+    "description": "Last-click lies, multi-touch dreams, and what actually works for teams without a data science department: a decision framework for acting on noisy attribution.",
+    "slug": "attribution-noise-decisions",
+    "cluster": "growth",
+    "tags": [
+      "Attribution",
+      "Analytics",
+      "Decision-making"
+    ],
+    "date": "2026-02-24",
+    "author": "Sam Whitfield",
+    "keywords": [
+      "marketing attribution",
+      "attribution model",
+      "marketing measurement small teams",
+      "marketing mix modeling",
+      "incrementality testing"
+    ],
+    "readingTime": 11
+  },
+  {
+    "title": "Your changelog is a marketing channel",
+    "description": "Release notes that sell: segmented announcements, the in-product/email/SEO triple-duty, mining changelogs for case-study fodder, and cadence that signals momentum.",
+    "slug": "changelog-as-marketing",
+    "cluster": "growth",
+    "tags": [
+      "changelog",
+      "product marketing",
+      "content strategy",
+      "SaaS growth"
+    ],
+    "date": "2024-12-10",
+    "author": "June Okafor",
+    "keywords": [
+      "changelog marketing",
+      "release notes strategy",
+      "product update emails",
+      "shipping notes content"
+    ],
+    "readingTime": 8
+  },
+  {
+    "title": "Community-led growth: the honest ten-year version",
+    "description": "What a decade of building B2B communities taught us: when community is worth the commitment, formats that sustain, and measuring dark-funnel influence.",
+    "slug": "community-led-growth-honest",
+    "cluster": "growth",
+    "tags": [
+      "community",
+      "b2b marketing",
+      "dark funnel",
+      "growth strategy",
+      "retention"
+    ],
+    "date": "2026-08-12",
+    "author": "Priya Nair",
+    "keywords": [
+      "community led growth",
+      "b2b community strategy",
+      "dark funnel marketing",
+      "community roi measurement"
+    ],
+    "readingTime": 10
+  },
+  {
     "title": "Content clusters that compound: planning in public",
     "description": "How we build topic clusters that compound: pillar economics, keyword-to-intent mapping, link graphs, refresh cadence, and the planning spreadsheet we use.",
     "slug": "content-clusters-strategy",
@@ -1665,6 +2176,52 @@ export const articleIndex: ArticleMeta[] = [
       "editorial calendar",
       "content workflow",
       "content team process"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Content pruning: the unglamorous SEO lever",
+    "description": "Dead-weight URLs drag the whole site down. How we audit, decide merge-redirect-delete, protect traffic through the change, and monitor the next 90 days.",
+    "slug": "content-pruning-seo-lever",
+    "cluster": "growth",
+    "tags": [
+      "content strategy",
+      "seo",
+      "content audit",
+      "editorial ops",
+      "site health"
+    ],
+    "date": "2026-07-22",
+    "author": "Leonie Marsh",
+    "keywords": [
+      "content pruning",
+      "SEO content audit",
+      "content strategy",
+      "organic traffic"
+    ],
+    "readingTime": 9,
+    "heroImage": "/images/articles/growth/content-pruning-seo-lever.jpg",
+    "heroAlt": "Brass secateurs resting beside a stack of printed web pages and a small potted fern on cream paper — the editorial art of pruning a website."
+  },
+  {
+    "title": "Content strategy that compounds: how we plan a year of publishing",
+    "description": "How we plan a year of publishing around compounding, not volume: intent-led topic selection, decay curves, refresh budgets, and attribution that admits its limits.",
+    "slug": "content-strategy-compounds",
+    "cluster": "growth",
+    "tags": [
+      "content strategy",
+      "seo",
+      "editorial planning",
+      "attribution",
+      "content refresh"
+    ],
+    "date": "2025-06-05",
+    "author": "Priya Nair",
+    "keywords": [
+      "content strategy",
+      "seo content",
+      "content marketing roi",
+      "editorial strategy"
     ],
     "readingTime": 9
   },
@@ -1714,6 +2271,70 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 9
   },
   {
+    "title": "CRO experiments worth running: a field guide to honest testing",
+    "description": "Most test backlogs are junk drawers. How we triage CRO ideas by evidence, opportunity and traffic tier — and sequence experiments so the learnings compound.",
+    "slug": "cro-experiments-that-matter",
+    "cluster": "growth",
+    "tags": [
+      "cro",
+      "experimentation",
+      "prioritisation",
+      "ab testing",
+      "growth"
+    ],
+    "date": "2025-11-12",
+    "author": "Sam Whitfield",
+    "keywords": [
+      "cro experiments",
+      "ab testing",
+      "conversion rate optimisation",
+      "experiment design"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Digital PR for links: an honest playbook",
+    "description": "Link earning without spam: data studies people cite, expert commentary workflows, asset-led outreach, realistic conversion rates, and how to tell if it's working.",
+    "slug": "digital-pr-backlinks-honest",
+    "cluster": "growth",
+    "tags": [
+      "digital PR",
+      "link building",
+      "SEO",
+      "content marketing"
+    ],
+    "date": "2025-06-24",
+    "author": "Felix Brandt",
+    "keywords": [
+      "digital pr backlinks",
+      "link earning strategy",
+      "data study marketing",
+      "pr for seo"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Deliverability: the email growth lever nobody watches",
+    "description": "SPF, DKIM and DMARC in plain English, list hygiene, domain warming, engagement-based sending, and how to diagnose why you landed in the promotions tab.",
+    "slug": "email-deliverability-fundamentals",
+    "cluster": "growth",
+    "tags": [
+      "email marketing",
+      "deliverability",
+      "lifecycle",
+      "growth ops"
+    ],
+    "date": "2025-08-26",
+    "author": "Mara Ellison",
+    "keywords": [
+      "email deliverability",
+      "dkim spf dmarc",
+      "email list hygiene",
+      "inbox placement"
+    ],
+    "readingTime": 9
+  },
+  {
     "title": "Funnel metrics: measure the movement, not the moment",
     "description": "Snapshots lie; cohorts and velocity tell the truth. How to define funnel stages across teams, pick the metrics that find the constraint, and run the weekly review.",
     "slug": "funnel-metrics-that-matter",
@@ -1735,6 +2356,50 @@ export const articleIndex: ArticleMeta[] = [
       "cohort analysis"
     ],
     "readingTime": 12
+  },
+  {
+    "title": "Calculators and checkers: interactive tools as content",
+    "description": "Calculators, graders and generators as content: why tools earn links articles can't, how to scope one that ships in a sprint, and measuring assisted conversions.",
+    "slug": "interactive-tools-as-content",
+    "cluster": "growth",
+    "tags": [
+      "interactive content",
+      "link building",
+      "growth experiments",
+      "seo",
+      "product-led marketing"
+    ],
+    "date": "2026-06-30",
+    "author": "Sam Whitfield",
+    "keywords": [
+      "interactive content marketing",
+      "calculator lead generation",
+      "tools as content strategy",
+      "programmatic seo tools"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Internal linking is architecture, not an afterthought",
+    "description": "Internal linking is information architecture, not a plug-in. Hub-and-spoke models, anchor-text discipline, related-content automation, and measuring crawl paths.",
+    "slug": "internal-linking-architecture",
+    "cluster": "growth",
+    "tags": [
+      "internal linking",
+      "information architecture",
+      "seo",
+      "content strategy",
+      "site structure"
+    ],
+    "date": "2026-09-08",
+    "author": "Priya Nair",
+    "keywords": [
+      "internal linking",
+      "information architecture",
+      "SEO structure",
+      "content hubs"
+    ],
+    "readingTime": 9
   },
   {
     "title": "Landing page testing: velocity over genius",
@@ -1779,6 +2444,30 @@ export const articleIndex: ArticleMeta[] = [
       "retention email"
     ],
     "readingTime": 11
+  },
+  {
+    "title": "Lifecycle email is a product: building programmes, not campaigns",
+    "description": "Lifecycle email is a product, not a campaign calendar: state-based programmes, plain-text craft, deliverability engineering, and metrics beyond open rates.",
+    "slug": "lifecycle-email-product",
+    "cluster": "growth",
+    "tags": [
+      "lifecycle email",
+      "retention",
+      "email design",
+      "deliverability",
+      "product thinking"
+    ],
+    "date": "2026-02-10",
+    "author": "Ruby Castellanos",
+    "keywords": [
+      "lifecycle email",
+      "email marketing",
+      "customer retention",
+      "email deliverability"
+    ],
+    "readingTime": 9,
+    "heroImage": "/images/articles/growth/lifecycle-email-product.jpg",
+    "heroAlt": "Editorial still life of brass letterpress blocks arranged as a branching flowchart on cream paper, with fern-green ink lines and a sprig of fern, soft grain."
   },
   {
     "title": "Local SEO for venues: filling tables search by search",
@@ -1872,6 +2561,27 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 9
   },
   {
+    "title": "The compounding returns of refreshing old content",
+    "description": "Old content decays silently. Here's our refresh system: decay detection in Search Console, refresh-vs-rewrite rules, redirect discipline, and a cadence that compounds.",
+    "slug": "refreshing-old-content-wins",
+    "cluster": "growth",
+    "tags": [
+      "content strategy",
+      "SEO",
+      "content ops",
+      "organic growth"
+    ],
+    "date": "2025-04-08",
+    "author": "Ruby Castellanos",
+    "keywords": [
+      "content refresh seo",
+      "content decay",
+      "seo content audit",
+      "updating old blog posts"
+    ],
+    "readingTime": 9
+  },
+  {
     "title": "Schema markup that actually moves the needle",
     "description": "Structured data, done pragmatically: which schema types still earn rich results, how to keep JSON-LD honest, and the default set we ship on every build.",
     "slug": "schema-markup-playbook",
@@ -1940,6 +2650,28 @@ export const articleIndex: ArticleMeta[] = [
     "heroAlt": "Overhead still life of a brass loupe on a hand-drawn site map in fern-green ink, with brass check marks and scattered fern leaves on cream paper."
   },
   {
+    "title": "The technical SEO checklist we run before every launch",
+    "description": "Our pre-launch SEO checklist became code: crawl assertions in CI, header diffs, structured-data audits — plus the judgement checks that never automate.",
+    "slug": "technical-seo-launch-checklist",
+    "cluster": "growth",
+    "tags": [
+      "technical seo",
+      "launch checklist",
+      "ci",
+      "crawlability",
+      "structured data"
+    ],
+    "date": "2025-09-18",
+    "author": "Hannah Yeo",
+    "keywords": [
+      "technical seo checklist",
+      "seo audit",
+      "structured data seo",
+      "crawl budget"
+    ],
+    "readingTime": 9
+  },
+  {
     "title": "Buying accessible software: a procurement playbook",
     "description": "A procurement playbook for accessibility: brief language that binds, evaluating claims beyond the VPAT, acceptance criteria that bite, and keeping standards after launch.",
     "slug": "accessibility-procurement",
@@ -1960,6 +2692,52 @@ export const articleIndex: ArticleMeta[] = [
       "a11y compliance"
     ],
     "readingTime": 10
+  },
+  {
+    "title": "The first 30 days: onboarding a client engagement",
+    "description": "How the first 30 days of an agency engagement should run: kickoffs that surface real decision-makers, baseline metrics, access week, and artefacts that prevent surprises.",
+    "slug": "agency-onboarding-first-30-days",
+    "cluster": "playbooks",
+    "tags": [
+      "agency onboarding",
+      "kickoff",
+      "client engagement",
+      "project setup",
+      "baseline metrics"
+    ],
+    "date": "2025-10-09",
+    "author": "Ruby Castellanos",
+    "keywords": [
+      "agency onboarding process",
+      "client kickoff agenda",
+      "engagement kickoff",
+      "project onboarding checklist"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "The budget conversation: why hiding the number costs you more",
+    "description": "Why sharing your real budget with an agency saves money: what ranges actually buy, how vague scope inflates quotes, and how to negotiate scope instead of rate.",
+    "slug": "budget-conversations-agency",
+    "cluster": "playbooks",
+    "tags": [
+      "budgeting",
+      "agency pricing",
+      "procurement",
+      "negotiation",
+      "client guide"
+    ],
+    "date": "2026-03-12",
+    "author": "Mara Ellison",
+    "keywords": [
+      "agency budget",
+      "project cost conversation",
+      "agency negotiation",
+      "scope vs budget"
+    ],
+    "readingTime": 10,
+    "heroImage": "/images/articles/playbooks/budget-conversations-agency.jpg",
+    "heroAlt": "A brass desk scale balanced between coins and a rolled scroll, with a dried fern frond on a cream linen surface."
   },
   {
     "title": "Choosing an agency: signals over showreels",
@@ -2031,6 +2809,28 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 9
   },
   {
+    "title": "Design system buy-in: the internal sales playbook",
+    "description": "Design systems don't fail at build; they fail at buy-in. The cost-of-inconsistency maths, the pilot-component strategy, and the executive story that lands.",
+    "slug": "design-system-buy-in",
+    "cluster": "playbooks",
+    "tags": [
+      "design systems",
+      "stakeholder management",
+      "organisational change",
+      "design ops",
+      "business case"
+    ],
+    "date": "2026-05-19",
+    "author": "June Okafor",
+    "keywords": [
+      "design system buy in",
+      "design system business case",
+      "design system adoption",
+      "stakeholder management design"
+    ],
+    "readingTime": 9
+  },
+  {
     "title": "Discovery sprints: two weeks that de-risk six months",
     "description": "Our discovery sprint format, published: inputs, the ten days, the decision memo output, who must attend, and when discovery is a stall dressed as diligence.",
     "slug": "discovery-sprint-playbook",
@@ -2075,6 +2875,96 @@ export const articleIndex: ArticleMeta[] = [
       "reading agency proposal"
     ],
     "readingTime": 11
+  },
+  {
+    "title": "After launch: the first 90 days done properly",
+    "description": "Launch day is the start, not the finish. How we run the first 90 days after a site ships: analytics baselines, bug etiquette, and the next engagement.",
+    "slug": "first-90-days-after-launch",
+    "cluster": "playbooks",
+    "tags": [
+      "post-launch",
+      "analytics",
+      "agency process",
+      "QA innovation",
+      "retainers"
+    ],
+    "date": "2025-09-30",
+    "author": "Ruby Castellanos",
+    "keywords": [
+      "post-launch plan",
+      "website launch checklist",
+      "analytics baseline",
+      "agency retainer",
+      "90 day plan",
+      "post-launch bugs"
+    ],
+    "readingTime": 11
+  },
+  {
+    "title": "The first two weeks with an agency: a client's field guide",
+    "description": "What actually happens in the first fortnight of an agency engagement: access checklists, stakeholder mapping, decision calendars, and how week-one demos become possible.",
+    "slug": "first-two-weeks-agency",
+    "cluster": "playbooks",
+    "tags": [
+      "kickoff",
+      "onboarding",
+      "agency process",
+      "client guide",
+      "project management"
+    ],
+    "date": "2026-06-18",
+    "author": "Ruby Castellanos",
+    "keywords": [
+      "agency kickoff",
+      "project onboarding",
+      "agency engagement",
+      "first sprint"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "How to give design feedback that speeds the work up",
+    "description": "A client's guide to design feedback: reaction versus direction, the 'what problem does this solve' script, and comments that speed the work up.",
+    "slug": "giving-design-feedback",
+    "cluster": "playbooks",
+    "tags": [
+      "design feedback",
+      "critique",
+      "client guide",
+      "stakeholders",
+      "design process"
+    ],
+    "date": "2026-04-23",
+    "author": "June Okafor",
+    "keywords": [
+      "design feedback",
+      "client design critique",
+      "stakeholder feedback",
+      "design review process"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "Handover without the hangover: documentation your team will read",
+    "description": "A clean agency-to-client handover in practice: documentation people actually read, runbooks that run, training that sticks, and who owns the keys afterwards.",
+    "slug": "handover-without-shelfware",
+    "cluster": "playbooks",
+    "tags": [
+      "agency handover",
+      "documentation",
+      "knowledge transfer",
+      "runbooks",
+      "offboarding"
+    ],
+    "date": "2026-04-16",
+    "author": "Ruby Castellanos",
+    "keywords": [
+      "agency handover checklist",
+      "project documentation",
+      "knowledge transfer plan",
+      "runbook template"
+    ],
+    "readingTime": 10
   },
   {
     "title": "Estimating software honestly: ranges, risks and why we cap scope",
@@ -2122,6 +3012,72 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 10
   },
   {
+    "title": "Write the measurement plan before you build",
+    "description": "Analytics bolted on after the build answers yesterday's questions badly. The measurement plan: events, naming, consent, dashboards — before the first sprint.",
+    "slug": "measurement-plan-before-build",
+    "cluster": "playbooks",
+    "tags": [
+      "analytics",
+      "measurement",
+      "project planning",
+      "data",
+      "experimentation"
+    ],
+    "date": "2026-04-14",
+    "author": "Sam Whitfield",
+    "keywords": [
+      "measurement plan template",
+      "analytics implementation",
+      "event tracking plan",
+      "analytics requirements"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "The one-day performance audit (a playbook)",
+    "description": "Run a credible performance audit in a single day: lab vs field data, Lighthouse and WebPageTest against CrUX, and an effort/impact findings template that ships.",
+    "slug": "performance-audit-one-day",
+    "cluster": "playbooks",
+    "tags": [
+      "performance audit",
+      "core web vitals",
+      "webpagetest",
+      "lighthouse",
+      "crux"
+    ],
+    "date": "2026-01-22",
+    "author": "Tomás Reyes",
+    "keywords": [
+      "performance audit checklist",
+      "core web vitals audit",
+      "webpagetest guide",
+      "site speed audit"
+    ],
+    "readingTime": 11
+  },
+  {
+    "title": "How to read an agency SOW before you sign it",
+    "description": "Most SOW disputes were visible in the document. How to read scope boundaries, assumptions, change control, acceptance criteria and warranties before signing.",
+    "slug": "reading-an-agency-sow",
+    "cluster": "playbooks",
+    "tags": [
+      "agency selection",
+      "contracts",
+      "project management",
+      "procurement",
+      "scope"
+    ],
+    "date": "2026-03-03",
+    "author": "Ruby Castellanos",
+    "keywords": [
+      "statement of work agency",
+      "sow review checklist",
+      "agency contract scope",
+      "project assumptions document"
+    ],
+    "readingTime": 9
+  },
+  {
     "title": "Retainer or project? An honest decision guide",
     "description": "Retainer or fixed-scope project? An honest guide to when each engagement model wins — risk profiles, budget shapes, switching costs, and the questions to ask first.",
     "slug": "retainer-vs-project",
@@ -2140,6 +3096,28 @@ export const articleIndex: ArticleMeta[] = [
       "design retainer",
       "engagement models agency",
       "hiring agency model"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Scope change without drama",
+    "description": "Scope creep is a process failure wearing an intent costume. Distinguishing discovery from creep, a change-request micro-process, and scripts for hard talks.",
+    "slug": "scope-change-without-drama",
+    "cluster": "playbooks",
+    "tags": [
+      "scope creep",
+      "client relationships",
+      "project management",
+      "change management",
+      "agency life"
+    ],
+    "date": "2026-06-16",
+    "author": "Mara Ellison",
+    "keywords": [
+      "scope creep management",
+      "change request process",
+      "agency project management",
+      "client scope change"
     ],
     "readingTime": 9
   },
@@ -2164,6 +3142,50 @@ export const articleIndex: ArticleMeta[] = [
       "decision making projects"
     ],
     "readingTime": 10
+  },
+  {
+    "title": "Status updates clients actually read",
+    "description": "The one-screen weekly note format that kills the 40-slide deck: shipped, next, blocked, decisions needed — with working demos instead of jargon and metrics in context.",
+    "slug": "status-updates-clients-read",
+    "cluster": "playbooks",
+    "tags": [
+      "client communication",
+      "project management",
+      "status updates",
+      "agency process",
+      "reporting"
+    ],
+    "date": "2026-07-09",
+    "author": "Ruby Castellanos",
+    "keywords": [
+      "client status update template",
+      "agency weekly report",
+      "project communication clients",
+      "stakeholder updates"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Weekly demos: the habit that runs our projects",
+    "description": "Weekly demos as a project operating system: the format that forces progress, recording etiquette, async viewing, demo-driven scope discovery and braver clients.",
+    "slug": "weekly-demo-culture",
+    "cluster": "playbooks",
+    "tags": [
+      "weekly demos",
+      "agile rituals",
+      "shipping in public",
+      "client transparency",
+      "project cadence"
+    ],
+    "date": "2026-06-11",
+    "author": "Mara Ellison",
+    "keywords": [
+      "weekly demo agile",
+      "sprint demo format",
+      "shipping in public",
+      "agency client communication"
+    ],
+    "readingTime": 9
   },
   {
     "title": "Getting the most from a remote studio",
@@ -2259,6 +3281,93 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 8
   },
   {
+    "title": "Activity feeds and audit logs: designing the product's memory",
+    "description": "Activity feeds and audit logs are the product's memory: event grammar, grouping and noise control, filter architecture, and the enterprise sales case.",
+    "slug": "activity-feeds-audit-logs",
+    "cluster": "product",
+    "tags": [
+      "activity feed",
+      "audit log",
+      "event history",
+      "enterprise features",
+      "product design"
+    ],
+    "date": "2026-04-22",
+    "author": "Felix Brandt",
+    "keywords": [
+      "activity feed design",
+      "audit log ux",
+      "event history design",
+      "enterprise audit trail"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Bulk actions: power without the footguns",
+    "description": "Bulk operations done safely: selection across pages, previewing effects before applying, undo vs confirmation, progress states and permission boundaries.",
+    "slug": "bulk-actions-ux",
+    "cluster": "product",
+    "tags": [
+      "bulk actions",
+      "batch operations",
+      "multi-select",
+      "destructive actions",
+      "product design"
+    ],
+    "date": "2026-05-19",
+    "author": "Tomás Reyes",
+    "keywords": [
+      "bulk actions ux",
+      "batch operations design",
+      "multi select patterns",
+      "destructive action safeguards"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Cancellation flows that leave the door open",
+    "description": "Offboarding is a trust surface: retention offers without traps, exit surveys that yield signal, data-export dignity, and win-back timing that works.",
+    "slug": "cancellation-flows-respect",
+    "cluster": "product",
+    "tags": [
+      "cancellation flow",
+      "churn",
+      "offboarding",
+      "retention",
+      "product design"
+    ],
+    "date": "2026-02-11",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "cancellation flow ux",
+      "offboarding design",
+      "churn retention offers",
+      "exit survey design"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Dashboard design: twelve lessons from twelve dashboards",
+    "description": "Twelve hard-won dashboard design lessons from a dozen B2B products: hierarchy of attention, progressive disclosure, benchmark context, and when to kill a chart.",
+    "slug": "dashboard-design-dozen-lessons",
+    "cluster": "product",
+    "tags": [
+      "dashboard design",
+      "data visualisation",
+      "B2B product design",
+      "information hierarchy"
+    ],
+    "date": "2025-05-20",
+    "author": "Dev Khatri",
+    "keywords": [
+      "dashboard design",
+      "data ux",
+      "b2b product design",
+      "information hierarchy"
+    ],
+    "readingTime": 10
+  },
+  {
     "title": "Dashboard design: answer first, chart second",
     "description": "Most dashboards are chart galleries that answer nothing. The question-first method: decision inventories, alert thresholds, and the five-element view that wins.",
     "slug": "dashboard-design-hierarchy",
@@ -2351,6 +3460,49 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 8
   },
   {
+    "title": "Invite flows: the social onboarding of team products",
+    "description": "The invite flow is where one user bets their reputation on your product. Role choice at invite time, shareable links vs email, and viral-loop honesty.",
+    "slug": "invite-flows-team-products",
+    "cluster": "product",
+    "tags": [
+      "invite flow",
+      "team onboarding",
+      "collaboration",
+      "viral loops",
+      "product design"
+    ],
+    "date": "2026-03-04",
+    "author": "June Okafor",
+    "keywords": [
+      "invite flow ux",
+      "team onboarding product",
+      "invite a teammate design",
+      "viral loops product"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Jobs-to-be-done interviews that surface what users won't say",
+    "description": "Beyond the JTBD script: interviewing for the things customers can't or won't tell you, synthesising transcripts into forces maps, and turning jobs into ranked product bets.",
+    "slug": "jobs-to-be-done-interviews",
+    "cluster": "product",
+    "tags": [
+      "user research",
+      "jobs to be done",
+      "product strategy",
+      "research synthesis"
+    ],
+    "date": "2025-09-09",
+    "author": "Priya Nair",
+    "keywords": [
+      "jobs to be done",
+      "customer interviews",
+      "jtbd synthesis",
+      "product research"
+    ],
+    "readingTime": 9
+  },
+  {
     "title": "Jobs-to-be-done interviews: our exact script",
     "description": "Most customer interviews collect feature requests in research costumes. Our JTBD format: the timeline technique, hiring-and-firing language, and red flags.",
     "slug": "jtbd-interviews-that-work",
@@ -2416,6 +3568,27 @@ export const articleIndex: ArticleMeta[] = [
       "checklist ui"
     ],
     "readingTime": 10
+  },
+  {
+    "title": "Onboarding that activates: patterns we keep, patterns we've banned",
+    "description": "Activation-focused onboarding: value-first flows, honest commitment devices, the checklist patterns that still work, and the seven anti-patterns we refuse to ship.",
+    "slug": "onboarding-patterns-activation",
+    "cluster": "product",
+    "tags": [
+      "onboarding",
+      "activation",
+      "product design",
+      "UX patterns"
+    ],
+    "date": "2025-02-04",
+    "author": "Leonie Marsh",
+    "keywords": [
+      "onboarding ux",
+      "activation",
+      "product onboarding",
+      "user activation metrics"
+    ],
+    "readingTime": 9
   },
   {
     "title": "Permission UX: roles, extras and the politics of access",
@@ -2524,6 +3697,27 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 8
   },
   {
+    "title": "WCAG AA for product teams: the parts everyone gets wrong",
+    "description": "The WCAG AA criteria that fail most often in real products — contrast in components, focus visible, target size, keyboard traps — and the review rituals that keep them green.",
+    "slug": "wcag-aa-product-teams",
+    "cluster": "product",
+    "tags": [
+      "accessibility",
+      "WCAG",
+      "product design",
+      "design review"
+    ],
+    "date": "2025-07-29",
+    "author": "Nate Sullivan",
+    "keywords": [
+      "wcag aa",
+      "accessible product design",
+      "inclusive design",
+      "accessibility review"
+    ],
+    "readingTime": 9
+  },
+  {
     "title": "Accessibility starts in the design file",
     "description": "Most accessibility rework is a design-file problem found too late. The annotations, contrast workflows and focus specs that stop retrofits before they start.",
     "slug": "accessible-design-handoff",
@@ -2591,6 +3785,29 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 9,
     "heroImage": "/images/articles/web-design/colour-systems-dark-mode.jpg",
     "heroAlt": "A printer's proof sheet on a dark desk: two parallel ramps of colour-swatch cards in forest green, brass, bone and ink, one bright and one dark"
+  },
+  {
+    "title": "Comparison pages that convert without lying",
+    "description": "Vs pages and plan matrices sit on your highest-intent traffic. Fair-dealing rules, honest asymmetry, and the anatomy of a comparison row people actually read.",
+    "slug": "comparison-pages-that-convert",
+    "cluster": "web-design",
+    "tags": [
+      "comparison pages",
+      "conversion design",
+      "pricing pages",
+      "content strategy"
+    ],
+    "date": "2026-05-27",
+    "author": "Hannah Yeo",
+    "keywords": [
+      "comparison page design",
+      "versus pages",
+      "plan comparison table",
+      "competitor comparison marketing"
+    ],
+    "readingTime": 8,
+    "heroImage": "/images/articles/web-design/comparison-pages-that-convert.jpg",
+    "heroAlt": "A small brass balance scale on cream paper, one pan holding a pressed fern sprig and the other a brass weight, the beam nearly level."
   },
   {
     "title": "Dark mode is a second design system",
@@ -3119,6 +4336,27 @@ export const articleIndex: ArticleMeta[] = [
       "data storytelling web",
       "scrolljacking",
       "reduced motion fallback"
+    ],
+    "readingTime": 8
+  },
+  {
+    "title": "Social proof design without the cringe",
+    "description": "Logo soup and 'trusted by 10,000 teams' burn the credibility they mean to build. Proof that persuades is specific, placed next to the claim, and defensible.",
+    "slug": "social-proof-without-cringe",
+    "cluster": "web-design",
+    "tags": [
+      "social proof",
+      "testimonials",
+      "conversion design",
+      "trust"
+    ],
+    "date": "2026-06-30",
+    "author": "Mara Ellison",
+    "keywords": [
+      "testimonial design",
+      "social proof web design",
+      "logo wall design",
+      "reviews ux"
     ],
     "readingTime": 8
   },

@@ -3,6 +3,7 @@ import { Seo } from '../lib/head'
 import { formatDate, getCase, relatedCases } from '../lib/content'
 import { getDemo } from '../lib/demos'
 import { breadcrumbLd, creativeWorkLd } from '../lib/jsonld'
+import { personSlug } from '../data/people'
 import { absoluteUrl, withBase } from '../lib/base'
 import Markdown from '../components/Markdown'
 import { WorkCard } from '../components/Cards'
@@ -42,6 +43,7 @@ export default function WorkCase() {
             <span>{cs.year}</span>
             <span>{formatDate(cs.date)}</span>
             <span>{cs.readingTime} min read</span>
+            <Link to={`/team/${personSlug(cs.author)}`} className="article-meta__author">Words by {cs.author}</Link>
           </div>
           <div className="tag-row" style={{ marginTop: 'var(--space-4)' }}>
             {cs.services.map((s) => (

@@ -1,4 +1,5 @@
 import { absoluteUrl } from './base'
+import { personSlug, type Person } from '../data/people'
 import type { ArticleMeta, CaseStudyMeta } from './types'
 
 export function organizationLd() {
@@ -74,5 +75,20 @@ export function breadcrumbLd(items: { name: string; path: string }[]) {
       name: it.name,
       item: absoluteUrl(it.path),
     })),
+  }
+}
+
+export function personLd(p: Person) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ProfilePage',
+    mainEntity: {
+      '@type': 'Person',
+      name: p.name,
+      jobTitle: p.role,
+      description: p.line,
+      worksFor: { '@type': 'Organization', name: 'Brassfern' },
+      url: absoluteUrl(`/team/${personSlug(p.name)}`),
+    },
   }
 }

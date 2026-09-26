@@ -1,5 +1,46 @@
 # Progress
 
+## Done (iteration 5 — builder: people pages, journal leads, backlog)
+
+- **Author profile pages `/team/:slug`** — new `PersonPage` (named export of
+  `src/pages/Team.tsx`): hero with big Portrait, role/location/writing-count
+  fact list, their case studies (WorkCard grid), their journal articles
+  (ArticleCard grid), and a chips row linking the rest of the team.
+  `personSlug()` / `personBySlug()` helpers in `src/data/people.ts`
+  (diacritic-safe: tomas-reyes). `personLd()` ProfilePage JSON-LD in
+  `lib/jsonld.ts`.
+- **Bylines are now links**: `Article` and `WorkCase` (`article-meta__author`,
+  brass-underline micro mono) deep-link every author name to their profile.
+  Team index cards are full links (`.person__link`) with hover lift.
+- **Journal lead stories**: `ArticleFeature` (Cards.tsx) — editorial
+  two-col lead card (hairline top rule, hero image or themeFor tile) rendered
+  on page 1 of `/journal` ("The latest big read") and every `/journal/:cluster`
+  hub ("The <cluster> big read"). Featured piece = latest article WITH
+  heroImage, excluded from the paginated grid (pagination slices `rest`).
+- **Routes/prerender/sitemap**: `team/:slug` added to App (lazyNamed) +
+  prerenderRoutes → **868 prerendered routes**, 12 team URLs in
+  sitemap; skel-check clean; ProfilePage JSON-LD + per-person canonical
+  verified in dist.
+- **Hero art**: generated editorial still-life for flagship
+  `ai/evals-practical-guide` (brass balance scale + index cards); wired
+  heroImage/heroAlt. `product/jobs-to-be-done-interviews` hero planned but
+  image budget ran out — retry next iteration.
+- **Backlog**: +19 articles (product 4, growth 4, playbooks 4, web-design 4,
+  ai 3) + 3 demos (holloway-waveform-player, copperline-mobile-bank,
+  tallow-feast-builder). Demos planned back to 8.
+- **Build green**: 886 routes; typecheck clean; verified content (no 404s, no
+  skeletons) under the CI-equivalent `BASE_PATH=/brassfern/` build.
+
+## Solved (often-missed, now fixed)
+
+- **Prerendered hrefs lacked the base path.** `StaticRouter` in
+  `entry-server.tsx` had no `basename`, so every Router `<Link>` in static HTML
+  rendered root-absolute (`/journal/…`) — dead on the `/brassfern/` sub-path
+  for crawlers and no-JS visitors (hydration masked it). Now renders with
+  `location={ROUTER_BASE + url}` + `basename={ROUTER_BASE}`; CI build verified:
+  hrefs, images and canonicals all carry `/brassfern/`. (Canonical/OG/sitemap
+  were already correct via `absoluteUrl()`.)
+
 ## Done (iteration 4 — builder: heroes, taxonomy, smallcraft)
 
 - **All 17 case studies now have hero art.** Generated 10 editorial-print
@@ -61,12 +102,21 @@
 
 ## Next
 
-- Journal heroes for flagship articles (heroes done for all 17 case studies).
-  Flagships exist in ai/, engineering/, ecommerce/ — add as budget allows.
+- Journal heroes for flagship articles (one added iter 5:
+  ai/evals-practical-guide). Next targets: product/jobs-to-be-done-interviews
+  (prompt ready in iter-6 notes below), growth/ flagships.
 - Builder ideas for later iterations: home POV band refresh; resources as a
-  real hub once playbooks fill; author profile pages (people.ts → /team/:slug
-  with their articles); 375px device QA on demo-strip/lab-feature/article-nav;
-  case-study gallery sections; Journal cluster-hub enrichment (featured piece).
+  real hub once playbooks fill; case-study gallery sections; 375px device QA
+  on demo-strip/lab-feature/article-nav/feature card/person-hero; OG images
+  per case study (currently default og.jpg when no hero).
+- Image retry for next iteration: jobs-to-be-done-interviews hero — prompt:
+  "Editorial print photograph, top-down flat lay on warm cream uncoated paper:
+  two small ceramic espresso cups facing each other across the frame, between
+  them a cloth-bound notebook with a brass clip and a mechanical pencil, a
+  single fern frond laid diagonally at the lower edge. Soft directional
+  daylight, gentle shadows, palette of deep fern green, aged brass, warm cream
+  with muted clay undertones; subtle film grain, generous negative space in the
+  upper third. No text, no logos, no people."
 - Writers: keep burning backlog — biggest gaps engineering (≈21/90),
   ecommerce (6/50), growth (8/80), product (14/70), brand (6/60).
   Authors MUST be roster names; new case studies must use canonical industry
@@ -448,3 +498,206 @@ Four web-design articles completed:
   stacks; demo moment; alternatives table that concedes; 3-rung CTA ladder. Applied to
   Hearthbrew / Northwind Ledger / GLADE with different bends; measurement set +
   9-point checklist.
+
+## writer4 — iteration 8 (2026-09-26)
+
+Eight articles completed (two batches):
+
+Batch 1 (web-design):
+- web-design/fluid-type-scales-in-practice (Aiko Tanaka) — two-ratio fluid scales
+  (1.2 mobile / 1.28–1.333 desktop) anchored on fixed body; clamp() with commented
+  slope, rem-only, 375–1440 locks; fixed body text; midpoint-dip testing; optical
+  correction (tracking/leading/opsz bound to clamp); ordinal tokens + specimen page.
+  Hero image: public/images/articles/web-design/fluid-type-scales-in-practice.jpg
+  (brass letterpress blocks ascending on cream paper, fern ink smudges).
+- web-design/pricing-pages-that-convert-quietly (Leonie Marsh) — status-quo anchoring;
+  buyer-identity plan names, 3+enterprise cap; honest billing toggle (radiogroup);
+  comparison tables for evaluators (job-named groups, words over ticks); proof at doubt
+  points; before/after composite refactor (1.8%→2.7% illustrative); leak list.
+- web-design/editorial-grids-on-the-web (June Okafor) — SEQUEL to editorial-grids-web:
+  named-line breakout grid CSS (content/popout/full, 3 tracks max); captions/pull-quotes
+  as contracted components (aria-hidden decorative repetition); figure numbers; system vs
+  art-directed pages (traffic×longevity×stakes rule); interrupt budgets per template;
+  Postcards vs Holloway budgets.
+- web-design/microinteraction-taxonomy (Felix Brandt) — 4-job taxonomy + freeloader;
+  duration/easing token table (120–160ms axis, springs-for-play); "does it answer a
+  question" quality test + mute-and-watch removal test; full reduced-motion fallback
+  table (opacity = safe currency, gate JS motion too); 5-question say-no checklist.
+
+Batch 2 (growth + ai):
+- growth/attribution-noise-decisions (Sam Whitfield) — 90/10 noise baseline; last-click
+  as smoke detector only; 5-rung evidence hierarchy (platform-in-platform / HDYHAU /
+  geo holdouts / MMM-lite / explicit written beliefs); 4 decisions data can support;
+  decision log > dashboard precision; Copperline Mutual example.
+- ai/shipping-llm-features-lessons (Dev Khatri) — post-launch scars vs pre-flight
+  checklist: time-to-meaningful-content per answer shape; cost creep (prompt growth,
+  retry loops, context inflation); layered fallbacks incl. silent staleness + no-deploy
+  kill switch; trust calibrates in first 3 sessions; provider model drift diffed both ways.
+- ai/evals-practical-guide (Priya Nair) — golden sets (30–150, real, frozen,
+  failure-weighted, versioned); grader hierarchy (deterministic → reference → rubric
+  LLM-judge, atomised + calibrated); PR fast gate / nightly full / model-change both-ways
+  diff; pitfall list (Goodhart, drift, judge-recursion); 2-week starter plan.
+- ai/agent-ux-control (Ruby Castellanos) — agents = control systems: verb×object
+  permission scopes, 3 tiers, revocable home screen; visible inspectable plan +
+  interruptibility + dry-run; per-action undo/mitigation/irreversibility spec; attention
+  routing table (act/batch-ask/interrupt/refuse, novelty-weighted); failure contract.
+
+Note: several claimed slugs were near-dupes of existing pieces (editorial-grids,
+microinteractions, shipping-llm, evals, agent-ux, attribution) — each was written as an
+explicitly cross-linked sequel/companion with a distinct angle (mechanics vs philosophy).
+
+## writer3 — iteration 8 (growth batch)
+
+- growth/technical-seo-launch-checklist (Hannah Yeo) — deliberately the *sequel* to
+  technical-seo-checklist-2026: checklist-as-code angle. Four CI layers (static HTML
+  lint, file assertions, runtime header/status, JSON-LD contract tests), two-pass
+  rhythm preserved, judgement checks that never automate (canonical intent, rendering
+  trade-offs, crawl-budget economics, sniff test), first-90-days monitoring.
+- growth/content-strategy-compounds (Priya Nair) — portfolio maths: 60/15/25
+  compounder/spike/refresh allocation; intent-tier topic selection w/ bookmark test;
+  refresh engine as the compounding mechanism; directional attribution defence.
+- growth/cro-experiments-that-matter (Sam Whitfield) — companion to cro-experiment-design,
+  focused on triage/sequencing: 6–10 tests/yr arithmetic, three-gate filter
+  (evidence/opportunity/detectability), traffic tiers, learn-then-dig sequencing,
+  ledger, money-with-ranges reporting.
+- growth/lifecycle-email-product (Ruby Castellanos) — state machines not calendars;
+  plain-text craft (91-word example); deliverability engineering (subdomain streams,
+  MPP-aware metrics, sunset-as-code); time-to-state-transition north star.
+  Hero image generated: public/images/articles/growth/lifecycle-email-product.jpg.
+
+## writer1 — iteration 9 (web-design + product + growth)
+
+- web-design/navigation-that-survives-mobile (Sam Whitfield) — hamburger alternatives:
+  visible-priority bar, bottom tabs (label+icon), light mega menus, breadcrumbs as
+  wayfinding, findability measurement (tree tests, menu-open ratios, time-to-first-nav).
+- web-design/inclusive-design-beyond-checklists (Hannah Yeo) — inclusive language in
+  copy, cognitive load budgets, SPA focus management, physical-layer targets/reach,
+  accessibility as standing critique criterion. (Description needed one trim to 159.)
+- web-design/empty-loading-error-states (Aiko Tanaka) — four species of empty states,
+  loading ladder (optimistic > skeleton > progressive > spinner), error-copy anatomy,
+  states-as-named-variants spec. Hero image generated
+  (public/images/articles/web-design/empty-loading-error-states.jpg).
+- web-design/handoff-that-does-not-decay (Tomás Reyes) — tokens-as-code, component
+  specs (5 sections incl. accessibility contract), motion spec table w/ cubic-bezier
+  + R-motion rows, annotation habits, weekly designer-on-staging.
+- product/jobs-to-be-done-interviews (Priya Nair) — positioned as companion to
+  jtbd-interviews-that-work (script): excavating the unsayable (artefacts, silence,
+  audience probes), firing interviews, forces-map synthesis, jobs-to-bets translation.
+- product/dashboard-design-dozen-lessons (Dev Khatri) — 12-scar listicle format;
+  decisions-first, context-pinned numbers, 5-second chart test, annotations, filters
+  vs saved views, freshness stamps, instrument-the-dashboard metrics.
+- product/onboarding-patterns-activation (Leonie Marsh) — value-moment sentence, keep
+  patterns (value-before-signup, honest checklists, graduating tours) + 7 banned
+  patterns; four-measure instrumentation; amputate-don't-redesign migration.
+- product/wcag-aa-product-teams (Nate Sullivan) — the five chronic failures (state
+  contrast, focus visible, 2.2 target size, keyboard widgets, name/role/value),
+  error-identification under-worry, four rituals, honest AA limits.
+- growth/refreshing-old-content-wins (Ruby Castellanos) — decay segmentation (rank /
+  impression / CTR), refresh-vs-rewrite-vs-consolidate-vs-retire triage, 8-point
+  refresh pass, one-day-a-week cadence, cohort measurement.
+- growth/digital-pr-backlinks-honest (Felix Brandt) — asset-first (data studies,
+  reactive commentary w/ 90-min SLA, tools, contrarian w/ skin), 60-contact lists,
+  one-follow-up rule, honest conversion rates, quality-not-DA measurement.
+- growth/email-deliverability-fundamentals (Mara Ellison) — SPF/DKIM/DMARC/DMARC→BIMI
+  plain-English, behavioural reputation, hygiene 80% (sunset, suppression, no bought
+  lists), warming, four-layer diagnosis, Spam Act floor.
+- growth/changelog-as-marketing (June Okafor) — dialect translation (patch→release
+  note), three lanes, segmentation multiplier, triple duty (in-product/email/SEO),
+  cadence-as-signal, archive mining for case studies.
+
+Notes: service slugs confirmed brand-identity|websites|product|ecommerce|ai|growth
+(existing motion article links /services/product-design-and-engineering — stale but
+not mine to churn; builder may want a redirect audit later). finish_article clean
+on all 12 after one description trim.
+
+## writer2 — iteration 10 (product ux batch)
+
+- product/cancellation-flows-respect (Aiko Tanaka) — one offer per cancel matched to
+  reason, equal-weight decline, no confirm-shaming; exit-survey signal design (optional,
+  quarterly-reviewed options, never gating); data export as dignity + enterprise
+  purchase criterion; win-back timing follows re-entry moments + "we fixed it" emails;
+  honest metrics (60-day re-churn, clean-leaver vs fought-leaver win-back).
+- product/invite-flows-team-products (June Okafor) — role-at-invite with permission
+  preview, least-powerful defaults; email vs shareable links w/ expiry + revoke;
+  invitee arrival = inviter + thing + first task (skip tour, preserve personal message);
+  inviter loop-closing (delivery visibility, human nudges, first-action reporting);
+  viral-loop honesty (no scraping/pre-ticked/fake-personal) + full-loop instrumentation.
+- product/activity-feeds-audit-logs (Felix Brandt) — event grammar (actor/verb/object/
+  absolute time/context, old→new diffs, machines as named actors); noise control
+  (write-time bulk roll-up, reversed salience, per-category mutes); filter bar = the
+  feature (actor/object/tier/dates/fuzzy search); immutable append-only; retention
+  windows announced; why audit logs close enterprise deals (monetise depth, not
+  existence); saved filters as notification subscriptions.
+- product/bulk-actions-ux (Tomás Reyes) — two-step explicit cross-page selection w/
+  filter-scoped honesty + exclusion lists; effect-preview confirmations (count/
+  consequence/exceptions at confirm time); undo > grace > confirmation hierarchy, real
+  undo reverses data; long jobs get names/progress/receipts/partial-failure queues +
+  permanent feed records; bulk as separate permission capability w/ batch caps and
+  two-person approval gates; test at production scale.
+
+## demo2 — iteration 3 (fernleigh-cellar-club)
+
+- Demo: **Fernleigh Cellar — wine club subscription & shoppable PDPs**
+  (`src/demos/fernleigh-cellar-club/`), linked to existing case study
+  `fernleigh-wines-dtc-storefront`.
+- Features: filterable 6-wine grid → PDP sheet with vintage radios, qty stepper,
+  drink-window dot + club-price comparison; three club tiers (Explorer −10% /
+  Cellar −15% / Collector −20%) with bottles-per-shipment + cadence sliders and
+  per-shipment savings summary; active-plan panel with pause/resume/leave and a
+  shipment-manager drawer (skip-next, 5-cycle cadence calendar); drink-by cellar
+  tracker (status dots + window bars, 25-bottle seed) that restocks from mock
+  checkout; cart drawer with freight threshold, member-saving hint, 3-step mock
+  checkout. Cart/club/cellar persist to localStorage.
+- Art direction (own, not Brassfern's): fog grey / vine green / wax-seal red,
+  Iowan–Palatino serif voice, all bottles drawn as SVG (`Bottle.tsx` — wax
+  capsules, typographic labels, no photographs). Scoped under `.fcc`.
+- A11y/motion: dialogs with aria-modal + Escape + initial focus, live-region
+  toast, labelled sliders, `:focus-visible` rings, full reduced-motion block.
+- Showcase image: `public/images/work/fernleigh-cellar-club.jpg` (device mockup,
+  fog/vine/wax palette, no text).
+
+## demo1 — iteration 3 (wattle-and-daub-reserve)
+
+- Demo: **Wattle & Daub — restaurant site with reservations**
+  (`src/demos/wattle-and-daub-reserve/`), linked via meta.caseStudy to
+  `wattle-and-daub-reservations`. Note: harness blocks demo builders from
+  adding `demo:` to the case study md — the back-link from the case study
+  still needs a writer to add `demo: wattle-and-daub-reserve` to
+  `src/content/work/wattle-and-daub-reservations.md`.
+- Features: candlelit ember canvas hero (rAF, visibility-paused, static frame
+  under reduced motion); 4-step booking flow (party+date → sitting & seat →
+  details → confirm) with deterministic seeded availability across 14 days,
+  dark Mondays, Sunday long lunch, three seating zones with per-zone scarcity
+  (chef's counter books fastest) and an honest "full tonight — nearest nights"
+  recovery; live coat-check-ticket summary (cream paper ticket w/ perforation);
+  card-hold consent only when it matters (party 5+ or Saturdays) per the case
+  study's friction-budget rule; confirmation with ref code + .ics download;
+  reservations persist in localStorage with a "Your tables" manager and a
+  two-step, deliberately delightful one-tap release; editorial serif menu with
+  dotted leaders + dietary tags; by-the-glass wine table; Hearth Room private
+  dining enquiry with validation + success state.
+- Art direction (own): firelit amber on charred timber, Iowan–Palatino serif,
+  mono overlines; scoped under `.wd`. Header sticky at `top: 3rem` (under lab
+  bar). Full reduced-motion block; aria-live step announcements; step-heading
+  focus management.
+- Showcase image: `public/images/work/wattle-and-daub-reserve.jpg` (phone on
+  charred table, ember UI, no legible text).
+
+## writer4 — iteration 9 (growth ×4 + playbooks ×4)
+
+- growth/community-led-growth-honest (Priya Nair) — honest B2B community economics, three yes-conditions, dark-funnel measurement.
+- growth/interactive-tools-as-content (Sam Whitfield) — tools vs prose link economics, sprint scoping, SEO architecture, sideways measurement.
+- growth/content-pruning-seo-lever (Leonie Marsh) — audit table, keep/refresh/merge/redirect/delete tree, 90-day watch. Hero image added: public/images/articles/growth/content-pruning-seo-lever.jpg.
+- growth/internal-linking-architecture (Priya Nair) — up/across/down hub mechanics, anchor discipline, template links, orphan/depth audits.
+- playbooks/design-system-buy-in (June Okafor) — cost-of-inconsistency maths, pilot strategy, adoption metrics, governance.
+- playbooks/measurement-plan-before-build (Sam Whitfield) — questions-before-events workshop, event naming, consent-as-architecture, fake-data dashboard.
+- playbooks/reading-an-agency-sow (Ruby Castellanos) — exclusions, assumptions section, change control, acceptance criteria, five pre-signature questions.
+- playbooks/scope-change-without-drama (Mara Ellison) — discovery vs preference vs creep, 4-rule change-request micro-process, pricing mid-stream, scripts.
+
+## writer1 — iteration 11 (playbooks ×1 + ai ×3)
+
+- playbooks/first-90-days-after-launch (Ruby Castellanos) — kickoff-scoped post-launch plan, S1–S3 bug etiquette, analytics fog + baseline, day-60 reading discipline, day-90 optimise/extend/operate decision.
+- ai/ai-brand-voice (Leonie Marsh) — three persona positions, five-section voice spec (stance/register map/exemplars/NEVER list/escalation registers), blind lineup + perception testing, editorial governance. Distinct from ai-brand-voice-guardrails (writer's craft vs system).
+- ai/golden-eval-sets-support-tickets (Dev Khatri) — mining tickets into golden eval sets: anonymisation, intent/difficulty/stakes stratification (40/40/20), layered expectations, weekly + renewal cadence.
+- ai/llm-failure-fallback-ux (Aiko Tanaka) — five failure modes, five-tier degradation ladder, diagnostic-honesty error copy, time ceilings, designed degraded state. Hero image: public/images/articles/ai/llm-failure-fallback-ux.jpg.
+- All four validated done via finish_article.

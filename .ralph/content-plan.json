@@ -4558,8 +4558,10 @@
     "brand character design",
     "illustrated mascot brand"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790385893.331149
   },
   {
    "kind": "demo",
@@ -5023,8 +5025,10 @@
     "brand discovery",
     "brand assessment"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790385893.33115
   },
   {
    "kind": "article",
@@ -5038,8 +5042,10 @@
     "digital brand",
     "small-space identity"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790385893.33115
   },
   {
    "kind": "article",
@@ -5053,8 +5059,10 @@
     "logo lockups",
     "brand hierarchy"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790385893.33115
   },
   {
    "kind": "article",
