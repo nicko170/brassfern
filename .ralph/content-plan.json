@@ -1638,8 +1638,10 @@
     "newsletter design",
     "owned audience"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790382037.293938
   },
   {
    "kind": "article",
@@ -1653,8 +1655,10 @@
     "cac payback",
     "channel strategy"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790382037.2939389
   },
   {
    "kind": "article",
@@ -1668,8 +1672,10 @@
     "value proposition writing",
     "message testing"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790382037.29394
   },
   {
    "kind": "article",
@@ -1683,8 +1689,10 @@
     "saas metrics",
     "growth dashboards"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790382037.29394
   },
   {
    "kind": "article",
@@ -2502,10 +2510,11 @@
     "design system pipeline",
     "css variables"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer3",
    "worker": "writer4",
-   "claimed_at": 1790381223.915568
+   "claimed_at": 1790381223.915568,
+   "done_at": "2026-09-26T10:23:08"
   },
   {
    "kind": "article",
@@ -2519,10 +2528,11 @@
     "vitest",
     "ci quality"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer3",
    "worker": "writer4",
-   "claimed_at": 1790381223.9155688
+   "claimed_at": 1790381223.9155688,
+   "done_at": "2026-09-26T10:23:08"
   },
   {
    "kind": "article",
@@ -2536,10 +2546,11 @@
     "axe ci",
     "a11y automation"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer3",
    "worker": "writer4",
-   "claimed_at": 1790381223.91557
+   "claimed_at": 1790381223.91557,
+   "done_at": "2026-09-26T10:23:08"
   },
   {
    "kind": "article",
@@ -3246,10 +3257,11 @@
     "ttfb optimisation",
     "ssr performance"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790381223.91557
+   "claimed_at": 1790381223.91557,
+   "done_at": "2026-09-26T10:23:08"
   },
   {
    "kind": "article",
