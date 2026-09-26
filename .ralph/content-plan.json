@@ -7463,10 +7463,11 @@
     "education UX",
     "compare UI"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "demo1",
-   "claimed_at": 1790406478.2379122
+   "claimed_at": 1790406478.2379122,
+   "done_at": "2026-09-26T18:41:19"
   },
   {
    "kind": "demo",
@@ -7665,10 +7666,11 @@
     "SaaS marketing pages",
     "design honesty"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790411260.009839
+   "claimed_at": 1790411260.009839,
+   "done_at": "2026-09-26T18:37:06"
   },
   {
    "kind": "article",
@@ -7683,10 +7685,11 @@
     "mapbox styling",
     "accessible maps"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790411260.00984
+   "claimed_at": 1790411260.00984,
+   "done_at": "2026-09-26T18:37:06"
   },
   {
    "kind": "article",
@@ -7701,10 +7704,11 @@
     "B2B website design",
     "conversion trust"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790411260.00984
+   "claimed_at": 1790411260.00984,
+   "done_at": "2026-09-26T18:41:57"
   },
   {
    "kind": "article",
@@ -7719,10 +7723,11 @@
     "dark patterns",
     "ethical web design"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790411260.009841
+   "claimed_at": 1790411260.009841,
+   "done_at": "2026-09-26T18:41:57"
   },
   {
    "kind": "article",
@@ -7737,8 +7742,10 @@
     "LCP video",
     "web design trade-offs"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790411780.8119721
   },
   {
    "kind": "article",
@@ -7753,8 +7760,10 @@
     "keyboard accessible widgets",
     "interaction design"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790411780.811973
   },
   {
    "kind": "article",
@@ -7769,8 +7778,10 @@
     "design ops",
     "sub-brand websites"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790411780.811973
   },
   {
    "kind": "article",
@@ -7785,8 +7796,10 @@
     "colour surfaces",
     "design system layout"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790411780.811973
   },
   {
    "kind": "article",
@@ -8400,10 +8413,11 @@
     "breaking changes design system",
     "design engineering"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790408304.960145
+   "claimed_at": 1790408304.960145,
+   "done_at": "2026-09-26T18:41:46"
   },
   {
    "kind": "article",
@@ -8418,10 +8432,11 @@
     "static site content",
     "build tooling"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790408304.960145
+   "claimed_at": 1790408304.960145,
+   "done_at": "2026-09-26T18:41:48"
   },
   {
    "kind": "article",
@@ -8436,10 +8451,11 @@
     "transactional email design",
     "email development"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790408304.960146
+   "claimed_at": 1790408304.960146,
+   "done_at": "2026-09-26T18:41:48"
   },
   {
    "kind": "article",
@@ -8454,10 +8470,11 @@
     "browser find UX",
     "front-end accessibility"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790408304.960146
+   "claimed_at": 1790408304.960146,
+   "done_at": "2026-09-26T18:41:49"
   },
   {
    "kind": "article",
@@ -10047,6 +10064,499 @@
     "non-profit",
     "forms",
     "data visualisation"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "wayfinding-design-content-sites",
+   "title": "Wayfinding as a system: breadcrumbs, indexes and \"you are here\"",
+   "cluster": "web-design",
+   "intent": "How breadcrumb trails, index pages, cluster hubs and visible hierarchy combine into a wayfinding system on 1,000+ page content sites — so nobody ever asks \"where am I?\". Reference our own crumbs + sitemap approach.",
+   "keywords": [
+    "wayfinding",
+    "breadcrumbs",
+    "information architecture",
+    "navigation",
+    "content sites",
+    "index pages"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "figure-caption-design-system",
+   "title": "Figures, captions and credits: the most neglected system on the page",
+   "cluster": "web-design",
+   "intent": "Designing a figure/caption/credit system for editorial and case-study pages: caption tone, alt text partnership, credit lines, numbering, breakpoint behaviour, and why captions are the best-read copy after headlines.",
+   "keywords": [
+    "captions",
+    "figures",
+    "editorial design",
+    "alt text",
+    "typography",
+    "design systems"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "dark-sections-on-light-sites",
+   "title": "Night bands on a paper site: mixing dark moments into light design systems",
+   "cluster": "web-design",
+   "intent": "When and how to drop dark sections into a light editorial site — contrast discipline, token strategy (two palettes, one system), photography implications, and the restraint rules that keep it from feeling like a theme toggle accident.",
+   "keywords": [
+    "dark sections",
+    "design tokens",
+    "contrast",
+    "editorial layouts",
+    "colour systems",
+    "accessibility"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "map-ui-design-web",
+   "title": "Designing map interfaces people actually use",
+   "cluster": "web-design",
+   "intent": "Map UI craft: pin hierarchy, clustering at zoom levels, list-map split views, mobile bottom-sheets, keyboard access to pins, empty-region states, and when a static map beats an interactive one. Draw on property-search demo experience.",
+   "keywords": [
+    "map UI",
+    "geospatial",
+    "pins",
+    "clustering",
+    "mobile UX",
+    "interaction design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "before-after-reveal-design",
+   "title": "Before/after reveals that prove the work",
+   "cluster": "web-design",
+   "intent": "Image-comparison sliders as portfolio devices: drag interaction design, keyboard fallback, focal-point alignment across eras, honest labelling, and why the cheapest reveal (two stills) often beats the fancy one.",
+   "keywords": [
+    "before and after",
+    "comparison slider",
+    "case studies",
+    "portfolio design",
+    "accessibility",
+    "interaction design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "client-logo-walls-honest",
+   "title": "The client logo wall, done honestly",
+   "cluster": "web-design",
+   "intent": "Designing client ensembles when you're young or fictional-adjacent: typographic wordmarks vs marks, grid rhythm, monochrome discipline, permission and accuracy ethics, and how a wall earns trust instead of borrowing it.",
+   "keywords": [
+    "logo wall",
+    "social proof",
+    "wordmarks",
+    "trust",
+    "agency websites",
+    "grid design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "filter-bar-design-indexes",
+   "title": "Filter bars that don't lie: faceted indexes for work and content",
+   "cluster": "web-design",
+   "intent": "Faceted filter UX for portfolio and journal indexes: per-option counts that respect the other facet, URL-synced state, empty states with a way out, reset placement, and mobile collapse patterns.",
+   "keywords": [
+    "filters",
+    "faceted search",
+    "URL state",
+    "portfolio",
+    "empty states",
+    "mobile UX"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "horizontal-scroll-when-justified",
+   "title": "Horizontal scroll: the two times it's justified",
+   "cluster": "web-design",
+   "intent": "Sideways content is usually a mistake — but marquees, comparison rails and timelines can earn it. Scroll-hijack warnings, trackpad vs drag vs buttons, overflow affordances, and reduced-motion fallbacks.",
+   "keywords": [
+    "horizontal scroll",
+    "carousels",
+    "scroll hijacking",
+    "marquee",
+    "interaction design",
+    "reduced motion"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "search-results-page-design",
+   "title": "The search results page is a designed surface, not an apology",
+   "cluster": "web-design",
+   "intent": "Designing SRPs for studio and content sites: result anatomy, scoring transparency, empty-query states that teach the corpus, zero-results recovery, and kind badges — based on our own /search.",
+   "keywords": [
+    "search results",
+    "SRP design",
+    "site search",
+    "empty states",
+    "content discovery",
+    "UX writing"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "audio-player-embeds-design",
+   "title": "Designing audio players and podcast embeds for editorial pages",
+   "cluster": "web-design",
+   "intent": "Inline audio as first-class editorial content: waveform vs progress bar, playback state persistence, episode art crops, transcripts beside players, and why default browser controls poison the aesthetic.",
+   "keywords": [
+    "audio player",
+    "podcast",
+    "waveform",
+    "editorial design",
+    "media embeds",
+    "accessibility"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "confirmation-pages-brand-moment",
+   "title": "Confirmation pages: the cheapest brand moment you'll ever buy",
+   "cluster": "web-design",
+   "intent": "Booking confirmations, RSVP receipts, order thank-yous: the moment of maximum goodwill that most sites waste on a system message. Anatomy of a great confirmation — next steps, calendar adds, honest expectations.",
+   "keywords": [
+    "confirmation pages",
+    "thank you pages",
+    "booking UX",
+    "brand moments",
+    "transactional UI",
+    "microcopy"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "replacing-pdfs-with-pages",
+   "title": "Kill the PDF: menus, annual reports and brochures as web pages",
+   "cluster": "web-design",
+   "intent": "The business and design case for replacing downloadable PDFs with purpose-built pages — restaurant menus, annual reports, spec sheets. Accessibility, searchability, freshness, and when a PDF is still right.",
+   "keywords": [
+    "PDF alternatives",
+    "annual reports",
+    "menus",
+    "accessibility",
+    "content strategy",
+    "document design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "embed-design-third-party",
+   "title": "Making third-party embeds look native",
+   "cluster": "web-design",
+   "intent": "Maps, video, checkout widgets and scheduling iframes always break the visual system. Wrapper design, skeleton loading that matches the embed, borders and radius strategy, performance accounts, and honesty when you can't fix it.",
+   "keywords": [
+    "embeds",
+    "iframes",
+    "third-party scripts",
+    "performance",
+    "skeletons",
+    "visual consistency"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "designing-legal-pages",
+   "title": "Privacy and terms pages that people can actually read",
+   "cluster": "web-design",
+   "intent": "Legal pages as design work: layered summaries, numbered sections, plain-English preambles, dated changelogs, and why readable legals signal a trustworthy company. Based on our own /legal approach.",
+   "keywords": [
+    "privacy policy",
+    "terms of service",
+    "legibility",
+    "trust",
+    "plain English",
+    "longform design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "designing-with-real-content",
+   "title": "Design with real content or design lies: the content-first workflow",
+   "cluster": "web-design",
+   "intent": "Why lorem ipsum produces layouts that shatter on contact with reality. Getting draft copy before wireframes, content lengths as design constraints, and the dirty-document content sprint that saves every redesign.",
+   "keywords": [
+    "content-first design",
+    "lorem ipsum",
+    "wireframes",
+    "content strategy",
+    "workflow",
+    "copy length"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "font-pairing-discipline",
+   "title": "Two fonts, one argument: pairing discipline for the web",
+   "cluster": "web-design",
+   "intent": "A practical method for pairing typefaces: contrast in construction not quirk, who owns headings vs UI, variable font ranges, optical sizes, and the pairing tests (headline + button + table) that predict failure.",
+   "keywords": [
+    "font pairing",
+    "typography",
+    "variable fonts",
+    "type systems",
+    "web fonts",
+    "design systems"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "accessibility-overlays-why-not",
+   "title": "Accessibility overlays don't work — and the invoice proves it",
+   "cluster": "web-design",
+   "intent": "Overlay widgets promise WCAG compliance for $49/month and deliver neither. What they actually change, why automated fixes fail, the legal track record, and what a real remediation roadmap costs by comparison.",
+   "keywords": [
+    "accessibility overlays",
+    "WCAG",
+    "remediation",
+    "inclusive design",
+    "a11y",
+    "procurement"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "prerendering-react-seo",
+   "title": "Prerendering a React SPA for real: the full pipeline",
+   "cluster": "engineering",
+   "intent": "How to prerender a Vite + React SPA into per-route static HTML: entry-server renderToString, a head collector for per-page meta/JSON-LD, route tables that can't drift, base-path correctness, and the crawler/no-JS wins. Uses this site's own 1,500-route pipeline as the worked example.",
+   "keywords": [
+    "prerendering",
+    "SSR",
+    "React",
+    "Vite",
+    "SEO",
+    "static sites"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "content-validation-ci",
+   "title": "Content validation as a build gate: frontmatter schemas and link audits",
+   "cluster": "engineering",
+   "intent": "Treating 600 markdown files like a database: frontmatter schema validation, author roster enforcement, duplicate-slug checks, and a fatal internal-link audit — all in prebuild. Patterns from running this pipeline on this very site.",
+   "keywords": [
+    "content validation",
+    "frontmatter",
+    "CI",
+    "link audit",
+    "markdown",
+    "build pipeline"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "generative-art-dom-vs-canvas",
+   "title": "Canvas, SVG or DOM: choosing the renderer for generative art",
+   "cluster": "engineering",
+   "intent": "A decision framework for generative visuals on marketing sites: point-cloud Barnsley ferns want canvas; logo geometry wants SVG; grain wants a static overlay. Perf budgets, crispness on retina, reduced-motion static frames and print fallbacks.",
+   "keywords": [
+    "generative art",
+    "canvas",
+    "SVG",
+    "performance",
+    "rendering",
+    "creative coding"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "realistic-fake-data-engineering",
+   "title": "Engineering fake data that feels real",
+   "cluster": "engineering",
+   "intent": "Seeded PRNGs, plausible distributions, name banks, time-series with seasonality and weekends, relational integrity between entities — how to build demo and test fixtures that survive a stakeholder clicking around for ten minutes.",
+   "keywords": [
+    "fake data",
+    "seeded random",
+    "fixtures",
+    "demos",
+    "testing",
+    "data engineering"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "email-html-engineering",
+   "title": "HTML email engineering without losing your mind",
+   "cluster": "engineering",
+   "intent": "Table-based layouts in 2026, dark-mode hacks, Outlook's Word renderer, inlined CSS tooling, testing matrices, and a component architecture that makes transactional email maintainable. What we ship for lifecycle clients.",
+   "keywords": [
+    "HTML email",
+    "transactional email",
+    "dark mode",
+    "Outlook",
+    "MJML",
+    "lifecycle"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "timezone-safe-date-engineering",
+   "title": "Dates are a distributed system: timezone-safe engineering in TypeScript",
+   "cluster": "engineering",
+   "intent": "DST gaps, ambiguous 2ams, day-boundary bugs, storage conventions (UTC + zone name), display layers, booking cutoffs across AU/NZ/SG/London, and the test suite that catches calendar lies.",
+   "keywords": [
+    "timezones",
+    "dates",
+    "DST",
+    "TypeScript",
+    "scheduling",
+    "i18n"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "multi-tenant-theming-architecture",
+   "title": "Theming architecture for white-label and multi-tenant products",
+   "cluster": "engineering",
+   "intent": "Token layers that support per-tenant brands without forking the design system: cascade order, runtime vs build-time theming, dark mode composition, tenant asset pipelines, and the override escape hatches you'll regret.",
+   "keywords": [
+    "theming",
+    "design tokens",
+    "multi-tenant",
+    "white label",
+    "CSS architecture",
+    "design systems"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "embeddable-widget-engineering",
+   "title": "Building the embeddable widget everyone else pastes",
+   "cluster": "engineering",
+   "intent": "Engineering third-party-embeddable widgets: script tag vs iframe, shadow DOM isolation, sub-30KB bundle discipline, theming APIs, versioning embedded code, and CSP-surviving patterns.",
+   "keywords": [
+    "embeddable widgets",
+    "iframe",
+    "shadow DOM",
+    "third-party JavaScript",
+    "bundle size",
+    "SDK design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "cron-jobs-scheduled-tasks",
+   "title": "Cron is a liability: engineering scheduled tasks that tell the truth",
+   "cluster": "engineering",
+   "intent": "Idempotency keys, drift catching up, dead-man switches, overlap prevention, alerting on silence not just failure, and the dashboard that shows when each job last ran and lied.",
+   "keywords": [
+    "cron",
+    "scheduled tasks",
+    "background jobs",
+    "idempotency",
+    "monitoring",
+    "reliability"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "build-time-image-generation",
+   "title": "Generating images at build time: OG cards, thumbnails and variants",
+   "cluster": "engineering",
+   "intent": "Build-time image pipelines: template-to-image rendering (SVG/React to raster), variant generation per breakpoint, hashing and caching, font embedding, and keeping a 1,500-page build under control.",
+   "keywords": [
+    "image generation",
+    "OG images",
+    "build pipeline",
+    "Satori",
+    "thumbnails",
+    "performance"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "visual-regression-testing-budgets",
+   "title": "Visual regression testing that teams actually keep",
+   "cluster": "engineering",
+   "intent": "Why most VRT suites rot within a quarter: screenshot budgets, deterministic rendering (fonts, dates, animations), diff thresholds, the review ritual, and where VRT sits relative to unit and e2e layers.",
+   "keywords": [
+    "visual regression",
+    "screenshot testing",
+    "Playwright",
+    "QA",
+    "design systems",
+    "CI"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "api-pagination-design",
+   "title": "Pagination is an API design decision: cursors, offsets and honest totals",
+   "cluster": "engineering",
+   "intent": "Offset vs cursor vs keyset pagination, when total counts become lies, changing datasets mid-scroll, page-size negotiation, and the URL conventions that make paginated APIs debuggable.",
+   "keywords": [
+    "pagination",
+    "API design",
+    "cursors",
+    "REST",
+    "performance",
+    "data fetching"
    ],
    "status": "planned",
    "added_by": "builder"
