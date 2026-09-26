@@ -3176,10 +3176,11 @@
     "brand refresh case study",
     "content strategy"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790412208.545407
+   "claimed_at": 1790412208.545407,
+   "done_at": "2026-09-26T18:56:09"
   },
   {
    "kind": "article",
@@ -3193,10 +3194,11 @@
     "launch day scaling",
     "drop mechanics ux"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790412208.545407
+   "claimed_at": 1790412208.545407,
+   "done_at": "2026-09-26T18:56:09"
   },
   {
    "kind": "article",
@@ -3210,10 +3212,11 @@
     "accessible forms",
     "insurtech design"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790412208.545408
+   "claimed_at": 1790412208.545408,
+   "done_at": "2026-09-26T18:56:10"
   },
   {
    "kind": "article",
@@ -3227,10 +3230,11 @@
     "faceted search ux",
     "deep zoom viewer"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790412208.545408
+   "claimed_at": 1790412208.545408,
+   "done_at": "2026-09-26T18:56:10"
   },
   {
    "kind": "article",
@@ -7393,8 +7397,10 @@
     "reduce returns fashion",
     "apparel sizing UX"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790412834.760285
   },
   {
    "kind": "article",
@@ -7408,8 +7414,10 @@
     "WISMO reduction",
     "shipment tracking page"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790412834.7602859
   },
   {
    "kind": "article",
@@ -7423,8 +7431,10 @@
     "reorder UX",
     "B2B ordering platform"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790412834.760287
   },
   {
    "kind": "demo",
@@ -7506,10 +7516,11 @@
     "AI guardrails",
     "Brassfern work"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790412213.582344
+   "claimed_at": 1790412213.582344,
+   "done_at": "2026-09-26T18:56:09"
   },
   {
    "kind": "article",
@@ -8834,10 +8845,11 @@
     "e-commerce UX",
     "conversion"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790412213.582344
+   "claimed_at": 1790412213.582344,
+   "done_at": "2026-09-26T18:56:14"
   },
   {
    "kind": "article",
@@ -8852,10 +8864,11 @@
     "streaks UX",
     "retention"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790412213.582345
+   "claimed_at": 1790412213.582345,
+   "done_at": "2026-09-26T18:56:16"
   },
   {
    "kind": "article",
@@ -8870,10 +8883,11 @@
     "accessibility",
     "keyboard"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790412213.582345
+   "claimed_at": 1790412213.582345,
+   "done_at": "2026-09-26T18:56:16"
   },
   {
    "kind": "article",
@@ -8964,10 +8978,11 @@
     "trust",
     "form design"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790412444.7215948
+   "claimed_at": 1790412444.7215948,
+   "done_at": "2026-09-26T18:56:02"
   },
   {
    "kind": "article",
@@ -8982,8 +8997,10 @@
     "conversion",
     "autofill"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790412834.760287
   },
   {
    "kind": "article",
@@ -11349,10 +11366,11 @@
     "ecommerce",
     "brand identity"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790412444.721596
+   "claimed_at": 1790412444.721596,
+   "done_at": "2026-09-26T18:56:02"
   },
   {
    "kind": "article",
@@ -11368,10 +11386,11 @@
     "design system",
     "accessibility"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790412444.721596
+   "claimed_at": 1790412444.721596,
+   "done_at": "2026-09-26T18:56:02"
   },
   {
    "kind": "article",
@@ -11387,10 +11406,11 @@
     "dev blog",
     "moderation"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790412444.721596
+   "claimed_at": 1790412444.721596,
+   "done_at": "2026-09-26T18:56:02"
   }
  ]
 }
