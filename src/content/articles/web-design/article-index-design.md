@@ -8,6 +8,8 @@ date: 2026-07-09
 author: Ruby Castellanos
 keywords: [blog index design, article listing ux, editorial web design, content discovery, card grid design]
 readingTime: 10
+heroImage: /images/articles/web-design/article-index-design.jpg
+heroAlt: "Overhead flat-lay of printed index cards and contents pages arranged in a rhythmic grid on cream paper, one oversized lead card, with brass and fern-green accents."
 ---
 
 Open ten agency blogs and nine of them are the same page: a hero card for the newest post, then an infinite column of identical cards marching back to 2019, sorted by date and nothing else. It is a conveyor belt. It tells the reader one thing — "things happen here, sometimes" — and it answers none of the questions a real visitor arrives with. Is this place for me? Where's the good stuff? How deep does this go?

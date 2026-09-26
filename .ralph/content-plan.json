@@ -7548,10 +7548,11 @@
     "focus states",
     "web design craft"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790406330.5446558
+   "claimed_at": 1790406330.5446558,
+   "done_at": "2026-09-26T17:16:06"
   },
   {
    "kind": "article",
@@ -7566,10 +7567,11 @@
     "portfolio site design",
     "trust signals"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790406358.4298902
+   "claimed_at": 1790406358.4298902,
+   "done_at": "2026-09-26T17:17:18"
   },
   {
    "kind": "article",
@@ -7584,10 +7586,11 @@
     "studio culture UX",
     "about page design"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790406358.429891
+   "claimed_at": 1790406358.429891,
+   "done_at": "2026-09-26T17:17:19"
   },
   {
    "kind": "article",
@@ -7602,10 +7605,11 @@
     "i18n UX",
     "web design"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790406358.429891
+   "claimed_at": 1790406358.429891,
+   "done_at": "2026-09-26T17:17:21"
   },
   {
    "kind": "article",
@@ -7620,10 +7624,11 @@
     "art direction web",
     "responsive images"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790406358.429892
+   "claimed_at": 1790406358.429892,
+   "done_at": "2026-09-26T17:17:22"
   },
   {
    "kind": "article",
@@ -8118,8 +8123,10 @@
     "AI education UI",
     "activation metrics"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790406958.100853
   },
   {
    "kind": "article",
@@ -8134,8 +8141,10 @@
     "agent transparency",
     "AI workflow design"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790406958.100854
   },
   {
    "kind": "article",
@@ -8150,8 +8159,10 @@
     "feedback loop product",
     "LLM product metrics"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790406958.100854
   },
   {
    "kind": "article",
@@ -8166,8 +8177,10 @@
     "RAG design",
     "AI support quality"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790406958.100854
   },
   {
    "kind": "article",
