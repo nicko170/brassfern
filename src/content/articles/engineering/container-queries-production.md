@@ -8,6 +8,8 @@ date: 2026-02-18
 author: Felix Brandt
 keywords: [container queries, css containment, cqi units, responsive components, card component css, container query fallback]
 readingTime: 10
+heroImage: /images/articles/engineering/container-queries-production.jpg
+heroAlt: "Engraved editorial illustration of nested rectangular frames adapting inside a larger measuring frame, in fern-green ink with brass rulers on cream paper."
 ---
 
 For fifteen years, responsive design had a dirty secret: we weren't designing components, we were designing pages. A card wasn't a card — it was "a card in the main column between 768 and 1024 pixels." Move it to a sidebar and it broke, because its styles were keyed to a viewport it knew nothing about. Every design system eventually sprouted `Card--wide`, `Card--compact`, `Card--sidebar`, each one a confession that the component couldn't look after itself.
