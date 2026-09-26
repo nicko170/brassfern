@@ -710,10 +710,11 @@
     "react architecture",
     "next.js patterns"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790380716.237568
+   "claimed_at": 1790380716.237568,
+   "done_at": "2026-09-26T10:06:10"
   },
   {
    "kind": "article",
@@ -727,10 +728,11 @@
     "astro vs next",
     "hydration performance"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790380716.237569
+   "claimed_at": 1790380716.237569,
+   "done_at": "2026-09-26T10:06:12"
   },
   {
    "kind": "article",
@@ -744,10 +746,11 @@
     "style dictionary pipeline",
     "design system governance"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790380716.237569
+   "claimed_at": 1790380716.237569,
+   "done_at": "2026-09-26T10:06:27"
   },
   {
    "kind": "article",
@@ -761,10 +764,11 @@
     "responsive images cdn",
     "image performance"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790380716.237569
+   "claimed_at": 1790380716.237569,
+   "done_at": "2026-09-26T10:06:17"
   },
   {
    "kind": "article",
@@ -2413,8 +2417,10 @@
    "cluster": "demos",
    "intent": "Multi-step onboarding for fictional short-course platform Brightmarsh. Art direction: chalk-and-ink academia — bone white, ink navy, highlighter yellow; confident and curious. Features: goal picker (cards), time-commitment dial with honest weekly math, course recommendations from fake catalogue (12 courses), plan summary with first-week calendar preview, progress saved across steps, resume-later state. State-machine navigation integrity, animated progress (reduced-motion safe), keyboard-first. Ends with a genuinely satisfying plan-ready screen.",
    "keywords": [],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "demo3",
+   "claimed_at": 1790381056.90881
   },
   {
    "kind": "demo",
