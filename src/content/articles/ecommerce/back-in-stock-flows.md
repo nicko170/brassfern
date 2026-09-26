@@ -8,6 +8,8 @@ date: 2026-04-14
 author: Nate Sullivan
 keywords: [back in stock emails, waitlist UX, restock notifications, lifecycle email flows, inventory demand signal]
 readingTime: 9
+heroImage: /images/articles/ecommerce/back-in-stock-flows.jpg
+heroAlt: Top-down still life of a polished brass desk bell, kraft parcels tied with green twine and a dried fern sprig on warm cream paper.
 ---
 
 Every store we audit has the same box ticked somewhere in the settings: "back in stock notifications — enabled." And almost none have designed the thing. The notify-me button is a default the platform shipped, the email is a template nobody has read aloud, and the signup list sits in a table that merchandising has never once opened. It's the only lifecycle flow where customers raise their hand, name a product, and ask to be marketed to — and we treat it like a plugin checkbox.
@@ -25,7 +27,7 @@ When someone taps notify-me on a sold-out PDP, they've just crossed a small psyc
 - **One optional field, max.** This is the rare moment customers will tell you things: "How many were you after?" or "Is this a gift?" One question is a conversation; three is an interrogation, and completion falls off a cliff after two.
 - **Never gate it behind an account.** We've audited stores where notify-me required login. That's telling your highest-intent visitor to go create a password before you'll deign to email them. Guest signup, always. The account can come at checkout, where it belongs.
 
-The pattern we built for the [Hearthbrew subscription club](/work/hearthbrew-subscription-club) treates the waitlist card as part of the PDP, not an overlay: the sold-out state of the buy box transforms into a waitlist form in place, same footprint, no modal. Signing up feels like the purchase it almost is.
+The pattern we built for the [Hearthbrew subscription club](/work/hearthbrew-subscription-club) treats the waitlist card as part of the PDP, not an overlay: the sold-out state of the buy box transforms into a waitlist form in place, same footprint, no modal. Signing up feels like the purchase it almost is.
 
 ## Honest timing language is the whole game
 

@@ -9621,8 +9621,10 @@
     "A/B testing",
     "value proposition"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790414156.895425
   },
   {
    "kind": "article",
@@ -10692,8 +10694,10 @@
     "episode pages",
     "content distribution"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790414156.895426
   },
   {
    "kind": "article",
@@ -10709,8 +10713,10 @@
     "conversion",
     "B2B marketing"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790414156.895426
   },
   {
    "kind": "article",
@@ -10726,8 +10732,10 @@
     "customer feedback",
     "positioning"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790414156.895426
   },
   {
    "kind": "article",
