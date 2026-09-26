@@ -479,7 +479,7 @@ export const articleIndex: ArticleMeta[] = [
   },
   {
     "title": "Fine-tuning vs RAG vs prompt: a decision guide",
-    "description": "Prompt, retrieve or fine-tune? The decision tree we run with clients, with real cost curves, data requirements, iteration speed and the maintenance burden nobody mentions.",
+    "description": "Prompt, retrieve or fine-tune? The decision tree we run with clients — real cost curves, data needs, iteration speed and maintenance burden.",
     "slug": "fine-tuning-vs-rag",
     "cluster": "ai",
     "tags": [
@@ -803,7 +803,7 @@ export const articleIndex: ArticleMeta[] = [
   },
   {
     "title": "Shipping LLM features: what production taught us",
-    "description": "The lessons that only arrive after launch: latency budgets in the wild, streaming UX edge cases, cost surprises, fallback design, and setting expectations users actually hold.",
+    "description": "The lessons that only arrive after launch: latency budgets in the wild, streaming UX edge cases, cost surprises, fallbacks, and expectations users hold.",
     "slug": "shipping-llm-features-lessons",
     "cluster": "ai",
     "tags": [
@@ -966,7 +966,7 @@ export const articleIndex: ArticleMeta[] = [
   },
   {
     "title": "The 90-minute brand audit: our scoring sheet, free to steal",
-    "description": "A structured 90-minute brand audit any team can run this afternoon — consistency sweep, voice sampling, asset inventory — with the exact scoring sheet we use in discovery.",
+    "description": "A structured 90-minute brand audit any team can run this afternoon — consistency sweep, voice sampling, asset inventory — with our actual scoring sheet.",
     "slug": "brand-audit-90-minutes",
     "cluster": "brand",
     "tags": [
@@ -1166,7 +1166,7 @@ export const articleIndex: ArticleMeta[] = [
   },
   {
     "title": "Employer brand: your careers page is a brand page",
-    "description": "Your careers page is the most-read brand page nobody designed. Photography policy, salary transparency, voice parity, and the metrics that prove it works — or quietly doesn't.",
+    "description": "Your careers page is the most-read brand page nobody designed. Photography policy, salary transparency, voice parity, and the metrics that prove it works.",
     "slug": "employer-brand-careers-page",
     "cluster": "brand",
     "tags": [
@@ -1211,7 +1211,7 @@ export const articleIndex: ArticleMeta[] = [
   },
   {
     "title": "When the founder IS the brand (and when to stop)",
-    "description": "Founder-led brands convert brilliantly and scale terribly. How to harvest founder voice into systems, manage the handover, and know when personality has become a liability.",
+    "description": "Founder-led brands convert brilliantly and scale terribly. How to harvest founder voice into systems, manage the handover, and spot personality gone toxic.",
     "slug": "founder-led-brand",
     "cluster": "brand",
     "tags": [
@@ -1395,8 +1395,31 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 11
   },
   {
+    "title": "The minimum viable brand: what pre-seed founders actually need",
+    "description": "Pre-seed founders don't need a rebrand budget; they need three artefacts and the discipline to use them. What to buy now, what to fake, and when to invest.",
+    "slug": "minimum-viable-brand",
+    "cluster": "brand",
+    "tags": [
+      "startup branding",
+      "minimum viable brand",
+      "pre-seed",
+      "brand strategy",
+      "founders"
+    ],
+    "date": "2025-09-17",
+    "author": "Mara Ellison",
+    "keywords": [
+      "startup branding",
+      "minimum viable brand",
+      "pre-seed branding",
+      "brand on a budget",
+      "founder brand"
+    ],
+    "readingTime": 9
+  },
+  {
     "title": "The motion layer of brand identity",
-    "description": "Easing is a signature, transitions are grammar. How to build a kinetic identity system, export it as motion tokens engineers actually use, and survive prefers-reduced-motion.",
+    "description": "Easing is a signature, transitions are grammar. Building a kinetic identity system, exporting it as motion tokens engineers use, surviving prefers-reduced-motion.",
     "slug": "motion-identity-design",
     "cluster": "brand",
     "tags": [
@@ -1874,7 +1897,7 @@ export const articleIndex: ArticleMeta[] = [
   },
   {
     "title": "Designing for the gift buyer, not just the fan",
-    "description": "Gift buyers are a different user with different anxieties. Gift finders, delivery-date honesty, card messages and the Q4 checklist — designing the gifting journey properly.",
+    "description": "Gift buyers are a different user with different anxieties. Gift finders, delivery-date honesty, card messages and the Q4 checklist done right.",
     "slug": "gift-buying-ux",
     "cluster": "ecommerce",
     "tags": [
@@ -2340,7 +2363,7 @@ export const articleIndex: ArticleMeta[] = [
   },
   {
     "title": "Size guides and the design of fit confidence",
-    "description": "Fit uncertainty is apparel e-commerce's biggest tax. How to design size guides, fit finders and honest model references that cut fit-driven returns with design, not policy.",
+    "description": "Fit uncertainty is apparel e-commerce's biggest tax. Size guides, fit finders and honest model references that cut fit-driven returns with design, not policy.",
     "slug": "size-guides-fit-confidence",
     "cluster": "ecommerce",
     "tags": [
@@ -2499,6 +2522,50 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 10
   },
   {
+    "title": "Auth for content and commerce: passkeys, magic links, and the recovery flow",
+    "description": "Passkeys, magic links, or passwords with rules? How we choose auth for content and commerce sites — and the account-recovery flows everyone forgets to design.",
+    "slug": "auth-patterns-content-commerce",
+    "cluster": "engineering",
+    "tags": [
+      "authentication",
+      "security",
+      "ux",
+      "ecommerce",
+      "web platform"
+    ],
+    "date": "2026-05-07",
+    "author": "Tomás Reyes",
+    "keywords": [
+      "passkeys authentication",
+      "magic links login",
+      "webauthn implementation",
+      "account recovery flow",
+      "checkout login ux"
+    ],
+    "readingTime": 11
+  },
+  {
+    "title": "Background jobs: boring patterns that save your weekend",
+    "description": "Queues vs cron, idempotency, dead-letter queues and backpressure — the boring background-job patterns that keep small teams asleep at 3am.",
+    "slug": "background-jobs-small-teams",
+    "cluster": "engineering",
+    "tags": [
+      "backend",
+      "reliability",
+      "architecture",
+      "queues"
+    ],
+    "date": "2026-01-22",
+    "author": "Felix Brandt",
+    "keywords": [
+      "background jobs",
+      "job queues",
+      "idempotency",
+      "reliability engineering"
+    ],
+    "readingTime": 12
+  },
+  {
     "title": "Bundle budgets: the 170kb rule and how we hold it",
     "description": "Our rule: 170kb of compressed JavaScript per route, or the PR explains itself. How the budget works and where we spend bytes on purpose.",
     "slug": "bundle-budget-discipline",
@@ -2591,7 +2658,9 @@ export const articleIndex: ArticleMeta[] = [
       "card component css",
       "container query fallback"
     ],
-    "readingTime": 10
+    "readingTime": 10,
+    "heroImage": "/images/articles/engineering/container-queries-production.jpg",
+    "heroAlt": "Engraved editorial illustration of nested rectangular frames adapting inside a larger measuring frame, in fern-green ink with brass rulers on cream paper."
   },
   {
     "title": "Core Web Vitals in the field: budgets that survive sprints",
@@ -2733,6 +2802,30 @@ export const articleIndex: ArticleMeta[] = [
       "fallback ui patterns"
     ],
     "readingTime": 8
+  },
+  {
+    "title": "Errors are design material: engineering graceful failure",
+    "description": "Failures are part of the product, not exceptions to it. Typed errors, retry policies, circuit breakers and writing the failure copy in the same sprint as the happy path.",
+    "slug": "errors-as-design-material",
+    "cluster": "engineering",
+    "tags": [
+      "error-handling",
+      "reliability",
+      "ux",
+      "typescript"
+    ],
+    "date": "2026-06-02",
+    "author": "Tomás Reyes",
+    "keywords": [
+      "error handling design",
+      "typed errors typescript",
+      "retry logic circuit breaker",
+      "graceful degradation ux",
+      "resilience engineering"
+    ],
+    "readingTime": 9,
+    "heroImage": "/images/articles/engineering/errors-as-design-material.jpg",
+    "heroAlt": "A cracked cream ceramic tile repaired with brass seams, beside a pressed fern frond and a machinist's ruler on warm paper."
   },
   {
     "title": "Feature flags without the graveyard",
@@ -2965,7 +3058,7 @@ export const articleIndex: ArticleMeta[] = [
   },
   {
     "title": "Local-first sync engines: what we learned shipping one",
-    "description": "Production field notes from building a real sync engine: CRDT vs last-write-wins in practice, conflict UX that doesn't panic users, offline queues, and when to skip it all.",
+    "description": "Field notes from building a real sync engine: CRDT vs last-write-wins in practice, conflict UX that doesn't panic users, and when to skip it all.",
     "slug": "local-first-sync-engines",
     "cluster": "engineering",
     "tags": [
@@ -3079,6 +3172,29 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 9
   },
   {
+    "title": "A preview environment for every pull request",
+    "description": "Per-PR preview environments cost less than the meetings they replace. How we build them: seed data, infrastructure on a budget, and demos as the default.",
+    "slug": "preview-environments-every-pr",
+    "cluster": "engineering",
+    "tags": [
+      "ci-cd",
+      "developer-experience",
+      "deployments",
+      "code-review"
+    ],
+    "date": "2025-09-12",
+    "author": "Tomás Reyes",
+    "keywords": [
+      "preview deployments",
+      "pull request previews",
+      "CI/CD workflow",
+      "ephemeral environments"
+    ],
+    "readingTime": 11,
+    "heroImage": "/images/articles/engineering/preview-environments-every-pr.jpg",
+    "heroAlt": "Rows of identical terracotta seedling pots with matching fern cuttings on cream paper — a still-life metaphor for cloned preview environments."
+  },
+  {
     "title": "Rate limits are a UX surface, not just middleware",
     "description": "Rate limiting starts in middleware but ends in the interface. Retry-After contracts, queue positions, backpressure UX and the copy that keeps users calm.",
     "slug": "rate-limits-as-ux",
@@ -3124,6 +3240,30 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 10
   },
   {
+    "title": "Rolling your own search in 2026: cheaper and better than you think",
+    "description": "Search is a product, not a plugin. When we self-host Meilisearch or Typesense instead of renting the big names, how we tune typo tolerance, and the UX that forgives.",
+    "slug": "rolling-your-own-search",
+    "cluster": "engineering",
+    "tags": [
+      "search",
+      "architecture",
+      "ux",
+      "infrastructure",
+      "product engineering"
+    ],
+    "date": "2026-06-11",
+    "author": "Felix Brandt",
+    "keywords": [
+      "site search",
+      "meilisearch vs typesense",
+      "algolia alternative",
+      "instant search ux",
+      "search relevance tuning",
+      "typo tolerance"
+    ],
+    "readingTime": 11
+  },
+  {
     "title": "One schema everywhere: shared validation contracts",
     "description": "One Zod schema shared across client forms, API handlers and generated types. The architecture, error mapping and versioning that end validation drift for good.",
     "slug": "schema-validation-shared-contracts",
@@ -3143,6 +3283,49 @@ export const articleIndex: ArticleMeta[] = [
       "form validation architecture"
     ],
     "readingTime": 8
+  },
+  {
+    "title": "Screen-reader testing: a 30-minute workflow for every release",
+    "description": "Automated checks catch a third of accessibility problems. A repeatable 30-minute manual screen-reader script catches the rest — the workflow we run every release.",
+    "slug": "screen-reader-testing-workflow",
+    "cluster": "engineering",
+    "tags": [
+      "accessibility",
+      "testing",
+      "screen-readers",
+      "qa"
+    ],
+    "date": "2026-05-07",
+    "author": "Felix Brandt",
+    "keywords": [
+      "screen reader testing",
+      "nvda testing workflow",
+      "voiceover testing",
+      "accessibility testing manual",
+      "wcag testing"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "CSP without the tears: a security baseline for content sites",
+    "description": "A copy-paste security headers baseline for content sites: Content-Security-Policy with nonces, report-only rollout, and the headers nobody checks until audit.",
+    "slug": "security-headers-csp-baseline",
+    "cluster": "engineering",
+    "tags": [
+      "security",
+      "http",
+      "frontend-infrastructure",
+      "compliance"
+    ],
+    "date": "2026-03-05",
+    "author": "Felix Brandt",
+    "keywords": [
+      "CSP",
+      "security headers",
+      "web security baseline",
+      "content security policy"
+    ],
+    "readingTime": 12
   },
   {
     "title": "Service workers: an honest production guide",
@@ -3304,6 +3487,27 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 9
   },
   {
+    "title": "Transactional email is a product surface: engineer it like one",
+    "description": "SPF, DKIM and DMARC without tears, email HTML that survives Outlook, suppression lists, and why templates belong in CI — email as a product surface.",
+    "slug": "transactional-email-engineering",
+    "cluster": "engineering",
+    "tags": [
+      "email",
+      "deliverability",
+      "backend",
+      "product-engineering"
+    ],
+    "date": "2025-11-05",
+    "author": "Tomás Reyes",
+    "keywords": [
+      "transactional email",
+      "email deliverability",
+      "DKIM SPF DMARC",
+      "email HTML templates"
+    ],
+    "readingTime": 11
+  },
+  {
     "title": "End-to-end type safety from CMS to component",
     "description": "How we generate TypeScript types from headless CMS schemas, validate content at the boundary, and write content models that never cause the 6pm rename incident.",
     "slug": "type-safe-cms-content",
@@ -3392,6 +3596,29 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 9
   },
   {
+    "title": "View transitions in the wild: lovely, fragile, worth it",
+    "description": "Eight projects in, we still love the View Transitions API — with our eyes open. Where it shines, how it fights your router, and the tiers that keep it honest.",
+    "slug": "view-transitions-real-projects",
+    "cluster": "engineering",
+    "tags": [
+      "animation",
+      "ux",
+      "progressive enhancement",
+      "frontend architecture",
+      "web platform"
+    ],
+    "date": "2026-08-21",
+    "author": "Tomás Reyes",
+    "keywords": [
+      "view transitions api",
+      "spa page transitions",
+      "shared element transitions",
+      "view transition router integration",
+      "reduced motion animation"
+    ],
+    "readingTime": 10
+  },
+  {
     "title": "Web Components vs React in 2026: a studio's scorecard",
     "description": "We build with both. An honest scorecard across portability, SSR, theming, a11y and hiring — plus where each earns its place on real projects.",
     "slug": "web-components-vs-react",
@@ -3433,6 +3660,28 @@ export const articleIndex: ArticleMeta[] = [
       "modern css support",
       "browser compatibility policy",
       "progressive enhancement"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Web workers for real work: what we move off the main thread",
+    "description": "Web workers aren't a WebGL party trick. CSV parsing, fuzzy search, image pipelines, zipping exports — how we move real work off the main thread without the plumbing pain.",
+    "slug": "web-workers-real-work",
+    "cluster": "engineering",
+    "tags": [
+      "performance",
+      "web-workers",
+      "javascript",
+      "architecture"
+    ],
+    "date": "2026-03-21",
+    "author": "Tomás Reyes",
+    "keywords": [
+      "web workers javascript",
+      "main thread performance",
+      "comlink web worker",
+      "off main thread architecture",
+      "worker pool"
     ],
     "readingTime": 9
   },
@@ -3818,7 +4067,7 @@ export const articleIndex: ArticleMeta[] = [
   },
   {
     "title": "A creative-testing cadence that compounds",
-    "description": "Creative is the biggest lever in paid media and the worst managed. A weekly testing cadence, naming that preserves learnings, fatigue signals, and the library that compounds.",
+    "description": "Creative is paid media's biggest lever and its worst managed. A weekly testing cadence, naming that preserves learnings, and the library that compounds.",
     "slug": "creative-testing-cadence",
     "cluster": "growth",
     "tags": [
@@ -4017,7 +4266,7 @@ export const articleIndex: ArticleMeta[] = [
   },
   {
     "title": "International SEO without tears: hreflang, ccTLDs and content reuse",
-    "description": "Going international without tanking search: ccTLD vs subfolder trade-offs, hreflang that doesn't break, translation workflows that respect local intent, staged validation.",
+    "description": "Going international without tanking search: ccTLD vs subfolder trade-offs, hreflang that doesn't break, translations that respect local intent, staged validation.",
     "slug": "international-seo-hreflang",
     "cluster": "growth",
     "tags": [
@@ -4541,6 +4790,29 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 10
   },
   {
+    "title": "Writing an analytics implementation plan before you tag anything",
+    "description": "A measurement plan decides what to track; an implementation plan decides how. Naming, property hygiene, consent mode, staging QA and the 30-day calibration.",
+    "slug": "analytics-implementation-plan",
+    "cluster": "playbooks",
+    "tags": [
+      "analytics",
+      "measurement plan",
+      "event tracking",
+      "tagging",
+      "data quality"
+    ],
+    "date": "2026-05-19",
+    "author": "Priya Nair",
+    "keywords": [
+      "analytics implementation plan",
+      "measurement plan template",
+      "event tracking taxonomy",
+      "ga4 setup process",
+      "tagging strategy"
+    ],
+    "readingTime": 10
+  },
+  {
     "title": "The budget conversation: why hiding the number costs you more",
     "description": "Why sharing your real budget with an agency saves money: what ranges actually buy, how vague scope inflates quotes, and how to negotiate scope instead of rate.",
     "slug": "budget-conversations-agency",
@@ -4607,6 +4879,28 @@ export const articleIndex: ArticleMeta[] = [
       "content production process",
       "website content plan",
       "editorial workflow"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Running a content model workshop before the design starts",
+    "description": "A two-hour workshop format that produces a real CMS content model — index cards, cardinality questions, naming rules — before anyone draws a single page.",
+    "slug": "content-model-workshop",
+    "cluster": "playbooks",
+    "tags": [
+      "content modelling",
+      "headless CMS",
+      "workshops",
+      "content strategy",
+      "process"
+    ],
+    "date": "2026-04-14",
+    "author": "Leonie Marsh",
+    "keywords": [
+      "content modelling workshop",
+      "headless CMS planning",
+      "content model",
+      "CMS design"
     ],
     "readingTime": 9
   },
@@ -4770,6 +5064,28 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 10
   },
   {
+    "title": "Setting goals for a redesign that aren't vibes",
+    "description": "How to turn 'make it feel modern' into measurable redesign goals: primary metrics, kill criteria, baseline capture, and reporting that survives launch fog.",
+    "slug": "goals-for-redesign-projects",
+    "cluster": "playbooks",
+    "tags": [
+      "redesign",
+      "measurement",
+      "project goals",
+      "analytics",
+      "strategy"
+    ],
+    "date": "2026-03-03",
+    "author": "Priya Nair",
+    "keywords": [
+      "website redesign goals",
+      "redesign metrics",
+      "project success criteria",
+      "agency measurement"
+    ],
+    "readingTime": 9
+  },
+  {
     "title": "Handover without the hangover: documentation your team will read",
     "description": "A clean agency-to-client handover in practice: documentation people actually read, runbooks that run, training that sticks, and who owns the keys afterwards.",
     "slug": "handover-without-shelfware",
@@ -4812,6 +5128,51 @@ export const articleIndex: ArticleMeta[] = [
       "scope management"
     ],
     "readingTime": 10
+  },
+  {
+    "title": "The kickoff workshop agenda we run before every build",
+    "description": "Our actual half-day kickoff agenda for a 12-week build: the hour-one decision log, the risk room, role mapping, and the 'what would make this fail' round. Reusable inside.",
+    "slug": "kickoff-workshop-that-sets-the-tone",
+    "cluster": "playbooks",
+    "tags": [
+      "kickoff",
+      "workshops",
+      "facilitation",
+      "project management",
+      "client relationships"
+    ],
+    "date": "2025-06-26",
+    "author": "Ruby Castellanos",
+    "keywords": [
+      "project kickoff workshop",
+      "agency kickoff agenda",
+      "project kickoff client",
+      "workshop facilitation"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "The launch-day QA checklist we run on every site",
+    "description": "Launch week is preparation; launch morning is verification. Our day-of QA sweep: redirects, 404s, OG tags, forms, analytics parity, and the 72-hour war room.",
+    "slug": "launch-day-qa-checklist",
+    "cluster": "playbooks",
+    "tags": [
+      "website launch",
+      "QA checklist",
+      "launch runbook",
+      "quality assurance",
+      "go-live"
+    ],
+    "date": "2026-01-20",
+    "author": "Ruby Castellanos",
+    "keywords": [
+      "website launch checklist",
+      "launch day qa",
+      "site launch runbook",
+      "pre launch testing",
+      "website go live checklist"
+    ],
+    "readingTime": 11
   },
   {
     "title": "Launch week: the checklist we run for every site",
@@ -4879,6 +5240,28 @@ export const articleIndex: ArticleMeta[] = [
       "site speed audit"
     ],
     "readingTime": 11
+  },
+  {
+    "title": "Pilot projects: proving fit before the retainer",
+    "description": "How to structure a paid two-to-four-week pilot with an agency: what a pilot can actually prove, honest pricing, exit criteria, and converting a pilot into an engagement.",
+    "slug": "pilot-projects-that-prove-fit",
+    "cluster": "playbooks",
+    "tags": [
+      "pilot projects",
+      "agency relationships",
+      "procurement",
+      "engagement models",
+      "vendor selection"
+    ],
+    "date": "2025-04-10",
+    "author": "Mara Ellison",
+    "keywords": [
+      "pilot project agency",
+      "agency trial engagement",
+      "paid discovery",
+      "choosing an agency"
+    ],
+    "readingTime": 9
   },
   {
     "title": "How to read an agency SOW before you sign it",
@@ -5016,7 +5399,7 @@ export const articleIndex: ArticleMeta[] = [
   },
   {
     "title": "Getting the most from a remote studio",
-    "description": "Hiring a distributed agency shouldn't mean slower decisions and lonelier projects. A buyer's guide to async rituals, time zone design, demo cadence and turnaround hygiene.",
+    "description": "Hiring a distributed agency shouldn't mean slower decisions or lonelier projects. A buyer's guide to async rituals, time zones and demo cadence.",
     "slug": "working-remote-agency",
     "cluster": "playbooks",
     "tags": [
@@ -5062,7 +5445,7 @@ export const articleIndex: ArticleMeta[] = [
   },
   {
     "title": "Running an accessibility audit that leads to fixes",
-    "description": "Most accessibility audits produce a PDF and no change. Our audit format — automated sweeps, manual journeys, a severity taxonomy teams understand, and fix-forward roadmaps.",
+    "description": "Most accessibility audits produce a PDF and no change. Our format — automated sweeps, manual journeys, a severity taxonomy, and fix-forward roadmaps.",
     "slug": "accessibility-audit-process",
     "cluster": "product",
     "tags": [
@@ -5086,7 +5469,7 @@ export const articleIndex: ArticleMeta[] = [
   },
   {
     "title": "Activation metrics that mean something",
-    "description": "Most activation metrics are flattering fictions. How to find the behaviour that actually predicts retention, measure time-to-value honestly, and defend it in the boardroom.",
+    "description": "Most activation metrics are flattering fictions. Find the behaviour that predicts retention, measure time-to-value honestly, defend it in the boardroom.",
     "slug": "activation-metrics-honest",
     "cluster": "product",
     "tags": [
@@ -5128,6 +5511,29 @@ export const articleIndex: ArticleMeta[] = [
       "enterprise audit trail"
     ],
     "readingTime": 9
+  },
+  {
+    "title": "Bottom sheets that don't fight the user",
+    "description": "When a bottom sheet beats a modal on mobile web: drag affordances, scrim honesty, snap-point logic, keyboard and screen-reader behaviour, and the patterns that fight back.",
+    "slug": "bottom-sheets-mobile-web",
+    "cluster": "product",
+    "tags": [
+      "mobile UX",
+      "bottom sheets",
+      "interaction design",
+      "overlays",
+      "accessibility"
+    ],
+    "date": "2026-08-27",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "bottom sheet UX",
+      "mobile modal design",
+      "mobile interaction patterns",
+      "overlay UX mobile",
+      "touch gestures design"
+    ],
+    "readingTime": 8
   },
   {
     "title": "Bulk actions: power without the footguns",
@@ -5223,6 +5629,29 @@ export const articleIndex: ArticleMeta[] = [
     "heroAlt": "Overhead still life of scattered fern-green keycaps on cream paper falling into order beneath a brass magnifying loupe."
   },
   {
+    "title": "Help at the point of need",
+    "description": "The user manual nobody opens, the tooltip that shouldn't exist, and how to design help that arrives where the question does — and gets out of the way.",
+    "slug": "contextual-help-point-of-need",
+    "cluster": "product",
+    "tags": [
+      "contextual help",
+      "documentation",
+      "tooltips",
+      "support deflection",
+      "UX writing"
+    ],
+    "date": "2025-10-02",
+    "author": "Leonie Marsh",
+    "keywords": [
+      "contextual help UX",
+      "inline help design",
+      "tooltip UX",
+      "in-app documentation",
+      "support deflection"
+    ],
+    "readingTime": 9
+  },
+  {
     "title": "Dashboard design: twelve lessons from twelve dashboards",
     "description": "Twelve hard-won dashboard design lessons from a dozen B2B products: hierarchy of attention, progressive disclosure, benchmark context, and when to kill a chart.",
     "slug": "dashboard-design-dozen-lessons",
@@ -5313,6 +5742,52 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 9
   },
   {
+    "title": "Dates and times: pickers, zones and the lies of relative time",
+    "description": "Calendar grids vs typing, timezone display rules for teams, relative timestamps that decay to absolute, and the DST edge cases that bite months later.",
+    "slug": "date-time-pickers-ux",
+    "cluster": "product",
+    "tags": [
+      "date pickers",
+      "timezones",
+      "calendars",
+      "interaction design",
+      "forms"
+    ],
+    "date": "2025-10-07",
+    "author": "June Okafor",
+    "keywords": [
+      "date picker UX",
+      "timezone UX",
+      "date input design",
+      "relative time display",
+      "recurring event design"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "Continue on your phone: handoff UX that doesn't lose people",
+    "description": "Session and device handoff done properly: continue-on-another-device flows, magic links vs QR codes, delayed-resume UX after context switches, and honest security boundaries.",
+    "slug": "device-handoff-flows",
+    "cluster": "product",
+    "tags": [
+      "cross-device UX",
+      "handoff",
+      "mobile web",
+      "onboarding",
+      "product design"
+    ],
+    "date": "2026-09-08",
+    "author": "June Okafor",
+    "keywords": [
+      "device handoff UX",
+      "cross-device flows",
+      "magic link UX",
+      "session continuity",
+      "mobile web flows"
+    ],
+    "readingTime": 8
+  },
+  {
     "title": "Empty states are product marketing",
     "description": "First-run, cleared, error and no-results states teach or lose people. Copy frameworks, illustration restraint, and measuring empty states as funnel steps.",
     "slug": "empty-states-design",
@@ -5381,6 +5856,100 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 8
   },
   {
+    "title": "Feature parity: deciding what mobile doesn't get",
+    "description": "A decision framework for mobile/web feature parity: the task-context matrix, honest de-scoping documents, 'desktop-only' messaging with dignity, and cross-device handoff.",
+    "slug": "feature-parity-mobile-web",
+    "cluster": "product",
+    "tags": [
+      "mobile",
+      "responsive design",
+      "feature scoping",
+      "cross-device",
+      "product strategy"
+    ],
+    "date": "2025-04-08",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "mobile feature parity",
+      "responsive product design",
+      "mobile app scoping",
+      "cross-device ux",
+      "desktop only features"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Customer health scores: design them like you mean it",
+    "description": "Health scores worth trusting: component signals over opaque integers, trends over snapshots, alert thresholds without noise, and sharing the score.",
+    "slug": "health-score-design",
+    "cluster": "product",
+    "tags": [
+      "customer success",
+      "dashboards",
+      "data design",
+      "churn",
+      "SaaS"
+    ],
+    "date": "2025-03-11",
+    "author": "Priya Nair",
+    "keywords": [
+      "customer health score design",
+      "customer success dashboard",
+      "churn signal design",
+      "health score ux",
+      "saas retention metrics"
+    ],
+    "heroImage": "/images/articles/product/health-score-design.jpg",
+    "heroAlt": "Editorial still-life: cream index cards arranged like dashboard health indicators with dot-matrix status blocks in green, brass and red, beside a brass ruler and a hand-drawn trend line",
+    "readingTime": 8
+  },
+  {
+    "title": "CSV import and export: the UX of tabular handoffs",
+    "description": "CSV imports that survive real spreadsheets (mapping, previews, error files people can fix) and exports people can trust — stable schemas, honest metadata.",
+    "slug": "import-export-csv-ux",
+    "cluster": "product",
+    "tags": [
+      "CSV",
+      "import",
+      "export",
+      "data design",
+      "enterprise UX"
+    ],
+    "date": "2025-09-18",
+    "author": "Tomás Reyes",
+    "keywords": [
+      "CSV import UX",
+      "data import design",
+      "bulk import product design",
+      "export UX",
+      "spreadsheet onboarding"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "Announcements inside the product, minus the noise",
+    "description": "In-product announcements without banner blindness: an announcements centre, targeting by behaviour instead of blast radius, and expiry rules that stay honest.",
+    "slug": "in-product-announcements-centre",
+    "cluster": "product",
+    "tags": [
+      "in-product messaging",
+      "announcements",
+      "changelog",
+      "feature discovery",
+      "product design"
+    ],
+    "date": "2026-07-15",
+    "author": "Leonie Marsh",
+    "keywords": [
+      "in-app announcements",
+      "product changelog UX",
+      "feature announcements",
+      "banner blindness",
+      "release notes UX"
+    ],
+    "readingTime": 8
+  },
+  {
     "title": "Invite flows: the social onboarding of team products",
     "description": "The invite flow is where one user bets their reputation on your product. Role choice at invite time, shareable links vs email, and viral-loop honesty.",
     "slug": "invite-flows-team-products",
@@ -5404,7 +5973,7 @@ export const articleIndex: ArticleMeta[] = [
   },
   {
     "title": "Jobs-to-be-done interviews that surface what users won't say",
-    "description": "Beyond the JTBD script: interviewing for the things customers can't or won't tell you, synthesising transcripts into forces maps, and turning jobs into ranked product bets.",
+    "description": "Beyond the JTBD script: interviewing for what customers can't or won't tell you, synthesising transcripts into forces, turning jobs into ranked bets.",
     "slug": "jobs-to-be-done-interviews",
     "cluster": "product",
     "tags": [
@@ -5469,6 +6038,29 @@ export const articleIndex: ArticleMeta[] = [
       "flow design"
     ],
     "readingTime": 11
+  },
+  {
+    "title": "Two tabs, one truth: state across windows",
+    "description": "Multi-tab state consistency without the baffling UX: storage events, BroadcastChannel, optimistic locks, and how to disclose last-write-wins before it betrays someone.",
+    "slug": "multi-window-state-consistency",
+    "cluster": "product",
+    "tags": [
+      "state management",
+      "multi-tab",
+      "consistency",
+      "product engineering",
+      "UX"
+    ],
+    "date": "2026-06-30",
+    "author": "Felix Brandt",
+    "keywords": [
+      "multi-tab state sync",
+      "storage events",
+      "UI consistency",
+      "tabs in sync UX",
+      "product engineering UX"
+    ],
+    "readingTime": 9
   },
   {
     "title": "Notifications designed like you're not the main character",
@@ -5688,6 +6280,29 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 9
   },
   {
+    "title": "Sandboxes that convert: demo data done right",
+    "description": "A sandbox full of believable data outsells a drip-feed of tooltips. How to design demo data, sandbox vs trial taxonomy, resets, and the swap-to-real moment.",
+    "slug": "sandbox-demo-data-design",
+    "cluster": "product",
+    "tags": [
+      "sandbox",
+      "demo data",
+      "onboarding",
+      "activation",
+      "product-led growth"
+    ],
+    "date": "2025-08-14",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "product sandbox UX",
+      "demo data design",
+      "trial onboarding",
+      "sample data UX",
+      "product activation"
+    ],
+    "readingTime": 10
+  },
+  {
     "title": "Product search UX: from query box to answers",
     "description": "In-app search is a product decision wearing an engineering costume: scoping, suggestions, typo tolerance, filters vs facets, and no-results states that navigate.",
     "slug": "search-ux-product",
@@ -5705,6 +6320,30 @@ export const articleIndex: ArticleMeta[] = [
       "site search design",
       "faceted search",
       "no results page"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Timeouts, autosave and recovery: designing for interruption",
+    "description": "Autosave contracts, session timeouts that warn without punishing, crash recovery and 'unsaved changes' guards that don't cry wolf: interruption-proof UX, end to end.",
+    "slug": "session-timeout-autosave-ux",
+    "cluster": "product",
+    "tags": [
+      "autosave",
+      "session management",
+      "form UX",
+      "recovery",
+      "trust"
+    ],
+    "date": "2025-08-19",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "autosave ux",
+      "session timeout design",
+      "draft recovery ux",
+      "unsaved changes warning",
+      "form interruption design",
+      "conflict resolution ui"
     ],
     "readingTime": 9
   },
@@ -5733,7 +6372,7 @@ export const articleIndex: ArticleMeta[] = [
   },
   {
     "title": "Settings: the screen your product is judged on at month three",
-    "description": "Nobody evaluates settings during the trial. By month three they're how users judge your product. Defaults as decisions, dangerous-action design, and settings that search well.",
+    "description": "Nobody evaluates settings during the trial; by month three they're how users judge you. Defaults as decisions, dangerous-action design, searchable settings.",
     "slug": "settings-design-neglected-ux",
     "cluster": "product",
     "tags": [
@@ -5775,6 +6414,75 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 8
   },
   {
+    "title": "Keyboard shortcuts nobody finds",
+    "description": "Most shipped shortcuts are discovered by accident or never. Legends, cheat sheets, teaching in context, remapping, and designing for the power user you'll have.",
+    "slug": "shortcut-discoverability",
+    "cluster": "product",
+    "tags": [
+      "keyboard shortcuts",
+      "power users",
+      "interaction design",
+      "accessibility",
+      "discoverability"
+    ],
+    "date": "2026-01-22",
+    "author": "June Okafor",
+    "keywords": [
+      "keyboard shortcuts UX",
+      "shortcut discoverability",
+      "power user features",
+      "pro shortcut UI",
+      "keyboard help design"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "The spreadsheet migration is the real onboarding",
+    "description": "Most B2B onboarding is a spreadsheet migration wearing a wizard's hat. Column mapping, dry-run imports, inline validation, and the week-one trust dividend.",
+    "slug": "spreadsheet-migration-onboarding",
+    "cluster": "product",
+    "tags": [
+      "CSV import",
+      "data migration",
+      "onboarding",
+      "validation",
+      "B2B products"
+    ],
+    "date": "2025-06-19",
+    "author": "Felix Brandt",
+    "keywords": [
+      "CSV import UX",
+      "data migration onboarding",
+      "spreadsheet import design",
+      "import validation UX",
+      "product onboarding"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "Template galleries: the shortcut to the aha moment",
+    "description": "Starter templates are onboarding's best shortcut — if they're categorised by job not industry, previewed live, pruned ruthlessly and measured to activation, not clicks.",
+    "slug": "template-galleries-onboarding",
+    "cluster": "product",
+    "tags": [
+      "templates",
+      "onboarding",
+      "activation",
+      "empty states",
+      "product design"
+    ],
+    "date": "2025-06-24",
+    "author": "June Okafor",
+    "keywords": [
+      "template gallery ux",
+      "product onboarding templates",
+      "starter content design",
+      "activation metrics design",
+      "blank slate problem"
+    ],
+    "readingTime": 8
+  },
+  {
     "title": "Undo beats confirm: designing reversible software",
     "description": "Confirmation dialogs train users to click through danger. Undo-first design: timing, reversible architecture, soft deletes, and the trust dividend of forgiving software.",
     "slug": "undo-not-confirm",
@@ -5798,8 +6506,31 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 9
   },
   {
+    "title": "Upgrade prompts that don't feel like ransom notes",
+    "description": "In-product upsell timing and tone: moments of demonstrated value, honest limit nudges, the dismissed-state contract, and measurement that doesn't lie to you.",
+    "slug": "upgrade-prompts-timing",
+    "cluster": "product",
+    "tags": [
+      "upsell",
+      "pricing",
+      "PLG",
+      "growth UX",
+      "product-led growth"
+    ],
+    "date": "2026-01-15",
+    "author": "Leonie Marsh",
+    "keywords": [
+      "upsell UX",
+      "upgrade prompt design",
+      "PLG prompts",
+      "paywall timing",
+      "in-product upgrade messaging"
+    ],
+    "readingTime": 9
+  },
+  {
     "title": "WCAG AA for product teams: the parts everyone gets wrong",
-    "description": "The WCAG AA criteria that fail most often in real products — contrast in components, focus visible, target size, keyboard traps — and the review rituals that keep them green.",
+    "description": "The WCAG AA criteria that fail most in real products — contrast, focus visible, target size, keyboard traps — and the review rituals that keep them green.",
     "slug": "wcag-aa-product-teams",
     "cluster": "product",
     "tags": [
@@ -5817,6 +6548,31 @@ export const articleIndex: ArticleMeta[] = [
       "accessibility review"
     ],
     "readingTime": 9
+  },
+  {
+    "title": "Workspaces and orgs: the UX of switching context",
+    "description": "Where the workspace switcher lives, URL strategy per tenant, cross-space notifications, and preventing wrong-org mistakes without nannying confirm dialogs.",
+    "slug": "workspace-switching-ux",
+    "cluster": "product",
+    "tags": [
+      "multi-tenant",
+      "navigation",
+      "workspaces",
+      "SaaS",
+      "information architecture"
+    ],
+    "date": "2025-11-28",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "workspace switcher UX",
+      "multi-tenant SaaS design",
+      "org switching",
+      "multi-account navigation",
+      "tenant context"
+    ],
+    "readingTime": 10,
+    "heroImage": "/images/articles/product/workspace-switching-ux.jpg",
+    "heroAlt": "Four letterpress file trays in fern green, brass ochre, clay and slate ink stacked on cream paper, each with a brass divider tab, beside a pressed fern frond."
   },
   {
     "title": "About pages that actually convince",
@@ -6043,7 +6799,7 @@ export const articleIndex: ArticleMeta[] = [
   },
   {
     "title": "Dark mode is a second design system",
-    "description": "Treating dark mode as a CSS inversion is how you ship a grey smear. Here's how we design dark themes as a second, deliberate system — tokens, elevation, contrast and CI tests.",
+    "description": "Treating dark mode as a CSS inversion is how you ship a grey smear. Design dark themes as a second, deliberate system — tokens, elevation, contrast, CI tests.",
     "slug": "dark-mode-second-design-system",
     "cluster": "web-design",
     "tags": [
@@ -6131,7 +6887,7 @@ export const articleIndex: ArticleMeta[] = [
   },
   {
     "title": "Editorial grids on the web: rhythm without rigidity",
-    "description": "Bringing print's editorial rhythm to responsive layouts: column logic that collapses gracefully, spacing rhythm that survives the box model, and breaking the grid on purpose.",
+    "description": "Bringing print's editorial rhythm to responsive layouts: columns that collapse gracefully, spacing that survives the box model, breaking the grid on purpose.",
     "slug": "editorial-grids-web",
     "cluster": "web-design",
     "tags": [
@@ -6174,26 +6930,24 @@ export const articleIndex: ArticleMeta[] = [
   },
   {
     "title": "Your error pages are a system: design them like one",
-    "description": "The 404 gets the personality budget while 500s, offline and maintenance states ship as raw server output. Error pages are one designed system — build that instead.",
+    "description": "404s, 500s, offline and maintenance states are one family with one voice. Design them together, give each a real recovery path, and log what users hit.",
     "slug": "error-pages-as-system",
     "cluster": "web-design",
     "tags": [
-      "error pages",
-      "ux writing",
-      "design systems",
-      "reliability",
-      "brand voice"
+      "Error states",
+      "UX writing",
+      "Systems thinking",
+      "Resilience"
     ],
-    "date": "2026-05-21",
+    "date": "2025-11-06",
     "author": "Leonie Marsh",
     "keywords": [
-      "error page design system",
-      "500 error page",
-      "maintenance page design",
-      "offline page ux",
-      "error handling copy"
+      "404 page design",
+      "error pages",
+      "empty states",
+      "error UX"
     ],
-    "readingTime": 10
+    "readingTime": 9
   },
   {
     "title": "Fluid type scales in practice: from ratio to tokens",
@@ -6356,7 +7110,7 @@ export const articleIndex: ArticleMeta[] = [
   },
   {
     "title": "Design handoff that doesn't decay in a sprint",
-    "description": "Why handoffs rot and how we stop it: living tokens, component specs over pixel mocks, motion specs with real easing values, and the annotation habits that survive sprints.",
+    "description": "Why handoffs rot and how we stop it: living tokens, component specs over pixel mocks, motion specs with real easing values, annotations that survive sprints.",
     "slug": "handoff-that-does-not-decay",
     "cluster": "web-design",
     "tags": [
@@ -6463,7 +7217,7 @@ export const articleIndex: ArticleMeta[] = [
   },
   {
     "title": "Landing-page anatomy: nine sections, one job",
-    "description": "Landing-page anatomy section by section: the above-the-fold promise, objection order, proof stacking, demo moments and the end-of-page CTA ladder — applied to three pages.",
+    "description": "Landing-page anatomy section by section: the above-the-fold promise, objection order, proof stacking, demo moments and the end-of-page CTA ladder.",
     "slug": "landing-page-anatomy-2026",
     "cluster": "web-design",
     "tags": [
@@ -6552,7 +7306,7 @@ export const articleIndex: ArticleMeta[] = [
   },
   {
     "title": "Motion that earns its keep (and the 160ms rule)",
-    "description": "Brassfern's motion philosophy: the 160ms rule, an easing vocabulary of three curves, choreography limits, and why prefers-reduced-motion is a design input, not a checkbox.",
+    "description": "Our motion philosophy: the 160ms rule, an easing vocabulary of three curves, choreography limits, and prefers-reduced-motion as a design input, not a checkbox.",
     "slug": "motion-that-earns-its-keep",
     "cluster": "web-design",
     "tags": [
@@ -6684,25 +7438,24 @@ export const articleIndex: ArticleMeta[] = [
   },
   {
     "title": "Pull quotes and margin notes: editorial devices for the web",
-    "description": "Pull quotes, asides and margin notes give long-form pages their editorial pulse. Here's the markup, the responsive behaviour and the restraint they demand.",
+    "description": "Pull quotes, asides and margin notes give long reads their rhythm. The semantic markup, the responsive survival tactics, and the restraint that keeps them editorial.",
     "slug": "pull-quotes-editorial-devices",
     "cluster": "web-design",
     "tags": [
-      "editorial design",
-      "typography",
-      "long-form design",
-      "pull quotes"
+      "Editorial design",
+      "Typography",
+      "Accessibility",
+      "Layout"
     ],
-    "date": "2026-05-02",
-    "author": "Leonie Marsh",
+    "date": "2025-09-10",
+    "author": "June Okafor",
     "keywords": [
       "pull quotes",
       "editorial web design",
       "typographic details",
-      "article design",
-      "margin notes"
+      "article design"
     ],
-    "readingTime": 8
+    "readingTime": 9
   },
   {
     "title": "Related-content modules that readers actually use",
@@ -6794,7 +7547,7 @@ export const articleIndex: ArticleMeta[] = [
   },
   {
     "title": "Seasonal theming without pretending it's a rebrand",
-    "description": "How to theme a site for a season or campaign with token overrides, not panic: scoped palettes, motion and imagery swaps, expiries, and where festive ends and confusing begins.",
+    "description": "How to theme a site for a season or campaign with token overrides, not panic: scoped palettes, motion swaps, expiries, and where festive becomes confusing.",
     "slug": "seasonal-theming-without-rebrand",
     "cluster": "web-design",
     "tags": [
@@ -8041,7 +8794,7 @@ export const caseIndex: CaseStudyMeta[] = [
   },
   {
     "title": "Summit & Still: booking UX for a yoga studio group with a calm nervous system",
-    "description": "Five studios, one timetable, zero countdown timers. How we rebuilt Summit & Still's booking around teacher loyalty, ethical intro offers and retention emails with empathy.",
+    "description": "Five studios, one timetable, zero countdown timers. Rebuilding Summit & Still's booking around teacher loyalty, ethical intro offers and empathetic emails.",
     "slug": "summit-and-still-yoga",
     "cluster": "work",
     "tags": [
@@ -8238,4 +8991,4 @@ export const caseIndex: CaseStudyMeta[] = [
   }
 ]
 
-export const workImages: string[] = ["arlo-and-sons-tradies-marketplace","brightline-solar-quote-engine","brightmarsh-onboarding","copperline-community-bank","fern-and-forage-florist","fernleigh-cellar-club","fernleigh-wines-dtc-storefront","glade-skincare-ingredient-honesty","hearthbrew-brand-system","hearthbrew-subscription-club","holloway-player","holloway-records-label-site","kite-and-anchor-insurtech","meridian-climate-data-explorer","northwind-ledger-budget","northwind-ledger-dashboard-rebuild","osprey-outdoor-configurator-launch","postcards-museum-archive","pylon-care-assistant","pylon-health-booking","pylon-health-telehealth-flow","quarry-property-map","signal-and-noise-podcast-network","summit-and-still-yoga","sundial-itinerary-builder","sundial-travel-booking","tallow-and-co-providore","tallow-seat-map","tidal-games-store","wattle-and-daub-reservations","wattle-and-daub-reserve","willow-and-wren-bookshop"]
+export const workImages: string[] = ["arlo-and-sons-tradies-marketplace","brightline-solar-quote-engine","brightline-solar-quoter","brightmarsh-onboarding","copperline-community-bank","copperline-mobile-bank","fern-and-forage-florist","fernleigh-cellar-club","fernleigh-wines-dtc-storefront","glade-skincare-ingredient-honesty","glasshouse-seat-map","hearthbrew-brand-system","hearthbrew-subscription-club","holloway-player","holloway-records-label-site","kite-and-anchor-insurtech","meridian-climate-data-explorer","northwind-ledger-budget","northwind-ledger-dashboard-rebuild","osprey-outdoor-configurator-launch","postcards-museum-archive","pylon-care-assistant","pylon-health-booking","pylon-health-telehealth-flow","quarry-property-map","signal-and-noise-podcast-network","summit-and-still-yoga","sundial-itinerary-builder","sundial-travel-booking","tallow-and-co-providore","tallow-feast-builder","tallow-seat-map","tidal-games-store","wattle-and-daub-reservations","wattle-and-daub-reserve","willow-and-wren-bookshop"]

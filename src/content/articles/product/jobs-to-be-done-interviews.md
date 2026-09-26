@@ -1,6 +1,6 @@
 ---
 title: "Jobs-to-be-done interviews that surface what users won't say"
-description: "Beyond the JTBD script: interviewing for the things customers can't or won't tell you, synthesising transcripts into forces maps, and turning jobs into ranked product bets."
+description: "Beyond the JTBD script: interviewing for what customers can't or won't tell you, synthesising transcripts into forces, turning jobs into ranked bets."
 slug: jobs-to-be-done-interviews
 cluster: product
 tags:

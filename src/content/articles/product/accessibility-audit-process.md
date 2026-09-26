@@ -1,6 +1,6 @@
 ---
 title: "Running an accessibility audit that leads to fixes"
-description: "Most accessibility audits produce a PDF and no change. Our audit format — automated sweeps, manual journeys, a severity taxonomy teams understand, and fix-forward roadmaps."
+description: "Most accessibility audits produce a PDF and no change. Our format — automated sweeps, manual journeys, a severity taxonomy, and fix-forward roadmaps."
 slug: accessibility-audit-process
 cluster: product
 tags: [accessibility, a11y, wcag, audit, inclusive design]

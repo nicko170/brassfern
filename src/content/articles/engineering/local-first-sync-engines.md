@@ -1,6 +1,6 @@
 ---
 title: "Local-first sync engines: what we learned shipping one"
-description: "Production field notes from building a real sync engine: CRDT vs last-write-wins in practice, conflict UX that doesn't panic users, offline queues, and when to skip it all."
+description: "Field notes from building a real sync engine: CRDT vs last-write-wins in practice, conflict UX that doesn't panic users, and when to skip it all."
 slug: local-first-sync-engines
 cluster: engineering
 tags: [local-first, sync, CRDT, offline, architecture]

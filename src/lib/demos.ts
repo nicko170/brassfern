@@ -40,3 +40,8 @@ export const demos: DemoEntry[] = Object.entries(metaModules)
 export function getDemo(slug: string): DemoEntry | undefined {
   return demos.find((d) => d.slug === slug)
 }
+
+/** A demo is "ready" once its index.tsx exists (in-flight metas are "on the bench"). */
+export const isDemoReady = (d: DemoEntry): boolean => d.Component != null
+export const readyDemos: DemoEntry[] = demos.filter(isDemoReady)
+export const benchDemos: DemoEntry[] = demos.filter((d) => !isDemoReady(d))

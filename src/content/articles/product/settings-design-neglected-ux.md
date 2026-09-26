@@ -1,6 +1,6 @@
 ---
 title: "Settings: the screen your product is judged on at month three"
-description: "Nobody evaluates settings during the trial. By month three they're how users judge your product. Defaults as decisions, dangerous-action design, and settings that search well."
+description: "Nobody evaluates settings during the trial; by month three they're how users judge you. Defaults as decisions, dangerous-action design, searchable settings."
 slug: settings-design-neglected-ux
 cluster: product
 tags: [ux design, settings, product design, defaults, information architecture]

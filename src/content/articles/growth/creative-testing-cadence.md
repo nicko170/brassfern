@@ -1,6 +1,6 @@
 ---
 title: "A creative-testing cadence that compounds"
-description: "Creative is the biggest lever in paid media and the worst managed. A weekly testing cadence, naming that preserves learnings, fatigue signals, and the library that compounds."
+description: "Creative is paid media's biggest lever and its worst managed. A weekly testing cadence, naming that preserves learnings, and the library that compounds."
 slug: creative-testing-cadence
 cluster: growth
 tags: [creative testing, performance marketing, paid social, ad creative, experimentation]

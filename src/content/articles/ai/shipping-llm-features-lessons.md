@@ -1,6 +1,6 @@
 ---
 title: "Shipping LLM features: what production taught us"
-description: "The lessons that only arrive after launch: latency budgets in the wild, streaming UX edge cases, cost surprises, fallback design, and setting expectations users actually hold."
+description: "The lessons that only arrive after launch: latency budgets in the wild, streaming UX edge cases, cost surprises, fallbacks, and expectations users hold."
 slug: shipping-llm-features-lessons
 cluster: ai
 tags:

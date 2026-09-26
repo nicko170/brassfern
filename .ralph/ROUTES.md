@@ -14,8 +14,8 @@
 | `/approach`, `/pricing`, `/studio`, `/team` | Studio pages | `src/data/people.ts` etc. |
 | `/team/:slug` (12) | Author/person profiles (Portrait, facts, authored work + articles) | `src/data/people.ts`, generated index |
 | `/careers`, `/careers/:slug` (5) | Jobs | `src/data/jobs.ts` |
-| `/journal` | Article index (lead-story feature + 12/page client pagination) | generated index |
-| `/journal/:cluster` | Cluster hubs (8 clusters, lead-story feature) | generated index |
+| `/journal` + `/journal/page/:n` | Article index (lead-story feature, 12/page route-based pagination, all pages prerendered) | generated index |
+| `/journal/:cluster` + `/journal/:cluster/page/:n` | Cluster hubs (8 clusters, lead-story feature, paginated) | generated index |
 | `/journal/tag/:tag` | Tag pages (all tags prerendered) | generated index |
 | `/journal/:cluster/:slug` | Article | `src/content/articles/<cluster>/<slug>.md` |
 | `/search` (?q=) | Live-debounced client search; empty state shows popular tags + latest | metas |

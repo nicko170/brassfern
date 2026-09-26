@@ -1,6 +1,6 @@
 ---
 title: "When the founder IS the brand (and when to stop)"
-description: "Founder-led brands convert brilliantly and scale terribly. How to harvest founder voice into systems, manage the handover, and know when personality has become a liability."
+description: "Founder-led brands convert brilliantly and scale terribly. How to harvest founder voice into systems, manage the handover, and spot personality gone toxic."
 slug: founder-led-brand
 cluster: brand
 tags: [founder brand, brand voice, personal branding, brand transition, verbal identity]

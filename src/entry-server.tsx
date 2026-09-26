@@ -4,7 +4,8 @@ import { StaticRouter } from 'react-router-dom/server'
 import App, { preloadAllPages } from './App'
 import { createCollector, type HeadState } from './lib/head'
 import { preloadForUrl } from './lib/preload'
-import { articles, caseStudies, allTags } from './lib/content'
+import { articles, caseStudies, allTags, byCluster } from './lib/content'
+import { journalPages, restCountFor } from './lib/paginate'
 import { ROUTER_BASE } from './lib/base'
 import { demos } from './lib/demos'
 import { services } from './data/services'
@@ -59,12 +60,22 @@ export function prerenderRoutes(): string[] {
     '/legal/terms',
   ])
   for (const c of caseStudies) routes.add(`/work/${c.slug}`)
-  for (const d of demos) routes.add(`/lab/${d.slug}`)
+  // Only demos with a real entry component get a prerendered route — an
+  // in-flight demo (meta.ts only) renders NotFound and stays out of the build.
+  for (const d of demos) if (d.Component) routes.add(`/lab/${d.slug}`)
   for (const s of services) routes.add(`/services/${s.slug}`)
   for (const i of industries) routes.add(`/industries/${i.slug}`)
   for (const j of jobs) routes.add(`/careers/${j.slug}`)
   for (const p of team) routes.add(`/team/${personSlug(p.name)}`)
-  for (const c of CLUSTERS) routes.add(`/journal/${c}`)
+  // Paginated hub pages (/journal/page/2…, /journal/<cluster>/page/2…) so
+  // every article is reachable as static HTML, not just behind client state.
+  const jPages = journalPages(restCountFor(articles.length))
+  for (let p = 2; p <= jPages; p++) routes.add(`/journal/page/${p}`)
+  for (const c of CLUSTERS) {
+    routes.add(`/journal/${c}`)
+    const cPages = journalPages(restCountFor(byCluster(c).length))
+    for (let p = 2; p <= cPages; p++) routes.add(`/journal/${c}/page/${p}`)
+  }
   for (const a of articles) routes.add(`/journal/${a.cluster}/${a.slug}`)
   for (const t of allTags()) routes.add(`/journal/tag/${encodeURIComponent(t.tag)}`)
   return [...routes]

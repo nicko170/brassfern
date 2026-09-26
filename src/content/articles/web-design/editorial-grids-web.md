@@ -1,6 +1,6 @@
 ---
 title: "Editorial grids on the web: rhythm without rigidity"
-description: "Bringing print's editorial rhythm to responsive layouts: column logic that collapses gracefully, spacing rhythm that survives the box model, and breaking the grid on purpose."
+description: "Bringing print's editorial rhythm to responsive layouts: columns that collapse gracefully, spacing that survives the box model, breaking the grid on purpose."
 slug: editorial-grids-web
 cluster: web-design
 tags:

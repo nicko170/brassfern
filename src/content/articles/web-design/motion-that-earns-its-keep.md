@@ -1,6 +1,6 @@
 ---
 title: "Motion that earns its keep (and the 160ms rule)"
-description: "Brassfern's motion philosophy: the 160ms rule, an easing vocabulary of three curves, choreography limits, and why prefers-reduced-motion is a design input, not a checkbox."
+description: "Our motion philosophy: the 160ms rule, an easing vocabulary of three curves, choreography limits, and prefers-reduced-motion as a design input, not a checkbox."
 slug: motion-that-earns-its-keep
 cluster: web-design
 tags:

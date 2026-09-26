@@ -1,6 +1,6 @@
 ---
 title: "WCAG AA for product teams: the parts everyone gets wrong"
-description: "The WCAG AA criteria that fail most often in real products — contrast in components, focus visible, target size, keyboard traps — and the review rituals that keep them green."
+description: "The WCAG AA criteria that fail most in real products — contrast, focus visible, target size, keyboard traps — and the review rituals that keep them green."
 slug: wcag-aa-product-teams
 cluster: product
 tags:

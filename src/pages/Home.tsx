@@ -6,7 +6,7 @@ import { organizationLd, websiteLd } from '../lib/jsonld'
 import { clients, testimonials } from '../data/clients'
 import { services } from '../data/services'
 import { articles, caseStudies } from '../lib/content'
-import { demos } from '../lib/demos'
+import { readyDemos } from '../lib/demos'
 import { ArticleCard, WorkCard } from '../components/Cards'
 
 function WordmarkWall() {
@@ -97,28 +97,28 @@ export default function Home() {
       </section>
 
       {/* ——— lab band ——— */}
-      {demos.length > 0 && (
+      {readyDemos.length > 0 && (
         <section className="section section--tight">
           <div className="container">
             <div className="night lab-feature">
               <div className="lab-feature__copy">
                 <Reveal className="overline overline--night">The Lab — touch the work</Reveal>
-                <h2 className="display h-2" style={{ marginTop: '1rem' }}>{demos[0].title}</h2>
-                <p className="lab-feature__desc">{demos[0].description}</p>
+                <h2 className="display h-2" style={{ marginTop: '1rem' }}>{readyDemos[0].title}</h2>
+                <p className="lab-feature__desc">{readyDemos[0].description}</p>
                 <p className="mono" style={{ color: 'var(--night-mute)', fontSize: 'var(--fs-micro)', letterSpacing: '0.14em', textTransform: 'uppercase' }}>
-                  {demos[0].client} · {demos[0].tags.slice(0, 4).join(' · ')}
+                  {readyDemos[0].client} · {readyDemos[0].tags.slice(0, 4).join(' · ')}
                 </p>
                 <p style={{ marginTop: 'var(--space-5)', display: 'flex', gap: 'var(--space-4)', flexWrap: 'wrap' }}>
-                  <Link to={`/lab/${demos[0].slug}`} className="btn btn--brass">
+                  <Link to={`/lab/${readyDemos[0].slug}`} className="btn btn--brass">
                     Open the demo <span className="arrow" aria-hidden>→</span>
                   </Link>
                   <Link to="/lab" className="link-line" style={{ color: 'var(--brass-hi)', alignSelf: 'center' }}>
-                    All {demos.length} demo{demos.length > 1 ? 's' : ''}
+                    All {readyDemos.length} demo{readyDemos.length > 1 ? 's' : ''}
                   </Link>
                 </p>
               </div>
-              <Link to={`/lab/${demos[0].slug}`} className="lab-feature__art" aria-hidden tabIndex={-1}>
-                <span>{demos[0].client.slice(0, 2).toUpperCase()}</span>
+              <Link to={`/lab/${readyDemos[0].slug}`} className="lab-feature__art" aria-hidden tabIndex={-1}>
+                <span>{readyDemos[0].client.slice(0, 2).toUpperCase()}</span>
               </Link>
             </div>
           </div>

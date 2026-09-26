@@ -1,6 +1,6 @@
 ---
 title: "Employer brand: your careers page is a brand page"
-description: "Your careers page is the most-read brand page nobody designed. Photography policy, salary transparency, voice parity, and the metrics that prove it works — or quietly doesn't."
+description: "Your careers page is the most-read brand page nobody designed. Photography policy, salary transparency, voice parity, and the metrics that prove it works."
 slug: employer-brand-careers-page
 cluster: brand
 tags: [employer brand, careers page, recruitment, brand voice, company culture]

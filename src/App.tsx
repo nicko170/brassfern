@@ -108,8 +108,10 @@ export default function App({ head }: { head?: HeadCollector }) {
         <Route path="careers" element={<Suspense fallback={<PageFallback />}><Careers /></Suspense>} />
         <Route path="careers/:slug" element={<Suspense fallback={<PageFallback />}><JobPage /></Suspense>} />
         <Route path="journal" element={<Suspense fallback={<PageFallback />}><JournalIndex /></Suspense>} />
+        <Route path="journal/page/:page" element={<Suspense fallback={<PageFallback />}><JournalIndex /></Suspense>} />
         <Route path="journal/tag/:tag" element={<Suspense fallback={<PageFallback />}><TagPage /></Suspense>} />
         <Route path="journal/:cluster" element={<Suspense fallback={<PageFallback />}><JournalCluster /></Suspense>} />
+        <Route path="journal/:cluster/page/:page" element={<Suspense fallback={<PageFallback />}><JournalCluster /></Suspense>} />
         <Route path="journal/:cluster/:slug" element={<Suspense fallback={<PageFallback />}><Article /></Suspense>} />
         <Route path="search" element={<Suspense fallback={<PageFallback />}><Search /></Suspense>} />
         <Route path="resources" element={<Suspense fallback={<PageFallback />}><Resources /></Suspense>} />

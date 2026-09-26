@@ -6,6 +6,7 @@ import { CLUSTERS, CLUSTER_LABELS } from '../lib/types'
 import QuickFind, { useQuickFindShortcut } from './QuickFind'
 import Cursor from './Cursor'
 import { ClockStrip } from './StudioTime'
+import { useIntentPrefetch } from '../lib/prefetch'
 
 export function FernMark({ className }: { className?: string }) {
   return (
@@ -238,6 +239,7 @@ export default function Layout({ head }: { head?: HeadCollector }) {
   const openQf = useCallback(() => setQfOpen(true), [])
   const closeQf = useCallback(() => setQfOpen(false), [])
   useQuickFindShortcut(openQf)
+  useIntentPrefetch()
   return (
     <HeadContext.Provider value={head ?? fallback}>
       <a href="#main" className="skip-link">

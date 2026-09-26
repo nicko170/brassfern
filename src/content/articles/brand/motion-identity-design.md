@@ -1,6 +1,6 @@
 ---
 title: "The motion layer of brand identity"
-description: "Easing is a signature, transitions are grammar. How to build a kinetic identity system, export it as motion tokens engineers actually use, and survive prefers-reduced-motion."
+description: "Easing is a signature, transitions are grammar. Building a kinetic identity system, exporting it as motion tokens engineers use, surviving prefers-reduced-motion."
 slug: motion-identity-design
 cluster: brand
 tags: [motion design, kinetic identity, brand systems, motion tokens, design engineering]

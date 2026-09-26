@@ -1,6 +1,6 @@
 ---
 title: "The 90-minute brand audit: our scoring sheet, free to steal"
-description: "A structured 90-minute brand audit any team can run this afternoon — consistency sweep, voice sampling, asset inventory — with the exact scoring sheet we use in discovery."
+description: "A structured 90-minute brand audit any team can run this afternoon — consistency sweep, voice sampling, asset inventory — with our actual scoring sheet."
 slug: brand-audit-90-minutes
 cluster: brand
 tags: [brand audit, brand strategy, discovery, consistency, brand voice]

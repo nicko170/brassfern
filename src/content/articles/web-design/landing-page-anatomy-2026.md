@@ -1,6 +1,6 @@
 ---
 title: "Landing-page anatomy: nine sections, one job"
-description: "Landing-page anatomy section by section: the above-the-fold promise, objection order, proof stacking, demo moments and the end-of-page CTA ladder — applied to three pages."
+description: "Landing-page anatomy section by section: the above-the-fold promise, objection order, proof stacking, demo moments and the end-of-page CTA ladder."
 slug: landing-page-anatomy-2026
 cluster: web-design
 tags: [landing pages, conversion, copywriting, cta design, above the fold]

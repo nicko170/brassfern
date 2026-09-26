@@ -1,6 +1,6 @@
 ---
 title: "Getting the most from a remote studio"
-description: "Hiring a distributed agency shouldn't mean slower decisions and lonelier projects. A buyer's guide to async rituals, time zone design, demo cadence and turnaround hygiene."
+description: "Hiring a distributed agency shouldn't mean slower decisions or lonelier projects. A buyer's guide to async rituals, time zones and demo cadence."
 slug: working-remote-agency
 cluster: playbooks
 tags: [remote agency, distributed teams, async collaboration, client collaboration, agency engagement]

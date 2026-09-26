@@ -1,6 +1,6 @@
 ---
 title: "Summit & Still: booking UX for a yoga studio group with a calm nervous system"
-description: "Five studios, one timetable, zero countdown timers. How we rebuilt Summit & Still's booking around teacher loyalty, ethical intro offers and retention emails with empathy."
+description: "Five studios, one timetable, zero countdown timers. Rebuilding Summit & Still's booking around teacher loyalty, ethical intro offers and empathetic emails."
 slug: summit-and-still-yoga
 cluster: work
 tags:

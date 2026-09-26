@@ -1,6 +1,6 @@
 ---
 title: "Activation metrics that mean something"
-description: "Most activation metrics are flattering fictions. How to find the behaviour that actually predicts retention, measure time-to-value honestly, and defend it in the boardroom."
+description: "Most activation metrics are flattering fictions. Find the behaviour that predicts retention, measure time-to-value honestly, defend it in the boardroom."
 slug: activation-metrics-honest
 cluster: product
 tags: [product metrics, activation, retention, analytics, growth]

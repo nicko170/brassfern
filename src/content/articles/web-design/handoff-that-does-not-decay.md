@@ -1,6 +1,6 @@
 ---
 title: "Design handoff that doesn't decay in a sprint"
-description: "Why handoffs rot and how we stop it: living tokens, component specs over pixel mocks, motion specs with real easing values, and the annotation habits that survive sprints."
+description: "Why handoffs rot and how we stop it: living tokens, component specs over pixel mocks, motion specs with real easing values, annotations that survive sprints."
 slug: handoff-that-does-not-decay
 cluster: web-design
 tags:

@@ -139,6 +139,14 @@ Brassfern look into a demo.
   (rAF lerp .22), blooming over interactive elements; pointer-fine +
   no-preference only via `@media`, never hides the system cursor, absent in
   prerender. Company, not replacement — that's the a11y rule.
+- **Lab bench list** (`.bench-list`, iter 9): hairline rows on /lab listing
+  in-flight demos (meta.ts only, no index.tsx) — display-weight title, mono
+  client + brass "In the oven" state, never linked; vanishes when the bench
+  is empty. Related rule: demo/case-study cross-links are always verified
+  against `getCase()`/`Component` before rendering.
+- **Intent prefetch** (iter 9): `src/lib/prefetch.ts` warms page chunks and
+  markdown bodies on hover/focus of any internal link; invisible, save-data
+  aware, session-deduped.
 
 ## Content authoring rules (enforced by build-content-index.mjs)
 

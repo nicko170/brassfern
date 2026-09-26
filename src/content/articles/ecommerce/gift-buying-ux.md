@@ -1,6 +1,6 @@
 ---
 title: "Designing for the gift buyer, not just the fan"
-description: "Gift buyers are a different user with different anxieties. Gift finders, delivery-date honesty, card messages and the Q4 checklist — designing the gifting journey properly."
+description: "Gift buyers are a different user with different anxieties. Gift finders, delivery-date honesty, card messages and the Q4 checklist done right."
 slug: gift-buying-ux
 cluster: ecommerce
 tags: [gifting, ecommerce ux, gift finder, peak season, conversion]

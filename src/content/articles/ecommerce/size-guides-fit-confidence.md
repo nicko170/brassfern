@@ -1,6 +1,6 @@
 ---
 title: "Size guides and the design of fit confidence"
-description: "Fit uncertainty is apparel e-commerce's biggest tax. How to design size guides, fit finders and honest model references that cut fit-driven returns with design, not policy."
+description: "Fit uncertainty is apparel e-commerce's biggest tax. Size guides, fit finders and honest model references that cut fit-driven returns with design, not policy."
 slug: size-guides-fit-confidence
 cluster: ecommerce
 tags: [size guides, apparel, ecommerce ux, returns, product design]

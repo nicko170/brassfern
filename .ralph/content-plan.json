@@ -5414,8 +5414,10 @@
     "pre-seed",
     "brand on a budget"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790405415.040232
   },
   {
    "kind": "article",
@@ -5429,8 +5431,10 @@
     "product naming",
     "brand architecture"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790405415.040234
   },
   {
    "kind": "article",
@@ -5444,8 +5448,10 @@
     "design ops",
     "asset management"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790405415.040234
   },
   {
    "kind": "article",
@@ -5459,8 +5465,10 @@
     "brand ethics",
     "AI disclosure"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790405415.040234
   },
   {
    "kind": "article",
@@ -6537,10 +6545,11 @@
     "ga4 setup process",
     "tagging strategy"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790405238.009865
+   "claimed_at": 1790405238.009865,
+   "done_at": "2026-09-26T16:50:52"
   },
   {
    "kind": "article",
@@ -6555,10 +6564,11 @@
     "headless migration planning",
     "procurement technology risk"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790405238.009866
+   "claimed_at": 1790405238.009866,
+   "done_at": "2026-09-26T16:53:36"
   },
   {
    "kind": "article",
@@ -6741,10 +6751,11 @@
     "project kickoff client",
     "workshop facilitation"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790405283.894513
+   "claimed_at": 1790405283.894513,
+   "done_at": "2026-09-26T16:51:25"
   },
   {
    "kind": "article",
@@ -6758,10 +6769,11 @@
     "reference call questions",
     "vetting an agency"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790405283.8945138
+   "claimed_at": 1790405283.8945138,
+   "done_at": "2026-09-26T16:53:42"
   },
   {
    "kind": "article",
@@ -9085,6 +9097,278 @@
     "security",
     "QA",
     "adversarial testing"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "typographic-hierarchy-audit",
+   "title": "The 20-minute typographic hierarchy audit",
+   "cluster": "web-design",
+   "intent": "A 20-minute typographic hierarchy audit anyone can run: the squint test, size-ratio budgets per level, weight census, line-length grievances, and the screenshot-annotated report format designers hand to engineers.",
+   "keywords": [
+    "typography",
+    "hierarchy",
+    "audit",
+    "design QA",
+    "type scale"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "hero-video-decision",
+   "title": "Does your hero video deserve its megabytes?",
+   "cluster": "web-design",
+   "intent": "Hero video decisions with numbers: when motion earns its bytes (product-in-use proof) and when it's ambient mush, weight budgets, poster-frame design, captions and audio-off defaults, fallback ladders for slow connections.",
+   "keywords": [
+    "hero video",
+    "above the fold",
+    "performance budget",
+    "homepage",
+    "media"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "mega-menu-design-restraint",
+   "title": "Mega menus: the last acceptable maximalism",
+   "cluster": "web-design",
+   "intent": "Mega menus that inform without overwhelming: when a mega menu beats a simple list, column architecture inside the panel, featured vs exhaustive choices, keyboard and touch choreography, analytics on what never gets clicked.",
+   "keywords": [
+    "mega menu",
+    "navigation",
+    "information architecture",
+    "UX patterns",
+    "accessibility"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "banner-design-restraint",
+   "title": "Banners, bars and the discipline of shutting up",
+   "cluster": "web-design",
+   "intent": "Announcement bars and banners: stacking rules (never two), dismissal memory across sessions, expiry dates as design requirements, contrast on every theme, and the emergency-comms variant you design before the emergency.",
+   "keywords": [
+    "banners",
+    "announcement bar",
+    "UX patterns",
+    "dismissal",
+    "design systems"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "form-labels-microcopy",
+   "title": "Form labels are micro-copy, not decoration",
+   "cluster": "web-design",
+   "intent": "Form labels and microcopy: top-aligned vs inline debates settled by data, hint text grammar, required-field honesty, error messages that read like a colleague wrote them, and the microcopy lint pass before every release.",
+   "keywords": [
+    "forms",
+    "microcopy",
+    "labels",
+    "error messages",
+    "form UX"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "og-image-generation-pipeline",
+   "title": "A build-time OG image pipeline you'll actually maintain",
+   "cluster": "engineering",
+   "intent": "Build-time OG image generation for a content site: satori/sharp pipeline, design tokens embedded in the template, snapshot tests against visual regressions, cache-busting on content edits, and the edge-runtime trade-offs.",
+   "keywords": [
+    "OG images",
+    "satori",
+    "build pipeline",
+    "open graph",
+    "social cards"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "feature-flags-without-graveyard",
+   "title": "Feature flags: ship with them, retire them, mean it",
+   "cluster": "engineering",
+   "intent": "Feature flags without the flag graveyard: lifecycle states (birth, rollout, valhalla, debt), kill dates in the code, testing matrix limits, flag debt as a metric on the dashboard, and naming flags so future-you knows what they do.",
+   "keywords": [
+    "feature flags",
+    "technical debt",
+    "rollouts",
+    "testing",
+    "code hygiene"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "api-pagination-ui-shadows",
+   "title": "Pagination: the API decision that designs your UI",
+   "cluster": "engineering",
+   "intent": "API pagination patterns and their UI shadows: cursor vs offset trade-offs, why infinite scroll breaks the back button, page-number dignity, designing empty-last-page states, and syncing URL state with cursors.",
+   "keywords": [
+    "pagination",
+    "API design",
+    "infinite scroll",
+    "UX",
+    "cursors"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "csp-rollout-without-breaking",
+   "title": "A CSP rollout the marketers won't undo",
+   "cluster": "engineering",
+   "intent": "Shipping a content security policy without breaking the marketing team: report-only first, nonces vs hashes, third-party script reality, the violation-report parsing pipeline, and CSP as a forcing function for script governance.",
+   "keywords": [
+    "CSP",
+    "security headers",
+    "third-party scripts",
+    "web security",
+    "governance"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "pricing-pages-as-seo-assets",
+   "title": "Your pricing page is an SEO asset. Act like it.",
+   "cluster": "growth",
+   "intent": "Pricing pages as organic search assets: comparison and 'cost of' keywords, pricing-table markup and snippets, anchoring copy that survives screenshot culture, and measuring assisted conversions from pricing visits.",
+   "keywords": [
+    "pricing page",
+    "SEO",
+    "comparison keywords",
+    "SaaS growth",
+    "conversion"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "welcome-series-anatomy",
+   "title": "The welcome series: four emails, four jobs",
+   "cluster": "growth",
+   "intent": "The welcome email series, anatomised: four-email arc with a job each, suppression against promo sends, the plain-text-from-a-person pattern, measuring beyond open rates in a post-MPP world, and when to end the arc.",
+   "keywords": [
+    "welcome series",
+    "lifecycle email",
+    "email marketing",
+    "onboarding",
+    "deliverability"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "conversion-copy-first-testing",
+   "title": "Test the words before you test the pixels",
+   "cluster": "growth",
+   "intent": "Test copy before you test design: message mining from reviews and sales calls, value-prop test design on plain pages, statistical honesty for small samples, and why button-colour tests are a cry for help.",
+   "keywords": [
+    "copy testing",
+    "CRO",
+    "messaging",
+    "A/B testing",
+    "value proposition"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "kickoff-workshop-two-hours",
+   "title": "A two-hour kickoff that buys six calm weeks",
+   "cluster": "playbooks",
+   "intent": "The two-hour kickoff workshop that sets up six good weeks: agenda with timings, decision logs started in the room, stakeholder rounds that surface the quiet veto, scope anchors, and the follow-up artifact clients actually keep.",
+   "keywords": [
+    "kickoff",
+    "workshop",
+    "agency process",
+    "stakeholders",
+    "project management"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "handover-documentation-standard",
+   "title": "Handover docs your client's next team will thank you for",
+   "cluster": "playbooks",
+   "intent": "The handover documentation standard: runbooks over readmes, credential transfer ceremonies, the 30-day support window contract, video walkthroughs with expiry dates, and measuring handover success at day 90.",
+   "keywords": [
+    "handover",
+    "documentation",
+    "runbooks",
+    "agency process",
+    "maintenance"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "first-fortnight-new-agency",
+   "title": "The first fortnight with a new agency, hour by hour",
+   "cluster": "playbooks",
+   "intent": "What good agency onboarding looks like from the client side: the first fortnight hour-by-hour, access requests batched once, the early win requirement, weekly cadence establishment, and red flags in the first invoice.",
+   "keywords": [
+    "agency onboarding",
+    "client experience",
+    "first 90 days",
+    "communication",
+    "process"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "keyboard-shortcuts-product-design",
+   "title": "Keyboard shortcuts: design the map before the chords",
+   "cluster": "product",
+   "intent": "Designing keyboard shortcuts for product apps: the shortcut map audit first, discoverability via command palettes and tooltips, conflict resolution with browser/OS chords, input-focus rules, and shipping a shortcuts legend that stays true.",
+   "keywords": [
+    "keyboard shortcuts",
+    "power users",
+    "command palette",
+    "accessibility",
+    "product design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "notification-centre-design",
+   "title": "The notification centre is a trust battery",
+   "cluster": "product",
+   "intent": "In-app notification centre design: what earns a notification slot, grouping and digesting, per-channel muting with dignity, read-state honesty, empty state usefulness, and notification fatigue as a product metric.",
+   "keywords": [
+    "notifications",
+    "notification centre",
+    "engagement",
+    "product design",
+    "restraint"
    ],
    "status": "planned",
    "added_by": "builder"

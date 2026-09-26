@@ -1,7 +1,8 @@
 import { Suspense, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { Seo } from '../lib/head'
-import { demos, getDemo, type DemoEntry } from '../lib/demos'
+import { benchDemos, getDemo, readyDemos, type DemoEntry } from '../lib/demos'
+import { getCase } from '../lib/content'
 import { breadcrumbLd } from '../lib/jsonld'
 import { DemoCard } from '../components/Cards'
 import Reveal from '../components/Reveal'
@@ -23,30 +24,48 @@ export function LabIndex() {
           Every case study deserves proof. These are real, working mini-products built to production standards — each with its own art direction, its own fictional client, and its own case study.
         </p>
       </header>
-      {demos.length > 0 && (
+      {readyDemos.length > 0 && (
         <section className="container" style={{ marginTop: 'var(--space-6)' }}>
-          <LabFeature demo={demos[0]} />
+          <LabFeature demo={readyDemos[0]} />
         </section>
       )}
       <section className="section container">
-        {demos.length > 1 ? (
+        {readyDemos.length > 1 ? (
           <div className="card-grid card-grid--3">
-            {demos.slice(1).map((d) => (
+            {readyDemos.slice(1).map((d) => (
               <DemoCard key={d.slug} d={d} />
             ))}
           </div>
-        ) : demos.length === 1 ? (
+        ) : readyDemos.length === 1 ? (
           <p className="lead">More demos join the bench each sprint — this is the first of many.</p>
         ) : (
           <p className="lead">The first demos are on the bench. Check back after the next Friday demo.</p>
         )}
       </section>
+      {benchDemos.length > 0 && (
+        <section className="section section--tight container">
+          <Reveal className="overline">On the bench</Reveal>
+          <p className="muted" style={{ marginTop: '0.75rem', marginBottom: 'var(--space-4)', maxWidth: '56ch' }}>
+            In the oven right now — cases made public the moment they pass our own Friday demo bar.
+          </p>
+          <ul className="bench-list">
+            {benchDemos.map((d) => (
+              <li key={d.slug} className="bench-list__item">
+                <span className="bench-list__title">{d.title}</span>
+                <span className="bench-list__client mono">{d.client}</span>
+                <span className="bench-list__state mono" aria-label="In progress">In the oven</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
     </>
   )
 }
 
 /** Big night-band feature for the newest demo in the Lab. */
 function LabFeature({ demo }: { demo: DemoEntry }) {
+  const study = demo.caseStudy ? getCase(demo.caseStudy) : undefined
   return (
     <div className="night lab-feature">
       <div className="lab-feature__copy">
@@ -60,8 +79,8 @@ function LabFeature({ demo }: { demo: DemoEntry }) {
           <Link to={`/lab/${demo.slug}`} className="btn btn--brass">
             Open the demo <span className="arrow" aria-hidden>→</span>
           </Link>
-          {demo.caseStudy && (
-            <Link to={`/work/${demo.caseStudy}`} className="link-line" style={{ color: 'var(--brass-hi)', alignSelf: 'center' }}>
+          {study && (
+            <Link to={`/work/${study.slug}`} className="link-line" style={{ color: 'var(--brass-hi)', alignSelf: 'center' }}>
               Read the case study
             </Link>
           )}
@@ -80,6 +99,7 @@ export function LabDemo() {
   const [about, setAbout] = useState(false)
   if (!demo || !demo.Component) return <NotFound />
   const Demo = demo.Component
+  const study = demo.caseStudy ? getCase(demo.caseStudy) : undefined
 
   return (
     <>
@@ -95,7 +115,7 @@ export function LabDemo() {
           <Link to="/lab" aria-label="Back to the Lab">← Lab</Link>
           <span className="lab-bar__title">{demo.client} — {demo.title}</span>
           <span style={{ display: 'flex', gap: '1.25rem', alignItems: 'center' }}>
-            {demo.caseStudy && <Link to={`/work/${demo.caseStudy}`}>Case study</Link>}
+            {study && <Link to={`/work/${study.slug}`}>Case study</Link>}
             <button
               onClick={() => setAbout(!about)}
               aria-expanded={about}

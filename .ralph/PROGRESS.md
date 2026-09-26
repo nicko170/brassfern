@@ -1,5 +1,47 @@
 # Progress
 
+## Done (iteration 9 — builder: crawlable journal pagination, intent prefetch, bench list, QA)
+
+- **Route-based journal pagination (prerendered)** — replaced client-only
+  `useState` pagination (`href="#top"` anchors, invisible to crawlers/no-JS)
+  with real routes: `/journal/page/:n` and `/journal/:cluster/page/:n`,
+  all statically prerendered (27+ hub pages added). Shared logic in
+  `src/lib/paginate.ts` (`JOURNAL_PAGE_SIZE`, `journalPages`,
+  `restCountFor`, `pageHref`, `pageWindow`) — used by both the pages and
+  `entry-server.prerenderRoutes()` so route lists can't drift. Featured
+  lead story stays excluded from the page counts. Windowed Pagination
+  component (first/last/current±1, `…` gaps, ‹/› prev-next, `aria-current`,
+  rel=prev/next); page 2+ get `Journal — page N of M` titles, self-canonical,
+  extra BreadcrumbList rung. `/journal/page/1` 404s (canonical is the hub).
+- **Hover/focus intent prefetching** — new `src/lib/prefetch.ts`: delegated
+  `pointerover` + `focusin` listeners (wired once in Layout) warm the
+  destination's page chunk AND the article/case-study markdown body before
+  the tap. Saves ~most of route-chunk latency across 1400+ routes. Deduped
+  per session, base-path aware, skipped on `navigator.connection.saveData`,
+  retries allowed after a failed fetch.
+- **Demo readiness guards** — `isDemoReady`/`readyDemos`/`benchDemos` in
+  `lib/demos.ts`. In-flight demos (meta.ts but no index.tsx) used to link
+  from /lab and /work into NotFound pages: now they're excluded from
+  prerender routes, the Lab feature/grid, the home lab band and case-study
+  demo strips; /lab shows them in a non-linked "On the bench" list
+  (`.bench-list`). Case-study links in the Lab feature and demo bar are
+  now verified against `getCase()` — demos pointing at unwritten case
+  studies (e.g. `glasshouse-ticketing-relaunch`, planned) no longer 404.
+- **Description QA** — trimmed 24 over-length frontmatter descriptions
+  (171–183 chars → ≤160) across ai/brand/ecommerce/engineering/growth/
+  playbooks/product/web-design + one work file. Content index warnings
+  now only the deliberate `#`-placeholder notes in the link audit.
+- **Backlog restocked** — +8 work case studies (incl. `glasshouse-ticketing-
+  relaunch` matching the seat-map demo, and studies for the four newest
+  planned demos: trailswell, switchyard, copperplate) and +39 articles
+  weighted to the most-behind clusters: ecommerce 9, brand 7, ai 7,
+  web-design 5, engineering 4, growth 3, playbooks 3, product 2.
+- **Build green: 1410 prerendered routes + 404**, sitemap/robots/rss,
+  no skeleton HTML outside /lab, pagination + canonical + aria-current
+  verified in dist, bench list correctly absent while all 20 demos have
+  entries, CI fixture builds with local BASE=/ (CI's /brassfern/ path
+  unchanged by this work).
+
 ## Done (iteration 8 — builder: studio clocks, cursor ring, demo backlog, build rescue)
 
 - **Four-city studio clocks** — new `src/components/StudioTime.tsx` exports
@@ -1029,3 +1071,57 @@ Completed 4 web-design articles (all validated done by finish_article):
 - web-design/focus-states-design (June Okafor) — focus ring as designed state (shape/weight/colour/motion), two-tone ring for guaranteed 3:1 on any surface, tokenised rings incl. dark-section overrides, :focus-visible subtleties, focus-order as design spec (modals, skip links, widget contracts), seven silent keyboard-breaking overrides, ten-minute mouse-less QA.
 - web-design/bento-grids-honest (Mara Ellison) — bento as scanning-density tool, four collapse modes (long content / mobile stacking / CMS churn / template sameness), span system via content archetypes with count variants + schema character budgets + explicit mobile-priority field, typography rules for mixed-size tiles, five-question gate before use.
 - web-design/scrollytelling-restraint (Hannah Yeo) — production companion to scrollytelling-without-traps: one-pin-per-page budget, chapter nav (progress rail + named jumpable anchors), reduced-motion variant designed FIRST as storyboard-quality product with motion as progressive enhancement, per-frame perf discipline for scroll choreography (IO not listeners, transform/opacity only), the print test that kills ~1/3 of proposals.
+
+## writer4 — iteration 18 (2026-09-26)
+Completed 4 web-design articles (all validated done by finish_article; link audit clean):
+- web-design/about-pages-that-convince (Mara Ellison) — About page as closing argument of the sales process: three visitor questions (good enough / like us / still here in 18 months), one-paragraph story instead of timelines, trust numbers that are specific + slightly awkward + consistency-first, team section as evidence, route-to-receipts linking, About-to-contact funnel metric.
+- web-design/careers-pages-that-filter-in (Ruby Castellanos) — careers page as precision filter not résumé bucket: real Tuesdays over perk theatre, salary bands as sharpest filter, application flow as product demo (minimal fields, one discriminating question, dated reply promise), real per-role pages over ATS iframes, cliché kill list (ping-pong / fast-paced / "we're a family" / generic values).
+- web-design/error-pages-as-system (Leonie Marsh) — the failure family as one designed system above designing-404-pages: written failure inventory (trigger/severity/voice/recovery/owner), severity-ladder voice calibration, no-stranded-visitor rule, status-code + noindex + cache + weight plumbing, view-event telemetry with recovery-rate KPI and named owner, argument against error theatre.
+- web-design/pull-quotes-editorial-devices (June Okafor) — waypoints for long reads: pull quotes verbatim from text, one per 600–800 words, aria-hidden aside pattern for the duplication problem; asides safe-to-skip with labels; margin notes with wide/narrow responsive strategy + source-order rules + reader-mode test; restraint ratio and honest scroll-depth metric.
+
+## demo1 — iteration 7 (2026-09-26)
+Completed the **brightline-solar-quoter** demo (Brightline Solar instant quote engine). TSX/data/Compass/charts existed from an interrupted prior run, but demo.css was still the harness stub — wrote the full ~800-line scoped stylesheet (.bsq): warm sunlit cream bg, sun-gold + deep teal brand, chunky tabular numerals, sticky teal quote panel, animated savings chart (staggered bar grow + dash-drawn cumulative line), slow logo-ray spin, all transitions flattened under prefers-reduced-motion. Generated demo showcase shot public/images/work/brightline-solar-quoter.jpg (feeds the case-gallery demo strip). Typecheck clean; finish_demo validated done.
+
+## writer3 — iteration 16 (2026-09-26)
+Completed 4 engineering articles (all validated done by finish_article):
+- engineering/rate-limits-as-ux (Felix Brandt) — rate limits as product surface: four kinds of "no" (throttle/burst/shed/abuse), honest Retry-After + body copy contracts, backpressure UX (inline countdowns, real queue positions, sideways degrade, shown retries), limit headers on success so clients self-throttle, apology-with-a-plan copy formula.
+- engineering/web-workers-real-work (Tomás Reyes) — jobs that earn a worker (CSV parsing, archive search, image work, zip exports, sync) vs jobs that don't; Comlink + typed API boundary + schema-checked payloads; transferables + neutered-buffer gotcha; 2–4 worker pools, chunk-not-document, real cancellation; prove via throttled traces + field INP (Meridian Climate numbers).
+- engineering/screen-reader-testing-workflow (Felix Brandt) — 30-minute scripted release pass: NVDA/VoiceOver/JAWS matrix, five passes (landmarks, keyboard walk, forms-done-badly, live regions, tables), actionable finding format with severity-in-user-impact + recordings, fluency and pairing practices, Pylon Health focus-loss example.
+- engineering/errors-as-design-material (Tomás Reyes) — failure quartile taxonomy (recoverable/terminal × user/system), Result-union typed errors as design spec with exhaustiveness, retry-by-policy rules, client circuit breakers + designed degraded modes, four-line failure copy formula, recovery-rate metric per failure surface. Hero image generated (/images/articles/engineering/errors-as-design-material.jpg).
+
+## demo3 — iteration 7 (2026-09-26)
+Completed the **tallow-feast-builder** demo (Tallow & Co. feast box builder, case study tallow-and-co-providore). Built from scratch inside src/demos/tallow-feast-builder/: data.ts (21-item pantry across 6 categories, 3 crate sizes with honest packing fees, three curator themes, real 2 pm-cutoff + Sun/Mon-closed delivery calendar), Woodcut.tsx (12 engraved woodcut SVG pictograms + wax-seal component), index.tsx (box-size picker, live crate-fill slots with pop-in animation, pantry grid with per-item steppers and "IN THE CRATE" ribbon, gift-note composer with dashed counter-ticket preview, delivery day rail with booked state, review drawer with grouped lines and date gate, success state with stamped seal — all persisted to localStorage, aria-live counter announcements throughout), demo.css (~640 lines scoped .tfb: butcher-paper kraft, pine-green ink, wax-red accents, Rockwell slab display + Courier tickets, hard-shadow stamp buttons, plank-textured crate, chalk ticker — flattened under prefers-reduced-motion). Generated showcase still-life public/images/work/tallow-feast-builder.jpg (feeds the case-gallery demo strip). Typecheck clean; finish_demo validated done.
+
+## writer1 — iteration 19 (2026-09-26)
+Completed 4 engineering articles (all validated done by finish_article; link audit clean):
+- engineering/preview-environments-every-pr (Tomás Reyes) — economics (previews cost less than the meetings they replace), parity + seeded fixtures (seed doubles as Playwright corpus), reflex-load + discoverable-URL + nightly reaper rules, boring architecture (one CI workflow, relative paths, previews on the health board), cultural payoff (demos become links, stakeholders review in week two). Hero image generated (/images/articles/engineering/preview-environments-every-pr.jpg).
+- engineering/background-jobs-small-teams (Felix Brandt) — cron-for-schedules vs queues-for-events fork, re-runnable cron rule, idempotency as the one rule (crash-at-any-line test), DLQ alerting on rate + replayable dead letters with context, producer batching + provider-matched concurrency + job TTLs, 7-line 3am audit card.
+- engineering/transactional-email-engineering (Tomás Reyes) — email as trust-dense product surface, SPF/DKIM/DMARC without tears (DMARC p=none → reject over six weeks), transactional/news subdomain split, email HTML realities (Word's 2007 engine, build-time inlining, dark mode, alt text as content), templates in repo + CI rendering against horrible fixtures + shared sent-mail inbox, suppression lists applied at send time, weekly/monthly/quarterly cadence.
+- engineering/security-headers-csp-baseline (Felix Brandt) — copy-paste 6-directive CSP + 7 supporting headers baseline, report-only-first rollout (two weeks, ~5 surprise findings avg), nonce-at-edge / sha256-hashes / no-inline-scripts static-host answers, form-action + base-uri + frame-ancestors as the pen-tester-first lines, CI header assertions + quarterly scans, honest CSP-can't-save-you section.
+
+## demo1 — iteration 8 (2026-09-26)
+Completed the **glasshouse-seat-map** demo (The Glasshouse fictional theatre box office). TSX/data/meta existed from the harness scaffold, but demo.css was the build stub — wrote the full ~800-line scoped stylesheet (.gsm): "velvet night" art direction (deep oxblood #20090f room, gilt #d9a648/#f0cd8a filigree, cream playbill type, Georgia serif display + mono stubs), fixed grain pass, playbill-stub show radio cards, engraved-plan SVG styling (gold hairline house, hatch pattern, footlights, dashed box rooms), tier jewel dots with focus glow + sold dashed state, colour-safe (.gsm--cb) Okabe-Ito-derived tier palette via CSS-var override, sticky order card with hold-clock bar (turns ember under 2 min), chip-based list view with row groupings, responsive to 375px, all transitions/animations flattened under prefers-reduced-motion, print flattening. Every class in index.tsx/SeatMap.tsx/SeatList.tsx is covered. Generated showcase shot public/images/work/glasshouse-seat-map.jpg (tablet with the gold-ink plan on oxblood velvet; feeds lab preview + case-gallery demo strip).
+- NOTE for writers: meta.caseStudy = `glasshouse-ticketing-relaunch` but `src/content/work/glasshouse-ticketing-relaunch.md` does NOT exist yet (demo builders can't write content) — it should be written with frontmatter `demo: glasshouse-seat-map` to surface the .demo-strip band; hero image can be generated at public/images/work/glasshouse-ticketing-relaunch.jpg. Suggested industry "Media & culture", services Websites + Product design & engineering; demo copy leans on the honest sightline flags, 10-minute hold clock and list-view accessibility as its story.
+- Typecheck clean (node scripts/build-content-index.mjs && npm run typecheck); finish_demo validated done.
+
+## writer3 — iteration 17 (2026-09-26)
+Completed 4 product articles (all validated done by finish_article; standalone link audit clean):
+- product/sandbox-demo-data-design (Aiko Tanaka) — sandbox vs trial vs demo-mode taxonomy (consequence is the difference), demo-data casting rules (one believable tenant, 6–13 months of history, honest volume, seeded anomalies), reset/labelled-shell/visible-stub mechanics, swap-to-real graduation flow with carried intent, sandbox-to-activation measurement. Links to /lab/northwind-ledger-budget.
+- product/spreadsheet-migration-onboarding (Felix Brandt) — the spreadsheet as incumbent; generous parsing (encoding/delimiter/header chaos), column mapping as core interaction (fuzzy auto-match verified by sample values, in-flow transforms, saved mappings), inline validation with skip/default policies, dry-run diff + labelled reversible import batch (undo-first architecture), honest edge cases (dupes, big files, referential data, competitor presets).
+- product/contextual-help-point-of-need (Leonie Marsh) — point-of-need ladder (label → helper text → glossary tooltip → panel → in-flow search → help centre), tooltip-as-bug-report rule, per-screen panels with front-loaded decisions and failure modes, context-scoped search with honest human exit, deflection metrics without trapping (No-vote queues, search success, time-to-resume), writer-in-squad org model.
+- product/shortcut-discoverability (June Okafor) — shortcuts as a marketing problem; four teaching surfaces (annotated menus, rent-paying tooltips, ?-legend, rare behaviour-triggered hints), graduation model with per-user adoption tracking, cheat sheet generated from keymap source of truth, remapping as accessibility + loyalty (locale/layout repair).
+
+## writer2 — iteration 22 (2026-09-26)
+Completed 4 product articles (all validated done by finish_article; content index clean for my files — 2 remaining desc-length warnings are other workers' files):
+- product/session-timeout-autosave-ux (Aiko Tanaka) — interruption as default environment; five-state autosave contract table (saved only on server ack, error state says where work lives), WCAG-friendly timeout warnings that double as reassurance + in-place re-auth (Pylon Health example), layered persistence + review-first recovery banner, accurate dirty-tracking for unsaved-changes guards, field-level merge + side-by-side conflict UI.
+- product/template-galleries-onboarding (June Okafor) — categorise by job not industry (JTBD interviews set the taxonomy, Northwind Ledger example), live-interactive-preview hierarchy with populated plausible data, blank-option placement as positioning, governance (named owner, quality bar with teeth, pruning rule), pick→populate→edit→activation measurement chain with self-selection caveat.
+- product/feature-parity-mobile-web (Aiko Tanaka) — parity as budget question; task-context matrix (frequency × fit, four quadrants incl. bridge-don't-port), signed de-scoping document with reason + mobile alternative + revisit trigger, dignified "desktop-only" messaging with send-link handoff, continuity as highest-leverage parity feature, when full parity is the weapon (field products).
+- product/health-score-design (Priya Nair) — composite must decompose into 3–5 arguable components (cap independence, render uncertainty), sort/alert on slope not snapshot, alert budget rules (state-change alerts, owned queue, monthly precision, recovery digest), share components not composites with customers, quarterly recalibration governance. Hero image generated: public/images/articles/product/health-score-design.jpg.
+
+## writer1 — iteration 20 (2026-09-26)
+Completed 4 product articles (all validated done by finish_article):
+- product/bottom-sheets-mobile-web (Aiko Tanaka) — sheet as partial-attention contract (live background context or use a screen), triage questions, draggable-or-don't-look-draggable rule, 2 snap points + velocity, scrim honesty (100% dismisses or visibly doesn't; draft-state retention, Northwind Ledger example), focus/inert/role=dialog web a11y list, anti-patterns (sheet inception, 96% sheet, keyboard collision, swipe-jacking).
+- product/in-product-announcements-centre (Leonie Marsh) — banner blindness as rational adaptation; write for the receiver (user's verb, named audience, one concrete action); announcements centre rules (honest badge, persistent archive, disruption tier list); behaviour-based targeting + frequency caps across teams; changelog-vs-announcement boundary; expiry rules with delete authority (deprecation escalation exception).
+- product/multi-window-state-consistency (Felix Brandt) — state taxonomy (session syncs / entities converge / ephemeral stays per-tab), BroadcastChannel + storage-event plumbing rules (single coordinator, echo suppression, invalidate-don't-replicate), conflict policies (disclosed LWW, optimistic locking, soft locks with heartbeats), logout-global + single-flight token refresh (Web Locks), visible sync furniture, two-context Playwright test plan.
+- product/device-handoff-flows (June Okafor) — device-shaped mismatch audit (camera/keyboard/privacy/location steps; Sundial Travel example), QR = same room / magic link = later (offer both), bearer-token security floor (step-scoped, stated expiry, never a backdoor login, no app-install toll gate), delayed resume as re-onboarding (one-line recap, collapsed done steps, re-sell abandoned step), copyable resume URL, token-joined journey measurement.
+- desc-length fix applied to in-product-announcements-centre (was 181 chars). No hero images generated this iteration (prioritised 4 articles; image budget intact for future).

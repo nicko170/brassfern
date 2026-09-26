@@ -25,7 +25,10 @@ export default function WorkCase() {
   const html = useBody('work', slug ?? '')
   const tocItems = useMemo(() => (html ? parseToc(html) : []), [html])
   if (!cs) return <NotFound />
-  const demo = cs.demo ? getDemo(cs.demo) : undefined
+  // Only link demos that actually have an entry component — an in-flight
+  // (meta-only) demo would land the reader on a 404.
+  const linkedDemo = cs.demo ? getDemo(cs.demo) : undefined
+  const demo = linkedDemo?.Component ? linkedDemo : undefined
   const related = relatedCases(cs)
   const quote = testimonials.find((t) => t.caseStudy === cs.slug)
   const squad = squadFor(cs)

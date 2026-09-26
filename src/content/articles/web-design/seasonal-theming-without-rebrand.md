@@ -1,6 +1,6 @@
 ---
 title: "Seasonal theming without pretending it's a rebrand"
-description: "How to theme a site for a season or campaign with token overrides, not panic: scoped palettes, motion and imagery swaps, expiries, and where festive ends and confusing begins."
+description: "How to theme a site for a season or campaign with token overrides, not panic: scoped palettes, motion swaps, expiries, and where festive becomes confusing."
 slug: seasonal-theming-without-rebrand
 cluster: web-design
 tags: [design tokens, theming, campaigns, brand systems, css architecture]

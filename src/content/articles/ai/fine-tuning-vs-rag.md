@@ -1,6 +1,6 @@
 ---
 title: "Fine-tuning vs RAG vs prompt: a decision guide"
-description: "Prompt, retrieve or fine-tune? The decision tree we run with clients, with real cost curves, data requirements, iteration speed and the maintenance burden nobody mentions."
+description: "Prompt, retrieve or fine-tune? The decision tree we run with clients — real cost curves, data needs, iteration speed and maintenance burden."
 slug: fine-tuning-vs-rag
 cluster: ai
 tags: [llm architecture, rag, fine-tuning, prompt engineering, technical strategy]

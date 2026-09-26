@@ -1,6 +1,6 @@
 ---
 title: "Dark mode is a second design system"
-description: "Treating dark mode as a CSS inversion is how you ship a grey smear. Here's how we design dark themes as a second, deliberate system — tokens, elevation, contrast and CI tests."
+description: "Treating dark mode as a CSS inversion is how you ship a grey smear. Design dark themes as a second, deliberate system — tokens, elevation, contrast, CI tests."
 slug: dark-mode-second-design-system
 cluster: web-design
 tags: [dark mode, design tokens, colour contrast, theming, design systems]

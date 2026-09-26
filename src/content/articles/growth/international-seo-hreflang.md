@@ -1,6 +1,6 @@
 ---
 title: "International SEO without tears: hreflang, ccTLDs and content reuse"
-description: "Going international without tanking search: ccTLD vs subfolder trade-offs, hreflang that doesn't break, translation workflows that respect local intent, staged validation."
+description: "Going international without tanking search: ccTLD vs subfolder trade-offs, hreflang that doesn't break, translations that respect local intent, staged validation."
 slug: international-seo-hreflang
 cluster: growth
 tags: [international seo, hreflang, localisation, migration, technical seo]
