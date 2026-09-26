@@ -5111,8 +5111,10 @@
     "redirects",
     "data migration"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790407450.2400188
   },
   {
    "kind": "article",
@@ -5126,8 +5128,10 @@
     "Yjs",
     "websockets"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790407450.2400188
   },
   {
    "kind": "article",
@@ -5141,8 +5145,10 @@
     "3D web",
     "GPU budgets"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790407450.2400188
   },
   {
    "kind": "article",
@@ -5156,8 +5162,10 @@
     "developer experience",
     "test sharding"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790407450.2400188
   },
   {
    "kind": "article",
@@ -5171,8 +5179,10 @@
     "software supply chain",
     "license compliance"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790407511.9593852
   },
   {
    "kind": "article",
@@ -5186,8 +5196,10 @@
     "interaction engineering",
     "design engineering"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790407511.959386
   },
   {
    "kind": "article",
@@ -5201,8 +5213,10 @@
     "data pipeline",
     "measurement plan"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790407511.9593868
   },
   {
    "kind": "article",
@@ -8185,10 +8199,11 @@
     "RAG design",
     "AI support quality"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790406958.100854
+   "claimed_at": 1790406958.100854,
+   "done_at": "2026-09-26T17:25:07"
   },
   {
    "kind": "article",
@@ -8203,10 +8218,11 @@
     "model routing",
     "streaming UX"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790407055.635329
+   "claimed_at": 1790407055.635329,
+   "done_at": "2026-09-26T17:27:33"
   },
   {
    "kind": "article",
@@ -8221,10 +8237,11 @@
     "AI policy feedback",
     "responsible AI product"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790407055.6353312
+   "claimed_at": 1790407055.6353312,
+   "done_at": "2026-09-26T17:27:39"
   },
   {
    "kind": "article",
@@ -8275,8 +8292,10 @@
     "localStorage boot script",
     "SSR theming"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790407511.9593868
   },
   {
    "kind": "article",
@@ -9143,10 +9162,11 @@
     "LLM UX",
     "first run"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790407108.415492
+   "claimed_at": 1790407108.415492,
+   "done_at": "2026-09-26T17:26:31"
   },
   {
    "kind": "article",
@@ -9161,10 +9181,11 @@
     "evals",
     "vendor risk"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790407108.415493
+   "claimed_at": 1790407108.415493,
+   "done_at": "2026-09-26T17:26:32"
   },
   {
    "kind": "article",
@@ -9179,10 +9200,11 @@
     "unit economics",
     "finops"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790407108.415493
+   "claimed_at": 1790407108.415493,
+   "done_at": "2026-09-26T17:26:34"
   },
   {
    "kind": "article",
@@ -9197,10 +9219,11 @@
     "privacy",
     "images"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790407108.415493
+   "claimed_at": 1790407108.415493,
+   "done_at": "2026-09-26T17:26:35"
   },
   {
    "kind": "article",
