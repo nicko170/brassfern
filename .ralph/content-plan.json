@@ -6518,10 +6518,11 @@
     "pre launch testing",
     "website go live checklist"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790405238.009863
+   "claimed_at": 1790405238.009863,
+   "done_at": "2026-09-26T16:49:35"
   },
   {
    "kind": "article",
@@ -6722,10 +6723,11 @@
     "paid discovery",
     "choosing an agency"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790405283.894513
+   "claimed_at": 1790405283.894513,
+   "done_at": "2026-09-26T16:49:44"
   },
   {
    "kind": "article",
@@ -6790,8 +6792,10 @@
     "content model",
     "CMS design"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790405331.012279
   },
   {
    "kind": "article",
@@ -6805,8 +6809,10 @@
     "project success criteria",
     "agency measurement"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790405331.01228
   },
   {
    "kind": "article",
@@ -6820,8 +6826,10 @@
     "buying design services",
     "request for proposal"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790405331.01228
   },
   {
    "kind": "article",
@@ -6835,8 +6843,10 @@
     "agency agreement",
     "creative services contract"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790405331.01228
   },
   {
    "kind": "article",
@@ -8400,10 +8410,11 @@
     "overlay UX mobile",
     "touch gestures design"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790404821.0149918
+   "claimed_at": 1790404821.0149918,
+   "done_at": "2026-09-26T16:49:56"
   },
   {
    "kind": "article",
@@ -8418,10 +8429,11 @@
     "banner blindness",
     "release notes UX"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790404821.014993
+   "claimed_at": 1790404821.014993,
+   "done_at": "2026-09-26T16:49:59"
   },
   {
    "kind": "article",
@@ -8436,10 +8448,11 @@
     "tabs in sync UX",
     "product engineering UX"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790404821.014994
+   "claimed_at": 1790404821.014994,
+   "done_at": "2026-09-26T16:49:56"
   },
   {
    "kind": "article",
@@ -8454,10 +8467,11 @@
     "session continuity",
     "mobile web flows"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790404821.014994
+   "claimed_at": 1790404821.014994,
+   "done_at": "2026-09-26T16:49:56"
   },
   {
    "kind": "article",
@@ -8703,6 +8717,374 @@
     "recurring giving",
     "trust",
     "form design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "checkout-address-autocomplete",
+   "title": "Address autocomplete that earns its keep",
+   "cluster": "ecommerce",
+   "intent": "How to design address capture that helps instead of hectors: lookup with a visible manual-entry escape hatch, international format chaos (postcode-first vs suburb-last), validation that corrects rather than scolds, PO boxes and rural routes, what to do when the API is down. Field-order maths and autofill attributes.",
+   "keywords": [
+    "checkout",
+    "address autocomplete",
+    "form UX",
+    "conversion",
+    "autofill"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "returns-as-product-feature",
+   "title": "Returns are a product feature — design them like one",
+   "cluster": "ecommerce",
+   "intent": "Returns as a designed product surface, not a policy PDF: self-serve returns portal UX, exchange-first framing that isn't a dark pattern, honest windows and conditions, return-reason data as merchandising signal, measuring the revenue impact of generous returns.",
+   "keywords": [
+    "returns",
+    "reverse logistics",
+    "e-commerce UX",
+    "exchanges",
+    "retention"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "reviews-that-earn-trust",
+   "title": "Reviews that earn trust instead of renting it",
+   "cluster": "ecommerce",
+   "intent": "Review systems that deserve trust: solicitation timing without incentive-for-positivity bias, displaying 3-star reviews proudly, verified purchase mechanics, merchant responses that de-escalate, review schema and SEO, and the review-gating mistake that poisons everything.",
+   "keywords": [
+    "reviews",
+    "social proof",
+    "UGC",
+    "trust",
+    "schema.org"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "cart-cross-sells-that-dont-annoy",
+   "title": "Cart cross-sells that don't read as desperation",
+   "cluster": "ecommerce",
+   "intent": "Where cross-sells actually pay: cart vs PDP vs post-purchase placements ranked by distraction cost, the one-question rule, price-band logic, out-of-stock cross-sell shame, and measuring incrementality instead of click-through vanity.",
+   "keywords": [
+    "cross-sell",
+    "merchandising",
+    "cart UX",
+    "AOV",
+    "incrementality"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "multi-currency-without-lies",
+   "title": "Multi-currency storefronts without the exchange-rate lies",
+   "cluster": "ecommerce",
+   "intent": "Multi-currency UX: display currency vs settlement currency, rounding and price-charm by market, DDP vs DDU duties honesty at checkout, geolocation prompts with consent, and the currency-switcher that quietly lies about conversion rates.",
+   "keywords": [
+    "multi-currency",
+    "international",
+    "duties",
+    "geo",
+    "pricing UX"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "back-in-stock-flows",
+   "title": "Back-in-stock flows: the lifecycle asset nobody funds",
+   "cluster": "ecommerce",
+   "intent": "Notify-me flows as lifecycle assets: the signup micro-commitment, priority and sizing capture, honest timing language ('we restock roughly monthly'), back-in-stock email conversion vs browse, and using waitlists as demand signal for buying.",
+   "keywords": [
+    "back in stock",
+    "waitlist",
+    "lifecycle email",
+    "restock",
+    "inventory"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "gift-cards-product-thinking",
+   "title": "Gift cards are products. Treat them like it.",
+   "cluster": "ecommerce",
+   "intent": "Gift cards as first-class products: purchase, delivery scheduling, balance check without account walls, partial redemption UX, expiry-date honesty in every jurisdiction, fraud friction, and the service-recovery power of a well-timed gift card.",
+   "keywords": [
+    "gift cards",
+    "stored value",
+    "product design",
+    "holiday",
+    "redemption UX"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "mobile-checkout-field-by-field",
+   "title": "Mobile checkout, field by brutal field",
+   "cluster": "ecommerce",
+   "intent": "A field-by-field mobile checkout teardown: input mode and autocomplete attributes, the numeric keyboard contract, wallet-button placement cadence, address forms on 375px, error recovery with fat fingers retention, and measuring field-level drop-off.",
+   "keywords": [
+    "mobile checkout",
+    "form design",
+    "autofill",
+    "input modes",
+    "conversion"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "subscription-skip-pause-ux",
+   "title": "Skip, pause, cancel: retention through respect",
+   "cluster": "ecommerce",
+   "intent": "Skip, pause and cancel flows that retain by respecting: the skip humanity button equal-sized, pause over cancel patterns, save-offer honesty (one offer, no gauntlet), winback measurement on a cancelled cohort, and why exit surveys should have a 'none of your business' option.",
+   "keywords": [
+    "subscriptions",
+    "retention",
+    "cancel flows",
+    "pause",
+    "churn"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "voice-testing-with-humans",
+   "title": "Testing brand voice on people, not vibes",
+   "cluster": "brand",
+   "intent": "Testing brand voice with real humans: comprehension tests, cloze deletion, brand-vs-bland A/B reads, the 'could a competitor say this' filter, and building a voice scorecard writers actually use.",
+   "keywords": [
+    "brand voice",
+    "tone of voice",
+    "user testing",
+    "copywriting",
+    "brand strategy"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "logo-survival-in-product-ui",
+   "title": "Will your logo survive your product?",
+   "cluster": "brand",
+   "intent": "Where identity meets product UI: favicons and app icons from the master mark, avatar crops, dark-surface logos, the 16px legibility test, motion logo restraint, and a logo-usage contract for engineers.",
+   "keywords": [
+    "logo",
+    "favicon",
+    "product UI",
+    "brand identity",
+    "design tokens"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "rebrand-rollout-sequencing",
+   "title": "Rebrand rollout: the domino order matters",
+   "cluster": "brand",
+   "intent": "The rebrand rollout playbook: sequenced domino order (domain, redirects, app stores, email signatures, legal), the launch-day war room, the 90-day tail of missed instances, and measuring rebrand reception without a sentiment dashboard fairy tale.",
+   "keywords": [
+    "rebrand",
+    "brand launch",
+    "rollout",
+    "checklist",
+    "brand strategy"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "illustration-systems-not-galleries",
+   "title": "An illustration system is rules, not a folder of PNGs",
+   "cluster": "brand",
+   "intent": "Illustration as a system, not a gallery: writing illustration principles with forbiddens, commissioning briefs per artist, rarity and budget per surface, storage/naming so the system survives staff churn.",
+   "keywords": [
+    "illustration",
+    "art direction",
+    "brand identity",
+    "design systems",
+    "commissioning"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "naming-trademark-reality-check",
+   "title": "The trademark reality check your naming process needs",
+   "cluster": "brand",
+   "intent": "Naming with trademark reality: the screening funnel (linguistic, TM classes, domain compromise positions, app-store collisions), timelines lawyers actually need, the thousand-name funnel, and letting a beloved name die gracefully.",
+   "keywords": [
+    "naming",
+    "trademark",
+    "domains",
+    "brand strategy",
+    "legal"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "sonic-branding-small-studios",
+   "title": "Sonic branding for studios without a jingle budget",
+   "cluster": "brand",
+   "intent": "Lightweight sonic identity for product teams without a jingle budget: UI sound principles, the three-moment rule, accessibility and respect defaults (off), commissioning one motif, and where sonic branding is just vanity.",
+   "keywords": [
+    "sonic branding",
+    "sound design",
+    "brand identity",
+    "audio UX",
+    "accessibility"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "brand-guidelines-people-use",
+   "title": "Brand guidelines should be a product, not a PDF",
+   "cluster": "brand",
+   "intent": "Brand guidelines people actually use: living site not PDF, copyable snippets and tokens at the point of need, search analytics on the guidelines site, versioning and change logs, guideline debt audits.",
+   "keywords": [
+    "brand guidelines",
+    "design systems",
+    "brand governance",
+    "documentation",
+    "adoption"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ai-onboarding-expectation-setting",
+   "title": "Onboarding for AI features: sell the p50, not the demo",
+   "cluster": "ai",
+   "intent": "First-run UX for AI features: capability honesty in the empty state, example prompts calibrated to p50 outcomes, previewing failure modes before users meet them, progressive trust ladders, and onboarding copy that survives model upgrades.",
+   "keywords": [
+    "AI onboarding",
+    "empty states",
+    "expectation setting",
+    "LLM UX",
+    "first run"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "model-deprecation-playbook",
+   "title": "The model deprecation playbook nobody writes until it's 3am",
+   "cluster": "ai",
+   "intent": "When your provider deprecates the model you shipped on: model-abstraction layers that actually isolate, eval-gated migration, shadow-traffic comparisons, customer comms for behaviour drift, and the calendar math of deprecation windows.",
+   "keywords": [
+    "model deprecation",
+    "LLMOps",
+    "migration",
+    "evals",
+    "vendor risk"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ai-cost-observability",
+   "title": "AI cost observability: tokens are a line item now",
+   "cluster": "ai",
+   "intent": "Token-level cost observability for LLM features: per-feature budgets and alerts, cost per successful task (not per call), cache hit rates, the cost-quality frontier chart for execs, and killing features whose unit economics never worked.",
+   "keywords": [
+    "LLM costs",
+    "observability",
+    "token budgets",
+    "unit economics",
+    "finops"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "multimodal-input-design",
+   "title": "Multimodal inputs: the upload box is a trust surface",
+   "cluster": "ai",
+   "intent": "Multimodal input design: file/image/audio upload UX for AI features, format and size limits stated before the drop, preprocessing transparency, privacy prompts for images of people, and error states that name the actual constraint.",
+   "keywords": [
+    "multimodal",
+    "file upload",
+    "AI UX",
+    "privacy",
+    "images"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ai-persona-design-limits",
+   "title": "Designing AI personas without manufacturing trust",
+   "cluster": "ai",
+   "intent": "Should your AI have a face and a name? Persona design limits: when anthropomorphism helps comprehension vs when it manufactures trust, persona drift across model versions, pronoun policies, and the escalation moment where the persona must break character.",
+   "keywords": [
+    "AI persona",
+    "anthropomorphism",
+    "chatbot design",
+    "trust",
+    "brand voice"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "hallucination-containment-ux",
+   "title": "Hallucination containment is a design problem",
+   "cluster": "ai",
+   "intent": "Designing containment for hallucination: narrowing domains by contract, citation requirements per claim type, calibrated uncertainty language, the 'I can't verify that' pattern, red-team findings folded into constraints, and UX research on whether users notice caveats.",
+   "keywords": [
+    "hallucination",
+    "RAG",
+    "citations",
+    "calibration",
+    "trust"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "red-teaming-small-product-teams",
+   "title": "Red-teaming rituals for teams of five",
+   "cluster": "ai",
+   "intent": "Lightweight adversarial testing for small product teams: the weekly red-team hour, a shared jailbreak pantry, severity taxonomy for AI failures, responsible disclosure for your own product, and when to hire an actual red team.",
+   "keywords": [
+    "red teaming",
+    "prompt injection",
+    "security",
+    "QA",
+    "adversarial testing"
    ],
    "status": "planned",
    "added_by": "builder"
