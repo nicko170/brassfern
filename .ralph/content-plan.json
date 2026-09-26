@@ -2538,8 +2538,10 @@
    "cluster": "demos",
    "intent": "Mocked AI support assistant for fictional Pylon Health. Art direction: calm clinical — soft sage, warm white, trust-first. Features: chat interface with token-streaming style reveal (mocked from a scripted response bank with topic detection), citation chips with sources drawer, confidence + 'was this accurate?' feedback loop, escalation-to-human card, suggested prompts, conversation persistence. Demonstrates responsible-AI patterns: honest capability statement, no medical advice guardrails, redaction note. Fully client-side, deterministic mock.",
    "keywords": [],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "demo1",
+   "claimed_at": 1790385405.224395
   },
   {
    "kind": "article",
@@ -2984,10 +2986,11 @@
     "knowledge transfer",
     "runbooks"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer3",
    "worker": "writer3",
-   "claimed_at": 1790385162.370451
+   "claimed_at": 1790385162.370451,
+   "done_at": "2026-09-26T11:19:36"
   },
   {
    "kind": "article",
@@ -3964,10 +3967,11 @@
     "agency engagement start",
     "project onboarding checklist"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790385162.370452
+   "claimed_at": 1790385162.370452,
+   "done_at": "2026-09-26T11:19:36"
   },
   {
    "kind": "article",
@@ -3981,10 +3985,11 @@
     "shipping in public",
     "agency transparency"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790385162.370452
+   "claimed_at": 1790385162.370452,
+   "done_at": "2026-09-26T11:19:36"
   },
   {
    "kind": "article",
@@ -3998,10 +4003,11 @@
     "webpagetest guide",
     "site speed audit"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790385162.370452
+   "claimed_at": 1790385162.370452,
+   "done_at": "2026-09-26T11:19:36"
   },
   {
    "kind": "article",
