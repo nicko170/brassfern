@@ -6584,10 +6584,11 @@
     "critique facilitation",
     "design team rituals"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790405238.009866
+   "claimed_at": 1790405238.009866,
+   "done_at": "2026-09-26T16:55:40"
   },
   {
    "kind": "article",
@@ -6788,10 +6789,11 @@
     "firing your agency",
     "project transition"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790405283.8945138
+   "claimed_at": 1790405283.8945138,
+   "done_at": "2026-09-26T16:55:40"
   },
   {
    "kind": "article",
@@ -7137,8 +7139,10 @@
     "brand evolution",
     "identity update"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790405744.59657
   },
   {
    "kind": "article",
@@ -7152,8 +7156,10 @@
     "brand naming architecture",
     "naming governance"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790405744.596571
   },
   {
    "kind": "article",
@@ -7167,8 +7173,10 @@
     "apology copy",
     "tone of voice product"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790405744.596571
   },
   {
    "kind": "article",
@@ -7182,8 +7190,10 @@
     "font pairing guide",
     "typeface selection brand"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790405744.596571
   },
   {
    "kind": "article",
@@ -7383,8 +7393,10 @@
     "digital collections",
     "timeline UI"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "demo3",
+   "claimed_at": 1790405710.5904799
   },
   {
    "kind": "demo",
