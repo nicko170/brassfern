@@ -1,6 +1,6 @@
 ---
 title: "Personalisation vs privacy: drawing the line deliberately"
-description: "AI personalisation fails when legal draws the privacy line after the feature ships. On-device and anonymous patterns, explainable personalisation, and consent that means something."
+description: "Draw the personalisation privacy line before legal does: on-device and anonymous patterns, explainable personalisation, and consent UX that actually means something."
 slug: ai-personalisation-privacy-lines
 cluster: ai
 tags: [ai ux, privacy, personalisation, consent, responsible ai]

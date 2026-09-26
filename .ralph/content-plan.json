@@ -5082,8 +5082,10 @@
     "photo library",
     "shot list"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790386303.40984
   },
   {
    "kind": "article",
@@ -5097,8 +5099,10 @@
     "audio branding",
     "notification sounds"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790386303.4098408
   },
   {
    "kind": "article",
@@ -5112,8 +5116,10 @@
     "careers page",
     "studio culture"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790386303.409842
   },
   {
    "kind": "article",
@@ -5127,8 +5133,10 @@
     "brand naming",
     "linguistic screening"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790386303.409842
   },
   {
    "kind": "article",
