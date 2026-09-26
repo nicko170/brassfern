@@ -5179,10 +5179,11 @@
     "software supply chain",
     "license compliance"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790407511.9593852
+   "claimed_at": 1790407511.9593852,
+   "done_at": "2026-09-26T17:28:33"
   },
   {
    "kind": "article",
@@ -8256,10 +8257,11 @@
     "prompt versioning",
     "LLM governance"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790407055.635332
+   "claimed_at": 1790407055.635332,
+   "done_at": "2026-09-26T17:27:58"
   },
   {
    "kind": "article",
@@ -8274,10 +8276,11 @@
     "docs search AI",
     "findability design"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790407055.635332
+   "claimed_at": 1790407055.635332,
+   "done_at": "2026-09-26T17:28:06"
   },
   {
    "kind": "article",
