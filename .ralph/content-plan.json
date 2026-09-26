@@ -8341,10 +8341,11 @@
     "idempotency",
     "local-first engineering"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790407806.153274
+   "claimed_at": 1790407806.153274,
+   "done_at": "2026-09-26T18:42:48"
   },
   {
    "kind": "article",
@@ -8359,10 +8360,11 @@
     "technical blog engineering",
     "developer docs design"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790407806.1532748
+   "claimed_at": 1790407806.1532748,
+   "done_at": "2026-09-26T18:42:50"
   },
   {
    "kind": "article",
@@ -8377,10 +8379,11 @@
     "search performance",
     "content search"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790407806.153276
+   "claimed_at": 1790407806.153276,
+   "done_at": "2026-09-26T18:42:51"
   },
   {
    "kind": "article",
@@ -8395,10 +8398,11 @@
     "server-side testing",
     "CWV experiments"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790407806.153276
+   "claimed_at": 1790407806.153276,
+   "done_at": "2026-09-26T18:42:53"
   },
   {
    "kind": "article",
@@ -8763,10 +8767,11 @@
    "cluster": "demos",
    "intent": "A fitness habit tracker for fictional wellness client 'Trailswell' (bushwalking-yoga brand). Art direction: warm risograph print — dusty cream paper, single ink colour (burnt sienna) with sage accents, chunky rounded type, hand-stamped icons, visible misregistration texture. Features: add/edit/archive habits, daily check-in row, a GitHub-style streak heatmap (13 weeks, tap any cell for detail), per-habit 7-day ring chart, weekly review card with gentle honesty ('3 of 5 anchor days'), full keyboard support, data persisted to localStorage with export-as-JSON. Celebrations are calm: no confetti, a slow stamp animation that respects prefers-reduced-motion. Standalone at 375px. React + TypeScript, CSS custom properties, no chart lib (hand-rolled SVG). Must link caseStudy field once the Trailswell case study exists.",
    "keywords": [],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "demo3",
-   "claimed_at": 1790407285.598911
+   "claimed_at": 1790407285.598911,
+   "done_at": "2026-09-26T18:42:54"
   },
   {
    "kind": "demo",
@@ -8775,8 +8780,10 @@
    "cluster": "demos",
    "intent": "A scrollytelling data story for existing fictional client Meridian Climate ('2046: the heat map of one summer'). Art direction: newspaper-at-midnight — deep charcoal canvas rising to ash white as the story cools, editorial serif, thermal-spectrum accents (ember to ice blue) strictly for data. Features: scroll-driven narrative with sticky canvas visualisation of a fictional Sydney summer (neighbourhood-level heat anomaly grid that warms/cools with scroll position), SVG line chart that draws as the reader passes, pull-quotes, before/after slider comparing 1997 vs 2046 canopy cover, anchor TOC. All chart data is hard-coded fictional and flagged 'illustrative data'. Scroll progress must degrade to a static stepped article under prefers-reduced-motion (sections simply appear). No libraries beyond React; IntersectionObserver + rAF. Links to the Meridian Climate case study.",
    "keywords": [],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "demo1",
+   "claimed_at": 1790412125.915262
   },
   {
    "kind": "demo",
@@ -10557,6 +10564,346 @@
     "REST",
     "performance",
     "data fetching"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "podcast-growth-show-notes",
+   "title": "Podcast growth: show notes, transcripts and episode pages that rank",
+   "cluster": "growth",
+   "intent": "Turning a podcast into a search asset: per-episode pages with real titles (not ep. numbers), full transcripts, chapter markers, guest cross-linking, and the distribution loop that grows a show without paid promotion.",
+   "keywords": [
+    "podcast SEO",
+    "show notes",
+    "transcripts",
+    "audio content",
+    "episode pages",
+    "content distribution"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "gated-vs-ungated-content",
+   "title": "The gate question: what to charge an email address for",
+   "cluster": "growth",
+   "intent": "Gating decisions with real trade-off math: reach cost of a form, lead quality mythology, what formats earn a gate (tools, benchmarks, kits) and which never should, plus the hybrid 'ungated + optional save' pattern.",
+   "keywords": [
+    "gated content",
+    "lead generation",
+    "content strategy",
+    "email capture",
+    "conversion",
+    "B2B marketing"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "review-strategy-third-party-sites",
+   "title": "Reviews you earn: a third-party review strategy without the sleaze",
+   "cluster": "growth",
+   "intent": "Earning reviews on the platforms buyers actually check: timing the ask to delivered value, making it easy without scripting it, responding to negatives like a human, and feeding review language back into positioning.",
+   "keywords": [
+    "reviews",
+    "reputation",
+    "social proof",
+    "G2",
+    "customer feedback",
+    "positioning"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "help-centre-seo-deflection",
+   "title": "The help centre is a growth channel: SEO that deflects tickets",
+   "cluster": "growth",
+   "intent": "Support docs that rank for problem-aware queries and deflect support load simultaneously: article anatomy, search-within-help data as a roadmap, and the content ops that keep docs fresher than the product.",
+   "keywords": [
+    "help centre",
+    "knowledge base",
+    "support SEO",
+    "ticket deflection",
+    "documentation",
+    "content ops"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "founder-led-content-playbook",
+   "title": "Founder-led content when the founder has forty minutes a week",
+   "cluster": "growth",
+   "intent": "A realistic operating model for founder content: extracting raw material (calls, rants, decisions), a ghostwriting workflow that preserves voice, cadence math, and measuring what founder content actually produces.",
+   "keywords": [
+    "founder content",
+    "thought leadership",
+    "ghostwriting",
+    "personal brand",
+    "B2B marketing",
+    "content operations"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "pricing-communication-rollouts",
+   "title": "Announcing a price rise without a revolt",
+   "cluster": "growth",
+   "intent": "The comms playbook for price changes: grandfathering decisions, notice periods, the announcement email anatomy, sales/support briefs, churn math, and why the apology tone is the mistake.",
+   "keywords": [
+    "pricing",
+    "price increase",
+    "customer communication",
+    "churn",
+    "grandfathering",
+    "SaaS"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "free-tier-marketing-math",
+   "title": "Free tiers as marketing: the unit economics before the launch",
+   "cluster": "growth",
+   "intent": "Freemium as an acquisition channel: what free must cost you, conversion-rate honesty, support load modelling, the free-to-paid trigger design, and when a trial beats a tier.",
+   "keywords": [
+    "freemium",
+    "free tier",
+    "unit economics",
+    "conversion",
+    "product-led growth",
+    "pricing"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "directory-listings-strategy",
+   "title": "Directory and marketplace listings: an honest audit of where to be",
+   "cluster": "growth",
+   "intent": "Which listings actually send pipeline (app marketplaces, agency directories, review platforms), profile completeness as conversion surface, cost-per-listing math, and the quarterly prune.",
+   "keywords": [
+    "directories",
+    "marketplaces",
+    "listings",
+    "lead generation",
+    "agency marketing",
+    "partner channels"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "survey-research-as-content",
+   "title": "Original research as a growth asset: surveys that earn links",
+   "cluster": "growth",
+   "intent": "Running small-n original research that journalists and blogs cite: question design for quotable stats, sample honesty, the report-as-web-page format, and the outreach loop that earns the links.",
+   "keywords": [
+    "original research",
+    "data studies",
+    "digital PR",
+    "link earning",
+    "surveys",
+    "reports"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "brand-search-serp-management",
+   "title": "Own your brand SERP before someone else does",
+   "cluster": "growth",
+   "intent": "The branded search results page is your real homepage: sitelink hygiene, knowledge panel inputs, review-site presence, 'X vs' and 'X pricing' pages you should own yourself, and monitoring the ambient gossip.",
+   "keywords": [
+    "branded search",
+    "SERP",
+    "reputation",
+    "knowledge panel",
+    "brand terms",
+    "SEO"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "abm-for-small-studios",
+   "title": "Account-based marketing for a 10-person studio",
+   "cluster": "growth",
+   "intent": "ABM without enterprise software: a 30-account dream list, signal watching, genuinely personalised outreach built on public work, and the discipline of six-month horizons.",
+   "keywords": [
+    "ABM",
+    "account-based marketing",
+    "B2B sales",
+    "agency growth",
+    "outreach",
+    "pipeline"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "integration-marketplace-listings",
+   "title": "Growth via other people's platforms: integration listings that convert",
+   "cluster": "growth",
+   "intent": "Shopify/Slack/Notion-style marketplaces as acquisition: listing page anatomy, screenshot craft, review flywheels inside the marketplace, and measuring install-to-activation from channel.",
+   "keywords": [
+    "integrations",
+    "app marketplace",
+    "platform growth",
+    "channel marketing",
+    "SaaS",
+    "activation"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "newsletter-sponsorship-roi",
+   "title": "Buying newsletter sponsorships without burning the budget",
+   "cluster": "growth",
+   "intent": "Newsletter ads for B2B: selecting by audience not reach, creative that matches the host's voice, trackable offers, CPM-to-pipeline math, and the three-placement test before scaling.",
+   "keywords": [
+    "newsletter ads",
+    "sponsorships",
+    "paid acquisition",
+    "B2B media",
+    "attribution",
+    "creative"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "webinar-funnel-design",
+   "title": "The webinar funnel: registration to revenue, honestly",
+   "cluster": "growth",
+   "intent": "Webinars as pipeline, not theatre: topic selection by sales conversations, registration-page conversion, attendance-rate math, live format design, and the follow-up sequence that doubles the value.",
+   "keywords": [
+    "webinars",
+    "events",
+    "demand generation",
+    "registration pages",
+    "B2B marketing",
+    "follow-up sequences"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "b2b-portal-quick-order",
+   "title": "B2B portals buyers love: quick order, CSV upload and reordering",
+   "cluster": "ecommerce",
+   "intent": "Wholesale portals are won in the reorder flow: quick-order pads keyed on SKUs, CSV upload with forgiving validation, standing orders, account pricing and sales-rep handoff. What we built into a B2B supply concept and why the catalogue is the least important screen.",
+   "keywords": [
+    "B2B commerce",
+    "quick order",
+    "wholesale",
+    "CSV upload",
+    "reorder",
+    "account pricing"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "address-autocomplete-checkout",
+   "title": "Address autocomplete done right (and the Australian edge cases)",
+   "cluster": "ecommerce",
+   "intent": "Address lookup UX that actually speeds checkout: provider choice, keyboard-first selection, manual-entry escape hatches, unit/level handling, rural addressing and PO boxes, and how failure states must never block the order.",
+   "keywords": [
+    "address autocomplete",
+    "checkout",
+    "forms",
+    "Australia",
+    "validation",
+    "conversion"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "shipping-rates-honesty",
+   "title": "Shipping cost honesty: the conversion case for early disclosure",
+   "cluster": "ecommerce",
+   "intent": "Nobody has ever been delighted by a shipping fee revealed at step four. Strategies: threshold progress bars, PDP-level estimates, postcode lookup, honest delivery windows across AU distances, and what to do when your rates are genuinely uncompetitive.",
+   "keywords": [
+    "shipping",
+    "checkout friction",
+    "conversion",
+    "delivery estimates",
+    "ecommerce UX",
+    "transparency"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "post-purchase-cross-sell",
+   "title": "The thank-you page is a shelf: post-purchase cross-sell without ick",
+   "cluster": "ecommerce",
+   "intent": "Post-purchase merchandising that respects the moment: what to offer (refills, accessories, care), one-click mechanics and their ethics, order-status integration, and measuring against repeat rate not just attach rate.",
+   "keywords": [
+    "cross-sell",
+    "post-purchase",
+    "thank you page",
+    "repeat purchase",
+    "merchandising",
+    "LTV"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "order-tracking-pages-design",
+   "title": "Order tracking pages: the most-visited page nobody designs",
+   "cluster": "ecommerce",
+   "intent": "Self-serve tracking replaces 'where's my order' tickets: status timeline design, carrier-map honesty, proactive delay messaging, and why the branded tracking page beats the carrier handoff every time.",
+   "keywords": [
+    "order tracking",
+    "post-purchase",
+    "support deflection",
+    "status design",
+    "ecommerce UX",
+    "notifications"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "size-and-fit-guides",
+   "title": "Size and fit guides that reduce returns instead of decorating PDPs",
+   "cluster": "ecommerce",
+   "intent": "Fit confidence engineering: measurement guidance with diagrams, between-sizes advice, fit feedback loops from returns data, model-size transparency, and the honest copy that makes 'runs small' convert better than silence.",
+   "keywords": [
+    "size guides",
+    "fit",
+    "returns",
+    "apparel ecommerce",
+    "PDP",
+    "conversion"
    ],
    "status": "planned",
    "added_by": "builder"
