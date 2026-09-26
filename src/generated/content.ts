@@ -5773,6 +5773,29 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 9
   },
   {
+    "title": "First-party data without the surveillance",
+    "description": "First-party data foundations for the cookieless era: consent-mode analytics, an honest take on server-side tagging, what to stop measuring, and labelling estimates.",
+    "slug": "first-party-data-foundations",
+    "cluster": "growth",
+    "tags": [
+      "analytics",
+      "privacy",
+      "measurement",
+      "first-party data",
+      "consent"
+    ],
+    "date": "2026-08-27",
+    "author": "Sam Whitfield",
+    "keywords": [
+      "first-party data",
+      "cookieless analytics",
+      "server-side tagging",
+      "privacy measurement",
+      "analytics strategy"
+    ],
+    "readingTime": 9
+  },
+  {
     "title": "Founder-led content when the founder has forty minutes a week",
     "description": "A realistic operating model for founder content: capturing raw material in minutes, ghostwriting that keeps the voice, cadence math, and honest measurement.",
     "slug": "founder-led-content-playbook",
@@ -5792,6 +5815,29 @@ export const articleIndex: ArticleMeta[] = [
       "founder brand",
       "B2B thought leadership",
       "content cadence"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "Free tiers as marketing: the unit economics before the launch",
+    "description": "Freemium is an acquisition channel, not a pricing page row. The unit economics to run before launch: real costs, honest conversion, and the trial alternative.",
+    "slug": "free-tier-marketing-math",
+    "cluster": "growth",
+    "tags": [
+      "freemium",
+      "free tier",
+      "unit economics",
+      "conversion",
+      "product-led growth"
+    ],
+    "date": "2026-09-09",
+    "author": "Priya Nair",
+    "keywords": [
+      "freemium unit economics",
+      "free tier strategy",
+      "free to paid conversion",
+      "product-led growth pricing",
+      "trial vs freemium"
     ],
     "readingTime": 10
   },
@@ -5907,7 +5953,9 @@ export const articleIndex: ArticleMeta[] = [
       "conversion audit",
       "marketing page review"
     ],
-    "readingTime": 9
+    "readingTime": 9,
+    "heroImage": "/images/articles/growth/heuristic-evaluation-marketing-sites.jpg",
+    "heroAlt": "Editorial flat-lay illustration of printed website wireframe cards being scored with fern-ink checkmarks and a brass ruler, beside a rubric scorecard on warm paper"
   },
   {
     "title": "Calculators and checkers: interactive tools as content",
@@ -6277,6 +6325,29 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 9
   },
   {
+    "title": "One piece, many surfaces: respectful repurposing",
+    "description": "A flagship article shouldn't die on publication day. Here's the atomisation system that turns one piece into a quarter of content — without going stale.",
+    "slug": "one-piece-many-surfaces",
+    "cluster": "growth",
+    "tags": [
+      "content repurposing",
+      "editorial",
+      "content operations",
+      "distribution",
+      "content strategy"
+    ],
+    "date": "2026-08-14",
+    "author": "Leonie Marsh",
+    "keywords": [
+      "content repurposing",
+      "editorial distribution",
+      "content atomisation",
+      "newsletter content",
+      "content operations"
+    ],
+    "readingTime": 9
+  },
+  {
     "title": "Paid vs organic: an honest budget conversation",
     "description": "Paid buys speed, organic builds equity. The CAC sanity math, payback windows, and creative-testing handoffs that decide where your next marketing dollar belongs.",
     "slug": "paid-organic-balance",
@@ -6319,6 +6390,29 @@ export const articleIndex: ArticleMeta[] = [
       "podcast show notes best practice",
       "podcast transcripts",
       "growing a podcast without paid promotion"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "Announcing a price rise without a revolt",
+    "description": "The comms playbook for raising prices: grandfathering calls, notice periods, the announcement email anatomy, and why the apology tone is the mistake.",
+    "slug": "pricing-communication-rollouts",
+    "cluster": "growth",
+    "tags": [
+      "pricing",
+      "price increase",
+      "customer communication",
+      "churn",
+      "SaaS"
+    ],
+    "date": "2026-09-01",
+    "author": "Sam Whitfield",
+    "keywords": [
+      "price increase announcement",
+      "pricing communication",
+      "grandfathering customers",
+      "SaaS pricing change",
+      "churn management"
     ],
     "readingTime": 10
   },
@@ -6456,6 +6550,30 @@ export const articleIndex: ArticleMeta[] = [
       "content decay",
       "seo content audit",
       "updating old blog posts"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Reviews you earn: a third-party review strategy without the sleaze",
+    "description": "Earning reviews where buyers actually look: timing the ask to delivered value, easy-but-unscripted asks, responding to negatives, and feeding it to positioning.",
+    "slug": "review-strategy-third-party-sites",
+    "cluster": "growth",
+    "tags": [
+      "reviews",
+      "social proof",
+      "reputation",
+      "CRO",
+      "customer feedback",
+      "positioning"
+    ],
+    "date": "2026-03-12",
+    "author": "Sam Whitfield",
+    "keywords": [
+      "third-party review strategy",
+      "earning customer reviews",
+      "review platform SEO",
+      "responding to negative reviews",
+      "social proof B2B"
     ],
     "readingTime": 9
   },
@@ -7547,6 +7665,29 @@ export const articleIndex: ArticleMeta[] = [
     "heroAlt": "Editorial still-life of printed accessibility audit sheets with annotations, a brass ruler and a screen reader handset on cream paper, fern-green and brass palette."
   },
   {
+    "title": "Overlay widgets won't make you accessible",
+    "description": "Accessibility overlay widgets promise WCAG compliance for a monthly fee. The promise fails on inspection — here's what overlays can't fix, and where the money should go instead.",
+    "slug": "accessibility-overlays-fail",
+    "cluster": "product",
+    "tags": [
+      "accessibility",
+      "WCAG",
+      "product strategy",
+      "audits",
+      "procurement"
+    ],
+    "date": "2025-09-17",
+    "author": "Felix Brandt",
+    "keywords": [
+      "accessibility overlays critique",
+      "overlay widgets fail",
+      "WCAG product strategy",
+      "accessibility investment",
+      "accessibility vendor audit"
+    ],
+    "readingTime": 10
+  },
+  {
     "title": "Activation metrics that mean something",
     "description": "Most activation metrics are flattering fictions. Find the behaviour that predicts retention, measure time-to-value honestly, defend it in the boardroom.",
     "slug": "activation-metrics-honest",
@@ -7867,6 +8008,29 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 8
   },
   {
+    "title": "Designing the embed: widgets that travel",
+    "description": "Embeddable widgets are product features that live on hostile surfaces. Design for iframes, performance budgets, honest attribution and the sandbox preview that sells the embed.",
+    "slug": "embeddable-widget-ux",
+    "cluster": "product",
+    "tags": [
+      "embeds",
+      "widgets",
+      "attribution",
+      "performance",
+      "product design"
+    ],
+    "date": "2026-07-14",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "embeddable widget ux",
+      "embed design",
+      "widget attribution",
+      "third-party embeds",
+      "product share surfaces"
+    ],
+    "readingTime": 8
+  },
+  {
     "title": "Empty states are product marketing",
     "description": "First-run, cleared, error and no-results states teach or lose people. Copy frameworks, illustration restraint, and measuring empty states as funnel steps.",
     "slug": "empty-states-design",
@@ -7954,6 +8118,29 @@ export const articleIndex: ArticleMeta[] = [
       "mobile app scoping",
       "cross-device ux",
       "desktop only features"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Filters, facets and sorts that hold up",
+    "description": "Faceted filtering is where product UX goes to quietly die. Per-facet counts, honest applied-state chips, URL-synced views and zero-results recovery that works.",
+    "slug": "filter-sort-ux",
+    "cluster": "product",
+    "tags": [
+      "filters",
+      "interaction design",
+      "UX",
+      "product design",
+      "search"
+    ],
+    "date": "2026-03-12",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "faceted filter ux",
+      "filter chips",
+      "zero results recovery",
+      "sort persistence",
+      "url state filters"
     ],
     "readingTime": 9
   },
@@ -8095,6 +8282,29 @@ export const articleIndex: ArticleMeta[] = [
       "product discovery technique"
     ],
     "readingTime": 9
+  },
+  {
+    "title": "Keyboard shortcuts: design the map before the chords",
+    "description": "Most shortcut systems are accumulated accidents. How to design a keyboard map deliberately: audit first, resolve conflicts, make chords discoverable, and keep the legend honest forever.",
+    "slug": "keyboard-shortcuts-product-design",
+    "cluster": "product",
+    "tags": [
+      "keyboard shortcuts",
+      "power users",
+      "command palette",
+      "accessibility",
+      "interaction design"
+    ],
+    "date": "2025-08-06",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "keyboard shortcuts ux",
+      "shortcut map design",
+      "command palette discoverability",
+      "power user features",
+      "keyboard accessibility"
+    ],
+    "readingTime": 10
   },
   {
     "title": "Wizards that don't feel like tax forms",
@@ -12058,4 +12268,4 @@ export const caseIndex: CaseStudyMeta[] = [
   }
 ]
 
-export const workImages: string[] = ["arkwright-supply-b2b-commerce","arlo-and-sons-tradies-marketplace","brightline-solar-quote-engine","brightline-solar-quoter","brightmarsh-course-finder","brightmarsh-onboarding","brumby-air-regional-booking","copperline-community-bank","copperline-mobile-bank","copperplate-design-system","fern-and-forage-florist","fernleigh-cellar-club","fernleigh-wines-dtc-storefront","glade-ingredient-explorer","glade-skincare-ingredient-honesty","glasshouse-seat-map","harbourlight-donation-platform","harvest-loop-food-rescue","hearthbrew-brand-system","hearthbrew-subscription-club","holloway-player","holloway-records-label-site","holloway-waveform-player","ironbark-trade-portal","keepsake-letterpress-configurator","kite-and-anchor-insurtech","kowa-health-clinics-platform","larklight-saas-marketing-site","ledgerline-pricing-calculator","meridian-climate-data-explorer","northwind-ledger-budget","northwind-ledger-dashboard-rebuild","osprey-outdoor-configurator-launch","pinch-and-sprig-bakery-website","postcards-archive-explorer","postcards-museum-archive","pylon-care-assistant","pylon-health-booking","pylon-health-telehealth-flow","quarry-property-map","signal-and-noise-podcast-network","signal-noise-studio","summit-and-still-yoga","sundial-itinerary-builder","sundial-travel-booking","switchyard-kanban","switchyard-rail-ops-kanban","tallow-and-co-providore","tallow-feast-builder","tallow-seat-map","tidal-games-store","trailswell-habit-tracker","verdigris-archive-digital-collection","wattle-and-daub-reservations","wattle-and-daub-reserve","willow-and-wren-bookshop"]
+export const workImages: string[] = ["arkwright-supply-b2b-commerce","arlo-and-sons-tradies-marketplace","brightline-solar-quote-engine","brightline-solar-quoter","brightmarsh-course-finder","brightmarsh-onboarding","brumby-air-regional-booking","copperline-community-bank","copperline-mobile-bank","copperplate-design-system","copperplate-ds-docs","fern-and-forage-florist","fernleigh-cellar-club","fernleigh-wines-dtc-storefront","glade-ingredient-explorer","glade-skincare-ingredient-honesty","glasshouse-seat-map","harbourlight-donation-platform","harvest-loop-food-rescue","hearthbrew-brand-system","hearthbrew-subscription-club","holloway-player","holloway-records-label-site","holloway-waveform-player","ironbark-trade-portal","keepsake-letterpress-configurator","kite-and-anchor-insurtech","kowa-health-clinics-platform","larklight-saas-marketing-site","ledgerline-pricing-calculator","meridian-climate-data-explorer","northwind-ledger-budget","northwind-ledger-dashboard-rebuild","osprey-outdoor-configurator-launch","pinch-and-sprig-bakery-website","postcards-archive-explorer","postcards-museum-archive","pylon-care-assistant","pylon-health-booking","pylon-health-telehealth-flow","quarry-property-map","signal-and-noise-podcast-network","signal-noise-studio","summit-and-still-yoga","sundial-itinerary-builder","sundial-travel-booking","switchyard-kanban","switchyard-rail-ops-kanban","tallow-and-co-providore","tallow-feast-builder","tallow-seat-map","tidal-games-store","trailswell-habit-tracker","verdigris-archive-digital-collection","wattle-and-daub-reservations","wattle-and-daub-reserve","willow-and-wren-bookshop"]

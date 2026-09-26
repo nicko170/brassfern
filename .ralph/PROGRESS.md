@@ -1,5 +1,59 @@
 # Progress
 
+## Done (iteration 14 — builder: Lab cards get real shots, backlog restock +56, dupe flags)
+
+- **`demoShot()` in `src/lib/demos.ts`** — Set-backed lookup against the
+  generated `workImages` manifest returning `/images/work/<slug>.jpg` when a
+  shot for the demo slug exists. `DemoCard` (src/components/Cards.tsx) now
+  renders the real shot (reusing the existing `.card__media img` CSS — no new
+  styles needed) and falls back to the CSS initial tile. 20 of 26 ready demos
+  instantly gained photography on /lab; the remaining six either lack a
+  slug-matching shot (brightmarsh-onboarding-flow, hearthbrew-identity-lab,
+  hearthbrew-store, meridian-climate-explorer, osprey-pack-configurator —
+  shots exist under the *case-study* slug) or are bench metas.
+- **Backlog restocked +56** (planned 118 → 174): growth ×10, playbooks ×9,
+  web-design ×8, engineering ×6, ai ×6, brand ×6, product ×5, ecommerce ×4 —
+  every slug grep-checked against the 495 published slugs to dodge the
+  journal's increasingly dense territory. **Demos +2**, both pre-wired to
+  published case studies (zero dangling refs): summit-and-still-class-booking
+  → summit-and-still-yoga; arlo-and-sons-quote-flow →
+  arlo-and-sons-tradies-marketplace. Bench now 5 planned (3 meta-only in
+  flight + these).
+- **Near-dupe flags for writers** (found while restocking — treat the second
+  as either a clearly different angle or skip): planned
+  ecommerce/address-autocomplete-checkout ≈ published
+  checkout-address-autocomplete; planned web-design/accessibility-overlays-
+  why-not ≈ planned product/accessibility-overlays-fail; planned brand
+  wordmark-vs-symbol ≈ wordmark-vs-symbol-decision; planned engineering
+  api-pagination-ui-shadows ≈ api-pagination-design; planned engineering
+  email-html-engineering ≈ published html-email-2026. Already-published dupe
+  pairs worth a future merge/redirect pass: editorial-grids-on-the-web vs
+  editorial-grids-web; footer-design-craft vs footer-design-matters;
+  co-branding-partnership-rules vs co-branding-without-mush;
+  seo-safe-site-migrations vs site-migration-seo; focus-states-design vs
+  focus-visible-beautiful; returns-as-product-feature vs returns-as-retention
+  vs returns-ux-design; settings-design ×3.
+- **Typecheck clean.** Full build not re-run this iteration (time box) —
+  last green build was iteration 13 (1,672 routes); the only shipped change
+  is DemoCard imagery, verified by tsc.
+
+## Started, not finished (next builder iteration — pick these up first)
+
+1. Extend `demoShot()` imagery to the remaining surfaces: `LabFeature`
+   (src/pages/Lab.tsx — consider exporting it and reusing in Home.tsx, whose
+   lab band duplicates the markup), the Home lab band, and `.demo-strip__art`
+   thumbnails on WorkCase (add `overflow:hidden` + `img{cover}` CSS).
+2. Generate 4 paper-craft case-study heroes (beacon-health-ai-triage,
+   marlowe-hotels-direct-booking-relaunch, saltbush-collective-marketplace,
+   quill-legal-document-platform) and wire heroImage/heroAlt; 11 studies
+   still lack heroes — the full list in iteration 13 notes below.
+3. Trim the 5 over-160-char descriptions (gift-cards-product-thinking,
+   subscription-skip-pause-ux, findable-by-ctrl-f, map-design-restraint,
+   video-heroes-cost-benefit).
+4. Optionally: alias shots for demos whose image uses the case-study slug
+   (e.g. brightmarsh-onboarding.jpg ↔ brightmarsh-onboarding-flow) either by
+   renaming files to match demo slugs or a small alias map in demoShot().
+
 ## Done (iteration 13 — builder: demo⇄case-study auto-wiring, 5 heroes, link/audit hygiene, ledgerline backlog)
 
 - **Demo strips are now auto-wired.** `demosForCase()` in `src/lib/demos.ts`
@@ -1515,3 +1569,31 @@ Completed 4 ecommerce articles (claimed batch), all finished clean on first fini
 - ecommerce/gift-cards-product-thinking (Aiko Tanaka, 2025-11-03) — gift cards as products with three users (buyer/recipient/support): occasion-first purchase, balance check sans login wall, partial redemption both directions, per-market expiry honesty, fraud friction vs conversion, service-recovery superpower, build checklist.
 - ecommerce/mobile-checkout-field-by-field (Nate Sullivan, 2026-06-30) — field-by-field mobile teardown: inputmode/autocomplete keyboard contract, one name field, address lookup + instant manual escape, unit-above-street, wallets before card form, fat-finger error physics, field-level analytics instrumentation.
 - ecommerce/subscription-skip-pause-ux (Priya Nair, 2026-08-18) — skip as equal-sized humanity button (one tap, obvious scope), dated pause with designed reactivation, one calibrated save offer max, 60-day save honesty, 'none of your business' exit-survey option, cancelled cohort as winback list.
+
+## writer2 — iteration 28 (2026-09-26)
+Completed 4 growth articles (claimed batch), each passed finish_article clean on first call. All links audited to real routes; 4–6 internal links apiece.
+- growth/conversion-copy-first-testing (Sam Whitfield, 2026-05-19) — copy-first experimentation: message tests beat chrome tests (effect size, generalisable learnings), plain-page lab protocol (strip stage, proposition-not-phrasing variants, cold traffic, committed-step metric), small-sample honesty (swing harder, sequence, buy sample, know when it's really qualitative), button-colour queues as no-messaging-hypothesis symptom.
+- growth/podcast-growth-show-notes (Leonie Marsh, 2026-06-11) — episode pages as search assets: real titles not ep. numbers, article-grade show notes, cleaned full transcripts, descriptive chapters, PodcastEpisode schema; guest flywheel kits + rebook hubs; publish→clips→newsletter→syndicate→interlink loop. Links the Signal & Noise case study + lab demo.
+- growth/gated-vs-ungated-content (Priya Nair, 2026-04-02) — gating as pricing with hidden reach cost; lead-quality myth (forms filter for form tolerance); format-by-format verdict table; hybrid ungated+optional-save default; de-gating playbook (triage, republish to HTML, redirects, one honest form).
+- growth/review-strategy-third-party-sites (Sam Whitfield, 2026-03-12) — platform map/concentrate first; trigger-based asks at value moments (milestones, compliments, renewals) over blasts; easy-never-scripted, no sentiment gating; negatives as buyer audition (5-step response discipline); quarterly review mining feeding positioning/comparison pages.
+
+## writer4 — iteration 26 (2026-09-26)
+Completed 4 growth articles (claimed batch), all passed finish_article on first call; link audit 0 broken; 4–6 internal links each, distinct from the existing heuristic-cro-audits / local-pages pieces (cross-linked deliberately).
+- growth/heuristic-evaluation-marketing-sites (Sam Whitfield, 2026-03-12) — 90-minute rubric review for marketing sites: 4 lenses × 5 0–2 statements (clarity/proof/friction/trust), minute-by-minute 3-reviewer protocol, debrief by score variance, impact/effort triage, pattern diagnosis (evidence-free / friction-heavy / committee-flat), quarterly rhythm. Hero generated: public/images/articles/growth/heuristic-evaluation-marketing-sites.jpg (scored wireframe cards flat-lay), heroImage/heroAlt set.
+- growth/multi-location-seo-studios (Priya Nair, 2026-05-20) — real locations vs postcodes; substances checklist for city pages (named people, local work, LocalBusiness schema, regional POV); GBP operating rhythm (review cadence, NAP canon, centralised ownership); assist-metric measurement trap; honest ceiling — rank elsewhere via industry pages + regional PR, not doorway costumes.
+- growth/content-portfolio-quarterly-review (Leonie Marsh, 2026-07-08) — quarterly portfolio ritual: frozen metric definitions (GSC clicks, engaged reads, 180d assists, links), winners/flatliners/sleepers/dead-weight buckets, one decision per piece (prune/refresh/expand), position-vs-CTR and within-cluster benchmarks, cohort reporting to fund the next cycle.
+- growth/first-party-data-foundations (Sam Whitfield, 2026-08-27) — measurement contract first (behaviour not identity, consent as state machine, labelled numbers); consent-mode honestly; server-side tagging reality check (control upgrade, not consent bypass; only if you can staff it); given-not-taken data (preferences, VoC language, on-site search); delete list; measured/modelled/estimated labels on every chart.
+
+## demo2 — iteration 10 (2026-09-26)
+Built demo **copperplate-ds-docs** — "Copperplate DS: living design-system docs" for fictional client Copperplate (observability tooling), matching case study `work/copperplate-design-system`. Passed finish_demo clean on first call; showcase image at public/images/work/copperplate-ds-docs.jpg (bone-paper still life, copper letterpress plate + laptop with abstract swatch UI).
+- Art direction: typefounder's specimen book — warm bone paper (#f2ead8), etched copper (#a85b28), verdigris/clay semantics, Iowan/Palatino serif display + humanist sans + mono folios (§ 3.1), hairline rules, big "Aa¶" hero glyph. Fully scoped under .cpd; day/night plates via [data-theme].
+- Structure: sticky serif-branded rail (4 sections × 14 plates) collapsing to an optgroup select in a sticky mobile bar under 940px; combobox search with listbox arrow-key nav across all plates; hash-synced navigation with h1 focus management; theme toggle persisted per session only (deliberate).
+- Token playground: 6 colour fields (picker + validated hex input), space/radius sliders, body-size slider + musical-ratio scale select; an 8-cell proof sheet of the REAL kit components re-rendering from --t-* vars; Copy-as-CSS exports a commented :root block (clipboard + execCommand fallback); reset. Token reference page shows live overrides, drawn-to-scale space bars and radius squares.
+- The kit (kit.tsx) is a working mini DS: buttons (4 variants), field/input/select/checkbox with error contract, alerts (4 tones, live-region roles, dismissible), badges, cards (interactive = single button surface, phrasing-only children), tabs with full roving-tabindex arrow/Home/End keyboard contract.
+- Doc furniture: per-page a11y callouts, hairline legal-pairings table with computed WCAG ratios (AAA/AA grades), type scale specimen, searchable 24-glyph hand-cut SVG icon library (click-to-copy names), syntax-tinted code blocks with copy buttons, do/don't plates (verdigris ✓ / clay ✕) including per-component pairs and a patterns gallery, "which component when" decision table.
+- Empty states, reduced-motion zeroing, 375px→1440px responsive, colour-mix theming. Fictional-client honesty footer; no router imports.
+
+## demo2 — iteration 11 (2026-09-26) — IN FLIGHT, demo left on the bench
+Claimed demo **assembly-room-ticketing** ("Assembly Room — accessible seat map & checkout", chamber-music series; caseStudy slug `assembly-room-ticketing`, writer-side study still needed). Ran out of iteration time partway — meta.ts exists so it renders as "on the bench" ("Assembly Room — an accessible box office, step by step"). Continue it next visit:
+- DONE: `data.ts` (386-seat horseshoe hall geometry on a 1000×770 viewBox — 12×15 stall arcs with aisles + 2 wheelchair spaces in row L, 5×11 dress-circle rows wrapping each side wall beside the stage, 4×24 gallery rows; tier map a/b/gallery with show price multipliers incl. concession ×0.7 (banker's-nearest-50c) & companion $0; seeded soldFor with pair-sell clustering and per-row caps; arc-band + rounded-rect zone paths, stage path, centroids), `Plan.tsx` (overview zones with role=button zoom + zoomed SectionPlan: roving tabindex, arrow-walk with nearest-x row crossing, Enter toggles, Esc backs out, seat readout strip), `Picker.tsx` (select-driven section→row→checkbox list path sharing the same cart), `QrMark.tsx` (deterministic 21×21 finder-square mark from a seed string via mulberry hash).
+- STILL NEEDED: `index.tsx` (5-step flow — programme radiogroup cards → seats with plan/list toggle → per-seat ticket types with one-companion-one-paid validation → details form with validation → QR confirmation sheet; 10:00 hold timer with release + announce; localStorage cart persist under e.g. `assembly-room-cart-v1`, guard window for SSR; bought-seats overlay merged into sold) and `demo.css`. Art direction decided: concert-hall dusk as a *printed program* — cream paper (#f4ecda card, dusk-warm page), deep wine ink (#3d1524 / #5a2140), gold leaf accents (#b3893a/#e6cd94), Palatino/Book Antiqua serif display + mono prices; tier fills ~a:#7d2246 b:#a97f2b gallery:#5f7a8a, sold hollow #b9ac92. Deliberately light-page to differentiate from glasshouse-seat-map's velvet dark. Scope CSS under `.asr`. Plan.tsx/Picker.tsx already import classes like asr-plan/asr-zone/asr-seat/asr-picker as spec'd — match those names when writing demo.css.

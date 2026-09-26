@@ -1,4 +1,5 @@
 import { lazy, type ComponentType, type LazyExoticComponent } from 'react'
+import { workImages } from '../generated/content'
 
 export interface DemoMeta {
   title: string
@@ -39,6 +40,16 @@ export const demos: DemoEntry[] = Object.entries(metaModules)
 
 export function getDemo(slug: string): DemoEntry | undefined {
   return demos.find((d) => d.slug === slug)
+}
+
+const demoShots = new Set(workImages)
+
+/**
+ * Real shot for a demo card when one exists in public/images/work/
+ * (named after the demo slug). Falls back to undefined → CSS tile.
+ */
+export function demoShot(slug: string): string | undefined {
+  return demoShots.has(slug) ? `/images/work/${slug}.jpg` : undefined
 }
 
 /** A demo is "ready" once its index.tsx exists (in-flight metas are "on the bench"). */

@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { formatDate } from '../lib/content'
 import { withBase } from '../lib/base'
 import { CLUSTER_LABELS, type ArticleMeta, type CaseStudyMeta, type Cluster } from '../lib/types'
-import type { DemoEntry } from '../lib/demos'
+import { demoShot, type DemoEntry } from '../lib/demos'
 
 /**
  * Until a case study has generated hero art, its card shows a distinctive
@@ -110,16 +110,21 @@ export function ArticleFeature({ a, label = 'The lead' }: { a: ArticleMeta; labe
 
 export function DemoCard({ d }: { d: DemoEntry }) {
   const theme = themeFor(d.slug)
+  const shot = demoShot(d.slug)
   return (
     <Link to={`/lab/${d.slug}`} className="card">
       <div className="card__media">
-        <div
-          className="card__hover-art"
-          style={{ background: `linear-gradient(135deg, ${theme.bg}, #182116)`, color: theme.fg }}
-          aria-hidden="true"
-        >
-          {initials(d.client)}
-        </div>
+        {shot ? (
+          <img src={withBase(shot)} alt="" loading="lazy" />
+        ) : (
+          <div
+            className="card__hover-art"
+            style={{ background: `linear-gradient(135deg, ${theme.bg}, #182116)`, color: theme.fg }}
+            aria-hidden="true"
+          >
+            {initials(d.client)}
+          </div>
+        )}
       </div>
       <span className="card__index">{d.client}</span>
       <h3>{d.title}</h3>

@@ -182,6 +182,11 @@ Brassfern look into a demo.
   tags to lowercase with uppercased acronyms (`TAG_ACRONYMS` map) and
   "saas"→"SaaS"; TagPage redirects mis-cased URLs to canonical. One page per
   tag, chips/search/related all consistent.
+- **Demo shots** (iter 14): `demoShot(slug)` in `src/lib/demos.ts` maps a demo
+  to its real image (`/images/work/<demo-slug>.jpg`, Set-backed from the
+  generated `workImages` manifest) — `DemoCard` renders it, falling back to
+  the CSS initial tile. Name showcase shots after the *demo* slug so lab
+  cards pick them up automatically.
 - **Demo ⇄ case-study auto-wiring** (iter 13): `demosForCase(slug)` in
   `src/lib/demos.ts` — any ready demo whose meta.ts names a case study via
   `caseStudy` automatically gets a `.demo-strip` on that study (`.demo-strips`
