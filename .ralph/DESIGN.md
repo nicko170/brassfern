@@ -167,6 +167,21 @@ Brassfern look into a demo.
   structured fields in `src/data/jobs.ts`; the band is also visible on the
   job page fact-list and the careers index rows — the ethos is published
   bands on every role.
+- **Press kit** (iter 11, `/press`): `.boilerplate` wells (paper-2, word-count
+  mono label, CopyButton with aria-live state), `.press-row` announcement
+  rows (mono date / display title / optional mono link), `.asset-grid` of
+  `.asset-card`s (3:2 preview wells, `--night` variant, mono "SVG ↓"
+  download links to `public/press/*.svg` — marks/wordmarks derived from
+  FernMark geometry, wordmark text in Georgia so the SVGs render anywhere),
+  `.check-list` / `.check-list--no` do-and-don't lists (fern ✓ / clay ✕).
+- **Industry signals** (iter 11): `Industry` gains `services[]` (chips row
+  "What we do here") and `signals[]` (canonical journal tags); IndustryPage
+  renders "From the journal" — articles scored by signal-tag intersection,
+  date tiebreak, top 3 — hiding itself when empty.
+- **Tag canonicalisation** (iter 11): `build-content-index.mjs` normalises
+  tags to lowercase with uppercased acronyms (`TAG_ACRONYMS` map) and
+  "saas"→"SaaS"; TagPage redirects mis-cased URLs to canonical. One page per
+  tag, chips/search/related all consistent.
 
 ## Content authoring rules (enforced by build-content-index.mjs)
 
@@ -175,6 +190,9 @@ Brassfern look into a demo.
   anything else fails the build.
 - `description` 120–160 chars warned at 110/170 bounds. Journal 1,100+ words,
   case studies 900+ words.
+- Tag casing is forgiving: the index builder canonicalises (lowercase +
+  acronym map). Still, prefer lowercase with acronyms ("SEO", "UX", "SaaS")
+  so frontmatter reads clean.
 
 ## CSS conventions
 

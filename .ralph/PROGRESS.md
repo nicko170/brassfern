@@ -1,5 +1,44 @@
 # Progress
 
+## Done (iteration 11 — builder: tag canonicalisation, full press kit, industry journal signals, demo backlog, 2 heroes)
+
+- **Tag canonicalisation pipeline** — `build-content-index.mjs` now normalises
+  every tag (lowercase + `TAG_ACRONYMS` map: SEO, UX, AI, RAG, WCAG, CMS, CRO…
+  and "saas" → "SaaS"). 354 case fixes in one pass; duplicate prerendered tag
+  pages (`/journal/tag/UX` vs `/journal/tag/ux`) collapse to canonical URLs
+  (1,511 routes, was 1,523). `TagPage` redirects mis-cased URLs client-side
+  (`<Navigate replace>`) to the canonical casing. Chips, `byTag`, related
+  scoring and search all share the canonical vocabulary now; writers can keep
+  typing tags however they like.
+- **Press → real press kit** (`src/pages/Press.tsx`): fictional mentions (4
+  outlets), fast-facts fact-list, short + long boilerplate wells with a new
+  clipboard **CopyButton** (`src/components/CopyButton.tsx`, aria-live state),
+  a six-row fictional announcements reel linking to real pages, and a brand
+  asset grid with six downloadable SVGs designed from the in-app FernMark
+  (`public/press/`: mark/wordmark in ink + paper, brass accent mark, night
+  avatar badge; Georgia-fallback wordmark type so the SVGs render anywhere).
+  Do/don't usage rules; night CTA. New CSS: `.boilerplate`, `.press-row`,
+  `.asset-grid`/`.asset-card`, `.check-list`.
+- **Industry pages enriched** (`src/data/industries.ts` gains required
+  `services[]` + `signals[]` per sector): IndustryPage now renders "What we do
+  here" service chips and a "From the journal" section — articles scored by
+  canonical-tag intersection with the sector's signal list, newest breaking
+  ties, top 3; hides itself if no matches. Nine deeper, internally-linked
+  pages for free.
+- **Demo backlog**: +4 rich intents (orrery-sunday-podcast,
+  assembly-room-ticketing, cartouche-identity-generator, tidemark-field-logger)
+  — planned demos now 8 while builders work.
+- **Heroes**: generated for growth/content-strategy-compounds and
+  brand/measuring-brand-health (both flagships named in Next); frontmatter
+  heroImage/heroAlt added.
+- **Build-gate rescues**: brightmarsh-course-finder price facet passed a
+  `(p: number)` predicate where `(c: Course)` was wanted — wrapped at call
+  site; trailswell-habit-tracker `let p` TS7022 circular — annotated
+  `p: number`. Trimmed 4 fresh over-length AI descriptions to ≤160.
+- **Build green: 1,511 prerendered routes + 404**, 0 content warnings,
+  link audit clean, dist verified (press SVGs copied, 6 download links,
+  canonical tag dirs, industry sections present).
+
 ## Done (iteration 10 — builder: visible breadcrumbs, JobPosting schema, /colophon + /sitemap pages, QA)
 
 - **Visible breadcrumbs everywhere deep** — new `src/components/Crumbs.tsx`
@@ -308,20 +347,22 @@
 
 ## Next
 
-- Journal heroes: flagships still bare — growth/content-strategy-compounds,
-  engineering/keyboard-first... (has one), web-design flagships, brand/
-  measuring-brand-health. Keep spending image budget here (2/iteration).
+- Journal heroes: ~310 articles still use themeFor tiles. Keep spending the
+  image budget on flagships (2/iteration) — next candidates: web-design
+  leads, engineering/performance pieces, ecommerce flagships.
 - Builder ideas for later iterations: home POV band refresh; 375px device QA
-  sweep (demo-strip/lab-feature/feature/person-hero/squad verified in CSS but
-  not on a real device); OG images per case study currently fall back to
-  heroImage (good) — could add dedicated 1200×630 variants; reading-progress
-  or TOC on long articles; /press page enrichment.
+  sweep (demo-strip/lab-feature/feature/person-hero/squad/press-kit grids
+  verified in CSS but not on a real device); OG images per case study
+  currently fall back to heroImage (good) — dedicated 1200×630 variants
+  possible; ~930 tag pages exist and many are 1-article thin — consider a
+  per-cluster tag index or min-count pruning for prerender only.
 - Writers: keep burning backlog — run `node scripts/audit-links.mjs` before
   finishing (broken internal links are now FATAL in prebuild).
   Authors MUST be roster names; new case studies must use canonical industry
   names from src/data/industries.ts (Fintech, Health, Retail & e-commerce,
   Hospitality, Climate, Education, Media & culture, SaaS, Non-profit) so the
-  /work filters and industry matchers stay clean.
+  /work filters and industry matchers stay clean. Tag casing no longer
+  matters (pipeline canonicalises).
 - Near-duplicate backlog items writers should SKIP (already published):
   editorial-grids-on-the-web, landing-page-anatomy-2026, forms-nobody-designs,
   dark-mode-second-design-system, naming-process-start-to-finish,
@@ -329,21 +370,19 @@
 
 ## Known issues / watchlist
 
-- Description-length warnings (a few files, ~170 chars) — non-fatal; writers
-  trim when touching those files. (2 fixed in iter 6.)
 - Deliberate `](#)` placeholder links in 5 case studies + 1 playbook
   (rhetorical "metrics are illustrative" device) — warned by audit-links,
   not fatal. Consider pointing them at a real anchor eventually.
 - Work frontmatter mixes inline YAML lists (`stack: [a, b]`) and longhand
   (`stack:` + `- item`) — both valid; if you script-edit frontmatter, insert
   keys before the closing `---`, never after a bare `stack:` line.
-- `osprey-pack-configurator` demo shipped with stub demo.css overwritten by its
-  builder's real CSS.
 - Lab demo bodies SSR only the overlay bar (lazy demo not awaited) — by design.
-- Journal pagination remains client-side (page 1 prerendered only).
 - Work filter params use replace-history (no back-button trail) — deliberate.
 - Industry pages saas / non-profit have no matching case studies yet — the
-  related-work section omits itself until one ships.
+  related-work section omits itself until one ships; the new "From the
+  journal" signals section covers the gap meanwhile.
+- ~930 distinct tags → many 1-article tag pages; fine for now, prune or
+  cluster if it starts to look thin.
 
 ## Solved (kept for reference)
 
@@ -1221,3 +1260,90 @@ Built demo **holloway-waveform-player** (case study holloway-records-label-site,
 - Full keyboard map (Space/arrows/Shift/N/P/X) with input/button guard; tablist has roving tabindex + arrow nav; reduced-motion = hard cuts, no motion cues. 60fps clock isolated from the memoised shelf grid.
 - Showcase image generated: public/images/work/holloway-waveform-player.jpg (feeds .case-gallery via workImages manifest).
 - Typecheck clean (also regenerated content index). No new deps.
+
+## writer2 — iteration 23 (2026-09-26)
+Twelve articles done, all validated via finish_article; content index + audit-links clean for my files.
+
+**Playbooks (4):**
+- playbooks/content-model-workshop (Leonie Marsh) — two-hour workshop format pre-design: 3-colour index cards (entities/fields/relationships), the Tuesday-publisher attendance rule, honesty-pass questions (required-by-default, structured-if-a-machine-needs-it, owned-or-cut), cardinality interrogation ("has it ever been more than one?"), naming diplomacy (meaning never presentation; nothing named after the design), the five artefacts incl. the "model does not support" list.
+- playbooks/goals-for-redesign-projects (Priya Nair) — buried-problem diagnosis; 2–3 falsifiable/influenceable/owned primary metrics; baseline capture incl. fixing old-site tracking + pre-registered comparison window; output-vs-outcome goals table with stated causal chain; kill criteria with concrete thresholds; day 3/7/14 tech-only checks + 30/60/90 outcome reviews on a living results page.
+- playbooks/rfp-alternative-better-way (Mara Ellison) — RFP's four selection flaws (concept tax, requirement theatre, premature price anchoring, self-selection); the replacement: 2-page brief, 3-agency shortlist from evidence, no-slides conversations, paid discovery with two, judgement-weighted rubric (price ≤15%); keeping procurement's real requirements satisfied; cost-of-choosing-wrong arithmetic.
+- playbooks/agency-contracts-ip-terms (Ruby Castellanos) — NOT legal advice framing up front; six clauses by blast radius: assignment-vs-licence (assign on payment incl. early exit), open-source/font disclosure ("wholly original" warranty is fiction), portfolio rights (embargo + claim approval), liability caps/indemnities/warranty windows, tapering kill fees + exit-time IP, mechanical change control + consequential assumptions; ten-minute checklist.
+
+**Brand (4):**
+- brand/rebrand-rollout-sequencing (Mara Ellison) — sequence IS the strategy: digital root first (domains/1:1 redirects/email warm-up T-10–8w), gates you don't control (app stores staged release, handles, 200-item asset inventory), theatre last (internal comms a week ahead), the 90-day tail (weekly sweeps, old-name monitoring, defended kill date), reception measured via brand demand + confusion cost, not launch-week sentiment.
+- brand/illustration-systems-not-galleries (June Okafor) — the illustrations_FINAL folder autopsy; principles with forbiddens (4-colour cap, one light source, hands spec, no gradients) that survive artist change; rarity budget mapped to allowed surfaces; per-artist two-page commissioning brief with marked-up exemplars; library survival (semantic versioned naming, layered sources, 00_READ-THIS, named owner); annual rule edit-by-pattern.
+- brand/naming-trademark-reality-check (Leonie Marsh) — 1000→3 funnel, cheap screens before love; class-scoped phonetic TM screening; send eight names to counsel not one beloved; domain compromise positions ranked (verb-modifiers, meaningful TLDs, buy-later via broker; hyphens never); app-store/handle collision screen; 6–10 week backwards calendar; grief management (no private favourites, pre-agreed kill criteria, shortlist stays at 3).
+- brand/sonic-branding-small-studios (Hannah Yeo) — six-figure-jingle critique; three-moment rule (confirmation/arrival/signature); UI sound principles (<400ms, information not decoration, one harmonic family, mix quiet); accessibility defaults (off outside media contexts, never sole channel, honour DND/reduced-motion spirit); one commissioned motif deriving the whole system; the vanity test ("name the moment a customer hears you this week").
+
+**Growth (4):**
+- growth/alternative-to-pages-program (Sam Whitfield) — sequel to competitor-alternatives-pages: five comparison-intent shapes, sales-call-verified priority, fairness ruleset (concede strengths, dated claims, linked pricing, no invented reviews, decision frameworks over verdicts, nominative-use legal line), quarterly re-verification + per-page changelogs + deprecation protocol, assisted-conversion / win-language / polite-corrections measurement.
+- growth/lead-capture-without-popups (Priya Nair) — popups borrow against trust (junk-address + non-converter return-visit costs); four respectful placements: read-progress inline offer of the article's own asset, end-of-article console (next/asset/newsletter lanes), max-two content-linked inline CTAs, forever-dismissible scroll-up bar; engaged-subscriber-rate-over-capture-rate measurement frame.
+- growth/referrals-for-service-businesses (Mara Ellison) — referral = reputation lent, asymmetric stakes; why SaaS codes misprice it; the programme: arm the retelling with client-worded outcome stories, 30-name garden with unautomated sincere contact, properly-framed specific asks at moments of goodwill, refer out aggressively; close-the-loop + thank-the-vouch mechanics; free-text origin field + referral share of revenue.
+- growth/voice-of-customer-mining (Leonie Marsh) — sites written twice (internal dialect, customer dialect); source ranking (calls>onboarding>exits>tickets>reviews>surveys), human consent practice; verbatim-or-nothing tagging on pain/goal/objection × topic × heat; compress-toward-their-nouns translation rules (keep the "every Monday"); verbatims prove the ache not the solution; feeding tests/decks/positioning; quarterly language review.
+
+**Note for whoever owns brand/minimum-viable-brand.md:** it links to /journal/brand/ai-in-brand-work-position which does not exist yet — audit-links currently fails on it (pre-existing, not mine). Either write that article or repoint the link before next full build.
+No hero images this iteration (budget conservation; none of the twelve were hero-grade visual pieces).
+
+## writer4 — iteration 21 (2026-09-26)
+Four growth articles done, all validated via finish_article; standalone audit-links clean (0 broken). Word counts 1.5–1.7k each, all within bounds, all with Key takeaways + FAQ.
+
+- growth/pricing-experiments-ethical (Sam Whitfield, 2026-03-14) — the same-day/same-price/provable-between-strangers line; safe variables (framing, proof order, copy, density, defaults-with-rules); B2B low-traffic maths → big structural swings, sequential windows, qualitative weight; pre-registered kill criteria; decision journals for inconclusive tests; publishing the fairness promise.
+- growth/internal-search-mining (Leonie Marsh, 2025-11-04) — query taxonomy (navigational/known-item/gap/vocabulary-mismatch/task); privacy-safe logging spec (submissions not keystrokes, daily session token, no identity joins); quarterly zero-results review with four verbs (write/rename/link/ignore); harvested-not-invented synonyms; four metrics (zero-result rate, click-through, reformulation, exit-after-search).
+- growth/og-images-share-systems (Priya Nair, 2026-06-30) — deliberately complementary to og-images-growth-surface (design system) — this one is the operating model: inventory thinking, title-testing protocol on generated cards, platform-by-platform cache invalidation mechanics, dark-social measurement as honest ranges (visible sliver + free-text self-reports + long-URL direct), two rituals (publish checklist line, quarterly unfurl audit).
+- growth/rss-owned-distribution (Mara Ellison, 2026-08-18) — owned-vs-rented followership; the shipping spec (valid XML in CI, immutable GUIDs, frozen pubDates, absolute URLs, JSON Feed, discovery links); full-text-over-excerpt stance; feed as spine for newsletters/syndication with canonical discipline (POSSE); measurement via reader user-agent subscriber counts + fetch patterns; hero image generated (public/images/articles/growth/rss-owned-distribution.jpg, fern-antenna brass arcs still-life).
+
+## writer1 — iteration 22 (2026-09-26)
+Four web-design articles done, all validated via finish_article. Each 1.4–1.7k words, Key takeaways + FAQ, 3–6 verified internal links (checked against existing slugs before writing; authors all from people.ts roster).
+
+- web-design/article-index-design (Ruby Castellanos, 2026-07-09) — conveyor-belt critique; lead-story rules (hero-gated, deduped, page-one-only); card/list rhythm at blurry-vision distance; metadata-that-orients (cluster, reading time, date; human-written deks only); filters w/ counts + URL-synced state; route-based pagination over infinite scroll; the index as the studio's argument with a door left open to services. Hero image generated (public/images/articles/web-design/article-index-design.jpg — flat-lay of printed index cards, brass/fern/cream).
+- web-design/anchor-navigation-long-pages (Nate Sullivan, 2026-08-04) — TOC gating (≥3 h2s + length, generated from rendered headings); sticky left-rail spec incl. scroll-margin-top; honest scroll-spy (one active entry, top-third trigger, observer not scroll jank); mobile = inline "On this page" disclosure, never floating bubble; deep-link hygiene (stable ids, per-heading anchors, focus management); deletion test.
+- web-design/reading-progress-honest (Felix Brandt, 2026-08-21) — the one job ("how much is left?"); measure the article body not the document (the 80%-liar bug); transform-only/rAF/passive-listener build; reduced-motion = no flourishes not no bar; variants judged (top bar wins, retired the ring, pips for structured epics); <4min content = delete the bar.
+- web-design/hover-states-with-purpose (Aiko Tanaka, 2026-09-12) — the one law (nothing exists only on hover); four legit jobs (confirm interactivity, preview destination, reversible detail, dosed delight); spec anatomy (property/magnitude/timing/scope, one-or-two properties, 120–160ms in 200–240ms out); focus parity (:focus-visible, stacked states, parity audit); touch honesty (@media (hover:hover), design the tap first, :active deserves love).
+
+## writer3 — iteration 20 (2026-09-26)
+Four web-design articles done, all validated via finish_article. ~1.4–1.7k words each, Key takeaways + FAQ, internal links verified against existing slugs/routes; authors all from people.ts roster.
+
+- web-design/testimonial-presentation-craft (June Okafor, 2025-04-15) — quotes collected in three grades (verdict/texture/number) because each wants a different treatment; pull-quote vs testimonial rules; display-size typography with hanging punctuation; attribution as the trust mechanism; deep-linking quotes to case studies with stable anchors; labelled illustrative metrics; zoning map (case studies primary, no testimonials wall).
+- web-design/team-pages-that-signal-craft (Mara Ellison, 2025-06-10) — team page as the buyer's real question ("whose hands?"); portrait policy (real programme / illustration / none — never photoreal synthetic faces); bios as judgment (belief + practice + shipped-work links, ~40 words); roster-not-ladder structures; person pages with traceable authored work incl. leaver policy; operational ownership of the roster; concept-site honesty.
+- web-design/locale-switcher-design (Felix Brandt, 2025-09-02) — audit content coverage before shipping the control (sometimes kill it); endonym naming, no flags; component matched to locale count (inline links ≤3, labelled menu ≤10, directory page beyond); detect-don't-decide (dismissible banner, stored choice, crawler exception); layout/fonts against real scripts (string-length budgets, CJK subsetting, RTL via logical CSS); switcher links = hreflang graph.
+- web-design/aspect-ratio-systems (Hannah Yeo, 2026-01-20) — ratios as editorial voice (16:10/4:5/1:1/2:1/3:2, five max); ratios attach to slots not images (CSS tokens); declared aspect-ratio kills CLS; object-fit discipline (cover + art-directed object-position, contain with considered background, no critical content in crop margin); <picture> shape-switching per breakpoint, shoot-for-the-tightest-crop; ratios as layout rhythm; migration audit playbook. Hero image generated: public/images/articles/web-design/aspect-ratio-systems.jpg (paper-rectangle + brass ruler flat-lay), heroImage/heroAlt set.
+
+## demo3 — iteration 9 (2026-09-26)
+
+Built demo **postcards-archive-explorer** (The Corrowong Museums Trust — matches the canon client of the existing case study `postcards-museum-archive`, which the bench brief had loosely called "Museum of Correspondence"; went with the established canon for brand consistency). Validated via finish_demo. Files: `src/demos/postcards-archive-explorer/{index.tsx,data.ts,CardArt.tsx,demo.css}`; showcase still at `public/images/work/postcards-archive-explorer.jpg` (feeds the case-study gallery via the workImages manifest on next content-index build).
+
+- Art direction: archive index-card — ruled aged stock, bureaucratic green `#2f4636`, red accession ink `#9c3324`, Rockwell/Clarendon slab display + Courier catalogue numbers, slightly rotated rubber-stamp wordmark. Scoped under `.pcx`.
+- 120 deterministically generated cards (mulberry32 seeds, decade distribution 1900s–1990s): era-weighted themes/names, message + reply text banks, per-era stamp designs (1d red → 24c teal), postmark rings, conditions, accession numbers CMT·PC·year·seq.
+- Generative SVG recto art per theme (main street / railway / river / wool / hotel / show / school / mail) in three print tints (sepia, hand-tinted green, blue-tone); no text in art.
+- Facets with live proper counts (each option's count computed with other facets held): decade timeline with count bars, town list, theme list, "answered cards only" toggle; six curated Threads (filter presets) on a night rail; sort select (curator's seeded shuffle / newest / oldest).
+- URL-synced state via history.replaceState: `?decade&town&theme&reply&thread&card` — deep-linking straight into an open card works.
+- Reading-room lightbox: 3D recto/verso flip (DOM verso with stamp + rotating postmark + divided-back transcription), focus trap, Esc/arrow-key nav through the filtered drawer, focus restore, copy-a-citation button with clipboard fallback copy, aria-live announcement of result counts.
+- Lazy wall: CSS-columns masonry, IntersectionObserver sentinel batches of 24 (guarded for non-IO), seeded ×0.6° card tilt, straighten-on-hover; reduced-motion block kills transitions/flip/smooth-scroll.
+
+## writer2 — iteration 24 (2026-09-26)
+
+Four AI-cluster articles done, all validated via finish_article first pass. ~1.5–1.8k words each, Key takeaways + FAQ, 4–6 internal links each verified against existing journal slugs/routes; authors from people.ts roster.
+
+- ai/ai-form-copilots (Dev Khatri, 2026-09-22) — suggestion-not-substitution creed; field-level "affirmed vs not deleted" distinction; ghost values + three-tier confidence (confident/plausible/guess) from provenance not self-report; source chips; bulk-fill section receipts + one-gesture undo; suggestions never satisfy required-field validation across the submit boundary; best-fit contexts (document-backed onboarding, expert admin tools); the trust ledger metric set (acceptance, undo, post-submit corrections, time-to-complete). Hero image generated: public/images/articles/ai/ai-form-copilots.jpg (brass pencil hovering over a blank ruled form, fern frond, cream paper), heroImage/heroAlt set.
+- ai/llm-answer-length-design (Aiko Tanaka, 2026-09-18) — length as a product decision the model shouldn't own; per-surface answer budgets in characters/words; summary–detail layering (verdict-first, expansion controls, verbosity dial); enforcement at three layers (prompt sets median, schema sets bounds, renderer clamps + logs); over/under-length as first-class eval failure modes incl. proportion rubric; cost + satisfaction compounding; exceptions (teaching surfaces, deliberative tasks).
+- ai/ai-editorial-copilots (Leonie Marsh, 2026-09-15) — two physical modes (drafting = structure only, polishing = diffs on human prose) because blended copilots convert writers into approvers; house-style injection ranked (labelled worked examples > banned-and-loved lexicon > voice evals > negative-space refusals); fact hygiene as severity-one (no unsourced claims, read-only quotes, retrieval over recollection, named human signature on numbers); provenance + attestation + disclosure review flows; the "voice at scale" dividend.
+- ai/context-window-product-design (Dev Khatri, 2026-09-25) — context as the product's field of vision; the context manifest as the first design artifact; bigger-window curation traps (precedence rules, less-chosen-well, exclusions as features); scope rendered (ambient indicator, expandable "what I can see", per-answer provenance); graceful forgetting (announce early, name the drop, offer the fix, never blur forgetting/exclusion/refusal); "not in my scope" as an evaluated first-class behaviour.
+
+## writer3 — iteration 21 (2026-09-26)
+Four AI-cluster articles done, all validated via finish_article. ~1.5–1.9k words each, Key takeaways + FAQ, 4–6 internal links verified against existing slugs/routes; authors from people.ts roster. Bucket refilled with remaining planned items (ai cluster still target 70; claim was drawn from existing plan).
+
+- ai/ai-onboarding-expectation-setting (Dev Khatri, 2026-08-04) — sell the p50 not the demo: expectations as design material; asymmetric trust updating; examples tested against messy real data at median quality + good-enough worked outputs + job-shaped prompts; permanent scope sentence near input; named failure tour in place of capability lists; the draft contract; three-rung trust ladder (always-works → visible working → user-edited); copy anchored to data/jobs so it survives upgrades, capability claims gated by evals.
+- ai/model-deprecation-playbook (Felix Brandt, 2026-06-22) — calendar math of 90/30-day windows; the five real coupling points (prompt shape, structured-output handling, parameters, token accounting, latency/retry) and the adapter layer that owns them; eval parity gates with pre-written thresholds + failure-shape scoring + loud re-baselining; two weeks of shadow traffic (agreement/latency/cost deltas, double-bill budgeted); drift comms (announcement-not-apology, named diffs, feedback lane, internal enablement first); config-flag rollback + kill switch. Hero image generated: public/images/articles/ai/model-deprecation-playbook.jpg (calendar + brass gears + fern on warm paper), heroImage/heroAlt set.
+- ai/ai-cost-observability (Felix Brandt, 2026-05-28) — cost per successful task as north star vs vanity call counts; task-scoped spans with hashed user segments, success annotations, retry/repair accounting, waste buckets (eval/test traffic as separate cost centres); feature-level budgets (soft Slack at 80%, hard auto-degradation via kill switch), anomaly alerts on cost-per-task not raw spend; margin dials (cache hit rate, model mix, context-window percentiles); the cost-quality frontier chart as the exec surface; killing/repricing features whose unit economics never close.
+- ai/multimodal-input-design (Aiko Tanaka, 2026-08-19) — upload box as trust surface; limits stated before the drop in checkable units (formats named honestly, HEIC callout, truncation promises); preview parsing (page/word receipts, real model-resolution previews, transcript-before-task for audio); contextual privacy prompts at point of upload (sensitive-content acknowledgement, retention at the drop zone, enterprise policy surfaced in UI); error states that name the constraint with the user's number vs the limit + concrete recovery, own-fault honesty; mobile capture as a different product (capture guidance, retake confirmation, resumable uploads).
+
+## writer1 — iteration 23 (2026-09-26)
+Four AI-cluster articles done, all validated via finish_article; standalone audit-links clean (0 broken across 431 files).
+
+- ai/llm-latency-budgets (Dev Khatri, 2026-05-14) — p75 per-surface budgets (autocomplete 0.8–1.5s, chat first-token <2.5s/complete <8s, docs ≤20s w/ progress); waterfall table; model routing (60/30/10 tier split, latency −58%, spend −71%); perceived-speed compounds real speed; CI eval-gate + degradation ladder; week-one napkin-maths kill tests.
+- ai/ai-moderation-ux (Aiko Tanaka, 2026-06-09) — refusal as product surface; two bad user stories (it broke / I'm in trouble); three doors (adjacent yes, revision hint, human path); over-refusal telemetry (per-intent rate, rephrase-success pairs, abandonment, appeals); five-part anatomy; three response tiers by good faith; refusal copy editorial rules (plural boundary/singular fallibility).
+- ai/prompt-libraries-teams (Ruby Castellanos, 2026-07-22) — deliberately complements prompt-design-systems (that = the object, this = the organisation): named-owner rule, change-request/reason/second-reader/rollback review, discoverability-as-retrieval, quarterly honesty pass (confirm/revise/retire, retirement celebrated), four health metrics (reuse, fork-and-return, time-to-fix, production-consistency).
+- ai/ai-answers-vs-navigation (Felix Brandt, 2026-08-14) — known-answer vs orienting finding; navigation jobs AI can't do (vocabulary teaching, edges, skim, determinism) and vice versa; five-question decision framework; hybrid patterns (search-as-router, answer-with-map, navigation-that-learns, scoped copilot); honest scoreboard (observed task completion, reformulation, verification behaviour) over deflection.
+
+No hero images this iteration (budget conservation; text-heavy operational pieces). Note: writer2's flagged broken link (brand/ai-in-brand-work-position) is now resolved — that article exists and audit shows 0 broken.

@@ -1,6 +1,6 @@
 ---
 title: "Multimodal inputs: the upload box is a trust surface"
-description: "File, image and audio uploads are where AI features win or lose trust. Design limits, preprocessing transparency, privacy prompts and honest error states for multimodal UX."
+description: "File, image and audio uploads are where AI features win or lose trust. Design limits, preprocessing transparency, privacy prompts and honest errors for multimodal UX."
 slug: multimodal-input-design
 cluster: ai
 tags: [ai, multimodal, file upload, privacy, ux design]

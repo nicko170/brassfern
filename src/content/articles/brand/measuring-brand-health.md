@@ -8,6 +8,8 @@ date: 2026-01-22
 author: Priya Nair
 keywords: [brand measurement, brand health metrics, share of search, brand tracking]
 readingTime: 11
+heroImage: /images/articles/brand/measuring-brand-health.jpg
+heroAlt: "Overhead flat-lay of brass calipers, a needle gauge, a wooden ruler and fanned fern-and-brass swatch cards on cream paper, with a pressed fern frond."
 ---
 
 Brand measurement has a deserved reputation problem. On one side, agencies waving six-figure "brand equity trackers" full of indices nobody can act on. On the other, performance teams declaring brand unmeasurable and therefore optional — a position that conveniently frees up budget for the channels their dashboards already flatter. Both are cop-outs. Brand is measurable the way fitness is measurable: not with a single number, but with a small panel of signals that move slowly, correlate with outcomes, and punish anyone who fudges them.

@@ -8313,8 +8313,10 @@
     "idempotency",
     "local-first engineering"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790407806.153274
   },
   {
    "kind": "article",
@@ -8329,8 +8331,10 @@
     "technical blog engineering",
     "developer docs design"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790407806.1532748
   },
   {
    "kind": "article",
@@ -8345,8 +8349,10 @@
     "search performance",
     "content search"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790407806.153276
   },
   {
    "kind": "article",
@@ -8361,8 +8367,10 @@
     "server-side testing",
     "CWV experiments"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790407806.153276
   },
   {
    "kind": "article",
@@ -8377,8 +8385,10 @@
     "breaking changes design system",
     "design engineering"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790408304.960145
   },
   {
    "kind": "article",
@@ -8393,8 +8403,10 @@
     "static site content",
     "build tooling"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790408304.960145
   },
   {
    "kind": "article",
@@ -8409,8 +8421,10 @@
     "transactional email design",
     "email development"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790408304.960146
   },
   {
    "kind": "article",
@@ -8425,8 +8439,10 @@
     "browser find UX",
     "front-end accessibility"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790408304.960146
   },
   {
    "kind": "article",
@@ -9960,6 +9976,62 @@
     "address autocomplete",
     "shipping form ux",
     "postcode validation"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "orrery-sunday-podcast",
+   "title": "Orrery Sunday — podcast platform with chapter player",
+   "cluster": "demos",
+   "intent": "A long-form podcast landing page for 'Orrery Sunday', a fictional weekly show about systems, maps and the people who draw them. Art direction: midnight-planetarium — near-black indigo #101222, warm starlight cream type, a single ochre accent; big condensed display type, mono episode numbers (EP 041). Features: episode index loaded from local data (28 episodes with shownotes, chapters, durations), a custom audio-player UI (play/pause, 15s skip, speed control, chapter list with seek — mocked playback using a timer, no real audio files), a waveform-in-canvas per episode (seeded), 'start here' curated path for new listeners, host bios, reviews wall, subscribe panel with platform list and a newsletter capture with validation. Full keyboard support on the player and chapters; aria-live announcements of track changes; reduced-motion stills the waveform sweep. Stack: React + canvas. meta.caseStudy should point to a new 'orrery-sunday-podcast-platform' case study (writer adds it).",
+   "keywords": [
+    "podcast",
+    "audio player",
+    "media design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "assembly-room-ticketing",
+   "title": "Assembly Room — accessible seat map & checkout",
+   "cluster": "demos",
+   "intent": "A live seat-map and checkout demo for 'Assembly Room', a fictional contemporary chamber-music series. Art direction: concert-hall dusk — deep wine #3d1524 and ink, cream programs, gold leaf accents; serif display for program titles, tabular mono for prices. Features: an SVG venue plan of ~380 seats across stalls/dress circle/balcony with section zoom, hover/tap seat selection with availability states, accessible listbox alternative for keyboard users (section → row → seat pickers arriving at the same cart), per-section pricing tiers, a held-seats timer (10:00 countdown with release), concession/companion-card options, order summary sheet, and a mock confirmation with seat QR-style code. localStorage persists a cart. Honour reduced-motion (no zoom transitions). meta.caseStudy: 'assembly-room-ticketing' (writer adds case study).",
+   "keywords": [
+    "ticketing",
+    "seat map",
+    "events"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "cartouche-identity-generator",
+   "title": "Cartouche — generative identity system toy",
+   "cluster": "demos",
+   "intent": "A generative identity toy for a fictional brand studio called 'Cartouche' — an interactive logo-system generator. Art direction: risograph poster — off-white #faf6ee, two overprinted spot colours (fluoro orange + federal blue) with multiply blend, halftone grain; chunky grotesk type. Features: pick a word (or random from a seed list), choose a generator family (glyph field, ribbon fold, starburst, mirror tiles), tweak 3–5 sliders (density, rotation, overprint offset, grain), randomise with seed visible, and export the current mark as a downloadable SVG (serialize the live SVG node). A 'system' view shows the current mark across 6 lockups (app icon, poster, letterhead, favicon, stamp, social) so it reads as an identity system, not a toy. Copy seed links via URL hash. Reduced-motion disables auto-rotate previews. meta.caseStudy: 'cartouche-identity-generator'.",
+   "keywords": [
+    "generative design",
+    "brand identity",
+    "svg"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "tidemark-field-logger",
+   "title": "Tidemark — citizen-science field logger",
+   "cluster": "demos",
+   "intent": "A tidal-pool citizen-science logger for fictional marine nonprofit 'Tidemark'. Art direction: coastal field-journal — salt-paper white, kelp green and slate, hand-drawn-feeling contour-line motifs; rounded humanist sans with mono data labels. Features: an observation form (species chips with silhouettes, count stepper, condition scale, photo placeholder states) with genuinely good validation and autosave drafts to localStorage; a map-less location picker using a stylised coastline SVG grid; a personal logbook with filtering and a streak calendar; an aggregate 'this month at the pools' panel with hand-rolled SVG bar/dot charts; empty states that teach. Offline-first copywriting (queues 'pending sync' observations). All forms keyboard-first with clear error summaries. Reduced-motion honoured. meta.caseStudy: 'tidemark-field-logger' (writer adds).",
+   "keywords": [
+    "non-profit",
+    "forms",
+    "data visualisation"
    ],
    "status": "planned",
    "added_by": "builder"

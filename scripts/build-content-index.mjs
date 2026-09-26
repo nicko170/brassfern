@@ -69,10 +69,47 @@ function* mdFiles(dir) {
   }
 }
 
+// Tags drift in case across writers ("UX" vs "ux", "SEO" vs "seo"). Canonical
+// form: lowercase, with known acronyms uppercased and "saas" → "SaaS". Applied
+// to every tag in the index so tag pages, chips, related-matching and search
+// all share one vocabulary. Keep in sync with the note in src/lib/content.ts.
+const TAG_ACRONYMS = {
+  seo: 'SEO', ux: 'UX', ui: 'UI', ai: 'AI', rag: 'RAG', llm: 'LLM', api: 'API',
+  css: 'CSS', html: 'HTML', crm: 'CRM', cro: 'CRO', wcag: 'WCAG', cms: 'CMS',
+  roi: 'ROI', kpi: 'KPI', utm: 'UTM', plg: 'PLG', cpg: 'CPG', crdt: 'CRDT',
+  csv: 'CSV', pwa: 'PWA', qa: 'QA', dns: 'DNS', pr: 'PR', b2b: 'B2B', ia: 'IA',
+  sql: 'SQL', ci: 'CI', svg: 'SVG', ssr: 'SSR', ssg: 'SSG', cta: 'CTA', faq: 'FAQ',
+  ar: 'AR', vr: 'VR',
+}
+
+function canonicalTag(raw) {
+  const lower = String(raw).trim().replace(/\s+/g, ' ').toLowerCase()
+  return lower
+    .split(' ')
+    .map((w) => TAG_ACRONYMS[w] ?? (w === 'saas' ? 'SaaS' : w))
+    .join(' ')
+}
+
+let tagsFixed = 0
+let tagsMerged = 0
+
+function canonicalTags(raw) {
+  const seen = new Set()
+  const out = []
+  for (const t of raw) {
+    const c = canonicalTag(t)
+    if (c !== String(t).trim()) tagsFixed++
+    if (seen.has(c)) { tagsMerged++; continue }
+    seen.add(c)
+    out.push(c)
+  }
+  return out
+}
+
 function cleanMeta(data, file, cluster) {
   const m = { ...data }
   if (cluster) m.cluster = cluster
-  m.tags = Array.isArray(m.tags) ? m.tags.map(String) : []
+  m.tags = Array.isArray(m.tags) ? canonicalTags(m.tags) : []
   m.keywords = Array.isArray(m.keywords) ? m.keywords.map(String) : []
   if (m.services) m.services = Array.isArray(m.services) ? m.services.map(String) : []
   if (m.stack) m.stack = Array.isArray(m.stack) ? m.stack.map(String) : []
@@ -163,4 +200,7 @@ export const caseIndex: CaseStudyMeta[] = ${JSON.stringify(work, null, 2)}
 export const workImages: string[] = ${JSON.stringify(workImages)}
 `
 fs.writeFileSync(OUT, ts)
+if (tagsFixed > 0 || tagsMerged > 0) {
+  console.log(`  ⚠ tags canonicalised: ${tagsFixed} case/acronym fixes, ${tagsMerged} duplicate tags merged after normalisation`)
+}
 console.log(`content index: ${articles.length} articles, ${work.length} case studies, ${workImages.length} work images, ${warnings.length} warnings`)

@@ -16,12 +16,12 @@
 | `/careers`, `/careers/:slug` (5) | Jobs | `src/data/jobs.ts` |
 | `/journal` + `/journal/page/:n` | Article index (lead-story feature, 12/page route-based pagination, all pages prerendered) | generated index |
 | `/journal/:cluster` + `/journal/:cluster/page/:n` | Cluster hubs (8 clusters, lead-story feature, paginated) | generated index |
-| `/journal/tag/:tag` | Tag pages (all tags prerendered) | generated index |
+| `/journal/tag/:tag` | Tag pages (canonical tags only — case/acronym-normalised; mis-cased URLs redirect client-side) | generated index |
 | `/journal/:cluster/:slug` | Article | `src/content/articles/<cluster>/<slug>.md` |
 | `/search` (?q=) | Live-debounced client search; empty state shows popular tags + latest | metas |
 | `/resources` | Playbooks hub | playbooks cluster |
 | `/contact` | Brief form (client validation + success state) | — |
-| `/press` | Static | — |
+| `/press` | Press kit: mentions, fast facts, copyable boilerplate, announcements, downloadable SVG marks | hardcoded lists + `public/press/*.svg` |
 | `/colophon` | Type specimens, token swatches, machinery, concept statement | hardcoded lists + tokens |
 | `/sitemap` | Human-readable index (auto-derived from all data sources) | generated index, data files |
 | `/legal/privacy`, `/legal/terms` | Static | — |
@@ -50,6 +50,10 @@
   `scripts/audit-links.mjs`**: every root-relative markdown link must resolve
   to a real route (articles, case studies, services, industries, team, jobs,
   tags, demos) or the build fails. Run it standalone before finishing content.
+- **Tags are canonicalised at index-build time** (builder iter 11): everything
+  lowercases, known acronyms uppercase ("SEO", "UX", "AI", "RAG"…), "saas" →
+  "SaaS". "Design Systems" and "design systems" are the same tag — pick either
+  spelling, both converge. Mis-cased tag URLs redirect to the canonical page.
 - Markdown renderer is custom (`src/lib/markdown.ts`): headings (ids for
   TOC/deep-linking), lists, quotes, code fences, tables, links, images.
   Internal links are base-prefixed automatically — write them as root-relative

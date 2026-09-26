@@ -9,8 +9,8 @@ export const articleIndex: ArticleMeta[] = [
     "cluster": "ai",
     "tags": [
       "AI agents",
-      "Interaction design",
-      "Trust"
+      "interaction design",
+      "trust"
     ],
     "date": "2026-05-26",
     "author": "Ruby Castellanos",
@@ -29,7 +29,7 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "agent-ux-patterns",
     "cluster": "ai",
     "tags": [
-      "ai ux",
+      "AI UX",
       "agents",
       "interaction design",
       "product design",
@@ -49,15 +49,39 @@ export const articleIndex: ArticleMeta[] = [
     "heroAlt": "Editorial illustration of a machined-brass ladder of four ascending steps on cream paper, connected by fine fern-green hairlines like a letterpress circuit diagram."
   },
   {
+    "title": "AI answers vs good navigation: choose deliberately",
+    "description": "Replacing your site's navigation with an AI answer box is rarely the upgrade it looks like. A decision framework for AI search vs structured browse, honestly measured.",
+    "slug": "ai-answers-vs-navigation",
+    "cluster": "ai",
+    "tags": [
+      "AI search",
+      "information architecture",
+      "findability",
+      "RAG",
+      "site navigation"
+    ],
+    "date": "2026-08-14",
+    "author": "Felix Brandt",
+    "keywords": [
+      "AI site search",
+      "LLM vs navigation",
+      "AI answers UX",
+      "docs search AI",
+      "findability design",
+      "retrieval augmented generation"
+    ],
+    "readingTime": 12
+  },
+  {
     "title": "Onboarding users to an AI assistant",
     "description": "First-run design for copilots: capability discovery without homework, starter prompts that teach, mental-model calibration, and measuring adoption honestly.",
     "slug": "ai-assistant-onboarding",
     "cluster": "ai",
     "tags": [
-      "ai",
+      "AI",
       "onboarding",
       "product design",
-      "copilot ux",
+      "copilot UX",
       "adoption"
     ],
     "date": "2026-06-04",
@@ -77,10 +101,10 @@ export const articleIndex: ArticleMeta[] = [
     "cluster": "ai",
     "tags": [
       "brand voice",
-      "ai writing",
+      "AI writing",
       "content guardrails",
       "tone of voice",
-      "llm content"
+      "LLM content"
     ],
     "date": "2025-06-05",
     "author": "Leonie Marsh",
@@ -100,10 +124,10 @@ export const articleIndex: ArticleMeta[] = [
     "cluster": "ai",
     "tags": [
       "brand voice",
-      "ai writing",
+      "AI writing",
       "tone of voice",
       "editorial",
-      "llm content"
+      "LLM content"
     ],
     "date": "2026-01-22",
     "author": "Leonie Marsh",
@@ -118,14 +142,38 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 12
   },
   {
+    "title": "AI cost observability: tokens are a line item now",
+    "description": "LLM features live or die on unit economics. Build per-feature token budgets, cost-per-successful-task dashboards, cache tracking and frontier charts execs actually read.",
+    "slug": "ai-cost-observability",
+    "cluster": "ai",
+    "tags": [
+      "AI",
+      "observability",
+      "finops",
+      "unit economics",
+      "dashboards"
+    ],
+    "date": "2026-05-28",
+    "author": "Felix Brandt",
+    "keywords": [
+      "LLM costs",
+      "token budgets",
+      "AI observability",
+      "cost per task",
+      "finops",
+      "unit economics"
+    ],
+    "readingTime": 11
+  },
+  {
     "title": "Disclosure patterns: telling users when a machine is speaking",
     "description": "AI disclosure that survives legal review and user testing: label placement, export watermarking, model transparency, and wording that informs, not alarms.",
     "slug": "ai-disclosure-patterns",
     "cluster": "ai",
     "tags": [
-      "ai ux",
+      "AI UX",
       "transparency",
-      "responsible ai",
+      "responsible AI",
       "trust",
       "content design"
     ],
@@ -140,13 +188,36 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 10
   },
   {
+    "title": "Editorial copilots that don't flatten the voice",
+    "description": "Editorial copilots should sharpen a voice, not flatten it: drafting vs polishing modes, house-style injection, fact hygiene and honest review flows.",
+    "slug": "ai-editorial-copilots",
+    "cluster": "ai",
+    "tags": [
+      "AI UX",
+      "content design",
+      "brand voice",
+      "workflow",
+      "writing"
+    ],
+    "date": "2026-09-15",
+    "author": "Leonie Marsh",
+    "keywords": [
+      "AI writing tools",
+      "editorial AI",
+      "AI content workflow",
+      "brand voice AI",
+      "copilot UX"
+    ],
+    "readingTime": 11
+  },
+  {
     "title": "Analytics for AI features: what to measure",
     "description": "Chat volume tells you nothing. The instrumentation stack we use for AI features: acceptance, correction signals, task completion, cost-quality overlays, weekly review.",
     "slug": "ai-feature-analytics",
     "cluster": "ai",
     "tags": [
       "analytics",
-      "ai metrics",
+      "AI metrics",
       "instrumentation",
       "product measurement",
       "quality review"
@@ -162,14 +233,37 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 10
   },
   {
+    "title": "Teaching what the AI can do: feature discovery as curriculum",
+    "description": "AI features fail when users don't know what to ask. Designing discovery surfaces — prompt starters, worked examples, capability demos — that teach, not decorate.",
+    "slug": "ai-feature-discovery-education",
+    "cluster": "ai",
+    "tags": [
+      "AI",
+      "feature discovery",
+      "onboarding",
+      "UX writing",
+      "activation"
+    ],
+    "date": "2026-07-14",
+    "author": "Dev Khatri",
+    "keywords": [
+      "AI feature discovery",
+      "AI onboarding",
+      "prompt examples UX",
+      "AI education UI",
+      "activation metrics"
+    ],
+    "readingTime": 10
+  },
+  {
     "title": "Every AI feature needs a kill switch",
     "description": "Config-driven disable paths, graceful degradation, incident comms for model-caused bugs, provider outage posture, and the quarterly drill where you flip the switch.",
     "slug": "ai-feature-kill-switch",
     "cluster": "ai",
     "tags": [
-      "Operations",
-      "Reliability",
-      "Feature flags"
+      "operations",
+      "reliability",
+      "feature flags"
     ],
     "date": "2026-09-18",
     "author": "Felix Brandt",
@@ -188,9 +282,9 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "ai-feature-pricing",
     "cluster": "ai",
     "tags": [
-      "ai pricing",
+      "AI pricing",
       "unit economics",
-      "saas pricing",
+      "SaaS pricing",
       "credits",
       "margin"
     ],
@@ -206,12 +300,60 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 13
   },
   {
+    "title": "Feedback loops users will actually feed",
+    "description": "Thumbs-down rates near zero tell you nothing. Designing AI feedback signals that collect usable data, close the loop visibly, and track volume as a health metric.",
+    "slug": "ai-feedback-signals",
+    "cluster": "ai",
+    "tags": [
+      "AI",
+      "feedback",
+      "metrics",
+      "UX design",
+      "evals"
+    ],
+    "date": "2026-03-30",
+    "author": "Priya Nair",
+    "keywords": [
+      "AI feedback UX",
+      "thumbs up down design",
+      "AI quality signals",
+      "feedback loop product",
+      "LLM product metrics"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "AI form copilots: suggestion, not substitution",
+    "description": "AI form copilots work when they suggest, not substitute: per-field confidence, bulk-fill undo, and one rule — the model never commits silently.",
+    "slug": "ai-form-copilots",
+    "cluster": "ai",
+    "tags": [
+      "AI UX",
+      "forms",
+      "product design",
+      "copilots",
+      "onboarding"
+    ],
+    "date": "2026-09-22",
+    "author": "Dev Khatri",
+    "keywords": [
+      "AI form filling",
+      "AI copilot UX",
+      "autofill design",
+      "AI assistance UI",
+      "form UX"
+    ],
+    "readingTime": 10,
+    "heroImage": "/images/articles/ai/ai-form-copilots.jpg",
+    "heroAlt": "A blank paper form on cream paper with a brass mechanical pencil hovering above it, a ghosted pencil suggestion on one line, a brass ruler and fern frond nearby."
+  },
+  {
     "title": "LLMs in the design process: acceleration with a seatbelt",
     "description": "How we use LLMs in the studio: synthetic drafts, copy pressure-testing, edge-case generation — and the verification rules that keep AI-assisted design honest.",
     "slug": "ai-in-design-process",
     "cluster": "ai",
     "tags": [
-      "ai",
+      "AI",
       "design process",
       "prototyping",
       "research",
@@ -228,16 +370,64 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 10
   },
   {
+    "title": "When the AI says no: moderation UX",
+    "description": "Every generative AI feature eventually refuses a user, and most refusals are dead ends. Designing blocked, revised and appeal states that preserve dignity.",
+    "slug": "ai-moderation-ux",
+    "cluster": "ai",
+    "tags": [
+      "moderation UX",
+      "AI safety",
+      "blocked states",
+      "responsible AI",
+      "content policy"
+    ],
+    "date": "2026-06-09",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "content moderation UX",
+      "AI safety UX",
+      "blocked state design",
+      "AI refusal handling",
+      "responsible AI product design",
+      "moderation appeal flow"
+    ],
+    "readingTime": 12
+  },
+  {
+    "title": "Onboarding for AI features: sell the p50, not the demo",
+    "description": "AI onboarding fails when it promises the demo's best-case output. Design first-run flows around median performance — calibrated examples, honest scope, progressive trust.",
+    "slug": "ai-onboarding-expectation-setting",
+    "cluster": "ai",
+    "tags": [
+      "AI",
+      "onboarding",
+      "expectation setting",
+      "empty states",
+      "trust"
+    ],
+    "date": "2026-08-04",
+    "author": "Dev Khatri",
+    "keywords": [
+      "AI onboarding",
+      "expectation setting",
+      "empty states",
+      "LLM UX",
+      "first run experience",
+      "trust calibration"
+    ],
+    "readingTime": 11
+  },
+  {
     "title": "Personalisation vs privacy: drawing the line deliberately",
     "description": "Draw the personalisation privacy line before legal does: on-device and anonymous patterns, explainable personalisation, and consent UX that actually means something.",
     "slug": "ai-personalisation-privacy-lines",
     "cluster": "ai",
     "tags": [
-      "ai ux",
+      "AI UX",
       "privacy",
       "personalisation",
       "consent",
-      "responsible ai"
+      "responsible AI"
     ],
     "date": "2026-08-21",
     "author": "Aiko Tanaka",
@@ -256,7 +446,7 @@ export const articleIndex: ArticleMeta[] = [
     "cluster": "ai",
     "tags": [
       "prototyping",
-      "ai tooling",
+      "AI tooling",
       "design engineering",
       "design process",
       "workflow"
@@ -278,9 +468,9 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "ai-support-triage-routing",
     "cluster": "ai",
     "tags": [
-      "Support",
-      "Agent UX",
-      "Trust"
+      "support",
+      "agent UX",
+      "trust"
     ],
     "date": "2026-08-05",
     "author": "Aiko Tanaka",
@@ -299,11 +489,11 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "ai-trust-design",
     "cluster": "ai",
     "tags": [
-      "ai ux",
+      "AI UX",
       "trust",
       "transparency",
       "interface design",
-      "responsible ai"
+      "responsible AI"
     ],
     "date": "2026-06-18",
     "author": "Dev Khatri",
@@ -321,11 +511,11 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "ai-wrong-answer-ux",
     "cluster": "ai",
     "tags": [
-      "ai ux",
+      "AI UX",
       "error states",
       "trust",
       "content design",
-      "responsible ai"
+      "responsible AI"
     ],
     "date": "2026-06-04",
     "author": "Aiko Tanaka",
@@ -343,7 +533,7 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "assistant-memory-ux",
     "cluster": "ai",
     "tags": [
-      "ai ux",
+      "AI UX",
       "memory",
       "personalisation",
       "privacy",
@@ -367,9 +557,9 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "citation-design-ai-features",
     "cluster": "ai",
     "tags": [
-      "ai ux",
+      "AI UX",
       "citations",
-      "rag",
+      "RAG",
       "provenance",
       "trust"
     ],
@@ -391,9 +581,9 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "citation-ux-rag",
     "cluster": "ai",
     "tags": [
-      "ai ux",
+      "AI UX",
       "citations",
-      "rag",
+      "RAG",
       "retrieval",
       "verification"
     ],
@@ -415,7 +605,7 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "communicating-probabilistic-features",
     "cluster": "ai",
     "tags": [
-      "ai ux",
+      "AI UX",
       "launch copy",
       "product marketing",
       "content design",
@@ -432,13 +622,36 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 10
   },
   {
+    "title": "The context window is a product decision",
+    "description": "The context window is a product decision: curating what the model sees, showing users what's in scope, and designing honest 'I don't know' moments.",
+    "slug": "context-window-product-design",
+    "cluster": "ai",
+    "tags": [
+      "AI UX",
+      "LLM",
+      "context",
+      "product design",
+      "transparency"
+    ],
+    "date": "2026-09-25",
+    "author": "Dev Khatri",
+    "keywords": [
+      "context window UX",
+      "LLM product design",
+      "AI memory UX",
+      "RAG context design",
+      "AI transparency"
+    ],
+    "readingTime": 11
+  },
+  {
     "title": "Evals-first development: the build order that actually works",
     "description": "Write the golden set before the prompt, version prompts like code, and gate merges on eval scores. The workflow that makes LLM features shippable.",
     "slug": "evals-first-development",
     "cluster": "ai",
     "tags": [
-      "Evals",
-      "Workflow",
+      "evals",
+      "workflow",
       "AI engineering"
     ],
     "date": "2026-06-12",
@@ -460,8 +673,8 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "evals-practical-guide",
     "cluster": "ai",
     "tags": [
-      "Evals",
-      "Testing",
+      "evals",
+      "testing",
       "AI engineering"
     ],
     "date": "2026-03-31",
@@ -483,8 +696,8 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "fine-tuning-vs-rag",
     "cluster": "ai",
     "tags": [
-      "llm architecture",
-      "rag",
+      "LLM architecture",
+      "RAG",
       "fine-tuning",
       "prompt engineering",
       "technical strategy"
@@ -505,8 +718,8 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "golden-eval-sets-support-tickets",
     "cluster": "ai",
     "tags": [
-      "llm evals",
-      "ai quality",
+      "LLM evals",
+      "AI quality",
       "support",
       "golden dataset",
       "testing"
@@ -528,7 +741,7 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "human-in-the-loop-queues",
     "cluster": "ai",
     "tags": [
-      "ai ux",
+      "AI UX",
       "human in the loop",
       "review queues",
       "operations",
@@ -545,16 +758,39 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 11
   },
   {
+    "title": "How long should the answer be? Right-sizing LLM output",
+    "description": "Answer length is a product decision, not a model default. Per-surface budgets, summary-detail layering, and evals that treat 'too long' as a failure.",
+    "slug": "llm-answer-length-design",
+    "cluster": "ai",
+    "tags": [
+      "AI UX",
+      "LLM",
+      "progressive disclosure",
+      "content design",
+      "evaluation"
+    ],
+    "date": "2026-09-18",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "LLM response length",
+      "AI answer design",
+      "progressive disclosure AI",
+      "assistant UX",
+      "LLM evaluation"
+    ],
+    "readingTime": 10
+  },
+  {
     "title": "Cost engineering for LLM features",
     "description": "Unit economics for AI features: model routing, caching layers, context trimming, batch APIs, and dashboards that translate tokens into dollars per user.",
     "slug": "llm-cost-engineering",
     "cluster": "ai",
     "tags": [
-      "llm costs",
+      "LLM costs",
       "unit economics",
       "model routing",
       "caching",
-      "ai infrastructure"
+      "AI infrastructure"
     ],
     "date": "2025-04-24",
     "author": "Felix Brandt",
@@ -575,11 +811,11 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "llm-evals-framework",
     "cluster": "ai",
     "tags": [
-      "llm evaluation",
-      "ai quality",
+      "LLM evaluation",
+      "AI quality",
       "golden datasets",
-      "llm ops",
-      "ai engineering"
+      "LLM ops",
+      "AI engineering"
     ],
     "date": "2025-10-07",
     "author": "Dev Khatri",
@@ -598,11 +834,11 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "llm-failure-fallback-ux",
     "cluster": "ai",
     "tags": [
-      "ai ux",
+      "AI UX",
       "error states",
       "graceful degradation",
       "product design",
-      "llm"
+      "LLM"
     ],
     "date": "2026-02-19",
     "author": "Aiko Tanaka",
@@ -618,12 +854,62 @@ export const articleIndex: ArticleMeta[] = [
     "heroAlt": "A brass service bell and desk tools arranged on descending stacks of index cards on warm cream paper — the fallback ladder made tangible."
   },
   {
+    "title": "Latency budgets for LLM features",
+    "description": "An LLM feature that answers correctly in eleven seconds is broken. How we set per-surface latency budgets, route models for speed, and kill what can't make the time.",
+    "slug": "llm-latency-budgets",
+    "cluster": "ai",
+    "tags": [
+      "LLM latency",
+      "performance budgets",
+      "streaming UX",
+      "model routing",
+      "AI performance"
+    ],
+    "date": "2026-05-14",
+    "author": "Dev Khatri",
+    "keywords": [
+      "LLM latency budget",
+      "AI performance UX",
+      "perceived speed AI",
+      "model routing",
+      "streaming UX",
+      "time to first token"
+    ],
+    "readingTime": 11
+  },
+  {
+    "title": "The model deprecation playbook nobody writes until it's 3am",
+    "description": "Your LLM provider just announced a deprecation window. How to migrate without panic: abstraction layers, eval-gated cutovers, shadow traffic and honest customer comms.",
+    "slug": "model-deprecation-playbook",
+    "cluster": "ai",
+    "tags": [
+      "AI",
+      "llmops",
+      "migration",
+      "evals",
+      "vendor risk"
+    ],
+    "date": "2026-06-22",
+    "author": "Felix Brandt",
+    "keywords": [
+      "model deprecation",
+      "LLMOps",
+      "model migration",
+      "eval-gated migration",
+      "vendor risk",
+      "shadow traffic"
+    ],
+    "readingTime": 12,
+    "heroImage": "/images/articles/ai/model-deprecation-playbook.jpg",
+    "heroAlt": "A desk calendar with a circled date beside brass gears and a potted fern on warm paper — a migration deadline on a workbench."
+  },
+  {
     "title": "Swapping the model without breaking the product",
     "description": "Model migrations without breaking the product: shadow runs, eval-gated cutovers, tone and format regression diffs, and rollback plans for behaviour you can't unit test.",
     "slug": "model-migration-without-breakage",
     "cluster": "ai",
     "tags": [
-      "llm ops",
+      "LLM ops",
       "migration",
       "evals",
       "testing",
@@ -640,14 +926,60 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 11
   },
   {
+    "title": "Showing the swarm: status UX for multi-agent systems",
+    "description": "Multi-agent features bury users in log firehoses or leave them staring at a spinner. Designing step summaries, cost displays, interruption and failure narration.",
+    "slug": "multi-agent-status-surfaces",
+    "cluster": "ai",
+    "tags": [
+      "AI",
+      "agents",
+      "UX design",
+      "transparency",
+      "product design"
+    ],
+    "date": "2026-05-22",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "multi-agent UX",
+      "agent status UI",
+      "AI progress displays",
+      "agent transparency",
+      "AI workflow design"
+    ],
+    "readingTime": 11
+  },
+  {
+    "title": "Multimodal inputs: the upload box is a trust surface",
+    "description": "File, image and audio uploads are where AI features win or lose trust. Design limits, preprocessing transparency, privacy prompts and honest errors for multimodal UX.",
+    "slug": "multimodal-input-design",
+    "cluster": "ai",
+    "tags": [
+      "AI",
+      "multimodal",
+      "file upload",
+      "privacy",
+      "UX design"
+    ],
+    "date": "2026-08-19",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "multimodal AI",
+      "file upload UX",
+      "AI privacy",
+      "image upload design",
+      "error states"
+    ],
+    "readingTime": 10
+  },
+  {
     "title": "Multimodal interfaces: beyond the chat box",
     "description": "When chat is the wrong interface: designing AI products with the right modality — voice, image, structured output, inline suggestions — and how to choose.",
     "slug": "multimodal-ux-design",
     "cluster": "ai",
     "tags": [
-      "ai",
+      "AI",
       "interaction design",
-      "voice ui",
+      "voice UI",
       "interface patterns",
       "multimodal"
     ],
@@ -667,7 +999,7 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "prompt-box-as-interface",
     "cluster": "ai",
     "tags": [
-      "ai ux",
+      "AI UX",
       "prompt design",
       "chat interface",
       "onboarding",
@@ -691,7 +1023,7 @@ export const articleIndex: ArticleMeta[] = [
     "tags": [
       "prompt engineering",
       "design systems of prompts",
-      "ai infrastructure",
+      "AI infrastructure",
       "versioning",
       "evals"
     ],
@@ -713,11 +1045,11 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "prompt-injection-defence",
     "cluster": "ai",
     "tags": [
-      "llm security",
+      "LLM security",
       "prompt injection",
       "threat modelling",
       "red teaming",
-      "ai engineering"
+      "AI engineering"
     ],
     "date": "2026-09-11",
     "author": "Felix Brandt",
@@ -734,13 +1066,37 @@ export const articleIndex: ArticleMeta[] = [
     "heroAlt": "A fern sprig protected inside a glass dome on a brass stand, with dark paper fragments curling toward the glass and a brass padlock beside it — untrusted instructions kept outside."
   },
   {
+    "title": "Prompt libraries that survive the team",
+    "description": "A well-structured prompt library still dies if nobody owns it. The team side: ownership, review rituals, discoverability, drift control and reuse metrics.",
+    "slug": "prompt-libraries-teams",
+    "cluster": "ai",
+    "tags": [
+      "prompt library",
+      "team operations",
+      "AI governance",
+      "prompt versioning",
+      "review process"
+    ],
+    "date": "2026-07-22",
+    "author": "Ruby Castellanos",
+    "keywords": [
+      "prompt library management",
+      "prompt engineering team process",
+      "AI operations",
+      "prompt versioning",
+      "LLM governance",
+      "prompt ownership"
+    ],
+    "readingTime": 12
+  },
+  {
     "title": "Chunking is a design decision: RAG retrieval craft",
     "description": "Chunk sizing, structure-aware splitting, metadata, hybrid retrieval and reranking — the retrieval engineering that decides whether your RAG feature answers or shrugs.",
     "slug": "rag-chunking-design",
     "cluster": "ai",
     "tags": [
       "RAG",
-      "Retrieval",
+      "retrieval",
       "AI architecture"
     ],
     "date": "2026-07-08",
@@ -755,16 +1111,41 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 12
   },
   {
+    "title": "RAG and the staleness problem: freshness is a ranking signal",
+    "description": "Stale retrieval makes RAG answers confident folklore. Treating freshness as a ranking signal, surfacing 'last updated' in answers, and designing the re-indexing pipeline.",
+    "slug": "rag-freshness-staleness",
+    "cluster": "ai",
+    "tags": [
+      "AI",
+      "RAG",
+      "retrieval",
+      "knowledge base",
+      "engineering"
+    ],
+    "date": "2026-08-11",
+    "author": "Felix Brandt",
+    "keywords": [
+      "RAG freshness",
+      "knowledge base AI",
+      "staleness handling",
+      "RAG design",
+      "AI support quality"
+    ],
+    "readingTime": 11,
+    "heroImage": "/images/articles/ai/rag-freshness-staleness.jpg",
+    "heroAlt": "A stack of printed documents on cream paper, graded from crisp fresh sheets under a small brass weight to yellowed pages pressed with dried fern fronds."
+  },
+  {
     "title": "RAG pitfalls we hit so you don't have to",
     "description": "Retrieval in production humbles everyone. The chunking trade-offs, citation bugs, stale knowledge and eval failures that taught us how RAG actually breaks.",
     "slug": "rag-pitfalls-production",
     "cluster": "ai",
     "tags": [
-      "rag",
+      "RAG",
       "retrieval",
       "vector search",
-      "llm",
-      "ai engineering"
+      "LLM",
+      "AI engineering"
     ],
     "date": "2025-06-24",
     "author": "Felix Brandt",
@@ -783,8 +1164,8 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "responsible-ai-review",
     "cluster": "ai",
     "tags": [
-      "responsible ai",
-      "ai governance",
+      "responsible AI",
+      "AI governance",
       "risk assessment",
       "ethics",
       "process"
@@ -808,7 +1189,7 @@ export const articleIndex: ArticleMeta[] = [
     "cluster": "ai",
     "tags": [
       "AI products",
-      "Production lessons",
+      "production lessons",
       "UX"
     ],
     "date": "2026-01-27",
@@ -828,10 +1209,10 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "shipping-llm-features",
     "cluster": "ai",
     "tags": [
-      "llm",
+      "LLM",
       "production",
       "observability",
-      "ai engineering",
+      "AI engineering",
       "launch checklist"
     ],
     "date": "2026-04-14",
@@ -851,7 +1232,7 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "streaming-ux-patterns",
     "cluster": "ai",
     "tags": [
-      "ai ux",
+      "AI UX",
       "streaming interfaces",
       "perceived performance",
       "chat design",
@@ -877,7 +1258,7 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "structured-outputs-reliable-ui",
     "cluster": "ai",
     "tags": [
-      "ai engineering",
+      "AI engineering",
       "structured outputs",
       "json schema",
       "streaming",
@@ -900,10 +1281,10 @@ export const articleIndex: ArticleMeta[] = [
     "cluster": "ai",
     "tags": [
       "voice interfaces",
-      "multimodal ux",
+      "multimodal UX",
       "conversation design",
       "accessibility",
-      "ai product design"
+      "AI product design"
     ],
     "date": "2026-07-14",
     "author": "Dev Khatri",
@@ -1200,7 +1581,7 @@ export const articleIndex: ArticleMeta[] = [
     "tags": [
       "brand voice",
       "tone of voice",
-      "ux writing",
+      "UX writing",
       "copy style guide",
       "verbal identity"
     ],
@@ -1576,7 +1957,9 @@ export const articleIndex: ArticleMeta[] = [
       "share of search",
       "brand tracking"
     ],
-    "readingTime": 11
+    "readingTime": 11,
+    "heroImage": "/images/articles/brand/measuring-brand-health.jpg",
+    "heroAlt": "Overhead flat-lay of brass calipers, a needle gauge, a wooden ruler and fanned fern-and-brass swatch cards on cream paper, with a pressed fern frond."
   },
   {
     "title": "The minimum viable brand: what pre-seed founders actually need",
@@ -2019,7 +2402,7 @@ export const articleIndex: ArticleMeta[] = [
       "merchandising",
       "interaction design",
       "bundles",
-      "ux patterns"
+      "UX patterns"
     ],
     "date": "2026-02-10",
     "author": "June Okafor",
@@ -2061,7 +2444,7 @@ export const articleIndex: ArticleMeta[] = [
     "cluster": "ecommerce",
     "tags": [
       "cart design",
-      "ecommerce ux",
+      "ecommerce UX",
       "conversion",
       "mobile commerce",
       "interaction design"
@@ -2084,8 +2467,8 @@ export const articleIndex: ArticleMeta[] = [
     "cluster": "ecommerce",
     "tags": [
       "cart design",
-      "ecommerce ux",
-      "cro",
+      "ecommerce UX",
+      "CRO",
       "interaction design",
       "mobile commerce"
     ],
@@ -2108,8 +2491,8 @@ export const articleIndex: ArticleMeta[] = [
     "tags": [
       "checkout",
       "conversion",
-      "ecommerce ux",
-      "cro",
+      "ecommerce UX",
+      "CRO",
       "payments"
     ],
     "date": "2025-06-11",
@@ -2132,10 +2515,10 @@ export const articleIndex: ArticleMeta[] = [
     "cluster": "ecommerce",
     "tags": [
       "checkout",
-      "cro",
+      "CRO",
       "analytics",
       "payments",
-      "ecommerce ux"
+      "ecommerce UX"
     ],
     "date": "2026-03-17",
     "author": "Nate Sullivan",
@@ -2156,9 +2539,9 @@ export const articleIndex: ArticleMeta[] = [
     "tags": [
       "ecommerce",
       "navigation",
-      "ia",
+      "IA",
       "taxonomy",
-      "ux"
+      "UX"
     ],
     "date": "2026-06-30",
     "author": "Hannah Yeo",
@@ -2177,7 +2560,7 @@ export const articleIndex: ArticleMeta[] = [
     "cluster": "ecommerce",
     "tags": [
       "site search",
-      "ecommerce ux",
+      "ecommerce UX",
       "search design",
       "merchandising",
       "conversion rate"
@@ -2201,7 +2584,7 @@ export const articleIndex: ArticleMeta[] = [
       "site search",
       "search analytics",
       "merchandising",
-      "ecommerce ux",
+      "ecommerce UX",
       "catalogue"
     ],
     "date": "2026-08-12",
@@ -2223,7 +2606,7 @@ export const articleIndex: ArticleMeta[] = [
     "tags": [
       "express checkout",
       "apple pay",
-      "checkout ux",
+      "checkout UX",
       "payments",
       "mobile commerce"
     ],
@@ -2245,7 +2628,7 @@ export const articleIndex: ArticleMeta[] = [
     "cluster": "ecommerce",
     "tags": [
       "gifting",
-      "ecommerce ux",
+      "ecommerce UX",
       "gift finder",
       "peak season",
       "conversion"
@@ -2270,7 +2653,7 @@ export const articleIndex: ArticleMeta[] = [
     "cluster": "ecommerce",
     "tags": [
       "gifting",
-      "ecommerce ux",
+      "ecommerce UX",
       "peak season",
       "checkout",
       "operations"
@@ -2363,7 +2746,7 @@ export const articleIndex: ArticleMeta[] = [
       "scarcity",
       "urgency",
       "dark patterns",
-      "ecommerce ux",
+      "ecommerce UX",
       "ethics"
     ],
     "date": "2026-01-22",
@@ -2385,7 +2768,7 @@ export const articleIndex: ArticleMeta[] = [
     "tags": [
       "loyalty programs",
       "retention",
-      "rewards ux",
+      "rewards UX",
       "customer lifetime value",
       "ecommerce strategy"
     ],
@@ -2475,7 +2858,7 @@ export const articleIndex: ArticleMeta[] = [
     "tags": [
       "merchandising",
       "collection pages",
-      "ecommerce ux",
+      "ecommerce UX",
       "visual hierarchy",
       "retail"
     ],
@@ -2498,7 +2881,7 @@ export const articleIndex: ArticleMeta[] = [
     "tags": [
       "payments",
       "checkout",
-      "ecommerce ux",
+      "ecommerce UX",
       "trust",
       "australia"
     ],
@@ -2524,7 +2907,7 @@ export const articleIndex: ArticleMeta[] = [
       "ecommerce",
       "conversion",
       "product page",
-      "cro",
+      "CRO",
       "design"
     ],
     "date": "2026-05-07",
@@ -2547,7 +2930,7 @@ export const articleIndex: ArticleMeta[] = [
     "tags": [
       "pdp",
       "image gallery",
-      "ecommerce ux",
+      "ecommerce UX",
       "interaction design",
       "conversion"
     ],
@@ -2571,7 +2954,7 @@ export const articleIndex: ArticleMeta[] = [
     "tags": [
       "preorders",
       "backorders",
-      "ecommerce ux",
+      "ecommerce UX",
       "fulfilment",
       "trust"
     ],
@@ -2592,7 +2975,7 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "preorder-flows-trust",
     "cluster": "ecommerce",
     "tags": [
-      "preorder ux",
+      "preorder UX",
       "product launch",
       "crowdfunding",
       "customer trust",
@@ -2665,7 +3048,7 @@ export const articleIndex: ArticleMeta[] = [
     "cluster": "ecommerce",
     "tags": [
       "returns",
-      "post-purchase ux",
+      "post-purchase UX",
       "customer loyalty",
       "exchange flows",
       "ecommerce operations"
@@ -2712,7 +3095,7 @@ export const articleIndex: ArticleMeta[] = [
     "tags": [
       "size guides",
       "apparel",
-      "ecommerce ux",
+      "ecommerce UX",
       "returns",
       "product design"
     ],
@@ -2737,7 +3120,7 @@ export const articleIndex: ArticleMeta[] = [
       "retention",
       "dunning",
       "pricing",
-      "ecommerce ux"
+      "ecommerce UX"
     ],
     "date": "2025-11-04",
     "author": "Ruby Castellanos",
@@ -2757,7 +3140,7 @@ export const articleIndex: ArticleMeta[] = [
     "cluster": "ecommerce",
     "tags": [
       "subscriptions",
-      "ecommerce ux",
+      "ecommerce UX",
       "retention",
       "customer portal",
       "dunning"
@@ -2783,7 +3166,7 @@ export const articleIndex: ArticleMeta[] = [
     "tags": [
       "subscriptions",
       "retention",
-      "ecommerce ux",
+      "ecommerce UX",
       "churn",
       "design ethics"
     ],
@@ -2805,10 +3188,10 @@ export const articleIndex: ArticleMeta[] = [
     "cluster": "engineering",
     "tags": [
       "accessibility",
-      "wcag",
+      "WCAG",
       "engineering practice",
       "design systems",
-      "ci"
+      "CI"
     ],
     "date": "2025-10-02",
     "author": "Felix Brandt",
@@ -2849,7 +3232,7 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "api-design-frontends-love",
     "cluster": "engineering",
     "tags": [
-      "api design",
+      "API design",
       "developer experience",
       "rest",
       "frontend"
@@ -2872,7 +3255,7 @@ export const articleIndex: ArticleMeta[] = [
     "tags": [
       "authentication",
       "security",
-      "ux",
+      "UX",
       "ecommerce",
       "web platform"
     ],
@@ -2918,7 +3301,7 @@ export const articleIndex: ArticleMeta[] = [
       "bundling",
       "code splitting",
       "engineering culture",
-      "ci"
+      "CI"
     ],
     "date": "2025-11-14",
     "author": "Tomás Reyes",
@@ -2943,7 +3326,7 @@ export const articleIndex: ArticleMeta[] = [
       "caching",
       "performance",
       "architecture",
-      "cms"
+      "CMS"
     ],
     "date": "2025-06-20",
     "author": "Felix Brandt",
@@ -2980,12 +3363,35 @@ export const articleIndex: ArticleMeta[] = [
     "heroAlt": "Paper cards fanned like a decision matrix on a cream desk, with a brass paperweight, calipers and a fern sprig."
   },
   {
+    "title": "Realtime collaboration tech: CRDT, OT, or a polite refresh",
+    "description": "Choosing a collaboration stack honestly: OT versus CRDTs, Yjs in production, presence as a feature, and when a polite refresh beats a sync engine.",
+    "slug": "collaboration-tech-choices",
+    "cluster": "engineering",
+    "tags": [
+      "realtime",
+      "collaboration",
+      "architecture",
+      "websockets"
+    ],
+    "date": "2025-11-06",
+    "author": "Tomás Reyes",
+    "keywords": [
+      "realtime collaboration",
+      "CRDT",
+      "Yjs",
+      "operational transformation",
+      "multiplayer editing",
+      "websockets"
+    ],
+    "readingTime": 11
+  },
+  {
     "title": "Container queries: finally designing components, not pages",
     "description": "Media queries ask the viewport; container queries ask the room. Production notes: containment costs, cqi type, fallbacks, and cards that go anywhere.",
     "slug": "container-queries-production",
     "cluster": "engineering",
     "tags": [
-      "css",
+      "CSS",
       "responsive design",
       "component architecture",
       "design systems",
@@ -3006,6 +3412,28 @@ export const articleIndex: ArticleMeta[] = [
     "heroAlt": "Engraved editorial illustration of nested rectangular frames adapting inside a larger measuring frame, in fern-green ink with brass rulers on cream paper."
   },
   {
+    "title": "CMS migrations: the script is the deliverable",
+    "description": "Why the migration script — not the new CMS — is the real deliverable: idempotent exports, content checksums, redirect mapping and parallel-running.",
+    "slug": "content-migration-engineering",
+    "cluster": "engineering",
+    "tags": [
+      "CMS",
+      "migration",
+      "content",
+      "redirects"
+    ],
+    "date": "2025-08-14",
+    "author": "Felix Brandt",
+    "keywords": [
+      "CMS migration",
+      "content migration",
+      "redirect mapping",
+      "data migration",
+      "headless CMS"
+    ],
+    "readingTime": 10
+  },
+  {
     "title": "Core Web Vitals in the field: budgets that survive sprints",
     "description": "A practical Core Web Vitals program: LCP element archaeology, INP triage, CI-enforced budgets, and real-user monitoring on a shoestring. Recipes that work.",
     "slug": "core-web-vitals-field-guide",
@@ -3013,7 +3441,7 @@ export const articleIndex: ArticleMeta[] = [
     "tags": [
       "performance",
       "core web vitals",
-      "ci budgets",
+      "CI budgets",
       "observability",
       "web standards"
     ],
@@ -3030,6 +3458,28 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 10
   },
   {
+    "title": "Dependency hygiene: the boring audit that saves the launch",
+    "description": "Client codebases rot at the package.json line. Audit cadences, update windows, vendoring decisions, and the licence review nobody does until procurement asks.",
+    "slug": "dependency-hygiene-client-code",
+    "cluster": "engineering",
+    "tags": [
+      "engineering",
+      "dependencies",
+      "security",
+      "maintenance",
+      "process"
+    ],
+    "date": "2025-11-18",
+    "author": "Tomás Reyes",
+    "keywords": [
+      "dependency management",
+      "npm audit",
+      "software supply chain",
+      "license compliance"
+    ],
+    "readingTime": 10
+  },
+  {
     "title": "Testing design tokens in CI like the API they are",
     "description": "Design tokens are an API contract between design and engineering. The CI pipeline that enforces it: grammar linting, ancestry checks, contrast tests.",
     "slug": "design-tokens-pipeline-ci",
@@ -3037,7 +3487,7 @@ export const articleIndex: ArticleMeta[] = [
     "tags": [
       "design systems",
       "design tokens",
-      "ci",
+      "CI",
       "testing",
       "governance"
     ],
@@ -3061,7 +3511,7 @@ export const articleIndex: ArticleMeta[] = [
       "design tokens",
       "design systems",
       "style dictionary",
-      "css variables",
+      "CSS variables",
       "figma"
     ],
     "date": "2025-09-11",
@@ -3086,7 +3536,7 @@ export const articleIndex: ArticleMeta[] = [
     "tags": [
       "design tokens",
       "design systems",
-      "css",
+      "CSS",
       "figma",
       "frontend architecture"
     ],
@@ -3134,7 +3584,7 @@ export const articleIndex: ArticleMeta[] = [
       "react",
       "reliability",
       "error-handling",
-      "ux"
+      "UX"
     ],
     "date": "2026-02-09",
     "author": "Tomás Reyes",
@@ -3154,7 +3604,7 @@ export const articleIndex: ArticleMeta[] = [
     "tags": [
       "error-handling",
       "reliability",
-      "ux",
+      "UX",
       "typescript"
     ],
     "date": "2026-06-02",
@@ -3266,7 +3716,7 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "graphql-vs-rest-pragmatic",
     "cluster": "engineering",
     "tags": [
-      "api design",
+      "API design",
       "graphql",
       "rest",
       "architecture"
@@ -3287,7 +3737,7 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "headless-cms-migration-runbook",
     "cluster": "engineering",
     "tags": [
-      "cms",
+      "CMS",
       "migration",
       "content",
       "architecture"
@@ -3475,7 +3925,7 @@ export const articleIndex: ArticleMeta[] = [
     "cluster": "engineering",
     "tags": [
       "pdf",
-      "print css",
+      "print CSS",
       "headless chrome",
       "reporting",
       "architecture"
@@ -3544,7 +3994,7 @@ export const articleIndex: ArticleMeta[] = [
     "cluster": "engineering",
     "tags": [
       "api-design",
-      "ux",
+      "UX",
       "reliability",
       "error-handling"
     ],
@@ -3590,7 +4040,7 @@ export const articleIndex: ArticleMeta[] = [
     "tags": [
       "search",
       "architecture",
-      "ux",
+      "UX",
       "infrastructure",
       "product engineering"
     ],
@@ -3636,7 +4086,7 @@ export const articleIndex: ArticleMeta[] = [
       "accessibility",
       "testing",
       "screen-readers",
-      "qa"
+      "QA"
     ],
     "date": "2026-05-07",
     "author": "Felix Brandt",
@@ -3678,7 +4128,7 @@ export const articleIndex: ArticleMeta[] = [
     "tags": [
       "service workers",
       "offline",
-      "pwa",
+      "PWA",
       "caching",
       "performance"
     ],
@@ -3700,7 +4150,7 @@ export const articleIndex: ArticleMeta[] = [
     "cluster": "engineering",
     "tags": [
       "react",
-      "ssr",
+      "SSR",
       "performance",
       "suspense",
       "architecture"
@@ -3770,7 +4220,7 @@ export const articleIndex: ArticleMeta[] = [
       "testing",
       "playwright",
       "vitest",
-      "ci",
+      "CI",
       "quality"
     ],
     "date": "2025-06-19",
@@ -3857,7 +4307,7 @@ export const articleIndex: ArticleMeta[] = [
     "cluster": "engineering",
     "tags": [
       "typescript",
-      "cms",
+      "CMS",
       "content-modelling",
       "developer-experience"
     ],
@@ -3923,7 +4373,7 @@ export const articleIndex: ArticleMeta[] = [
     "cluster": "engineering",
     "tags": [
       "animation",
-      "ux",
+      "UX",
       "performance",
       "progressive-enhancement"
     ],
@@ -3945,7 +4395,7 @@ export const articleIndex: ArticleMeta[] = [
     "cluster": "engineering",
     "tags": [
       "animation",
-      "ux",
+      "UX",
       "progressive enhancement",
       "frontend architecture",
       "web platform"
@@ -3992,7 +4442,7 @@ export const articleIndex: ArticleMeta[] = [
     "cluster": "engineering",
     "tags": [
       "web platform",
-      "css",
+      "CSS",
       "browsers",
       "progressive enhancement"
     ],
@@ -4027,6 +4477,28 @@ export const articleIndex: ArticleMeta[] = [
       "worker pool"
     ],
     "readingTime": 9
+  },
+  {
+    "title": "WebGL on a budget: shipping 3D without melting mid-range phones",
+    "description": "Shipping WebGL inside a performance budget: draw-call discipline, texture arithmetic, lazy canvases, device tiers, and keeping the 3D moment under 500KB.",
+    "slug": "webgl-performance-budgets",
+    "cluster": "engineering",
+    "tags": [
+      "webgl",
+      "performance",
+      "3d",
+      "threejs"
+    ],
+    "date": "2026-01-22",
+    "author": "Hannah Yeo",
+    "keywords": [
+      "WebGL performance",
+      "three.js optimisation",
+      "3D web design",
+      "GPU budgets",
+      "performance budget"
+    ],
+    "readingTime": 10
   },
   {
     "title": "WebSockets vs SSE: a realtime guide without religion",
@@ -4079,7 +4551,7 @@ export const articleIndex: ArticleMeta[] = [
     "tags": [
       "a/b testing",
       "experimentation",
-      "cro",
+      "CRO",
       "statistics",
       "decision making"
     ],
@@ -4189,9 +4661,9 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "attribution-noise-decisions",
     "cluster": "growth",
     "tags": [
-      "Attribution",
-      "Analytics",
-      "Decision-making"
+      "attribution",
+      "analytics",
+      "decision-making"
     ],
     "date": "2026-02-24",
     "author": "Sam Whitfield",
@@ -4300,7 +4772,7 @@ export const articleIndex: ArticleMeta[] = [
     "cluster": "growth",
     "tags": [
       "community",
-      "b2b marketing",
+      "B2B marketing",
       "dark funnel",
       "growth strategy",
       "retention"
@@ -4321,11 +4793,11 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "competitor-alternatives-pages",
     "cluster": "growth",
     "tags": [
-      "seo",
+      "SEO",
       "comparison pages",
       "competitors",
       "content strategy",
-      "b2b"
+      "B2B"
     ],
     "date": "2026-02-25",
     "author": "Priya Nair",
@@ -4347,7 +4819,7 @@ export const articleIndex: ArticleMeta[] = [
     "cluster": "growth",
     "tags": [
       "content strategy",
-      "seo",
+      "SEO",
       "editorial planning",
       "internal linking",
       "topic clusters"
@@ -4391,7 +4863,7 @@ export const articleIndex: ArticleMeta[] = [
     "cluster": "growth",
     "tags": [
       "content strategy",
-      "seo",
+      "SEO",
       "content audit",
       "editorial ops",
       "site health"
@@ -4415,7 +4887,7 @@ export const articleIndex: ArticleMeta[] = [
     "cluster": "growth",
     "tags": [
       "content strategy",
-      "seo",
+      "SEO",
       "editorial planning",
       "attribution",
       "content refresh"
@@ -4428,7 +4900,9 @@ export const articleIndex: ArticleMeta[] = [
       "content marketing roi",
       "editorial strategy"
     ],
-    "readingTime": 9
+    "readingTime": 9,
+    "heroImage": "/images/articles/growth/content-strategy-compounds.jpg",
+    "heroAlt": "Overhead flat-lay of paper topic cards arranged in ascending terraces on cream paper, with pencil arcs, brass paperclips and fern-green tape marking rows."
   },
   {
     "title": "Conversion copywriting: clarity beats clever",
@@ -4437,7 +4911,7 @@ export const articleIndex: ArticleMeta[] = [
     "cluster": "growth",
     "tags": [
       "copywriting",
-      "cro",
+      "CRO",
       "messaging",
       "landing pages",
       "research"
@@ -4483,7 +4957,7 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "cro-experiment-design",
     "cluster": "growth",
     "tags": [
-      "cro",
+      "CRO",
       "experimentation",
       "ab testing",
       "statistics",
@@ -4505,7 +4979,7 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "cro-experiments-that-matter",
     "cluster": "growth",
     "tags": [
-      "cro",
+      "CRO",
       "experimentation",
       "prioritisation",
       "ab testing",
@@ -4614,10 +5088,10 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "heuristic-cro-audits",
     "cluster": "growth",
     "tags": [
-      "cro",
+      "CRO",
       "audit",
       "conversion",
-      "ux",
+      "UX",
       "experimentation"
     ],
     "date": "2026-01-28",
@@ -4639,7 +5113,7 @@ export const articleIndex: ArticleMeta[] = [
       "interactive content",
       "link building",
       "growth experiments",
-      "seo",
+      "SEO",
       "product-led marketing"
     ],
     "date": "2026-06-30",
@@ -4660,7 +5134,7 @@ export const articleIndex: ArticleMeta[] = [
     "tags": [
       "internal linking",
       "information architecture",
-      "seo",
+      "SEO",
       "content strategy",
       "site structure"
     ],
@@ -4683,7 +5157,7 @@ export const articleIndex: ArticleMeta[] = [
       "site search",
       "content strategy",
       "research",
-      "seo",
+      "SEO",
       "analytics"
     ],
     "date": "2025-11-04",
@@ -4703,11 +5177,11 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "international-seo-hreflang",
     "cluster": "growth",
     "tags": [
-      "international seo",
+      "international SEO",
       "hreflang",
       "localisation",
       "migration",
-      "technical seo"
+      "technical SEO"
     ],
     "date": "2026-03-04",
     "author": "Priya Nair",
@@ -4726,7 +5200,7 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "landing-page-testing-program",
     "cluster": "growth",
     "tags": [
-      "cro",
+      "CRO",
       "landing pages",
       "experimentation",
       "ab testing",
@@ -4774,7 +5248,7 @@ export const articleIndex: ArticleMeta[] = [
       "lifecycle marketing",
       "email",
       "retention",
-      "crm",
+      "CRM",
       "activation"
     ],
     "date": "2025-07-09",
@@ -4839,7 +5313,7 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "local-seo-hospitality",
     "cluster": "growth",
     "tags": [
-      "local seo",
+      "local SEO",
       "hospitality",
       "google business profile",
       "structured data",
@@ -4863,7 +5337,7 @@ export const articleIndex: ArticleMeta[] = [
     "tags": [
       "information architecture",
       "navigation",
-      "seo",
+      "SEO",
       "content strategy",
       "website structure"
     ],
@@ -4982,7 +5456,7 @@ export const articleIndex: ArticleMeta[] = [
     "tags": [
       "budget",
       "paid media",
-      "seo",
+      "SEO",
       "channel strategy",
       "cac"
     ],
@@ -5002,11 +5476,11 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "pricing-experiments-ethical",
     "cluster": "growth",
     "tags": [
-      "cro",
+      "CRO",
       "pricing",
       "experimentation",
       "ethics",
-      "b2b"
+      "B2B"
     ],
     "date": "2026-03-14",
     "author": "Sam Whitfield",
@@ -5025,7 +5499,7 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "programmatic-seo-ethics",
     "cluster": "growth",
     "tags": [
-      "programmatic seo",
+      "programmatic SEO",
       "content strategy",
       "site architecture",
       "search quality",
@@ -5047,11 +5521,11 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "programmatic-seo-with-craft",
     "cluster": "growth",
     "tags": [
-      "programmatic seo",
+      "programmatic SEO",
       "content operations",
       "site architecture",
       "data quality",
-      "seo strategy"
+      "SEO strategy"
     ],
     "date": "2026-08-20",
     "author": "Sam Whitfield",
@@ -5134,6 +5608,31 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 9
   },
   {
+    "title": "RSS: the distribution channel you already own",
+    "description": "Followers you rent can be repriced overnight; a feed subscriber is yours. The case for full-text RSS in 2026 — and how to run a feed like a grown-up channel.",
+    "slug": "rss-owned-distribution",
+    "cluster": "growth",
+    "tags": [
+      "rss",
+      "distribution",
+      "publishing",
+      "owned audience",
+      "editorial"
+    ],
+    "date": "2026-08-18",
+    "author": "Mara Ellison",
+    "keywords": [
+      "RSS strategy",
+      "content syndication",
+      "owned audience",
+      "web feeds",
+      "publishing stack"
+    ],
+    "readingTime": 9,
+    "heroImage": "/images/articles/growth/rss-owned-distribution.jpg",
+    "heroAlt": "Editorial print illustration of a brass antenna mast growing from a potted fern, broadcasting concentric brass arcs over a fan of delivered paper envelopes."
+  },
+  {
     "title": "Schema markup that actually moves the needle",
     "description": "Structured data, done pragmatically: which schema types still earn rich results, how to keep JSON-LD honest, and the default set we ship on every build.",
     "slug": "schema-markup-playbook",
@@ -5141,7 +5640,7 @@ export const articleIndex: ArticleMeta[] = [
     "tags": [
       "schema markup",
       "structured data",
-      "technical seo",
+      "technical SEO",
       "json-ld",
       "rich results"
     ],
@@ -5162,7 +5661,7 @@ export const articleIndex: ArticleMeta[] = [
     "cluster": "growth",
     "tags": [
       "site migration",
-      "technical seo",
+      "technical SEO",
       "risk management",
       "website relaunch",
       "analytics"
@@ -5188,7 +5687,7 @@ export const articleIndex: ArticleMeta[] = [
       "share of search",
       "analytics",
       "marketing effectiveness",
-      "seo"
+      "SEO"
     ],
     "date": "2026-07-02",
     "author": "Sam Whitfield",
@@ -5208,10 +5707,10 @@ export const articleIndex: ArticleMeta[] = [
     "cluster": "growth",
     "tags": [
       "site migration",
-      "technical seo",
+      "technical SEO",
       "redirects",
       "website relaunch",
-      "seo checklist"
+      "SEO checklist"
     ],
     "date": "2026-02-18",
     "author": "Priya Nair",
@@ -5229,7 +5728,7 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "technical-seo-checklist-2026",
     "cluster": "growth",
     "tags": [
-      "technical seo",
+      "technical SEO",
       "crawlability",
       "structured data",
       "launch checklist",
@@ -5253,9 +5752,9 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "technical-seo-launch-checklist",
     "cluster": "growth",
     "tags": [
-      "technical seo",
+      "technical SEO",
       "launch checklist",
-      "ci",
+      "CI",
       "crawlability",
       "structured data"
     ],
@@ -5345,7 +5844,7 @@ export const articleIndex: ArticleMeta[] = [
     "tags": [
       "accessibility",
       "procurement",
-      "wcag",
+      "WCAG",
       "rfp",
       "acceptance criteria"
     ],
@@ -5974,7 +6473,7 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "rfp-alternative-better-way",
     "cluster": "playbooks",
     "tags": [
-      "RFP",
+      "rfp",
       "procurement",
       "agency selection",
       "buying design",
@@ -6179,7 +6678,7 @@ export const articleIndex: ArticleMeta[] = [
     "tags": [
       "accessibility",
       "a11y",
-      "wcag",
+      "WCAG",
       "audit",
       "inclusive design"
     ],
@@ -6316,7 +6815,7 @@ export const articleIndex: ArticleMeta[] = [
       "command palette",
       "keyboard navigation",
       "power users",
-      "search ux",
+      "search UX",
       "interaction design"
     ],
     "date": "2026-02-11",
@@ -6453,7 +6952,7 @@ export const articleIndex: ArticleMeta[] = [
     "cluster": "product",
     "tags": [
       "data tables",
-      "enterprise ux",
+      "enterprise UX",
       "dashboards",
       "interaction design",
       "product design"
@@ -6522,7 +7021,7 @@ export const articleIndex: ArticleMeta[] = [
     "cluster": "product",
     "tags": [
       "empty states",
-      "ux writing",
+      "UX writing",
       "onboarding",
       "product design",
       "microcopy"
@@ -6544,7 +7043,7 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "error-messages-that-help",
     "cluster": "product",
     "tags": [
-      "ux writing",
+      "UX writing",
       "error handling",
       "microcopy",
       "product design",
@@ -6751,7 +7250,7 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "multi-step-flows-wizards",
     "cluster": "product",
     "tags": [
-      "ux design",
+      "UX design",
       "multi-step forms",
       "progressive disclosure",
       "product design",
@@ -6798,7 +7297,7 @@ export const articleIndex: ArticleMeta[] = [
     "tags": [
       "notifications",
       "product design",
-      "ux writing",
+      "UX writing",
       "engagement",
       "retention"
     ],
@@ -6821,7 +7320,7 @@ export const articleIndex: ArticleMeta[] = [
       "onboarding",
       "product design",
       "activation",
-      "ux patterns",
+      "UX patterns",
       "retention"
     ],
     "date": "2025-03-19",
@@ -6861,7 +7360,7 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "optimistic-ui-integrity",
     "cluster": "product",
     "tags": [
-      "optimistic ui",
+      "optimistic UI",
       "latency metrics",
       "state management",
       "error handling",
@@ -6885,9 +7384,9 @@ export const articleIndex: ArticleMeta[] = [
     "tags": [
       "permissions",
       "rbac",
-      "enterprise ux",
+      "enterprise UX",
       "admin design",
-      "security ux"
+      "security UX"
     ],
     "date": "2025-06-04",
     "author": "Felix Brandt",
@@ -6905,8 +7404,8 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "pricing-page-ux-research",
     "cluster": "product",
     "tags": [
-      "Pricing",
-      "Conversion",
+      "pricing",
+      "conversion",
       "SaaS",
       "UX research"
     ],
@@ -6948,10 +7447,10 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "progressive-disclosure-complexity",
     "cluster": "product",
     "tags": [
-      "Interaction design",
-      "Complex UI",
-      "Power users",
-      "Product design"
+      "interaction design",
+      "complex UI",
+      "power users",
+      "product design"
     ],
     "date": "2026-06-09",
     "author": "June Okafor",
@@ -6969,7 +7468,7 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "research-repository-that-gets-used",
     "cluster": "product",
     "tags": [
-      "ux research",
+      "UX research",
       "research ops",
       "insights",
       "product design",
@@ -6994,7 +7493,7 @@ export const articleIndex: ArticleMeta[] = [
       "roles and permissions",
       "rbac",
       "team products",
-      "enterprise ux",
+      "enterprise UX",
       "product design"
     ],
     "date": "2026-08-27",
@@ -7036,9 +7535,9 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "search-ux-product",
     "cluster": "product",
     "tags": [
-      "Search",
-      "Interaction design",
-      "Information retrieval",
+      "search",
+      "interaction design",
+      "information retrieval",
       "UX"
     ],
     "date": "2026-03-02",
@@ -7084,7 +7583,7 @@ export const articleIndex: ArticleMeta[] = [
       "settings",
       "information architecture",
       "product governance",
-      "ux audit",
+      "UX audit",
       "defaults"
     ],
     "date": "2025-04-22",
@@ -7104,7 +7603,7 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "settings-design-neglected-ux",
     "cluster": "product",
     "tags": [
-      "ux design",
+      "UX design",
       "settings",
       "product design",
       "defaults",
@@ -7126,9 +7625,9 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "settings-information-architecture",
     "cluster": "product",
     "tags": [
-      "Information architecture",
-      "Product design",
-      "Navigation",
+      "information architecture",
+      "product design",
+      "navigation",
       "UX debt"
     ],
     "date": "2026-05-12",
@@ -7308,10 +7807,10 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "about-pages-that-convince",
     "cluster": "web-design",
     "tags": [
-      "Brand storytelling",
-      "Content design",
-      "Trust",
-      "Conversion"
+      "brand storytelling",
+      "content design",
+      "trust",
+      "conversion"
     ],
     "date": "2026-05-14",
     "author": "Mara Ellison",
@@ -7329,9 +7828,9 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "accessible-design-handoff",
     "cluster": "web-design",
     "tags": [
-      "Accessibility",
-      "Design systems",
-      "Handoff",
+      "accessibility",
+      "design systems",
+      "handoff",
       "WCAG"
     ],
     "date": "2026-01-27",
@@ -7350,7 +7849,7 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "anchor-navigation-long-pages",
     "cluster": "web-design",
     "tags": [
-      "ux patterns",
+      "UX patterns",
       "navigation",
       "editorial design",
       "accessibility"
@@ -7374,7 +7873,7 @@ export const articleIndex: ArticleMeta[] = [
     "tags": [
       "editorial design",
       "content discovery",
-      "ux patterns",
+      "UX patterns",
       "information architecture"
     ],
     "date": "2026-07-09",
@@ -7386,7 +7885,34 @@ export const articleIndex: ArticleMeta[] = [
       "content discovery",
       "card grid design"
     ],
-    "readingTime": 10
+    "readingTime": 10,
+    "heroImage": "/images/articles/web-design/article-index-design.jpg",
+    "heroAlt": "Overhead flat-lay of printed index cards and contents pages arranged in a rhythmic grid on cream paper, one oversized lead card, with brass and fern-green accents."
+  },
+  {
+    "title": "Aspect-ratio systems for editorial imagery",
+    "description": "Stop cropping at random. A small, deliberate set of aspect ratios — what each says editorially, how object-fit discipline works, and how ratios survive art direction.",
+    "slug": "aspect-ratio-systems",
+    "cluster": "web-design",
+    "tags": [
+      "art direction",
+      "editorial design",
+      "imagery",
+      "design systems",
+      "responsive images"
+    ],
+    "date": "2026-01-20",
+    "author": "Hannah Yeo",
+    "keywords": [
+      "aspect ratio design",
+      "image systems web",
+      "editorial layout",
+      "art direction web",
+      "responsive images"
+    ],
+    "readingTime": 7,
+    "heroImage": "/images/articles/web-design/aspect-ratio-systems.jpg",
+    "heroAlt": "Editorial flat-lay of precisely cut paper rectangles in different aspect ratios on cream paper, with a brass ruler, cropping guides and a fern sprig"
   },
   {
     "title": "Bylines and author pages: small design, big trust",
@@ -7416,7 +7942,7 @@ export const articleIndex: ArticleMeta[] = [
     "cluster": "web-design",
     "tags": [
       "layout",
-      "css grid",
+      "CSS grid",
       "landing pages",
       "design trends",
       "editorial design"
@@ -7438,10 +7964,10 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "careers-pages-that-filter-in",
     "cluster": "web-design",
     "tags": [
-      "Employer brand",
+      "employer brand",
       "UX writing",
-      "Hiring",
-      "Conversion"
+      "hiring",
+      "conversion"
     ],
     "date": "2026-04-22",
     "author": "Ruby Castellanos",
@@ -7553,7 +8079,7 @@ export const articleIndex: ArticleMeta[] = [
     "cluster": "web-design",
     "tags": [
       "consent",
-      "ux",
+      "UX",
       "privacy",
       "ethics"
     ],
@@ -7622,9 +8148,9 @@ export const articleIndex: ArticleMeta[] = [
     "cluster": "web-design",
     "tags": [
       "UX writing",
-      "Brand voice",
-      "Error states",
-      "Conversion"
+      "brand voice",
+      "error states",
+      "conversion"
     ],
     "date": "2026-03-18",
     "author": "Leonie Marsh",
@@ -7642,9 +8168,9 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "editorial-grids-on-the-web",
     "cluster": "web-design",
     "tags": [
-      "Editorial design",
+      "editorial design",
       "CSS grid",
-      "Art direction"
+      "art direction"
     ],
     "date": "2026-05-12",
     "author": "June Okafor",
@@ -7663,8 +8189,8 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "editorial-grids-web",
     "cluster": "web-design",
     "tags": [
-      "Editorial design",
-      "Layout",
+      "editorial design",
+      "layout",
       "CSS grid"
     ],
     "date": "2025-08-19",
@@ -7685,8 +8211,8 @@ export const articleIndex: ArticleMeta[] = [
     "tags": [
       "UI design",
       "UX writing",
-      "Web states",
-      "Design systems"
+      "web states",
+      "design systems"
     ],
     "date": "2025-01-21",
     "author": "Aiko Tanaka",
@@ -7706,10 +8232,10 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "error-pages-as-system",
     "cluster": "web-design",
     "tags": [
-      "Error states",
+      "error states",
       "UX writing",
-      "Systems thinking",
-      "Resilience"
+      "systems thinking",
+      "resilience"
     ],
     "date": "2025-11-06",
     "author": "Leonie Marsh",
@@ -7727,9 +8253,9 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "fluid-type-scales-in-practice",
     "cluster": "web-design",
     "tags": [
-      "Typography",
-      "Design tokens",
-      "Responsive design"
+      "typography",
+      "design tokens",
+      "responsive design"
     ],
     "date": "2026-03-17",
     "author": "Aiko Tanaka",
@@ -7776,7 +8302,7 @@ export const articleIndex: ArticleMeta[] = [
       "accessibility",
       "interaction design",
       "design systems",
-      "css"
+      "CSS"
     ],
     "date": "2026-07-06",
     "author": "Aiko Tanaka",
@@ -7798,7 +8324,7 @@ export const articleIndex: ArticleMeta[] = [
       "design review",
       "web design craft",
       "trust signals",
-      "ux details"
+      "UX details"
     ],
     "date": "2026-07-22",
     "author": "June Okafor",
@@ -7841,7 +8367,7 @@ export const articleIndex: ArticleMeta[] = [
     "cluster": "web-design",
     "tags": [
       "form design",
-      "ux writing",
+      "UX writing",
       "validation",
       "accessibility",
       "conversion"
@@ -7864,7 +8390,7 @@ export const articleIndex: ArticleMeta[] = [
     "cluster": "web-design",
     "tags": [
       "form design",
-      "ux writing",
+      "UX writing",
       "conversion",
       "accessibility",
       "interaction design"
@@ -7886,10 +8412,10 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "handoff-that-does-not-decay",
     "cluster": "web-design",
     "tags": [
-      "Design systems",
-      "Design engineering",
-      "Process",
-      "Design tokens"
+      "design systems",
+      "design engineering",
+      "process",
+      "design tokens"
     ],
     "date": "2024-11-05",
     "author": "Tomás Reyes",
@@ -7907,10 +8433,10 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "hero-patterns-beyond-gradient",
     "cluster": "web-design",
     "tags": [
-      "Homepage design",
-      "Motion",
-      "Typography",
-      "Performance"
+      "homepage design",
+      "motion",
+      "typography",
+      "performance"
     ],
     "date": "2026-02-04",
     "author": "June Okafor",
@@ -7923,13 +8449,35 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 9
   },
   {
+    "title": "Hover states with purpose",
+    "description": "Hover is the most abused state in interface design — decoration where it should teach. A taxonomy of hover states that do a job, plus the focus-parity rules.",
+    "slug": "hover-states-with-purpose",
+    "cluster": "web-design",
+    "tags": [
+      "interaction design",
+      "UX patterns",
+      "accessibility",
+      "micro-interactions"
+    ],
+    "date": "2026-09-12",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "hover states",
+      "interaction design",
+      "ux affordances",
+      "focus states",
+      "web design craft"
+    ],
+    "readingTime": 10
+  },
+  {
     "title": "Icon systems: SVG discipline for the web",
     "description": "Most icon sets decay into a junk drawer of mismatched SVGs. Grid rules, stroke discipline, sprite strategy and the build-time pruning that keeps an icon system honest.",
     "slug": "icon-systems-svg-discipline",
     "cluster": "web-design",
     "tags": [
       "design systems",
-      "svg",
+      "SVG",
       "icons",
       "front-end"
     ],
@@ -7949,10 +8497,10 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "image-art-direction-web",
     "cluster": "web-design",
     "tags": [
-      "Art direction",
-      "Responsive images",
-      "Photography",
-      "Performance"
+      "art direction",
+      "responsive images",
+      "photography",
+      "performance"
     ],
     "date": "2025-11-20",
     "author": "Mara Ellison",
@@ -7972,10 +8520,10 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "inclusive-design-beyond-checklists",
     "cluster": "web-design",
     "tags": [
-      "Accessibility",
-      "Inclusive design",
+      "accessibility",
+      "inclusive design",
       "UX writing",
-      "Interaction design"
+      "interaction design"
     ],
     "date": "2025-08-12",
     "author": "Hannah Yeo",
@@ -7996,7 +8544,7 @@ export const articleIndex: ArticleMeta[] = [
       "landing pages",
       "conversion",
       "copywriting",
-      "cta design",
+      "CTA design",
       "above the fold"
     ],
     "date": "2026-06-23",
@@ -8016,9 +8564,9 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "landing-page-anatomy",
     "cluster": "web-design",
     "tags": [
-      "Conversion design",
-      "Web design",
-      "Copywriting"
+      "conversion design",
+      "web design",
+      "copywriting"
     ],
     "date": "2024-11-05",
     "author": "Priya Nair",
@@ -8031,14 +8579,37 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 10
   },
   {
+    "title": "Locale switchers without the flag clipart",
+    "description": "Language switchers are small UI with big politics. Where the control lives, name-in-own-language rules, hreflang interplay, script support, and when to skip it.",
+    "slug": "locale-switcher-design",
+    "cluster": "web-design",
+    "tags": [
+      "internationalisation",
+      "navigation",
+      "UX patterns",
+      "localisation",
+      "multilingual"
+    ],
+    "date": "2025-09-02",
+    "author": "Felix Brandt",
+    "keywords": [
+      "language switcher UX",
+      "multilingual websites",
+      "localisation design",
+      "i18n UX",
+      "web design"
+    ],
+    "readingTime": 7
+  },
+  {
     "title": "A taxonomy of micro-interactions (and when to say no)",
     "description": "Hover states, cursor follow, scroll reveals and button physics — a working taxonomy with duration curves, quality tests, and reduced-motion fallbacks for every pattern.",
     "slug": "microinteraction-taxonomy",
     "cluster": "web-design",
     "tags": [
-      "Interaction design",
-      "Motion",
-      "Accessibility"
+      "interaction design",
+      "motion",
+      "accessibility"
     ],
     "date": "2026-06-09",
     "author": "Felix Brandt",
@@ -8060,7 +8631,7 @@ export const articleIndex: ArticleMeta[] = [
       "microinteractions",
       "interaction design",
       "motion design",
-      "ui polish",
+      "UI polish",
       "accessibility"
     ],
     "date": "2025-03-14",
@@ -8082,9 +8653,9 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "motion-that-earns-its-keep",
     "cluster": "web-design",
     "tags": [
-      "Motion design",
-      "Interaction design",
-      "Accessibility"
+      "motion design",
+      "interaction design",
+      "accessibility"
     ],
     "date": "2025-06-03",
     "author": "June Okafor",
@@ -8104,9 +8675,9 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "navigation-that-survives-mobile",
     "cluster": "web-design",
     "tags": [
-      "Navigation",
-      "Mobile design",
-      "Information architecture"
+      "navigation",
+      "mobile design",
+      "information architecture"
     ],
     "date": "2025-03-18",
     "author": "Sam Whitfield",
@@ -8171,8 +8742,8 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "pricing-pages-that-convert-quietly",
     "cluster": "web-design",
     "tags": [
-      "Conversion design",
-      "Pricing",
+      "conversion design",
+      "pricing",
       "B2B"
     ],
     "date": "2026-04-21",
@@ -8192,7 +8763,7 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "print-stylesheets-still-matter",
     "cluster": "web-design",
     "tags": [
-      "print css",
+      "print CSS",
       "design systems",
       "accessibility",
       "craft",
@@ -8214,10 +8785,10 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "pull-quotes-editorial-devices",
     "cluster": "web-design",
     "tags": [
-      "Editorial design",
-      "Typography",
-      "Accessibility",
-      "Layout"
+      "editorial design",
+      "typography",
+      "accessibility",
+      "layout"
     ],
     "date": "2025-09-10",
     "author": "June Okafor",
@@ -8230,6 +8801,28 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 9
   },
   {
+    "title": "Reading progress indicators: craft or clutter?",
+    "description": "The reading progress bar is the most faked detail on the web. The honest version: when long-form needs one, how to build it without jank or lies, when to skip it.",
+    "slug": "reading-progress-honest",
+    "cluster": "web-design",
+    "tags": [
+      "motion design",
+      "micro-interactions",
+      "UX patterns",
+      "performance"
+    ],
+    "date": "2026-08-21",
+    "author": "Felix Brandt",
+    "keywords": [
+      "reading progress bar",
+      "scroll indicator ux",
+      "micro-interaction design",
+      "motion restraint",
+      "web design details"
+    ],
+    "readingTime": 9
+  },
+  {
     "title": "Related-content modules that readers actually use",
     "description": "Most 'related articles' modules are decoration. Here's how we design, rank and measure recommendation modules that readers genuinely click — and when to delete them.",
     "slug": "related-content-modules",
@@ -8238,7 +8831,7 @@ export const articleIndex: ArticleMeta[] = [
       "content design",
       "internal linking",
       "editorial design",
-      "ux patterns"
+      "UX patterns"
     ],
     "date": "2026-05-14",
     "author": "Leonie Marsh",
@@ -8259,7 +8852,7 @@ export const articleIndex: ArticleMeta[] = [
       "tables",
       "responsive design",
       "data design",
-      "mobile ux"
+      "mobile UX"
     ],
     "date": "2026-04-14",
     "author": "Dev Khatri",
@@ -8327,7 +8920,7 @@ export const articleIndex: ArticleMeta[] = [
       "theming",
       "campaigns",
       "brand systems",
-      "css architecture"
+      "CSS architecture"
     ],
     "date": "2026-07-02",
     "author": "June Okafor",
@@ -8347,7 +8940,7 @@ export const articleIndex: ArticleMeta[] = [
     "tags": [
       "information architecture",
       "sitemaps",
-      "navigation ux",
+      "navigation UX",
       "site structure"
     ],
     "date": "2026-05-16",
@@ -8413,7 +9006,7 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "sticky-elements-that-dont-annoy",
     "cluster": "web-design",
     "tags": [
-      "sticky ui",
+      "sticky UI",
       "navigation",
       "interaction design",
       "accessibility"
@@ -8480,9 +9073,9 @@ export const articleIndex: ArticleMeta[] = [
     "slug": "typography-that-loads",
     "cluster": "web-design",
     "tags": [
-      "Typography",
-      "Performance",
-      "Web design"
+      "typography",
+      "performance",
+      "web design"
     ],
     "date": "2025-02-11",
     "author": "June Okafor",
@@ -8527,7 +9120,7 @@ export const caseIndex: CaseStudyMeta[] = [
     "cluster": "work",
     "tags": [
       "case study",
-      "b2b ecommerce",
+      "B2B ecommerce",
       "catalogue design",
       "search",
       "industrial"
@@ -8564,10 +9157,10 @@ export const caseIndex: CaseStudyMeta[] = [
     "slug": "arlo-and-sons-tradies-marketplace",
     "cluster": "work",
     "tags": [
-      "Marketplace",
-      "Product design",
-      "Trust & safety",
-      "Two-sided platforms"
+      "marketplace",
+      "product design",
+      "trust & safety",
+      "two-sided platforms"
     ],
     "date": "2025-04-10",
     "author": "Aiko Tanaka",
@@ -8604,9 +9197,9 @@ export const caseIndex: CaseStudyMeta[] = [
     "cluster": "work",
     "tags": [
       "AI products",
-      "Health",
-      "Responsible AI",
-      "Conversational UX"
+      "health",
+      "responsible AI",
+      "conversational UX"
     ],
     "date": "2026-03-05",
     "author": "Dev Khatri",
@@ -8836,7 +9429,7 @@ export const caseIndex: CaseStudyMeta[] = [
     "cluster": "work",
     "tags": [
       "ecommerce",
-      "delivery ux",
+      "delivery UX",
       "local retail",
       "content design",
       "conversion"
@@ -8916,8 +9509,8 @@ export const caseIndex: CaseStudyMeta[] = [
     "tags": [
       "case study",
       "education",
-      "headless cms",
-      "admissions ux",
+      "headless CMS",
+      "admissions UX",
       "design systems"
     ],
     "date": "2025-11-20",
@@ -8952,10 +9545,10 @@ export const caseIndex: CaseStudyMeta[] = [
     "slug": "glade-skincare-ingredient-honesty",
     "cluster": "work",
     "tags": [
-      "E-commerce",
-      "Beauty",
+      "e-commerce",
+      "beauty",
       "UX design",
-      "Accessibility"
+      "accessibility"
     ],
     "date": "2024-11-05",
     "author": "Priya Nair",
@@ -9069,10 +9662,10 @@ export const caseIndex: CaseStudyMeta[] = [
     "slug": "hearthbrew-subscription-club",
     "cluster": "work",
     "tags": [
-      "E-commerce",
-      "Subscriptions",
-      "Retention",
-      "Food & drink"
+      "e-commerce",
+      "subscriptions",
+      "retention",
+      "food & drink"
     ],
     "date": "2026-02-12",
     "author": "Tomás Reyes",
@@ -9149,10 +9742,10 @@ export const caseIndex: CaseStudyMeta[] = [
     "slug": "kite-and-anchor-insurtech",
     "cluster": "work",
     "tags": [
-      "Fintech",
-      "Onboarding",
-      "Forms",
-      "Progressive disclosure"
+      "fintech",
+      "onboarding",
+      "forms",
+      "progressive disclosure"
     ],
     "date": "2025-06-05",
     "author": "June Okafor",
@@ -9226,10 +9819,10 @@ export const caseIndex: CaseStudyMeta[] = [
     "slug": "marlowe-hotels-direct-booking-relaunch",
     "cluster": "work",
     "tags": [
-      "Hospitality",
-      "Booking flows",
-      "Performance",
-      "Editorial design"
+      "hospitality",
+      "booking flows",
+      "performance",
+      "editorial design"
     ],
     "date": "2025-11-06",
     "author": "Mara Ellison",
@@ -9427,7 +10020,7 @@ export const caseIndex: CaseStudyMeta[] = [
       "health",
       "accessibility",
       "booking flow",
-      "ux research",
+      "UX research",
       "resilience"
     ],
     "date": "2024-10-08",
@@ -9504,9 +10097,9 @@ export const caseIndex: CaseStudyMeta[] = [
     "cluster": "work",
     "tags": [
       "SaaS",
-      "Product design",
-      "Design systems",
-      "Accessibility"
+      "product design",
+      "design systems",
+      "accessibility"
     ],
     "date": "2025-08-21",
     "author": "Aiko Tanaka",
@@ -9539,10 +10132,10 @@ export const caseIndex: CaseStudyMeta[] = [
     "slug": "saltbush-collective-marketplace",
     "cluster": "work",
     "tags": [
-      "Marketplace",
-      "E-commerce",
-      "Checkout",
-      "Food & drink"
+      "marketplace",
+      "e-commerce",
+      "checkout",
+      "food & drink"
     ],
     "date": "2025-05-14",
     "author": "Nate Sullivan",
@@ -9576,8 +10169,8 @@ export const caseIndex: CaseStudyMeta[] = [
     "cluster": "work",
     "tags": [
       "media",
-      "audio ux",
-      "transcript seo",
+      "audio UX",
+      "transcript SEO",
       "membership",
       "editorial design"
     ],
@@ -9616,10 +10209,10 @@ export const caseIndex: CaseStudyMeta[] = [
     "slug": "summit-and-still-yoga",
     "cluster": "work",
     "tags": [
-      "Booking UX",
-      "Wellness",
-      "Lifecycle email",
-      "Design systems"
+      "booking UX",
+      "wellness",
+      "lifecycle email",
+      "design systems"
     ],
     "date": "2025-11-20",
     "author": "Priya Nair",
@@ -9656,10 +10249,10 @@ export const caseIndex: CaseStudyMeta[] = [
     "slug": "sundial-travel-booking",
     "cluster": "work",
     "tags": [
-      "Travel",
-      "E-commerce",
+      "travel",
+      "e-commerce",
       "UX design",
-      "Content strategy"
+      "content strategy"
     ],
     "date": "2025-04-17",
     "author": "Leonie Marsh",
@@ -9695,10 +10288,10 @@ export const caseIndex: CaseStudyMeta[] = [
     "slug": "tallow-and-co-providore",
     "cluster": "work",
     "tags": [
-      "Retail",
-      "Brand",
-      "E-commerce",
-      "Local business"
+      "retail",
+      "brand",
+      "e-commerce",
+      "local business"
     ],
     "date": "2025-08-21",
     "author": "June Okafor",
@@ -9737,7 +10330,7 @@ export const caseIndex: CaseStudyMeta[] = [
       "hospitality",
       "restaurant website",
       "reservations",
-      "local seo"
+      "local SEO"
     ],
     "date": "2025-08-14",
     "author": "June Okafor",
@@ -9774,10 +10367,10 @@ export const caseIndex: CaseStudyMeta[] = [
     "slug": "willow-and-wren-bookshop",
     "cluster": "work",
     "tags": [
-      "Retail",
-      "Content design",
-      "E-commerce",
-      "Editorial"
+      "retail",
+      "content design",
+      "e-commerce",
+      "editorial"
     ],
     "date": "2025-09-18",
     "author": "Leonie Marsh",
@@ -9809,4 +10402,4 @@ export const caseIndex: CaseStudyMeta[] = [
   }
 ]
 
-export const workImages: string[] = ["arlo-and-sons-tradies-marketplace","brightline-solar-quote-engine","brightline-solar-quoter","brightmarsh-onboarding","copperline-community-bank","copperline-mobile-bank","fern-and-forage-florist","fernleigh-cellar-club","fernleigh-wines-dtc-storefront","glade-ingredient-explorer","glade-skincare-ingredient-honesty","glasshouse-seat-map","hearthbrew-brand-system","hearthbrew-subscription-club","holloway-player","holloway-records-label-site","holloway-waveform-player","kite-and-anchor-insurtech","ledgerline-pricing-calculator","meridian-climate-data-explorer","northwind-ledger-budget","northwind-ledger-dashboard-rebuild","osprey-outdoor-configurator-launch","postcards-museum-archive","pylon-care-assistant","pylon-health-booking","pylon-health-telehealth-flow","quarry-property-map","signal-and-noise-podcast-network","summit-and-still-yoga","sundial-itinerary-builder","sundial-travel-booking","tallow-and-co-providore","tallow-feast-builder","tallow-seat-map","tidal-games-store","wattle-and-daub-reservations","wattle-and-daub-reserve","willow-and-wren-bookshop"]
+export const workImages: string[] = ["arlo-and-sons-tradies-marketplace","brightline-solar-quote-engine","brightline-solar-quoter","brightmarsh-onboarding","copperline-community-bank","copperline-mobile-bank","fern-and-forage-florist","fernleigh-cellar-club","fernleigh-wines-dtc-storefront","glade-ingredient-explorer","glade-skincare-ingredient-honesty","glasshouse-seat-map","hearthbrew-brand-system","hearthbrew-subscription-club","holloway-player","holloway-records-label-site","holloway-waveform-player","kite-and-anchor-insurtech","ledgerline-pricing-calculator","meridian-climate-data-explorer","northwind-ledger-budget","northwind-ledger-dashboard-rebuild","osprey-outdoor-configurator-launch","postcards-archive-explorer","postcards-museum-archive","pylon-care-assistant","pylon-health-booking","pylon-health-telehealth-flow","quarry-property-map","signal-and-noise-podcast-network","summit-and-still-yoga","sundial-itinerary-builder","sundial-travel-booking","tallow-and-co-providore","tallow-feast-builder","tallow-seat-map","tidal-games-store","wattle-and-daub-reservations","wattle-and-daub-reserve","willow-and-wren-bookshop"]

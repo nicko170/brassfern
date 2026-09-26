@@ -1,8 +1,9 @@
 import { Link, useParams } from 'react-router-dom'
 import { Seo } from '../lib/head'
 import { getIndustry, industries } from '../data/industries'
-import { caseStudies } from '../lib/content'
-import { WorkCard } from '../components/Cards'
+import { getService } from '../data/services'
+import { articles, caseStudies } from '../lib/content'
+import { ArticleCard, WorkCard } from '../components/Cards'
 import Crumbs from '../components/Crumbs'
 import { breadcrumbLd } from '../lib/jsonld'
 import Reveal from '../components/Reveal'
@@ -49,6 +50,15 @@ export function IndustryPage() {
     ? exact
     : caseStudies.filter((c) => c.industry.toLowerCase().includes(industry.name.split(' ')[0].toLowerCase()))
   ).slice(0, 3)
+  // Journal articles scored by how many of this industry's signal tags they
+  // carry (tags are canonicalised at index-build time), newest breaking ties.
+  const signals = new Set(industry.signals)
+  const journalSignals = articles
+    .map((a) => ({ a, score: a.tags.reduce((n, t) => n + (signals.has(t) ? 1 : 0), 0) }))
+    .filter((x) => x.score > 0)
+    .sort((x, y) => y.score - x.score || y.a.date.localeCompare(x.a.date))
+    .slice(0, 3)
+    .map((x) => x.a)
   return (
     <>
       <Seo
@@ -75,6 +85,15 @@ export function IndustryPage() {
                 <li key={f}><span>Focus</span><span>{f}</span></li>
               ))}
             </ul>
+            <h2 className="mono muted" style={{ marginBlock: 'var(--space-5) 1rem' }}>What we do here</h2>
+            <div className="tag-row">
+              {industry.services.map((slug) => {
+                const s = getService(slug)
+                return s ? (
+                  <Link key={slug} to={`/services/${s.slug}`} className="chip">{s.name}</Link>
+                ) : null
+              })}
+            </div>
           </div>
           <div className="night" style={{ borderRadius: 'var(--radius)', padding: 'clamp(1.5rem,4vw,2.5rem)' }}>
             <h2 className="display h-3">Building in {industry.name.toLowerCase()}?</h2>
@@ -85,6 +104,16 @@ export function IndustryPage() {
           </div>
         </div>
       </section>
+      {journalSignals.length > 0 && (
+        <section className="section container" style={{ paddingTop: 0 }}>
+          <Reveal className="overline">From the journal</Reveal>
+          <div className="card-grid card-grid--3" style={{ marginTop: 'var(--space-5)' }}>
+            {journalSignals.map((a) => (
+              <ArticleCard key={`${a.cluster}/${a.slug}`} a={a} />
+            ))}
+          </div>
+        </section>
+      )}
       {related.length > 0 && (
         <section className="section container" style={{ paddingTop: 0 }}>
           <Reveal className="overline">Work in {industry.name.toLowerCase()}</Reveal>

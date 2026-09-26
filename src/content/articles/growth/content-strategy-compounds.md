@@ -8,6 +8,8 @@ date: 2025-06-05
 author: Priya Nair
 keywords: [content strategy, seo content, content marketing roi, editorial strategy]
 readingTime: 9
+heroImage: /images/articles/growth/content-strategy-compounds.jpg
+heroAlt: "Overhead flat-lay of paper topic cards arranged in ascending terraces on cream paper, with pencil arcs, brass paperclips and fern-green tape marking rows."
 ---
 
 Ask a mid-size company how their content strategy is going and you'll usually hear a number. "We're publishing four posts a week." "We did two hundred articles last year." Volume is the one metric everyone can quote, which is suspicious, because volume is the one metric that says almost nothing about whether content is working.

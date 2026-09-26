@@ -1,6 +1,6 @@
 ---
 title: "AI answers vs good navigation: choose deliberately"
-description: "Replacing your site's navigation with an AI answer box is rarely the upgrade it looks like. A decision framework for AI search vs structured browse, with honest measurement."
+description: "Replacing your site's navigation with an AI answer box is rarely the upgrade it looks like. A decision framework for AI search vs structured browse, honestly measured."
 slug: ai-answers-vs-navigation
 cluster: ai
 tags: [ai search, information architecture, findability, rag, site navigation]

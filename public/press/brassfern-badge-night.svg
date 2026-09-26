@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Brassfern avatar badge">
+  <title>Brassfern avatar badge — paper fern on night</title>
+  <rect width="96" height="96" rx="22" fill="#141c15"/>
+  <g transform="translate(16 16) scale(2)" stroke="#f5efdf" stroke-width="1.7" stroke-linecap="round" fill="none">
+    <path d="M16 27 C16 20 16 12 16 6"/>
+    <path d="M16 23 C13 22 11 20 10.5 17.5"/>
+    <path d="M16 23 C19 22 21 20 21.5 17.5"/>
+    <path d="M16 19 C13.6 18 12 16.4 11.6 14"/>
+    <path d="M16 19 C18.4 18 20 16.4 20.4 14"/>
+    <path d="M16 15 C14.2 14 13 12.8 12.8 11"/>
+    <path d="M16 15 C17.8 14 19 12.8 19.2 11"/>
+  </g>
+  <circle cx="48" cy="48" r="40" fill="none" stroke="#b08a3e" stroke-opacity="0.35"/>
+</svg>

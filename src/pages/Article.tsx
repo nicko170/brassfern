@@ -1,7 +1,7 @@
 import { useMemo } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link, Navigate, useParams } from 'react-router-dom'
 import { Seo } from '../lib/head'
-import { articles, byTag, formatDate, getArticle, relatedArticles } from '../lib/content'
+import { allTags, articles, byTag, formatDate, getArticle, relatedArticles } from '../lib/content'
 import { articleLd, breadcrumbLd } from '../lib/jsonld'
 import { CLUSTER_LABELS, CLUSTERS, type Cluster } from '../lib/types'
 import { personSlug } from '../data/people'
@@ -129,6 +129,16 @@ export default function Article() {
 export function TagPage() {
   const { tag } = useParams()
   const decoded = tag ? decodeURIComponent(tag) : ''
+  // Tags are canonicalised (case/acronyms) at index-build time. Old or
+  // mis-cased URLs ("/journal/tag/ux") forward to the canonical casing so
+  // there is exactly one page per tag.
+  const canonical = useMemo(
+    () => (decoded ? allTags().find((t) => t.tag.toLowerCase() === decoded.toLowerCase()) : undefined),
+    [decoded],
+  )
+  if (canonical && canonical.tag !== decoded) {
+    return <Navigate to={`/journal/tag/${encodeURIComponent(canonical.tag)}`} replace />
+  }
   const list = byTag(decoded)
   if (!decoded || list.length === 0) return <NotFound />
   return (

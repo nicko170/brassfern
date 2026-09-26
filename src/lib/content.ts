@@ -13,6 +13,10 @@ import type { ArticleMeta, CaseStudyMeta, Cluster } from './types'
 export const articles: ArticleMeta[] = [...articleIndex].sort((a, b) => b.date.localeCompare(a.date))
 export const caseStudies: CaseStudyMeta[] = [...caseIndex].sort((a, b) => b.date.localeCompare(a.date))
 
+// NOTE: every `tags` array in the index is already canonicalised (lowercase,
+// acronyms uppercased — "SEO", "UX", "SaaS") by build-content-index.mjs.
+// TagPage redirects mis-cased URLs to the canonical casing.
+
 const bodyLoaders = import.meta.glob('../content/**/*.md', {
   query: '?raw',
   import: 'default',
