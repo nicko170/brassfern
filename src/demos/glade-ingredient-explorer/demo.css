@@ -1,0 +1,1409 @@
+/* GLADE Rituals — art direction: apothecary restraint. Bone-white paper,
+   sage green, soft terracotta marks; serif names, mono INCI and percentages.
+   A ledger, not a billboard. Scoped under .gix so nothing leaks. */
+
+.gix {
+  --bone: #f7f3e9;
+  --bone-2: #efeadb;
+  --paper: #fdfbf4;
+  --ink: #282e24;
+  --ink-2: #565d4e;
+  --mute: #8a8f7c;
+  --sage: #647751;
+  --sage-deep: #3c4c35;
+  --sage-soft: #dde3cf;
+  --terra: #b9613c;
+  --terra-deep: #93492b;
+  --terra-soft: #eddccf;
+  --ochre: #a78b4b;
+  --line: rgba(40, 46, 36, 0.16);
+  --line-soft: rgba(40, 46, 36, 0.08);
+  --serif: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, 'Times New Roman', serif;
+  --sans: 'Avenir Next', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --mono: 'IBM Plex Mono', 'SF Mono', ui-monospace, 'Cascadia Mono', Menlo, monospace;
+  position: relative;
+  min-height: calc(100svh - 3rem);
+  background:
+    radial-gradient(900px 420px at 15% -8%, rgba(255, 255, 255, 0.65), transparent 60%),
+    var(--bone);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.55;
+  overflow-x: clip;
+}
+
+.gix *,
+.gix *::before,
+.gix *::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.gix button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  background: none;
+  border: 0;
+  padding: 0;
+}
+
+.gix button:focus-visible,
+.gix a:focus-visible,
+.gix input:focus-visible,
+.gix select:focus-visible {
+  outline: 2px solid var(--terra);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.gix h1,
+.gix h2,
+.gix h3 {
+  font-family: var(--serif);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+}
+
+.gix em {
+  color: var(--sage);
+}
+
+.gix-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.gix-skip {
+  position: absolute;
+  left: 1rem;
+  top: -3.5rem;
+  z-index: 70;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: top 180ms ease;
+}
+
+.gix-skip:focus-visible {
+  top: 0.75rem;
+}
+
+.gix-overline {
+  display: block;
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--sage-deep);
+}
+
+.gix-overline--small {
+  font-size: 0.6rem;
+  color: var(--mute);
+  margin-bottom: 0.4rem;
+}
+
+/* ── Header ─────────────────────────────────────────────────────────── */
+
+.gix-head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 1.4rem clamp(1rem, 4vw, 3rem) 1.1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.gix-wordmark {
+  font-family: var(--serif);
+  font-size: 1.9rem;
+  letter-spacing: 0.14em;
+  color: var(--ink);
+}
+
+.gix-wordmark span {
+  color: var(--terra);
+}
+
+.gix-head__tag {
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--mute);
+  margin-top: 0.15rem;
+}
+
+.gix-tabs {
+  display: flex;
+  gap: 0.35rem;
+  background: var(--bone-2);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.25rem;
+}
+
+.gix-tab {
+  position: relative;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  color: var(--ink-2);
+  transition: background 160ms ease, color 160ms ease, box-shadow 160ms ease;
+}
+
+.gix-tab--on {
+  background: var(--paper);
+  color: var(--ink);
+  box-shadow: 0 1px 4px rgba(40, 46, 36, 0.14);
+}
+
+.gix-tab__alert {
+  position: absolute;
+  top: 0.3rem;
+  right: 0.35rem;
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: var(--terra);
+}
+
+/* ── Layout ─────────────────────────────────────────────────────────── */
+
+.gix-main {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: clamp(1.25rem, 3.5vw, 2.5rem) clamp(1rem, 4vw, 3rem) 4rem;
+}
+
+.gix-intro {
+  max-width: 46rem;
+  margin-bottom: 1.75rem;
+}
+
+.gix-h1 {
+  font-size: clamp(1.7rem, 3.4vw, 2.6rem);
+  margin-bottom: 0.7rem;
+}
+
+.gix-h2 {
+  font-size: clamp(1.3rem, 2.4vw, 1.7rem);
+}
+
+.gix-intro__sub {
+  color: var(--ink-2);
+  max-width: 40rem;
+}
+
+.gix-foot {
+  border-top: 1px solid var(--line);
+  padding: 1.2rem clamp(1rem, 4vw, 3rem) 2.5rem;
+  font-size: 0.8rem;
+  color: var(--mute);
+}
+
+.gix-foot p {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+/* ── Toolbar (index) ────────────────────────────────────────────────── */
+
+.gix-toolbar {
+  display: grid;
+  gap: 0.9rem;
+  margin-bottom: 0.9rem;
+}
+
+.gix-input {
+  width: 100%;
+  font: inherit;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0.7rem 0.9rem;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.gix-input::placeholder {
+  color: var(--mute);
+}
+
+.gix-input:focus {
+  border-color: var(--sage);
+  box-shadow: 0 0 0 3px rgba(100, 119, 81, 0.18);
+  outline: none;
+}
+
+.gix-search .gix-input {
+  max-width: 34rem;
+}
+
+.gix-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.gix-chips__label {
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--mute);
+  margin-right: 0.2rem;
+}
+
+.gix-chip {
+  font-size: 0.8rem;
+  padding: 0.32rem 0.8rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--paper);
+  color: var(--ink-2);
+  transition: background 140ms ease, border-color 140ms ease, color 140ms ease;
+}
+
+.gix-chip:hover {
+  border-color: var(--sage);
+  color: var(--ink);
+}
+
+.gix-chip--on {
+  background: var(--sage-deep);
+  border-color: var(--sage-deep);
+  color: var(--paper);
+}
+
+.gix-chip--static {
+  font-size: 0.72rem;
+  padding: 0.2rem 0.65rem;
+  cursor: default;
+  color: var(--ink-2);
+}
+
+.gix-count {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--mute);
+  margin: 0.35rem 0 1.1rem;
+}
+
+/* ── Ingredient cards ───────────────────────────────────────────────── */
+
+.gix-grid {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 0.9rem;
+}
+
+.gix-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  background: var(--paper);
+  border: 1px solid var(--line-soft);
+  border-top: 2px solid var(--ink);
+  border-radius: 10px;
+  padding: 1rem 1.1rem 1.1rem;
+  transition: transform 200ms cubic-bezier(0.22, 1, 0.36, 1), box-shadow 200ms ease, border-color 160ms ease;
+}
+
+.gix-card:hover {
+  transform: translateY(-3px);
+  border-top-color: var(--sage);
+  box-shadow: 0 10px 26px -14px rgba(40, 46, 36, 0.35);
+}
+
+.gix-card__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gix-card__cat {
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--sage-deep);
+}
+
+.gix-card__time {
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  color: var(--mute);
+  border: 1px solid var(--line-soft);
+  border-radius: 4px;
+  padding: 0.05rem 0.35rem;
+}
+
+.gix-card__name {
+  font-family: var(--serif);
+  font-size: 1.18rem;
+  line-height: 1.15;
+  color: var(--ink);
+}
+
+.gix-card__inci {
+  font-family: var(--mono);
+  font-size: 0.64rem;
+  color: var(--mute);
+}
+
+.gix-card__does {
+  font-size: 0.86rem;
+  color: var(--ink-2);
+  flex: 1;
+}
+
+.gix-card__foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px dashed var(--line);
+  padding-top: 0.55rem;
+  margin-top: 0.2rem;
+}
+
+.gix-card__band {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  color: var(--terra-deep);
+}
+
+/* ── Evidence dots ──────────────────────────────────────────────────── */
+
+.gix-ev {
+  display: inline-flex;
+  gap: 3px;
+  align-items: center;
+}
+
+.gix-ev__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: 1px solid var(--ochre);
+  background: transparent;
+}
+
+.gix-ev__dot--on {
+  background: var(--ochre);
+}
+
+.gix-ev--small .gix-ev__dot {
+  width: 6px;
+  height: 6px;
+}
+
+/* ── Empty state ────────────────────────────────────────────────────── */
+
+.gix-none {
+  border: 1px dashed var(--line);
+  border-radius: 12px;
+  background: var(--paper);
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  color: var(--ink-2);
+}
+
+.gix-none__title {
+  font-family: var(--serif);
+  font-size: 1.3rem;
+  color: var(--ink);
+  margin-bottom: 0.3rem;
+}
+
+.gix-none .gix-btn {
+  margin-top: 1rem;
+}
+
+/* ── Buttons ────────────────────────────────────────────────────────── */
+
+.gix-btn {
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--paper);
+  transition: transform 160ms ease, background 160ms ease;
+}
+
+.gix-btn:hover:not(:disabled) {
+  background: var(--sage-deep);
+  transform: translateY(-1px);
+}
+
+.gix-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.gix-btn--ghost {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--line);
+}
+
+.gix-btn--ghost:hover:not(:disabled) {
+  background: var(--bone-2);
+}
+
+.gix-btn--small {
+  font-size: 0.76rem;
+  padding: 0.42rem 0.9rem;
+}
+
+.gix-iconbtn {
+  width: 1.9rem;
+  height: 1.9rem;
+  display: inline-grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--paper);
+  font-size: 0.75rem;
+  color: var(--ink-2);
+  transition: background 140ms ease, color 140ms ease, border-color 140ms ease;
+}
+
+.gix-iconbtn:hover:not(:disabled) {
+  border-color: var(--sage);
+  color: var(--sage-deep);
+}
+
+.gix-iconbtn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.gix-iconbtn--remove:hover:not(:disabled) {
+  border-color: var(--terra);
+  color: var(--terra-deep);
+}
+
+.gix-link {
+  color: var(--sage-deep);
+  text-decoration: underline;
+  text-decoration-color: rgba(60, 76, 53, 0.4);
+  text-underline-offset: 3px;
+  transition: color 140ms ease;
+}
+
+.gix-link:hover {
+  color: var(--terra-deep);
+}
+
+/* ── Compare / radar ────────────────────────────────────────────────── */
+
+.gix-compare {
+  background: var(--paper);
+  border: 1px solid var(--line-soft);
+  border-top: 2px solid var(--ink);
+  border-radius: 12px;
+  padding: 1.4rem clamp(1rem, 3vw, 1.8rem);
+  margin-bottom: 1.6rem;
+}
+
+.gix-compare__head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.gix-compare__head .gix-overline {
+  margin-bottom: 0.4rem;
+}
+
+.gix-compare__selects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1rem;
+}
+
+.gix-compare__pick {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.gix-compare__letter {
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  width: 1.35rem;
+  height: 1.35rem;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--paper);
+}
+
+.gix-compare__letter--a {
+  background: var(--sage);
+}
+
+.gix-compare__letter--b {
+  background: var(--terra);
+}
+
+.gix-compare__pick select {
+  font: inherit;
+  font-size: 0.82rem;
+  color: var(--ink);
+  background: var(--bone);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0.4rem 0.6rem;
+  max-width: 15rem;
+}
+
+.gix-radar-wrap {
+  display: grid;
+  grid-template-columns: minmax(0, 340px) 1fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.gix-radar {
+  width: 100%;
+  height: auto;
+}
+
+.gix-radar__spoke {
+  stroke: var(--line-soft);
+}
+
+.gix-radar__ring {
+  fill: none;
+  stroke: var(--line-soft);
+}
+
+.gix-radar__ring--edge {
+  stroke: var(--line);
+}
+
+.gix-radar__label {
+  font-family: var(--mono);
+  font-size: 8.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  fill: var(--ink-2);
+}
+
+.gix-radar__poly {
+  stroke-width: 2;
+  stroke-linejoin: round;
+}
+
+.gix-radar__poly--a {
+  fill: rgba(100, 119, 81, 0.28);
+  stroke: var(--sage-deep);
+}
+
+.gix-radar__poly--b {
+  fill: rgba(185, 97, 60, 0.22);
+  stroke: var(--terra);
+}
+
+.gix-radar__legend {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.gix-radar__legend li {
+  display: grid;
+  grid-template-columns: 1fr 2rem 2rem;
+  align-items: baseline;
+  gap: 0.5rem;
+  border-bottom: 1px dashed var(--line-soft);
+  padding-bottom: 0.35rem;
+}
+
+.gix-radar__axis {
+  font-size: 0.82rem;
+  color: var(--ink-2);
+}
+
+.gix-radar__val {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  text-align: right;
+}
+
+.gix-radar__val--a {
+  color: var(--sage-deep);
+}
+
+.gix-radar__val--b {
+  color: var(--terra-deep);
+}
+
+/* ── Formula cards ──────────────────────────────────────────────────── */
+
+.gix-fgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 330px), 1fr));
+  gap: 1rem;
+}
+
+.gix-fcard {
+  background: var(--paper);
+  border: 1px solid var(--line-soft);
+  border-top: 2px solid var(--ink);
+  border-radius: 12px;
+  padding: 1.2rem 1.2rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.gix-fcard__head {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: baseline;
+}
+
+.gix-fcard__name {
+  font-size: 1.35rem;
+}
+
+.gix-fcard__kind {
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--sage-deep);
+  margin-top: 0.15rem;
+}
+
+.gix-fcard__price {
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  color: var(--terra-deep);
+  white-space: nowrap;
+}
+
+.gix-fcard__price span {
+  color: var(--mute);
+  font-size: 0.68rem;
+}
+
+.gix-fcard__does,
+.gix-fcard__wont {
+  font-size: 0.86rem;
+  color: var(--ink-2);
+}
+
+.gix-fcard__does strong {
+  color: var(--sage-deep);
+  font-weight: 600;
+}
+
+.gix-fcard__wont strong {
+  color: var(--terra-deep);
+  font-weight: 600;
+}
+
+.gix-ftable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.3rem;
+  flex: 1;
+}
+
+.gix-ftable th,
+.gix-ftable td {
+  text-align: left;
+  padding: 0.42rem 0.4rem 0.42rem 0;
+  border-bottom: 1px dashed var(--line-soft);
+  vertical-align: baseline;
+}
+
+.gix-ftable thead th {
+  font-family: var(--mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--mute);
+  font-weight: 500;
+  border-bottom: 1px solid var(--line);
+}
+
+.gix-ftable tbody th {
+  font-weight: 400;
+  font-size: 0.85rem;
+  padding-right: 0.6rem;
+}
+
+.gix-ftable__pct {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--terra-deep);
+  white-space: nowrap;
+  width: 3.4rem;
+}
+
+.gix-ftable__purpose {
+  font-size: 0.76rem;
+  color: var(--ink-2);
+}
+
+.gix-fcard__actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  border-top: 1px solid var(--line-soft);
+  padding-top: 0.75rem;
+}
+
+.gix-fcard__adds {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.gix-fcard__time {
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+
+/* ── Routine builder ────────────────────────────────────────────────── */
+
+.gix-routine__head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 1.5rem;
+}
+
+.gix-routine__head .gix-overline {
+  margin-bottom: 0.4rem;
+}
+
+.gix-routine__actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.gix-routine__cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.gix-routine__col {
+  background: var(--paper);
+  border: 1px solid var(--line-soft);
+  border-top: 2px solid var(--ink);
+  border-radius: 12px;
+  padding: 1.1rem 1.1rem 0.8rem;
+}
+
+.gix-routine__half {
+  font-size: 1.15rem;
+  display: flex;
+  align-items: baseline;
+  gap: 0.45rem;
+  margin-bottom: 0.8rem;
+}
+
+.gix-routine__sun {
+  color: var(--ochre);
+}
+
+.gix-routine__moon {
+  color: var(--sage);
+}
+
+.gix-routine__count {
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  color: var(--paper);
+  background: var(--sage-deep);
+  border-radius: 999px;
+  padding: 0.08rem 0.5rem;
+  vertical-align: middle;
+}
+
+.gix-routine__empty {
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+  padding: 1.1rem;
+  font-size: 0.85rem;
+  color: var(--mute);
+  margin-bottom: 0.6rem;
+}
+
+.gix-routine__list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem;
+  margin-bottom: 0.6rem;
+}
+
+.gix-step {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  border: 1px solid var(--line-soft);
+  border-radius: 8px;
+  background: var(--bone);
+  padding: 0.55rem 0.7rem;
+}
+
+.gix-step__num {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  color: var(--ochre);
+}
+
+.gix-step__body {
+  flex: 1;
+  min-width: 0;
+}
+
+.gix-step__name {
+  font-family: var(--serif);
+  font-size: 1rem;
+  display: block;
+  line-height: 1.2;
+}
+
+.gix-step__meta {
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+
+.gix-step__acts {
+  display: flex;
+  gap: 0.3rem;
+}
+
+/* Tray */
+
+.gix-tray {
+  border: 1px solid var(--line-soft);
+  border-radius: 12px;
+  background: var(--bone-2);
+  padding: 1rem 1.1rem;
+  margin-bottom: 1.2rem;
+}
+
+.gix-tray__nav {
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.gix-tray__list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.5rem;
+}
+
+.gix-tray__item {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  width: 100%;
+  text-align: left;
+  background: var(--paper);
+  border: 1px solid var(--line-soft);
+  border-radius: 8px;
+  padding: 0.55rem 0.7rem;
+  transition: border-color 140ms ease, transform 160ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.gix-tray__item:hover {
+  border-color: var(--sage);
+  transform: translateY(-1px);
+}
+
+.gix-tray__name {
+  font-family: var(--serif);
+  font-size: 0.95rem;
+  display: block;
+  line-height: 1.15;
+}
+
+.gix-tray__meta {
+  font-family: var(--mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+
+.gix-tray__plus {
+  margin-left: auto;
+  font-size: 1rem;
+  color: var(--sage-deep);
+}
+
+/* Ledger */
+
+.gix-ledger {
+  background: var(--paper);
+  border: 1px solid var(--line-soft);
+  border-left: 3px solid var(--terra);
+  border-radius: 12px;
+  padding: 1.1rem 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.gix-ledger__list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.gix-ledger__item {
+  display: flex;
+  gap: 0.7rem;
+  align-items: baseline;
+  font-size: 0.86rem;
+  color: var(--ink-2);
+}
+
+.gix-ledger__badge {
+  flex-shrink: 0;
+  font-family: var(--mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 0.12rem 0.45rem;
+}
+
+.gix-ledger__item--avoid .gix-ledger__badge {
+  background: var(--terra);
+  color: var(--paper);
+}
+
+.gix-ledger__item--caution .gix-ledger__badge {
+  background: var(--terra-soft);
+  color: var(--terra-deep);
+}
+
+.gix-ledger__item--fine .gix-ledger__badge {
+  background: var(--sage-soft);
+  color: var(--sage-deep);
+}
+
+.gix-ledger__item--info .gix-ledger__badge {
+  background: var(--bone-2);
+  color: var(--mute);
+}
+
+.gix-ledger__item--info {
+  color: var(--mute);
+}
+
+/* Save / library */
+
+.gix-save {
+  background: var(--paper);
+  border: 1px solid var(--line-soft);
+  border-top: 2px solid var(--ink);
+  border-radius: 12px;
+  padding: 1.1rem 1.2rem 1.2rem;
+}
+
+.gix-save__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.gix-save__label {
+  flex: 1 1 220px;
+}
+
+.gix-saved {
+  margin-top: 1rem;
+}
+
+.gix-saved__list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.gix-saved__item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.gix-saved__load {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 0.8rem;
+  align-items: baseline;
+  text-align: left;
+  border: 1px solid var(--line-soft);
+  border-radius: 8px;
+  background: var(--bone);
+  padding: 0.55rem 0.8rem;
+  transition: border-color 140ms ease;
+}
+
+.gix-saved__load:hover {
+  border-color: var(--sage);
+}
+
+.gix-saved__name {
+  font-family: var(--serif);
+  font-size: 1.02rem;
+}
+
+.gix-saved__meta {
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+
+/* ── Sheet ──────────────────────────────────────────────────────────── */
+
+.gix-sheet-veil {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  background: rgba(40, 46, 36, 0.38);
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+}
+
+.gix-sheet {
+  background: var(--paper);
+  width: min(26rem, 100%);
+  height: 100%;
+  overflow-y: auto;
+  padding: 1.4rem 1.4rem 3rem;
+  border-left: 2px solid var(--ink);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .gix-sheet {
+    animation: gix-sheet-in 320ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  @keyframes gix-sheet-in {
+    from {
+      transform: translateX(2rem);
+      opacity: 0.4;
+    }
+    to {
+      transform: none;
+      opacity: 1;
+    }
+  }
+}
+
+.gix-sheet__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.9rem;
+}
+
+.gix-sheet__close {
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  font-size: 0.8rem;
+  color: var(--ink-2);
+  transition: color 140ms ease, border-color 140ms ease;
+}
+
+.gix-sheet__close:hover {
+  color: var(--terra-deep);
+  border-color: var(--terra);
+}
+
+.gix-sheet__name {
+  font-size: 1.9rem;
+  margin-bottom: 0.15rem;
+}
+
+.gix-sheet__inci {
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--mute);
+  margin-bottom: 0.9rem;
+}
+
+.gix-sheet__does {
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  line-height: 1.4;
+  color: var(--ink);
+  border-left: 3px solid var(--sage);
+  padding-left: 0.8rem;
+  margin-bottom: 1.1rem;
+}
+
+.gix-sheet__facts {
+  display: grid;
+  gap: 0.85rem;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 0.9rem 0;
+  margin-bottom: 1rem;
+}
+
+.gix-sheet__facts dt {
+  font-family: var(--mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--mute);
+  margin-bottom: 0.2rem;
+}
+
+.gix-sheet__band {
+  font-family: var(--mono);
+  font-size: 1.05rem;
+  color: var(--terra-deep);
+  display: block;
+}
+
+.gix-sheet__bandnote {
+  font-size: 0.78rem;
+  color: var(--ink-2);
+  display: block;
+  margin-top: 0.25rem;
+}
+
+.gix-sheet__facts dd {
+  margin: 0;
+}
+
+.gix-sheet__evlabel {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--ink-2);
+  margin-top: 0.3rem;
+}
+
+.gix-sheet__detail {
+  font-size: 0.9rem;
+  color: var(--ink-2);
+  margin-bottom: 1.1rem;
+}
+
+.gix-sheet__provenance {
+  background: var(--bone);
+  border: 1px solid var(--line-soft);
+  border-radius: 8px;
+  padding: 0.8rem 0.9rem;
+  font-size: 0.82rem;
+  color: var(--ink-2);
+  margin-bottom: 1rem;
+}
+
+.gix-sheet__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 1.2rem;
+}
+
+.gix-sheet__section {
+  border-top: 1px solid var(--line-soft);
+  padding-top: 0.9rem;
+  margin-bottom: 1.1rem;
+}
+
+.gix-sheet__links {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.gix-sheet__links .gix-link {
+  font-size: 0.92rem;
+}
+
+.gix-sheet__conflicts {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.7rem;
+}
+
+.gix-conflict {
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-start;
+  font-size: 0.82rem;
+  color: var(--ink-2);
+}
+
+.gix-conflict__badge {
+  flex-shrink: 0;
+  font-family: var(--mono);
+  font-size: 0.56rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 0.12rem 0.4rem;
+  margin-top: 0.1rem;
+}
+
+.gix-conflict--avoid .gix-conflict__badge {
+  background: var(--terra);
+  color: var(--paper);
+}
+
+.gix-conflict--caution .gix-conflict__badge {
+  background: var(--terra-soft);
+  color: var(--terra-deep);
+}
+
+.gix-conflict--fine .gix-conflict__badge {
+  background: var(--sage-soft);
+  color: var(--sage-deep);
+}
+
+/* ── Toast ──────────────────────────────────────────────────────────── */
+
+.gix-toast {
+  position: fixed;
+  left: 50%;
+  bottom: 1.4rem;
+  transform: translateX(-50%);
+  z-index: 90;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 0.82rem;
+  padding: 0.65rem 1.2rem;
+  border-radius: 999px;
+  box-shadow: 0 12px 30px -12px rgba(40, 46, 36, 0.5);
+  pointer-events: none;
+  max-width: min(90vw, 34rem);
+  text-align: center;
+}
+
+.gix-toast:empty {
+  display: none;
+}
+
+/* ── Responsive ─────────────────────────────────────────────────────── */
+
+@media (max-width: 860px) {
+  .gix-head {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .gix-radar-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .gix-radar {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .gix-routine__cols {
+    grid-template-columns: 1fr;
+  }
+
+  .gix-save__row .gix-btn {
+    flex: 1 1 auto;
+  }
+}
+
+@media (max-width: 430px) {
+  .gix-tabs {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .gix-tab {
+    padding: 0.5rem 0.7rem;
+  }
+
+  .gix-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gix-step__meta {
+    display: block;
+  }
+}
+
+/* ── Motion law ─────────────────────────────────────────────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+  .gix *,
+  .gix *::before,
+  .gix *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
