@@ -8123,10 +8123,11 @@
     "AI education UI",
     "activation metrics"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790406958.100853
+   "claimed_at": 1790406958.100853,
+   "done_at": "2026-09-26T17:18:13"
   },
   {
    "kind": "article",
@@ -8195,8 +8196,10 @@
     "model routing",
     "streaming UX"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790407055.635329
   },
   {
    "kind": "article",
@@ -8211,8 +8214,10 @@
     "AI policy feedback",
     "responsible AI product"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790407055.6353312
   },
   {
    "kind": "article",
@@ -8227,8 +8232,10 @@
     "prompt versioning",
     "LLM governance"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790407055.635332
   },
   {
    "kind": "article",
@@ -8243,8 +8250,10 @@
     "docs search AI",
     "findability design"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790407055.635332
   },
   {
    "kind": "article",
