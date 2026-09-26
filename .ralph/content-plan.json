@@ -5219,10 +5219,11 @@
     "data pipeline",
     "measurement plan"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790407511.9593868
+   "claimed_at": 1790407511.9593868,
+   "done_at": "2026-09-26T18:29:08"
   },
   {
    "kind": "article",
@@ -7664,8 +7665,10 @@
     "SaaS marketing pages",
     "design honesty"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790411260.009839
   },
   {
    "kind": "article",
@@ -7680,8 +7683,10 @@
     "mapbox styling",
     "accessible maps"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790411260.00984
   },
   {
    "kind": "article",
@@ -7696,8 +7701,10 @@
     "B2B website design",
     "conversion trust"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790411260.00984
   },
   {
    "kind": "article",
@@ -7712,8 +7719,10 @@
     "dark patterns",
     "ethical web design"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790411260.009841
   },
   {
    "kind": "article",
@@ -8300,10 +8309,11 @@
     "localStorage boot script",
     "SSR theming"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790407511.9593868
+   "claimed_at": 1790407511.9593868,
+   "done_at": "2026-09-26T18:35:03"
   },
   {
    "kind": "article",
