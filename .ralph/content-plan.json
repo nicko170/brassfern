@@ -6925,8 +6925,10 @@
     "draft recovery",
     "form interruption design"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790404613.53216
   },
   {
    "kind": "article",
@@ -6940,8 +6942,10 @@
     "starter content design",
     "activation design"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790404613.532161
   },
   {
    "kind": "article",
@@ -6955,8 +6959,10 @@
     "mobile app scoping",
     "cross-device UX"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790404613.532162
   },
   {
    "kind": "article",
@@ -6970,8 +6976,10 @@
     "churn signal design",
     "health score UX"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790404613.532162
   },
   {
    "kind": "article",
