@@ -372,10 +372,11 @@
     "charity tech",
     "volunteer ux"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790387033.3965938
+   "claimed_at": 1790387033.3965938,
+   "done_at": "2026-09-26T11:49:42"
   },
   {
    "kind": "article",
@@ -389,10 +390,11 @@
     "property platform",
     "saved search design"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790387033.396595
+   "claimed_at": 1790387033.396595,
+   "done_at": "2026-09-26T11:49:49"
   },
   {
    "kind": "article",
@@ -406,10 +408,11 @@
     "pricing page design",
     "demo booking flow"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790387033.396595
+   "claimed_at": 1790387033.396595,
+   "done_at": "2026-09-26T11:49:49"
   },
   {
    "kind": "article",
@@ -423,10 +426,11 @@
     "plain language design",
     "trust design"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790387033.396595
+   "claimed_at": 1790387033.396595,
+   "done_at": "2026-09-26T11:49:52"
   },
   {
    "kind": "article",
@@ -3028,10 +3032,11 @@
     "hospitality web design",
     "booking flow ux"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790387048.489822
+   "claimed_at": 1790387048.489822,
+   "done_at": "2026-09-26T11:50:07"
   },
   {
    "kind": "article",
@@ -3045,10 +3050,11 @@
     "design system case study",
     "dashboard ux"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790387048.489824
+   "claimed_at": 1790387048.489824,
+   "done_at": "2026-09-26T11:50:07"
   },
   {
    "kind": "article",
@@ -3062,10 +3068,11 @@
     "checkout design",
     "two-sided marketplace"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790387048.489824
+   "claimed_at": 1790387048.489824,
+   "done_at": "2026-09-26T11:50:11"
   },
   {
    "kind": "article",
@@ -3079,10 +3086,11 @@
     "responsible ai design",
     "triage chatbot ux"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790387048.489824
+   "claimed_at": 1790387048.489824,
+   "done_at": "2026-09-26T11:50:11"
   },
   {
    "kind": "article",
@@ -3638,8 +3646,10 @@
     "end to end type safety",
     "form validation architecture"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790387383.728843
   },
   {
    "kind": "article",
@@ -3653,8 +3663,10 @@
     "error handling frontend",
     "fallback ui patterns"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790387383.728843
   },
   {
    "kind": "article",
@@ -3668,8 +3680,10 @@
     "font-display strategy",
     "cls fonts"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790387383.728844
   },
   {
    "kind": "article",
@@ -3755,8 +3769,10 @@
     "gdpr cookie consent",
     "cmp dark patterns"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790387383.728844
   },
   {
    "kind": "article",

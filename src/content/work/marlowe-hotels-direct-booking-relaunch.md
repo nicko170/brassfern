@@ -17,8 +17,6 @@ keywords:
   - booking flow ux
   - hotel conversion rate
 readingTime: 10
-heroImage: /images/work/marlowe-hotels-direct-booking-relaunch.jpg
-heroAlt: "A sunlit boutique hotel room overlooking the Australian coast — linen, timber joinery and a fern on the windowsill in late-afternoon light"
 client: Marlowe Hotels
 industry: Hospitality
 services:
