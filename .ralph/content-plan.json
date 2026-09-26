@@ -10182,8 +10182,10 @@
     "seat map",
     "events"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "demo2",
+   "claimed_at": 1790417200.286376
   },
   {
    "kind": "demo",
