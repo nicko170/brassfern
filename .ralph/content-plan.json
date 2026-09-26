@@ -6722,8 +6722,10 @@
     "paid discovery",
     "choosing an agency"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790405283.894513
   },
   {
    "kind": "article",
@@ -6737,8 +6739,10 @@
     "project kickoff client",
     "workshop facilitation"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790405283.894513
   },
   {
    "kind": "article",
@@ -6752,8 +6756,10 @@
     "reference call questions",
     "vetting an agency"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790405283.8945138
   },
   {
    "kind": "article",
@@ -6767,8 +6773,10 @@
     "firing your agency",
     "project transition"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790405283.8945138
   },
   {
    "kind": "article",
@@ -8568,6 +8576,134 @@
    "cluster": "demos",
    "intent": "A living design-system documentation site for fictional client 'Copperplate' (a tooling company). Art direction: typefounder's specimen book — warm bone paper, copper metallic accent, wide letter-spaced small caps, hairline rules, specimen sheets with big glyphs. Features: left rail nav (Foundations / Tokens / Components / Patterns), live token playground (edit colour/space/type tokens; a preview panel of 8 sample components re-renders instantly + copy-as-CSS button), component pages showing the DS's own buttons/forms/alerts rendered live with code snippets, do/don't comparison blocks, a searchable icon grid (24 hand-drawn SVG glyphs), dark-paper mode toggle, and an accessibility notes callout per component. Local search across pages (client-side index). React + TypeScript, hand-rolled CSS. Must respect reduced motion and work standalone to 375px (rail collapses to a select).",
    "keywords": [],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "glasshouse-ticketing-relaunch",
+   "title": "Glasshouse: a seat map people stopped dreading",
+   "cluster": "work",
+   "intent": "Case study for the live demo glasshouse-seat-map (demo: glasshouse-seat-map). Client: Glasshouse, a fictional 900-seat performing-arts centre. Rebuild of a decrepit ticketing flow: interactive seat map with real-time availability, held-seat timers done honestly, accessible keyboard seat selection. Industry: Media & culture. Services: Websites, Product design & engineering, E-commerce. Stack: React, TypeScript, Canvas, WebSockets (mocked). Outcome metrics illustrative. Link the demo prominently; mention the Lab.",
+   "keywords": [
+    "ticketing",
+    "seat map",
+    "performing arts",
+    "e-commerce UX",
+    "conversion"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "trailswell-habit-app",
+   "title": "Trailswell: habit tracking without the guilt trip",
+   "cluster": "work",
+   "intent": "Case study for the planned demo trailswell-habit-tracker (demo: trailswell-habit-tracker). Client: Trailswell, a fictional bushwalking-and-yoga wellness brand. A habit tracker that celebrates calmly, not gamified guilt: streak heatmap, weekly review, honest lapses. Industry: Health. Services: Product design & engineering, Brand & identity. Stack: React, TypeScript, localStorage, SVG charts. Risograph art direction story. Metrics illustrative.",
+   "keywords": [
+    "habit tracker",
+    "wellness app",
+    "product design",
+    "streaks UX",
+    "retention"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "switchyard-rail-ops-kanban",
+   "title": "Switchyard: teaching a rail-ops board new manners",
+   "cluster": "work",
+   "intent": "Case study for the planned demo switchyard-kanban (demo: switchyard-kanban). Client: Switchyard, fictional rail-ops scheduling SaaS. The board as the product's beating heart: drag + full keyboard shuttle, WIP limits, honest warnings. Industry: SaaS. Services: Product design & engineering. Stack: React, TypeScript, pointer events, aria-live. Include the accessibility journey as a headline section. Metrics illustrative.",
+   "keywords": [
+    "kanban",
+    "SaaS UX",
+    "drag and drop",
+    "accessibility",
+    "keyboard"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "copperplate-design-system",
+   "title": "Copperplate: a design system people actually read",
+   "cluster": "work",
+   "intent": "Case study for the planned demo copperplate-ds-docs (demo: copperplate-ds-docs). Client: Copperplate, fictional dev-tooling company. A design-system documentation site that doubled adoption: token playground, live component pages, do/don't blocks. Industry: SaaS. Services: Product design & engineering, Brand & identity. Stack: React, TypeScript, CSS custom properties. Tell the adoption-metrics story (illustrative).",
+   "keywords": [
+    "design system",
+    "documentation",
+    "design tokens",
+    "component library",
+    "adoption"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ironbark-trade-portal",
+   "title": "Ironbark: retiring the order-desk fax ritual",
+   "cluster": "work",
+   "intent": "B2B trade portal for Ironbark Coffee Roasters (fictional wholesale roaster). Replacing fax-and-phone ordering with a self-serve portal: price lists per account, MOQ and cut-off honesty, one-tap reorders, standing orders. Industry: Retail & e-commerce. Services: E-commerce, Product design & engineering. Stack: Shopify B2B, TypeScript, Postgres. Outcome: order desk hours reclaimed, reorder rate. Metrics illustrative. No existing demo.",
+   "keywords": [
+    "B2B commerce",
+    "wholesale portal",
+    "reorder UX",
+    "coffee",
+    "self-serve"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "brumby-air-regional-booking",
+   "title": "Brumby Air: booking a Cessna seat like ordering coffee",
+   "cluster": "work",
+   "intent": "Booking engine for Brumby Air, fictional regional airline serving 14 outback routes. Constraints-driven design: aircraft weight limits UX, day-with-no-flights calendar honesty, fare family comparison, offline-tolerant booking on bad rural connections. Industry: Hospitality. Services: Websites, Product design & engineering. Stack: Astro/React islands, TypeScript. Metrics illustrative. No existing demo.",
+   "keywords": [
+    "airline booking",
+    "travel UX",
+    "regional",
+    "fare comparison",
+    "performance"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "keepsake-letterpress-configurator",
+   "title": "Keepsake: pressing letters into pixels",
+   "cluster": "work",
+   "intent": "Product configurator for Keepsake, a fictional letterpress stationery studio. Live paper/ink/edge-paint preview assembled in SVG layers, priced transparently per option, with a shareable design link. Industry: Retail & e-commerce. Services: E-commerce, Brand & identity. Stack: React, SVG, TypeScript. Story of replacing a PDF order form that caused 40% rework. Metrics illustrative. No existing demo.",
+   "keywords": [
+    "configurator",
+    "letterpress",
+    "stationery",
+    "e-commerce",
+    "SVG"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "harbourlight-donation-platform",
+   "title": "Harbourlight: a donation flow that respects the giver",
+   "cluster": "work",
+   "intent": "Donation platform rebuild for Harbourlight, a fictional coastal housing charity. Donation flow honesty: fee transparency, gift-aid-like tax receipt clarity, recurring-vs-once framing without dark patterns, impact reporting that survives scrutiny. Industry: Non-profit. Services: Websites, Growth, E-commerce. Stack: React, TypeScript, Stripe (mocked). Metrics clearly illustrative — note non-profit context in voice.",
+   "keywords": [
+    "donations",
+    "non-profit",
+    "recurring giving",
+    "trust",
+    "form design"
+   ],
    "status": "planned",
    "added_by": "builder"
   }
