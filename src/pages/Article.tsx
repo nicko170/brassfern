@@ -1,7 +1,7 @@
 import { useMemo } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { Seo } from '../lib/head'
-import { allTags, articles, byTag, formatDate, getArticle, relatedArticles } from '../lib/content'
+import { allTags, articles, byTag, formatDate, getArticle, relatedArticles, relatedTags } from '../lib/content'
 import { articleLd, breadcrumbLd } from '../lib/jsonld'
 import { CLUSTER_LABELS, CLUSTERS, type Cluster } from '../lib/types'
 import { personSlug } from '../data/people'
@@ -88,6 +88,7 @@ export default function Article() {
             {meta.tags.map((t) => (
               <Link key={t} to={`/journal/tag/${encodeURIComponent(t)}`} className="tag">{t}</Link>
             ))}
+            <Link to="/journal/tags" className="tag tag--index">All tags →</Link>
           </div>
           {(newer || older) && (
             <nav className="article-nav" aria-label="More from the journal">
@@ -141,17 +142,26 @@ export function TagPage() {
   }
   const list = byTag(decoded)
   if (!decoded || list.length === 0) return <NotFound />
+  const kin = relatedTags(decoded)
   return (
     <>
       <Seo
         title={`Tagged “${decoded}”`}
         description={`All Brassfern articles and case studies tagged “${decoded}”.`}
         path={`/journal/tag/${tag}`}
+        jsonLd={[
+          breadcrumbLd([
+            { name: 'Home', path: '/' },
+            { name: 'Journal', path: '/journal' },
+            { name: 'Tags', path: '/journal/tags' },
+            { name: `#${decoded}`, path: `/journal/tag/${encodeURIComponent(decoded)}` },
+          ]),
+        ]}
       />
       <header className="article-head container">
         <Crumbs items={[
           { name: 'Journal', path: '/journal' },
-          { name: 'Tags', path: '/journal' },
+          { name: 'Tags', path: '/journal/tags' },
           { name: `#${decoded}` },
         ]} />
         <Reveal className="overline">Tag</Reveal>
@@ -172,6 +182,22 @@ export function TagPage() {
             ),
           )}
         </div>
+        {kin.length > 0 && (
+          <nav className="tag-kin" aria-label="Related tags">
+            <span className="overline">Grows alongside</span>
+            <div className="chipset" style={{ marginTop: 'var(--space-3)' }}>
+              {kin.map((t) => (
+                <Link key={t.tag} to={`/journal/tag/${encodeURIComponent(t.tag)}`} className="chip tag-chip">
+                  <span>{t.tag}</span>
+                  <span className="tag-chip__count">{t.count}</span>
+                </Link>
+              ))}
+              <Link to="/journal/tags" className="chip tag-chip tag-chip--all">
+                All tags →
+              </Link>
+            </div>
+          </nav>
+        )}
       </section>
     </>
   )

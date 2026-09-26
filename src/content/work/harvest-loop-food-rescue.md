@@ -18,6 +18,8 @@ keywords:
   - volunteer ux
   - offline-first app
 readingTime: 9 min read
+heroImage: /images/work/harvest-loop-food-rescue.jpg
+heroAlt: "A paper-craft city map strung with a brass rescue route: pins, a paper van and crates of folded paper produce."
 client: Harvest Loop
 industry: Non-profit
 services:

@@ -51,7 +51,7 @@ The borrowing calculator was the site's most-used and most-rage-inducing feature
 
 ## The outcome
 
-Launch came fourteen weeks after kickoff, inside the fixed sprint scope. The [metrics below are illustrative figures from this fictional concept project](#):
+Launch came fourteen weeks after kickoff, inside the fixed sprint scope. The [metrics below are illustrative figures from this fictional concept project](/colophon):
 
 | Metric | Before | After |
 | --- | --- | --- |

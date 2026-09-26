@@ -45,7 +45,7 @@ Nobody has the budget to hand-write alt text for 180,000 items, and pretending o
 
 ## The outcome
 
-The archive launched in time for the grant application, which was, we're told, an unusually enjoyable document to write. The [metrics below are illustrative figures from this fictional concept project](#):
+The archive launched in time for the grant application, which was, we're told, an unusually enjoyable document to write. The [metrics below are illustrative figures from this fictional concept project](/colophon):
 
 | Metric | Before | After |
 | --- | --- | --- |

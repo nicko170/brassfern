@@ -21,8 +21,9 @@ const CLUSTERS = ['web-design', 'engineering', 'product', 'brand', 'growth', 'ai
 
 const STATIC_ROUTES = new Set([
   '/', '/work', '/lab', '/services', '/industries', '/approach', '/pricing',
-  '/studio', '/team', '/careers', '/journal', '/search', '/resources',
-  '/contact', '/press', '/legal/privacy', '/legal/terms',
+  '/studio', '/team', '/careers', '/journal', '/journal/tags', '/search',
+  '/resources', '/contact', '/press', '/colophon', '/sitemap',
+  '/legal/privacy', '/legal/terms',
 ])
 for (const c of CLUSTERS) STATIC_ROUTES.add(`/journal/${c}`)
 

@@ -47,7 +47,7 @@ The old site's analytics consisted of a platform dashboard and a feeling. We ins
 
 ## The outcome
 
-The rebuild shipped in twelve weeks, feeds intact, not a single subscriber churned by the migration — which, if you've ever rebuilt around RSS, you know is the whole ballgame. The [metrics below are illustrative figures from this fictional concept project](#):
+The rebuild shipped in twelve weeks, feeds intact, not a single subscriber churned by the migration — which, if you've ever rebuilt around RSS, you know is the whole ballgame. The [metrics below are illustrative figures from this fictional concept project](/colophon):
 
 | Metric | Before | After |
 | --- | --- | --- |

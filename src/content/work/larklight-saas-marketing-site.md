@@ -18,6 +18,8 @@ keywords:
   - demo booking flow
   - positioning
 readingTime: 9 min read
+heroImage: /images/work/larklight-saas-marketing-site.jpg
+heroAlt: "Paper-craft browser cards pinned to cream stock with brass fasteners — a pricing page and booking form suggested as pure shapes."
 client: Larklight
 industry: SaaS
 services:

@@ -244,6 +244,115 @@ a.tag:hover {
   flex-wrap: wrap;
   gap: var(--space-2);
 }
+/* "All tags →" trailing link in article tag rows — quieter than the chips. */
+.tag--index {
+  border-style: dashed;
+  border-color: var(--brass);
+  color: var(--brass);
+}
+a.tag--index:hover {
+  background: rgba(201, 168, 76, 0.14);
+  color: var(--ink);
+}
+
+/* ——— tag index (/journal/tags) & tag kin rails ——— */
+.tag-filter {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-4);
+  border-bottom: 2px solid var(--ink);
+  padding-bottom: var(--space-3);
+  margin-bottom: var(--space-6);
+}
+.tag-filter:focus-within {
+  border-bottom-color: var(--brass);
+}
+.tag-filter input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  background: none;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(1.15rem, 2.6vw, 1.5rem);
+  color: var(--ink);
+  outline: none;
+}
+.tag-filter input::placeholder {
+  color: var(--ink-3);
+}
+.tag-filter__status {
+  color: var(--ink-3);
+  white-space: nowrap;
+}
+.tag-filter__clear {
+  border: 0;
+  background: none;
+  cursor: pointer;
+  color: var(--clay);
+  font-size: var(--fs-micro);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 0.2rem 0;
+}
+.tag-filter__clear:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.tag-faves {
+  margin-bottom: var(--space-7);
+}
+.tag-groups {
+  display: grid;
+  gap: var(--space-5);
+}
+.tag-group {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  gap: var(--space-4);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--line);
+}
+.tag-group__letter {
+  font-family: var(--font-mono);
+  font-size: var(--fs-micro);
+  letter-spacing: 0.16em;
+  color: var(--brass);
+  padding-top: 0.55rem;
+}
+.tag-group__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+.tag-chip {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.45rem;
+  color: var(--ink);
+}
+.tag-chip__count {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: var(--brass);
+}
+a.tag-chip:hover .tag-chip__count {
+  color: var(--brass-2);
+}
+.tag-kin {
+  margin-top: var(--space-7);
+  padding-top: var(--space-5);
+  border-top: 1px solid var(--line);
+}
+@media (max-width: 560px) {
+  .tag-group {
+    grid-template-columns: 1fr;
+  }
+  .tag-group__letter {
+    padding-top: 0;
+  }
+}
 
 /* ——— reveal on scroll (respects reduced motion via CSS override) ——— */
 .reveal {

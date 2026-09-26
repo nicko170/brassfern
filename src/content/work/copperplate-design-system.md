@@ -46,7 +46,7 @@ The centrepiece is a token playground: pick a component, adjust spacing, radius 
 
 ### Do/Don't blocks that argue their case
 
-Every pattern page leads with paired do/don't examples — rendered, not described — with the reasoning stated in one sentence each: "Don't: icon-only destructive buttons — users can't undo what they can't identify." The tone matters. We wrote these as guidance from a colleague who has been burned, not legislation from a committee, and we ran them through the same voice principles we'd apply to any [brand system](/services/brand): confident, specific, willing to say "we don't know yet" where the team genuinely didn't.
+Every pattern page leads with paired do/don't examples — rendered, not described — with the reasoning stated in one sentence each: "Don't: icon-only destructive buttons — users can't undo what they can't identify." The tone matters. We wrote these as guidance from a colleague who has been burned, not legislation from a committee, and we ran them through the same voice principles we'd apply to any [brand system](/services/brand-identity): confident, specific, willing to say "we don't know yet" where the team genuinely didn't.
 
 Each component page answers five questions in a fixed order: what it's for, when to use it, when *not* to, the accessibility contract (keyboard map, ARIA roles, focus behaviour), then — and only then — the props. Putting usage before API was the single most-copied decision in our internal critique. Engineers told us later the docs "read like they were written by someone who ships." They were.
 

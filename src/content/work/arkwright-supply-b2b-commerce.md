@@ -8,6 +8,8 @@ date: 2026-06-15
 author: Nate Sullivan
 keywords: ["b2b ecommerce case study", "catalogue ux", "bulk ordering", "industrial supplier digital"]
 readingTime: 9 min read
+heroImage: /images/work/arkwright-supply-b2b-commerce.jpg
+heroAlt: "Miniature paper boxes, brass bolts and a cream order slip clipped in a neat trade-catalogue grid on warm paper."
 client: Arkwright Supply
 industry: Retail & e-commerce
 services: ["E-commerce", "Product design & engineering", "Growth"]

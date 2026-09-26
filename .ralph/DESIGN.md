@@ -182,6 +182,13 @@ Brassfern look into a demo.
   tags to lowercase with uppercased acronyms (`TAG_ACRONYMS` map) and
   "saas"→"SaaS"; TagPage redirects mis-cased URLs to canonical. One page per
   tag, chips/search/related all consistent.
+- **Tag index & kin rails** (iter 12): `/journal/tags` — "the index of
+  indexes". Fraunces-italic live filter (`.tag-filter`, 2px ink rule going
+  brass on `:focus-within`, mono aria-live count), "Most used" top-18 chip
+  wall, then A–Z groups (`.tag-group`: 4rem brass mono letter rail + chip
+  wrap, stacks ≤560px). `.tag-chip` = `.chip` + brass mono count. Tag pages
+  end with `.tag-kin` "Grows alongside" (co-occurrence chips + "All tags →"),
+  and article tag rows close with a dashed-brass `.tag--index` link.
 
 ## Content authoring rules (enforced by build-content-index.mjs)
 

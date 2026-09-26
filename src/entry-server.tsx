@@ -52,6 +52,7 @@ export function prerenderRoutes(): string[] {
     '/team',
     '/careers',
     '/journal',
+    '/journal/tags',
     '/search',
     '/resources',
     '/contact',

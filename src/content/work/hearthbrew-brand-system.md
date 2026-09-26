@@ -50,7 +50,7 @@ We retired the 74-page PDF and replaced it with a living guideline site: usage r
 
 ## The outcome
 
-Eleven weeks from kickoff to launch, inside the fixed sprint scope agreed in week zero. The [metrics below are illustrative figures from this fictional concept project](#):
+Eleven weeks from kickoff to launch, inside the fixed sprint scope agreed in week zero. The [metrics below are illustrative figures from this fictional concept project](/colophon):
 
 | Metric | Before | After |
 | --- | --- | --- |

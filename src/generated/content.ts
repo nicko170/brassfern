@@ -3182,6 +3182,28 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 10
   },
   {
+    "title": "Experiments that don't shift the layout",
+    "description": "A/B testing without layout shift: server-side assignment, experiment flags that never leak into the DOM, metric integrity, and the true cost of visual editors.",
+    "slug": "ab-testing-without-layout-shift",
+    "cluster": "engineering",
+    "tags": [
+      "performance",
+      "experimentation",
+      "architecture",
+      "growth"
+    ],
+    "date": "2026-09-22",
+    "author": "Tomás Reyes",
+    "keywords": [
+      "AB testing engineering",
+      "layout shift",
+      "experimentation infrastructure",
+      "server-side testing",
+      "CWV experiments"
+    ],
+    "readingTime": 10
+  },
+  {
     "title": "Accessibility is an engineering discipline, not a ticket queue",
     "description": "Treating accessibility as infrastructure: axe in CI, linting, component contracts, keyboard hierarchies, and who on the squad owns what. WCAG AA as a floor.",
     "slug": "accessibility-as-engineering-practice",
@@ -3204,6 +3226,28 @@ export const articleIndex: ArticleMeta[] = [
       "inclusive engineering"
     ],
     "readingTime": 11
+  },
+  {
+    "title": "Analytics pipelines you can actually trust",
+    "description": "Dashboards nobody trusts get quietly ignored. Event schemas, validation at the edge, QA environments for data, and pruning metrics nobody has read in two quarters.",
+    "slug": "analytics-pipelines-trust",
+    "cluster": "engineering",
+    "tags": [
+      "engineering",
+      "analytics",
+      "data quality",
+      "measurement",
+      "process"
+    ],
+    "date": "2026-04-21",
+    "author": "Felix Brandt",
+    "keywords": [
+      "analytics engineering",
+      "event tracking",
+      "data pipeline",
+      "measurement plan"
+    ],
+    "readingTime": 10
   },
   {
     "title": "Animation is engineering: shipping motion at 60fps",
@@ -3290,6 +3334,28 @@ export const articleIndex: ArticleMeta[] = [
       "reliability engineering"
     ],
     "readingTime": 12
+  },
+  {
+    "title": "Build times are a team-health metric",
+    "description": "Build time as a team-health metric: profiling CI honestly, cache strategies, test sharding, and the cultural rules that keep pipelines under five minutes.",
+    "slug": "build-times-team-health",
+    "cluster": "engineering",
+    "tags": [
+      "CI",
+      "developer-experience",
+      "testing",
+      "culture"
+    ],
+    "date": "2026-03-12",
+    "author": "Ruby Castellanos",
+    "keywords": [
+      "CI performance",
+      "build times",
+      "developer experience",
+      "test sharding",
+      "CI caching"
+    ],
+    "readingTime": 10
   },
   {
     "title": "Bundle budgets: the 170kb rule and how we hold it",
@@ -3458,6 +3524,28 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 10
   },
   {
+    "title": "Rolling your own markdown pipeline (and knowing when to)",
+    "description": "When MDX stops paying rent: deterministic rendering, frontmatter validation at build time, link auditing of prose, and owning your content format end to end.",
+    "slug": "custom-markdown-pipelines",
+    "cluster": "engineering",
+    "tags": [
+      "content-engineering",
+      "markdown",
+      "build-tooling",
+      "static-sites"
+    ],
+    "date": "2026-04-09",
+    "author": "Tomás Reyes",
+    "keywords": [
+      "markdown pipeline",
+      "custom markdown renderer",
+      "content validation",
+      "static site content",
+      "build tooling"
+    ],
+    "readingTime": 9
+  },
+  {
     "title": "Dependency hygiene: the boring audit that saves the launch",
     "description": "Client codebases rot at the package.json line. Audit cadences, update windows, vendoring decisions, and the licence review nobody does until procurement asks.",
     "slug": "dependency-hygiene-client-code",
@@ -3478,6 +3566,28 @@ export const articleIndex: ArticleMeta[] = [
       "license compliance"
     ],
     "readingTime": 10
+  },
+  {
+    "title": "Design tokens are an API — version them like one",
+    "description": "Rename a token and you ship a breaking change. Semantic versioning for token contracts, codemods for renames, migration windows, and deprecation hygiene.",
+    "slug": "design-token-versioning",
+    "cluster": "engineering",
+    "tags": [
+      "design-systems",
+      "design-tokens",
+      "versioning",
+      "design-engineering"
+    ],
+    "date": "2026-02-18",
+    "author": "Felix Brandt",
+    "keywords": [
+      "design token versioning",
+      "design ops",
+      "token API",
+      "breaking changes design system",
+      "design engineering"
+    ],
+    "readingTime": 9
   },
   {
     "title": "Testing design tokens in CI like the API they are",
@@ -3645,6 +3755,28 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 10
   },
   {
+    "title": "Keep your pages findable by Ctrl-F",
+    "description": "Virtualisation silently breaks in-page search. The hidden=until-found and content-visibility toolkit, chunk-rendered long lists, and when a custom find box earns its keep.",
+    "slug": "findable-by-ctrl-f",
+    "cluster": "engineering",
+    "tags": [
+      "accessibility",
+      "front-end",
+      "performance",
+      "browser-platform"
+    ],
+    "date": "2026-08-05",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "in-page search accessibility",
+      "content-visibility hidden until-found",
+      "long list rendering",
+      "browser find UX",
+      "front-end accessibility"
+    ],
+    "readingTime": 9
+  },
+  {
     "title": "Font loading: recipes from the network tab",
     "description": "Webfonts are where performance budgets go to die quietly. Subsetting in CI, unicode-range slicing, per-role font-display policies, and the CLS nobody plans for.",
     "slug": "font-loading-performance-recipes",
@@ -3752,6 +3884,30 @@ export const articleIndex: ArticleMeta[] = [
       "cutover plan"
     ],
     "readingTime": 9
+  },
+  {
+    "title": "HTML emails in 2026: engineering for a hostile medium",
+    "description": "Table layouts without despair, the dark-mode inversion lottery, bulletproof buttons, image-off rendering, and a testing matrix a small team can actually run.",
+    "slug": "html-email-2026",
+    "cluster": "engineering",
+    "tags": [
+      "email",
+      "front-end",
+      "testing",
+      "dark-mode"
+    ],
+    "date": "2026-06-11",
+    "author": "Leonie Marsh",
+    "keywords": [
+      "HTML email engineering",
+      "email dark mode",
+      "email client testing",
+      "transactional email design",
+      "email development"
+    ],
+    "readingTime": 10,
+    "heroImage": "/images/articles/engineering/html-email-2026.jpg",
+    "heroAlt": "A letterpress type tray holding blank paper modules arranged like an email layout under construction, with a brass ruler and a fern frond."
   },
   {
     "title": "i18n beyond the strings file",
@@ -3872,6 +4028,28 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 11
   },
   {
+    "title": "Engineering the 80-millisecond moments",
+    "description": "Micro-interactions are where product quality is felt. Press states, instant visual feedback, focus continuity, and testing feel with the same rigour as function.",
+    "slug": "micro-interactions-engineering",
+    "cluster": "engineering",
+    "tags": [
+      "engineering",
+      "interaction design",
+      "motion",
+      "polish",
+      "UX"
+    ],
+    "date": "2026-02-09",
+    "author": "Hannah Yeo",
+    "keywords": [
+      "micro-interactions",
+      "UI polish",
+      "interaction engineering",
+      "design engineering"
+    ],
+    "readingTime": 10
+  },
+  {
     "title": "Monorepo or not? A studio's decision framework",
     "description": "Monorepos solve code-sharing and coordination problems most studios don't have, at tooling costs they don't predict. When we say yes, and what we do when we say no.",
     "slug": "monorepo-decisions-studios",
@@ -3917,6 +4095,30 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 10,
     "heroImage": "/images/articles/engineering/offline-first-sync-engines.jpg",
     "heroAlt": "Engraved-style illustration on cream paper: a small brass laptop and compass on fern-ink islands joined by delicate brass arcs, evoking devices syncing data across distance."
+  },
+  {
+    "title": "Queuing writes for a flaky world",
+    "description": "Offline writes done honestly: outbox queues, idempotency keys, optimistic state that admits it's pending, conflict surfacing, and deciding which features truly need them.",
+    "slug": "offline-mutation-queues",
+    "cluster": "engineering",
+    "tags": [
+      "architecture",
+      "offline",
+      "sync",
+      "reliability"
+    ],
+    "date": "2026-08-14",
+    "author": "Felix Brandt",
+    "keywords": [
+      "offline mutations",
+      "sync queue engineering",
+      "offline-first UX",
+      "idempotency keys",
+      "local-first engineering"
+    ],
+    "readingTime": 10,
+    "heroImage": "/images/articles/engineering/offline-mutation-queues.jpg",
+    "heroAlt": "Editorial print still-life on cream paper: a brass outbox tray with stamped tags, a fern-green thread carrying paper slips toward a small brass terminal, a pressed fern frond beside it."
   },
   {
     "title": "Generating PDFs from web tech without tears",
@@ -4191,6 +4393,28 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 10
   },
   {
+    "title": "A search index built at build time",
+    "description": "A build-time search index for static sites: tokenisation, stemming, synonyms, size budgets, sharded delivery, worker-side ranking, and proof it got better.",
+    "slug": "static-search-indexing",
+    "cluster": "engineering",
+    "tags": [
+      "search",
+      "performance",
+      "static-sites",
+      "data"
+    ],
+    "date": "2026-09-04",
+    "author": "Felix Brandt",
+    "keywords": [
+      "static site search",
+      "search index build",
+      "client-side search engineering",
+      "search performance",
+      "content search"
+    ],
+    "readingTime": 10
+  },
+  {
     "title": "Supply-chain security for JS teams (without the panic)",
     "description": "A calm, runnable supply-chain security practice for JS teams: lockfile hygiene, dependency cadence, audit triage and provenance — no fear-mongering.",
     "slug": "supply-chain-security-js-teams",
@@ -4210,6 +4434,28 @@ export const articleIndex: ArticleMeta[] = [
       "lockfile hygiene"
     ],
     "readingTime": 10
+  },
+  {
+    "title": "Syntax highlighting with zero runtime",
+    "description": "Syntax highlighting with zero runtime: tokenise at build time, theme code with design tokens, keep language support honest, ship an accessible copy button.",
+    "slug": "syntax-highlighting-static-sites",
+    "cluster": "engineering",
+    "tags": [
+      "performance",
+      "static-sites",
+      "developer-experience",
+      "CSS"
+    ],
+    "date": "2026-07-30",
+    "author": "Tomás Reyes",
+    "keywords": [
+      "syntax highlighting static",
+      "code blocks web",
+      "build-time rendering",
+      "technical blog engineering",
+      "developer docs design"
+    ],
+    "readingTime": 9
   },
   {
     "title": "A testing strategy that ships: what to test, what to skip, what to delete",
@@ -4234,6 +4480,29 @@ export const articleIndex: ArticleMeta[] = [
       "test pyramid"
     ],
     "readingTime": 11
+  },
+  {
+    "title": "Theme persistence without the flash",
+    "description": "Dark mode that flashes light on load is a broken promise. Boot scripts vs cookies, SSR the right class, reconciling system preference, and testing regressions.",
+    "slug": "theme-persistence-fouc",
+    "cluster": "engineering",
+    "tags": [
+      "engineering",
+      "dark mode",
+      "SSR",
+      "performance",
+      "UX"
+    ],
+    "date": "2026-01-19",
+    "author": "Felix Brandt",
+    "keywords": [
+      "dark mode persistence",
+      "FOUC prevention",
+      "theme engineering",
+      "localStorage boot script",
+      "SSR theming"
+    ],
+    "readingTime": 10
   },
   {
     "title": "Third-party scripts: governance before they eat your site",
@@ -4498,7 +4767,9 @@ export const articleIndex: ArticleMeta[] = [
       "GPU budgets",
       "performance budget"
     ],
-    "readingTime": 10
+    "readingTime": 10,
+    "heroImage": "/images/articles/engineering/webgl-performance-budgets.jpg",
+    "heroAlt": "Editorial engraved-style illustration: a low-poly brass wireframe chair floats above a paper plinth, ringed by fine fern-ink measurement marks and hairline rules, like an engineer's budget diagram."
   },
   {
     "title": "WebSockets vs SSE: a realtime guide without religion",
@@ -8003,6 +8274,30 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 9
   },
   {
+    "title": "Data visualisation on marketing pages, honestly",
+    "description": "Charts on marketing pages answer to different rules than dashboards. Honest axes, motion in service of comprehension, and the table that saves your accessibility audit.",
+    "slug": "charts-on-marketing-pages",
+    "cluster": "web-design",
+    "tags": [
+      "data visualisation",
+      "marketing sites",
+      "accessibility",
+      "motion design"
+    ],
+    "date": "2026-03-12",
+    "author": "June Okafor",
+    "keywords": [
+      "data visualisation web",
+      "chart design marketing",
+      "accessible charts",
+      "SaaS marketing pages",
+      "design honesty"
+    ],
+    "readingTime": 9,
+    "heroImage": "/images/articles/web-design/charts-on-marketing-pages.jpg",
+    "heroAlt": "A hand-drawn ink line chart on cream card beside a brass ruler and a pressed fern frond, one clean green line rising gently with a small annotation arrow."
+  },
+  {
     "title": "Colour systems that survive dark mode and rebrands",
     "description": "Literal palettes break the moment a brand shifts or dark mode ships. Here's the semantic colour architecture that has survived both — twice — on real client work.",
     "slug": "colour-systems-dark-mode",
@@ -8161,6 +8456,28 @@ export const articleIndex: ArticleMeta[] = [
       "website errors"
     ],
     "readingTime": 8
+  },
+  {
+    "title": "Drag handles, sliders and the affordance problem",
+    "description": "Draggable UI fails quietly: nobody drags, keyboards can't, layouts forget themselves. How to build handles and sliders that people actually find, use and keep.",
+    "slug": "drag-handles-and-sliders",
+    "cluster": "web-design",
+    "tags": [
+      "interaction design",
+      "accessibility",
+      "design systems",
+      "motion"
+    ],
+    "date": "2026-04-09",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "drag handle UX",
+      "resizable panels",
+      "comparison slider design",
+      "keyboard accessible widgets",
+      "interaction design"
+    ],
+    "readingTime": 10
   },
   {
     "title": "Editorial grids on the web: rhythm, breakout, and restraint",
@@ -8602,6 +8919,29 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 7
   },
   {
+    "title": "Maps on the web: restraint and alternatives",
+    "description": "A map is the most expensive component on most sites — in kilobytes, attention and accessibility. When a map earns it, how to design one that doesn't, and when a list wins.",
+    "slug": "map-design-restraint",
+    "cluster": "web-design",
+    "tags": [
+      "UX",
+      "maps",
+      "accessibility",
+      "performance",
+      "search design"
+    ],
+    "date": "2026-02-18",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "map design web",
+      "map UX",
+      "location search UI",
+      "mapbox styling",
+      "accessible maps"
+    ],
+    "readingTime": 9
+  },
+  {
     "title": "A taxonomy of micro-interactions (and when to say no)",
     "description": "Hover states, cursor follow, scroll reveals and button physics — a working taxonomy with duration curves, quality tests, and reduced-motion fallbacks for every pattern.",
     "slug": "microinteraction-taxonomy",
@@ -8668,6 +9008,28 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 8,
     "heroImage": "/images/articles/web-design/motion-that-earns-its-keep.jpg",
     "heroAlt": "Abstract paper-craft composition on warm off-white: three curved ribbon trajectories in brass, forest green and terracotta describing easing curves through space, with a small still circle at the origin"
+  },
+  {
+    "title": "One system, many sites: multi-property brand design",
+    "description": "Running several web properties off one brand system without blurring them: shared tokens, house vs. property layers, cross-site navigation and honest governance.",
+    "slug": "multisite-brand-systems",
+    "cluster": "web-design",
+    "tags": [
+      "design systems",
+      "brand systems",
+      "design ops",
+      "typography"
+    ],
+    "date": "2026-05-14",
+    "author": "Mara Ellison",
+    "keywords": [
+      "multi-brand web design",
+      "design system tokens",
+      "brand architecture web",
+      "design ops",
+      "sub-brand websites"
+    ],
+    "readingTime": 11
   },
   {
     "title": "Navigation that survives the 375px test",
@@ -8933,6 +9295,28 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 8
   },
   {
+    "title": "Light, dark, light: section banding as rhythm",
+    "description": "How to use alternating light and dark sections as editorial rhythm: surface budgets, seam design, spacing across bands, and fitting a night section into a paper site.",
+    "slug": "section-banding-rhythm",
+    "cluster": "web-design",
+    "tags": [
+      "layout",
+      "colour",
+      "dark mode",
+      "editorial design"
+    ],
+    "date": "2026-06-11",
+    "author": "June Okafor",
+    "keywords": [
+      "dark sections design",
+      "page rhythm",
+      "editorial web layout",
+      "colour surfaces",
+      "design system layout"
+    ],
+    "readingTime": 9
+  },
+  {
     "title": "Draw the sitemap before anyone opens Figma",
     "description": "The sitemap is the cheapest UX artefact you'll ever make and the one teams skip most. Map user questions to pages, audit navigation debt, realign stakeholders fast.",
     "slug": "sitemap-as-ux-artifact",
@@ -9068,6 +9452,28 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 7
   },
   {
+    "title": "Trust marks without the clipart",
+    "description": "Certification badges and partner logos are the least trusted pixels on B2B sites. Typographic credentials, provenance links, and when badges erode trust.",
+    "slug": "trust-marks-without-clipart",
+    "cluster": "web-design",
+    "tags": [
+      "credibility signals",
+      "brand identity",
+      "B2B",
+      "conversion design"
+    ],
+    "date": "2026-01-29",
+    "author": "Mara Ellison",
+    "keywords": [
+      "trust badges design",
+      "certification logos UX",
+      "credibility signals",
+      "B2B website design",
+      "conversion trust"
+    ],
+    "readingTime": 8
+  },
+  {
     "title": "Type systems for marketing sites that still load fast",
     "description": "How to build a marketing-site type system that carries the brand without blowing the performance budget — variable fonts, subsetting and metric-matched fallbacks.",
     "slug": "typography-that-loads",
@@ -9087,6 +9493,52 @@ export const articleIndex: ArticleMeta[] = [
       "font subsetting"
     ],
     "readingTime": 9
+  },
+  {
+    "title": "Urgency UI that stays honest",
+    "description": "Countdown timers and scarcity patterns convert — and corrode. When urgency is real, how to design it to inform not panic, plus honest alternatives that work.",
+    "slug": "urgency-ui-honest",
+    "cluster": "web-design",
+    "tags": [
+      "conversion design",
+      "ethical design",
+      "UX",
+      "e-commerce"
+    ],
+    "date": "2025-11-06",
+    "author": "Priya Nair",
+    "keywords": [
+      "countdown timer UX",
+      "urgency design",
+      "conversion patterns",
+      "dark patterns",
+      "ethical web design"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "The true cost of video heroes",
+    "description": "Video heroes feel premium and invoice like it. A cost-benefit ledger in megabytes, milliseconds and attention — plus the poster-frame discipline that makes one worth shipping.",
+    "slug": "video-heroes-cost-benefit",
+    "cluster": "web-design",
+    "tags": [
+      "motion",
+      "performance",
+      "homepage design",
+      "design trade-offs"
+    ],
+    "date": "2026-03-17",
+    "author": "Hannah Yeo",
+    "keywords": [
+      "video hero design",
+      "hero section performance",
+      "motion web design",
+      "LCP video",
+      "web design trade-offs"
+    ],
+    "readingTime": 10,
+    "heroImage": "/images/articles/web-design/video-heroes-cost-benefit.jpg",
+    "heroAlt": "A boutique hotel lobby at dusk, caught like a film still — brass pendants, fern-green armchairs and a shaft of amber window light with dust held mid-air."
   },
   {
     "title": "Whitespace is a tool, not a leftover",
@@ -9134,6 +9586,8 @@ export const caseIndex: CaseStudyMeta[] = [
       "industrial supplier digital"
     ],
     "readingTime": 0,
+    "heroImage": "/images/work/arkwright-supply-b2b-commerce.jpg",
+    "heroAlt": "Miniature paper boxes, brass bolts and a cream order slip clipped in a neat trade-catalogue grid on warm paper.",
     "client": "Arkwright Supply",
     "industry": "Retail & e-commerce",
     "services": [
@@ -9307,6 +9761,43 @@ export const caseIndex: CaseStudyMeta[] = [
     "heroAlt": "Editorial paper-craft illustration: a staircase of cream cards with brass-foiled edges ascending — the Brightmarsh onboarding case-study hero."
   },
   {
+    "title": "Brumby Air: booking a Cessna seat like ordering coffee",
+    "description": "A booking engine for a 14-route outback airline: weight-limit honesty, calendars that admit empty days, fare comparison, and pages that survive rural connections.",
+    "slug": "brumby-air-regional-booking",
+    "cluster": "work",
+    "tags": [
+      "airline booking",
+      "travel UX",
+      "regional",
+      "fare comparison",
+      "performance"
+    ],
+    "date": "2026-01-22",
+    "author": "Tomás Reyes",
+    "keywords": [
+      "airline booking ux",
+      "regional airline website",
+      "fare comparison",
+      "travel booking flow",
+      "slow connections performance"
+    ],
+    "readingTime": 9,
+    "client": "Brumby Air",
+    "industry": "Hospitality",
+    "services": [
+      "Websites",
+      "Product design & engineering"
+    ],
+    "year": 2026,
+    "stack": [
+      "Astro",
+      "React islands",
+      "TypeScript",
+      "Node",
+      "Redis"
+    ]
+  },
+  {
     "title": "Copperline Mutual: a community bank that sounds human",
     "description": "How a voice overhaul and an accessibility-first platform rebuild helped a fictional mutual bank turn plain language into its sharpest competitive edge.",
     "slug": "copperline-community-bank",
@@ -9346,6 +9837,46 @@ export const caseIndex: CaseStudyMeta[] = [
     ],
     "heroImage": "/images/work/copperline-community-bank.jpg",
     "heroAlt": "A warm bank-counter still life: a brass teller lamp, stacked paper ledgers and a pressed fern on cream paper."
+  },
+  {
+    "title": "Copperplate: a design system people actually read",
+    "description": "How we rebuilt a dev-tooling company's design system docs around live tokens, do/don't blocks and honest guidance — and doubled adoption in a quarter.",
+    "slug": "copperplate-design-system",
+    "cluster": "work",
+    "tags": [
+      "design system",
+      "documentation",
+      "design tokens",
+      "component library",
+      "adoption"
+    ],
+    "date": "2026-03-19",
+    "author": "June Okafor",
+    "keywords": [
+      "design system documentation",
+      "design tokens",
+      "component library adoption",
+      "dev tools UX",
+      "copperplate case study"
+    ],
+    "readingTime": 9,
+    "heroImage": "/images/work/copperplate-design-system.jpg",
+    "heroAlt": "A design-system documentation page rendered as a printed specimen sheet: token swatches, a do-and-don't component pair, and brass-edged index tabs on warm paper",
+    "client": "Copperplate",
+    "industry": "SaaS",
+    "services": [
+      "Product design & engineering",
+      "Brand & identity"
+    ],
+    "year": 2026,
+    "stack": [
+      "React",
+      "TypeScript",
+      "CSS custom properties",
+      "Vite",
+      "MDX"
+    ],
+    "demo": "copperplate-ds-docs"
   },
   {
     "title": "Coriander Collective: six restaurants, one platform, zero beige",
@@ -9579,6 +10110,84 @@ export const caseIndex: CaseStudyMeta[] = [
     "heroAlt": "Unlabelled apothecary bottles, raw botanical ingredients and blank specimen cards on warm paper."
   },
   {
+    "title": "Glasshouse: a seat map people stopped dreading",
+    "description": "A 384-seat theatre's box office was where sales went to die. We rebuilt it around an honest seat map, truthful timers and keyboard-first booking.",
+    "slug": "glasshouse-ticketing-relaunch",
+    "cluster": "work",
+    "tags": [
+      "ticketing",
+      "e-commerce",
+      "accessibility",
+      "seat map",
+      "conversion"
+    ],
+    "date": "2025-09-02",
+    "author": "Nate Sullivan",
+    "keywords": [
+      "ticketing",
+      "seat map",
+      "performing arts",
+      "e-commerce UX",
+      "conversion"
+    ],
+    "readingTime": 7,
+    "client": "The Glasshouse",
+    "industry": "Media & culture",
+    "services": [
+      "Websites",
+      "Product design & engineering",
+      "E-commerce"
+    ],
+    "year": 2025,
+    "stack": [
+      "React",
+      "TypeScript",
+      "SVG",
+      "WebSockets"
+    ],
+    "heroImage": "/images/work/glasshouse-seat-map.jpg",
+    "heroAlt": "Velvet-night still life: theatre tickets, a brass pencil and a folded programme on dark green paper.",
+    "demo": "glasshouse-seat-map"
+  },
+  {
+    "title": "Harbourlight: a donation flow that respects the giver",
+    "description": "A coastal housing charity's donation flow rebuilt around honesty — plain fees, fair recurring asks, and receipts that read like a human wrote them.",
+    "slug": "harbourlight-donation-platform",
+    "cluster": "work",
+    "tags": [
+      "case study",
+      "non-profit",
+      "donations",
+      "form design",
+      "trust"
+    ],
+    "date": "2025-08-18",
+    "author": "Priya Nair",
+    "keywords": [
+      "non-profit donation platform",
+      "donation form design",
+      "recurring giving ux",
+      "charity website case study",
+      "payment transparency"
+    ],
+    "readingTime": 0,
+    "client": "Harbourlight",
+    "industry": "Non-profit",
+    "services": [
+      "Websites",
+      "Growth",
+      "E-commerce"
+    ],
+    "year": 2025,
+    "stack": [
+      "React",
+      "TypeScript",
+      "Node",
+      "Postgres",
+      "Stripe"
+    ]
+  },
+  {
     "title": "Harvest Loop: logistics dashboards for a food-rescue charity",
     "description": "A driver app and donor dashboard for a food-rescue charity — built for cracked Android phones, volunteer patience and funders who reply with 'prove it'.",
     "slug": "harvest-loop-food-rescue",
@@ -9600,6 +10209,8 @@ export const caseIndex: CaseStudyMeta[] = [
       "offline-first app"
     ],
     "readingTime": 0,
+    "heroImage": "/images/work/harvest-loop-food-rescue.jpg",
+    "heroAlt": "A paper-craft city map strung with a brass rescue route: pins, a paper van and crates of folded paper produce.",
     "client": "Harvest Loop",
     "industry": "Non-profit",
     "services": [
@@ -9737,6 +10348,78 @@ export const caseIndex: CaseStudyMeta[] = [
     "heroAlt": "Editorial still-life: vinyl records in blank green and clay sleeves beside a brass tonearm on cream paper — the Holloway Records case-study hero."
   },
   {
+    "title": "Ironbark: retiring the order-desk fax ritual",
+    "description": "How we replaced a wholesale roaster's phone-and-fax order desk with a self-serve portal: per-account price lists, honest cut-offs, and one-tap reorders.",
+    "slug": "ironbark-trade-portal",
+    "cluster": "work",
+    "tags": [
+      "B2B commerce",
+      "wholesale portal",
+      "reorder UX",
+      "self-serve",
+      "coffee"
+    ],
+    "date": "2025-11-13",
+    "author": "Nate Sullivan",
+    "keywords": [
+      "b2b ecommerce portal",
+      "wholesale ordering",
+      "reorder ux",
+      "shopify b2b",
+      "self-serve commerce case study"
+    ],
+    "readingTime": 8,
+    "client": "Ironbark Coffee Roasters",
+    "industry": "Retail & e-commerce",
+    "services": [
+      "E-commerce",
+      "Product design & engineering"
+    ],
+    "year": 2025,
+    "stack": [
+      "Shopify B2B",
+      "TypeScript",
+      "Remix",
+      "Postgres"
+    ]
+  },
+  {
+    "title": "Keepsake: pressing letters into pixels",
+    "description": "A letterpress stationery configurator built from layered SVG: live paper, ink and edge-paint previews, transparent pricing per option, and a shareable design link.",
+    "slug": "keepsake-letterpress-configurator",
+    "cluster": "work",
+    "tags": [
+      "configurator",
+      "letterpress",
+      "stationery",
+      "e-commerce",
+      "SVG"
+    ],
+    "date": "2025-06-05",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "product configurator",
+      "letterpress stationery",
+      "wedding invitations ecommerce",
+      "svg product preview",
+      "custom stationery case study"
+    ],
+    "readingTime": 8,
+    "client": "Keepsake",
+    "industry": "Retail & e-commerce",
+    "services": [
+      "E-commerce",
+      "Brand & identity"
+    ],
+    "year": 2025,
+    "stack": [
+      "React",
+      "SVG",
+      "TypeScript",
+      "Shopify"
+    ]
+  },
+  {
     "title": "Kite & Anchor: insurance onboarding people actually finish",
     "description": "A boutique insurtech's quote flow was losing four in five visitors. Progressive disclosure, honest defaults and plain-English policy summaries fixed the finish line.",
     "slug": "kite-and-anchor-insurtech",
@@ -9776,6 +10459,43 @@ export const caseIndex: CaseStudyMeta[] = [
     "heroAlt": "A paper kite folded from a cream policy document, a brass anchor paperweight and an ink pen on warm paper."
   },
   {
+    "title": "Kowa Health — unifying nine clinics onto one patient platform",
+    "description": "Nine NZ primary-care clinics, five booking systems and a phone-heavy queue, unified into one patient portal co-designed with the receptionists who run it.",
+    "slug": "kowa-health-clinics-platform",
+    "cluster": "work",
+    "tags": [
+      "case study",
+      "health",
+      "patient portal",
+      "booking platform",
+      "accessibility"
+    ],
+    "date": "2025-10-06",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "health platform case study",
+      "patient portal design",
+      "clinic booking system",
+      "healthcare accessibility",
+      "design system health"
+    ],
+    "readingTime": 0,
+    "client": "Kowa Health",
+    "industry": "Health",
+    "services": [
+      "Product design & engineering",
+      "Websites"
+    ],
+    "year": 2025,
+    "stack": [
+      "React",
+      "TypeScript",
+      "Node",
+      "Postgres",
+      "Twilio"
+    ]
+  },
+  {
     "title": "Larklight: a SaaS marketing site that doubled demo bookings",
     "description": "A field-service SaaS rewrote its positioning, rebuilt its pricing page around honesty, and doubled demo bookings without spending a dollar more on ads.",
     "slug": "larklight-saas-marketing-site",
@@ -9797,6 +10517,8 @@ export const caseIndex: CaseStudyMeta[] = [
       "positioning"
     ],
     "readingTime": 0,
+    "heroImage": "/images/work/larklight-saas-marketing-site.jpg",
+    "heroAlt": "Paper-craft browser cards pinned to cream stock with brass fasteners — a pricing page and booking form suggested as pure shapes.",
     "client": "Larklight",
     "industry": "SaaS",
     "services": [
@@ -9809,6 +10531,41 @@ export const caseIndex: CaseStudyMeta[] = [
       "React",
       "TypeScript",
       "Vite",
+      "Sanity",
+      "Cloudflare"
+    ]
+  },
+  {
+    "title": "Ledgerline: an accounting firm with opinions, finally visible",
+    "description": "A sharp accounting practice had a beige website. We rebuilt the identity and turned forty accountants into a publishing engine with forty-minute weeks.",
+    "slug": "ledgerline-brand-and-site-refresh",
+    "cluster": "work",
+    "tags": [
+      "professional services",
+      "brand refresh",
+      "content strategy",
+      "editorial design"
+    ],
+    "date": "2026-02-19",
+    "author": "June Okafor",
+    "keywords": [
+      "professional services branding",
+      "accounting firm website",
+      "brand refresh case study",
+      "content strategy"
+    ],
+    "readingTime": 9,
+    "client": "Ledgerline",
+    "industry": "Fintech",
+    "services": [
+      "Brand & identity",
+      "Websites",
+      "Growth"
+    ],
+    "year": 2025,
+    "stack": [
+      "React",
+      "TypeScript",
       "Sanity",
       "Cloudflare"
     ]
@@ -9972,6 +10729,46 @@ export const caseIndex: CaseStudyMeta[] = [
     ]
   },
   {
+    "title": "Pinch & Sprig — a bakery group that sells out by 10am, online first",
+    "description": "Three Sydney bakeries, one-tap pre-orders with honest cut-offs, a wholesale portal that kills the 5am phone call — and menus that are pages, not PDFs.",
+    "slug": "pinch-and-sprig-bakery-website",
+    "cluster": "work",
+    "tags": [
+      "case study",
+      "hospitality",
+      "bakery",
+      "pre-order",
+      "brand identity"
+    ],
+    "date": "2025-06-02",
+    "author": "Nate Sullivan",
+    "keywords": [
+      "bakery website case study",
+      "hospitality ecommerce",
+      "pre-order ux",
+      "wholesale ordering portal",
+      "restaurant brand identity"
+    ],
+    "readingTime": 0,
+    "client": "Pinch & Sprig",
+    "industry": "Hospitality",
+    "services": [
+      "Brand & identity",
+      "Websites",
+      "E-commerce"
+    ],
+    "year": 2025,
+    "stack": [
+      "React",
+      "TypeScript",
+      "Sanity",
+      "Shopify",
+      "Mapbox"
+    ],
+    "heroImage": "/images/work/pinch-and-sprig-bakery-website.jpg",
+    "heroAlt": "Editorial still life of pastries on brown paper with brass-toned cutlery and fern-green linen, warm morning light."
+  },
+  {
     "title": "The Corrowong Trust: an archive people actually browse",
     "description": "How we rebuilt a regional museum group's 180,000-item digital archive around wandering instead of database forms — and made it funding-proof.",
     "slug": "postcards-museum-archive",
@@ -10010,6 +10807,80 @@ export const caseIndex: CaseStudyMeta[] = [
     ],
     "heroImage": "/images/work/postcards-museum-archive.jpg",
     "heroAlt": "Blank vintage postcards overlapping in a grid with brass archival clips and a magnifying loupe on warm paper."
+  },
+  {
+    "title": "Prairie Mutual: claims that take six minutes, not six phone calls",
+    "description": "A regional insurer replaced a fourteen-page claims PDF with a six-minute guided flow — and 'where is my claim?' calls fell by more than a third.",
+    "slug": "prairie-mutual-claims-reimagined",
+    "cluster": "work",
+    "tags": [
+      "insurance",
+      "forms",
+      "accessibility",
+      "UX writing",
+      "service design"
+    ],
+    "date": "2025-09-04",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "insurance claims ux",
+      "claims app case study",
+      "accessible forms",
+      "insurtech design"
+    ],
+    "readingTime": 9,
+    "client": "Prairie Mutual",
+    "industry": "Fintech",
+    "services": [
+      "Product design & engineering"
+    ],
+    "year": 2025,
+    "stack": [
+      "React",
+      "TypeScript",
+      "Node",
+      "Postgres"
+    ]
+  },
+  {
+    "title": "Pylon Care: an AI support assistant that knows its limits",
+    "description": "Pylon Health's support queue drowned in the same five questions. We shipped an AI assistant with citations, red lines and a kill switch — evals first.",
+    "slug": "pylon-care-assistant",
+    "cluster": "work",
+    "tags": [
+      "AI",
+      "responsible AI",
+      "support",
+      "RAG",
+      "health"
+    ],
+    "date": "2025-06-17",
+    "author": "Dev Khatri",
+    "keywords": [
+      "AI support assistant case study",
+      "healthtech AI",
+      "RAG citations",
+      "AI guardrails",
+      "Brassfern work"
+    ],
+    "readingTime": 7,
+    "client": "Pylon Health",
+    "industry": "Health",
+    "services": [
+      "AI products",
+      "Product design & engineering"
+    ],
+    "year": 2025,
+    "stack": [
+      "React",
+      "TypeScript",
+      "Retrieval (RAG)",
+      "Golden-set evals",
+      "Postgres"
+    ],
+    "heroImage": "/images/work/pylon-care-assistant.jpg",
+    "heroAlt": "A teal still-life: a phone mid-conversation on a desk beside a ceramic cup and stacked paperwork.",
+    "demo": "pylon-care-assistant"
   },
   {
     "title": "Pylon Health: telehealth that treats anxiety as a UX problem",
@@ -10124,6 +10995,43 @@ export const caseIndex: CaseStudyMeta[] = [
       "Node",
       "Postgres",
       "Storybook"
+    ]
+  },
+  {
+    "title": "Quillon Games — a community platform for a two-studio indie label",
+    "description": "A two-studio indie label trades a scattered Discord for a community hub: patch notes that rank, roadmap voting, and a moderated fan-creation gallery.",
+    "slug": "quillon-games-community-platform",
+    "cluster": "work",
+    "tags": [
+      "case study",
+      "games",
+      "community",
+      "media",
+      "moderation"
+    ],
+    "date": "2026-02-16",
+    "author": "Leonie Marsh",
+    "keywords": [
+      "games community platform case study",
+      "indie game studio website",
+      "patch notes seo",
+      "community moderation tooling",
+      "fan content gallery"
+    ],
+    "readingTime": 0,
+    "client": "Quillon Games",
+    "industry": "Media & culture",
+    "services": [
+      "Product design & engineering",
+      "Brand & identity"
+    ],
+    "year": 2026,
+    "stack": [
+      "React",
+      "TypeScript",
+      "Node",
+      "Postgres",
+      "Meilisearch"
     ]
   },
   {
@@ -10283,6 +11191,45 @@ export const caseIndex: CaseStudyMeta[] = [
     "heroAlt": "Editorial still-life: brass compass, folded paper maps and a pressed fern on cream paper — the Sundial case-study hero."
   },
   {
+    "title": "Switchyard: teaching a rail-ops board new manners",
+    "description": "For a rail-ops platform, the board is the product. We rebuilt Switchyard's kanban with a full keyboard shuttle and warnings that mean it.",
+    "slug": "switchyard-rail-ops-kanban",
+    "cluster": "work",
+    "tags": [
+      "kanban",
+      "SaaS",
+      "accessibility",
+      "drag and drop",
+      "keyboard"
+    ],
+    "date": "2026-04-28",
+    "author": "Felix Brandt",
+    "keywords": [
+      "kanban",
+      "SaaS UX",
+      "drag and drop",
+      "accessibility",
+      "keyboard"
+    ],
+    "readingTime": 8,
+    "client": "Switchyard",
+    "industry": "SaaS",
+    "services": [
+      "Product design & engineering"
+    ],
+    "year": 2026,
+    "stack": [
+      "React",
+      "TypeScript",
+      "Pointer Events",
+      "ARIA live regions",
+      "Postgres"
+    ],
+    "heroImage": "/images/work/switchyard-rail-ops-kanban.jpg",
+    "heroAlt": "Editorial still life: a brass index-card holder, blank cream cards, a stencil stamp and a dark green pencil on warm paper.",
+    "demo": "switchyard-kanban"
+  },
+  {
     "title": "Tallow & Co.: a 1987 butcher becomes a modern providore",
     "description": "A heritage Adelaide butcher went online without losing the counter-chat. How we built pre-order flows, seasonal boxes and a brand refresh the regulars didn't notice.",
     "slug": "tallow-and-co-providore",
@@ -10319,6 +11266,123 @@ export const caseIndex: CaseStudyMeta[] = [
     ],
     "heroImage": "/images/work/tallow-and-co-providore.jpg",
     "heroAlt": "Butcher's-paper parcels with twine, brass scales and a cheese cloche on a marble counter."
+  },
+  {
+    "title": "Tidal Games: a storefront that outlasted launch day",
+    "description": "An indie game label needed a store that could survive launch day and still feel hand-made. We built headless commerce and fair, queue-free drops.",
+    "slug": "tidal-games-storefront",
+    "cluster": "work",
+    "tags": [
+      "ecommerce UX",
+      "games",
+      "headless commerce",
+      "launch engineering",
+      "drop mechanics"
+    ],
+    "date": "2026-03-12",
+    "author": "Nate Sullivan",
+    "keywords": [
+      "game store ecommerce",
+      "headless commerce case study",
+      "launch day scaling",
+      "drop mechanics ux"
+    ],
+    "readingTime": 10,
+    "client": "Tidal Games",
+    "industry": "Retail & e-commerce",
+    "services": [
+      "E-commerce",
+      "Websites",
+      "Product design & engineering"
+    ],
+    "year": 2026,
+    "stack": [
+      "React",
+      "TypeScript",
+      "Node",
+      "Postgres",
+      "Cloudflare"
+    ],
+    "demo": "tidal-games-store",
+    "heroImage": "/images/work/tidal-games-store.jpg",
+    "heroAlt": "Editorial still-life of the Tidal Games storefront: arcade-cabinet shapes and game-cartridge forms in fern green and brass on cream paper, grain texture, generous negative space."
+  },
+  {
+    "title": "Trailswell: habit tracking without the guilt trip",
+    "description": "Habit apps run on guilt. Trailswell wanted the opposite: a tracker that celebrates calmly, treats lapses honestly, and survives week three.",
+    "slug": "trailswell-habit-app",
+    "cluster": "work",
+    "tags": [
+      "habits",
+      "wellness",
+      "product design",
+      "retention",
+      "local-first"
+    ],
+    "date": "2026-02-10",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "habit tracker",
+      "wellness app",
+      "product design",
+      "streaks UX",
+      "retention"
+    ],
+    "readingTime": 7,
+    "client": "Trailswell",
+    "industry": "Health",
+    "services": [
+      "Product design & engineering",
+      "Brand & identity"
+    ],
+    "year": 2026,
+    "stack": [
+      "React",
+      "TypeScript",
+      "SVG",
+      "localStorage"
+    ],
+    "heroImage": "/images/work/trailswell-habit-tracker.jpg",
+    "heroAlt": "Risograph-style still life: a stamped field journal, a brass pencil and eucalyptus sprigs on warm paper.",
+    "demo": "trailswell-habit-tracker"
+  },
+  {
+    "title": "Verdigris Archive: 80,000 botanical plates, searchable in a blink",
+    "description": "A botanical museum put 80,000 plates online with fast faceted search, a deep-zoom viewer and public-domain downloads. Search success rose 63%.",
+    "slug": "verdigris-archive-digital-collection",
+    "cluster": "work",
+    "tags": [
+      "digital archives",
+      "search UX",
+      "faceted search",
+      "museums",
+      "performance"
+    ],
+    "date": "2026-05-21",
+    "author": "Leonie Marsh",
+    "keywords": [
+      "digital archive case study",
+      "museum collection online",
+      "faceted search ux",
+      "deep zoom viewer"
+    ],
+    "readingTime": 10,
+    "client": "Verdigris Archive",
+    "industry": "Media & culture",
+    "services": [
+      "Websites",
+      "Product design & engineering"
+    ],
+    "year": 2026,
+    "stack": [
+      "React",
+      "TypeScript",
+      "Meilisearch",
+      "Node",
+      "Postgres"
+    ],
+    "heroImage": "/images/work/verdigris-archive-digital-collection.jpg",
+    "heroAlt": "Editorial flat-lay of antique botanical plates — engraved ferns and seed pods in fern green and brass on cream paper — with a brass magnifying loupe, for the Verdigris Archive case study."
   },
   {
     "title": "Wattle & Daub: a dining room website that fills tables",
@@ -10402,4 +11466,4 @@ export const caseIndex: CaseStudyMeta[] = [
   }
 ]
 
-export const workImages: string[] = ["arlo-and-sons-tradies-marketplace","brightline-solar-quote-engine","brightline-solar-quoter","brightmarsh-onboarding","copperline-community-bank","copperline-mobile-bank","fern-and-forage-florist","fernleigh-cellar-club","fernleigh-wines-dtc-storefront","glade-ingredient-explorer","glade-skincare-ingredient-honesty","glasshouse-seat-map","hearthbrew-brand-system","hearthbrew-subscription-club","holloway-player","holloway-records-label-site","holloway-waveform-player","kite-and-anchor-insurtech","ledgerline-pricing-calculator","meridian-climate-data-explorer","northwind-ledger-budget","northwind-ledger-dashboard-rebuild","osprey-outdoor-configurator-launch","postcards-archive-explorer","postcards-museum-archive","pylon-care-assistant","pylon-health-booking","pylon-health-telehealth-flow","quarry-property-map","signal-and-noise-podcast-network","summit-and-still-yoga","sundial-itinerary-builder","sundial-travel-booking","tallow-and-co-providore","tallow-feast-builder","tallow-seat-map","tidal-games-store","wattle-and-daub-reservations","wattle-and-daub-reserve","willow-and-wren-bookshop"]
+export const workImages: string[] = ["arkwright-supply-b2b-commerce","arlo-and-sons-tradies-marketplace","brightline-solar-quote-engine","brightline-solar-quoter","brightmarsh-course-finder","brightmarsh-onboarding","copperline-community-bank","copperline-mobile-bank","copperplate-design-system","fern-and-forage-florist","fernleigh-cellar-club","fernleigh-wines-dtc-storefront","glade-ingredient-explorer","glade-skincare-ingredient-honesty","glasshouse-seat-map","harvest-loop-food-rescue","hearthbrew-brand-system","hearthbrew-subscription-club","holloway-player","holloway-records-label-site","holloway-waveform-player","kite-and-anchor-insurtech","larklight-saas-marketing-site","ledgerline-pricing-calculator","meridian-climate-data-explorer","northwind-ledger-budget","northwind-ledger-dashboard-rebuild","osprey-outdoor-configurator-launch","pinch-and-sprig-bakery-website","postcards-archive-explorer","postcards-museum-archive","pylon-care-assistant","pylon-health-booking","pylon-health-telehealth-flow","quarry-property-map","signal-and-noise-podcast-network","summit-and-still-yoga","sundial-itinerary-builder","sundial-travel-booking","switchyard-rail-ops-kanban","tallow-and-co-providore","tallow-feast-builder","tallow-seat-map","tidal-games-store","trailswell-habit-tracker","verdigris-archive-digital-collection","wattle-and-daub-reservations","wattle-and-daub-reserve","willow-and-wren-bookshop"]

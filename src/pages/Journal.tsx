@@ -1,6 +1,6 @@
 import { Link, useParams } from 'react-router-dom'
 import { Seo } from '../lib/head'
-import { articles, byCluster } from '../lib/content'
+import { articles, byCluster, allTags } from '../lib/content'
 import { CLUSTER_LABELS, CLUSTERS, type Cluster } from '../lib/types'
 import { JOURNAL_PAGE_SIZE, journalPages, pageHref, pageWindow, restCountFor } from '../lib/paginate'
 import { ArticleCard, ArticleFeature } from '../components/Cards'
@@ -28,7 +28,7 @@ function clusterCount(c: Cluster) {
   return byCluster(c).length
 }
 
-function ClusterNav({ active }: { active?: string }) {
+export function ClusterNav({ active }: { active?: string }) {
   return (
     <nav className="filter-bar" aria-label="Journal clusters" style={{ marginBottom: 'var(--space-6)' }}>
       <Link to="/journal" className={`filter-btn${!active ? ' active' : ''}`} style={{ textDecoration: 'none' }}>
@@ -39,6 +39,9 @@ function ClusterNav({ active }: { active?: string }) {
           {CLUSTER_LABELS[c]} <span className="filter-btn__count">{clusterCount(c)}</span>
         </Link>
       ))}
+      <Link to="/journal/tags" className={`filter-btn${active === 'tags' ? ' active' : ''}`} style={{ textDecoration: 'none' }}>
+        Tags <span className="filter-btn__count">{allTags().length}</span>
+      </Link>
     </nav>
   )
 }

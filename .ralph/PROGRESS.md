@@ -1,5 +1,48 @@
 # Progress
 
+## Done (iteration 12 — builder: /journal/tags index, tag kin rails, placeholder-link cleanup, 3 case-study heroes, +75 backlog)
+
+- **New page `/journal/tags`** (`src/pages/Tags.tsx`) — the "index of
+  indexes" for the ~930 tag pages: Fraunces-italic live filter field
+  (brass focus rule, aria-live match count, clear button), a "Most used"
+  top-18 chip wall, then A–Z `#`-grouped sections (mono brass letter rail,
+  `.tag-group` grid collapsing to stacked ≤560px). Every chip carries a
+  mono count (`.tag-chip__count`). Empty state points at /search. Seo +
+  BreadcrumbList JSON-LD + Crumbs; prerendered and in sitemap.xml.
+  Discovery wiring: ClusterNav (exported from Journal.tsx) gains a "Tags"
+  chip on every journal hub; footer Journal column, /sitemap note,
+  QuickFind page-jumps all link it. Route `journal/tags` declared ahead of
+  the dynamic cluster/tag routes; added to `prerenderRoutes()`.
+- **Tag pages grow a kin rail** — `relatedTags()` in lib/content.ts
+  (co-occurrence counts, count-then-alpha sort, top 8) renders "Grows
+  alongside" chips + an "All tags →" chip (`.tag-kin`) beneath the grid on
+  `/journal/tag/<tag>`. TagPage also gains BreadcrumbList JSON-LD and its
+  visible crumbs now route through /journal/tags.
+- **Article tag rows** end with a dashed-brass "All tags →"
+  (`.tag--index`) — every article is one tap from the full index.
+- **allTags() memoised** (static per build) — ClusterNav/TagPage/Search
+  were recomputing it freely.
+- **Placeholder links all resolved** — the six deliberate `](#)` warnings
+  are gone: five case studies now link "metrics below are illustrative
+  figures from this fictional concept project" → `/colophon` (contextually
+  perfect), and the playbook's quoted `[try it on staging](#)` became
+  plain quoted text. audit-links STATIC_ROUTES gains /journal/tags,
+  /colophon, /sitemap. Audit: 470 files, 0 broken, 0 placeholders.
+- **3 case-study heroes** generated (paper-craft still-lifes, matching the
+  existing set) + frontmatter wired: larklight-saas-marketing-site
+  (pinned paper browser cards), harvest-loop-food-rescue (brass-thread
+  rescue route map), arkwright-supply-b2b-commerce (canned-goods catalogue
+  grid). 8 of 33 case studies still lack heroes (see Next).
+- **Backlog restocked +75 → ~173 planned**: web-design ×17, growth ×14,
+  engineering ×12, ai ×8, playbooks ×8, brand ×7, ecommerce ×6, work ×3
+  (pinch-and-sprig-bakery / kowa-health-clinics / quillon-games-community).
+  Every idea grep-checked against the 429 published slugs to dodge
+  near-dupes. Demos: 22 done, 7 planned — no restock needed.
+- **Build green: 1,601 prerendered routes + 404** (was 1,511), typecheck
+  clean, link audit clean, dist verified (tag groups/chips in
+  /journal/tags HTML, kin rail on tag pages, All-tags link on articles,
+  new og:image heroes on the three case pages).
+
 ## Done (iteration 11 — builder: tag canonicalisation, full press kit, industry journal signals, demo backlog, 2 heroes)
 
 - **Tag canonicalisation pipeline** — `build-content-index.mjs` now normalises
@@ -347,22 +390,30 @@
 
 ## Next
 
-- Journal heroes: ~310 articles still use themeFor tiles. Keep spending the
-  image budget on flagships (2/iteration) — next candidates: web-design
-  leads, engineering/performance pieces, ecommerce flagships.
+- Case-study heroes: 8 of 33 still on themeFor tiles — beacon-health-ai-triage,
+  coriander-collective-restaurant-group, easement-legal-service-finder,
+  fernway-college-admissions-platform, marlowe-hotels-direct-booking-relaunch,
+  quarry-and-compass-property, quill-legal-document-platform,
+  saltbush-collective-marketplace. Prioritise these over journal heroes now.
+- Journal heroes: ~300 articles still use themeFor tiles. 2/iteration
+  flagship budget stands (after case-study gaps close).
 - Builder ideas for later iterations: home POV band refresh; 375px device QA
-  sweep (demo-strip/lab-feature/feature/person-hero/squad/press-kit grids
-  verified in CSS but not on a real device); OG images per case study
-  currently fall back to heroImage (good) — dedicated 1200×630 variants
-  possible; ~930 tag pages exist and many are 1-article thin — consider a
-  per-cluster tag index or min-count pruning for prerender only.
+  sweep (demo-strip/lab-feature/feature/person-hero/squad/press-kit/tag-index
+  grids verified in CSS but not on a real device); dedicated 1200×630 OG
+  variants per case study (currently heroImage fallback — fine).
 - Writers: keep burning backlog — run `node scripts/audit-links.mjs` before
-  finishing (broken internal links are now FATAL in prebuild).
-  Authors MUST be roster names; new case studies must use canonical industry
-  names from src/data/industries.ts (Fintech, Health, Retail & e-commerce,
-  Hospitality, Climate, Education, Media & culture, SaaS, Non-profit) so the
-  /work filters and industry matchers stay clean. Tag casing no longer
-  matters (pipeline canonicalises).
+  finishing (broken internal links are FATAL in prebuild). Authors MUST be
+  roster names; case studies must use canonical industry names from
+  src/data/industries.ts. Tag casing no longer matters (pipeline
+  canonicalises).
+- **Writers — check before drafting:** the corpus has accidental near-twin
+  articles (e.g. editorial-grids ×2, landing-page-anatomy ×2, footers ×2,
+  newsletters ×2, rebrand-rollout ×2, naming ×4, og-images ×2, technical-seo
+  ×2, programmatic-seo ×2, bundles ×2, marketplace-vs ×2, returns ×2,
+  sonic-branding ×2, employer-brand ×2, scrollytelling ×2, microinteractions
+  ×2, focus ×2, citation ×2). `ls src/content/articles/<cluster>/` and grep
+  your keywords before starting a new piece; if a planned item duplicates a
+  published article, pick another.
 - Near-duplicate backlog items writers should SKIP (already published):
   editorial-grids-on-the-web, landing-page-anatomy-2026, forms-nobody-designs,
   dark-mode-second-design-system, naming-process-start-to-finish,
@@ -370,22 +421,24 @@
 
 ## Known issues / watchlist
 
-- Deliberate `](#)` placeholder links in 5 case studies + 1 playbook
-  (rhetorical "metrics are illustrative" device) — warned by audit-links,
-  not fatal. Consider pointing them at a real anchor eventually.
 - Work frontmatter mixes inline YAML lists (`stack: [a, b]`) and longhand
   (`stack:` + `- item`) — both valid; if you script-edit frontmatter, insert
   keys before the closing `---`, never after a bare `stack:` line.
 - Lab demo bodies SSR only the overlay bar (lazy demo not awaited) — by design.
 - Work filter params use replace-history (no back-button trail) — deliberate.
-- Industry pages saas / non-profit have no matching case studies yet — the
-  related-work section omits itself until one ships; the new "From the
-  journal" signals section covers the gap meanwhile.
-- ~930 distinct tags → many 1-article tag pages; fine for now, prune or
-  cluster if it starts to look thin.
+- ~930 distinct tags → many 1-article tag pages. Mitigated (iter 12) by the
+  /journal/tags index + per-tag kin rails; prune/consolidate if it still
+  reads thin.
+- Near-twin articles exist in the corpus (see Next) — treat as a drafting
+  hazard, not a bug; a dedup/editorial merge pass could retire the weakest
+  of each pair later (keep redirects in mind before deleting anything).
 
 ## Solved (kept for reference)
 
+- `](#)` placeholders (6) → real /colophon links or plain text (iter 12);
+  audit now reports 0 placeholders.
+- Industry pages saas / non-profit have case studies (4 + 2) — related-work
+  sections live everywhere.
 - generate_image works again (was 401); hero gaps closing incrementally.
 - Author drift fixed (iter 2); demo.css race guarded by ensure-demo-css.mjs.
 
@@ -1347,3 +1400,50 @@ Four AI-cluster articles done, all validated via finish_article; standalone audi
 - ai/ai-answers-vs-navigation (Felix Brandt, 2026-08-14) — known-answer vs orienting finding; navigation jobs AI can't do (vocabulary teaching, edges, skim, determinism) and vice versa; five-question decision framework; hybrid patterns (search-as-router, answer-with-map, navigation-that-learns, scoped copilot); honest scoreboard (observed task completion, reformulation, verification behaviour) over deflection.
 
 No hero images this iteration (budget conservation; text-heavy operational pieces). Note: writer2's flagged broken link (brand/ai-in-brand-work-position) is now resolved — that article exists and audit shows 0 broken.
+
+## demo1 — iteration 10 (2026-09-26)
+Built demo **brightmarsh-course-finder** (Brightmarsh education client; meta.caseStudy = brightmarsh-onboarding, which exists). finish_demo passed first try; typecheck clean. Demo 21 of 24.
+
+- Full catalogue mini-product: 24 fictional courses (hand-written syllabi, tutors, outcomes), faceted filters (mood × level × day × price) with per-option live facet counts + aria-live result count, sort control, empty state.
+- Honest scarcity: start dates **computed at runtime** from weeksOut snapped to course weekday, so "starts soon"/"nearly full"/waitlist chips never rot. Seat meter bars; 3 courses waitlist-only (join/leave persisted).
+- Compare: up-to-3 tray + side-by-side table overlay (h-scroll on mobile); shortlist + compare + waitlist all localStorage-persisted (bcf:* keys, SSR-guarded).
+- Five-question advisor quiz → 3 argued recommendations ("a recommendation without a reason is just an ad") → save-all-to-shortlist, open-details handoff.
+- Mocked 3-step enrolment: price tiers (standard / member 15% + BM-#### member no. / join & save with $89 membership), gift option (recipient + message), card validation (4242 hint, future expiry, CVC), per-step error wells with role=alert, processing pause (skipped under reduced motion), success screen with booking ref + honest "nothing charged" fineprint.
+- Art direction: "the study room" — olive (#57603a) + oxblood (#762f2f) on cream stock (#f3edd9), engraved double-rule frames (inset box-shadow), serif prospectus headings (Iowan/Palatino stack), mono timetable chips. Distinct from both Brassfern and the sibling brightmarsh-onboarding-flow demo (chalk/navy/highlighter). All scoped under .bcf; full prefers-reduced-motion block; focus-visible rings; shared useOverlay hook (focus-in, Escape, scroll-lock, focus restore).
+- Showcase image: public/images/work/brightmarsh-course-finder.jpg (laptop with abstracted cream/olive/oxblood catalogue UI, no text). NOTE: brightmarsh-onboarding.md has no `demo:` field, so no demo-strip/gallery shows on that case study — writers may add `demo: brightmarsh-course-finder` to wire it (image + demo both exist).
+
+## writer2 — iteration 26 (2026-09-26)
+Four web-design articles done, all validated via finish_article (description bounds fixed on pass two for two of them). ~1.4–1.6k words each, Key takeaways + FAQ, 4–7 internal links all verified against finished slugs/routes. Theme this round: honesty-as-design-strategy on persuasion surfaces.
+
+- web-design/charts-on-marketing-pages (June Okafor, 2026-03-12) — marketing charts vs dashboard charts ("of what?" test, direct labels over legends, annotation-not-title, pre-zoomed windows); axis honesty (no truncated bars, dual-axis ban, stated smoothing); motion that encodes change vs decoration (reduced-motion = instant final state); the HTML table as the accessibility layer; print renders final states; provenance notes. Hero image generated: public/images/articles/web-design/charts-on-marketing-pages.jpg (hand-drawn ink line chart + brass ruler + pressed fern on cream card), heroImage/heroAlt set.
+- web-design/map-design-restraint (Aiko Tanaka, 2026-02-18) — four-condition map gate (geography-the-question, brought location, density insight, movement story, need 2+); muted tiles (whisper palette, one data accent, zoom-progressive labels); marker discipline (one shape, cluster early, sync selection with list); the sorted HTML list IS the product for a third of users; map SDK performance budget (load on intent, static maps for single locations); when the list wins outright (<8 locations, comparative decisions, SEO/print/email).
+- web-design/trust-marks-without-clipart (Mara Ellison, 2026-01-29) — why badge strips fail (camouflage, verification archaeology, clipart tax); typographic credentials block (full names first, always dated, grouped by buyer anxiety, set like a colophon); provenance rule (every mark links to proof, logo walls as table-of-contents); badges that corrode (self-awarded seals, stale awards, security theatre); five-tier trust hierarchy (verifiable artifacts > specific claims > inspectable work > partnerships > self-awards); point-of-need placement.
+- web-design/urgency-ui-honest (Priya Nair, 2025-11-06) — structural/implied/manufactured taxonomy + the "what happens at zero?" test; the published-numbers case against fake urgency (trust decay, refund/churn spikes, brand corrosion, regulatory exposure); honest patterns (state constraint + consequence, proportional weight, progress-over-countdown, server-anchored fatal timers, say-why); timer accessibility (announce at most once, WCAG extend/adjust for time limits, no strobing); honest substitutes (grandfathering notices, batched launches, accurate availability).
+
+## writer4 — iteration 23 (2026-09-26)
+Four web-design articles done, all validated via finish_article. ~1.5–1.9k words each, Key takeaways + FAQ, 4–6 internal links verified against real routes.
+
+- web-design/video-heroes-cost-benefit (Hannah Yeo, 2026-03-17) — itemised cost ledger for video heroes (MB, LCP ms, watts/data, attention, production); the verb-vs-noun rule for when footage earns the hero; freeze-a-frame and could-a-competitor-own-it tests; engineering checklist (10s/3MB ceilings, poster-as-real-hero with fetchpriority/preload, reduced-motion + Save-Data get the composed still, lazy source attach, H1 never waits on media); eight-of-ten verdict for the static image. Hero image generated: public/images/articles/web-design/video-heroes-cost-benefit.jpg (dusk hotel-lobby film still, no people/text), heroImage/heroAlt set.
+- web-design/drag-handles-and-sliders (Aiko Tanaka, 2026-04-09) — affordance problem (thin seam/faint grip/no hover story); fat hit area over thin visual, cursor honesty, one-time teaching nudge; every handle is semantically a slider (role, arrows/shift-arrow/home-end, aria-valuetext, travelling focus ring); touch rules (orient against scroll, touch-action, tap-to-position); persistence as ratios per breakpoint class with reset; pointer capture + CSS-var-during-gesture engineering; presets as the senior alternative.
+- web-design/multisite-brand-systems (Mara Ellison, 2026-05-14) — architecture model first (house of brands / branded house / endorsed); two-layer tokens (frozen house layer vs slot-filling property themes, no added structure); shared wayfinding strand + honest cross-link labels; domain strategy per model + standardised analytics/consent; three-person council governs which layer a request belongs to, exceptions get expiries; family test + stranger test launch audit. Anchored on work/coriander-collective-restaurant-group.
+- web-design/section-banding-rhythm (June Okafor, 2026-06-11) — bands as structural beats not decoration; three-surface budget (ground / well / one inverted night, footers are chrome); seam grammar (hard seam, hairline only between adjacent values, one bleed break max); pad bands not containers; re-derive type weight, muted contrast, imagery and accent variants for dark grounds; when not to band (short pages, long reads, weak hierarchy).
+
+NOTE FOR BUILDER: scripts/audit-links.mjs STATIC_ROUTES is missing '/colophon' and '/sitemap', both real prerendered routes (entry-server.tsx). Writers cannot edit the script — this iteration I content-fixed the three broken /colophon links instead (my own + pre-existing in syntax-highlighting-static-sites.md and trust-marks-without-clipart.md, relinked to /studio or unlinked). Audit now green: 454 files, 0 broken. Please add the two routes to the script so future content can link /colophon + /sitemap.
+
+## writer3 — iteration 23 (2026-09-26)
+Four case studies done, all validated via finish_article. All ~1.1–1.3k words, Challenge/Approach/Outcome + illustrative metric tables, 4–5 internal links each verified against real routes.
+
+- work/copperplate-design-system (June Okafor, 2026-03-19) — fictional dev-tooling SaaS; docs-as-product rebuild: live tokens rendered from shipped CSS vars + usage counts, token playground emitting diffs, do/don't blocks with reasoning, adoption dashboard (31%→68%), RFC-light contribution + changelog. Wired `demo: copperplate-ds-docs` (demo is planned/claimed by demo builders — no folder yet; demo-strip stays hidden until it exists). Hero generated: public/images/work/copperplate-design-system.jpg.
+- work/ironbark-trade-portal (Nate Sullivan, 2025-11-13) — wholesale coffee roaster B2B portal (Shopify B2B + Remix + Postgres): per-account price lists with next-tier nudge, cut-off/delivery-day honesty on the product row, one-tap reorder + standing orders with pause-not-cancel, reps keep relationships ("drifting" flag). Fax count 1→0.
+- work/brumby-air-regional-booking (Tomás Reyes, 2026-01-22) — 14-route outback airline booking (Astro + React islands): honest route-first calendar with visible empty days, per-departure weight/baggage trades surfaced pre-payment, fare families in plain language with weather-cancel policy at 16px, server-rendered flow (74KB JS, 1.9s LCP on 3G, POST survives signal loss via SMS magic-link draft).
+- work/keepsake-letterpress-configurator (Aiko Tanaka, 2025-06-05) — letterpress stationery studio; 6-layer SVG preview (paper/ink-bite/foil/edge-paint/envelope/scene) chosen over 3D on physics grounds, live-fill type specimen ("Rebecca & Tom"), inline option deltas + URL-as-state shareable links, $25 creditable sample pack as trust bridge; rework 40%→9%.
+
+Note: `demo: <slug>` frontmatter on case studies is NOT audited by audit-links (only inline md links are) and the demo-strip hides when the demo folder is absent — safe to pre-wire demos still in flight.
+
+## writer1 — iteration 25 (2026-09-26)
+Four case studies done, all validated via finish_article. ~1.17–1.23k words each, Challenge/Approach/Outcome, exactly 6 internal links each, all verified against real routes; audit-links green (470 files, 0 broken).
+
+- work/ledgerline-brand-and-site-refresh (June Okafor, 2026-02-19) — accounting firm with a sharp reputation and beige website; "We tell you what we'd do" positioning, voice chart before wordmark, ledger-material identity, partner-byline publishing engine (client-question mining, 45-min interview drafts). Qualified enquiries +58%, insight engaged time ~3x. NOTE: named client "Ledgerline" collides with the planned Ledgerline expense-SaaS demo (ledgerline-pricing-calculator → caseStudy ledgerline-pricing-page-rebuild). Deliberately wrote this one as an accounting & advisory practice and did NOT wire the demo. Future writer of ledgerline-pricing-page-rebuild should clearly distinguish the SaaS from the accounting firm.
+- work/tidal-games-storefront (Nate Sullivan, 2026-03-12) — indie game label direct storefront; headless + edge-cached catalogue, independently scaled Node checkout, fair queue-free drops (5-min window, pooled random allocation, published rules), gift purchase first-class. 100% launch-day uptime, checkout conversion +19%. Wired `demo: tidal-games-store` (client matches demo meta); heroImage = pre-existing public/images/work/tidal-games-store.jpg.
+- work/prairie-mutual-claims-reimagined (Aiko Tanaka, 2025-09-04) — regional insurer claims replatform; one-question-per-screen plain-language flow, lodge-now-evidence-later, explicit claim state machine powering honest status page + proactive SMS/email, WCAG 2.2 AA floor with helper mode and phone as an accessibility feature. "Where is my claim?" calls -37%, post-claim NPS +22.
+- work/verdigris-archive-digital-collection (Leonie Marsh, 2026-05-21) — botanical museum, 80k plates online; visual-metadata enrichment layer (colour/composition tags kept separate from scholarly metadata), Meilisearch faceted search with clickable colour swatches, tiled deep-zoom viewer, seeded curriculum-aligned educator collections, instant public-domain downloads with copyable citation. Search success +63%, 2.4k educator accounts in term one. Hero generated: public/images/work/verdigris-archive-digital-collection.jpg (flat-lay botanical plates + brass loupe, fern/brass/cream), heroImage/heroAlt set.

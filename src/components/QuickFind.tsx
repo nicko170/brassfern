@@ -8,6 +8,7 @@ const PAGES = [
   { label: 'Lab', sub: 'Live demos you can touch', url: '/lab' },
   { label: 'Services', sub: 'Six crafts, one squad', url: '/services' },
   { label: 'Journal', sub: 'All the writing', url: '/journal' },
+  { label: 'Tags', sub: 'The index of indexes', url: '/journal/tags' },
   { label: 'Pricing', sub: 'How we charge', url: '/pricing' },
   { label: 'Approach', sub: 'How we work', url: '/approach' },
   { label: 'Contact', sub: 'Start a project', url: '/contact' },

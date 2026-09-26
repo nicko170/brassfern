@@ -49,7 +49,7 @@ Underneath, it's a headless Shopify build — [Hydrogen and TypeScript](/service
 
 ## The outcome
 
-Launched in nine weeks, just ahead of Mother's Day, which felt either brave or foolish and turned out to be the perfect load test. The [metrics below are illustrative figures from this fictional concept project](#):
+Launched in nine weeks, just ahead of Mother's Day, which felt either brave or foolish and turned out to be the perfect load test. The [metrics below are illustrative figures from this fictional concept project](/colophon):
 
 | Metric | Before | After |
 | --- | --- | --- |

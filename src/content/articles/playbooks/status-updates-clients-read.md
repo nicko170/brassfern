@@ -29,7 +29,7 @@ That's it. No percentages. No "on track" badges. The reader's eye goes top to bo
 
 ## Shipped: link the work, never describe the work
 
-The failure mode of status writing is described progress: "the checkout flow is coming along nicely, we're about 70% through the payment step." This sentence is unfalsifiable and therefore worthless. Nobody has ever replied to it. Compare: "Checkout now handles expired cards with a one-tap update flow — [try it on staging](#), card 4000 0000 0000 0341 gets you the declined path."
+The failure mode of status writing is described progress: "the checkout flow is coming along nicely, we're about 70% through the payment step." This sentence is unfalsifiable and therefore worthless. Nobody has ever replied to it. Compare: "Checkout now handles expired cards with a one-tap update flow — try it on staging, card 4000 0000 0000 0341 gets you the declined path."
 
 A link to working software is the only status format that can't be spun. Either the thing works when the client clicks it or we've been caught in a lie within four seconds of sending. That accountability is a feature, not a risk — it's why clients trust the weeks when the honest line is "shipped: less than we wanted, here's why." (This is the same reason we [demo working software weekly](/journal/playbooks/stakeholder-alignment-design) instead of presenting intentions: the demo *is* the status, and the note is just the demo's table of contents.)
 

@@ -93,7 +93,7 @@ export default function Sitemap() {
             ))}
           </ul>
           <p className="mono map-note">
-            Plus {allTags().length} tag pages · <Link to="/journal/tag/accessibility">e.g. #accessibility</Link>
+            Plus <Link to="/journal/tags">{allTags().length} tag pages</Link> · <Link to="/journal/tag/accessibility">e.g. #accessibility</Link>
           </p>
         </div>
 

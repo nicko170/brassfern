@@ -60,12 +60,27 @@ export function byCluster(cluster: Cluster): ArticleMeta[] {
 export function byTag(tag: string): (ArticleMeta | CaseStudyMeta)[] {
   return [...articles, ...caseStudies].filter((a) => a.tags.includes(tag))
 }
+let allTagsCache: { tag: string; count: number }[] | null = null
 export function allTags(): { tag: string; count: number }[] {
+  if (allTagsCache) return allTagsCache
   const counts = new Map<string, number>()
   for (const a of [...articles, ...caseStudies]) {
     for (const t of a.tags) counts.set(t, (counts.get(t) ?? 0) + 1)
   }
-  return [...counts.entries()].map(([tag, count]) => ({ tag, count })).sort((a, b) => b.count - a.count)
+  allTagsCache = [...counts.entries()].map(([tag, count]) => ({ tag, count })).sort((a, b) => b.count - a.count)
+  return allTagsCache
+}
+/** Tags that co-occur with `tag`, most-shared first — the "grows alongside" rail. */
+export function relatedTags(tag: string, take = 8): { tag: string; count: number }[] {
+  const counts = new Map<string, number>()
+  for (const a of [...articles, ...caseStudies]) {
+    if (!a.tags.includes(tag)) continue
+    for (const t of a.tags) if (t !== tag) counts.set(t, (counts.get(t) ?? 0) + 1)
+  }
+  return [...counts.entries()]
+    .map(([t, count]) => ({ tag: t, count }))
+    .sort((a, b) => b.count - a.count || a.tag.localeCompare(b.tag))
+    .slice(0, take)
 }
 export function relatedArticles(meta: ArticleMeta | CaseStudyMeta, take = 3): ArticleMeta[] {
   const pool = articles.filter((a) => a.slug !== meta.slug)

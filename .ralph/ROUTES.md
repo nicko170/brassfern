@@ -16,7 +16,8 @@
 | `/careers`, `/careers/:slug` (5) | Jobs | `src/data/jobs.ts` |
 | `/journal` + `/journal/page/:n` | Article index (lead-story feature, 12/page route-based pagination, all pages prerendered) | generated index |
 | `/journal/:cluster` + `/journal/:cluster/page/:n` | Cluster hubs (8 clusters, lead-story feature, paginated) | generated index |
-| `/journal/tag/:tag` | Tag pages (canonical tags only — case/acronym-normalised; mis-cased URLs redirect client-side) | generated index |
+| `/journal/tags` | Tag index (live filter, most-used wall, A–Z groups with counts) | generated index |
+| `/journal/tag/:tag` | Tag pages (canonical tags only — case/acronym-normalised; mis-cased URLs redirect client-side; "grows alongside" kin rail via co-occurrence) | generated index |
 | `/journal/:cluster/:slug` | Article | `src/content/articles/<cluster>/<slug>.md` |
 | `/search` (?q=) | Live-debounced client search; empty state shows popular tags + latest | metas |
 | `/resources` | Playbooks hub | playbooks cluster |

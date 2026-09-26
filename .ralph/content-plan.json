@@ -9087,8 +9087,10 @@
     "restock",
     "inventory"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790413003.1886342
   },
   {
    "kind": "article",
@@ -9103,8 +9105,10 @@
     "holiday",
     "redemption UX"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790413003.1886349
   },
   {
    "kind": "article",
@@ -9119,8 +9123,10 @@
     "input modes",
     "conversion"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790413003.1886349
   },
   {
    "kind": "article",
@@ -9135,8 +9141,10 @@
     "pause",
     "churn"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790413003.1886349
   },
   {
    "kind": "article",
@@ -10045,8 +10053,10 @@
     "intent capture ecommerce",
     "wishlist conversion"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790413219.491898
   },
   {
    "kind": "article",
@@ -10061,8 +10071,10 @@
     "omnichannel checkout",
     "pickup notification copy"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790413219.4918988
   },
   {
    "kind": "article",
@@ -10077,8 +10089,10 @@
     "shipping form ux",
     "postcode validation"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790413219.4919
   },
   {
    "kind": "demo",
@@ -10881,8 +10895,10 @@
     "reorder",
     "account pricing"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790413219.4919
   },
   {
    "kind": "article",
