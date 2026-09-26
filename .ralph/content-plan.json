@@ -2525,8 +2525,10 @@
    "cluster": "demos",
    "intent": "Event ticketing with interactive seat map for fictional Tallow & Co. long-table dinners. Art direction: butcher-paper cream, charcoal ink, stamp red; ticket-stub typography. Features: SVG seat map of a fictional dining room (long table + banquettes), hover/select seats with price tiers, multi-seat selection with group logic, 10-minute hold timer, order summary + diner details step, accessible list-view equivalent of the map for keyboard/screen-reader users, confirmation with stub-style ticket. Mocked availability, realistic.",
    "keywords": [],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "demo2",
+   "claimed_at": 1790385143.315489
   },
   {
    "kind": "demo",
@@ -2979,8 +2981,10 @@
     "knowledge transfer",
     "runbooks"
    ],
-   "status": "planned",
-   "added_by": "writer3"
+   "status": "claimed",
+   "added_by": "writer3",
+   "worker": "writer3",
+   "claimed_at": 1790385162.370451
   },
   {
    "kind": "article",
@@ -3444,10 +3448,11 @@
     "crdt sync engine",
     "indexeddb patterns"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790384852.531072
+   "claimed_at": 1790384852.531072,
+   "done_at": "2026-09-26T11:14:42"
   },
   {
    "kind": "article",
@@ -3461,10 +3466,11 @@
     "content migration checklist",
     "redirect strategy"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790384852.531073
+   "claimed_at": 1790384852.531073,
+   "done_at": "2026-09-26T11:14:42"
   },
   {
    "kind": "article",
@@ -3478,10 +3484,11 @@
     "content security policy",
     "performance marketing scripts"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790384852.531073
+   "claimed_at": 1790384852.531073,
+   "done_at": "2026-09-26T11:14:53"
   },
   {
    "kind": "article",
@@ -3495,10 +3502,11 @@
     "web animation 2026",
     "progressive enhancement"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790384852.531073
+   "claimed_at": 1790384852.531073,
+   "done_at": "2026-09-26T11:14:53"
   },
   {
    "kind": "article",
@@ -3512,10 +3520,11 @@
     "browser compatibility policy",
     "progressive enhancement"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790384864.402564
+   "claimed_at": 1790384864.402564,
+   "done_at": "2026-09-26T11:13:50"
   },
   {
    "kind": "article",
@@ -3529,10 +3538,11 @@
     "framework decision guide",
     "agency tech stack"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790384864.402566
+   "claimed_at": 1790384864.402566,
+   "done_at": "2026-09-26T11:13:52"
   },
   {
    "kind": "article",
@@ -3546,10 +3556,11 @@
     "persisted queries",
     "api architecture"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790384864.402566
+   "claimed_at": 1790384864.402566,
+   "done_at": "2026-09-26T11:13:55"
   },
   {
    "kind": "article",
@@ -3563,10 +3574,11 @@
     "javascript security policy",
     "lockfile hygiene"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790384864.402566
+   "claimed_at": 1790384864.402566,
+   "done_at": "2026-09-26T11:13:57"
   },
   {
    "kind": "article",
@@ -3949,8 +3961,10 @@
     "agency engagement start",
     "project onboarding checklist"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790385162.370452
   },
   {
    "kind": "article",
@@ -3964,8 +3978,10 @@
     "shipping in public",
     "agency transparency"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790385162.370452
   },
   {
    "kind": "article",
@@ -3979,8 +3995,10 @@
     "webpagetest guide",
     "site speed audit"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790385162.370452
   },
   {
    "kind": "article",
@@ -3994,8 +4012,10 @@
     "design system adoption",
     "stakeholder management design"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790385213.683726
   },
   {
    "kind": "article",
@@ -4009,8 +4029,10 @@
     "event tracking plan",
     "analytics requirements"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790385213.683728
   },
   {
    "kind": "article",
@@ -4024,8 +4046,10 @@
     "agency contract scope",
     "project assumptions document"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790385213.683728
   },
   {
    "kind": "article",
@@ -4039,8 +4063,10 @@
     "agency project management",
     "client scope change"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790385213.683728
   },
   {
    "kind": "article",
@@ -4261,10 +4287,11 @@
     "dark funnel marketing",
     "community roi measurement"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790384579.2238111
+   "claimed_at": 1790384579.2238111,
+   "done_at": "2026-09-26T11:13:11"
   },
   {
    "kind": "article",
@@ -4278,10 +4305,11 @@
     "tools as content strategy",
     "programmatic seo tools"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790384579.2238111
+   "claimed_at": 1790384579.2238111,
+   "done_at": "2026-09-26T11:13:14"
   },
   {
    "kind": "article",
@@ -5177,10 +5205,11 @@
     "content strategy",
     "organic traffic"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790384579.2238111
+   "claimed_at": 1790384579.2238111,
+   "done_at": "2026-09-26T11:13:16"
   },
   {
    "kind": "article",
@@ -5194,10 +5223,11 @@
     "SEO structure",
     "content hubs"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790384579.223812
+   "claimed_at": 1790384579.223812,
+   "done_at": "2026-09-26T11:13:18"
   },
   {
    "kind": "article",
