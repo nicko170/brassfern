@@ -5937,8 +5937,10 @@
     "typographic details",
     "article design"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790394700.062707
   },
   {
    "kind": "article",
@@ -5952,8 +5954,10 @@
     "pricing table design",
     "marketing pages"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790394700.062708
   },
   {
    "kind": "article",
@@ -5967,8 +5971,10 @@
     "navigation UX",
     "site structure"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790394700.062708
   },
   {
    "kind": "article",
@@ -5982,8 +5988,10 @@
     "layout spacing",
     "minimal web design"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790394700.062708
   },
   {
    "kind": "article",
@@ -6522,8 +6530,10 @@
     "shimmer animation",
     "layout shift prevention"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790394959.681581
   },
   {
    "kind": "article",
@@ -6538,8 +6548,10 @@
     "focus state tokens",
     "accessible design systems"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790394959.681582
   },
   {
    "kind": "article",
@@ -6554,8 +6566,10 @@
     "feature section design",
     "landing page grid"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790394959.681582
   },
   {
    "kind": "article",
@@ -6570,8 +6584,10 @@
     "reduced motion fallbacks",
     "narrative web design"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790394959.681582
   },
   {
    "kind": "article",
