@@ -1,0 +1,1454 @@
+/* Fernleigh Cellar — art direction: cool-climate elegance. Fog grey, vine
+   green, wax-seal red. Serif voice (Iowan/Palatino/Georgia), restrained UI,
+   no photographs — bottles are drawn. Scoped under .fcc so nothing leaks. */
+
+.fcc {
+  --fog: #e9ebe2;
+  --fog-2: #dde1d3;
+  --fog-3: #cfd6c2;
+  --panel: #f4f4ec;
+  --ink: #1d251b;
+  --ink-2: #4d584a;
+  --mute: #75806e;
+  --vine: #3c5a3a;
+  --vine-deep: #22311f;
+  --wax: #8e2f2c;
+  --wax-deep: #6e201d;
+  --brass: #b39242;
+  --line: rgba(29, 37, 27, 0.16);
+  --line-soft: rgba(29, 37, 27, 0.08);
+  --serif: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, 'Times New Roman', serif;
+  --sans: 'Avenir Next', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  position: relative;
+  min-height: calc(100svh - 3rem);
+  background:
+    radial-gradient(1200px 500px at 70% -10%, rgba(255, 255, 255, 0.5), transparent 60%),
+    var(--fog);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.55;
+  overflow-x: clip;
+}
+
+.fcc *,
+.fcc *::before,
+.fcc *::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.fcc button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.fcc a {
+  color: inherit;
+}
+
+.fcc h1,
+.fcc h2,
+.fcc h3,
+.fcc h4 {
+  font-family: var(--serif);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+}
+
+.fcc h1 em {
+  font-style: italic;
+  color: var(--vine);
+}
+
+.fcc button:focus-visible,
+.fcc a:focus-visible,
+.fcc input:focus-visible {
+  outline: 2px solid var(--wax);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.fcc-skip {
+  position: absolute;
+  left: 1rem;
+  top: -3rem;
+  z-index: 60;
+  background: var(--ink);
+  color: var(--panel);
+  padding: 0.5rem 0.9rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: top 150ms ease;
+}
+.fcc-skip:focus-visible {
+  top: 0.6rem;
+}
+
+.fcc-eyebrow {
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--vine);
+}
+
+/* ---------- header ---------- */
+
+.fcc-head {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 0.75rem clamp(1rem, 4vw, 2.5rem);
+  background: color-mix(in srgb, var(--fog) 82%, transparent);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.fcc-head__mark {
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.4rem;
+}
+
+.fcc-head__fern {
+  color: var(--wax);
+  font-size: 0.8rem;
+}
+
+.fcc-nav {
+  display: flex;
+  gap: 1.1rem;
+  margin-inline: auto;
+  font-size: 0.86rem;
+}
+
+.fcc-nav a {
+  text-decoration: none;
+  color: var(--ink-2);
+  border-bottom: 1px solid transparent;
+  padding-bottom: 0.1rem;
+  transition: color 160ms ease, border-color 160ms ease;
+}
+
+.fcc-nav a:hover {
+  color: var(--ink);
+  border-color: var(--wax);
+}
+
+.fcc-head__actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* ---------- buttons ---------- */
+
+.fcc-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  padding: 0.5rem 1.05rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 160ms ease, background 160ms ease, border-color 160ms ease, color 160ms ease;
+  background: none;
+}
+
+.fcc-btn--red {
+  background: var(--wax);
+  color: #f8f3e9;
+}
+.fcc-btn--red:hover {
+  background: var(--wax-deep);
+  transform: translateY(-1px);
+}
+
+.fcc-btn--line {
+  border-color: var(--line);
+  color: var(--ink);
+  background: var(--panel);
+}
+.fcc-btn--line:hover {
+  border-color: var(--vine);
+  color: var(--vine-deep);
+}
+
+.fcc-btn--ghost {
+  color: var(--ink-2);
+  border-color: transparent;
+}
+.fcc-btn--ghost:hover {
+  color: var(--ink);
+  border-color: var(--line);
+}
+
+.fcc-btn--big {
+  padding: 0.75rem 1.5rem;
+  font-size: 0.95rem;
+}
+
+.fcc-pill {
+  min-width: 1.35em;
+  height: 1.35em;
+  border-radius: 999px;
+  background: #f8f3e9;
+  color: var(--wax-deep);
+  font-size: 0.72rem;
+  font-weight: 700;
+  display: inline-grid;
+  place-items: center;
+  padding: 0 0.3em;
+}
+
+.fcc-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--vine);
+  display: inline-block;
+}
+
+/* ---------- hero ---------- */
+
+.fcc-hero {
+  position: relative;
+  padding: clamp(4rem, 10vw, 7.5rem) clamp(1rem, 5vw, 3rem) clamp(8rem, 16vw, 11rem);
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.fcc-hero__hills {
+  position: absolute;
+  inset: auto 0 0 0;
+  height: clamp(140px, 24vw, 300px);
+  z-index: -1;
+}
+.fcc-hero__hills svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.fcc-hero h1 {
+  font-size: clamp(2.5rem, 6.2vw, 4.4rem);
+  margin-top: 0.9rem;
+  max-width: 14ch;
+}
+
+.fcc-hero__lead {
+  max-width: 52ch;
+  margin-top: 1.2rem;
+  font-size: 1.06rem;
+  color: var(--ink-2);
+}
+
+.fcc-hero__cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1.8rem;
+}
+
+.fcc-hero__stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(1.2rem, 4vw, 3rem);
+  margin-top: clamp(2.2rem, 5vw, 3.4rem);
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--line);
+}
+
+.fcc-stat dt {
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+
+.fcc-stat dd {
+  font-family: var(--serif);
+  font-size: 1.7rem;
+  margin-top: 0.2rem;
+}
+
+.fcc-stat--sm dd {
+  font-size: 1.25rem;
+}
+
+/* ---------- sections ---------- */
+
+.fcc-section {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: clamp(2.6rem, 6vw, 4.2rem) clamp(1rem, 5vw, 3rem);
+}
+
+.fcc-sechead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1rem 2rem;
+  margin-bottom: 1.6rem;
+}
+
+.fcc-sechead h2 {
+  font-size: clamp(1.7rem, 3.4vw, 2.4rem);
+  margin-top: 0.5rem;
+}
+
+/* ---------- filters ---------- */
+
+.fcc-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.fcc-chip {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  padding: 0.32rem 0.85rem;
+  font-size: 0.8rem;
+  color: var(--ink-2);
+  transition: all 160ms ease;
+}
+
+.fcc-chip:hover {
+  border-color: var(--vine);
+}
+
+.fcc-chip.is-on {
+  background: var(--vine-deep);
+  border-color: var(--vine-deep);
+  color: var(--panel);
+}
+
+/* ---------- wine grid ---------- */
+
+.fcc-grid {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(180px, 100%), 1fr));
+  gap: 0.9rem;
+}
+
+.fcc-wine__btn {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  background: var(--panel);
+  border: 1px solid var(--line-soft);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 0;
+  transition: transform 220ms cubic-bezier(0.22, 1, 0.36, 1), box-shadow 220ms ease, border-color 160ms ease;
+}
+
+.fcc-wine__btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px -18px rgba(29, 37, 27, 0.4);
+  border-color: var(--line);
+}
+
+.fcc-wine__art {
+  display: grid;
+  place-items: center;
+  height: 210px;
+  background:
+    radial-gradient(180px 130px at 50% 88%, rgba(142, 47, 44, 0.08), transparent 70%),
+    var(--fog-2);
+}
+
+.fcc-wine__art .fcc-bottle {
+  height: 180px;
+  width: auto;
+}
+
+.fcc-wine__meta {
+  display: grid;
+  gap: 0.15rem;
+  padding: 0.8rem 0.9rem 0.95rem;
+}
+
+.fcc-wine__name {
+  font-family: var(--serif);
+  font-size: 1.12rem;
+}
+
+.fcc-wine__var {
+  font-size: 0.78rem;
+  color: var(--mute);
+}
+
+.fcc-wine__price {
+  margin-top: 0.4rem;
+  font-weight: 700;
+  font-size: 0.92rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.45rem;
+}
+
+.fcc-wine__club {
+  font-weight: 500;
+  font-size: 0.72rem;
+  color: var(--wax);
+}
+
+/* ---------- bottle svg ---------- */
+
+.fcc-bottle__name {
+  font-family: Georgia, serif;
+  font-size: 6.2px;
+  font-weight: 600;
+  fill: #2b2f26;
+}
+.fcc-bottle__var {
+  font-family: Georgia, serif;
+  font-size: 4.4px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  fill: #6a7261;
+}
+.fcc-bottle__vint {
+  font-family: Georgia, serif;
+  font-size: 5.4px;
+  fill: #8e2f2c;
+}
+
+/* ---------- sheets ---------- */
+
+.fcc-scrim {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background: rgba(20, 25, 17, 0.5);
+  backdrop-filter: blur(3px);
+  display: grid;
+  place-items: center;
+  padding: clamp(0.5rem, 3vw, 2rem);
+}
+
+.fcc-sheet {
+  background: var(--panel);
+  border-radius: 14px;
+  border: 1px solid var(--line-soft);
+  box-shadow: 0 30px 80px -30px rgba(20, 25, 17, 0.6);
+  max-width: 880px;
+  width: 100%;
+  max-height: calc(100dvh - 2rem);
+  overflow: auto;
+  position: relative;
+  animation: fcc-pop 320ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.fcc-sheet--side {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: min(460px, 100%);
+  max-height: none;
+  border-radius: 14px 0 0 14px;
+  animation: fcc-slide-in 340ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes fcc-pop {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.985);
+  }
+}
+
+@keyframes fcc-slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+}
+
+.fcc-sheet__close {
+  position: sticky;
+  top: 0.7rem;
+  margin-left: auto;
+  margin-right: 0.7rem;
+  float: right;
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  color: var(--ink-2);
+  font-size: 0.85rem;
+  transition: all 160ms ease;
+  z-index: 2;
+}
+
+.fcc-sheet__close:hover {
+  background: var(--wax);
+  border-color: var(--wax);
+  color: #f8f3e9;
+}
+
+/* ---------- PDP ---------- */
+
+.fcc-pdp {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+}
+
+.fcc-pdp__art {
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(260px 200px at 50% 80%, rgba(142, 47, 44, 0.08), transparent 72%),
+    var(--fog-2);
+  padding: 2.2rem 1rem;
+}
+
+.fcc-pdp__art .fcc-bottle--hero {
+  height: min(320px, 46vh);
+  width: auto;
+  filter: drop-shadow(0 18px 20px rgba(29, 37, 27, 0.22));
+}
+
+.fcc-pdp__body {
+  padding: 2rem 2rem 2.2rem;
+}
+
+.fcc-pdp__name {
+  font-size: 1.9rem;
+  margin-top: 0.5rem;
+}
+
+.fcc-pdp__name span {
+  display: block;
+  font-size: 0.55em;
+  font-style: italic;
+  color: var(--vine);
+}
+
+.fcc-pdp__tasting {
+  margin-top: 0.7rem;
+  font-family: var(--serif);
+  font-size: 1.02rem;
+  font-style: italic;
+  color: var(--ink-2);
+}
+
+.fcc-pdp__story {
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+  color: var(--ink-2);
+  max-width: 46ch;
+}
+
+.fcc-vints {
+  border: 0;
+  padding: 0;
+  margin-top: 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.fcc-vints legend {
+  float: left;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--mute);
+  width: 100%;
+  margin-bottom: 0.45rem;
+}
+
+.fcc-vint {
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  padding: 0.35rem 0.8rem;
+  font-size: 0.86rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 160ms ease;
+}
+
+.fcc-vint input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.fcc-vint:has(input:focus-visible) {
+  outline: 2px solid var(--wax);
+  outline-offset: 2px;
+}
+
+.fcc-vint.is-on {
+  background: var(--vine-deep);
+  border-color: var(--vine-deep);
+  color: var(--panel);
+}
+
+.fcc-pdp__window {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: var(--ink-2);
+}
+
+.fcc-dotlab {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex: none;
+}
+.fcc-dotlab--hold {
+  background: var(--brass);
+}
+.fcc-dotlab--opening {
+  background: var(--brass);
+}
+.fcc-dotlab--drink {
+  background: var(--vine);
+}
+.fcc-dotlab--drink-soon {
+  background: var(--wax);
+}
+.fcc-dotlab--past {
+  background: var(--mute);
+}
+
+.fcc-pdp__buy {
+  margin-top: 1.4rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--line-soft);
+  display: grid;
+  gap: 0.9rem;
+}
+
+.fcc-stepper {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.15rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.2rem;
+  width: max-content;
+}
+
+.fcc-stepper button {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 0;
+  background: transparent;
+  font-size: 1.05rem;
+  display: grid;
+  place-items: center;
+  transition: background 140ms ease;
+}
+
+.fcc-stepper button:hover:not(:disabled) {
+  background: var(--fog-2);
+}
+
+.fcc-stepper button:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.fcc-stepper output {
+  min-width: 2ch;
+  text-align: center;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.fcc-stepper--sm button {
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
+.fcc-pdp__prices {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.fcc-pdp__price {
+  font-family: var(--serif);
+  font-size: 1.6rem;
+}
+
+.fcc-pdp__clubprice {
+  font-size: 0.82rem;
+  color: var(--wax);
+}
+
+.fcc-pdp__add {
+  justify-self: start;
+}
+
+/* ---------- club join ---------- */
+
+.fcc-tiers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.9rem;
+}
+
+.fcc-tier {
+  text-align: left;
+  display: grid;
+  gap: 0.5rem;
+  align-content: start;
+  background: var(--panel);
+  border: 1px solid var(--line-soft);
+  border-radius: 12px;
+  padding: 1.2rem 1.2rem 1.3rem;
+  transition: all 180ms ease;
+}
+
+.fcc-tier:hover {
+  border-color: var(--line);
+  transform: translateY(-2px);
+}
+
+.fcc-tier.is-on {
+  border-color: var(--vine);
+  background: var(--vine-deep);
+  color: var(--panel);
+  box-shadow: 0 18px 40px -22px rgba(34, 49, 31, 0.7);
+}
+
+.fcc-tier__name {
+  font-family: var(--serif);
+  font-size: 1.35rem;
+}
+
+.fcc-tier__disc {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--wax);
+}
+
+.fcc-tier.is-on .fcc-tier__disc {
+  color: var(--brass);
+}
+
+.fcc-tier__blurb {
+  font-size: 0.85rem;
+  color: var(--ink-2);
+}
+
+.fcc-tier.is-on .fcc-tier__blurb,
+.fcc-tier.is-on .fcc-tier__perks {
+  color: rgba(244, 244, 236, 0.82);
+}
+
+.fcc-tier__perks {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.3rem;
+  font-size: 0.8rem;
+  color: var(--ink-2);
+  border-top: 1px solid var(--line-soft);
+  padding-top: 0.6rem;
+}
+
+.fcc-tier.is-on .fcc-tier__perks {
+  border-top-color: rgba(244, 244, 236, 0.2);
+}
+
+.fcc-tier__perks li::before {
+  content: '·  ';
+  color: var(--wax);
+  font-weight: 700;
+}
+
+.fcc-dials {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.9rem;
+  align-items: stretch;
+}
+
+.fcc-dial {
+  background: var(--panel);
+  border: 1px solid var(--line-soft);
+  border-radius: 12px;
+  padding: 1.1rem 1.2rem;
+  display: grid;
+  gap: 0.6rem;
+  align-content: start;
+}
+
+.fcc-dial label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.fcc-dial output {
+  font-family: var(--serif);
+  font-size: 1.3rem;
+  color: var(--vine);
+  font-weight: 500;
+}
+
+.fcc-dial input[type='range'] {
+  width: 100%;
+  accent-color: var(--wax);
+  height: 1.4rem;
+}
+
+.fcc-dial__hint {
+  font-size: 0.76rem;
+  color: var(--mute);
+}
+
+.fcc-dial--sum {
+  background: var(--vine);
+  color: var(--panel);
+  gap: 0.35rem;
+}
+
+.fcc-dial__sumline {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+}
+
+.fcc-dial__sumline strong {
+  font-family: var(--serif);
+  font-size: 1.05rem;
+}
+
+.fcc-dial__save {
+  color: rgba(244, 244, 236, 0.65);
+  font-size: 0.78rem;
+}
+
+.fcc-dial--sum .fcc-btn {
+  margin-top: 0.6rem;
+}
+
+/* ---------- active plan ---------- */
+
+.fcc-plan {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 0.9rem;
+}
+
+.fcc-plan__card {
+  position: relative;
+  background: var(--vine-deep);
+  color: var(--panel);
+  border-radius: 14px;
+  padding: 1.6rem 1.7rem;
+  overflow: hidden;
+}
+
+.fcc-plan__card .fcc-eyebrow {
+  color: var(--brass);
+}
+
+.fcc-plan__next {
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  margin-top: 0.7rem;
+}
+
+.fcc-plan__meta {
+  margin-top: 0.4rem;
+  font-size: 0.86rem;
+  color: rgba(244, 244, 236, 0.75);
+}
+
+.fcc-plan__seal {
+  position: absolute;
+  top: 1.1rem;
+  right: -2.6rem;
+  rotate: 24deg;
+  background: var(--wax);
+  color: #f8f3e9;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.35rem 3rem;
+}
+
+.fcc-plan__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.4rem;
+}
+
+.fcc-plan__card .fcc-btn--line,
+.fcc-plan__card .fcc-btn--ghost {
+  background: transparent;
+  color: var(--panel);
+  border-color: rgba(244, 244, 236, 0.35);
+}
+
+.fcc-plan__card .fcc-btn--line:hover,
+.fcc-plan__card .fcc-btn--ghost:hover {
+  border-color: var(--panel);
+  color: #fff;
+}
+
+.fcc-plan__dials {
+  display: grid;
+  gap: 0.9rem;
+  align-content: start;
+}
+
+/* ---------- shipments drawer ---------- */
+
+.fcc-ship {
+  padding: 1.6rem 1.6rem 2rem;
+}
+
+.fcc-ship h3 {
+  font-size: 1.6rem;
+  margin-top: 0.4rem;
+}
+
+.fcc-ship__lead {
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+  color: var(--ink-2);
+}
+
+.fcc-ship__next {
+  margin-top: 1.3rem;
+  background: var(--fog-2);
+  border: 1px solid var(--line-soft);
+  border-radius: 12px;
+  padding: 1.1rem 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.fcc-ship__next > div {
+  display: grid;
+  gap: 0.1rem;
+}
+
+.fcc-ship__datelab {
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+
+.fcc-ship__next strong {
+  font-family: var(--serif);
+  font-size: 1.3rem;
+}
+
+.fcc-ship__next span:last-child {
+  font-size: 0.8rem;
+  color: var(--ink-2);
+}
+
+.fcc-ship__calhead {
+  margin-top: 1.6rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-family: var(--sans);
+  color: var(--mute);
+}
+
+.fcc-cal {
+  list-style: none;
+  padding: 0;
+  margin-top: 0.6rem;
+  border-top: 1px solid var(--line-soft);
+}
+
+.fcc-cal__row {
+  display: grid;
+  grid-template-columns: 2.4rem 4.6rem 1fr;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.7rem 0.2rem;
+  border-bottom: 1px solid var(--line-soft);
+  font-size: 0.88rem;
+}
+
+.fcc-cal__num {
+  font-variant-numeric: tabular-nums;
+  color: var(--mute);
+  font-size: 0.78rem;
+}
+
+.fcc-cal__date {
+  display: grid;
+  line-height: 1.2;
+}
+
+.fcc-cal__date strong {
+  font-size: 0.95rem;
+}
+
+.fcc-cal__date span {
+  font-size: 0.72rem;
+  color: var(--mute);
+}
+
+.fcc-cal__label {
+  color: var(--ink-2);
+}
+
+.fcc-cal__label em {
+  color: var(--vine);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.fcc-cal__row.is-next {
+  background: linear-gradient(90deg, rgba(60, 90, 58, 0.1), transparent 70%);
+}
+
+.fcc-ship__actions {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 1.4rem;
+  flex-wrap: wrap;
+}
+
+/* ---------- cellar ---------- */
+
+.fcc-cellar__stats {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.fcc-crows {
+  list-style: none;
+  padding: 0;
+  border-top: 1px solid var(--line);
+}
+
+.fcc-crow {
+  display: grid;
+  grid-template-columns: 3.2rem 1.1fr 1.4fr 3rem;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.7rem 0.2rem;
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.fcc-crow__art {
+  display: grid;
+  place-items: center;
+  height: 74px;
+  background: var(--fog-2);
+  border-radius: 7px;
+}
+
+.fcc-crow__art .fcc-bottle {
+  height: 64px;
+  width: auto;
+}
+
+.fcc-crow__id {
+  display: grid;
+  line-height: 1.25;
+}
+
+.fcc-crow__id strong {
+  font-family: var(--serif);
+  font-size: 1.02rem;
+  font-weight: 500;
+}
+
+.fcc-crow__var {
+  font-size: 0.76rem;
+  color: var(--mute);
+}
+
+.fcc-crow__win {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  column-gap: 0.5rem;
+  row-gap: 0.35rem;
+  font-size: 0.82rem;
+  color: var(--ink-2);
+}
+
+.fcc-bar {
+  grid-column: 1 / -1;
+  height: 4px;
+  border-radius: 3px;
+  background: var(--fog-3);
+  overflow: hidden;
+}
+
+.fcc-bar__fill {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  transition: width 600ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.fcc-bar__fill--hold,
+.fcc-bar__fill--opening {
+  background: var(--brass);
+}
+.fcc-bar__fill--drink {
+  background: var(--vine);
+}
+.fcc-bar__fill--drink-soon {
+  background: var(--wax);
+}
+.fcc-bar__fill--past {
+  background: var(--mute);
+}
+
+.fcc-crow__qty {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  text-align: right;
+  color: var(--ink-2);
+}
+
+.fcc-cellar__note {
+  margin-top: 1rem;
+  font-size: 0.86rem;
+  color: var(--vine);
+  font-family: var(--serif);
+  font-style: italic;
+}
+
+/* ---------- cart ---------- */
+
+.fcc-cart {
+  padding: 1.6rem 1.6rem 2rem;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.fcc-cart h3 {
+  font-size: 1.5rem;
+}
+
+.fcc-cart__n {
+  color: var(--mute);
+  font-size: 0.6em;
+}
+
+.fcc-cart__empty {
+  display: grid;
+  justify-items: center;
+  gap: 0.9rem;
+  padding: 2rem 0 1rem;
+  text-align: center;
+  color: var(--ink-2);
+}
+
+.fcc-cart__empty .fcc-bottle {
+  height: 150px;
+  width: auto;
+  opacity: 0.75;
+}
+
+.fcc-clines {
+  list-style: none;
+  padding: 0;
+  margin-top: 0.8rem;
+  border-top: 1px solid var(--line-soft);
+}
+
+.fcc-cline {
+  display: grid;
+  grid-template-columns: 2.8rem 1fr auto auto;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.65rem 0;
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.fcc-cline__art {
+  display: grid;
+  place-items: center;
+  height: 62px;
+  background: var(--fog-2);
+  border-radius: 6px;
+}
+
+.fcc-cline__art .fcc-bottle {
+  height: 54px;
+  width: auto;
+}
+
+.fcc-cline__id {
+  display: grid;
+  line-height: 1.25;
+  font-size: 0.9rem;
+}
+
+.fcc-cline__id span {
+  font-size: 0.74rem;
+  color: var(--mute);
+}
+
+.fcc-cline__price {
+  font-weight: 700;
+  font-size: 0.9rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.fcc-cart__sums {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.3rem;
+}
+
+.fcc-cart__sums p {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 0.9rem;
+  color: var(--ink-2);
+}
+
+.fcc-cart__sums em {
+  font-style: normal;
+  font-size: 0.76rem;
+  color: var(--vine);
+}
+
+.fcc-cart__hint {
+  font-size: 0.8rem;
+  color: var(--wax);
+}
+
+.fcc-cart__total {
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--line);
+  color: var(--ink) !important;
+}
+
+.fcc-cart__total strong {
+  font-family: var(--serif);
+  font-size: 1.3rem;
+}
+
+.fcc-cart__go {
+  margin-top: 0.9rem;
+}
+
+.fcc-cart__lead {
+  color: var(--ink-2);
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+}
+
+.fcc-cart__box {
+  margin-top: 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 1.1rem 1.2rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.fcc-cart__box p {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.88rem;
+}
+
+.fcc-cart__box p span {
+  color: var(--mute);
+}
+
+.fcc-cart__box .fcc-cart__total {
+  margin-top: 0.3rem;
+}
+
+/* ---------- done ---------- */
+
+.fcc-done {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  gap: 0.9rem;
+  padding: 1.6rem 0.5rem 1rem;
+}
+
+.fcc-done h3 {
+  font-size: 1.7rem;
+}
+
+.fcc-done p {
+  color: var(--ink-2);
+  font-size: 0.95rem;
+  max-width: 40ch;
+}
+
+.fcc-done__seal {
+  width: 4.4rem;
+  height: 4.4rem;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #a8452f, var(--wax-deep));
+  color: #f8f3e9;
+  font-family: var(--serif);
+  font-size: 2rem;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 8px 20px -8px rgba(110, 32, 29, 0.7);
+}
+
+/* ---------- footer / toast ---------- */
+
+.fcc-foot {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 2rem clamp(1rem, 5vw, 3rem) 2.4rem;
+  border-top: 1px solid var(--line);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem 2rem;
+  font-size: 0.82rem;
+  color: var(--mute);
+}
+
+.fcc-foot strong {
+  color: var(--ink);
+  font-family: var(--serif);
+}
+
+.fcc-toast {
+  position: fixed;
+  left: 50%;
+  bottom: 1.2rem;
+  translate: -50% 0;
+  background: var(--ink);
+  color: var(--panel);
+  border-radius: 999px;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.85rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 240ms ease, translate 240ms ease;
+  z-index: 70;
+  max-width: min(92vw, 480px);
+  text-align: center;
+}
+
+.fcc-toast:not(:empty) {
+  opacity: 1;
+  translate: -50% -4px;
+}
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 860px) {
+  .fcc-tiers,
+  .fcc-dials,
+  .fcc-plan {
+    grid-template-columns: 1fr;
+  }
+  .fcc-pdp {
+    grid-template-columns: 1fr;
+  }
+  .fcc-pdp__art .fcc-bottle--hero {
+    height: 220px;
+  }
+}
+
+@media (max-width: 560px) {
+  .fcc-nav {
+    display: none;
+  }
+  .fcc-head {
+    justify-content: space-between;
+  }
+  .fcc-crow {
+    grid-template-columns: 2.6rem 1fr 3rem;
+  }
+  .fcc-crow__win {
+    grid-column: 1 / -1;
+  }
+  .fcc-crow__qty {
+    grid-row: 1;
+    grid-column: 3;
+  }
+  .fcc-cline {
+    grid-template-columns: 2.8rem 1fr auto;
+  }
+  .fcc-cline__price {
+    grid-column: 2 / -1;
+    text-align: right;
+  }
+  .fcc-cellar__stats {
+    width: 100%;
+    justify-content: space-between;
+    gap: 0.8rem;
+  }
+  .fcc-sheet {
+    border-radius: 12px;
+  }
+  .fcc-pdp__body {
+    padding: 1.2rem 1.1rem 1.6rem;
+  }
+}
+
+/* ---------- reduced motion ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .fcc *,
+  .fcc *::before,
+  .fcc *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+  .fcc-wine__btn:hover,
+  .fcc-tier:hover,
+  .fcc-btn--red:hover {
+    transform: none;
+  }
+}

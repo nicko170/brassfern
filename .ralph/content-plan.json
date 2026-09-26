@@ -2500,10 +2500,11 @@
    "cluster": "demos",
    "intent": "Subscription e-commerce for fictional Adelaide Hills winery Fernleigh. Art direction: cool-climate elegance — fog grey, vine green, wax-seal red; bottle-photography-forward. Features: shoppable PDP with vintage/quantity and club-price comparison, three club tiers (Explorer/Cellar/Collector) with per-shipment sliders, skip/next-shipment management drawer, delivery cadence calendar, cellar-tracking widget (bottles owned, drink-by windows) from realistic fake data. Cart + checkout summary mock. LocalStorage persistence.",
    "keywords": [],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "demo2",
-   "claimed_at": 1790382616.816808
+   "claimed_at": 1790382616.816808,
+   "done_at": "2026-09-26T11:11:54"
   },
   {
    "kind": "demo",
@@ -2711,10 +2712,11 @@
     "copywriting guidelines",
     "verbal identity"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer3",
    "worker": "writer3",
-   "claimed_at": 1790384666.214129
+   "claimed_at": 1790384666.214129,
+   "done_at": "2026-09-26T11:11:51"
   },
   {
    "kind": "article",
@@ -2728,10 +2730,11 @@
     "rebrand strategy",
     "brand rollout"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer3",
    "worker": "writer3",
-   "claimed_at": 1790384666.21413
+   "claimed_at": 1790384666.21413,
+   "done_at": "2026-09-26T11:11:55"
   },
   {
    "kind": "article",
@@ -3405,10 +3408,11 @@
     "useSearchParams patterns",
     "deep linking"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790384666.21413
+   "claimed_at": 1790384666.21413,
+   "done_at": "2026-09-26T11:11:55"
   },
   {
    "kind": "article",
@@ -3422,10 +3426,11 @@
     "server sent events",
     "reconnection backoff"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790384666.2141309
+   "claimed_at": 1790384666.2141309,
+   "done_at": "2026-09-26T11:11:55"
   },
   {
    "kind": "article",
@@ -3507,8 +3512,10 @@
     "browser compatibility policy",
     "progressive enhancement"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790384864.402564
   },
   {
    "kind": "article",
@@ -3522,8 +3529,10 @@
     "framework decision guide",
     "agency tech stack"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790384864.402566
   },
   {
    "kind": "article",
@@ -3537,8 +3546,10 @@
     "persisted queries",
     "api architecture"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790384864.402566
   },
   {
    "kind": "article",
@@ -3552,8 +3563,10 @@
     "javascript security policy",
     "lockfile hygiene"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790384864.402566
   },
   {
    "kind": "article",
