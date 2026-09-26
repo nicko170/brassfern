@@ -336,7 +336,7 @@ export default function SeatMap({ sold, selected, activeId, onActive, onToggle }
                   <circle cx={s.x} cy={s.y} r="10" className="gsm-seat__hit" />
                   <circle cx={s.x} cy={s.y} r="8" className="gsm-seat__dot" />
                   {selected.has(s.id) && (
-                    <path d={`M ${s.x - 3.4} ${s.y + 0.4} l 2.4 2.6 l 4.4 - 5}` className="gsm-seat__tick" pointerEvents="none" />
+                    <path d={`M ${s.x - 3.4} ${s.y + 0.4} l 2.4 2.6 l 4.4 - 5`} className="gsm-seat__tick" pointerEvents="none" />
                   )}
                   {s.restricted && !isSold && !selected.has(s.id) && (
                     <circle cx={s.x} cy={s.y - 8.5} r="1.6" className="gsm-seat__flag" pointerEvents="none" />

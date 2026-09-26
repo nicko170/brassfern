@@ -1,5 +1,40 @@
 # Progress
 
+## Done (iteration 8 — builder: studio clocks, cursor ring, demo backlog, build rescue)
+
+- **Four-city studio clocks** — new `src/components/StudioTime.tsx` exports
+  `ClockStrip` (footer, between Fieldnotes and the colophon: mono city/time
+  rows with a brass "open" dot) and `ClockGrid` (Contact page "Where we are,
+  right now" section: big Fraunces tabular times, desk note, open/off-the-clock
+  status line, plus a booking-window line — "January 2027 is the next open
+  door"). Client-only rendering (em-dash placeholders in prerendered HTML, so
+  no hydration mismatch), ticks every 20s, tabular-nums, full
+  `visually-hidden` status text. Added a `.visually-hidden` utility to app.css.
+- **Signature cursor ring** — new `src/components/Cursor.tsx`: a brass ring
+  that trails the pointer with rAF lerp (0.22) and blooms over interactive
+  elements (a/button/input/select/chip via delegated mouseover). Gated three
+  ways: SSR renders nothing, `pointer: fine` required, and
+  `prefers-reduced-motion` aborts. It never hides the system cursor; z-index
+  2100, pointer-events none, transform-only updates.
+- **Demos backlog +4** (planned now 8): `trailswell-habit-tracker` (risograph
+  heatmap/ring tracker), `meridian-climate-heat-story` (scrollytelling summer
+  heat story, static fallback under reduced motion), `switchyard-kanban`
+  (drag + full keyboard shuttle, WIP limits, localStorage),
+  `copperplate-ds-docs` (typefounder-specimen DS docs with live token
+  playground). All with rich art-direction intents for demo builders.
+- **Build rescue — glasshouse-seat-map demo was committed broken** (in-flight
+  demo builder): fixed a malformed template literal in `SeatMap.tsx` (stray
+  `}` inside the string, missing JSX container close), exported `CX` from
+  `data.ts`, and boxed the closure-assigned `best` accumulator in
+  `findBestAvailable` (classic TS "narrowed to never" through closures).
+  Typecheck clean again.
+- **Build green: 1268 prerendered routes + 404**, sitemap/robots/rss emitted,
+  no skeleton HTML outside /lab, clock strip + clock grid + visually-hidden
+  confirmed in dist HTML. Content index: 302 articles + 33 case studies.
+- **Backlog state**: articles planned 128 (no top-up needed); demos planned 8.
+  `.ralph/DESIGN.md` documents the cursor ring and clocks under Signature
+  elements.
+
 ## Done (iteration 7 — builder: reading experience, ⌘K quick find, fieldnotes, backlog)
 
 - **Table of contents on all long reads** — new `src/lib/toc.ts`
@@ -967,3 +1002,30 @@ Completed 4 AI journal articles (all validated done by finish_article):
 - ai/ai-disclosure-patterns (Dev Khatri) — disclosure as a trust instrument: three questions answered at content/decision/commitment points, placement patterns ranked by honesty (inline labels non-negotiable, ambient never alone), export watermarking that survives copy-paste, tier-not-build model transparency, functional wording that red-teams well, joint legal/design screenshot review + 5-second comprehension tests.
 - ai/ai-in-design-process (June Okafor) — studio rulebook for LLM-aided design: real gains in copy pressure-testing, edge-case enumeration and divergence; poisons (synthetic users as research, plausible sameness, confidence laundering); five seatbelts (synthetic tagging, equal critique bar, no synthetic data ships, verify facts, 20-min time-box); honest staffing/speed numbers. Journal AI cluster now ~32/70.
 Note: link audit flags one broken link in growth/brand-term-bidding-decision.md (writer claiming it in flight — not mine to fix) and two intentional '#' placeholders in existing work files.
+
+## writer3 — iteration 15 (2026-09-26)
+Completed 12 journal articles across 3 batches (all validated done by finish_article):
+- ecommerce/express-wallets-checkout (Nate Sullivan) — wallets as placement problem: cart first / payment-step second / PDP only for single-item stores, commitment-point sequencing (resolve costs before/in-sheet), stale-address pipeline, honest measurement with device segmentation vs selection-bias conversion.
+- ecommerce/loyalty-without-dark-patterns (Sam Whitfield) — dark-pattern inventory (breakage economics, treadmill tiers, opaque earn, casino mechanics, interception enrolment, redemption obstacles, exit taxes), trust ledger frame, three honest value-maths calculations, punch-card benchmark.
+- ecommerce/ecommerce-site-search (Nate Sullivan) — ops-side companion to ecommerce-search-design: monthly search analytics loop (zero-results taxonomy, clickless, reformulation, exits), synonym library with evidence + pruning, merchandising-rule governance (owners/reasons/expiry, hand-replayed audits), five search KPIs.
+- ecommerce/preorder-flows-trust (Ruby Castellanos) — pre-orders as a trust tab: charge-timing decision fork, honest date ranges with visible dependencies, milestone-cadence deposits, three-tier delay playbook written in advance, single source of truth for ship dates. Hero image generated (/images/articles/ecommerce/preorder-flows-trust.jpg).
+- growth/winback-email-flows (Priya Nair) — lapse defined from repurchase-interval distribution (~2x median), three-touch arc (remind-no-discount / earned incentive / honest goodbye), suppression-on-purchase + sunset policy, standing holdout for incrementality, prevention-before-winback sequencing.
+- growth/share-of-search (Sam Whitfield) — CFO-proof brand metric: honest category-set construction, face-branding + normalisation + smoothing methodology, salience-not-preference limits, monthly-SoS / annual-survey division of labour, one-chart reporting with method note + pre-registered expectations.
+- growth/marketing-site-ia (Leonie Marsh) — nav mapped to buying states not departments, three-level ceiling, URLs as contracts, footer as second nav, task-based tree testing (not card sorts of your own titles), quarterly nav measurement (path/search-as-feedback/organic entry/debt).
+- growth/og-images-growth-surface (June Okafor) — OG cards as designed system: token-built templates per content type, build-time generation from page metadata with embedded fonts + snapshot tests + cache-busting, share-context metadata contract, dark-mode unfurl testing, honest dark-social measurement.
+- engineering/service-workers-honest-guide (Tomás Reyes) — production lifecycle discipline: per-content-type strategy matrix, version-prefixed caches + activation GC, waiting-worker toast update flow, dignity offline states, production telemetry + tested kill switch; not for content sites.
+- engineering/third-party-script-governance (Felix Brandt) — day-two companion to third-party-scripts-audit: typed vendor registry as policy (owner/budget/consent/campaignOnly), mechanical consent enforcement, facades, per-vendor CI budgets, quarterly keep/fix/kill ritual with marketing.
+- engineering/typescript-strictness-ratchet (Felix Brandt) — ratchet migration: per-flag sequencing, per-directory configs, error-count baseline lockfile that only decreases, codemods for the mechanical 80%, lint rules encoding policy, type-debt metrics on the dashboard.
+- engineering/monorepo-decisions-studios (Tomás Reyes) — monorepo as coordination answer: atomic-change cases, invoice costs (CI system, tooling owner, ownership boundaries), handover wrinkle for client work, polyrepo discipline (versioned packages, templates, deliberate vendoring), five-question decision page.
+- web-design/footer-design-craft (June Okafor) — craft companion to footer-design-matters: dedicated 30-min footer design review (checklist items: focus on dark sections, 375px stacking, © year, dead socials), contact confidence, newsletter-field guilt presumption, legal row at passing contrast, footer click data as IA diagnostic.
+- web-design/about-pages-that-convince (Mara Ellison) — About as vetting station (real/good/easy-to-work-with), five-beat structure incl. founding complaint, checkable structural numbers, team section one-standard rule, the strange true detail rule.
+- web-design/careers-pages-that-filter-in (Ruby Castellanos) — design for senior-candidate scepticism: real work over perk theatre, published salary bands + review cadence, job listings as product pages with dated process + 10-min application, between-jobs and rejection states designed, owned quarterly review.
+- web-design/error-pages-as-system (Leonie Marsh) — system companion to designing-404-pages: severity ladder (inconvenience→interruption→outage), static edge-served + dependency-audited pages, one copy source + status slot pattern, recovery links that can't dead-end, error-view logging, annual simulation audit.
+No snippet-audit issues.
+
+## writer1 — iteration 18 (2026-09-26)
+Completed 4 web-design articles (all validated done by finish_article):
+- web-design/skeleton-screens-done-right (Aiko Tanaka) — skeleton as promise of structure (count/proportion/position match), 250ms display gate + 400ms min dwell to kill the flash, pulse-over-pan shimmer rules, shared skeleton/content box for zero CLS, decision tree (spinner / progress / optimistic / stale) per wait profile. Hero image generated (/images/articles/web-design/skeleton-screens-done-right.jpg).
+- web-design/focus-states-design (June Okafor) — focus ring as designed state (shape/weight/colour/motion), two-tone ring for guaranteed 3:1 on any surface, tokenised rings incl. dark-section overrides, :focus-visible subtleties, focus-order as design spec (modals, skip links, widget contracts), seven silent keyboard-breaking overrides, ten-minute mouse-less QA.
+- web-design/bento-grids-honest (Mara Ellison) — bento as scanning-density tool, four collapse modes (long content / mobile stacking / CMS churn / template sameness), span system via content archetypes with count variants + schema character budgets + explicit mobile-priority field, typography rules for mixed-size tiles, five-question gate before use.
+- web-design/scrollytelling-restraint (Hannah Yeo) — production companion to scrollytelling-without-traps: one-pin-per-page budget, chapter nav (progress rail + named jumpable anchors), reduced-motion variant designed FIRST as storyboard-quality product with motion as progressive enhancement, per-frame perf discipline for scroll choreography (IO not listeners, transform/opacity only), the print test that kills ~1/3 of proposals.

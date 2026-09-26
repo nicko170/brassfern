@@ -77,6 +77,10 @@
 - Every prerendered page also carries
   `<link rel="alternate" type="application/rss+xml">` pointing at rss.xml
   (added in `headToHtml`/`applyHead`, `src/lib/head.tsx`).
+- Shell furniture (iter 8): `src/components/Cursor.tsx` (desktop-only brass
+  cursor ring, mounts client-side only) and `src/components/StudioTime.tsx`
+  (`ClockStrip` in the footer — em-dash placeholders in static HTML, live times
+  after mount; `ClockGrid` on /contact).
 - Per-page head is declared with `<Seo>` (`src/lib/head.tsx`); server collector
   writes title/description/canonical/OG/JSON-LD. JSON-LD helpers in `lib/jsonld.ts`
   (Organization, WebSite, Article, CreativeWork, FAQPage, BreadcrumbList).

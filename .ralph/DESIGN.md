@@ -130,6 +130,15 @@ Brassfern look into a demo.
   links to /search instead.
 - **Fieldnotes letter** (`.foot-news`, iter 7): footer signup with inline
   email validation, error + success states on the night surface.
+- **Studio clocks** (`.clock-strip`/`.clock-grid`, iter 8): four-city local
+  times (Sydney/Auckland/Singapore/London) rendered client-side only (em-dash
+  prerender placeholders), tabular mono, brass "open" dots; a compact strip in
+  the footer and a full Fraunces grid on /contact. Sets the booking window
+  ("January 2027") as voice.
+- **Cursor ring** (`.cursor-ring`, iter 8): brass ring trailing the pointer
+  (rAF lerp .22), blooming over interactive elements; pointer-fine +
+  no-preference only via `@media`, never hides the system cursor, absent in
+  prerender. Company, not replacement — that's the a11y rule.
 
 ## Content authoring rules (enforced by build-content-index.mjs)
 

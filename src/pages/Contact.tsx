@@ -2,6 +2,7 @@ import { useState, type FormEvent } from 'react'
 import { Seo } from '../lib/head'
 import { breadcrumbLd } from '../lib/jsonld'
 import { services } from '../data/services'
+import { ClockGrid } from '../components/StudioTime'
 import Reveal from '../components/Reveal'
 
 interface FormState {
@@ -138,6 +139,18 @@ export default function Contact() {
             </div>
           </form>
         )}
+      </section>
+
+      <section className="section section--tight container" style={{ borderTop: '1px solid var(--line)' }}>
+        <Reveal className="overline">Where we are, right now</Reveal>
+        <h2 className="display h-3" style={{ marginTop: '1rem' }}>
+          Four desks, <em>one morning somewhere.</em>
+        </h2>
+        <ClockGrid />
+        <p className="muted" style={{ marginTop: 'var(--space-5)', maxWidth: '52ch' }}>
+          Two business days is our honest reply window — wherever your business day happens to fall.
+          We book new engagements one quarter out; January 2027 is the next open door.
+        </p>
       </section>
     </>
   )

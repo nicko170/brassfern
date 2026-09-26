@@ -2165,6 +2165,193 @@ a.chip:hover {
 }
 
 /* ——— Print ——— */
+/* ——— a11y utility ——— */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ——— signature cursor ring ——— */
+.cursor-ring,
+.cursor-ring::after {
+  display: none;
+}
+@media (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .cursor-ring {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2100;
+    pointer-events: none;
+    width: 2rem;
+    height: 2rem;
+    margin: -1rem 0 0 -1rem;
+    border: 1.5px solid var(--brass);
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate3d(-100px, -100px, 0);
+    transition: opacity 160ms var(--ease-out), width 160ms var(--ease-out),
+      height 160ms var(--ease-out), margin 160ms var(--ease-out),
+      border-color 160ms var(--ease-out);
+    will-change: transform;
+  }
+  .cursor-ring::after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 4px;
+    margin: -2px 0 0 -2px;
+    border-radius: 50%;
+    background: var(--brass);
+    transition: transform 160ms var(--ease-out);
+  }
+  .cursor-ring.is-on {
+    opacity: 0.85;
+  }
+  .cursor-ring.is-active {
+    width: 2.75rem;
+    height: 2.75rem;
+    margin: calc(-2.75rem / 2) 0 0 calc(-2.75rem / 2);
+    border-color: var(--brass-2);
+  }
+  .cursor-ring.is-active::after {
+    transform: scale(0.5);
+  }
+}
+
+/* ——— studio clocks ——— */
+.clock-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  padding-block: var(--space-4);
+  border-top: 1px solid var(--night-line);
+  margin-top: var(--space-5);
+}
+.clock-strip__label {
+  font-size: var(--fs-micro);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--night-mute);
+}
+.clock-strip__list {
+  display: flex;
+  gap: var(--space-5);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+.clock-strip__item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: var(--fs-micro);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.clock-strip__city {
+  color: var(--night-mute);
+}
+.clock-strip__time {
+  color: var(--brass-hi);
+  font-variant-numeric: tabular-nums;
+}
+.clock-strip__dot {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: var(--night-mute);
+  opacity: 0.5;
+  align-self: center;
+}
+.clock-strip__dot.open {
+  background: var(--brass-2);
+  opacity: 1;
+}
+
+.clock-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-4);
+  list-style: none;
+  margin: var(--space-5) 0 0;
+  padding: 0;
+}
+.clock {
+  border-top: 2px solid var(--ink);
+  padding-top: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.clock__city {
+  font-size: var(--fs-micro);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.clock__time {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+.clock__note {
+  font-size: 0.9rem;
+}
+.clock__status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: var(--fs-micro);
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  margin-top: 0.25rem;
+}
+.clock__dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--ink-3);
+  opacity: 0.45;
+}
+.clock__status.open {
+  color: var(--fern);
+}
+.clock__status.open .clock__dot {
+  background: var(--fern-2);
+  opacity: 1;
+}
+@media (max-width: 860px) {
+  .clock-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 479px) {
+  .clock-grid {
+    grid-template-columns: 1fr;
+  }
+  .clock-strip__list {
+    gap: var(--space-4);
+  }
+}
+
 @media print {
   :root {
     --ink: #000;

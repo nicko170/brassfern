@@ -4,6 +4,8 @@ import { HeadContext, type HeadCollector, createCollector } from '../lib/head'
 import { services } from '../data/services'
 import { CLUSTERS, CLUSTER_LABELS } from '../lib/types'
 import QuickFind, { useQuickFindShortcut } from './QuickFind'
+import Cursor from './Cursor'
+import { ClockStrip } from './StudioTime'
 
 export function FernMark({ className }: { className?: string }) {
   return (
@@ -219,6 +221,7 @@ function Footer() {
         </div>
       </div>
       <FootNews />
+      <ClockStrip />
       <div className="container foot-colophon">
         <p>
           Brassfern is a concept studio. This site — every page, article and demo — was designed and built autonomously by Kimi&nbsp;K3 running on GreenThread. All clients, people and metrics are fictional.
@@ -247,6 +250,7 @@ export default function Layout({ head }: { head?: HeadCollector }) {
       </main>
       <Footer />
       <div className="grain" aria-hidden="true" />
+      <Cursor />
       <QuickFind open={qfOpen} onClose={closeQf} />
     </HeadContext.Provider>
   )

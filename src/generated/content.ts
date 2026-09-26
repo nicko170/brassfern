@@ -405,7 +405,9 @@ export const articleIndex: ArticleMeta[] = [
       "source grounding ux",
       "ai answer verification"
     ],
-    "readingTime": 11
+    "readingTime": 11,
+    "heroImage": "/images/articles/ai/citation-ux-rag.jpg",
+    "heroAlt": "Typed pages in fern-green ink with hand-drawn lines connecting underlined sentences to brass-clipped evidence cards, laid out on cream paper with a brass ruler and a pressed fern frond."
   },
   {
     "title": "Shipping 'sometimes wrong': communicating AI features",
@@ -448,7 +450,9 @@ export const articleIndex: ArticleMeta[] = [
       "prompt versioning",
       "eval first development"
     ],
-    "readingTime": 11
+    "readingTime": 11,
+    "heroImage": "/images/articles/ai/evals-first-development.jpg",
+    "heroAlt": "Still life on cream paper: a fanned stack of index cards with green tick marks passing through a tiny brass turnstile, beside a coiled measuring tape."
   },
   {
     "title": "Evals are the new unit tests: a practical guide for product teams",
@@ -2566,6 +2570,30 @@ export const articleIndex: ArticleMeta[] = [
     "heroAlt": "Paper cards fanned like a decision matrix on a cream desk, with a brass paperweight, calipers and a fern sprig."
   },
   {
+    "title": "Container queries: finally designing components, not pages",
+    "description": "Media queries ask the viewport; container queries ask the room. Production notes: containment costs, cqi type, fallbacks, and cards that go anywhere.",
+    "slug": "container-queries-production",
+    "cluster": "engineering",
+    "tags": [
+      "css",
+      "responsive design",
+      "component architecture",
+      "design systems",
+      "frontend"
+    ],
+    "date": "2026-02-18",
+    "author": "Felix Brandt",
+    "keywords": [
+      "container queries",
+      "css containment",
+      "cqi units",
+      "responsive components",
+      "card component css",
+      "container query fallback"
+    ],
+    "readingTime": 10
+  },
+  {
     "title": "Core Web Vitals in the field: budgets that survive sprints",
     "description": "A practical Core Web Vitals program: LCP element archaeology, INP triage, CI-enforced budgets, and real-user monitoring on a shoestring. Recipes that work.",
     "slug": "core-web-vitals-field-guide",
@@ -3049,6 +3077,28 @@ export const articleIndex: ArticleMeta[] = [
       "visual regression testing"
     ],
     "readingTime": 9
+  },
+  {
+    "title": "Rate limits are a UX surface, not just middleware",
+    "description": "Rate limiting starts in middleware but ends in the interface. Retry-After contracts, queue positions, backpressure UX and the copy that keeps users calm.",
+    "slug": "rate-limits-as-ux",
+    "cluster": "engineering",
+    "tags": [
+      "api-design",
+      "ux",
+      "reliability",
+      "error-handling"
+    ],
+    "date": "2026-04-14",
+    "author": "Felix Brandt",
+    "keywords": [
+      "rate limiting ux",
+      "retry-after header",
+      "api error design",
+      "backpressure ux",
+      "429 handling"
+    ],
+    "readingTime": 8
   },
   {
     "title": "React Server Components: the trade-offs nobody puts in the talk",
@@ -5769,6 +5819,27 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 9
   },
   {
+    "title": "About pages that actually convince",
+    "description": "Your About page is where buyers go to decide if they trust you. The story structure, proof layers and honesty rules that turn biography wallpaper into conviction.",
+    "slug": "about-pages-that-convince",
+    "cluster": "web-design",
+    "tags": [
+      "Brand storytelling",
+      "Content design",
+      "Trust",
+      "Conversion"
+    ],
+    "date": "2026-05-14",
+    "author": "Mara Ellison",
+    "keywords": [
+      "about page design",
+      "about us page",
+      "brand storytelling",
+      "trust signals"
+    ],
+    "readingTime": 9
+  },
+  {
     "title": "Accessibility starts in the design file",
     "description": "Most accessibility rework is a design-file problem found too late. The annotations, contrast workflows and focus specs that stop retrofits before they start.",
     "slug": "accessible-design-handoff",
@@ -5809,6 +5880,50 @@ export const articleIndex: ArticleMeta[] = [
       "editorial trust signals"
     ],
     "readingTime": 8
+  },
+  {
+    "title": "Bento grids: when the box layout earns its keep",
+    "description": "A fair assessment of bento layouts: what they do well, where they collapse, span systems that survive real CMS data, and typography rules for mixed-size tiles.",
+    "slug": "bento-grids-honest",
+    "cluster": "web-design",
+    "tags": [
+      "layout",
+      "css grid",
+      "landing pages",
+      "design trends",
+      "editorial design"
+    ],
+    "date": "2026-08-05",
+    "author": "Mara Ellison",
+    "keywords": [
+      "bento grid layout",
+      "bento design trend",
+      "css grid editorial layout",
+      "feature section design",
+      "landing page grid"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Careers pages that filter people in, not out",
+    "description": "A careers page is a self-selection device, not a résumé bucket. Real work, honest salary bands, humane application flows — and no ping-pong clichés.",
+    "slug": "careers-pages-that-filter-in",
+    "cluster": "web-design",
+    "tags": [
+      "Employer brand",
+      "UX writing",
+      "Hiring",
+      "Conversion"
+    ],
+    "date": "2026-04-22",
+    "author": "Ruby Castellanos",
+    "keywords": [
+      "careers page design",
+      "recruitment page",
+      "employer brand web",
+      "job page UX"
+    ],
+    "readingTime": 9
   },
   {
     "title": "How to design case study pages that win work",
@@ -5880,6 +5995,28 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 8,
     "heroImage": "/images/articles/web-design/comparison-pages-that-convert.jpg",
     "heroAlt": "A small brass balance scale on cream paper, one pan holding a pressed fern sprig and the other a brass weight, the beam nearly level."
+  },
+  {
+    "title": "Comparison tables: the marketing page's hardest-working table",
+    "description": "Feature matrices carry your pricing argument. Honest checkmarks, mobile collapse patterns, the competitor-row dilemma, and the semantics most teams skip.",
+    "slug": "comparison-tables-marketing",
+    "cluster": "web-design",
+    "tags": [
+      "comparison tables",
+      "pricing pages",
+      "feature matrix",
+      "marketing pages"
+    ],
+    "date": "2026-05-09",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "comparison tables",
+      "feature comparison",
+      "pricing table design",
+      "marketing pages",
+      "plan comparison"
+    ],
+    "readingTime": 8
   },
   {
     "title": "Cookie banners: an honest design guide",
@@ -6036,6 +6173,29 @@ export const articleIndex: ArticleMeta[] = [
     "heroAlt": "Three small paper-craft vignettes on warm cream paper: an open empty sage-green drawer with a tiny brass key, a fern-green paper hourglass mid-turn, and a tilted terracotta flag leaning on a brass ramp"
   },
   {
+    "title": "Your error pages are a system: design them like one",
+    "description": "The 404 gets the personality budget while 500s, offline and maintenance states ship as raw server output. Error pages are one designed system — build that instead.",
+    "slug": "error-pages-as-system",
+    "cluster": "web-design",
+    "tags": [
+      "error pages",
+      "ux writing",
+      "design systems",
+      "reliability",
+      "brand voice"
+    ],
+    "date": "2026-05-21",
+    "author": "Leonie Marsh",
+    "keywords": [
+      "error page design system",
+      "500 error page",
+      "maintenance page design",
+      "offline page ux",
+      "error handling copy"
+    ],
+    "readingTime": 10
+  },
+  {
     "title": "Fluid type scales in practice: from ratio to tokens",
     "description": "How we build fluid type scales that behave from 375px to 1440px: ratios, clamp() mechanics, optical correction, and type tokens that stay readable a year later.",
     "slug": "fluid-type-scales-in-practice",
@@ -6059,6 +6219,29 @@ export const articleIndex: ArticleMeta[] = [
     "heroAlt": "Vintage brass letterpress type blocks arranged in an ascending scale on cream paper, with fern-green ink smudges — a physical metaphor for a fluid type scale."
   },
   {
+    "title": "Focus states are a design system feature, not a browser default",
+    "description": "Stop inheriting the browser's focus ring. Design it: tokens, 3:1 contrast on every surface, dark-theme variants, and the overrides that silently break keyboards.",
+    "slug": "focus-states-design",
+    "cluster": "web-design",
+    "tags": [
+      "accessibility",
+      "focus states",
+      "design systems",
+      "keyboard navigation",
+      "design tokens"
+    ],
+    "date": "2026-07-02",
+    "author": "June Okafor",
+    "keywords": [
+      "focus visible css",
+      "focus ring design",
+      "keyboard accessibility design",
+      "focus state tokens",
+      "accessible design systems"
+    ],
+    "readingTime": 10
+  },
+  {
     "title": "Focus-visible: designing the ring, not removing it",
     "description": "Keyboard focus styles are a design problem most teams delete instead of solve. How to design focus rings that are visible, beautiful and part of the identity system.",
     "slug": "focus-visible-beautiful",
@@ -6078,6 +6261,29 @@ export const articleIndex: ArticleMeta[] = [
       "focus ring css"
     ],
     "readingTime": 8
+  },
+  {
+    "title": "Design the footer like someone reads it — because someone does",
+    "description": "Beyond the sitemap taxonomy: the footer design review as its own ritual — contact confidence, newsletter fields, legal rows and the details that signal craft.",
+    "slug": "footer-design-craft",
+    "cluster": "web-design",
+    "tags": [
+      "footer design",
+      "design review",
+      "web design craft",
+      "trust signals",
+      "ux details"
+    ],
+    "date": "2026-07-22",
+    "author": "June Okafor",
+    "keywords": [
+      "footer design craft",
+      "website footer patterns",
+      "footer design review",
+      "legal footer design",
+      "newsletter signup ux"
+    ],
+    "readingTime": 10
   },
   {
     "title": "The footer is a sitemap with manners",
@@ -6477,6 +6683,28 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 9
   },
   {
+    "title": "Pull quotes and margin notes: editorial devices for the web",
+    "description": "Pull quotes, asides and margin notes give long-form pages their editorial pulse. Here's the markup, the responsive behaviour and the restraint they demand.",
+    "slug": "pull-quotes-editorial-devices",
+    "cluster": "web-design",
+    "tags": [
+      "editorial design",
+      "typography",
+      "long-form design",
+      "pull quotes"
+    ],
+    "date": "2026-05-02",
+    "author": "Leonie Marsh",
+    "keywords": [
+      "pull quotes",
+      "editorial web design",
+      "typographic details",
+      "article design",
+      "margin notes"
+    ],
+    "readingTime": 8
+  },
+  {
     "title": "Related-content modules that readers actually use",
     "description": "Most 'related articles' modules are decoration. Here's how we design, rank and measure recommendation modules that readers genuinely click — and when to delete them.",
     "slug": "related-content-modules",
@@ -6517,6 +6745,29 @@ export const articleIndex: ArticleMeta[] = [
       "responsive data design"
     ],
     "readingTime": 8
+  },
+  {
+    "title": "Scrollytelling with restraint: narrative pages that respect the scrollbar",
+    "description": "The production playbook for scrollytelling that earns its keep: a one-pin budget, chapter navigation, a designed reduced-motion variant, and a print-test honesty check.",
+    "slug": "scrollytelling-restraint",
+    "cluster": "web-design",
+    "tags": [
+      "scrollytelling",
+      "motion design",
+      "narrative design",
+      "performance",
+      "accessibility"
+    ],
+    "date": "2026-08-27",
+    "author": "Hannah Yeo",
+    "keywords": [
+      "scrollytelling design",
+      "scroll animation ux",
+      "scroll linked storytelling",
+      "reduced motion fallbacks",
+      "narrative web design"
+    ],
+    "readingTime": 10
   },
   {
     "title": "Scrollytelling without the hostage-taking",
@@ -6562,6 +6813,53 @@ export const articleIndex: ArticleMeta[] = [
       "campaign microsite design"
     ],
     "readingTime": 8
+  },
+  {
+    "title": "Draw the sitemap before anyone opens Figma",
+    "description": "The sitemap is the cheapest UX artefact you'll ever make and the one teams skip most. Map user questions to pages, audit navigation debt, realign stakeholders fast.",
+    "slug": "sitemap-as-ux-artifact",
+    "cluster": "web-design",
+    "tags": [
+      "information architecture",
+      "sitemaps",
+      "navigation ux",
+      "site structure"
+    ],
+    "date": "2026-05-16",
+    "author": "Mara Ellison",
+    "keywords": [
+      "sitemap design",
+      "information architecture",
+      "navigation UX",
+      "site structure",
+      "user questions"
+    ],
+    "readingTime": 8
+  },
+  {
+    "title": "Skeleton screens that don't flash and lie",
+    "description": "Skeleton UI done honestly: match the shape of the answer, gate the flash, respect reduced motion, and know when a spinner or optimistic UI beats a skeleton entirely.",
+    "slug": "skeleton-screens-done-right",
+    "cluster": "web-design",
+    "tags": [
+      "loading states",
+      "skeleton screens",
+      "perceived performance",
+      "motion design",
+      "layout shift"
+    ],
+    "date": "2026-06-11",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "skeleton screen design",
+      "loading state ux",
+      "perceived performance",
+      "shimmer animation",
+      "layout shift prevention"
+    ],
+    "readingTime": 9,
+    "heroImage": "/images/articles/web-design/skeleton-screens-done-right.jpg",
+    "heroAlt": "Abstract editorial still life of skeleton-screen placeholder shapes — a hero block, text bars and list rows in sage and fern tones on warm cream paper with a brass rule."
   },
   {
     "title": "Social proof design without the cringe",
@@ -6625,6 +6923,28 @@ export const articleIndex: ArticleMeta[] = [
       "font subsetting"
     ],
     "readingTime": 9
+  },
+  {
+    "title": "Whitespace is a tool, not a leftover",
+    "description": "Whitespace is the layout's punctuation: optical spacing, density budgets per audience, emptiness as hierarchy, and how to defend it in stakeholder reviews.",
+    "slug": "whitespace-as-layout-tool",
+    "cluster": "web-design",
+    "tags": [
+      "whitespace",
+      "visual hierarchy",
+      "layout",
+      "spacing"
+    ],
+    "date": "2026-05-23",
+    "author": "June Okafor",
+    "keywords": [
+      "whitespace design",
+      "visual hierarchy",
+      "layout spacing",
+      "minimal web design",
+      "density"
+    ],
+    "readingTime": 8
   }
 ]
 

@@ -1,74 +1,95 @@
 ---
 title: "Careers pages that filter people in, not out"
-description: "Most careers pages repel the candidates they want most. Show real work, name the salary band, respect the application — and delete the ping-pong table."
+description: "A careers page is a self-selection device, not a résumé bucket. Real work, honest salary bands, humane application flows — and no ping-pong clichés."
 slug: careers-pages-that-filter-in
 cluster: web-design
-tags: [careers page, employer brand, recruitment, content design, ux writing]
-date: 2026-08-19
+tags:
+  - Employer brand
+  - UX writing
+  - Hiring
+  - Conversion
+date: 2026-04-22
 author: Ruby Castellanos
-keywords: [careers page design, recruitment page ux, employer brand website, job listing design, salary transparency]
-readingTime: 10
+keywords:
+  - careers page design
+  - recruitment page
+  - employer brand web
+  - job page UX
+readingTime: 9
 ---
 
-Here's the uncomfortable truth about careers pages: the candidates you most want — senior, busy, quietly excellent — read them with the sharpest scepticism of any visitor your site gets. They've been burned by job ads before. They've done a first interview and discovered the role was three jobs wearing a trench coat. They know "fast-paced environment" means understaffed, and they've learned to read your page for what's *not* said. Every stock photo of people laughing at a whiteboard is a small withdrawal; the page's real job is deposits.
+I produce Brassfern's projects, which means I sit in every debrief when a hire works out and every retrospective when one doesn't. The pattern that took me embarrassingly long to see: bad hires rarely start with a bad interview. They start with a careers page that attracted the wrong hundred people and repelled the right twenty. Your careers page is not a bucket for collecting résumés. It's a filter — and right now it's probably filtering out the candidates you'd most want, while waving through the ones who apply to everything with the word "fast-paced" in it.
 
-A careers page that filters *in* does one thing consistently: it treats the candidate's time as the scarce resource. Show real work, name the money, respect the application, and then get out of the way. Everything else is garnish. This is the pattern we've settled on, from building [our own](/careers) and from clients who hire in competitive markets.
+This piece is about rebuilding the careers page as a self-selection device: one that makes the right person think *finally, someone being straight with me* and the wrong person quietly close the tab. Both outcomes are wins.
 
-## Show the work, not the perks
+## The filter works before the application
 
-The single biggest signal-upgrade a careers page can make: replace culture murals and perk grids with *the actual work*. Candidates aren't choosing a snack policy; they're choosing what their portfolio and their brain will do for the next three years.
+Every element of a careers page pushes someone toward or away from applying. That's the whole mechanism. The mistake is optimising the page for *volume* of applications — big enthusiastic copy, vague perks, minimum requirements inflated to "10x ninja" — when volume is the thing you're drowning in. What you want is *precision*: fewer, better-matched applicants who already made an informed choice.
 
-What "show the work" means in practice:
+This reframes everything downstream. Requirements lists stop being a wish list and become a boundary. Salary transparency stops being a risk and becomes the sharpest filter you own. The application flow itself becomes a preview of working with you. When we rebuilt our own [careers page](/careers) on these principles, application volume dropped by roughly a third and offer-acceptance rate nearly doubled (illustrative numbers, but the direction is what matters). Less noise in, better signal out. The whole [employer brand argument](/journal/brand/employer-brand-careers-page) rests on this: a careers page is a brand page with consequences.
 
-- **Real artefacts.** Two or three recent projects described like mini case studies — the constraint, the craft decision, the trade-off — with links to the [work pages](/work) where they exist. A designer evaluating your studio should be able to see the calibre of a Tuesday project, not just the award-bait hero.
-- **The honest stack and method.** What tools, what codebase age, how decisions get made. "You'll ship React and TypeScript to a static host; we keep bundle budgets and you'll argue about them sometimes" tells an engineer more about their Tuesday than any culture paragraph.
-- **The problems, including the unglamorous ones.** Naming the hard parts — legacy migrations, a client sector that's genuinely difficult, the ops burden nobody wants — filters in precisely the people who enjoy hard parts, and filters out misfits *early*, which is cheaper than filtering them out at month four.
+## Show the work, not the wallpaper
 
-Perks, by contrast, are table stakes rendered as theatre. Health cover, parental leave, equipment, leave days: list them plainly, completely, in a spec sheet, not as a lifestyle collage. The list is evidence; the collage is marketing.
+Candidates who are good at their craft want one thing above all: evidence they'll get to practice it. The standard careers page gives them a photo of the snack wall and a paragraph about "our amazing culture." That's wallpaper. The candidates you want scroll straight past it looking for the work.
 
-## Name the money
+So give them the work. On our page, every open role links to real case studies the team shipped — the engineer reading about a design-engineer role can look at the [sites and products we've actually delivered](/work) and judge the bar for themselves. Include the messy truth where you can: a short note about a project that went sideways and what changed afterwards is worth more than any "we value learning" bullet. Candidates with real scar tissue recognise real scar tissue.
 
-Salary bands on the page. This one decision filters better than anything else we know, in both directions: it saves candidates from applying to roles they can't accept, and saves the hiring team from interviews that were always going to fail at the offer stage. The objections we hear — "competitors will see our rates", "we negotiate case-by-case" — are both admissions that the band wouldn't survive daylight. Bands with honest width ("Senior Product Designer, $X–$Y depending on level within band; here's how we level") are also the fastest available proof that the "we value transparency" line in the About page is real.
+Specific beats generic at sentence level too. Compare "You'll work on exciting challenges for global brands" with "You'll own the design system for a telehealth platform used by regional clinics." The second sentence filters. It's checkable. It lets someone imagine a Tuesday. Write every line of the careers page so a candidate can picture a specific Tuesday.
 
-Accompany the band with the *review cadence*: when compensation is reviewed, how raises happen, whether there's a progression document. Half of salary satisfaction is predictability, and predictability can be published without publishing payroll.
+## Salary bands: the honesty that filters hardest
 
-## The job page itself is a UX deliverable
+Posting salary bands is still treated as radical, which tells you how low the bar is. Here's what actually happens when you publish them: a third of your screen-time disappears. Candidates who would have applied at the wrong expectation self-select out before costing you a recruiter screen, a hiring-manager hour and their own afternoon. Candidates who were underpaid elsewhere and assumed you'd be the same — often exactly the senior people you're chasing — apply where they wouldn't have bothered.
 
-Each listing gets read like a product page — because it is one, with a very expensive conversion. The checklist we apply, much of it inherited from our general [forms that people finish](/journal/web-design/forms-people-finish) discipline:
+The objections are mostly about negotiating leverage, and they're mostly wrong. You lose a little room at the margin; you gain a shorter process, a fairer one, and a public signal that the company's internal talk about transparency isn't decorative. Our [senior product engineer listing](/careers/senior-product-engineer) carries the band right in the header block, and the single most common line in accepting candidates' feedback is some version of "you were the only ones who didn't make me guess."
 
-- **Title that's searchable truth.** "Senior Product Designer" beats "Design Ninja, Level IV". Candidates search real titles; so does every job aggregator.
-- **The first 100 words carry the whole ad.** What the role owns, who they work with, what success looks like at six months — above the fold, before any "about us" preamble the candidate already read on the level above.
-- **Requirements as honest gates.** Split "you must be able to" from "we can teach". Research on who self-selects out of over-specified requirement lists is well known; the fix is not vague warm copy, it's a shorter, truer list.
-- **A process section with dates.** "Take-home paid for your time, ≤3 hours" — or better, no take-home, a paid working session. State the interview count, who runs each, and the decision timeline. Publishing the process is publishing respect.
-- **An application that takes ten minutes.** Name, contact, link to work, maybe three questions that matter. Every additional field filters out the employed-and-busy, who are exactly the people the form is failing. If your ATS demands a résumé upload *and* a re-typed work history, the ATS has a UX bug filed against it now. (Our [approach](/approach) to this kind of constraint: the platform's defaults are a starting point for negotiation, not a law of nature.)
+If you genuinely can't publish a number, publish a range and explain the band logic — level, location adjustment, review cadence. Even the *explanation* filters, because it shows the candidate how decisions get made before they've joined.
 
-## The between-jobs state: design it too
+## The application flow is a product demo — of you
 
-Most careers pages have exactly one open role you don't fit, and the visitor is — what? — dismissed? The between-states deserve design:
+Candidates experience your application form as a working prototype of your company's regard for people's time. A studio that claims to obsess over UX and then asks applicants to upload a résumé *and* retype it into eleven fields has just demoed its real product: bureaucracy.
 
-- **A standing speculative channel** with an honest response promise, for the senior person who'd be right in nine months.
-- **The "no roles right now" state** written with the same care as the roles — a [well-crafted empty state](/journal/product/empty-states-design) rather than a blank page — with a way to hear about future openings that isn't a newsletter-shaped afterthought.
-- **The rejected-candidate experience** as part of the system: timelines, real feedback where possible, and no ghosting. Employer brand is largely built from people you didn't hire, talking.
+Design the flow like you'd design a checkout, because it is one — the candidate is paying with their career. The rules are the ones we apply in [designing forms people actually finish](/journal/web-design/forms-people-finish):
 
-## The photography question, honestly
+- **Ask for the minimum viable application.** Résumé or profile link, one or two genuinely discriminating questions, done. Cover letters are a tradition that selects for stamina, not talent. If you want to know how someone thinks, ask one specific question — "Tell us about a thing you shipped that you're still proud of, and what you'd do differently" — and cap it at 300 words.
+- **State the process.** How many stages, who they'll meet, whether there's a take-home, and how long it all takes. Ambiguity about process reads as either disorganisation or disrespect, and senior candidates correctly treat both as a preview of employment.
+- **Confirm instantly, follow up on a date.** An auto-acknowledgement that commits to a response by a named weekday. "We reply to every application by Friday fortnight" is a promise you must keep, which is exactly why it works as a filter — it proves the operational machinery exists.
 
-Team photos on careers pages are a claim ("these are the humans you'd join"), so the usual craft rules apply: real people — or stylised illustrations where photography isn't possible — one standard across everyone, and a refresh cadence that keeps the page honest as the team changes. The failure mode is the photoshoot from three offices ago, captioned by hope. A careers page is a living document with an owner and a quarterly review, just like the pricing page; assign one, or it rots.
+One more craft note: every open role deserves its own page with its own URL, real typography and the same design care as your services pages. A job ad rendered as a grey ATS iframe inside your beautiful site tells candidates the role is a ticket in someone else's queue. We wrote about treating [the job ad itself as a shareable artifact](/journal/brand/employer-brand-inside-out) — if your own team wouldn't share it, neither will anyone else's.
+
+## Kill the clichés, keep the truth
+
+A brief audit list. If your careers page contains any of these, edit:
+
+- **Ping-pong tables and beer fridges.** Perks-as-personality reads as compensation for something. Also, the people you want have outgrown free snacks as a decision input.
+- **"Fast-paced environment."** Means unclear priorities. Say what the pace *is*: "We ship weekly and demo every Friday, which means feedback is frequent and scope is honest."
+- **"We're a family."** You're not, and candidates know it; a family doesn't do performance reviews. Say what you actually offer: decent work, decent people, decent boundaries.
+- **Vague values walls.** Integrity, excellence, innovation — the acronym-generics. Replace each value with a behaviour: not "we value craft" but "a designer can stop a release if the work isn't right, and has."
+
+Every cliché you cut makes the surviving sentences work harder. The page should sound like the person who'd be the candidate's manager, on a candid day. If your hiring managers wouldn't sign the copy, it isn't copy — it's set dressing.
+
+## What the page tells people who never apply
+
+There's a second, quieter audience: every prospective client who checks your careers page before signing. They do it more than you think — a healthy pipeline of thoughtfully advertised roles is quiet proof of a stable business, and the way you treat candidates strongly implies how you'll treat clients. Our [approach](/approach) to client work — small senior squads, weekly demos, shipping in public — only sounds credible because the careers page shows a company run the same way from the inside. Consistency between how you hire and how you sell is itself a trust signal, and inconsistency is a leak.
 
 ## Key takeaways
 
-- Senior candidates read careers pages looking for what's *not* said; design for scepticism, not enthusiasm.
-- Real work, real stack, real problems — perks are a spec sheet, not a lifestyle collage.
-- Publish salary bands and review cadence; nothing filters better in both directions.
-- Job listings are product pages: true titles, gates not wishlists, published process with dates, ten-minute applications.
-- Design the between-jobs and rejection states; employer brand is built largely by people you didn't hire.
-- A careers page has an owner and a review cadence. Rot is the default.
+- A careers page is a self-selection device. Optimise for precision of applicants, not volume; both the "yes, finally" and the "not for me" are wins.
+- Show real shipped work and specific Tuesdays. "Exciting challenges for global brands" filters nobody.
+- Publish salary bands or band logic. It's the sharpest, fairest filter you own.
+- The application flow is a product demo of your company's respect for time: minimal fields, one discriminating question, a stated process, a dated reply promise.
+- Every open role deserves a real page on your own domain, not an ATS iframe.
+- Cut the clichés — ping-pong, "fast-paced", "we're a family", generic values — and replace each with a verifiable behaviour.
 
-## FAQ
+## Frequently asked questions
 
-**We're a small studio with no openings most of the year — why maintain a page?** Because the best hires arrive between openings. A dormant-but-honest page ("nothing open — when there is, it looks like this") keeps the speculative channel warm and, frankly, works as a credibility signal to prospective clients: how you hire previews how you'll staff their project.
+**We're small and hire rarely. Do we still need a careers page?**
+Yes — arguably more than a company with a standing pipeline. An always-on page that says "we're not hiring right now, but here's how we work and what we look for" keeps your next hire warm and tells clients you're stable and intentional. It costs an afternoon.
 
-**Do salary bands ever hurt negotiation?** Bands set the frame; case-by-case is still possible *within* them. What bands kill is the three-round process that ends in a mismatch everyone knew on page one — a cost rarely counted but very real.
+**Won't publishing salary bands hand competitors our compensation data?**
+They already know it, roughly — candidates talk, recruiters share, and band data leaks within weeks. What publishing actually changes is your inbound quality and your internal pay discipline, both in your favour. The secrecy mainly protects unclear pay logic.
 
-**How does this interact with our brand work more broadly?** The careers page is the employer brand's proof surface — the [guidelines as system](/services/brand-identity) has to survive contact with a job ad, where voice is tested as much as colour. We treat careers content as part of brand systems in [website engagements](/services/websites): components for listings, templates for role types, voice rules for hiring copy.
+**How do we handle confidential roles we can't advertise?**
+Post the rest properly and keep the confidential one off the page entirely. A careers page with one role and nineteen stubs looks like a company in distress. The unadvertised hire goes through networks and recruiters anyway; the page doesn't have to carry it.
 
-**Do listing sites matter more than our own page?** They drive volume; your page closes the decision. Every quality candidate flips from the aggregator to your site before applying. The page is where the scepticism gets answered — or confirmed.
+**Should we list "nice-to-haves" on job ads?**
+No. Research on application behaviour has shown for years that long requirements lists disproportionately deter strong candidates who take requirements literally — an effect well-documented across gender lines. If it isn't genuinely required to do the job in month one, it doesn't go on the page. Ambition is not a requirement.

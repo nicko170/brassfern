@@ -115,7 +115,7 @@ export interface Seat {
   boxNo?: number
 }
 
-const CX = 473 // centre line of the house
+export const CX = 473 // centre line of the house
 const STAGE_Y = 96
 
 const STALL_ROWS = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'J', 'K']
@@ -395,13 +395,14 @@ export function firstFree(sold: Set<string>): Seat | null {
  * Boxes are excluded — the box office books those by phone, on purpose.
  */
 export function findBestAvailable(sold: Set<string>, party: number): string[] | null {
-  let best: { ids: string[]; score: number } | null = null
+  // Boxed so the closure assignments below survive TS control-flow analysis.
+  const best = { current: null as { ids: string[]; score: number } | null }
   const consider = (run: Seat[]) => {
     const midX = run.reduce((n, s) => n + s.x, 0) / run.length
     const rowIdx = run[0].row.charCodeAt(0) - 64
     const sectionPenalty = run[0].section === 'circle' ? 6 : 0
     const score = TIER_RANK[run[0].tier] * 1000 + sectionPenalty + rowIdx * 9 + Math.abs(midX - CX) / 26
-    if (!best || score < best.score) best = { ids: run.map((s) => s.id), score }
+    if (!best.current || score < best.current.score) best.current = { ids: run.map((s) => s.id), score }
   }
   const rows = new Map<string, Seat[]>()
   for (const s of SEATS) {
@@ -434,5 +435,5 @@ export function findBestAvailable(sold: Set<string>, party: number): string[] | 
     }
     flush()
   }
-  return best ? best.ids : null
+  return best.current?.ids ?? null
 }
