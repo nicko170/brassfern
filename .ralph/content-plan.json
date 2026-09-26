@@ -2539,10 +2539,11 @@
    "cluster": "demos",
    "intent": "Mocked AI support assistant for fictional Pylon Health. Art direction: calm clinical — soft sage, warm white, trust-first. Features: chat interface with token-streaming style reveal (mocked from a scripted response bank with topic detection), citation chips with sources drawer, confidence + 'was this accurate?' feedback loop, escalation-to-human card, suggested prompts, conversation persistence. Demonstrates responsible-AI patterns: honest capability statement, no medical advice guardrails, redaction note. Fully client-side, deterministic mock.",
    "keywords": [],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "demo1",
-   "claimed_at": 1790385405.224395
+   "claimed_at": 1790385405.224395,
+   "done_at": "2026-09-26T11:39:29"
   },
   {
    "kind": "article",
@@ -6074,8 +6075,10 @@
     "zero data ux",
     "product onboarding"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790386691.427111
   },
   {
    "kind": "article",
@@ -6090,8 +6093,10 @@
     "feature flags settings",
     "ux audit"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790386691.427111
   },
   {
    "kind": "article",
@@ -6106,8 +6111,10 @@
     "cmd k pattern",
     "search ux"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790386691.4271119
   },
   {
    "kind": "article",
@@ -6122,8 +6129,10 @@
     "reversible actions",
     "trust in software design"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790386691.4271119
   },
   {
    "kind": "article",

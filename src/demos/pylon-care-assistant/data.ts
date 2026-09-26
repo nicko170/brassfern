@@ -251,8 +251,8 @@ export const TOPICS: Topic[] = [
     intent: 'Billing & Medicare',
     keywords: [
       'bill', 'billing', 'invoice', 'charge', 'charged', 'cost', 'fee', 'price',
-      'medicare', 'rebate', 'refund', 'money back', 'bulk bill', 'payment',
-      'receipt', 'insurance',
+      'pricing', 'how much', 'expensive', 'medicare', 'rebate', 'refund',
+      'money back', 'bulk bill', 'payment', 'receipt', 'insurance',
     ],
     confidence: 0.92,
     blocks: [
