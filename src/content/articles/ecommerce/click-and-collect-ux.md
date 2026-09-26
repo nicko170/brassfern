@@ -8,6 +8,8 @@ date: 2026-01-22
 author: Nate Sullivan
 keywords: [click and collect ux, bopis design, store pickup flow, omnichannel checkout, pickup notification copy]
 readingTime: 9
+heroImage: /images/articles/ecommerce/click-and-collect-ux.jpg
+heroAlt: "A paper shopping bag and closed laptop on a timber bench beside a shop's side entrance in warm morning light, fern-green awning and brass door handle."
 ---
 
 Click-and-collect is the only checkout flow whose failure mode is a human standing in a car park. Every other e-commerce failure resolves as a late parcel and an apology email; this one resolves as a customer who drove twenty minutes to a shopping centre, circled for a park, and was told at the counter that the item isn't there. You don't get that customer back.
