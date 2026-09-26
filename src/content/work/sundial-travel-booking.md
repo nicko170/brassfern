@@ -52,7 +52,7 @@ The brief we wrote with founder Helen Marsh: make the site behave like the servi
 
 We redesigned the funnel around three acts, and rebuilt the content platform underneath it.
 
-**Dream before dates.** The homepage and every destination page now lead with editorial moodboards — photography, drawn maps, short essays — and a single prompt: *"Tell us the trip you keep thinking about."* Date pickers still exist, but they live further down, after the visitor has been invited to articulate intent. This mirrors what our [product design practice](/services/product-design-and-engineering) calls aspiration-first flows: capture the qualitative desire while enthusiasm is high, structure it later.
+**Dream before dates.** The homepage and every destination page now lead with editorial moodboards — photography, drawn maps, short essays — and a single prompt: *"Tell us the trip you keep thinking about."* Date pickers still exist, but they live further down, after the visitor has been invited to articulate intent. This mirrors what our [product design practice](/services/product) calls aspiration-first flows: capture the qualitative desire while enthusiasm is high, structure it later.
 
 **Pricing you can check.** We built a live estimate engine with Sundial's planners. Every itinerary module — rail passes, guesthouse tiers, guide days — carries real cost assumptions the team can update in the CMS. The site now shows a breakdown from the first screen: travel $X, accommodation $Y, our planning fee $Z, total *including* everything, stated as a range with the assumptions in plain language. Hiding the planning fee was never an option; it's Sundial's whole value. Showing it early reframed it as a feature.
 

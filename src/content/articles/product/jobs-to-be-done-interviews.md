@@ -16,6 +16,8 @@ keywords:
   - jtbd synthesis
   - product research
 readingTime: 9
+heroImage: /images/articles/product/jobs-to-be-done-interviews.jpg
+heroAlt: "Two espresso cups facing each other across a cloth-bound notebook, a brass clip, a mechanical pencil and a fern frond on cream paper."
 ---
 
 A few years into running JTBD interviews you notice something: the method's famous failures aren't bad scripts, they're bad *listening targets*. Teams run textbook switch interviews and come home with exactly what the customer could already articulate — the pains they'd tweet about, the features they'd list in a survey. The job's real payload lives in what people can't or won't say: the anxiety they don't have words for, the social politics of the decision, the workaround so habitual they've forgotten it's a workaround at all.

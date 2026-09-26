@@ -7,7 +7,7 @@
   "scripts": {
     "predev": "node scripts/build-content-index.mjs && node scripts/ensure-demo-css.mjs",
     "dev": "vite",
-    "prebuild": "node scripts/build-content-index.mjs && node scripts/ensure-demo-css.mjs",
+    "prebuild": "node scripts/build-content-index.mjs && node scripts/ensure-demo-css.mjs && node scripts/audit-links.mjs",
     "build": "tsc --noEmit && vite build && vite build --ssr src/entry-server.tsx --outDir dist-ssr && node scripts/prerender.mjs",
     "typecheck": "tsc --noEmit",
     "preview": "vite preview"

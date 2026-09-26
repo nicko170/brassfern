@@ -63,7 +63,7 @@ None of these are fixed by a 20% discount on the way out the door. Hearthbrew's 
 
 **Churn diagnostics with actual teeth.** When someone cancels — cancellation remains one click, on every management screen, and always will — we ask a two-tap reason, wired into a real review with the roastery. Every other month, Hearthbrew sits down with it. A pattern such as "I'm drinking more filter at the office now" turned into a work-bench delivery option. The roastery reads the exits like an editor reads unsubscribe letters.
 
-**Measurement that doesn't flatter.** The old dashboard opened with subscriber count, a carefully accidental vanity metric. The new one opens next to three things: nine-delivery cohort retention, active-with-paused share, and mean time to "pause" — three signals of whether the member club's contract is being honoured, not just its topline. Our growth practice explores the same ideas in the journal in the long guide to [subscription retention without dark patterns](/journal/growth/subscription-retention-honest-design), from which the design heuristics above descend.
+**Measurement that doesn't flatter.** The old dashboard opened with subscriber count, a carefully accidental vanity metric. The new one opens next to three things: nine-delivery cohort retention, active-with-paused share, and mean time to "pause" — three signals of whether the member club's contract is being honoured, not just its topline. Our growth practice explores the same ideas in the journal in the long guide to [subscription retention without dark patterns](/journal/ecommerce/subscription-ux-design), from which the design heuristics above descend.
 
 ## The outcome
 

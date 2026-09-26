@@ -4,8 +4,12 @@ import { formatDate, getCase, relatedCases } from '../lib/content'
 import { getDemo } from '../lib/demos'
 import { breadcrumbLd, creativeWorkLd } from '../lib/jsonld'
 import { personSlug } from '../data/people'
+import { testimonials } from '../data/clients'
+import { squadFor } from '../lib/squad'
+import { workImages } from '../generated/content'
 import { absoluteUrl, withBase } from '../lib/base'
 import Markdown from '../components/Markdown'
+import Portrait from '../components/Portrait'
 import { WorkCard } from '../components/Cards'
 import Reveal from '../components/Reveal'
 import NotFound from './NotFound'
@@ -16,6 +20,9 @@ export default function WorkCase() {
   if (!cs) return <NotFound />
   const demo = cs.demo ? getDemo(cs.demo) : undefined
   const related = relatedCases(cs)
+  const quote = testimonials.find((t) => t.caseStudy === cs.slug)
+  const squad = squadFor(cs)
+  const demoImg = demo && workImages.includes(demo.slug) ? `/images/work/${demo.slug}.jpg` : undefined
 
   return (
     <>
@@ -89,6 +96,51 @@ export default function WorkCase() {
         <div className="container section--tight" style={{ marginTop: 'var(--space-5)' }}>
           <Markdown kind="work" slug={cs.slug} />
         </div>
+
+        {quote && (
+          <section className="container" aria-label="Client testimonial">
+            <figure className="case-quote">
+              <blockquote>“{quote.quote}”</blockquote>
+              <figcaption className="mono">
+                {quote.name} · {quote.title}, {quote.company}
+              </figcaption>
+            </figure>
+          </section>
+        )}
+
+        <section className="container" aria-label="The squad">
+          <div className="squad">
+            <span className="squad__label overline" style={{ margin: 0 }}>The squad</span>
+            <ul className="squad__list">
+              {squad.map((p) => (
+                <li key={p.name}>
+                  <Link to={`/team/${personSlug(p.name)}`} className="squad__person">
+                    <span className="squad__portrait" aria-hidden>
+                      <Portrait person={p} />
+                    </span>
+                    <span className="squad__name">{p.name}</span>
+                    <span className="squad__role mono">{p.role}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
+        {cs.heroImage && demoImg && (
+          <section className="container" aria-label="Project gallery">
+            <div className="case-gallery">
+              <figure className="case-gallery__item">
+                <img src={withBase(cs.heroImage)} alt="" loading="lazy" />
+                <figcaption className="mono">The project, as the studio likes to remember it</figcaption>
+              </figure>
+              <figure className="case-gallery__item">
+                <img src={withBase(demoImg)} alt="" loading="lazy" />
+                <figcaption className="mono">The live demo — running now in the <Link to={`/lab/${demo!.slug}`}>Lab</Link></figcaption>
+              </figure>
+            </div>
+          </section>
+        )}
 
         {related.length > 0 && (
           <section className="section container">

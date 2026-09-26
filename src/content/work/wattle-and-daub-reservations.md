@@ -15,6 +15,7 @@ year: 2025
 stack: ["Astro", "TypeScript", "Sanity", "Cloudflare Workers", "Twilio", "Plausible"]
 heroImage: /images/work/wattle-and-daub-reservations.jpg
 heroAlt: "Editorial still-life: ceramic plates, brass cutlery and yellow wattle blossoms on a linen table — the Wattle & Daub case-study hero."
+demo: wattle-and-daub-reserve
 ---
 
 Wattle & Daub is a 48-seat dining room in Surry Hills that cooks like a destination and, when we met them, had a website like an afterthought. Chef-owner Mara Ellery had built a ferociously loyal Friday-night crowd and a quietly empty Tuesday. The booking flow lived on a third-party marketplace that charged per-cover fees, owned the guest relationship, and — this is the part that stung — surfaced three competitor restaurants on Wattle & Daub's own Google listing.

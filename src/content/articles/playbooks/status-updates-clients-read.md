@@ -8,6 +8,8 @@ date: 2026-07-09
 author: Ruby Castellanos
 keywords: [client status update template, agency weekly report, project communication clients, stakeholder updates]
 readingTime: 9
+heroImage: /images/articles/playbooks/status-updates-clients-read.jpg
+heroAlt: "A small brass desk bell beside a stack of index cards tied with twine, a pencil and a fern sprig on cream paper."
 ---
 
 Every agency has a status update nobody reads. Usually it's a deck: forty slides of RAG statuses, a burndown chart rendered in a font from 2009, and a risks section that says "scope creep" in twelve different wordings. It took a producer half a day to build, it will be skimmed in ninety seconds, and its actual function is not communication — it's evidence. *We told them, see, slide 31.* A status update that exists to be defensible rather than readable has already failed, because the reader can smell the defensiveness.

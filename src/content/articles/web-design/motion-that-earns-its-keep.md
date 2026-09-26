@@ -21,7 +21,7 @@ heroAlt: "Abstract paper-craft composition on warm off-white: three curved ribbo
 
 Every animation on a website is a loan. The user lends you their attention and their milliseconds; you owe them information or delight in return, at a fair rate. Most site motion defaults on that debt — a hero that shimmers because "premium brands move", an element that drifts in 900 milliseconds after you needed to read it. Our motion philosophy is one sentence: **motion is information about state and space; everything else is garnish, and garnish has a strict ration.**
 
-This is the system we run across our [marketing sites](/services/websites) and [products](/services/product-design-and-engineering). It has three parts: a duration rule, a small easing vocabulary, and choreography limits. And one non-negotiable: reduced motion is a design input from the first wireframe, not an audit finding three days before launch.
+This is the system we run across our [marketing sites](/services/websites) and [products](/services/product). It has three parts: a duration rule, a small easing vocabulary, and choreography limits. And one non-negotiable: reduced motion is a design input from the first wireframe, not an audit finding three days before launch.
 
 ## The 160ms rule
 

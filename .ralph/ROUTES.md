@@ -39,10 +39,14 @@
   exactly — the build enforces this; title suffixes are stripped, unknown names
   fail**), keywords[], readingTime; optional heroImage (path under
   `/images/…`), heroAlt.
-- `npm run predev`/`prebuild` regenerates `src/generated/content.ts` (metas only)
-  and **validates** (author roster, required fields, duplicate slugs fail the
-  build); `scripts/ensure-demo-css.mjs` stubs demo CSS missing from in-flight
-  demo folders so builds stay green.
+- `npm run predev`/`prebuild` regenerates `src/generated/content.ts` (metas only
+  + `workImages` manifest of public/images/work/*.jpg slugs) and **validates**
+  (author roster, required fields, duplicate slugs fail the build);
+  `scripts/ensure-demo-css.mjs` stubs demo CSS missing from in-flight demo
+  folders so builds stay green. **`prebuild` also runs
+  `scripts/audit-links.mjs`**: every root-relative markdown link must resolve
+  to a real route (articles, case studies, services, industries, team, jobs,
+  tags, demos) or the build fails. Run it standalone before finishing content.
 - Markdown renderer is custom (`src/lib/markdown.ts`): headings, lists, quotes,
   code fences, tables, links, images. Internal links are base-prefixed
   automatically — write them as root-relative (`/services/growth`), never absolute.

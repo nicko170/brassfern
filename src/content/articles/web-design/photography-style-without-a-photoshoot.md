@@ -1,6 +1,6 @@
 ---
 title: "A photography style without a photoshoot"
-description: "No budget for a shoot? Crops, duotones, grain and a treatment matrix can make any source image look on-brand. How we art-direct photography for brands that can't afford it."
+description: "No budget for a shoot? Crops, duotones, grain and a treatment matrix make any source image look on-brand. How we art-direct cheap photography."
 slug: photography-style-without-a-photoshoot
 cluster: web-design
 tags: [art direction, photography, image treatment, brand identity, duotone]

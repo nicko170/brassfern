@@ -1,6 +1,6 @@
 ---
 title: "Osprey Outdoor: the pack configurator that cut support tickets"
-description: "How a WebGL pack configurator — with a hard 3D performance budget and a full 2D fallback — cut sizing tickets and returns for an outdoor gear brand (fictional concept work)."
+description: "How a WebGL pack configurator with a hard 3D performance budget and a full 2D fallback cut sizing tickets and returns for an outdoor gear brand."
 slug: osprey-outdoor-configurator-launch
 cluster: work
 tags: [3d configurator, e-commerce, webgl, performance, product customisation]
@@ -74,7 +74,7 @@ Nine weeks from kickoff to launch across two pack families, with the third follo
 
 The row we watch is the compound one: fewer tickets *and* fewer returns on the exact products where the configurator gets used most. That pairing is the signature of a tool that changed the purchase, not just the page. Traffic came anyway — the shared-configuration URLs became their own acquisition channel once camping forums started posting their setups.
 
-Osprey's team now uses the configurator in retail too: floor staff reach for it instead of the paper fitting sheet, which is the adoption signal no analytics dashboard can fake. The system followed the product into the shop. That's what we're for at this [studio](/about): tools that keep working in weather.
+Osprey's team now uses the configurator in retail too: floor staff reach for it instead of the paper fitting sheet, which is the adoption signal no analytics dashboard can fake. The system followed the product into the shop. That's what we're for at this [studio](/studio): tools that keep working in weather.
 
 > "We asked for a 3D toy and got a fit guide with a conscience. Returns are down, the inbox is quiet, and the forums configure our packs for us now. Best possible outcome of being wrong about what we needed." — Sienna Kaur, Head of E-commerce, Osprey Outdoor (fictional)
 

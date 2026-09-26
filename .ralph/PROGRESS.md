@@ -1,5 +1,50 @@
 # Progress
 
+## Done (iteration 6 — builder: link audit, case-study enrichment, resources hub)
+
+- **Internal-link audit now gates the build** — new `scripts/audit-links.mjs`
+  scans every markdown link against a full route table (static pages, all
+  articles/case studies, services, industries, team slugs, jobs, every tag,
+  every demo). Broken root-relative links are **fatal in prebuild** (writers:
+  run `node scripts/audit-links.mjs` before finishing). Found and fixed 6
+  pre-existing broken links: stale `/services/product-design-and-engineering` →
+  `/services/product` (2), `/services/brand-and-identity` → `/brand-identity` (2),
+  `/services/e-commerce` → `/ecommerce`, a link to unwritten article
+  `growth/subscription-retention-honest-design` → existing
+  `ecommerce/subscription-ux-design`, `/about` → `/studio` (2). Deliberate
+  `\](#)` placeholder links (5 case studies + 1 playbook) warn but pass.
+- **Fixed broken home testimonial deep-links**: two quotes linked to *demo*
+  slugs (`northwind-ledger-budget`, `pylon-health-booking` — 404 at /work/…);
+  now point at the case studies. Expanded `testimonials` in clients.ts from 4
+  to 12 entries — every case study with a demo now has a matched fictional
+  client quote (Fernleigh, Brightmarsh, Tallow, Wattle & Daub, Copperline,
+  Hearthbrew subscription, Osprey, GLADE).
+- **Wattle & Daub demo back-linked**: `demo: wattle-and-daub-reserve` added to
+  the case study (demo1's handoff). Demo strip + gallery now render there.
+- **Case-study pages enriched** (brief: stack/team/gallery/testimonial):
+  closing client quote (`.case-quote`, renders when a testimonial matches the
+  study), "The squad" strip (`.squad` — portraits + names + roles, derived
+  deterministically via `src/lib/squad.ts` from author + services + producer;
+  never hand-maintained), and a two-image gallery (`.case-gallery`) = hero
+  still + demo showcase shot when one exists. New build: index builder now
+  emits a `workImages` manifest (public/images/work/*.jpg) so pages can know
+  which demo shots exist without a filesystem.
+- **Resources page is a real hub** — lead-story feature ("The latest playbook"),
+  numbered compact index of all other playbooks (`.resource-rows`), plus a
+  cross-cluster "Checklists, audits & templates" band (tag-driven: checklist /
+  audit / template).
+- **Honesty note** under home stats: "A concept studio's numbers — illustrative
+  by design…" (mono micro-style).
+- **Hero art**: product/jobs-to-be-done-interviews (the iter-5 prompt) and
+  playbooks/status-updates-clients-read (also the /resources lead feature).
+  Trimmed 2 over-long descriptions (both were 172–173 chars).
+- **Backlog**: +36 articles (playbooks 10, product 8, ai 6, brand 6, growth 6)
+  + 4 demos (glade-ingredient-explorer, postcards-archive-explorer,
+  brightmarsh-course-finder, signal-noise-studio — all target existing case
+  studies).
+- **Build green: 1006 prerendered routes** (broke 1000), typecheck clean,
+  audit clean, CI-equivalent BASE_PATH build verified.
+
 ## Done (iteration 5 — builder: people pages, journal leads, backlog)
 
 - **Author profile pages `/team/:slug`** — new `PersonPage` (named export of
@@ -102,23 +147,16 @@
 
 ## Next
 
-- Journal heroes for flagship articles (one added iter 5:
-  ai/evals-practical-guide). Next targets: product/jobs-to-be-done-interviews
-  (prompt ready in iter-6 notes below), growth/ flagships.
-- Builder ideas for later iterations: home POV band refresh; resources as a
-  real hub once playbooks fill; case-study gallery sections; 375px device QA
-  on demo-strip/lab-feature/article-nav/feature card/person-hero; OG images
-  per case study (currently default og.jpg when no hero).
-- Image retry for next iteration: jobs-to-be-done-interviews hero — prompt:
-  "Editorial print photograph, top-down flat lay on warm cream uncoated paper:
-  two small ceramic espresso cups facing each other across the frame, between
-  them a cloth-bound notebook with a brass clip and a mechanical pencil, a
-  single fern frond laid diagonally at the lower edge. Soft directional
-  daylight, gentle shadows, palette of deep fern green, aged brass, warm cream
-  with muted clay undertones; subtle film grain, generous negative space in the
-  upper third. No text, no logos, no people."
-- Writers: keep burning backlog — biggest gaps engineering (≈21/90),
-  ecommerce (6/50), growth (8/80), product (14/70), brand (6/60).
+- Journal heroes: flagships still bare — growth/content-strategy-compounds,
+  engineering/keyboard-first... (has one), web-design flagships, brand/
+  measuring-brand-health. Keep spending image budget here (2/iteration).
+- Builder ideas for later iterations: home POV band refresh; 375px device QA
+  sweep (demo-strip/lab-feature/feature/person-hero/squad verified in CSS but
+  not on a real device); OG images per case study currently fall back to
+  heroImage (good) — could add dedicated 1200×630 variants; reading-progress
+  or TOC on long articles; /press page enrichment.
+- Writers: keep burning backlog — run `node scripts/audit-links.mjs` before
+  finishing (broken internal links are now FATAL in prebuild).
   Authors MUST be roster names; new case studies must use canonical industry
   names from src/data/industries.ts (Fintech, Health, Retail & e-commerce,
   Hospitality, Climate, Education, Media & culture, SaaS, Non-profit) so the
@@ -130,8 +168,11 @@
 
 ## Known issues / watchlist
 
-- Description-length warnings (8 files, 171–174 chars) — non-fatal; writers
-  trim when touching those files.
+- Description-length warnings (a few files, ~170 chars) — non-fatal; writers
+  trim when touching those files. (2 fixed in iter 6.)
+- Deliberate `](#)` placeholder links in 5 case studies + 1 playbook
+  (rhetorical "metrics are illustrative" device) — warned by audit-links,
+  not fatal. Consider pointing them at a real anchor eventually.
 - Work frontmatter mixes inline YAML lists (`stack: [a, b]`) and longhand
   (`stack:` + `- item`) — both valid; if you script-edit frontmatter, insert
   keys before the closing `---`, never after a bare `stack:` line.
@@ -700,4 +741,60 @@ on all 12 after one description trim.
 - ai/ai-brand-voice (Leonie Marsh) — three persona positions, five-section voice spec (stance/register map/exemplars/NEVER list/escalation registers), blind lineup + perception testing, editorial governance. Distinct from ai-brand-voice-guardrails (writer's craft vs system).
 - ai/golden-eval-sets-support-tickets (Dev Khatri) — mining tickets into golden eval sets: anonymisation, intent/difficulty/stakes stratification (40/40/20), layered expectations, weekly + renewal cadence.
 - ai/llm-failure-fallback-ux (Aiko Tanaka) — five failure modes, five-tier degradation ladder, diagnostic-honesty error copy, time ceilings, designed degraded state. Hero image: public/images/articles/ai/llm-failure-fallback-ux.jpg.
+- All four validated done via finish_article.
+
+## writer2 — iteration 13 (brand ×4)
+
+- brand/brand-colour-beyond-default (June Okafor) — category colour-map wheel, convention-vs-distinctiveness per surface, accessibility as day-one brief, perceptual tint scales as tokens, cheap-screen/print/photo/icon gauntlet. Hero image: public/images/articles/brand/brand-colour-beyond-default.jpg (swatch-card arc, blue-cluster joke).
+- brand/co-branding-partnership-rules (Mara Ellison) — four-part taxonomy (endorsement/collaboration/venue/marriage), lockup geometry + optical sizing, colour custody patterns, one-page usage annex (approvals/custody/sunset), locked template kits.
+- brand/packaging-to-web-consistency (Mara Ellison) — translate cues don't transpose labels, single claims register, one-shoot-two-framings photography, GTIN/schema/feed machine consistency, twice-yearly drift audit scorecard.
+- brand/employer-brand-careers-page (Leonie Marsh) — careers page as most-read brand page, voice parity, real/illustrated/none photography policy, salary-band presentation, qualified-application metrics loop.
+- All four validated done (descriptions needed one trim pass for 120–160 char bound).
+
+## writer3 — iteration 11 (brand ×4)
+
+- brand/brand-palette-strategy (Mara Ellison) — competitive colour mapping + squint test, palette job description (UI states, data-viz ramps, one-colour), accessibility as day-one constraint (pairing tables, semantic layer), ownability via combination/proportion, ten-artefact gauntlet.
+- brand/icon-systems-brand-assets (June Okafor) — icons as most-touched brand asset, grid decisions (stroke/radius/terminals/fill) as brand character, metaphor registers, custom vs library decision table, motion spec, governance docs that survive turnover.
+- brand/rebrand-announcement-day (Mara Ellison) — why→what-stays→unlocks→reveal narrative spine, launch runbook as coordinated deploy, hot-take posture, internal champions preview, six-month receipts case study.
+- brand/heritage-brand-modernisation (Mara Ellison) — respect audit (artefact archaeology, recognition testing, language harvest, founder intent), keep/burn/build framework, whitewash failure mode + swap test. Hero image: public/images/articles/brand/heritage-brand-modernisation.jpg.
+- All four validated done via finish_article.
+
+## demo1 — iteration 4 (pylon-care-assistant)
+
+- Built `src/demos/pylon-care-assistant/` — mocked "AI support assistant" for Pylon Health: scripted topic bank (10 intents + greeting/thanks), keyword detection with dominance-shaped confidence, token-streamed reveal (reduced-motion = instant), [n] citations → sources drawer, accuracy feedback loop (down-vote → rephrase or human), clinical guardrail + 000/Lifeline emergency card, personal-detail redaction (Medicare/phone/card) before "storage", 3-channel human handover with deterministic ticket id, localStorage transcript with 30-day expiry + restore banner.
+- Art direction: calm clinical — warm ivory + glacier teal (distinct from booking demo's warm sage; same fictional client, cooler skin). Scoped `.pca`.
+- caseStudy: 'pylon-care-assistant' — **no case-study file exists yet**; a writer should create `src/content/work/pylon-care-assistant.md`. Showcase image at `public/images/work/pylon-care-assistant.jpg` (teal phone-mockup still life) ready for that case study's heroImage.
+
+## writer4 — iteration 11 (brand ×4)
+
+- brand/art-directing-brand-photography (Mara Ellison) — shoot/stock/synthesise buckets, shot list as screenplay of site sentences, one-page lighting language (source/shadows/distance/background/prop rules), hands-before-faces casting, future-proof library practices (plates, versioned packaging shots, RETIRE quarterly). Hero image: public/images/articles/brand/art-directing-brand-photography.jpg (overhead prep-table still life).
+- brand/sonic-branding-ui-sound (Hannah Yeo) — why sound gets skipped, tokenised sonic layer cake (signature/functional/notifications/ambience), repetition-proof sound craft (envelope/pitch grammar/loudness), silence-as-strategy states, testing (repetition/speaker/a11y/blindfold) + kill switch.
+- brand/employer-brand-inside-out (Leonie Marsh) — perks-page myth, receipts audit table, salary transparency, showing real work with named authors, employer brand lives in every public surface, "would the team forward it?" test.
+- brand/naming-international-checks (June Okafor) — Nova-myth framing, tiered linguistic screens, Nice-class trademark discipline, ccTLD/domain/email strategy, homophone/accent/script/initialism tests, finalist "passport" pre-flight checklist.
+- All four validated done via finish_article; content index regenerates clean (220 articles, only pre-existing warnings).
+
+## demo2 — iteration 4 (tallow-seat-map)
+
+- Built `src/demos/tallow-seat-map/` — event ticketing with an interactive SVG seat map for Tallow & Co.'s fictional "Supper Series" in The Sawdust Room (36 chairs: 6-stool chef's counter, 20-chair long table, two 3-chair banquettes, 4-stool window rail). Features: 3 supper events with seeded block-pattern availability, party-size selection (1–6) with contiguous anchor-based group logic shared by map and list, SVG seats as real focusable buttons + full chair-list view for keyboard/SR users, per-tier pricing ($145–185), 10-minute hold timer with progress bar and lapse-and-release flow, diner details step (contact validation, per-chair dietary requests, allergies, release-the-chairs promise), order summary slip, and dashed-perforation stub tickets on confirmation with serials, barcode, download .ics and book-another. Reduced-motion honoured; live regions announce selection/expiry.
+- Art direction: butcher-paper cream, charcoal ink, stamp red; ticket-stub typography (serif voice + mono stubs), double-border brand stamp, paper-order-slip summary with red dashed left edge. Scoped under `.tsm`.
+- meta.caseStudy points at the existing `tallow-and-co-providore` case study (same fictional client). A writer could create a dedicated `src/content/work/tallow-seat-map.md` case study later; showcase image ready at `public/images/work/tallow-seat-map.jpg` (butcher-paper floor-plan still life).
+
+## writer1 — iteration 12 (brand ×4 + product ×4)
+
+- brand/mascot-systems-when-they-work (Mara Ellison) — employment test (recurring emotional moments + named owner), territory map ("error pages yes, invoices no"), rig-not-portrait construction (anchor shape, 3 construction logics, 6 poses, separate face spec), 6-expression library table, motion rules, retirement-with-dignity. Hero image generated: public/images/articles/brand/mascot-systems-when-they-work.jpg (fern-spirit specimen sheet in 6 poses).
+- brand/brand-audit-90-minutes (June Okafor) — triage framing (drift/debt/mismatch), 12-tab consistency sweep, read-aloud voice sampling, asset-findability inventory, mismatch check, 8-criterion 0–2 scoring sheet with band readings and pattern diagnostics, fix list + kill list + one board slide.
+- brand/packaging-thinking-digital-brands (Mara Ellison) — 32-pixel identity problem (glyph→icon→logo cascade), grid/facing test, brand block (GLADE example), range/tier architecture rules, back-of-pack trust surfaces (Hearthbrew receipt-email example), 10-minute wild audit.
+- brand/co-branding-without-mush (June Okafor) — five pre-nup questions, hosted/endorsed/paired structures, lockup maths (optical weight not pixel height, divider/clear-space rules), palette territory not blending, one-narrator voice rule, trailer test, sunset clause.
+- product/multi-step-flows-wizards (Aiko Tanaka) — step cost triad (cognitive/fetching/commitment), momentum-not-schema ordering, when one long page wins, progress honesty rules, one-decision-per-screen, silent draft persistence + resume UX, in-moment errors, sacred back button.
+- product/settings-design-neglected-ux (June Okafor) — month-three judgement framing, deliberate-defaults audit (median want / blast radius / should-it-exist), consequence-over-mechanism copy, dangerous-action friction budget + undo-over-confirm + danger zone, settings search (synonym indexing, inline controls, deep links, empty-result mining), 1-hour quarterly audit.
+- product/research-repository-that-gets-used (Aiko Tanaka) — atomic notes (observation/evidence/interpretation/strength/context), browse-vocabulary taxonomy with ~30-tag ceiling + gardener, insight half-lives and visible revalidation, two-way decision links, ambient shop window (feed/embeds/quarterly synthesis), consent & PII governance.
+- product/prioritisation-beyond-rice (Ruby Castellanos) — disagreement-finding-machine reframe, strategy-bet filters before scoring, value×evidence 3×3 map (learning queue vs build queue), sequencing-for-learning heuristics, meeting format (silent scoring → fight deltas from evidence → decision log read aloud), keep the stack small.
+- All eight validated done. Backlog note for writers: demo case studies still wanted for pylon-care-assistant and tallow-seat-map (heroes already exist under public/images/work/).
+
+## writer3 — iteration 12 (product ×4)
+
+- product/dashboard-empty-states (Aiko Tanaka) — blank dashboard as the activation funnel step, three archetypes (first-run fast-forward / cleared repair / lapsed alarm) with explicit code branching, sample-data rules (labelled, reality-shaped, full code path, reversible swap), four-line one-verb copy frame, escape-rate + time-to-data instrumentation, Northwind Ledger illustrative metrics.
+- product/settings-design-adult (June Okafor) — settings as deferred decisions; three rots (accretion/orphans/dangerous defaults), five-question gatekeeper rubric, quarterly audit ritual with 0–2 scoring table (usage/legibility/health/default-safety), safe-kill mechanics (migrate-first, cohort staging, email affected, graveyard doc), landlord ownership. Distinct from settings-information-architecture (structure) and settings-design-neglected-ux (defaults/copy/friction) by taking the governance & audit-lifecycle angle.
+- product/command-palette-craft (Aiko Tanaka) — task-router not search box (destinations/actions/objects/contextual), five-layer ranking (exactness→recency→frequency→context→global, per-user, labelled), subsequence + typo tolerance + hand-grown synonym table from zero-result logs, keyboard contract (focus in input, footer hints, <150ms, static registry), inline-argument actions with parsed previews, palette-as-crutch caveat. Hero image: public/images/articles/product/command-palette-craft.jpg (keyboard still life, cream/fern/brass).
+- product/undo-not-confirm (Felix Brandt) — confirm habituation + risk-transfer critique, four properties of real undo (deferred/invertible action, 6–10s visible window, keyboard a11y, survives navigation), four-band reversibility model table (reversible/soft-delete/scheduled-cancellable/irreversible), soft-delete engineering notes (scoped queries, purge UI, idempotent inverses, cascades), when confirm is earned + informative-dialog rules, trust-dividend metrics.
 - All four validated done via finish_article.

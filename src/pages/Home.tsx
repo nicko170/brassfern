@@ -189,6 +189,9 @@ export default function Home() {
               </Reveal>
             ))}
           </div>
+          <p className="mono muted" style={{ marginTop: 'var(--space-5)', fontSize: 'var(--fs-micro)', letterSpacing: '0.12em', textTransform: 'uppercase' }}>
+            A concept studio's numbers — illustrative by design, pleasing by accident.
+          </p>
         </div>
       </section>
 

@@ -140,6 +140,28 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 10
   },
   {
+    "title": "Personalisation vs privacy: drawing the line deliberately",
+    "description": "Draw the personalisation privacy line before legal does: on-device and anonymous patterns, explainable personalisation, and consent UX that actually means something.",
+    "slug": "ai-personalisation-privacy-lines",
+    "cluster": "ai",
+    "tags": [
+      "ai ux",
+      "privacy",
+      "personalisation",
+      "consent",
+      "responsible ai"
+    ],
+    "date": "2026-08-21",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "ai personalisation privacy",
+      "privacy by design ai",
+      "consent ux ai",
+      "personalisation ethics"
+    ],
+    "readingTime": 10
+  },
+  {
     "title": "Designing AI features users can trust",
     "description": "Trust is an interface property, not a policy page. Citations, confidence, correction affordances and honest capability copy — how we design AI people rely on.",
     "slug": "ai-trust-design",
@@ -160,6 +182,76 @@ export const articleIndex: ArticleMeta[] = [
       "confidence ui"
     ],
     "readingTime": 10
+  },
+  {
+    "title": "When the model is wrong: designing failure states for AI features",
+    "description": "AI failure is a design state, not an exception. Wrong-answer UX, graceful degradation tiers, feedback that improves the system, and copy that keeps trust intact.",
+    "slug": "ai-wrong-answer-ux",
+    "cluster": "ai",
+    "tags": [
+      "ai ux",
+      "error states",
+      "trust",
+      "content design",
+      "responsible ai"
+    ],
+    "date": "2026-06-04",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "AI error states",
+      "model failure UX",
+      "AI trust design",
+      "graceful degradation"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "Memory is a UX surface: designing what assistants remember",
+    "description": "What an assistant remembers is a designed surface: inspectable memory, deliberate forgetting, edit affordances, and the privacy postures that earn retention over time.",
+    "slug": "assistant-memory-ux",
+    "cluster": "ai",
+    "tags": [
+      "ai ux",
+      "memory",
+      "personalisation",
+      "privacy",
+      "product design"
+    ],
+    "date": "2026-09-10",
+    "author": "Dev Khatri",
+    "keywords": [
+      "AI memory UX",
+      "assistant memory",
+      "personalisation privacy",
+      "chatbot memory"
+    ],
+    "readingTime": 11,
+    "heroImage": "/images/articles/ai/assistant-memory-ux.jpg",
+    "heroAlt": "A small brass card-catalogue drawer on cream paper, index cards fanned out, one card fading blank — memory as a designed object."
+  },
+  {
+    "title": "Citation design: showing the AI's working",
+    "description": "Citations are how AI answers earn belief. Inline sources, confidence without fake precision, expandable evidence, link rot, and how provenance UI measurably builds trust.",
+    "slug": "citation-design-ai-features",
+    "cluster": "ai",
+    "tags": [
+      "ai ux",
+      "citations",
+      "rag",
+      "provenance",
+      "trust"
+    ],
+    "date": "2026-09-10",
+    "author": "Leonie Marsh",
+    "keywords": [
+      "ai citation design",
+      "rag source attribution",
+      "ai provenance ux",
+      "trust signals ai answers"
+    ],
+    "readingTime": 10,
+    "heroImage": "/images/articles/ai/citation-design-ai-features.jpg",
+    "heroAlt": "A stack of fern-green and cream index cards with brass clips and numbered tabs, beside a brass loupe resting on ruled paper with a pressed fern frond."
   },
   {
     "title": "Shipping 'sometimes wrong': communicating AI features",
@@ -252,6 +344,28 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 12
   },
   {
+    "title": "Human-in-the-loop: designing the review queue",
+    "description": "Human-in-the-loop AI fails at the queue, not the model. Triage design, keyboard-first reviewer ergonomics, feedback loops into evals, and honest staffing maths.",
+    "slug": "human-in-the-loop-queues",
+    "cluster": "ai",
+    "tags": [
+      "ai ux",
+      "human in the loop",
+      "review queues",
+      "operations",
+      "evals"
+    ],
+    "date": "2026-08-05",
+    "author": "Ruby Castellanos",
+    "keywords": [
+      "human in the loop ai",
+      "ai review queue design",
+      "content moderation ux",
+      "ai oversight workflow"
+    ],
+    "readingTime": 11
+  },
+  {
     "title": "Cost engineering for LLM features",
     "description": "Unit economics for AI features: model routing, caching layers, context trimming, batch APIs, and dashboards that translate tokens into dollars per user.",
     "slug": "llm-cost-engineering",
@@ -323,6 +437,28 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 11,
     "heroImage": "/images/articles/ai/llm-failure-fallback-ux.jpg",
     "heroAlt": "A brass service bell and desk tools arranged on descending stacks of index cards on warm cream paper — the fallback ladder made tangible."
+  },
+  {
+    "title": "Swapping the model without breaking the product",
+    "description": "Model migrations without breaking the product: shadow runs, eval-gated cutovers, tone and format regression diffs, and rollback plans for behaviour you can't unit test.",
+    "slug": "model-migration-without-breakage",
+    "cluster": "ai",
+    "tags": [
+      "llm ops",
+      "migration",
+      "evals",
+      "testing",
+      "platform engineering"
+    ],
+    "date": "2026-07-30",
+    "author": "Felix Brandt",
+    "keywords": [
+      "llm model migration",
+      "model upgrade testing",
+      "ai regression testing",
+      "llm shadow deployment"
+    ],
+    "readingTime": 11
   },
   {
     "title": "Multimodal interfaces: beyond the chat box",
@@ -510,6 +646,32 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 11
   },
   {
+    "title": "Brand photography without the five-figure shoot",
+    "description": "Big photography energy on a real budget: shot lists written like screenplays, a lighting language not a filter, and a library that doesn't age in six months.",
+    "slug": "art-directing-brand-photography",
+    "cluster": "brand",
+    "tags": [
+      "art direction",
+      "brand photography",
+      "photo library",
+      "visual identity",
+      "production"
+    ],
+    "date": "2026-03-18",
+    "author": "Mara Ellison",
+    "keywords": [
+      "brand photography",
+      "art direction on a budget",
+      "photo library",
+      "shot list",
+      "lighting language",
+      "stock photography"
+    ],
+    "readingTime": 9,
+    "heroImage": "/images/articles/brand/art-directing-brand-photography.jpg",
+    "heroAlt": "Still life of a photography prep table: a brass folding ruler, contact sheets, a loupe and a small fern cutting on warm cream paper."
+  },
+  {
     "title": "Brand architecture decisions: house, endorsed, or let go",
     "description": "Branded house, endorsed brands or house of brands — how to choose, what migration costs, the sub-brand rules that prevent chaos, and how acquisitions change the answer.",
     "slug": "brand-architecture-decisions",
@@ -532,6 +694,52 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 10
   },
   {
+    "title": "The 90-minute brand audit: our scoring sheet, free to steal",
+    "description": "A structured 90-minute brand audit any team can run this afternoon — consistency sweep, voice sampling, asset inventory — with the exact scoring sheet we use in discovery.",
+    "slug": "brand-audit-90-minutes",
+    "cluster": "brand",
+    "tags": [
+      "brand audit",
+      "brand strategy",
+      "discovery",
+      "consistency",
+      "brand voice"
+    ],
+    "date": "2025-07-21",
+    "author": "June Okafor",
+    "keywords": [
+      "brand audit",
+      "brand consistency",
+      "brand discovery",
+      "brand assessment"
+    ],
+    "readingTime": 11
+  },
+  {
+    "title": "Brand colour beyond default blue",
+    "description": "How to choose brand colour with intent: category colour maps, distinctiveness vs convention, accessibility as a brief, and testing colour in the wild.",
+    "slug": "brand-colour-beyond-default",
+    "cluster": "brand",
+    "tags": [
+      "brand colour",
+      "identity systems",
+      "accessibility",
+      "brand strategy",
+      "design tokens"
+    ],
+    "date": "2025-09-03",
+    "author": "June Okafor",
+    "keywords": [
+      "brand colour palette",
+      "choosing brand colours",
+      "brand distinctiveness colour",
+      "accessible brand colours"
+    ],
+    "readingTime": 8,
+    "heroImage": "/images/articles/brand/brand-colour-beyond-default.jpg",
+    "heroAlt": "Printed colour swatch cards fanned in an arc on cream paper — fern green, brass and clay tones — with one section crowded by near-identical corporate blues, a brass compass resting beside them."
+  },
+  {
     "title": "Kill the brand PDF: living guidelines that get used",
     "description": "Guideline PDFs rot in shared drives while brands drift. What actually replaces them: living guideline sites with tokens, patterns, versioning and honest governance.",
     "slug": "brand-guidelines-living",
@@ -552,6 +760,28 @@ export const articleIndex: ArticleMeta[] = [
       "brand governance"
     ],
     "readingTime": 8
+  },
+  {
+    "title": "Picking a brand palette is strategy wearing paint",
+    "description": "A brand palette is a strategic decision before it is an aesthetic one. How we map competitors, treat accessibility as a creative constraint, and pick ownable colour.",
+    "slug": "brand-palette-strategy",
+    "cluster": "brand",
+    "tags": [
+      "colour",
+      "brand-strategy",
+      "accessibility",
+      "identity"
+    ],
+    "date": "2025-04-08",
+    "author": "Mara Ellison",
+    "keywords": [
+      "brand colour palette",
+      "colour strategy",
+      "accessible colour",
+      "brand identity",
+      "visual identity"
+    ],
+    "readingTime": 9
   },
   {
     "title": "Brand strategy on one page (or it isn't strategy)",
@@ -620,6 +850,95 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 10
   },
   {
+    "title": "Co-branding: rules for sharing the stage",
+    "description": "Partnership work exposes weak brand rules. Designing co-brand lockups, negotiating hierarchy, governing colour custody, and drafting legal-adjacent bits early.",
+    "slug": "co-branding-partnership-rules",
+    "cluster": "brand",
+    "tags": [
+      "co-branding",
+      "partnerships",
+      "brand governance",
+      "logo lockups",
+      "campaign design"
+    ],
+    "date": "2025-11-19",
+    "author": "Mara Ellison",
+    "keywords": [
+      "co-branding guidelines",
+      "partner brand rules",
+      "logo lockup design",
+      "brand partnership design"
+    ],
+    "readingTime": 8
+  },
+  {
+    "title": "Co-branding without the mush",
+    "description": "Partnership branding without the logo soup: hierarchy rules, lockup maths, shared-palette strategy, and the pre-nup questions that prevent ugly co-brands.",
+    "slug": "co-branding-without-mush",
+    "cluster": "brand",
+    "tags": [
+      "co-branding",
+      "partnerships",
+      "logo lockups",
+      "brand hierarchy",
+      "brand systems"
+    ],
+    "date": "2026-03-02",
+    "author": "June Okafor",
+    "keywords": [
+      "co-branding",
+      "brand partnerships",
+      "logo lockups",
+      "brand hierarchy"
+    ],
+    "readingTime": 11
+  },
+  {
+    "title": "Employer brand: your careers page is a brand page",
+    "description": "Your careers page is the most-read brand page nobody designed. Photography policy, salary transparency, voice parity, and the metrics that prove it works — or quietly doesn't.",
+    "slug": "employer-brand-careers-page",
+    "cluster": "brand",
+    "tags": [
+      "employer brand",
+      "careers page",
+      "recruitment",
+      "brand voice",
+      "company culture"
+    ],
+    "date": "2026-05-21",
+    "author": "Leonie Marsh",
+    "keywords": [
+      "employer brand design",
+      "careers page design",
+      "recruitment brand",
+      "company culture page"
+    ],
+    "readingTime": 8
+  },
+  {
+    "title": "Employer brand: write the job ad your team would share",
+    "description": "Employer brand isn't a perks page — it's the gap between the hiring story and the studio floor. Write job ads your own team would forward, with receipts.",
+    "slug": "employer-brand-inside-out",
+    "cluster": "brand",
+    "tags": [
+      "employer brand",
+      "recruitment marketing",
+      "careers page",
+      "studio culture",
+      "brand voice"
+    ],
+    "date": "2026-06-24",
+    "author": "Leonie Marsh",
+    "keywords": [
+      "employer brand",
+      "recruitment marketing",
+      "careers page design",
+      "hiring content",
+      "salary transparency"
+    ],
+    "readingTime": 9
+  },
+  {
     "title": "When the founder IS the brand (and when to stop)",
     "description": "Founder-led brands convert brilliantly and scale terribly. How to harvest founder voice into systems, manage the handover, and know when personality has become a liability.",
     "slug": "founder-led-brand",
@@ -640,6 +959,52 @@ export const articleIndex: ArticleMeta[] = [
       "brand transition"
     ],
     "readingTime": 11
+  },
+  {
+    "title": "Modernising a heritage brand without erasing its soul",
+    "description": "Heritage rebrands fail when they sand off the character that made the brand matter. Audit what's earned, keep-burn-build, and modernise without whitewash.",
+    "slug": "heritage-brand-modernisation",
+    "cluster": "brand",
+    "tags": [
+      "heritage",
+      "rebrand",
+      "brand-strategy",
+      "identity"
+    ],
+    "date": "2026-01-20",
+    "author": "Mara Ellison",
+    "keywords": [
+      "heritage brand",
+      "brand modernisation",
+      "legacy rebrand",
+      "brand trust",
+      "brand refresh"
+    ],
+    "readingTime": 10,
+    "heroImage": "/images/articles/brand/heritage-brand-modernisation.jpg",
+    "heroAlt": "A weathered vintage enamel shop sign beside a crisp machined-brass plaque of the same shape, with drafting tools and fern-green swatch cards on warm cream paper."
+  },
+  {
+    "title": "Icon systems: the quietest, hardest-working brand asset",
+    "description": "Icons do more daily brand work than your logo. How to design an icon system: grids, metaphor consistency, custom vs library, motion rules, and style guides that survive.",
+    "slug": "icon-systems-brand-assets",
+    "cluster": "brand",
+    "tags": [
+      "icons",
+      "identity-systems",
+      "design-systems",
+      "product-design"
+    ],
+    "date": "2025-06-17",
+    "author": "June Okafor",
+    "keywords": [
+      "icon design",
+      "icon system",
+      "brand assets",
+      "pictograms",
+      "design system icons"
+    ],
+    "readingTime": 9
   },
   {
     "title": "Illustration systems that don't go stale",
@@ -713,6 +1078,30 @@ export const articleIndex: ArticleMeta[] = [
     "heroAlt": "Overhead flat lay of letterpress-printed identity specimens: cardstock tiles sized from large to tiny, each bearing an abstract geometric mark in fern green or brass foil on cream paper."
   },
   {
+    "title": "Mascot systems: when the character earns its keep",
+    "description": "Most mascots are clip-art wallpaper. Here's how to tell if a character will earn its keep — and the construction, expression, motion and usage rules that keep it sharp.",
+    "slug": "mascot-systems-when-they-work",
+    "cluster": "brand",
+    "tags": [
+      "mascots",
+      "brand identity",
+      "character design",
+      "illustration",
+      "brand systems"
+    ],
+    "date": "2025-04-14",
+    "author": "Mara Ellison",
+    "keywords": [
+      "brand mascot design",
+      "mascot system",
+      "brand character design",
+      "illustrated mascot brand"
+    ],
+    "readingTime": 12,
+    "heroImage": "/images/articles/brand/mascot-systems-when-they-work.jpg",
+    "heroAlt": "A specimen-sheet illustration on warm paper: a small geometric fern mascot posed six ways — neutral, pointing, waiting, celebrating, apologetic, curious — framed by fine brass rules."
+  },
+  {
     "title": "Measuring brand without voodoo",
     "description": "Brand measurement for people allergic to brand science: aided recall, share of search, consistency audits and the quarterly one-pager leadership actually reads.",
     "slug": "measuring-brand-health",
@@ -757,6 +1146,29 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 10,
     "heroImage": "/images/articles/brand/motion-identity-design.jpg",
     "heroAlt": "Overlapping translucent sheets tracing the easing curves of a fern form in motion, with brass timeline markers on cream paper."
+  },
+  {
+    "title": "Naming across borders: the checks that save you later",
+    "description": "A name that sings in Sydney can stink in Singapore. Linguistic screens, trademark classes, domain realities and the false friends that kill product names.",
+    "slug": "naming-international-checks",
+    "cluster": "brand",
+    "tags": [
+      "naming",
+      "trademark",
+      "localisation",
+      "verbal identity",
+      "brand strategy"
+    ],
+    "date": "2025-08-27",
+    "author": "June Okafor",
+    "keywords": [
+      "international naming",
+      "trademark check",
+      "brand naming",
+      "linguistic screening",
+      "domain strategy"
+    ],
+    "readingTime": 9
   },
   {
     "title": "Naming: our field guide from brainstorm to trademark check",
@@ -804,6 +1216,72 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 10
   },
   {
+    "title": "Packaging thinking for brands that live on screens",
+    "description": "Digital brands still fight for shelf presence — the shelf just became glass. What packaging teaches app icons, social avatars, favicons and the 32-pixel identity problem.",
+    "slug": "packaging-thinking-digital-brands",
+    "cluster": "brand",
+    "tags": [
+      "packaging",
+      "app icons",
+      "brand identity",
+      "small-space design",
+      "digital branding"
+    ],
+    "date": "2025-09-08",
+    "author": "Mara Ellison",
+    "keywords": [
+      "packaging design",
+      "app icon design",
+      "digital brand",
+      "small-space identity"
+    ],
+    "readingTime": 11
+  },
+  {
+    "title": "From shelf to screen: packaging-to-web consistency",
+    "description": "Shoppers meet your brand on shelf and screen in the same week. Keeping them aligned: claims parity, photography, and the audits that catch drift.",
+    "slug": "packaging-to-web-consistency",
+    "cluster": "brand",
+    "tags": [
+      "packaging design",
+      "omnichannel brand",
+      "brand consistency",
+      "CPG",
+      "e-commerce"
+    ],
+    "date": "2026-02-12",
+    "author": "Mara Ellison",
+    "keywords": [
+      "packaging web consistency",
+      "omnichannel brand design",
+      "cpg brand digital",
+      "brand consistency audit"
+    ],
+    "readingTime": 8
+  },
+  {
+    "title": "Rebrand announcement day: theatre, then receipts",
+    "description": "Launch day for a rebrand is a narrative event and an operational stress test. How to script the reveal, survive the hot takes, and when the case study actually lands.",
+    "slug": "rebrand-announcement-day",
+    "cluster": "brand",
+    "tags": [
+      "rebrand",
+      "launch",
+      "communications",
+      "rollout"
+    ],
+    "date": "2025-09-02",
+    "author": "Mara Ellison",
+    "keywords": [
+      "rebrand launch",
+      "brand announcement",
+      "reveal strategy",
+      "brand case study",
+      "rebrand rollout"
+    ],
+    "readingTime": 9
+  },
+  {
     "title": "Rebrand rollouts: the unglamorous crucial middle",
     "description": "Launch day is the easy part. The rebrand rollout plan: asset census, coexistence windows, internal enablement and honest measurement long after the applause.",
     "slug": "rebrand-rollout-plan",
@@ -848,6 +1326,29 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 11,
     "heroImage": "/images/articles/brand/rebrands-that-worked.jpg",
     "heroAlt": "Still life of a rebrand in progress: letterpress type, fern-green and brass swatches, and masking tape peeled back to reveal a clean edge on cream paper."
+  },
+  {
+    "title": "Sonic branding: the layer most products mute",
+    "description": "UI sound is brand identity nobody briefs: sonic layers, notification tones, testing with accessibility in mind — and knowing when silence wins.",
+    "slug": "sonic-branding-ui-sound",
+    "cluster": "brand",
+    "tags": [
+      "sonic branding",
+      "sound design",
+      "notification design",
+      "accessibility",
+      "brand identity"
+    ],
+    "date": "2025-11-05",
+    "author": "Hannah Yeo",
+    "keywords": [
+      "sonic branding",
+      "UI sound design",
+      "audio branding",
+      "notification sounds",
+      "product sound identity"
+    ],
+    "readingTime": 9
   },
   {
     "title": "Type as brand: when the typeface is the logo",
@@ -3163,7 +3664,9 @@ export const articleIndex: ArticleMeta[] = [
       "project communication clients",
       "stakeholder updates"
     ],
-    "readingTime": 9
+    "readingTime": 9,
+    "heroImage": "/images/articles/playbooks/status-updates-clients-read.jpg",
+    "heroAlt": "A small brass desk bell beside a stack of index cards tied with twine, a pencil and a fern sprig on cream paper."
   },
   {
     "title": "Weekly demos: the habit that runs our projects",
@@ -3347,6 +3850,53 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 9
   },
   {
+    "title": "Command palettes: the 200-millisecond product tour",
+    "description": "A command palette done well is a 200-millisecond product tour. Ranking heuristics, forgiving fuzzy match, keyboard ergonomics, and when a palette is a crutch.",
+    "slug": "command-palette-craft",
+    "cluster": "product",
+    "tags": [
+      "command palette",
+      "keyboard navigation",
+      "power users",
+      "search ux",
+      "interaction design"
+    ],
+    "date": "2026-02-11",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "command palette design",
+      "keyboard navigation ux",
+      "power user features",
+      "cmd k pattern",
+      "search ux"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Command palettes: patterns for the Cmd-K era",
+    "description": "When a Cmd-K palette earns its complexity: ranking that beats fuzzy match, mixing actions with navigation, keyboard ergonomics, discovery and mobile equivalents.",
+    "slug": "command-palette-patterns",
+    "cluster": "product",
+    "tags": [
+      "command palette",
+      "keyboard navigation",
+      "power users",
+      "search",
+      "product design"
+    ],
+    "date": "2026-08-11",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "command palette ux",
+      "cmd k design",
+      "keyboard navigation product",
+      "power user features"
+    ],
+    "readingTime": 8,
+    "heroImage": "/images/articles/product/command-palette-patterns.jpg",
+    "heroAlt": "Overhead still life of scattered fern-green keycaps on cream paper falling into order beneath a brass magnifying loupe."
+  },
+  {
     "title": "Dashboard design: twelve lessons from twelve dashboards",
     "description": "Twelve hard-won dashboard design lessons from a dozen B2B products: hierarchy of attention, progressive disclosure, benchmark context, and when to kill a chart.",
     "slug": "dashboard-design-dozen-lessons",
@@ -3387,6 +3937,29 @@ export const articleIndex: ArticleMeta[] = [
       "operational dashboards",
       "analytics ui design",
       "sparklines"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Empty states are onboarding: designing the blank dashboard",
+    "description": "The blank dashboard is the highest-leverage screen in a SaaS product: three empty-state archetypes, sample-data patterns that teach, and measuring the lift.",
+    "slug": "dashboard-empty-states",
+    "cluster": "product",
+    "tags": [
+      "empty states",
+      "dashboards",
+      "onboarding",
+      "activation",
+      "product design"
+    ],
+    "date": "2025-09-17",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "empty state design",
+      "dashboard onboarding",
+      "saas activation",
+      "zero data ux",
+      "product onboarding"
     ],
     "readingTime": 9
   },
@@ -3460,6 +4033,28 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 8
   },
   {
+    "title": "Feature discovery: design for the day after launch",
+    "description": "Shipping a feature is half the job. Announcement surfaces that respect focus, contextual education, suppression discipline, targeting and how to measure discovery lift.",
+    "slug": "feature-discovery-after-launch",
+    "cluster": "product",
+    "tags": [
+      "feature discovery",
+      "announcements",
+      "onboarding",
+      "changelogs",
+      "product design"
+    ],
+    "date": "2026-06-10",
+    "author": "June Okafor",
+    "keywords": [
+      "feature discovery ux",
+      "product announcements design",
+      "in product education",
+      "what's new modal"
+    ],
+    "readingTime": 8
+  },
+  {
     "title": "Invite flows: the social onboarding of team products",
     "description": "The invite flow is where one user bets their reputation on your product. Role choice at invite time, shareable links vs email, and viral-loop honesty.",
     "slug": "invite-flows-team-products",
@@ -3500,7 +4095,9 @@ export const articleIndex: ArticleMeta[] = [
       "jtbd synthesis",
       "product research"
     ],
-    "readingTime": 9
+    "readingTime": 9,
+    "heroImage": "/images/articles/product/jobs-to-be-done-interviews.jpg",
+    "heroAlt": "Two espresso cups facing each other across a cloth-bound notebook, a brass clip, a mechanical pencil and a fern frond on cream paper."
   },
   {
     "title": "Jobs-to-be-done interviews: our exact script",
@@ -3524,6 +4121,28 @@ export const articleIndex: ArticleMeta[] = [
       "product discovery technique"
     ],
     "readingTime": 9
+  },
+  {
+    "title": "Wizards that don't feel like tax forms",
+    "description": "Multi-step flows get a bad name from bad implementations. Step economics, honest progress, save-and-resume, and the test for when one long page beats five short ones.",
+    "slug": "multi-step-flows-wizards",
+    "cluster": "product",
+    "tags": [
+      "ux design",
+      "multi-step forms",
+      "progressive disclosure",
+      "product design",
+      "conversion"
+    ],
+    "date": "2025-05-19",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "wizard UX",
+      "multi-step forms",
+      "progressive disclosure",
+      "flow design"
+    ],
+    "readingTime": 11
   },
   {
     "title": "Notifications designed like you're not the main character",
@@ -3591,6 +4210,28 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 9
   },
   {
+    "title": "Optimistic UI, with integrity",
+    "description": "Optimistic updates that keep trust: where optimism is safe vs dangerous, rollback UX when the server says no, reconciliation patterns and the latency maths behind it all.",
+    "slug": "optimistic-ui-integrity",
+    "cluster": "product",
+    "tags": [
+      "optimistic ui",
+      "latency metrics",
+      "state management",
+      "error handling",
+      "product engineering"
+    ],
+    "date": "2026-07-02",
+    "author": "Felix Brandt",
+    "keywords": [
+      "optimistic ui patterns",
+      "optimistic updates ux",
+      "rollback ui design",
+      "latency perception product"
+    ],
+    "readingTime": 8
+  },
+  {
     "title": "Permission UX: roles, extras and the politics of access",
     "description": "Role systems are where products quietly rot. RBAC patterns admins actually understand, invitation flows that convert, and audit trails designed as a kindness.",
     "slug": "permission-ux-design",
@@ -3634,6 +4275,28 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 9
   },
   {
+    "title": "Prioritisation frameworks after RICE stops working",
+    "description": "RICE works until the spreadsheet becomes the decision. What comes next: strategy filters, evidence maps, learning-first sequencing, meetings that decide.",
+    "slug": "prioritisation-beyond-rice",
+    "cluster": "product",
+    "tags": [
+      "prioritisation",
+      "product strategy",
+      "roadmaps",
+      "decision-making",
+      "product management"
+    ],
+    "date": "2026-01-19",
+    "author": "Ruby Castellanos",
+    "keywords": [
+      "feature prioritisation",
+      "RICE alternatives",
+      "product roadmap",
+      "decision frameworks"
+    ],
+    "readingTime": 11
+  },
+  {
     "title": "Progressive disclosure for genuinely complex tools",
     "description": "Hiding complexity without hiding power: sensible defaults as strategy, advanced modes, command palettes as the pro lane, and how to measure if disclosure works.",
     "slug": "progressive-disclosure-complexity",
@@ -3651,6 +4314,50 @@ export const articleIndex: ArticleMeta[] = [
       "complex ui design",
       "command palette design",
       "power user features"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "A research repository that gets read after the study ends",
+    "description": "Most research dies in a read-once PDF. Build a repository people actually use: atomic notes, a lasting taxonomy, insight half-lives, traceable decisions.",
+    "slug": "research-repository-that-gets-used",
+    "cluster": "product",
+    "tags": [
+      "ux research",
+      "research ops",
+      "insights",
+      "product design",
+      "knowledge management"
+    ],
+    "date": "2025-10-06",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "research repository",
+      "UX research",
+      "insights management",
+      "research ops"
+    ],
+    "readingTime": 11
+  },
+  {
+    "title": "Roles and permissions: the quiet complexity of team products",
+    "description": "Designing roles that match customer org charts, permission matrices people can read, invitation-time clarity, escalation paths and guarding against the accidental admin.",
+    "slug": "roles-permissions-ux",
+    "cluster": "product",
+    "tags": [
+      "roles and permissions",
+      "rbac",
+      "team products",
+      "enterprise ux",
+      "product design"
+    ],
+    "date": "2026-08-27",
+    "author": "Mara Ellison",
+    "keywords": [
+      "roles permissions ux",
+      "rbac design",
+      "admin permissions interface",
+      "team roles product design"
     ],
     "readingTime": 9
   },
@@ -3674,6 +4381,51 @@ export const articleIndex: ArticleMeta[] = [
       "no results page"
     ],
     "readingTime": 9
+  },
+  {
+    "title": "Settings screens grow up: running the product surface nobody loves",
+    "description": "Settings rot quietly — accreted toggles, orphaned features, dangerous defaults. A rubric for what earns a setting, and the quarterly audit that keeps it honest.",
+    "slug": "settings-design-adult",
+    "cluster": "product",
+    "tags": [
+      "settings",
+      "information architecture",
+      "product governance",
+      "ux audit",
+      "defaults"
+    ],
+    "date": "2025-04-22",
+    "author": "June Okafor",
+    "keywords": [
+      "settings ux",
+      "product settings information architecture",
+      "saas settings design",
+      "settings audit",
+      "dangerous defaults"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Settings: the screen your product is judged on at month three",
+    "description": "Nobody evaluates settings during the trial. By month three they're how users judge your product. Defaults as decisions, dangerous-action design, and settings that search well.",
+    "slug": "settings-design-neglected-ux",
+    "cluster": "product",
+    "tags": [
+      "ux design",
+      "settings",
+      "product design",
+      "defaults",
+      "information architecture"
+    ],
+    "date": "2025-08-11",
+    "author": "June Okafor",
+    "keywords": [
+      "settings UX",
+      "preferences design",
+      "product settings",
+      "default design"
+    ],
+    "readingTime": 11
   },
   {
     "title": "Settings IA: where features go to be findable",
@@ -4251,7 +5003,7 @@ export const articleIndex: ArticleMeta[] = [
   },
   {
     "title": "A photography style without a photoshoot",
-    "description": "No budget for a shoot? Crops, duotones, grain and a treatment matrix can make any source image look on-brand. How we art-direct photography for brands that can't afford it.",
+    "description": "No budget for a shoot? Crops, duotones, grain and a treatment matrix make any source image look on-brand. How we art-direct cheap photography.",
     "slug": "photography-style-without-a-photoshoot",
     "cluster": "web-design",
     "tags": [
@@ -4405,6 +5157,45 @@ export const articleIndex: ArticleMeta[] = [
 ]
 
 export const caseIndex: CaseStudyMeta[] = [
+  {
+    "title": "Arlo & Sons: a tradies marketplace that earned trust slowly",
+    "description": "How we rebuilt a two-sided trades marketplace around verified work: comparable quotes, review integrity, trade-side dashboards and onboarding that favours patience.",
+    "slug": "arlo-and-sons-tradies-marketplace",
+    "cluster": "work",
+    "tags": [
+      "Marketplace",
+      "Product design",
+      "Trust & safety",
+      "Two-sided platforms"
+    ],
+    "date": "2025-04-10",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "marketplace case study",
+      "trust design",
+      "two-sided marketplace",
+      "reviews ux",
+      "tradie marketplace"
+    ],
+    "readingTime": 8,
+    "client": "Arlo & Sons",
+    "industry": "SaaS",
+    "services": [
+      "Product design & engineering",
+      "Growth"
+    ],
+    "year": 2024,
+    "stack": [
+      "React",
+      "TypeScript",
+      "Node",
+      "Postgres",
+      "Stripe",
+      "PostHog"
+    ],
+    "heroImage": "/images/work/arlo-and-sons-tradies-marketplace.jpg",
+    "heroAlt": "A brass spirit level, folded paper plans and two work pencils arranged on cream paper with a fern sprig."
+  },
   {
     "title": "Brightmarsh: onboarding course-takers without the confetti",
     "description": "Onboarding for a short-course platform that trades confetti for momentum: activation up 41% with honest progress mechanics and lifecycle email that pairs.",
@@ -4724,6 +5515,45 @@ export const caseIndex: CaseStudyMeta[] = [
     "heroAlt": "Editorial still-life: vinyl records in blank green and clay sleeves beside a brass tonearm on cream paper — the Holloway Records case-study hero."
   },
   {
+    "title": "Kite & Anchor: insurance onboarding people actually finish",
+    "description": "A boutique insurtech's quote flow was losing four in five visitors. Progressive disclosure, honest defaults and plain-English policy summaries fixed the finish line.",
+    "slug": "kite-and-anchor-insurtech",
+    "cluster": "work",
+    "tags": [
+      "Fintech",
+      "Onboarding",
+      "Forms",
+      "Progressive disclosure"
+    ],
+    "date": "2025-06-05",
+    "author": "June Okafor",
+    "keywords": [
+      "insurance ux case study",
+      "onboarding flow",
+      "progressive disclosure",
+      "fintech forms",
+      "quote flow design"
+    ],
+    "readingTime": 8,
+    "client": "Kite & Anchor",
+    "industry": "Fintech",
+    "services": [
+      "Product design & engineering",
+      "Websites"
+    ],
+    "year": 2025,
+    "stack": [
+      "React",
+      "TypeScript",
+      "Node",
+      "Postgres",
+      "Sanity",
+      "PostHog"
+    ],
+    "heroImage": "/images/work/kite-and-anchor-insurtech.jpg",
+    "heroAlt": "A paper kite folded from a cream policy document, a brass anchor paperweight and an ink pen on warm paper."
+  },
+  {
     "title": "Meridian Climate: making council emissions data impossible to ignore",
     "description": "A scrollytelling climate data explorer that turned council emissions spreadsheets into a story residents actually read — and acted on.",
     "slug": "meridian-climate-data-explorer",
@@ -4806,7 +5636,7 @@ export const caseIndex: CaseStudyMeta[] = [
   },
   {
     "title": "Osprey Outdoor: the pack configurator that cut support tickets",
-    "description": "How a WebGL pack configurator — with a hard 3D performance budget and a full 2D fallback — cut sizing tickets and returns for an outdoor gear brand (fictional concept work).",
+    "description": "How a WebGL pack configurator with a hard 3D performance budget and a full 2D fallback cut sizing tickets and returns for an outdoor gear brand.",
     "slug": "osprey-outdoor-configurator-launch",
     "cluster": "work",
     "tags": [
@@ -5081,6 +5911,48 @@ export const caseIndex: CaseStudyMeta[] = [
       "Plausible"
     ],
     "heroImage": "/images/work/wattle-and-daub-reservations.jpg",
-    "heroAlt": "Editorial still-life: ceramic plates, brass cutlery and yellow wattle blossoms on a linen table — the Wattle & Daub case-study hero."
+    "heroAlt": "Editorial still-life: ceramic plates, brass cutlery and yellow wattle blossoms on a linen table — the Wattle & Daub case-study hero.",
+    "demo": "wattle-and-daub-reserve"
+  },
+  {
+    "title": "Willow & Wren: the bookshop site that reads like a bookseller",
+    "description": "An independent Tasmanian bookshop went online without going generic: shelf-talkers as a content model, honest stock states and a newsletter that outsells the algorithm.",
+    "slug": "willow-and-wren-bookshop",
+    "cluster": "work",
+    "tags": [
+      "Retail",
+      "Content design",
+      "E-commerce",
+      "Editorial"
+    ],
+    "date": "2025-09-18",
+    "author": "Leonie Marsh",
+    "keywords": [
+      "bookshop website case study",
+      "independent retail",
+      "content model design",
+      "local retail",
+      "editorial e-commerce"
+    ],
+    "readingTime": 8,
+    "client": "Willow & Wren",
+    "industry": "Retail & e-commerce",
+    "services": [
+      "Websites",
+      "E-commerce",
+      "Brand & identity"
+    ],
+    "year": 2025,
+    "stack": [
+      "React",
+      "TypeScript",
+      "Shopify Hydrogen",
+      "Sanity",
+      "Klaviyo"
+    ],
+    "heroImage": "/images/work/willow-and-wren-bookshop.jpg",
+    "heroAlt": "A small stack of clothbound books with kraft-paper shelf-talker cards and a brass bookmark on cream paper."
   }
 ]
+
+export const workImages: string[] = ["brightmarsh-onboarding","copperline-community-bank","fern-and-forage-florist","fernleigh-cellar-club","fernleigh-wines-dtc-storefront","glade-skincare-ingredient-honesty","hearthbrew-brand-system","hearthbrew-subscription-club","holloway-player","holloway-records-label-site","meridian-climate-data-explorer","northwind-ledger-budget","northwind-ledger-dashboard-rebuild","osprey-outdoor-configurator-launch","postcards-museum-archive","pylon-care-assistant","pylon-health-booking","pylon-health-telehealth-flow","signal-and-noise-podcast-network","sundial-itinerary-builder","sundial-travel-booking","tallow-and-co-providore","tallow-seat-map","wattle-and-daub-reservations","wattle-and-daub-reserve"]

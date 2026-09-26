@@ -3092,8 +3092,10 @@
     "climate tech marketing",
     "conversion rate optimisation"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790387284.874201
   },
   {
    "kind": "article",
@@ -3107,8 +3109,10 @@
     "headless cms case study",
     "editorial platform"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790387284.874202
   },
   {
    "kind": "article",
@@ -3122,8 +3126,10 @@
     "reservations ux",
     "hospitality case study"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790387284.874202
   },
   {
    "kind": "article",
@@ -3137,8 +3143,10 @@
     "bulk ordering",
     "industrial supplier digital"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790387284.874202
   },
   {
    "kind": "article",

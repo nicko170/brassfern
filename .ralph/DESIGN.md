@@ -110,7 +110,15 @@ Brassfern look into a demo.
 - **Lead stories** (`.feature`): editorial lead card on /journal + cluster
   hubs (page 1 only) — 2px ink top rule, text col + `.feature__media` (16:10,
   hero image or themeFor tile), mono meta row; featured = latest article with
-  heroImage, excluded from the paginated grid.
+  heroImage, excluded from the paginated grid. Also used on /resources.
+- **Case-study close-outs** (iter 6): `.case-quote` (hairline-bracketed big
+  display quote, only when a clients.ts testimonial matches the study),
+  `.squad` (derived team strip — author + service-matched seniors + producer
+  via `src/lib/squad.ts`, small Portrait links to /team/:slug), `.case-gallery`
+  (hero still + demo showcase shot when the `workImages` manifest has the demo
+  slug; hides itself otherwise).
+- **Resource index rows** (`.resource-rows`): compact numbered hairline rows
+  (mono num / title / date+time / arrow), meta column hides under 640px.
 
 ## Content authoring rules (enforced by build-content-index.mjs)
 
