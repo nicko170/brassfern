@@ -12,7 +12,7 @@ readingTime: 8
 
 Somewhere in your store right now is a customer holding a box they want to send back. They're not angry yet. They're about to spend twenty minutes hunting for an order number, reading a policy page written by legal for legal, and composing an email to a support address staffed on Tuesdays and Thursdays. By the time the refund lands, they won't be angry either — they'll just be gone.
 
-Returns are the only flow in commerce where a paying customer must navigate your product *while holding evidence your product was wrong for them*. And the industry average treatment of that moment is a PDF and a prayer. We've written elsewhere about the [retention economics](/journal/ecommerce/returns-as-retention) and the [support-load angle](/journal/ecommerce/returns-ux-design); this piece is about the build itself — treating the returns portal as a product surface with the same design rigour as your checkout.
+Returns are the only flow in commerce where a paying customer must navigate your product *while holding evidence your product was wrong for them*. And the industry average treatment of that moment is a PDF and a prayer. We've written elsewhere about the [retention economics](/journal/ecommerce/returns-as-retention) and the support-load angle; this piece is about the build itself — treating the returns portal as a product surface with the same design rigour as your checkout.
 
 ## The initiation flow is the product
 
@@ -28,7 +28,7 @@ The first design decision is whether a customer can start a return without talki
 
 The dropdown after item selection looks like housekeeping. It's actually your store's only structured channel for "why the store was wrong", and it feeds the [merchandising loop](/journal/ecommerce/merchandising-digital-shelves) if you design it like a data product.
 
-**Customer-language options, analytics-grade taxonomy.** The customer sees "Didn't fit — too small"; the warehouse sees `fit_small`; your size guide team sees a weekly rollup saying the Harbour Dress runs 28% small-flagged, which is a [size guide fix](/journal/ecommerce/size-guides-fit-confidence) and possibly a buying error, not a customer error. Keep the visible list short (six to eight options tops) and map many reasons to one internal code below the surface.
+**Customer-language options, analytics-grade taxonomy.** The customer sees "Didn't fit — too small"; the warehouse sees `fit_small`; your size guide team sees a weekly rollup saying the Harbour Dress runs 28% small-flagged, which is a size-guide fix and possibly a buying error, not a customer error. Keep the visible list short (six to eight options tops) and map many reasons to one internal code below the surface.
 
 **Branching, not interrogation.** "Wrong size" unlocks *which size they need* — which enables one-tap exchanges. "Item not as expected" unlocks an optional "what was different?" free text and a photo upload. Photos are gold for "arrived damaged" (instant evidence, no arguing) and for "not as pictured" (they become a photography backlog). Cap the branching at one follow-up; a return is already a favour they're doing you.
 

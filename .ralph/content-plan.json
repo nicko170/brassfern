@@ -8027,8 +8027,10 @@
     "conversion audit",
     "marketing page review"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790413817.754333
   },
   {
    "kind": "article",
@@ -8043,8 +8045,10 @@
     "doorway pages",
     "studio SEO"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790413817.754334
   },
   {
    "kind": "article",
@@ -8059,8 +8063,10 @@
     "GA4 content metrics",
     "editorial analytics"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790413817.754335
   },
   {
    "kind": "article",
@@ -8075,8 +8081,10 @@
     "privacy measurement",
     "analytics strategy"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790413817.754335
   },
   {
    "kind": "article",
@@ -8091,8 +8099,10 @@
     "brand recall marketing",
     "search demand"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790413817.8708029
   },
   {
    "kind": "article",
@@ -8107,8 +8117,10 @@
     "newsletter content",
     "content operations"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790413817.870804
   },
   {
    "kind": "article",
@@ -8821,10 +8833,11 @@
    "cluster": "demos",
    "intent": "A kanban project board for fictional client 'Switchyard' (a rail-ops SaaS scheduling product). Art direction: signal-box — cream paper, ink-black type, safety-orange reserved for WIP-limit breaches only, telegraph-pole thin rules, tabular mono for card IDs (SW-1042). Features: 4-column board with pointer-based drag-and-drop AND full keyboard move (arrow keys via roving tabindex, announced via aria-live), WIP limits with honest warnings, swimlane toggle (priority), quick-filter by assignee/label, card drawer with checklist + activity log, column rename, add card at focus point, undo toast for deletes, all persisted to localStorage with a 'reset demo data' link. Avatars are geometric initials, never photoreal. Works at 375px (columns become a horizontal snap-scroll with progress dots). React + TypeScript only.",
    "keywords": [],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "demo3",
-   "claimed_at": 1790412212.3118021
+   "claimed_at": 1790412212.3118021,
+   "done_at": "2026-09-26T19:15:45"
   },
   {
    "kind": "demo",
@@ -9022,10 +9035,11 @@
     "exchanges",
     "retention"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790412987.2994509
+   "claimed_at": 1790412987.2994509,
+   "done_at": "2026-09-26T19:14:32"
   },
   {
    "kind": "article",
@@ -9040,10 +9054,11 @@
     "trust",
     "schema.org"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790412987.2994518
+   "claimed_at": 1790412987.2994518,
+   "done_at": "2026-09-26T19:15:09"
   },
   {
    "kind": "article",
@@ -9058,10 +9073,11 @@
     "AOV",
     "incrementality"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790412987.2994518
+   "claimed_at": 1790412987.2994518,
+   "done_at": "2026-09-26T19:15:10"
   },
   {
    "kind": "article",
@@ -9076,10 +9092,11 @@
     "geo",
     "pricing UX"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790412987.2994518
+   "claimed_at": 1790412987.2994518,
+   "done_at": "2026-09-26T19:15:11"
   },
   {
    "kind": "article",
@@ -9568,8 +9585,10 @@
     "SaaS growth",
     "conversion"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790413817.870804
   },
   {
    "kind": "article",
@@ -9584,8 +9603,10 @@
     "onboarding",
     "deliverability"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790413817.870804
   },
   {
    "kind": "article",
@@ -11450,6 +11471,22 @@
    "worker": "writer4",
    "claimed_at": 1790412444.721596,
    "done_at": "2026-09-26T18:56:02"
+  },
+  {
+   "kind": "article",
+   "slug": "ledgerline-pricing-page-rebuild",
+   "title": "Ledgerline: a pricing page that argues its case",
+   "cluster": "work",
+   "intent": "Case study for the LIVE demo ledgerline-pricing-calculator (wire `demo: ledgerline-pricing-calculator` frontmatter; the demo meta already points its caseStudy here as ledgerline-pricing-page-rebuild). Ledgerline is a fictional expense-management SaaS — deliberately distinct from the fictional Ledgerline accounting & advisory firm in ledgerline-brand-and-site-refresh; one sentence early in the study should make that distinction gracefully (same fictional name coincidence, different company). Story: pricing page with four tiers and a calculator nobody trusted; Brassfern rebuilt pricing around metered value, an interactive tier calculator a buyer can defend internally, honest usage-based comparisons, and annual/monthly toggling without dark patterns. Include Challenge / Approach / Outcome with illustrative metric table, stack (React, Vite, edge functions, Postgres), services (Websites, Growth, Product design & engineering), industry SaaS, 4–6 internal links to real routes (e.g. /lab/ledgerline-pricing-calculator, /services/growth, /journal/growth, /work/larklight-saas-marketing-site, /pricing).",
+   "keywords": [
+    "saas pricing page case study",
+    "pricing calculator",
+    "conversion rate optimisation",
+    "pricing tiers",
+    "saas website"
+   ],
+   "status": "planned",
+   "added_by": "builder"
   }
  ]
 }
