@@ -63,12 +63,24 @@ export default function WorkCase() {
 
         {demo && (
           <div className="container" style={{ marginTop: 'var(--space-6)' }}>
-            <Link
-              to={`/lab/${demo.slug}`}
-              className="btn btn--brass"
-            >
-              Try the live demo: {demo.title} <span className="arrow" aria-hidden>→</span>
+            <Link to={`/lab/${demo.slug}`} className="demo-strip">
+              <span className="demo-strip__copy">
+                <span className="overline overline--night">Touch the work — live demo</span>
+                <span className="demo-strip__title">{demo.title}</span>
+                <span className="demo-strip__meta">
+                  {demo.client} · {demo.tags.slice(0, 3).join(' · ')}
+                </span>
+              </span>
+              <span className="demo-strip__art" aria-hidden>
+                <span>{demo.client.slice(0, 2).toUpperCase()}</span>
+              </span>
+              <span className="demo-strip__cta">
+                Open the demo <span className="arrow" aria-hidden>→</span>
+              </span>
             </Link>
+            <p className="mono muted" style={{ marginTop: 'var(--space-3)', fontSize: 'var(--fs-micro)', letterSpacing: '0.12em', textTransform: 'uppercase' }}>
+              This case study ships with a working mini-product — mocked data, real craft.
+            </p>
           </div>
         )}
 

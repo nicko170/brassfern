@@ -5,8 +5,8 @@
 | Route | Page | Data source |
 | --- | --- | --- |
 | `/` | Home (generative fern hero) | clients, services, testimonials, latest content |
-| `/work` | Case-study index (service + industry filters) | `src/content/work/*.md` |
-| `/work/:slug` | Case study | same; `demo` field links to lab |
+| `/work` | Case-study index (service + industry filters, URL-synced `?service=&industry=` with per-option counts) | `src/content/work/*.md` |
+| `/work/:slug` | Case study + `.demo-strip` band when a demo exists | same; `demo` field links to lab |
 | `/lab` | Demo index | `src/demos/*/meta.ts` (auto-discovered) |
 | `/lab/:slug` | Demo full-screen + overlay bar (noindex) | `src/demos/<slug>/index.tsx` (lazy chunk) |
 | `/services`, `/services/:slug` (6) | Service pages w/ process, deliverables, FAQ+JSON-LD | `src/data/services.ts` |
@@ -17,7 +17,7 @@
 | `/journal/:cluster` | Cluster hubs (8 clusters) | generated index |
 | `/journal/tag/:tag` | Tag pages (all tags prerendered) | generated index |
 | `/journal/:cluster/:slug` | Article | `src/content/articles/<cluster>/<slug>.md` |
-| `/search` (?q=) | Client-side search over all content | metas |
+| `/search` (?q=) | Live-debounced client search; empty state shows popular tags + latest | metas |
 | `/resources` | Playbooks hub | playbooks cluster |
 | `/contact` | Brief form (client validation + success state) | — |
 | `/press`, `/legal/privacy`, `/legal/terms` | Static | — |
@@ -80,3 +80,18 @@
 - `npm run dev` · `npm run build` (full, GHP-equivalent) · `npm run typecheck`
   (fast check for workers: regenerating content index first is wise:
   `node scripts/build-content-index.mjs && npm run typecheck`).
+
+## Route code-splitting (builder note)
+
+- Every page is a lazy chunk via `src/lib/lazyPage.ts` (`lazyPage`/`lazyNamed`,
+  which add `.preload()`). `App.tsx` exports `preloadAllPages()`; the prerender
+  awaits it before `renderToString`. It nudges React's internal lazy payloads
+  (`_init`/`_payload`) — awaiting the *thrown thenable* then re-nudging —
+  because React 18 SSR never resolves Suspense on its own. Don't remove the
+  double-nudge: without it the first-rendered route of each page type ships
+  skeleton HTML. Verify with: `grep -r 'class="skel"' dist --include=index.html
+  | grep -v /lab/` (should be empty).
+- Client hydration is progressive: prerendered HTML stays visible while each
+  route chunk arrives; Suspense fallback is the `.skel` skeleton.
+- Entry chunk ≈ 63 KB gzip (react-dom + router + shell + content metas);
+  pages 5–40 KB; demos stay per-demo (three.js only on its demo route).

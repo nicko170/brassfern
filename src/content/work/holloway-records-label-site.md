@@ -13,6 +13,8 @@ industry: Media
 services: ["Brand & identity", "Websites", "E-commerce"]
 year: 2024
 stack: ["Astro", "TypeScript", "Shopify Hydrogen", "Sanity", "Web Audio API", "Stripe"]
+heroImage: /images/work/holloway-records-label-site.jpg
+heroAlt: "Editorial still-life: vinyl records in blank green and clay sleeves beside a brass tonearm on cream paper — the Holloway Records case-study hero."
 ---
 
 Holloway Records is a fictional Sydney independent label with eleven artists, a catalogue of sixty-odd releases, and the standard financial arrangement of indie music: streaming pays for coffee, vinyl pays the rent. When they came to Brassfern, their site was a link-in-bio graveyard — a grid of streaming-service buttons that dutifully sent every visitor's attention (and margin) to platforms Holloway didn't own.

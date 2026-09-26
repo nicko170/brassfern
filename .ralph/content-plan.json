@@ -1706,8 +1706,10 @@
     "hospitality seo",
     "local search"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790382255.930583
   },
   {
    "kind": "article",
@@ -1721,8 +1723,10 @@
     "content workflow",
     "content team process"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790382255.930584
   },
   {
    "kind": "article",
@@ -2624,8 +2628,10 @@
     "verbal identity",
     "trademark screening"
    ],
-   "status": "planned",
-   "added_by": "writer3"
+   "status": "claimed",
+   "added_by": "writer3",
+   "worker": "writer4",
+   "claimed_at": 1790382255.930584
   },
   {
    "kind": "article",
@@ -2639,8 +2645,10 @@
     "responsive logos",
     "brand system"
    ],
-   "status": "planned",
-   "added_by": "writer3"
+   "status": "claimed",
+   "added_by": "writer3",
+   "worker": "writer4",
+   "claimed_at": 1790382255.930584
   },
   {
    "kind": "article",

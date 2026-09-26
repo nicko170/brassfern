@@ -30,6 +30,8 @@ stack:
   - Postgres
   - Sanity
   - Remix
+heroImage: /images/work/sundial-travel-booking.jpg
+heroAlt: "Editorial still-life: brass compass, folded paper maps and a pressed fern on cream paper — the Sundial case-study hero."
 ---
 
 Sundial Travel sells the opposite of a package holiday. Their small Sydney team plans slow journeys through Europe and Japan — weeks on rail passes, family-run guesthouses, dinners booked by phone because the restaurant has no website. By 2024 they had a loyal clientele, a five-week waiting list, and a website that looked like a discount airfare aggregator.

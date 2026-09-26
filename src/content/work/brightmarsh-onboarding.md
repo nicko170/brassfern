@@ -13,6 +13,8 @@ industry: Education
 services: ["Product design & engineering", "Growth"]
 year: 2025
 stack: ["React", "TypeScript", "Node", "Postgres", "Resend", "PostHog"]
+heroImage: /images/work/brightmarsh-onboarding.jpg
+heroAlt: "Editorial paper-craft illustration: a staircase of cream cards with brass-foiled edges ascending — the Brightmarsh onboarding case-study hero."
 ---
 
 Brightmarsh sells short professional courses — four to eight hours of material, priced for individuals rather than L&D departments. Students buy the way they buy books: with enthusiasm at 9pm on a Sunday and good intentions about "next weekend". When we started working together, 58% of buyers never finished the first module. The product was excellent; the first hour of it was a waiting room.

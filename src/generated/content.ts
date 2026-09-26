@@ -3,6 +3,376 @@ import type { ArticleMeta, CaseStudyMeta } from '../lib/types'
 
 export const articleIndex: ArticleMeta[] = [
   {
+    "title": "Agent UX: designing for delegation, not magic",
+    "description": "Agentic features fail when they promise magic. The interface patterns we use instead: scope setting, visible progress, checkpoints, undo and earned autonomy.",
+    "slug": "agent-ux-patterns",
+    "cluster": "ai",
+    "tags": [
+      "ai ux",
+      "agents",
+      "interaction design",
+      "product design",
+      "human-ai interaction"
+    ],
+    "date": "2026-01-20",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "ai agent ux",
+      "agent interface design",
+      "human ai interaction",
+      "agentic design patterns",
+      "ai autonomy"
+    ],
+    "readingTime": 9,
+    "heroImage": "/images/articles/ai/agent-ux-patterns.jpg",
+    "heroAlt": "Editorial illustration of a machined-brass ladder of four ascending steps on cream paper, connected by fine fern-green hairlines like a letterpress circuit diagram."
+  },
+  {
+    "title": "Onboarding users to an AI assistant",
+    "description": "First-run design for copilots: capability discovery without homework, starter prompts that teach, mental-model calibration, and measuring adoption honestly.",
+    "slug": "ai-assistant-onboarding",
+    "cluster": "ai",
+    "tags": [
+      "ai",
+      "onboarding",
+      "product design",
+      "copilot ux",
+      "adoption"
+    ],
+    "date": "2026-06-04",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "ai onboarding ux",
+      "copilot onboarding",
+      "ai feature adoption",
+      "assistant first run"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Keeping AI output on-brand: voice guardrails that hold",
+    "description": "Brand voice survives generation only if it's engineered: voice charts as prompts, example banks, style evals, review lanes, and a graceful drift fallback.",
+    "slug": "ai-brand-voice-guardrails",
+    "cluster": "ai",
+    "tags": [
+      "brand voice",
+      "ai writing",
+      "content guardrails",
+      "tone of voice",
+      "llm content"
+    ],
+    "date": "2025-06-05",
+    "author": "Leonie Marsh",
+    "keywords": [
+      "ai brand voice",
+      "llm tone of voice",
+      "ai content guardrails",
+      "on-brand ai writing",
+      "brand voice system prompt"
+    ],
+    "readingTime": 11
+  },
+  {
+    "title": "Analytics for AI features: what to measure",
+    "description": "Chat volume tells you nothing. The instrumentation stack we use for AI features: acceptance, correction signals, task completion, cost-quality overlays, weekly review.",
+    "slug": "ai-feature-analytics",
+    "cluster": "ai",
+    "tags": [
+      "analytics",
+      "ai metrics",
+      "instrumentation",
+      "product measurement",
+      "quality review"
+    ],
+    "date": "2026-07-09",
+    "author": "Priya Nair",
+    "keywords": [
+      "ai analytics",
+      "llm metrics",
+      "ai feature instrumentation",
+      "copilot metrics"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "Designing AI features users can trust",
+    "description": "Trust is an interface property, not a policy page. Citations, confidence, correction affordances and honest capability copy — how we design AI people rely on.",
+    "slug": "ai-trust-design",
+    "cluster": "ai",
+    "tags": [
+      "ai ux",
+      "trust",
+      "transparency",
+      "interface design",
+      "responsible ai"
+    ],
+    "date": "2026-06-18",
+    "author": "Dev Khatri",
+    "keywords": [
+      "ai trust design",
+      "responsible ai ux",
+      "ai transparency design",
+      "confidence ui"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "Fine-tuning vs RAG vs prompt: a decision guide",
+    "description": "Prompt, retrieve or fine-tune? The decision tree we run with clients, with real cost curves, data requirements, iteration speed and the maintenance burden nobody mentions.",
+    "slug": "fine-tuning-vs-rag",
+    "cluster": "ai",
+    "tags": [
+      "llm architecture",
+      "rag",
+      "fine-tuning",
+      "prompt engineering",
+      "technical strategy"
+    ],
+    "date": "2026-05-07",
+    "author": "Tomás Reyes",
+    "keywords": [
+      "fine tuning vs rag",
+      "llm architecture decisions",
+      "when to fine tune",
+      "prompt engineering strategy"
+    ],
+    "readingTime": 11
+  },
+  {
+    "title": "Cost engineering for LLM features",
+    "description": "Unit economics for AI features: model routing, caching layers, context trimming, batch APIs, and dashboards that translate tokens into dollars per user.",
+    "slug": "llm-cost-engineering",
+    "cluster": "ai",
+    "tags": [
+      "llm costs",
+      "unit economics",
+      "model routing",
+      "caching",
+      "ai infrastructure"
+    ],
+    "date": "2025-04-24",
+    "author": "Felix Brandt",
+    "keywords": [
+      "llm cost optimization",
+      "ai unit economics",
+      "model routing",
+      "llm caching",
+      "context trimming",
+      "batch api",
+      "ai feature costs"
+    ],
+    "readingTime": 12
+  },
+  {
+    "title": "Evals before features: how we measure LLM quality",
+    "description": "How we build evaluation harnesses for LLM features: golden datasets, rubric graders, human review lanes and regression tracking that stakeholders can read.",
+    "slug": "llm-evals-framework",
+    "cluster": "ai",
+    "tags": [
+      "llm evaluation",
+      "ai quality",
+      "golden datasets",
+      "llm ops",
+      "ai engineering"
+    ],
+    "date": "2025-10-07",
+    "author": "Dev Khatri",
+    "keywords": [
+      "llm evaluation",
+      "ai evals",
+      "golden datasets",
+      "llm quality metrics",
+      "llm as judge"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Multimodal interfaces: beyond the chat box",
+    "description": "When chat is the wrong interface: designing AI products with the right modality — voice, image, structured output, inline suggestions — and how to choose.",
+    "slug": "multimodal-ux-design",
+    "cluster": "ai",
+    "tags": [
+      "ai",
+      "interaction design",
+      "voice ui",
+      "interface patterns",
+      "multimodal"
+    ],
+    "date": "2026-07-15",
+    "author": "Dev Khatri",
+    "keywords": [
+      "multimodal ai ux",
+      "voice ui design",
+      "ai interface patterns",
+      "beyond chat ui"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Prompt libraries are a design system too",
+    "description": "Prompts scattered through a codebase rot like untracked CSS. How we build prompt libraries: structure, versioning, test coverage, and a shared vocabulary.",
+    "slug": "prompt-design-systems",
+    "cluster": "ai",
+    "tags": [
+      "prompt engineering",
+      "design systems of prompts",
+      "ai infrastructure",
+      "versioning",
+      "evals"
+    ],
+    "date": "2025-07-18",
+    "author": "Dev Khatri",
+    "keywords": [
+      "prompt engineering systems",
+      "prompt library",
+      "prompt versioning",
+      "system prompts design",
+      "prompt testing",
+      "ai design systems"
+    ],
+    "readingTime": 12
+  },
+  {
+    "title": "RAG pitfalls we hit so you don't have to",
+    "description": "Retrieval in production humbles everyone. The chunking trade-offs, citation bugs, stale knowledge and eval failures that taught us how RAG actually breaks.",
+    "slug": "rag-pitfalls-production",
+    "cluster": "ai",
+    "tags": [
+      "rag",
+      "retrieval",
+      "vector search",
+      "llm",
+      "ai engineering"
+    ],
+    "date": "2025-06-24",
+    "author": "Felix Brandt",
+    "keywords": [
+      "rag pitfalls",
+      "retrieval augmented generation",
+      "vector search production",
+      "rag evaluation",
+      "chunking strategies"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Our responsible-AI review, in the open",
+    "description": "The full review we run before any AI feature ships: risk taxonomy, red-team scripts, disclosure patterns, data-handling checklists — and how we say no to features.",
+    "slug": "responsible-ai-review",
+    "cluster": "ai",
+    "tags": [
+      "responsible ai",
+      "ai governance",
+      "risk assessment",
+      "ethics",
+      "process"
+    ],
+    "date": "2026-08-13",
+    "author": "Dev Khatri",
+    "keywords": [
+      "responsible ai process",
+      "ai risk assessment",
+      "ai ethics design",
+      "ai governance"
+    ],
+    "readingTime": 11,
+    "heroImage": "/images/articles/ai/responsible-ai-review.jpg",
+    "heroAlt": "Overhead still life of a brass inspection stamp, loupe and paperweight beside hand-lettered fern-green specimen cards and a pressed fern on cream paper."
+  },
+  {
+    "title": "Shipping LLM features: a production checklist",
+    "description": "The pre-launch checklist we run before any LLM feature ships: evals, traces, cost ceilings, fallbacks, feedback loops and the metrics that catch quality drift.",
+    "slug": "shipping-llm-features",
+    "cluster": "ai",
+    "tags": [
+      "llm",
+      "production",
+      "observability",
+      "ai engineering",
+      "launch checklist"
+    ],
+    "date": "2026-04-14",
+    "author": "Dev Khatri",
+    "keywords": [
+      "llm features production",
+      "ai product checklist",
+      "llm observability",
+      "shipping ai features",
+      "llm monitoring"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Streaming UX: making latency feel like thought",
+    "description": "Token streaming is a design material, not a loading state. Skeleton-to-stream choreography, citation timing, honest cancellation, and perceived-performance numbers.",
+    "slug": "streaming-ux-patterns",
+    "cluster": "ai",
+    "tags": [
+      "ai ux",
+      "streaming interfaces",
+      "perceived performance",
+      "chat design",
+      "latency"
+    ],
+    "date": "2025-09-11",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "streaming ui design",
+      "llm chat ux",
+      "token streaming interface",
+      "ai latency design",
+      "perceived performance",
+      "chat cancellation"
+    ],
+    "readingTime": 11,
+    "heroImage": "/images/articles/ai/streaming-ux-patterns.jpg",
+    "heroAlt": "Abstract editorial illustration of a dense column of fern-green glyphs dissolving into spaced brass dashes across a cream paper background — a sentence arriving token by token."
+  },
+  {
+    "title": "Brand architecture decisions: house, endorsed, or let go",
+    "description": "Branded house, endorsed brands or house of brands — how to choose, what migration costs, the sub-brand rules that prevent chaos, and how acquisitions change the answer.",
+    "slug": "brand-architecture-decisions",
+    "cluster": "brand",
+    "tags": [
+      "brand architecture",
+      "brand strategy",
+      "sub-brands",
+      "brand portfolio",
+      "mergers"
+    ],
+    "date": "2025-02-18",
+    "author": "June Okafor",
+    "keywords": [
+      "brand architecture",
+      "branded house vs house of brands",
+      "sub brand strategy",
+      "brand portfolio"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "Kill the brand PDF: living guidelines that get used",
+    "description": "Guideline PDFs rot in shared drives while brands drift. What actually replaces them: living guideline sites with tokens, patterns, versioning and honest governance.",
+    "slug": "brand-guidelines-living",
+    "cluster": "brand",
+    "tags": [
+      "brand guidelines",
+      "brand governance",
+      "design tokens",
+      "brand portal",
+      "identity systems"
+    ],
+    "date": "2025-06-11",
+    "author": "Mara Ellison",
+    "keywords": [
+      "brand guidelines website",
+      "living brand guidelines",
+      "brand portal",
+      "brand governance"
+    ],
+    "readingTime": 8
+  },
+  {
     "title": "Voice charts: making tone teachable",
     "description": "Adjective lists don't teach tone; charts do. How we build voice guidelines that survive handover: axis sliders, rewrite tables, error-state voice and real-copy audits.",
     "slug": "brand-voice-charts",
@@ -23,6 +393,30 @@ export const articleIndex: ArticleMeta[] = [
       "copy style guide"
     ],
     "readingTime": 10
+  },
+  {
+    "title": "Illustration systems that don't go stale",
+    "description": "One-off illustration ages like milk. Here's how we build illustration languages as systems: primitives, composition rules, generators and maintenance models that survive.",
+    "slug": "illustration-systems",
+    "cluster": "brand",
+    "tags": [
+      "illustration",
+      "brand identity",
+      "visual language",
+      "design systems",
+      "commissioning"
+    ],
+    "date": "2026-02-12",
+    "author": "June Okafor",
+    "keywords": [
+      "illustration system design",
+      "brand illustration",
+      "illustration guidelines",
+      "visual language"
+    ],
+    "readingTime": 12,
+    "heroImage": "/images/articles/brand/illustration-systems.jpg",
+    "heroAlt": "An engraved-style composition of geometric botanical forms — leaves, arcs and seeds — assembled from a small kit of repeated shapes on warm paper."
   },
   {
     "title": "Design logo systems, not logos",
@@ -50,6 +444,28 @@ export const articleIndex: ArticleMeta[] = [
     "heroAlt": "Overhead flat lay of letterpress-printed identity specimens: cardstock tiles sized from large to tiny, each bearing an abstract geometric mark in fern green or brass foil on cream paper."
   },
   {
+    "title": "Measuring brand without voodoo",
+    "description": "Brand measurement for people allergic to brand science: aided recall, share of search, consistency audits and the quarterly one-pager leadership actually reads.",
+    "slug": "measuring-brand-health",
+    "cluster": "brand",
+    "tags": [
+      "brand metrics",
+      "measurement",
+      "share of search",
+      "brand tracking",
+      "analytics"
+    ],
+    "date": "2026-01-22",
+    "author": "Priya Nair",
+    "keywords": [
+      "brand measurement",
+      "brand health metrics",
+      "share of search",
+      "brand tracking"
+    ],
+    "readingTime": 11
+  },
+  {
     "title": "The motion layer of brand identity",
     "description": "Easing is a signature, transitions are grammar. How to build a kinetic identity system, export it as motion tokens engineers actually use, and survive prefers-reduced-motion.",
     "slug": "motion-identity-design",
@@ -69,7 +485,9 @@ export const articleIndex: ArticleMeta[] = [
       "brand animation guidelines",
       "motion tokens"
     ],
-    "readingTime": 10
+    "readingTime": 10,
+    "heroImage": "/images/articles/brand/motion-identity-design.jpg",
+    "heroAlt": "Overlapping translucent sheets tracing the easing curves of a fern form in motion, with brass timeline markers on cream paper."
   },
   {
     "title": "Naming: our field guide from brainstorm to trademark check",
@@ -96,7 +514,7 @@ export const articleIndex: ArticleMeta[] = [
   },
   {
     "title": "Rebrand rollouts: the unglamorous crucial middle",
-    "description": "The reveal is day one of a six-month project. How to plan a rebrand rollout: asset transition maps, coexistence periods, internal enablement and honest post-launch measurement.",
+    "description": "Launch day is the easy part. The rebrand rollout plan: asset census, coexistence windows, internal enablement and honest measurement long after the applause.",
     "slug": "rebrand-rollout-plan",
     "cluster": "brand",
     "tags": [
@@ -115,6 +533,240 @@ export const articleIndex: ArticleMeta[] = [
       "brand launch plan"
     ],
     "readingTime": 10
+  },
+  {
+    "title": "Type as brand: when the typeface is the logo",
+    "description": "Retail fonts, custom type, and the maths in between. How we decide when letterforms should carry a brand — and how to make typography do a logo's job.",
+    "slug": "typography-brand-distinctiveness",
+    "cluster": "brand",
+    "tags": [
+      "brand typography",
+      "custom type",
+      "visual identity",
+      "type licensing",
+      "distinctive brands"
+    ],
+    "date": "2025-08-14",
+    "author": "June Okafor",
+    "keywords": [
+      "brand typography",
+      "custom typefaces",
+      "typographic identity",
+      "font licensing brand"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "The cart is a negotiation, not a spreadsheet",
+    "description": "Cart UX that closes: drawer vs page economics, threshold cues done honestly, gift and quantity design, save-for-later rituals, and mobile-first cart anatomy.",
+    "slug": "cart-design-patterns",
+    "cluster": "ecommerce",
+    "tags": [
+      "cart design",
+      "ecommerce ux",
+      "conversion",
+      "mobile commerce",
+      "interaction design"
+    ],
+    "date": "2025-02-05",
+    "author": "Leonie Marsh",
+    "keywords": [
+      "cart page design",
+      "shopping cart ux",
+      "cart drawer design",
+      "ecommerce cart optimization",
+      "mobile cart ux"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "The checkout friction audit: 40 checks, one afternoon",
+    "description": "Checkout is where e-commerce revenue quietly bleeds out. The forty-check audit we run before any redesign: field math, wallets, error recovery, trust.",
+    "slug": "checkout-friction-audit",
+    "cluster": "ecommerce",
+    "tags": [
+      "checkout",
+      "conversion",
+      "ecommerce ux",
+      "cro",
+      "payments"
+    ],
+    "date": "2025-06-11",
+    "author": "Priya Nair",
+    "keywords": [
+      "checkout optimization",
+      "checkout friction",
+      "ecommerce checkout ux",
+      "cart abandonment",
+      "payment ux"
+    ],
+    "readingTime": 11,
+    "heroImage": "/images/articles/ecommerce/checkout-friction-audit.jpg",
+    "heroAlt": "A flat-lay on warm paper: a brass tally counter, a curling receipt, a pencil and a ticked checklist card beside a pressed fern sprig."
+  },
+  {
+    "title": "Headless commerce: the honest trade-offs",
+    "description": "When headless earns its complexity: team topology, total cost of ownership, performance ceilings, and the scenarios where a tuned theme wins. A decision scorecard.",
+    "slug": "headless-commerce-tradeoffs",
+    "cluster": "ecommerce",
+    "tags": [
+      "ecommerce",
+      "headless",
+      "architecture",
+      "composable",
+      "shopify"
+    ],
+    "date": "2026-03-11",
+    "author": "Nate Sullivan",
+    "keywords": [
+      "headless commerce",
+      "composable commerce",
+      "shopify headless",
+      "ecommerce architecture"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Digital merchandising: shelves, not search results",
+    "description": "Collection pages are shelving decisions wearing a UI. Sequencing strategy, badges with meaning, photography rhythm, facets that match mental models.",
+    "slug": "merchandising-digital-shelves",
+    "cluster": "ecommerce",
+    "tags": [
+      "merchandising",
+      "collection pages",
+      "ecommerce ux",
+      "visual hierarchy",
+      "retail"
+    ],
+    "date": "2025-03-19",
+    "author": "Hannah Yeo",
+    "keywords": [
+      "ecommerce merchandising",
+      "collection page design",
+      "plp optimization",
+      "product listing ux",
+      "category page design"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "PDP design: the page that pays for everything",
+    "description": "Product detail page anatomy for conversion: image sequence logic, buy-box hierarchy, review integration, delivery honesty, and mobile-thumb ergonomics that matter.",
+    "slug": "pdp-design-conversion",
+    "cluster": "ecommerce",
+    "tags": [
+      "ecommerce",
+      "conversion",
+      "product page",
+      "cro",
+      "design"
+    ],
+    "date": "2026-05-07",
+    "author": "Leonie Marsh",
+    "keywords": [
+      "product page design",
+      "pdp optimization",
+      "ecommerce conversion",
+      "product detail page"
+    ],
+    "readingTime": 9,
+    "heroImage": "/images/articles/ecommerce/pdp-design-conversion.jpg",
+    "heroAlt": "A matte stoneware vessel arranged on cream paper with a brass ruler and paper swatches — a product presented with editorial care."
+  },
+  {
+    "title": "Subscription UX that retains without trapping",
+    "description": "Ethical subscription design — skip-and-pause controls, dosage guidance, honest renewal reminders, dignified cancellation — and the LTV case against traps.",
+    "slug": "subscription-ux-design",
+    "cluster": "ecommerce",
+    "tags": [
+      "subscriptions",
+      "retention",
+      "ecommerce ux",
+      "churn",
+      "design ethics"
+    ],
+    "date": "2025-04-09",
+    "author": "Ruby Castellanos",
+    "keywords": [
+      "subscription ux",
+      "subscribe and save design",
+      "retention design",
+      "churn prevention",
+      "ethical ecommerce"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "Accessibility is an engineering discipline, not a ticket queue",
+    "description": "Treating accessibility as infrastructure: axe in CI, linting, component contracts, keyboard hierarchies, and who on the squad owns what. WCAG AA as a floor.",
+    "slug": "accessibility-as-engineering-practice",
+    "cluster": "engineering",
+    "tags": [
+      "accessibility",
+      "wcag",
+      "engineering practice",
+      "design systems",
+      "ci"
+    ],
+    "date": "2025-10-02",
+    "author": "Felix Brandt",
+    "keywords": [
+      "accessibility engineering",
+      "wcag aa",
+      "axe ci",
+      "a11y automation",
+      "accessible components",
+      "inclusive engineering"
+    ],
+    "readingTime": 11
+  },
+  {
+    "title": "Bundle budgets: the 170kb rule and how we hold it",
+    "description": "Our rule: 170kb of compressed JavaScript per route, or the PR explains itself. How the budget works and where we spend bytes on purpose.",
+    "slug": "bundle-budget-discipline",
+    "cluster": "engineering",
+    "tags": [
+      "performance",
+      "bundling",
+      "code splitting",
+      "engineering culture",
+      "ci"
+    ],
+    "date": "2025-11-14",
+    "author": "Tomás Reyes",
+    "keywords": [
+      "javascript bundle size",
+      "code splitting",
+      "bundle budget",
+      "vite bundle analysis",
+      "tree shaking",
+      "dependency audit"
+    ],
+    "readingTime": 10,
+    "heroImage": "/images/articles/engineering/bundle-budget-discipline.jpg",
+    "heroAlt": "A brass balance scale weighing small green parcels of code against a single brass calibration weight, printed in engraved editorial style on cream paper."
+  },
+  {
+    "title": "The caching layers cake: HTTP, ISR and the discipline of invalidation",
+    "description": "A layered caching model for content-heavy sites — CDN, full-page, data and application caches — plus the purge-on-publish pattern that ends 3am incidents.",
+    "slug": "caching-strategy-content-sites",
+    "cluster": "engineering",
+    "tags": [
+      "caching",
+      "performance",
+      "architecture",
+      "cms"
+    ],
+    "date": "2025-06-20",
+    "author": "Felix Brandt",
+    "keywords": [
+      "web caching strategy",
+      "http caching",
+      "isr nextjs",
+      "cache invalidation",
+      "cdn caching"
+    ],
+    "readingTime": 9
   },
   {
     "title": "Core Web Vitals in the field: budgets that survive sprints",
@@ -141,6 +793,53 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 10
   },
   {
+    "title": "Testing design tokens in CI like the API they are",
+    "description": "Design tokens are an API contract between design and engineering. The CI pipeline that enforces it: grammar linting, ancestry checks, contrast tests.",
+    "slug": "design-tokens-pipeline-ci",
+    "cluster": "engineering",
+    "tags": [
+      "design systems",
+      "design tokens",
+      "ci",
+      "testing",
+      "governance"
+    ],
+    "date": "2025-10-02",
+    "author": "Felix Brandt",
+    "keywords": [
+      "design tokens ci",
+      "tokens testing",
+      "style dictionary pipeline",
+      "design system governance",
+      "token versioning"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Design tokens are an API: building a pipeline from Figma to production",
+    "description": "How we build a design-token pipeline from Figma to CSS, Tailwind and native — one source of truth, versioned releases, and semver for visual decisions.",
+    "slug": "design-tokens-pipeline",
+    "cluster": "engineering",
+    "tags": [
+      "design tokens",
+      "design systems",
+      "style dictionary",
+      "css variables",
+      "figma"
+    ],
+    "date": "2025-09-11",
+    "author": "Felix Brandt",
+    "keywords": [
+      "design tokens",
+      "style dictionary",
+      "design system pipeline",
+      "css variables",
+      "figma tokens",
+      "design system versioning"
+    ],
+    "readingTime": 11
+  },
+  {
     "title": "Design tokens that survive contact with engineering",
     "description": "Most token pipelines rot within a year. Here's the architecture we use at Brassfern to keep design decisions flowing from Figma to production without drift.",
     "slug": "design-tokens-that-survive-engineering",
@@ -164,6 +863,382 @@ export const articleIndex: ArticleMeta[] = [
     "readingTime": 8
   },
   {
+    "title": "Edge rendering: an honest guide for content sites",
+    "description": "What edge rendering actually buys a content site, what it quietly costs, and the decision framework we run before moving a single route to the edge.",
+    "slug": "edge-rendering-honest-guide",
+    "cluster": "engineering",
+    "tags": [
+      "performance",
+      "architecture",
+      "infrastructure",
+      "rendering"
+    ],
+    "date": "2025-03-14",
+    "author": "Tomás Reyes",
+    "keywords": [
+      "edge rendering",
+      "edge functions",
+      "ttfb optimization",
+      "cdn architecture",
+      "server-side rendering"
+    ],
+    "readingTime": 9,
+    "heroImage": "/images/articles/engineering/edge-rendering-honest-guide.jpg",
+    "heroAlt": "Engraved-style map of the Asia-Pacific on cream paper, with brass arcs and fern lines linking network nodes between Sydney, Auckland and Singapore."
+  },
+  {
+    "title": "Feature flags without the graveyard",
+    "description": "Flag discipline for product squads: lifecycle stages, a naming grammar, expiry automation, analytics hooks, and the monthly flag funeral that keeps codebases young.",
+    "slug": "feature-flags-craft",
+    "cluster": "engineering",
+    "tags": [
+      "feature flags",
+      "progressive rollout",
+      "technical debt",
+      "workflow",
+      "product engineering"
+    ],
+    "date": "2024-11-12",
+    "author": "Sam Whitfield",
+    "keywords": [
+      "feature flags best practices",
+      "feature toggles",
+      "progressive rollout",
+      "feature flag lifecycle",
+      "technical debt flags",
+      "trunk based development"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "Form architecture at scale: schemas, errors and autofills",
+    "description": "Schema-first form engineering: shared zod validation, error copy as data, correct autofill tokens, and announcements that don't double-speak.",
+    "slug": "form-architecture-scale",
+    "cluster": "engineering",
+    "tags": [
+      "forms",
+      "validation",
+      "accessibility",
+      "typescript",
+      "frontend architecture"
+    ],
+    "date": "2026-08-21",
+    "author": "Felix Brandt",
+    "keywords": [
+      "react form architecture",
+      "zod validation",
+      "form error handling",
+      "accessible forms engineering",
+      "autofill tokens",
+      "schema validation"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "i18n beyond the strings file",
+    "description": "The hard 20% of internationalisation: plural rules, dates and currency, RTL layout, locale-aware content modelling, and design tokens that change per language.",
+    "slug": "i18n-architecture-hard-parts",
+    "cluster": "engineering",
+    "tags": [
+      "i18n",
+      "localisation",
+      "rtl",
+      "content modelling",
+      "design systems"
+    ],
+    "date": "2025-06-20",
+    "author": "Dev Khatri",
+    "keywords": [
+      "internationalization architecture",
+      "i18n design systems",
+      "rtl css",
+      "localization engineering",
+      "icu messageformat",
+      "plural rules javascript"
+    ],
+    "readingTime": 11
+  },
+  {
+    "title": "Building an image pipeline that designers don't curse",
+    "description": "The image pipeline behind our fast pages and happy editors: AVIF/WebP fallbacks, focal-point crops, build-time vs CDN transforms, and the editorial fields that matter.",
+    "slug": "image-pipeline-modern-web",
+    "cluster": "engineering",
+    "tags": [
+      "performance",
+      "images",
+      "avif",
+      "cdn",
+      "editorial"
+    ],
+    "date": "2026-01-22",
+    "author": "Nate Sullivan",
+    "keywords": [
+      "image optimization pipeline",
+      "avif webp",
+      "responsive images cdn",
+      "image performance",
+      "focal point cropping"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Islands architecture: sprinkle, don't soak",
+    "description": "When islands beat a full SPA: hydration costs, interaction latency budgets, the pragmatic hybrid pattern we use on content-heavy sites, and the traps.",
+    "slug": "islands-architecture-when",
+    "cluster": "engineering",
+    "tags": [
+      "architecture",
+      "performance",
+      "hydration",
+      "astro",
+      "content sites"
+    ],
+    "date": "2025-06-19",
+    "author": "Tomás Reyes",
+    "keywords": [
+      "islands architecture",
+      "partial hydration",
+      "astro vs next",
+      "hydration performance",
+      "content site architecture"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Engineering keyboard-first interfaces",
+    "description": "Roving tabindex, focus management without traps, shortcut systems users can actually discover, and the test setup that treats the keyboard as a primary input.",
+    "slug": "keyboard-first-interfaces",
+    "cluster": "engineering",
+    "tags": [
+      "accessibility",
+      "keyboard navigation",
+      "focus management",
+      "shortcuts",
+      "engineering"
+    ],
+    "date": "2025-02-27",
+    "author": "Aiko Tanaka",
+    "keywords": [
+      "keyboard navigation web",
+      "focus management",
+      "accessibility engineering",
+      "keyboard shortcuts design",
+      "roving tabindex",
+      "focus trap modal"
+    ],
+    "readingTime": 10,
+    "heroImage": "/images/articles/engineering/keyboard-first-interfaces.jpg",
+    "heroAlt": "A machined brass keycap standing upright on cream paper, casting a long shadow among faint grid lines and small green arrow shapes."
+  },
+  {
+    "title": "Generating PDFs from web tech without tears",
+    "description": "Invoices, statements and reports generated from web tech: print CSS vs headless Chrome vs canvas composition, scored honestly — plus when PDF is the wrong answer.",
+    "slug": "pdf-generation-web",
+    "cluster": "engineering",
+    "tags": [
+      "pdf",
+      "print css",
+      "headless chrome",
+      "reporting",
+      "architecture"
+    ],
+    "date": "2025-04-15",
+    "author": "Felix Brandt",
+    "keywords": [
+      "pdf generation javascript",
+      "print css",
+      "headless chrome pdf",
+      "report generation web",
+      "invoice generation",
+      "server-side rendering pdf"
+    ],
+    "readingTime": 11
+  },
+  {
+    "title": "Playwright suites that survive the redesign",
+    "description": "How to write browser tests against intent, not pixels: accessible locators, honest page objects, visual diff quotas, and keeping the whole suite under ten minutes.",
+    "slug": "playwright-testing-that-lasts",
+    "cluster": "engineering",
+    "tags": [
+      "testing",
+      "playwright",
+      "quality",
+      "developer-experience"
+    ],
+    "date": "2026-02-11",
+    "author": "Tomás Reyes",
+    "keywords": [
+      "playwright testing",
+      "browser testing strategy",
+      "e2e test architecture",
+      "testing best practices",
+      "visual regression testing"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "React Server Components: the trade-offs nobody puts in the talk",
+    "description": "A sober field account of React Server Components: where they genuinely help, where the mental-model and caching costs bite, and how we decide per project.",
+    "slug": "react-server-components-tradeoffs",
+    "cluster": "engineering",
+    "tags": [
+      "react",
+      "architecture",
+      "server components",
+      "performance",
+      "frameworks"
+    ],
+    "date": "2025-03-13",
+    "author": "Felix Brandt",
+    "keywords": [
+      "react server components",
+      "rsc tradeoffs",
+      "react architecture",
+      "next.js patterns",
+      "server side rendering react"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "Streaming SSR: practical notes from shipping it",
+    "description": "Streaming SSR in practice: what actually streams, where Suspense boundaries help or hurt TTFB, hydration ordering, mid-stream errors, and how to measure it.",
+    "slug": "ssr-streaming-practical-notes",
+    "cluster": "engineering",
+    "tags": [
+      "react",
+      "ssr",
+      "performance",
+      "suspense",
+      "architecture"
+    ],
+    "date": "2026-01-22",
+    "author": "Tomás Reyes",
+    "keywords": [
+      "streaming ssr",
+      "react suspense server",
+      "ttfb optimisation",
+      "ssr performance",
+      "react streaming",
+      "web performance"
+    ],
+    "readingTime": 11
+  },
+  {
+    "title": "State machines for checkout and onboarding flows",
+    "description": "Multi-step flows rot into boolean soup. Explicit state machines fix back-button bugs and analytics blindspots — with a worked checkout example.",
+    "slug": "state-machines-ui-flows",
+    "cluster": "engineering",
+    "tags": [
+      "state machines",
+      "frontend architecture",
+      "forms",
+      "checkout",
+      "xstate"
+    ],
+    "date": "2026-06-18",
+    "author": "Tomás Reyes",
+    "keywords": [
+      "state machines frontend",
+      "xstate patterns",
+      "multi step forms",
+      "checkout state management",
+      "finite state machines ui"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "A testing strategy that ships: what to test, what to skip, what to delete",
+    "description": "Our testing pyramid, rebuilt for reality: contract-first unit tests, a thin layer of Playwright journeys, flake budgets, and a CI bill we defend monthly.",
+    "slug": "testing-strategy-that-scales",
+    "cluster": "engineering",
+    "tags": [
+      "testing",
+      "playwright",
+      "vitest",
+      "ci",
+      "quality"
+    ],
+    "date": "2025-06-19",
+    "author": "Tomás Reyes",
+    "keywords": [
+      "testing strategy",
+      "playwright e2e",
+      "vitest",
+      "ci quality",
+      "flaky tests",
+      "test pyramid"
+    ],
+    "readingTime": 11
+  },
+  {
+    "title": "End-to-end type safety from CMS to component",
+    "description": "How we generate TypeScript types from headless CMS schemas, validate content at the boundary, and write content models that never cause the 6pm rename incident.",
+    "slug": "type-safe-cms-content",
+    "cluster": "engineering",
+    "tags": [
+      "typescript",
+      "cms",
+      "content-modelling",
+      "developer-experience"
+    ],
+    "date": "2025-09-05",
+    "author": "Felix Brandt",
+    "keywords": [
+      "typescript headless cms",
+      "type safe content",
+      "content modelling",
+      "sanity typescript",
+      "content validation"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Web Components vs React in 2026: a studio's scorecard",
+    "description": "We build with both. An honest scorecard across portability, SSR, theming, a11y and hiring — plus where each earns its place on real projects.",
+    "slug": "web-components-vs-react",
+    "cluster": "engineering",
+    "tags": [
+      "web components",
+      "react",
+      "design systems",
+      "lit",
+      "architecture"
+    ],
+    "date": "2026-03-12",
+    "author": "Felix Brandt",
+    "keywords": [
+      "web components vs react",
+      "custom elements",
+      "design system technology",
+      "lit vs react",
+      "shadow dom",
+      "framework comparison"
+    ],
+    "readingTime": 11
+  },
+  {
+    "title": "Analytics governance: tracking plans before tools",
+    "description": "Analytics rots quietly until nobody trusts the dashboards. The fix is governance, not tooling: event naming grammar, ownership, QA rituals and the monthly data hour.",
+    "slug": "analytics-governance",
+    "cluster": "growth",
+    "tags": [
+      "analytics",
+      "data quality",
+      "tracking",
+      "measurement",
+      "operations"
+    ],
+    "date": "2025-09-10",
+    "author": "Priya Nair",
+    "keywords": [
+      "analytics governance",
+      "tracking plan",
+      "event taxonomy",
+      "data quality marketing"
+    ],
+    "readingTime": 10
+  },
+  {
     "title": "Attribution that admits what it doesn't know",
     "description": "Attribution is always lying a little. Model taxonomy, dark social acceptance, self-reported fields, geo holdouts and decision-making without false precision.",
     "slug": "attribution-models-honest",
@@ -182,6 +1257,72 @@ export const articleIndex: ArticleMeta[] = [
       "attribution models",
       "marketing measurement",
       "dark social"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "Content clusters that compound: planning in public",
+    "description": "How we build topic clusters that compound: pillar economics, keyword-to-intent mapping, link graphs, refresh cadence, and the planning spreadsheet we use.",
+    "slug": "content-clusters-strategy",
+    "cluster": "growth",
+    "tags": [
+      "content strategy",
+      "seo",
+      "editorial planning",
+      "internal linking",
+      "topic clusters"
+    ],
+    "date": "2025-11-18",
+    "author": "Leonie Marsh",
+    "keywords": [
+      "content cluster strategy",
+      "topic clusters seo",
+      "content planning",
+      "pillar pages"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Designing CRO experiments you can believe",
+    "description": "Hypothesis quality, sample-size honesty, the peeking problem, change isolation versus big-bang redesigns, and documenting learnings so your programme compounds.",
+    "slug": "cro-experiment-design",
+    "cluster": "growth",
+    "tags": [
+      "cro",
+      "experimentation",
+      "ab testing",
+      "statistics",
+      "research"
+    ],
+    "date": "2026-01-22",
+    "author": "Sam Whitfield",
+    "keywords": [
+      "cro experiment design",
+      "ab testing statistics",
+      "conversion research",
+      "experimentation program"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Landing page testing: velocity over genius",
+    "description": "A landing page experiment programme that compounds: message-match first, structural swings second, a backlog scoring model that survives meetings, and kill criteria.",
+    "slug": "landing-page-testing-program",
+    "cluster": "growth",
+    "tags": [
+      "cro",
+      "landing pages",
+      "experimentation",
+      "ab testing",
+      "conversion"
+    ],
+    "date": "2025-05-28",
+    "author": "Sam Whitfield",
+    "keywords": [
+      "landing page testing",
+      "cro program",
+      "ab testing landing pages",
+      "experiment velocity"
     ],
     "readingTime": 10
   },
@@ -249,7 +1390,281 @@ export const articleIndex: ArticleMeta[] = [
       "site launch seo",
       "core web vitals seo"
     ],
+    "readingTime": 9,
+    "heroImage": "/images/articles/growth/technical-seo-checklist-2026.jpg",
+    "heroAlt": "Overhead still life of a brass loupe on a hand-drawn site map in fern-green ink, with brass check marks and scattered fern leaves on cream paper."
+  },
+  {
+    "title": "Buying accessible software: a procurement playbook",
+    "description": "A procurement playbook for accessibility: brief language that binds, evaluating claims beyond the VPAT, acceptance criteria that bite, and keeping standards after launch.",
+    "slug": "accessibility-procurement",
+    "cluster": "playbooks",
+    "tags": [
+      "accessibility",
+      "procurement",
+      "wcag",
+      "rfp",
+      "acceptance criteria"
+    ],
+    "date": "2026-04-22",
+    "author": "Felix Brandt",
+    "keywords": [
+      "accessibility procurement",
+      "wcag requirements rfp",
+      "buying accessible software",
+      "a11y compliance"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "Choosing an agency: signals over showreels",
+    "description": "How to evaluate a studio beyond the deck: process evidence, who does the work, reference questions that reveal truth, and red flags in pricing.",
+    "slug": "choosing-an-agency",
+    "cluster": "playbooks",
+    "tags": [
+      "agency selection",
+      "buying design",
+      "hiring a studio",
+      "due diligence",
+      "procurement"
+    ],
+    "date": "2025-03-20",
+    "author": "Mara Ellison",
+    "keywords": [
+      "how to choose an agency",
+      "agency evaluation",
+      "hiring a design studio",
+      "agency selection",
+      "design agency due diligence"
+    ],
+    "readingTime": 11
+  },
+  {
+    "title": "Content handover: getting real words before design ends",
+    "description": "Lorem ipsum is a launch delay in a fake moustache. The workflow we run: working inventories, voice alignment, reviews that don't sprawl, and editor-phase checks.",
+    "slug": "content-handover-workflow",
+    "cluster": "playbooks",
+    "tags": [
+      "content workflow",
+      "copy handoff",
+      "content production",
+      "web content",
+      "editorial process"
+    ],
+    "date": "2025-06-16",
+    "author": "Leonie Marsh",
+    "keywords": [
+      "content workflow for websites",
+      "copy handoff process",
+      "content production process",
+      "website content plan",
+      "editorial workflow"
+    ],
     "readingTime": 9
+  },
+  {
+    "title": "Handovers that don't decay: the living handover playbook",
+    "description": "Most agency handovers are a folder of PDFs and a prayer. Here's the playbook we run instead: documentation that gets used, pairing windows, and a 30-60-90 support taper.",
+    "slug": "design-handover-done-right",
+    "cluster": "playbooks",
+    "tags": [
+      "agency handover",
+      "design handoff",
+      "knowledge transfer",
+      "project documentation",
+      "agency process"
+    ],
+    "date": "2025-03-10",
+    "author": "Ruby Castellanos",
+    "keywords": [
+      "agency handover process",
+      "design handoff best practices",
+      "knowledge transfer plan",
+      "project documentation",
+      "agency to in-house transition"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Discovery sprints: two weeks that de-risk six months",
+    "description": "Our discovery sprint format, published: inputs, the ten days, the decision memo output, who must attend, and when discovery is a stall dressed as diligence.",
+    "slug": "discovery-sprint-playbook",
+    "cluster": "playbooks",
+    "tags": [
+      "discovery sprint",
+      "product discovery",
+      "project kickoff",
+      "de-risking",
+      "agency process"
+    ],
+    "date": "2024-11-28",
+    "author": "Ruby Castellanos",
+    "keywords": [
+      "discovery sprint",
+      "product discovery",
+      "discovery phase",
+      "project kickoff",
+      "design sprint agency"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "Estimating: how studios price and how to read a quote",
+    "description": "Demystifying software estimates: scope decomposition, risk loading, fixed price vs retainer maths, variation clauses, and the questions buyers should ask.",
+    "slug": "estimating-software-projects",
+    "cluster": "playbooks",
+    "tags": [
+      "estimation",
+      "agency pricing",
+      "fixed price",
+      "retainers",
+      "buying software"
+    ],
+    "date": "2025-02-13",
+    "author": "Tomás Reyes",
+    "keywords": [
+      "software project estimation",
+      "agency pricing models",
+      "fixed price vs time materials",
+      "project quote",
+      "reading agency proposal"
+    ],
+    "readingTime": 11
+  },
+  {
+    "title": "Estimating software honestly: ranges, risks and why we cap scope",
+    "description": "How we estimate software honestly: signal ranges per phase, explicit risk buffers, fixed-scope sprints — and how to read any estimate a studio gives you.",
+    "slug": "how-we-estimate-software",
+    "cluster": "playbooks",
+    "tags": [
+      "estimation",
+      "pricing",
+      "scope management",
+      "project planning",
+      "client guidance"
+    ],
+    "date": "2026-03-26",
+    "author": "Ruby Castellanos",
+    "keywords": [
+      "software estimation",
+      "project pricing",
+      "fixed price vs hourly",
+      "scope management"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "Launch week: the checklist we run for every site",
+    "description": "Go-live is a week, not an afternoon. The runbook we run for every launch: redirects, DNS, analytics continuity, rollback criteria, and day-two priorities.",
+    "slug": "launch-week-checklist",
+    "cluster": "playbooks",
+    "tags": [
+      "website launch",
+      "go-live checklist",
+      "launch runbook",
+      "DNS migration",
+      "deployment process"
+    ],
+    "date": "2024-09-02",
+    "author": "Felix Brandt",
+    "keywords": [
+      "website launch checklist",
+      "site migration checklist",
+      "go live runbook",
+      "launch plan template",
+      "website relaunch SEO"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "Retainer or project? An honest decision guide",
+    "description": "Retainer or fixed-scope project? An honest guide to when each engagement model wins — risk profiles, budget shapes, switching costs, and the questions to ask first.",
+    "slug": "retainer-vs-project",
+    "cluster": "playbooks",
+    "tags": [
+      "engagement models",
+      "retainers",
+      "agency relationships",
+      "budgeting",
+      "procurement"
+    ],
+    "date": "2026-02-19",
+    "author": "Mara Ellison",
+    "keywords": [
+      "agency retainer vs project",
+      "design retainer",
+      "engagement models agency",
+      "hiring agency model"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "Aligning stakeholders without design by committee",
+    "description": "How to keep design decisions fast with many stakeholders: decision mapping, demo-based alignment, the input-vs-decision distinction, and rescuing stalled review loops.",
+    "slug": "stakeholder-alignment-design",
+    "cluster": "playbooks",
+    "tags": [
+      "stakeholders",
+      "design process",
+      "decision making",
+      "client relationships",
+      "critique"
+    ],
+    "date": "2026-05-28",
+    "author": "June Okafor",
+    "keywords": [
+      "stakeholder management design",
+      "design approval process",
+      "client alignment",
+      "decision making projects"
+    ],
+    "readingTime": 10
+  },
+  {
+    "title": "Getting the most from a remote studio",
+    "description": "Hiring a distributed agency shouldn't mean slower decisions and lonelier projects. A buyer's guide to async rituals, time zone design, demo cadence and turnaround hygiene.",
+    "slug": "working-remote-agency",
+    "cluster": "playbooks",
+    "tags": [
+      "remote agency",
+      "distributed teams",
+      "async collaboration",
+      "client collaboration",
+      "agency engagement"
+    ],
+    "date": "2025-01-22",
+    "author": "Mara Ellison",
+    "keywords": [
+      "remote agency collaboration",
+      "working with distributed teams",
+      "async design process",
+      "client agency relationship",
+      "remote design studio"
+    ],
+    "readingTime": 9
+  },
+  {
+    "title": "How to write a project brief that gets better proposals",
+    "description": "A buyer-side playbook for briefing agencies: problem over solution, useful constraints, budget honesty, evaluation criteria, and a template you can steal.",
+    "slug": "writing-a-great-brief",
+    "cluster": "playbooks",
+    "tags": [
+      "project brief",
+      "agency selection",
+      "buying design",
+      "rfp",
+      "briefing"
+    ],
+    "date": "2025-05-15",
+    "author": "Ruby Castellanos",
+    "keywords": [
+      "project brief template",
+      "agency brief",
+      "rfp design project",
+      "briefing agencies",
+      "how to brief a design studio"
+    ],
+    "readingTime": 10
   },
   {
     "title": "Running an accessibility audit that leads to fixes",
@@ -935,7 +2350,9 @@ export const caseIndex: CaseStudyMeta[] = [
       "Postgres",
       "Resend",
       "PostHog"
-    ]
+    ],
+    "heroImage": "/images/work/brightmarsh-onboarding.jpg",
+    "heroAlt": "Editorial paper-craft illustration: a staircase of cream cards with brass-foiled edges ascending — the Brightmarsh onboarding case-study hero."
   },
   {
     "title": "Copperline Mutual: a community bank that sounds human",
@@ -1202,7 +2619,9 @@ export const caseIndex: CaseStudyMeta[] = [
       "Sanity",
       "Web Audio API",
       "Stripe"
-    ]
+    ],
+    "heroImage": "/images/work/holloway-records-label-site.jpg",
+    "heroAlt": "Editorial still-life: vinyl records in blank green and clay sleeves beside a brass tonearm on cream paper — the Holloway Records case-study hero."
   },
   {
     "title": "Meridian Climate: making council emissions data impossible to ignore",
@@ -1474,7 +2893,9 @@ export const caseIndex: CaseStudyMeta[] = [
       "Postgres",
       "Sanity",
       "Remix"
-    ]
+    ],
+    "heroImage": "/images/work/sundial-travel-booking.jpg",
+    "heroAlt": "Editorial still-life: brass compass, folded paper maps and a pressed fern on cream paper — the Sundial case-study hero."
   },
   {
     "title": "Tallow & Co.: a 1987 butcher becomes a modern providore",
@@ -1548,6 +2969,8 @@ export const caseIndex: CaseStudyMeta[] = [
       "Cloudflare Workers",
       "Twilio",
       "Plausible"
-    ]
+    ],
+    "heroImage": "/images/work/wattle-and-daub-reservations.jpg",
+    "heroAlt": "Editorial still-life: ceramic plates, brass cutlery and yellow wattle blossoms on a linen table — the Wattle & Daub case-study hero."
   }
 ]

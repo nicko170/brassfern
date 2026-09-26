@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { renderToString } from 'react-dom/server'
 import { StaticRouter } from 'react-router-dom/server'
-import App from './App'
+import App, { preloadAllPages } from './App'
 import { createCollector, type HeadState } from './lib/head'
 import { preloadForUrl } from './lib/preload'
 import { articles, caseStudies, allTags } from './lib/content'
@@ -16,6 +16,8 @@ export { absoluteUrl, BASE, SITE_URL } from './lib/base'
 export { articles, caseStudies }
 
 export async function render(url: string): Promise<{ html: string; head: HeadState }> {
+  // Warm every page chunk so lazy boundaries resolve synchronously in renderToString.
+  await preloadAllPages()
   await preloadForUrl(url)
   const collector = createCollector()
   const html = renderToString(

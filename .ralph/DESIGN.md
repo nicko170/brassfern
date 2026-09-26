@@ -83,8 +83,13 @@ Brassfern look into a demo.
 
 - **Featured lab band** (`.lab-feature`): night-card on /lab spotlighting the newest
   demo — brass-italic client initials over a radial night texture, mono meta row.
+- **Case-study demo strip** (`.demo-strip`): night card on /work/:slug when the study
+  links a live demo — overline "Touch the work — live demo", demo title, mono meta,
+  brass-initial art tile, mono CTA; art tile hides under 700px.
 - **Article prev/next** (`.article-nav`): hairline-topped two-col links, Older ← / Newer →.
-- **Counts in filters** (`.filter-btn__count`): superscript mono counts in cluster nav.
+- **Counts in filters** (`.filter-btn__count`): superscript mono counts in cluster nav
+  and work filters. **Filter status** (`.filter-status` + `.filter-status__reset`):
+  live-region result count with underline reset affordance.
 
 ## Content authoring rules (enforced by build-content-index.mjs)
 
