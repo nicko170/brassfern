@@ -8,6 +8,8 @@ date: 2026-02-11
 author: Leonie Marsh
 keywords: [newsletter growth, email newsletter strategy, newsletter design, owned audience, referral loop]
 readingTime: 12
+heroImage: /images/articles/growth/newsletter-growth-engine.jpg
+heroAlt: "Editorial print illustration of a brass letterpress printing a paper newsletter strip that curls into a growing fern frond, with stamped envelopes on cream paper."
 ---
 
 Every few years a platform does something that reminds marketing teams where they actually live. An algorithm change halves organic reach overnight. An ad network reprices the category you built your forecast on. A social network you spent four years cultivating becomes, charitably, a different social network. And in the middle of every one of those events, the humble newsletter sits there — unglamorous, unthrottled, delivering to an address you own because a person handed it to you on purpose.

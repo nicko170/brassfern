@@ -1646,10 +1646,11 @@
     "newsletter design",
     "owned audience"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790382037.293938
+   "claimed_at": 1790382037.293938,
+   "done_at": "2026-09-26T10:30:22"
   },
   {
    "kind": "article",
@@ -1663,10 +1664,11 @@
     "cac payback",
     "channel strategy"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790382037.2939389
+   "claimed_at": 1790382037.2939389,
+   "done_at": "2026-09-26T10:30:22"
   },
   {
    "kind": "article",
@@ -1680,10 +1682,11 @@
     "value proposition writing",
     "message testing"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790382037.29394
+   "claimed_at": 1790382037.29394,
+   "done_at": "2026-09-26T10:30:22"
   },
   {
    "kind": "article",
@@ -1697,10 +1700,11 @@
     "saas metrics",
     "growth dashboards"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790382037.29394
+   "claimed_at": 1790382037.29394,
+   "done_at": "2026-09-26T10:30:22"
   },
   {
    "kind": "article",
@@ -2126,10 +2130,11 @@
     "instant search design",
     "zero results page"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790382415.847577
+   "claimed_at": 1790382415.847577,
+   "done_at": "2026-09-26T10:31:25"
   },
   {
    "kind": "article",
@@ -2489,8 +2494,10 @@
    "cluster": "demos",
    "intent": "Subscription e-commerce for fictional Adelaide Hills winery Fernleigh. Art direction: cool-climate elegance — fog grey, vine green, wax-seal red; bottle-photography-forward. Features: shoppable PDP with vintage/quantity and club-price comparison, three club tiers (Explorer/Cellar/Collector) with per-shipment sliders, skip/next-shipment management drawer, delivery cadence calendar, cellar-tracking widget (bottles owned, drink-by windows) from realistic fake data. Cart + checkout summary mock. LocalStorage persistence.",
    "keywords": [],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "demo2",
+   "claimed_at": 1790382616.816808
   },
   {
    "kind": "demo",
