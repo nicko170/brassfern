@@ -9,10 +9,12 @@ author: June Okafor
 keywords: [brand identity case study, generative brand system, coffee brand design, design tokens, hearthbrew]
 readingTime: 7
 client: Hearthbrew Coffee
-industry: Hospitality & retail
+industry: Hospitality
 services: [Brand & identity, Websites]
 year: 2025
 stack: [Figma, React, TypeScript, Canvas, Sanity]
+heroImage: /images/work/hearthbrew-brand-system.jpg
+heroAlt: "Coffee beans in a loose spiral beside botanical pattern swatches in green and brass ink on cream paper."
 demo: hearthbrew-identity-lab
 ---
 

@@ -9,10 +9,12 @@ author: Nate Sullivan
 keywords: [florist ecommerce case study, same-day delivery ux, local commerce website, occasion-based browsing, checkout design]
 readingTime: 8
 client: Fern & Forage
-industry: Retail & hospitality
+industry: Retail & e-commerce
 services: [E-commerce, Websites]
 year: 2025
 stack: [React, TypeScript, Shopify Hydrogen, Sanity, Cloudflare Workers]
+heroImage: /images/work/fern-and-forage-florist.jpg
+heroAlt: "Native flowers wrapped in kraft paper cones with brass florist scissors, flat-laid on cream paper."
 ---
 
 Fern & Forage runs three flower shops across Melbourne's inner north. The flowers are exceptional — garden-style arrangements, local growers, nothing that looks like it came off a refrigerated truck. The website, when we met them, was a national wire-service template with their logo pasted on it: generic stock roses, a checkout that accepted orders for suburbs the van couldn't reach, and a phone that rang constantly with the same three questions. "Is it too late for today?" "Do you deliver to Coburg?" "What will it actually look like?"

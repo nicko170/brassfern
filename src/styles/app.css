@@ -1455,3 +1455,84 @@ a.chip:hover {
   line-height: 1;
   color: var(--fern);
 }
+
+/* ——— Testimonial deep-links ——— */
+.quote-block__link {
+  color: var(--fern);
+  text-decoration: underline;
+  text-decoration-color: rgba(30, 77, 51, 0.35);
+  text-underline-offset: 3px;
+  transition: text-decoration-color var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out);
+}
+.quote-block__link:hover {
+  color: var(--ink);
+  text-decoration-color: var(--brass);
+}
+.quote-block__link:focus-visible {
+  outline: 2px solid var(--brass);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* ——— Print ——— */
+@media print {
+  :root {
+    --ink: #000;
+  }
+  body {
+    background: #fff;
+    color: #000;
+  }
+  .site-head,
+  .site-foot,
+  .mobile-menu,
+  .grain,
+  .hero__fern,
+  .hero__scroll,
+  .marquee,
+  .lab-bar,
+  .article-nav,
+  .filter-bar,
+  .filter-status,
+  .demo-strip,
+  .lab-feature__art {
+    display: none !important;
+  }
+  .night,
+  [class*="section"] {
+    background: #fff !important;
+    color: #000 !important;
+  }
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+  .prose a[href^="/"]::after,
+  .prose a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    word-break: break-all;
+  }
+  .article-hero-img img,
+  figure img {
+    max-width: 100%;
+    break-inside: avoid;
+  }
+  h1, h2, h3, figure, blockquote, .quote-block {
+    break-inside: avoid;
+  }
+  .card-grid,
+  .pov-grid,
+  .two-col,
+  .stats {
+    display: block;
+  }
+  .card, .quote-block, .pov-item, .stat {
+    margin-bottom: 1.25rem;
+    border-top: 1px solid #999;
+    padding-top: 0.75rem;
+  }
+  section, .section {
+    padding-block: 0.5rem;
+  }
+}

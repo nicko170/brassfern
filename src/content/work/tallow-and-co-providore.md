@@ -17,7 +17,7 @@ keywords:
   - local retail
 readingTime: 9
 client: Tallow & Co.
-industry: Retail & Food
+industry: Retail & e-commerce
 services:
   - Brand & identity
   - E-commerce
@@ -29,6 +29,8 @@ stack:
   - Shopify Hydrogen
   - Sanity
   - Klaviyo
+heroImage: /images/work/tallow-and-co-providore.jpg
+heroAlt: "Butcher's-paper parcels with twine, brass scales and a cheese cloche on a marble counter."
 ---
 
 Tallow & Co. has occupied the same corner shop in Norwood, Adelaide, since 1987. Third-generation butcher Gus Tallow rebuilt the cold room in 2019 with a bank loan and a handshake. The shop's relationship with its customers is similarly physical: the regulars don't order so much as discuss, and the staff remember whose Sunday roast feeds six and whose feeds sixteen.

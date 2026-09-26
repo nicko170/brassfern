@@ -9,10 +9,12 @@ author: Leonie Marsh
 keywords: [bank website case study, financial services ux, plain language content design, accessible design system, mutual bank rebrand]
 readingTime: 8
 client: Copperline Mutual
-industry: Financial services
+industry: Fintech
 services: [Brand & identity, Websites, Product design & engineering]
 year: 2025
 stack: [React, TypeScript, Sanity, Design tokens, Storybook, Playwright]
+heroImage: /images/work/copperline-community-bank.jpg
+heroAlt: "A warm bank-counter still life: a brass teller lamp, stacked paper ledgers and a pressed fern on cream paper."
 ---
 
 Copperline Mutual is the sort of bank that still knows its customers' names. Eleven branches across regional Victoria, 40,000 members, a phone answered by a person on the second ring. What it did *not* have was a website that sounded like any of that. Its digital presence read like every mid-tier bank in the country: "competitive rates", "flexible solutions", "a range of products to suit your needs". Sentences with no pulse.

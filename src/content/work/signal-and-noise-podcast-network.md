@@ -9,10 +9,12 @@ author: Felix Brandt
 keywords: [podcast website case study, transcript seo, persistent audio player ux, podcast membership design, media website design]
 readingTime: 9
 client: Signal & Noise
-industry: Media
+industry: Media & culture
 services: [Websites, Product design & engineering, Growth]
 year: 2024
 stack: [React, TypeScript, Astro, Web Audio API, Sanity, Stripe]
+heroImage: /images/work/signal-and-noise-podcast-network.jpg
+heroAlt: "A brass broadcast microphone beside embossed sound-wave rings and a vinyl record on cream paper."
 ---
 
 Signal & Noise makes nine podcasts from a converted warehouse in Collingwood — interview shows, a beloved fortnightly about urban birds, a narrative series that podcast people describe as "prestige". Nearly two million listens a month across the apps, and a website that was, in the words of network director Elio Vasquez, "a graveyard with a subscribe button". Every listen happened inside Spotify or Apple; every listener relationship did, too. The network didn't know its own audience, couldn't sell a membership worth having, and watched its best ad inventory get brokered by platforms that took a cut of conversations they never hosted.

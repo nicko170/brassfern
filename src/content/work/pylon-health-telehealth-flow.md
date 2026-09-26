@@ -13,6 +13,8 @@ industry: Health
 services: [Product design & engineering, Brand & identity]
 year: 2024
 stack: [React, TypeScript, Node, WebRTC, Postgres]
+heroImage: /images/work/pylon-health-telehealth-flow.jpg
+heroAlt: "A quiet dawn desk: steaming tea, a softly glowing phone face-up and a small potted fern on cream paper."
 demo: pylon-health-booking
 ---
 

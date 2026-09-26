@@ -2603,10 +2603,11 @@
     "jtbd",
     "product research"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer3",
    "worker": "writer1",
-   "claimed_at": 1790383909.36081
+   "claimed_at": 1790383909.36081,
+   "done_at": "2026-09-26T11:00:18"
   },
   {
    "kind": "article",
@@ -2620,10 +2621,11 @@
     "b2b product design",
     "information hierarchy"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer3",
    "worker": "writer1",
-   "claimed_at": 1790383909.360811
+   "claimed_at": 1790383909.360811,
+   "done_at": "2026-09-26T11:00:18"
   },
   {
    "kind": "article",
@@ -2637,10 +2639,11 @@
     "product onboarding",
     "user activation metrics"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer3",
    "worker": "writer1",
-   "claimed_at": 1790383909.360811
+   "claimed_at": 1790383909.360811,
+   "done_at": "2026-09-26T11:00:18"
   },
   {
    "kind": "article",
@@ -2654,10 +2657,11 @@
     "inclusive design",
     "design review"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer3",
    "worker": "writer1",
-   "claimed_at": 1790383909.360811
+   "claimed_at": 1790383909.360811,
+   "done_at": "2026-09-26T11:00:18"
   },
   {
    "kind": "article",
@@ -2841,10 +2845,11 @@
     "model testing",
     "prompt regression"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer3",
    "worker": "writer4",
-   "claimed_at": 1790384007.8187761
+   "claimed_at": 1790384007.8187761,
+   "done_at": "2026-09-26T11:00:07"
   },
   {
    "kind": "article",
@@ -4150,8 +4155,10 @@
     "seo content audit",
     "updating old blog posts"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790384422.7025092
   },
   {
    "kind": "article",
@@ -4165,8 +4172,10 @@
     "data study marketing",
     "pr for seo"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790384422.70251
   },
   {
    "kind": "article",
@@ -4180,8 +4189,10 @@
     "email list hygiene",
     "inbox placement"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790384422.70251
   },
   {
    "kind": "article",
@@ -4195,8 +4206,10 @@
     "product update emails",
     "shipping notes content"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790384422.70251
   },
   {
    "kind": "article",
@@ -4240,8 +4253,10 @@
     "churn retention offers",
     "exit survey design"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790384358.321432
   },
   {
    "kind": "article",
@@ -4255,8 +4270,10 @@
     "invite a teammate design",
     "viral loops product"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790384358.321436
   },
   {
    "kind": "article",
@@ -4270,8 +4287,10 @@
     "event history design",
     "enterprise audit trail"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790384358.321436
   },
   {
    "kind": "article",
@@ -4285,8 +4304,10 @@
     "multi select patterns",
     "destructive action safeguards"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790384358.321437
   },
   {
    "kind": "article",
@@ -5275,6 +5296,536 @@
     "conversion optimisation",
     "UX audit"
    ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "pdp-galleries-that-sell",
+   "title": "PDP galleries: the eight-image sequence that answers every doubt",
+   "cluster": "ecommerce",
+   "intent": "PDP image galleries that sell: sequencing, zoom vs pan, context shots, video restraint, and the photography brief template that keeps galleries honest.",
+   "keywords": [
+    "product page images",
+    "PDP gallery",
+    "ecommerce photography",
+    "product zoom UX"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "cart-drawer-vs-cart-page",
+   "title": "Cart drawer or cart page? Stop guessing",
+   "cluster": "ecommerce",
+   "intent": "Cart drawers vs cart pages: the decision framework, drawer anatomy, cross-sell restraint, and when each pattern wins for AOV and completion.",
+   "keywords": [
+    "cart drawer",
+    "cart page design",
+    "ecommerce UX",
+    "average order value"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "returns-as-retention",
+   "title": "Returns are a retention channel in disguise",
+   "cluster": "ecommerce",
+   "intent": "Returns as a retention surface: self-serve returns UX, exchange-first design, policy copy that doesn't shout, and using returns data to fix PDPs.",
+   "keywords": [
+    "returns UX",
+    "ecommerce retention",
+    "self-serve returns",
+    "returns policy design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "gift-commerce-flows",
+   "title": "Gift flows: the seasonal feature that deserves year-round craft",
+   "cluster": "ecommerce",
+   "intent": "Gift commerce done properly: gift messages, hidden prices, delivery-date promises, recipient UX, and the seasonal traffic patterns that justify the build.",
+   "keywords": [
+    "gift shopping UX",
+    "ecommerce gifting",
+    "gift cards",
+    "holiday ecommerce"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "subscription-portal-design",
+   "title": "The subscription portal: where churn is won honestly",
+   "cluster": "ecommerce",
+   "intent": "Subscription management portals: skip/pause/swap UX, dunning flows with dignity, cancellation surveys that don't trap, and retention metrics that respect users.",
+   "keywords": [
+    "subscription portal",
+    "manage subscription UX",
+    "dunning emails",
+    "subscription retention"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "marketplace-vs-own-storefront",
+   "title": "Marketplace or your own storefront? The honest scorecard",
+   "cluster": "ecommerce",
+   "intent": "Marketplace vs owned storefront: margin maths, brand control, data ownership, hybrid strategies, and the decision scorecard we run with founders.",
+   "keywords": [
+    "marketplace strategy",
+    "DTC vs marketplace",
+    "ecommerce channels",
+    "brand control"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "honest-inventory-ux",
+   "title": "Honest inventory: stock states without the fake-scarcity slime",
+   "cluster": "ecommerce",
+   "intent": "Selling with honest stock: backorders, low-stock signals without fake scarcity, preorder states, and inventory messaging that builds trust.",
+   "keywords": [
+    "inventory UX",
+    "backorder design",
+    "stock scarcity",
+    "preorder UX"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "bundles-and-kits-design",
+   "title": "Bundles and kits: designing the build-your-own moment",
+   "cluster": "ecommerce",
+   "intent": "Product bundles and kits: bundle builder UX, pricing display, inventory coupling, and when bundles lift AOV vs when they hide the product.",
+   "keywords": [
+    "product bundles",
+    "bundle builder",
+    "ecommerce AOV",
+    "kit design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "express-wallets-checkout",
+   "title": "Express wallets: faster checkout, if you place them right",
+   "cluster": "ecommerce",
+   "intent": "Express wallets in checkout: Apple Pay/Google Pay placement, the commitment-point problem, address capture, and measuring their real conversion effect.",
+   "keywords": [
+    "Apple Pay checkout",
+    "express checkout",
+    "payment UX",
+    "wallet payments"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "loyalty-without-dark-patterns",
+   "title": "Loyalty programs that don't treat customers like lab rats",
+   "cluster": "ecommerce",
+   "intent": "Loyalty programs without dark patterns: points visibility, tier design, genuine value maths, and when a loyalty scheme is just a coupon with extra steps.",
+   "keywords": [
+    "loyalty program design",
+    "retention ecommerce",
+    "points programs",
+    "customer loyalty UX"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ecommerce-site-search",
+   "title": "Site search: the highest-intent feature most stores neglect",
+   "cluster": "ecommerce",
+   "intent": "On-site search for catalogues: synonym libraries, zero-results rescue, merchandising rules, autocomplete design, and the search analytics loop.",
+   "keywords": [
+    "ecommerce site search",
+    "search merchandising",
+    "autocomplete UX",
+    "zero results"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "preorder-flows-trust",
+   "title": "Pre-orders are a trust exercise, not a checkout variant",
+   "cluster": "ecommerce",
+   "intent": "Pre-orders and crowdfund-style flows: expectation setting, charge timing, delay communication, and the trust ledger that makes or breaks a launch.",
+   "keywords": [
+    "preorder UX",
+    "crowdfunding flow",
+    "product launch",
+    "expectation design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "footer-design-craft",
+   "title": "Design the footer like someone reads it — because someone does",
+   "cluster": "web-design",
+   "intent": "The footer as craft: wayfinding for the decided, contact confidence, legal without ugliness, and why footers deserve a design review of their own.",
+   "keywords": [
+    "footer design",
+    "website footer",
+    "navigation design",
+    "web design craft"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "about-pages-that-convince",
+   "title": "About pages that actually convince",
+   "cluster": "web-design",
+   "intent": "About pages that convince: the story structure, team honesty, numbers that earn trust, and cutting the founder-biography wallpaper.",
+   "keywords": [
+    "about page design",
+    "about us page",
+    "brand storytelling",
+    "trust signals"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "careers-pages-that-filter-in",
+   "title": "Careers pages that filter people in, not out",
+   "cluster": "web-design",
+   "intent": "Careers pages that filter in, not out: showing real work, honest salary bands, the application flow UX, and killing the ping-pong clichés.",
+   "keywords": [
+    "careers page design",
+    "recruitment page",
+    "employer brand web",
+    "job page UX"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "error-pages-as-system",
+   "title": "Your error pages are a system: design them like one",
+   "cluster": "web-design",
+   "intent": "Error pages as a system: 404, 500, offline and maintenance states with one voice, recovery links that help, and logging what users hit.",
+   "keywords": [
+    "404 page design",
+    "error pages",
+    "empty states",
+    "error UX"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "pull-quotes-editorial-devices",
+   "title": "Pull quotes and margin notes: editorial devices for the web",
+   "cluster": "web-design",
+   "intent": "Pull quotes, asides and margin notes on the web: editorial devices that survive responsive design, semantic markup for them, and restraint as a rule.",
+   "keywords": [
+    "pull quotes",
+    "editorial web design",
+    "typographic details",
+    "article design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "comparison-tables-marketing",
+   "title": "Comparison tables: the marketing page's hardest-working table",
+   "cluster": "web-design",
+   "intent": "Comparison tables for marketing pages: feature matrices that don't lie, mobile collapse patterns, checkbox semantics, and the competitor-row dilemma.",
+   "keywords": [
+    "comparison tables",
+    "feature comparison",
+    "pricing table design",
+    "marketing pages"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "sitemap-as-ux-artifact",
+   "title": "Draw the sitemap before anyone opens Figma",
+   "cluster": "web-design",
+   "intent": "The sitemap as a UX artefact: mapping user questions to pages, navigation debt audits, and the 20-minute sitemap exercise that realigns stakeholders.",
+   "keywords": [
+    "sitemap design",
+    "information architecture",
+    "navigation UX",
+    "site structure"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "whitespace-as-layout-tool",
+   "title": "Whitespace is a tool, not a leftover",
+   "cluster": "web-design",
+   "intent": "Whitespace as a layout tool: optical spacing, density budgets per audience, whitespace as hierarchy, and defending emptiness in stakeholder reviews.",
+   "keywords": [
+    "whitespace design",
+    "visual hierarchy",
+    "layout spacing",
+    "minimal web design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ai-wrong-answer-ux",
+   "title": "When the model is wrong: designing failure states for AI features",
+   "cluster": "ai",
+   "intent": "Designing for model failure: wrong-answer UX, graceful degradation tiers, feedback that improves the system, and the copy patterns that keep trust intact.",
+   "keywords": [
+    "AI error states",
+    "model failure UX",
+    "AI trust design",
+    "graceful degradation"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "assistant-memory-ux",
+   "title": "Memory is a UX surface: designing what assistants remember",
+   "cluster": "ai",
+   "intent": "Assistant memory as a UX surface: what's remembered, where users inspect and edit it, forgetting on purpose, and the privacy postures that earn retention of memory features.",
+   "keywords": [
+    "AI memory UX",
+    "assistant memory",
+    "personalisation privacy",
+    "chatbot memory"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "citation-ux-rag",
+   "title": "Citation design: making RAG answers checkable",
+   "cluster": "ai",
+   "intent": "Citation UX for retrieval features: anchoring claims to sources, snippet fidelity, hover vs side-panel patterns, and what to do when the source disagrees with the summary.",
+   "keywords": [
+    "citation UX",
+    "RAG interface",
+    "source grounding",
+    "AI transparency"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "prompt-box-as-interface",
+   "title": "The prompt box is your whole interface — design it like one",
+   "cluster": "ai",
+   "intent": "The prompt box as interface: placeholder pedagogy, suggestion chips, command discovery, context attachment UX, and why 'ask anything' teaches nothing.",
+   "keywords": [
+    "prompt input design",
+    "AI chat UX",
+    "suggestion chips",
+    "command palette AI"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ai-disclosure-patterns",
+   "title": "Disclosure patterns: telling users when a machine is speaking",
+   "cluster": "ai",
+   "intent": "AI disclosure patterns: telling users a machine is speaking, watermarking generated content, model/version transparency, and disclosure that survives legal review without scaring users.",
+   "keywords": [
+    "AI disclosure",
+    "AI transparency",
+    "generated content labels",
+    "responsible AI UX"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ai-in-design-process",
+   "title": "LLMs in the design process: acceleration with a seatbelt",
+   "cluster": "ai",
+   "intent": "Using LLMs inside the studio design process: synthetic user drafts, copy pressure-testing, edge-case generation — with the verification discipline that keeps it honest.",
+   "keywords": [
+    "AI prototyping",
+    "design process AI",
+    "synthetic data UX",
+    "AI-assisted design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "first-two-weeks-agency",
+   "title": "The first two weeks with an agency: a client's field guide",
+   "cluster": "playbooks",
+   "intent": "The first two weeks with an agency: access checklists, stakeholder mapping, decision calendars, and how to make week-one demos possible.",
+   "keywords": [
+    "agency kickoff",
+    "project onboarding",
+    "agency engagement",
+    "first sprint"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "giving-design-feedback",
+   "title": "How to give design feedback that speeds the work up",
+   "cluster": "playbooks",
+   "intent": "Giving design feedback as a client: reaction vs direction, the 'what problem does this solve' script, consolidating stakeholder voices, and feedback that speeds work up.",
+   "keywords": [
+    "design feedback",
+    "client design critique",
+    "stakeholder feedback",
+    "design review process"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "budget-conversations-agency",
+   "title": "The budget conversation: why hiding the number costs you more",
+   "cluster": "playbooks",
+   "intent": "Talking budget with an agency: sharing the number, what ranges actually buy, the cost of vague scope, and negotiating scope instead of rate.",
+   "keywords": [
+    "agency budget",
+    "project cost conversation",
+    "agency negotiation",
+    "scope vs budget"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "first-90-days-after-launch",
+   "title": "After launch: the first 90 days done properly",
+   "cluster": "playbooks",
+   "intent": "The first 90 days after launch: what to measure, the post-launch bug etiquette, analytics baselines, and when to book the next engagement.",
+   "keywords": [
+    "post-launch plan",
+    "website launch",
+    "analytics baseline",
+    "agency retainer start"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "multi-step-flows-wizards",
+   "title": "Wizards that don't feel like tax forms",
+   "cluster": "product",
+   "intent": "Multi-step flows and wizards that don't feel like tax forms: step economics, progress honesty, save-and-resume, and when one long page beats five short ones.",
+   "keywords": [
+    "wizard UX",
+    "multi-step forms",
+    "progressive disclosure",
+    "flow design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "settings-design-neglected-ux",
+   "title": "Settings: the screen your product is judged on at month three",
+   "cluster": "product",
+   "intent": "Settings screens: the neglected UX. Information architecture for preferences, dangerous-action design, defaults as product decisions, and settings search.",
+   "keywords": [
+    "settings UX",
+    "preferences design",
+    "product settings",
+    "default design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "research-repository-that-gets-used",
+   "title": "A research repository that gets read after the study ends",
+   "cluster": "product",
+   "intent": "Research repositories people actually use: atomic notes, tagging taxonomies, insight half-lives, and connecting findings to design decisions with traceable links.",
+   "keywords": [
+    "research repository",
+    " UX research",
+    "insights management",
+    "research ops"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "prioritisation-beyond-rice",
+   "title": "Prioritisation frameworks after RICE stops working",
+   "cluster": "product",
+   "intent": "Prioritisation beyond RICE: weighted freedom, opportunity mapping, sequencing for learning, and the prioritisation meeting format that ends with real decisions.",
+   "keywords": [
+    "feature prioritisation",
+    "RICE alternatives",
+    "product roadmap",
+    "decision frameworks"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "glasshouse-seat-map",
+   "title": "Glasshouse — pick your seat",
+   "cluster": "demos",
+   "intent": "Event ticketing seat-map demo for fictional client 'The Glasshouse' (an independent theatre). Art direction: velvet-night palette — deep oxblood, warm gold, cream; serif playbill display type; subtle grain. Features: interactive SVG venue map with stalls/circle/boxes, pinch-and-button zoom with pan, price-tier colouring with a colourblind-safe toggle, seat hover/focus details, multi-seat selection with per-seat pricing, accessible list-view fallback for the seat picker (arrow-key navigable, aria-describedby details), running total + best-available suggestion, bottlenecks timer display (illustrative), reduced-motion static mode. Stack: React + TypeScript, hand-rolled SVG, no heavy libs. Links to a new case study slug glasshouse-ticketing-relaunch.",
+   "keywords": [],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "ledgerline-pricing-calculator",
+   "title": "Ledgerline — pricing calculator",
+   "cluster": "demos",
+   "intent": "SaaS pricing calculator demo for fictional client 'Ledgerline' (expense-management SaaS). Art direction: precise fintech paper — off-white, ledger-green, ink; tabular numerals everywhere; ruled-line motifs. Features: seat/usage sliders with stepped snapping, monthly-vs-annual toggle with savings callouts, plan comparison matrix with highlighted recommended plan, ROI estimator (hours saved × blended rate) with editable assumptions, discount code field with validation states, full state serialised to the URL (shareable quote), print-friendly quote summary view, keyboard-operable sliders with number-input twins. Stack: React + TypeScript, zero charting libs — CSS bars. Links to a new case study slug ledgerline-pricing-page-rebuild.",
+   "keywords": [],
    "status": "planned",
    "added_by": "builder"
   }

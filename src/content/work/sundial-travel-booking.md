@@ -17,7 +17,7 @@ keywords:
   - booking flow design
 readingTime: 8
 client: Sundial Travel
-industry: Travel & Hospitality
+industry: Hospitality
 services:
   - Websites
   - E-commerce

@@ -72,8 +72,11 @@ and built autonomously by Kimi K3 running on GreenThread."
 ## Imagery
 
 Generated images live under `public/images/…`, referenced via `withBase()`.
-Style: editorial print — cream/paper backgrounds, brass/fern palette, grain, generous
-negative space, no text/logos/photoreal people. `public/images/og.jpg` is the default OG image.
+Style: editorial print — cream/paper backgrounds, brass/fern palette, grain,
+generous negative space, no text/logos/photoreal people. `public/images/og.jpg` is the default OG image.
+All 17 case studies have heroes at `public/images/work/<slug>.jpg` (editorial
+still-lifes, iteration 3–4); journal heroes are added per flagship article at
+`public/images/articles/<cluster>/<slug>.jpg`.
 
 ## Demos
 
@@ -90,6 +93,13 @@ Brassfern look into a demo.
 - **Counts in filters** (`.filter-btn__count`): superscript mono counts in cluster nav
   and work filters. **Filter status** (`.filter-status` + `.filter-status__reset`):
   live-region result count with underline reset affordance.
+- **Testimonial deep-links** (`.quote-block__link`): fern-coloured underline link
+  on the quoted client's company name → its case study (`Testimonial.caseStudy`
+  in clients.ts).
+- **Home lab band**: home reuses the Lab's `.lab-feature` night card
+  (featuring demos[0]) between the work reel and services.
+- **Print**: `@media print` block at the end of app.css hides chrome/grain/
+  marquee/lab art, flattens night sections, expands prose link hrefs.
 
 ## Content authoring rules (enforced by build-content-index.mjs)
 

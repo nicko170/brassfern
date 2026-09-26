@@ -20,7 +20,7 @@ demo: hearthbrew-store
 heroImage: /images/work/hearthbrew-subscription-club.jpg
 heroAlt: "A kraft coffee bag, riso-printed field-notes card and a cup of filter coffee on a roastery benchtop in warm morning light"
 client: Hearthbrew Coffee
-industry: Retail & Food
+industry: Retail & e-commerce
 services:
   - E-commerce
   - Product design & engineering
@@ -33,7 +33,6 @@ stack:
   - Sanity
   - Node
   - Postgres
-demo: hearthbrew-store
 ---
 
 Hearthbrew Coffee roasts in Brunswick, Melbourne, three days a week, and their café on-site has a line every Saturday morning. We'll drink to that. In 2023 they launched a subscription club with the standard toolkit: 15% off lock-in, upsell emails, a delete account flow that required phoning a person with a clipboard, and — when customers cancelled anyway — an exit survey too generic to read.

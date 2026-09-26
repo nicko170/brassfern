@@ -28,7 +28,11 @@
 - Articles: `src/content/articles/<cluster>/<slug>.md`. Clusters:
   `web-design, engineering, product, brand, growth, ai, ecommerce, playbooks`.
 - Case studies: `src/content/work/<slug>.md` (cluster: `work`, plus client,
-  industry, services[], year, stack[], optional demo).
+  industry, services[], year, stack[], optional demo). **`industry` must be one
+  of the canonical names in `src/data/industries.ts`** (Fintech, Health,
+  Retail & e-commerce, Hospitality, Climate, Education, Media & culture, SaaS,
+  Non-profit) — the /work filter bar and industry-page matchers read it
+  verbatim. Normalised in builder iteration 4.
 - Frontmatter (all required): title, description (120–160 chars), slug, cluster,
   tags[], date (ISO, 2024–2026), author (**a name from `src/data/people.ts`
   exactly — the build enforces this; title suffixes are stripped, unknown names
@@ -62,6 +66,9 @@
   `scripts/prerender.mjs` renders every route (list from `prerenderRoutes()` in
   `src/entry-server.tsx`) into `dist/<route>/index.html`, plus 404.html,
   sitemap.xml, robots.txt, rss.xml, .nojekyll.
+- Every prerendered page also carries
+  `<link rel="alternate" type="application/rss+xml">` pointing at rss.xml
+  (added in `headToHtml`/`applyHead`, `src/lib/head.tsx`).
 - Per-page head is declared with `<Seo>` (`src/lib/head.tsx`); server collector
   writes title/description/canonical/OG/JSON-LD. JSON-LD helpers in `lib/jsonld.ts`
   (Organization, WebSite, Article, CreativeWork, FAQPage, BreadcrumbList).

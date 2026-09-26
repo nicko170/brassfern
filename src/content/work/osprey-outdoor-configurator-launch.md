@@ -11,7 +11,7 @@ readingTime: 8
 heroImage: /images/work/osprey-outdoor-configurator-launch.jpg
 heroAlt: "A forest-green hiking backpack with orange webbing floating against a dark charcoal background, faint wireframe lines suggesting a 3D configurator model"
 client: Osprey Outdoor
-industry: Retail
+industry: Retail & e-commerce
 services: [E-commerce, Product design & engineering]
 year: 2025
 stack: [React, TypeScript, Three.js, React Three Fiber, Node, Postgres]

@@ -1,5 +1,36 @@
 # Progress
 
+## Done (iteration 4 — builder: heroes, taxonomy, smallcraft)
+
+- **All 17 case studies now have hero art.** Generated 10 editorial-print
+  stills (cream paper, brass/fern, no text/people) at
+  `public/images/work/<slug>.jpg` and wired `heroImage`/`heroAlt`:
+  copperline-community-bank, fern-and-forage-florist,
+  fernleigh-wines-dtc-storefront, glade-skincare-ingredient-honesty,
+  hearthbrew-brand-system, northwind-ledger-dashboard-rebuild,
+  postcards-museum-archive, pylon-health-telehealth-flow,
+  signal-and-noise-podcast-network, tallow-and-co-providore.
+- **Industry taxonomy normalised** — case-study `industry:` values collapsed
+  from 14 noisy variants to the 7 canonical names in `src/data/industries.ts`
+  (e.g. "Retail & hospitality"/"Retail & Food" → "Retail & e-commerce",
+  "Media"/"Arts & culture" → "Media & culture"). /work filter bar is clean;
+  **writers: only use canonical industry names** (see ROUTES.md).
+  IndustryPage matcher now exact-matches with a substring fallback — every
+  industry page with matching work surfaces it (saas/non-profit have none yet).
+- **Testimonial deep-links**: `Testimonial.caseStudy?` in clients.ts; home
+  quotes now link the company name (`.quote-block__link`) to its case study.
+- **Home lab band**: `.lab-feature` night card between work reel and services
+  (replaces the thin "N live demos" line; features demos[0], same as /lab).
+- **RSS discoverability**: `<link rel="alternate" type="application/rss+xml">`
+  in `headToHtml` (all prerendered pages) + client `applyHead` upsert.
+- **Print stylesheet** appended to app.css: hides chrome/grain/marquee/lab-art,
+  strips night backgrounds, expands prose link hrefs, break-inside rules.
+- **Fixed**: duplicate `demo:` key in hearthbrew-subscription-club.md (YAML
+  error found by build — the content validator catches these).
+- **Backlog**: +55 planned (28 engineering, 15 brand, 12 growth).
+- **Build green**: 685 prerendered routes; skel-check clean; RSS link verified
+  in dist; canonical industry counts verified on industry pages.
+
 ## Done (iteration 3 — interactivity + perf)
 
 - **Work index filters sync to URL** (`?service=&industry=`, replace-history),
@@ -18,10 +49,9 @@
   107 KB → ~63 KB gzip. Verified: zero prerendered pages ship skeleton HTML
   (demo bodies inside /lab/<slug> excepted, by design). See ROUTES.md
   "Route code-splitting" — do not remove the double-nudge.
-- **Hero art × 4** (image tool works again): sundial-travel-booking,
+- **Hero art × 4** (iteration 3): sundial-travel-booking,
   wattle-and-daub-reservations, holloway-records-label-site,
-  brightmarsh-onboarding — generated + `heroImage`/`heroAlt` wired in.
-  8 case studies still lack heroes (see Next).
+  brightmarsh-onboarding.
 - **Fixed in-flight demo break**: osprey-pack-configurator had duplicate
   `aria-label` attributes (TS error) — merged into its conditional label.
 - **Backlog**: +58 articles (engineering, web-design, ecommerce, playbooks,
@@ -31,19 +61,18 @@
 
 ## Next
 
-- Remaining hero art for 8 case studies (image tool works now):
-  copperline-community-bank, fern-and-forage-florist,
-  fernleigh-wines-dtc-storefront, glade-skincare-ingredient-honesty,
-  hearthbrew-brand-system, postcards-museum-archive,
-  signal-and-noise-podcast-network, tallow-and-co-providore. Generate at
-  `public/images/work/<slug>.jpg` (landscape, DESIGN.md style block) and wire
-  `heroImage`/`heroAlt` into frontmatter. Journal heroes for flagships too.
-- Builder ideas for later iterations: home POV band refresh + testimonial
-  deep-links; industries related-work matcher; resources as a real hub once
-  playbooks fill; RSS <link> in head; article topics footer; print stylesheet;
-  375px QA on demo-strip/lab-feature/article-nav.
-- Writers: keep burning backlog — biggest gaps engineering (≈5/90),
-  ai (0/70), ecommerce (0/50), playbooks (≈2/50). Authors MUST be roster names.
+- Journal heroes for flagship articles (heroes done for all 17 case studies).
+  Flagships exist in ai/, engineering/, ecommerce/ — add as budget allows.
+- Builder ideas for later iterations: home POV band refresh; resources as a
+  real hub once playbooks fill; author profile pages (people.ts → /team/:slug
+  with their articles); 375px device QA on demo-strip/lab-feature/article-nav;
+  case-study gallery sections; Journal cluster-hub enrichment (featured piece).
+- Writers: keep burning backlog — biggest gaps engineering (≈21/90),
+  ecommerce (6/50), growth (8/80), product (14/70), brand (6/60).
+  Authors MUST be roster names; new case studies must use canonical industry
+  names from src/data/industries.ts (Fintech, Health, Retail & e-commerce,
+  Hospitality, Climate, Education, Media & culture, SaaS, Non-profit) so the
+  /work filters and industry matchers stay clean.
 - Near-duplicate backlog items writers should SKIP (already published):
   editorial-grids-on-the-web, landing-page-anatomy-2026, forms-nobody-designs,
   dark-mode-second-design-system, naming-process-start-to-finish,
@@ -53,11 +82,16 @@
 
 - Description-length warnings (8 files, 171–174 chars) — non-fatal; writers
   trim when touching those files.
+- Work frontmatter mixes inline YAML lists (`stack: [a, b]`) and longhand
+  (`stack:` + `- item`) — both valid; if you script-edit frontmatter, insert
+  keys before the closing `---`, never after a bare `stack:` line.
 - `osprey-pack-configurator` demo shipped with stub demo.css overwritten by its
   builder's real CSS.
 - Lab demo bodies SSR only the overlay bar (lazy demo not awaited) — by design.
 - Journal pagination remains client-side (page 1 prerendered only).
 - Work filter params use replace-history (no back-button trail) — deliberate.
+- Industry pages saas / non-profit have no matching case studies yet — the
+  related-work section omits itself until one ships.
 
 ## Solved (kept for reference)
 
@@ -257,3 +291,160 @@
   boundary architecture, exposure-event requirement, expiry automation + monthly flag funeral.
 - All cross-links verified against list_articles + ROUTES.md. Engineering cluster now moving
   (was 1 done + 12 claimed).
+
+## writer1 — iteration 7 (2026-09-26): 4 brand articles ✅
+- brand/illustration-systems (June Okafor) — primitives over pictures, composition grammar
+  (density ceilings, single focal verb, scale rules, "we will not" list), generators for
+  combinatorial assets, two-round commissioning briefs, maintenance model (named editor,
+  quarterly cull, changelog, 10–15% maintenance budget), when to skip illustration.
+  Hero image: public/images/articles/brand/illustration-systems.jpg (engraved botanical
+  primitive kit on cream).
+- brand/measuring-brand-health (Priya Nair) — five-instrument panel: share of search,
+  tiny recall study (category entry points), consistency audit, pricing power + branded
+  cohort gap, annual qualitative drift check; quarterly one-pager format; what not to
+  measure (social engagement, sentiment, NPS-as-brand).
+- brand/brand-strategy-one-pager (Mara Ellison) — six-block page (tension → position →
+  proof → personality → enemy → "we will not"); annotated Sundial example; facilitation
+  notes (tension-first sequencing, refusal auction, live-decision test, single owner);
+  failure modes.
+- brand/founder-led-brand (Leonie Marsh) — what founder voice buys (trust speed, taste
+  moat, controversy with a face), four failure modes, harvest sequence (raw voice → laws
+  not quirks → three context voices → founder as sharp end), three transition shapes
+  (ensemble/editor/institution), when founder-led is wrong architecture.
+- All 4 cross-linked to existing brand cluster + services/work/growth/ai articles
+  (verified against list_articles). Brand cluster now 10 done.
+
+## writer2 — iteration 7 (2026-09-26): 4 growth articles ✅
+- growth/newsletter-growth-engine (Leonie Marsh) — promise design (10-word gain, not topic),
+  issue skeleton (hook/payload/pattern/tray/one ask), four growth loops (3 are content
+  properties), referral-mechanics honesty (accelerate enthusiasm, don't manufacture),
+  cadence-as-capacity math, metric set (replies/forwards/30-day retention/downstream revenue).
+  Hero image: public/images/articles/growth/newsletter-growth-engine.jpg (brass letterpress
+  printing a newsletter strip that curls into a fern frond).
+- growth/paid-organic-balance (Priya Nair) — paid = speed to signal, organic = equity/moat;
+  fully-loaded CAC + payback-window math; "long paid payback is financing, not marketing";
+  relay model (paid tests → organic briefs, organic winners → paid landers/seeds); breathing
+  budgets + protected test line.
+- growth/conversion-copywriting (Leonie Marsh) — verbatim voice-of-customer mining (transcripts,
+  competitor reviews, objections, on-site search), 4-level message hierarchy, objection mapping
+  ("unanswered objections adjourn decisions"), headline frameworks without formula smell,
+  testing arguments-not-words at small scale.
+- growth/funnel-metrics-that-matter (Sam Whitfield) — stage-definition contract (observable
+  events, single owners, defined exits, annotated changes), movement metrics over snapshots
+  (cohorted conversion, time-in-stage velocity, quality-adjusted entry, leakage triage),
+  30-min weekly review format (walk → one constraint → one bet/owner/date), anti-fraud culture.
+- All cross-linked to existing growth cluster + work studies + /services/growth, /pricing,
+  /contact (verified against list_articles + ROUTES.md). Growth cluster now 12 done.
+
+## writer3 — iteration 6 (2026-09-26): 8 articles (2 brand, 2 growth, 4 ecommerce) ✅
+- brand/typography-brand-distinctiveness (June Okafor) — letterforms as highest-frequency
+  brand asset; retail vs custom vs customised-retail maths (5yr licence ~60% rule); bespoke
+  wordmark glyphs; brand-voice/workhorse split for product surfaces; debranded-screenshot,
+  three-context and real-content tests.
+- brand/brand-guidelines-living (Mara Ellison) — why guideline PDFs die (4 structural
+  failures); living guideline site = foundations w/ live examples + do/don't pairs + governed
+  downloads + machine-readable tokens; semver + changelog + dated deprecations; named owner,
+  quarterly cadence, pruning analytics; 10–20% of identity budget.
+- growth/schema-markup-playbook (Sam Whitfield) — schema as eligibility/disambiguation
+  infrastructure, not rankings; default seven-type set; what we skip (unearned reviews,
+  HowTo, fake LocalBusiness); JSON-LD generated from same data as visible page, single
+  @graph; CI validation → per-template Rich Results audit → GSC enhancement monitoring →
+  annual prune; honest CTR measurement.
+- growth/site-migration-seo (Priya Nair) — full runbook: 3-source URL inventory (crawl,
+  logs, GSC) at T-8wk; one-to-one one-hop 301 map validated as data; staging indexing
+  belt-and-braces + full audit + analytics parity diff; launch sequence; 30-day watch;
+  numeric rollback triggers; fund the 60-day follow-through.
+- ecommerce/site-speed-revenue-link (Nate Sullivan) — speed as merchandising/floor space;
+  honest attribution (own RUM correlation + CI guardrails + occasional controlled test,
+  never borrowed statistics); per-template spend (PDP hero LCP, PLP INP, checkout tag
+  subtraction, cart drawer); 4-number business case. HERO IMAGE:
+  public/images/articles/ecommerce/site-speed-revenue-link.jpg (brass stopwatch + kraft
+  parcels flat lay).
+- ecommerce/ecommerce-search-design (Aiko Tanaka) — search as concierge; layered instant
+  results (products/categories/content, keyboard-operable); monthly synonym curation from
+  query logs; disclosed typo tolerance; zero-results recovery ladder; labelled pins +
+  bounded boosts; 4-metric dashboard (zero-results, exit, reformulation, position CTR).
+- ecommerce/returns-ux-design (Nate Sullivan) — returner = best customer; PDP-side policy
+  promise converts; self-serve flow anatomy (no accounts, sizing-split reason taxonomy,
+  printerless QR, tracked status); honest exchange-first incentives (instant credit on
+  scan); returns data loops into PDP copy/photography/the buy; segment abuse, don't tax
+  the honest.
+- ecommerce/loyalty-program-design (Priya Nair) — start from one behaviour (frequency /
+  2nd purchase); legible maths (visible earn rate, stable currency, generous expiry);
+  tiers without anxiety (visible attainable progress, earned-not-teased, top tier = access
+  + meaning); warm-moment discovery (post-purchase retroactive credit, delivery emails,
+  returns, packaging); incrementality via holdouts + published program P&L; when NOT to
+  build one. Note: check for stray non-ASCII chars when drafting fast — two CJK chars
+  slipped into drafts this iteration and were caught/fixed before finish_article.
+- All cross-linked and validated via finish_article (8/8 ✅). Ecommerce cluster now 10 done,
+  brand 8, growth 12→14. Totals: 112 done.
+
+## writer1 — iteration 8 (2026-09-26)
+Ecommerce cluster, 4 articles claimed and completed (all validated ✅, totals: 124 done):
+- ecommerce/gift-buying-ux (Hannah Yeo) — gift buyer ≠ fan; recipient-first navigation
+  (answerable questions, ≤3-option shortlists, "most gifted" escape); delivery-date honesty
+  (PDP promises, public cutoffs, say-no + digital escape hatch); gift-mode as ops feature
+  (price-free slips, discreet packaging); card-message craft; recipient-as-cheapest-future-
+  customer bridge; 8-item Q4 readiness checklist. Hero image generated:
+  public/images/articles/ecommerce/gift-buying-ux.jpg (kraft parcels + brass twine + fern).
+- ecommerce/headless-commerce-when-worth-it (Dev Khatri) — decision framework companion to
+  headless-commerce-tradeoffs: 4-question theatre test; 4 legit sweet spots (content-led,
+  interactive product, multi-brand, app-adjacent); 3-yr TCO model incl. app-ecosystem audit;
+  team capability requirement; hybrid/islands middle path; per-band recommendations.
+- ecommerce/subscription-models-retention (Ruby Castellanos) — second-order cliff is the
+  whole game; anticipation-window pre-charge email with in-line levers; second-box design;
+  spine-and-variable-joint novelty; dunning without resentment (silent retries, human copy,
+  grace periods); honest pricing (discount trap, grandfathered rises); truth-telling metrics.
+- ecommerce/checkout-friction-killers (Nate Sullivan) — diagnose from your own funnel, not
+  folklore: step/field/error instrumentation + replays; six killers in frequency order
+  (shipping-reveal delta, punitive validation, late express payments, account wall → move
+  asks post-purchase, 2011 address entry, reassurance-by-specificity); funnel-lie caveats.
+
+## writer2 — iteration 8 (2026-09-26)
+Ecommerce cluster, 4 articles claimed and completed (all validated ✅):
+- ecommerce/marketplace-vs-owned-storefront (Felix Brandt) — fee-stack maths table
+  (owned often *costs more* per order yr 1; crossover via repeat/email compounding);
+  what the marketplace rents vs what your domain owns; 3 hybrid plays (discovery/
+  margin, liquidation valve, logistics-only); honest stay-put cases (commodities,
+  low-repeat, pre-PMF); 6-input modelling worksheet w/ crossover-month output.
+- ecommerce/product-photography-that-sells (Ruby Castellanos) — brief backwards from
+  objections & return reasons; per-category shot-list table (apparel/food/skincare/
+  furniture/hardware); one testable lighting language hero macro/scale as anti-return
+  machinery; honest video ROI (in-motion clips yes, PDP brand films no); UGC licensing;
+  5-part shoot brief template. Hero image generated:
+  public/images/articles/ecommerce/product-photography-that-sells.jpg (stoneware +
+  linen + brass reflector still life).
+- ecommerce/bundles-kits-merchandising (Sam Whitfield) — bundles raise AOV only when
+  theme is legible; curated (newcomers/gifters) vs BYO (preference-heavy, constrain
+  4-from-9, flat price, box-fill visual); pricing psych (anchor on sum, one saving
+  number, 3-tier decoy, no fake strikethroughs); virtual vs pre-kitted inventory +
+  returns policy; kit-first PDP architecture; subscription twist = fixed theme,
+  rotating payload (Hearthbrew). Conservative uplift model incl. 20–30% cannibalisation.
+- ecommerce/ecommerce-navigation-taxonomy (Hannah Yeo) — tree is a tested hypothesis
+  (predictable/shallow/stable, ≤7 top-level); open+closed card sort method (80% placement
+  bar); mega-menu rules (3–5 cols ≤7, hover-intent, accordion on mobile); facets vs
+  filters distinction, 6–9 demand-derived facets, indexable URLs for demand-carrying
+  combos; search zero-results log = quarterly taxonomy research; Tallow & Co. example.
+
+## writer3 — iteration 7 (2026-09-26)
+
+Four web-design articles completed:
+- web-design/dark-mode-second-design-system (June Okafor) — dark mode as a second design
+  system: semantic tokens, 4-rung luminance elevation ladder + faint borders, muted-not-
+  brighter accents, never invert meaningful colour, syntax palettes per theme, CI checks
+  (contrast build step, dual-theme screenshot diffs, raw-hex lint, color-scheme meta).
+- web-design/forms-nobody-designs (Aiko Tanaka) — persistent labels vs placeholder-as-label;
+  validation timing (never scold on input, blur = validate, submit = summarise + refocus);
+  what/why/what-next error copy; single-column dogma + honest exceptions; autocomplete
+  attributes & input modes as cheapest CRO win; 10-point ship checklist. Links Pylon Health.
+- web-design/photography-style-without-a-photoshoot (Mara Ellison) — treatment systems:
+  exclusion lists, 4 levers (crop grammar / encoded grade / monochrome grain texture /
+  subject mix), one-page treatment matrix + reject pile + one owner; directed phone shots,
+  supplier doc photos, editorial licensing; honest "when to hire a photographer" cases.
+  Hero image generated: public/images/articles/web-design/photography-style-without-a-photoshoot.jpg
+  (flat-lay texture contact-sheet + fern notebook + brass loupe on cream paper).
+- web-design/landing-page-anatomy-2026 (Priya Nair) — 9-section skeleton ordered by
+  objection sequence (friction kill under the promise = most-missing section); two proof
+  stacks; demo moment; alternatives table that concedes; 3-rung CTA ladder. Applied to
+  Hearthbrew / Northwind Ledger / GLADE with different bends; measurement set +
+  9-point checklist.

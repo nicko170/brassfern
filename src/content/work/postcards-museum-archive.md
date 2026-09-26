@@ -9,10 +9,12 @@ author: Aiko Tanaka
 keywords: [museum archive case study, digital collections website, faceted search ux, cultural heritage web design, image optimisation]
 readingTime: 8
 client: The Corrowong Museums Trust
-industry: Arts & culture
+industry: Media & culture
 services: [Websites, Product design & engineering]
 year: 2026
 stack: [React, TypeScript, Astro, Meilisearch, Cloudflare Images, Postgres]
+heroImage: /images/work/postcards-museum-archive.jpg
+heroAlt: "Blank vintage postcards overlapping in a grid with brass archival clips and a magnifying loupe on warm paper."
 ---
 
 The Corrowong Museums Trust looks after five small museums in the NSW Riverina — an agricultural hall, a railway museum, a schoolhouse, a returned-services collection and a general store frozen in 1953. Between them they hold around 180,000 catalogued objects: photographs, letters, farm ledgers, railway tickets, wedding dresses. The Trust had spent seven years and three grants digitising it all, and the result lived behind a database search form that assumed you already knew the catalogue number of the thing you were looking for.

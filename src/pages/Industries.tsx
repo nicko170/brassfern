@@ -41,7 +41,13 @@ export function IndustryPage() {
   const { slug } = useParams()
   const industry = slug ? getIndustry(slug) : undefined
   if (!industry) return <NotFound />
-  const related = caseStudies.filter((c) => c.industry.toLowerCase().includes(industry.name.split(' ')[0].toLowerCase())).slice(0, 3)
+  // Exact canonical-industry match first (case studies use the names from
+  // src/data/industries.ts); tolerant substring fallback for future drift.
+  const exact = caseStudies.filter((c) => c.industry === industry.name)
+  const related = (exact.length > 0
+    ? exact
+    : caseStudies.filter((c) => c.industry.toLowerCase().includes(industry.name.split(' ')[0].toLowerCase()))
+  ).slice(0, 3)
   return (
     <>
       <Seo

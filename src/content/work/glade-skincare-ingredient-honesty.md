@@ -17,7 +17,7 @@ keywords:
   - subscription ux
 readingTime: 9
 client: GLADE
-industry: Beauty & Wellness
+industry: Retail & e-commerce
 services:
   - E-commerce
   - Product design & engineering
@@ -30,6 +30,8 @@ stack:
   - Sanity
   - Node
   - Postgres
+heroImage: /images/work/glade-skincare-ingredient-honesty.jpg
+heroAlt: "Unlabelled apothecary bottles, raw botanical ingredients and blank specimen cards on warm paper."
 ---
 
 GLADE is a Melbourne skincare label founded by two cosmetic chemists who were tired of their industry. Skincare marketing runs on a familiar conspiracy: photography retouched past biology, ingredient lists written in Latin to discourage reading, and star ingredients present in quantities homeopaths would consider conservative. GLADE's founders made products they supplied to dermatology clinics, with full formula disclosures. Their website, though, had been built by a friend in a weekend, and it sold a serious product with the visual language of a supermarket supplement.

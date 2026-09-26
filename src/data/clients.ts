@@ -30,6 +30,8 @@ export interface Testimonial {
   name: string
   title: string
   company: string
+  /** slug of the matching file in src/content/work/ — deep-links the quote */
+  caseStudy?: string
 }
 
 export const testimonials: Testimonial[] = [
@@ -38,23 +40,27 @@ export const testimonials: Testimonial[] = [
     name: 'Imogen Hart',
     title: 'VP Growth',
     company: 'Northwind Ledger',
+    caseStudy: 'northwind-ledger-budget',
   },
   {
     quote: 'They said no to three of our favourite ideas and were right every time. That is what you are paying for — judgement, not just hands.',
     name: 'Marcus Oduya',
     title: 'Founder',
     company: 'Pylon Health',
+    caseStudy: 'pylon-health-booking',
   },
   {
     quote: 'Our rebrand could have been a committee tragedy. Instead it shipped in eleven weeks and the team still uses the system daily. It held.',
     name: 'Claire Beaumont',
     title: 'Head of Brand',
     company: 'Hearthbrew Coffee',
+    caseStudy: 'hearthbrew-brand-system',
   },
   {
     quote: 'The rare agency that treats your budget like their own money. Fixed scope, no surprises, and the numbers afterwards were real.',
     name: 'Theo Lindqvist',
     title: 'CEO',
     company: 'Meridian Climate',
+    caseStudy: 'meridian-climate-data-explorer',
   },
 ]

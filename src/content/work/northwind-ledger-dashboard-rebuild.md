@@ -13,6 +13,8 @@ industry: Fintech
 services: [Product design & engineering, Websites]
 year: 2025
 stack: [React, TypeScript, Node, Postgres, D3]
+heroImage: /images/work/northwind-ledger-dashboard-rebuild.jpg
+heroAlt: "Cut-paper bar charts and a rising line graph in fern and brass tones standing on a cream desk beside a ledger."
 demo: northwind-ledger-budget
 ---
 

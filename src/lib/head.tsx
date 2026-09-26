@@ -67,6 +67,8 @@ export function Seo({ title, description, path, type = 'website', image, robots,
   return children ? <>{children}</> : null
 }
 
+const RSS_HREF = absoluteUrl('rss.xml')
+
 function upsertMeta(attr: 'name' | 'property', key: string, content: string) {
   let el = document.head.querySelector<HTMLMetaElement>(`meta[${attr}="${key}"]`)
   if (!el) {
@@ -100,6 +102,15 @@ function applyHead(s: HeadState) {
     document.head.appendChild(canonical)
   }
   canonical.href = s.canonical
+  let rss = document.head.querySelector<HTMLLinkElement>('link[rel="alternate"][type="application/rss+xml"]')
+  if (!rss) {
+    rss = document.createElement('link')
+    rss.rel = 'alternate'
+    rss.type = 'application/rss+xml'
+    rss.title = 'Brassfern — Journal'
+    document.head.appendChild(rss)
+  }
+  rss.href = RSS_HREF
   // JSON-LD: replace previous scripts.
   document.head.querySelectorAll('script[data-bf-ld]').forEach((el) => el.remove())
   for (const obj of s.jsonLd) {
@@ -118,6 +129,7 @@ export function headToHtml(s: HeadState): string {
     `<title>${e(s.title)}</title>`,
     `<meta name="description" content="${e(s.description)}" />`,
     `<link rel="canonical" href="${e(s.canonical)}" />`,
+    `<link rel="alternate" type="application/rss+xml" title="Brassfern — Journal" href="${e(RSS_HREF)}" />`,
     `<meta property="og:title" content="${e(s.title)}" />`,
     `<meta property="og:description" content="${e(s.description)}" />`,
     `<meta property="og:url" content="${e(s.canonical)}" />`,

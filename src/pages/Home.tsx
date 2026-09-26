@@ -93,13 +93,37 @@ export default function Home() {
           ) : (
             <p className="lead">Case studies are being grown. Visit the <Link to="/lab" className="link-line">Lab</Link> in the meantime.</p>
           )}
-          {demos.length > 0 && (
-            <p style={{ marginTop: 'var(--space-6)' }}>
-              <Link className="link-line" to="/lab">And {demos.length} live demo{demos.length > 1 ? 's' : ''} in the Lab →</Link>
-            </p>
-          )}
         </div>
       </section>
+
+      {/* ——— lab band ——— */}
+      {demos.length > 0 && (
+        <section className="section section--tight">
+          <div className="container">
+            <div className="night lab-feature">
+              <div className="lab-feature__copy">
+                <Reveal className="overline overline--night">The Lab — touch the work</Reveal>
+                <h2 className="display h-2" style={{ marginTop: '1rem' }}>{demos[0].title}</h2>
+                <p className="lab-feature__desc">{demos[0].description}</p>
+                <p className="mono" style={{ color: 'var(--night-mute)', fontSize: 'var(--fs-micro)', letterSpacing: '0.14em', textTransform: 'uppercase' }}>
+                  {demos[0].client} · {demos[0].tags.slice(0, 4).join(' · ')}
+                </p>
+                <p style={{ marginTop: 'var(--space-5)', display: 'flex', gap: 'var(--space-4)', flexWrap: 'wrap' }}>
+                  <Link to={`/lab/${demos[0].slug}`} className="btn btn--brass">
+                    Open the demo <span className="arrow" aria-hidden>→</span>
+                  </Link>
+                  <Link to="/lab" className="link-line" style={{ color: 'var(--brass-hi)', alignSelf: 'center' }}>
+                    All {demos.length} demo{demos.length > 1 ? 's' : ''}
+                  </Link>
+                </p>
+              </div>
+              <Link to={`/lab/${demos[0].slug}`} className="lab-feature__art" aria-hidden tabIndex={-1}>
+                <span>{demos[0].client.slice(0, 2).toUpperCase()}</span>
+              </Link>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* ——— services ——— */}
       <section className="section section--tight">
@@ -177,7 +201,14 @@ export default function Home() {
               <Reveal as="figure" key={t.name} delay={i * 90} className="quote-block">
                 <blockquote>“{t.quote}”</blockquote>
                 <figcaption>
-                  {t.name} — {t.title}, {t.company}
+                  {t.name} — {t.title},{' '}
+                  {t.caseStudy ? (
+                    <Link to={`/work/${t.caseStudy}`} className="quote-block__link">
+                      {t.company} <span aria-hidden>→</span>
+                    </Link>
+                  ) : (
+                    t.company
+                  )}
                 </figcaption>
               </Reveal>
             ))}

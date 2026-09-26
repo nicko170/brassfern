@@ -9,7 +9,7 @@ author: Felix Brandt
 keywords: ["record label website case study", "music ux", "audio player design", "artist pages"]
 readingTime: 8 min read
 client: Holloway Records
-industry: Media
+industry: Media & culture
 services: ["Brand & identity", "Websites", "E-commerce"]
 year: 2024
 stack: ["Astro", "TypeScript", "Shopify Hydrogen", "Sanity", "Web Audio API", "Stripe"]

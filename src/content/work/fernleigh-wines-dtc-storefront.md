@@ -9,10 +9,12 @@ author: Felix Brandt
 keywords: [wine ecommerce case study, headless storefront, subscription design, dtc wine, fernleigh wines]
 readingTime: 7
 client: Fernleigh Wines
-industry: Hospitality & retail
+industry: Retail & e-commerce
 services: [E-commerce, Websites, Brand & identity]
 year: 2025
 stack: [React, TypeScript, Headless Shopify, Sanity, Node]
+heroImage: /images/work/fernleigh-wines-dtc-storefront.jpg
+heroAlt: "Unlabelled wine bottles with brass foil caps and a curling grapevine tendril on a cream paper surface."
 ---
 
 Fernleigh Wines is a cool-climate label in the Adelaide Hills — pinot noir, chardonnay, and a nebbiolo the winemaker refuses to enter into shows. Their cellar door is the kind of place people describe to friends: fog over the block, a fire in winter, staff who remember what you drank last time. Their website, by contrast, was a stock theme with the soul of a spreadsheet. It listed wines. It took money. It told no stories, and it was quietly costing them: the cellar door converted browsers at a rate the online store could only dream of.
