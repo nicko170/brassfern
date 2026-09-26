@@ -782,10 +782,11 @@
     "ttfb optimization",
     "cdn architecture"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790380772.580271
+   "claimed_at": 1790380772.580271,
+   "done_at": "2026-09-26T10:10:11"
   },
   {
    "kind": "article",
@@ -799,10 +800,11 @@
     "isr nextjs",
     "cache invalidation"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790380772.5802722
+   "claimed_at": 1790380772.5802722,
+   "done_at": "2026-09-26T10:10:16"
   },
   {
    "kind": "article",
@@ -816,10 +818,11 @@
     "content modelling",
     "sanity typescript"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790380772.5802722
+   "claimed_at": 1790380772.5802722,
+   "done_at": "2026-09-26T10:10:16"
   },
   {
    "kind": "article",
@@ -833,10 +836,11 @@
     "e2e test architecture",
     "testing best practices"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790380772.580273
+   "claimed_at": 1790380772.580273,
+   "done_at": "2026-09-26T10:10:20"
   },
   {
    "kind": "article",
@@ -918,10 +922,11 @@
     "headless chrome pdf",
     "report generation web"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790380853.9380171
+   "claimed_at": 1790380853.9380171,
+   "done_at": "2026-09-26T10:09:33"
   },
   {
    "kind": "article",
@@ -935,10 +940,11 @@
     "rtl css",
     "localization engineering"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790380853.938018
+   "claimed_at": 1790380853.938018,
+   "done_at": "2026-09-26T10:09:37"
   },
   {
    "kind": "article",
@@ -952,10 +958,11 @@
     "accessibility engineering",
     "shortcut design"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790380853.938018
+   "claimed_at": 1790380853.938018,
+   "done_at": "2026-09-26T10:09:43"
   },
   {
    "kind": "article",
@@ -969,10 +976,11 @@
     "progressive rollout",
     "technical debt flags"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790380853.938018
+   "claimed_at": 1790380853.938018,
+   "done_at": "2026-09-26T10:09:46"
   },
   {
    "kind": "article",
@@ -2474,8 +2482,10 @@
     "design system pipeline",
     "css variables"
    ],
-   "status": "planned",
-   "added_by": "writer3"
+   "status": "claimed",
+   "added_by": "writer3",
+   "worker": "writer4",
+   "claimed_at": 1790381223.915568
   },
   {
    "kind": "article",
@@ -2489,8 +2499,10 @@
     "vitest",
     "ci quality"
    ],
-   "status": "planned",
-   "added_by": "writer3"
+   "status": "claimed",
+   "added_by": "writer3",
+   "worker": "writer4",
+   "claimed_at": 1790381223.9155688
   },
   {
    "kind": "article",
@@ -2504,8 +2516,10 @@
     "axe ci",
     "a11y automation"
    ],
-   "status": "planned",
-   "added_by": "writer3"
+   "status": "claimed",
+   "added_by": "writer3",
+   "worker": "writer4",
+   "claimed_at": 1790381223.91557
   },
   {
    "kind": "article",
@@ -3212,8 +3226,10 @@
     "ttfb optimisation",
     "ssr performance"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer4",
+   "claimed_at": 1790381223.91557
   },
   {
    "kind": "article",
