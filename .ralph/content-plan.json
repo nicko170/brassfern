@@ -4705,7 +4705,7 @@
    "status": "claimed",
    "added_by": "builder",
    "worker": "demo1",
-   "claimed_at": 1790386795.8985221
+   "claimed_at": 1790401969.575058
   },
   {
    "kind": "demo",
@@ -5887,10 +5887,11 @@
     "brand storytelling",
     "trust signals"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
-   "worker": "writer3",
-   "claimed_at": 1790392932.1561222
+   "worker": "writer4",
+   "claimed_at": 1790401949.421191,
+   "done_at": "2026-09-26T15:58:14"
   },
   {
    "kind": "article",
@@ -5906,8 +5907,8 @@
    ],
    "status": "claimed",
    "added_by": "builder",
-   "worker": "writer3",
-   "claimed_at": 1790392932.1561222
+   "worker": "writer4",
+   "claimed_at": 1790401949.421192
   },
   {
    "kind": "article",
@@ -5923,8 +5924,8 @@
    ],
    "status": "claimed",
    "added_by": "builder",
-   "worker": "writer3",
-   "claimed_at": 1790392932.1561222
+   "worker": "writer4",
+   "claimed_at": 1790401949.421192
   },
   {
    "kind": "article",
@@ -5938,10 +5939,11 @@
     "typographic details",
     "article design"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
-   "worker": "writer2",
-   "claimed_at": 1790394700.062707
+   "worker": "writer4",
+   "claimed_at": 1790401949.421193,
+   "done_at": "2026-09-26T15:58:33"
   },
   {
    "kind": "article",
@@ -5955,10 +5957,11 @@
     "pricing table design",
     "marketing pages"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
-   "worker": "writer2",
-   "claimed_at": 1790394700.062708
+   "worker": null,
+   "claimed_at": 1790394700.062708,
+   "done_at": "2026-09-26T15:58:47"
   },
   {
    "kind": "article",
@@ -5972,10 +5975,11 @@
     "navigation UX",
     "site structure"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
-   "worker": "writer2",
-   "claimed_at": 1790394700.062708
+   "worker": null,
+   "claimed_at": 1790394700.062708,
+   "done_at": "2026-09-26T15:58:52"
   },
   {
    "kind": "article",
@@ -5989,10 +5993,11 @@
     "layout spacing",
     "minimal web design"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
-   "worker": "writer2",
-   "claimed_at": 1790394700.062708
+   "worker": null,
+   "claimed_at": 1790394700.062708,
+   "done_at": "2026-09-26T15:59:10"
   },
   {
    "kind": "article",
@@ -6253,9 +6258,9 @@
    "cluster": "demos",
    "intent": "Event ticketing seat-map demo for fictional client 'The Glasshouse' (an independent theatre). Art direction: velvet-night palette — deep oxblood, warm gold, cream; serif playbill display type; subtle grain. Features: interactive SVG venue map with stalls/circle/boxes, pinch-and-button zoom with pan, price-tier colouring with a colourblind-safe toggle, seat hover/focus details, multi-seat selection with per-seat pricing, accessible list-view fallback for the seat picker (arrow-key navigable, aria-describedby details), running total + best-available suggestion, bottlenecks timer display (illustrative), reduced-motion static mode. Stack: React + TypeScript, hand-rolled SVG, no heavy libs. Links to a new case study slug glasshouse-ticketing-relaunch.",
    "keywords": [],
-   "status": "claimed",
+   "status": "planned",
    "added_by": "builder",
-   "worker": "demo3",
+   "worker": null,
    "claimed_at": 1790388062.264554
   },
   {
@@ -6265,9 +6270,9 @@
    "cluster": "demos",
    "intent": "SaaS pricing calculator demo for fictional client 'Ledgerline' (expense-management SaaS). Art direction: precise fintech paper — off-white, ledger-green, ink; tabular numerals everywhere; ruled-line motifs. Features: seat/usage sliders with stepped snapping, monthly-vs-annual toggle with savings callouts, plan comparison matrix with highlighted recommended plan, ROI estimator (hours saved × blended rate) with editable assumptions, discount code field with validation states, full state serialised to the URL (shareable quote), print-friendly quote summary view, keyboard-operable sliders with number-input twins. Stack: React + TypeScript, zero charting libs — CSS bars. Links to a new case study slug ledgerline-pricing-page-rebuild.",
    "keywords": [],
-   "status": "claimed",
+   "status": "planned",
    "added_by": "builder",
-   "worker": "demo2",
+   "worker": null,
    "claimed_at": 1790388593.6638389
   },
   {
@@ -6535,10 +6540,11 @@
     "shimmer animation",
     "layout shift prevention"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
-   "worker": "writer1",
-   "claimed_at": 1790394959.681581
+   "worker": null,
+   "claimed_at": 1790394959.681581,
+   "done_at": "2026-09-26T15:56:00"
   },
   {
    "kind": "article",
@@ -6553,9 +6559,9 @@
     "focus state tokens",
     "accessible design systems"
    ],
-   "status": "claimed",
+   "status": "planned",
    "added_by": "builder",
-   "worker": "writer1",
+   "worker": null,
    "claimed_at": 1790394959.681582
   },
   {
@@ -6571,9 +6577,9 @@
     "feature section design",
     "landing page grid"
    ],
-   "status": "claimed",
+   "status": "planned",
    "added_by": "builder",
-   "worker": "writer1",
+   "worker": null,
    "claimed_at": 1790394959.681582
   },
   {
@@ -6589,9 +6595,9 @@
     "reduced motion fallbacks",
     "narrative web design"
    ],
-   "status": "claimed",
+   "status": "planned",
    "added_by": "builder",
-   "worker": "writer1",
+   "worker": null,
    "claimed_at": 1790394959.681582
   },
   {
@@ -7327,9 +7333,9 @@
     "content discovery",
     "card grid design"
    ],
-   "status": "claimed",
+   "status": "planned",
    "added_by": "builder",
-   "worker": "writer4",
+   "worker": null,
    "claimed_at": 1790395387.073782
   },
   {
@@ -7345,9 +7351,9 @@
     "long-form navigation",
     "web design patterns"
    ],
-   "status": "claimed",
+   "status": "planned",
    "added_by": "builder",
-   "worker": "writer4",
+   "worker": null,
    "claimed_at": 1790395387.073782
   },
   {
@@ -7363,9 +7369,9 @@
     "motion restraint",
     "web design details"
    ],
-   "status": "claimed",
+   "status": "planned",
    "added_by": "builder",
-   "worker": "writer4",
+   "worker": null,
    "claimed_at": 1790395387.073783
   },
   {
@@ -7381,9 +7387,9 @@
     "focus states",
     "web design craft"
    ],
-   "status": "claimed",
+   "status": "planned",
    "added_by": "builder",
-   "worker": "writer4",
+   "worker": null,
    "claimed_at": 1790395387.073783
   },
   {
