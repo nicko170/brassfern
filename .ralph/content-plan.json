@@ -854,10 +854,11 @@
     "bundle budget",
     "webpack vite analysis"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790380809.9015949
+   "claimed_at": 1790380809.9015949,
+   "done_at": "2026-09-26T10:18:57"
   },
   {
    "kind": "article",
@@ -871,10 +872,11 @@
     "design system technology",
     "lit vs react"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790380809.9015958
+   "claimed_at": 1790380809.9015958,
+   "done_at": "2026-09-26T10:19:10"
   },
   {
    "kind": "article",
@@ -888,10 +890,11 @@
     "multi step forms",
     "checkout state management"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790380809.9015958
+   "claimed_at": 1790380809.9015958,
+   "done_at": "2026-09-26T10:19:13"
   },
   {
    "kind": "article",
@@ -905,10 +908,11 @@
     "form error handling",
     "accessible forms engineering"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790380809.9015958
+   "claimed_at": 1790380809.9015958,
+   "done_at": "2026-09-26T10:19:48"
   },
   {
    "kind": "article",
@@ -1422,8 +1426,10 @@
     "typographic identity",
     "font licensing brand"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790381545.126676
   },
   {
    "kind": "article",
@@ -1437,8 +1443,10 @@
     "brand portal",
     "brand governance"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790381545.126677
   },
   {
    "kind": "article",
@@ -1596,8 +1604,10 @@
     "json-ld best practices",
     "rich results"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790381545.126678
   },
   {
    "kind": "article",
@@ -1611,8 +1621,10 @@
     "redirect mapping",
     "seo migration checklist"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790381545.126678
   },
   {
    "kind": "article",
