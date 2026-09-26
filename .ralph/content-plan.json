@@ -6297,10 +6297,11 @@
    "cluster": "demos",
    "intent": "Event ticketing seat-map demo for fictional client 'The Glasshouse' (an independent theatre). Art direction: velvet-night palette — deep oxblood, warm gold, cream; serif playbill display type; subtle grain. Features: interactive SVG venue map with stalls/circle/boxes, pinch-and-button zoom with pan, price-tier colouring with a colourblind-safe toggle, seat hover/focus details, multi-seat selection with per-seat pricing, accessible list-view fallback for the seat picker (arrow-key navigable, aria-describedby details), running total + best-available suggestion, bottlenecks timer display (illustrative), reduced-motion static mode. Stack: React + TypeScript, hand-rolled SVG, no heavy libs. Links to a new case study slug glasshouse-ticketing-relaunch.",
    "keywords": [],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "demo1",
-   "claimed_at": 1790404512.70135
+   "claimed_at": 1790404512.70135,
+   "done_at": "2026-09-26T16:46:06"
   },
   {
    "kind": "demo",
@@ -6321,10 +6322,10 @@
    "cluster": "demos",
    "intent": "A music player UI for the fictional Holloway Records label: a vinyl-shelf browse view, waveform seek bar rendered on canvas, play queue with drag-to-reorder, crossfade toggle, and a 'liner notes' panel per track. Art direction: charcoal studio-dark with oxblood and bone type, condensed grotesk + mono timings, subtle vinyl-sheen gradients. Mocked audio (WebAudio oscillator-free — visual playback simulation with time-based waveform animation), full keyboard control, reduced-motion static waveform. Ties to case study holloway-records-label-site.",
    "keywords": [],
-   "status": "planned",
+   "status": "claimed",
    "added_by": "builder",
-   "worker": null,
-   "claimed_at": 1790393458.8395798
+   "worker": "demo2",
+   "claimed_at": 1790405151.669912
   },
   {
    "kind": "demo",
@@ -6863,10 +6864,11 @@
     "bulk import product design",
     "export UX"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790404443.956295
+   "claimed_at": 1790404443.956295,
+   "done_at": "2026-09-26T16:46:01"
   },
   {
    "kind": "article",
@@ -6880,10 +6882,11 @@
     "date input design",
     "relative time display"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790404443.956297
+   "claimed_at": 1790404443.956297,
+   "done_at": "2026-09-26T16:46:01"
   },
   {
    "kind": "article",
@@ -6897,10 +6900,11 @@
     "org switching",
     "multi-account navigation"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790404443.956297
+   "claimed_at": 1790404443.956297,
+   "done_at": "2026-09-26T16:46:01"
   },
   {
    "kind": "article",
@@ -6914,10 +6918,11 @@
     "PLG prompts",
     "paywall timing"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790404443.956297
+   "claimed_at": 1790404443.956297,
+   "done_at": "2026-09-26T16:46:01"
   },
   {
    "kind": "article",
