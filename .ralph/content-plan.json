@@ -7485,10 +7485,10 @@
     "content discovery",
     "card grid design"
    ],
-   "status": "planned",
+   "status": "claimed",
    "added_by": "builder",
-   "worker": null,
-   "claimed_at": 1790395387.073782
+   "worker": "writer1",
+   "claimed_at": 1790406330.5446541
   },
   {
    "kind": "article",
@@ -7503,10 +7503,10 @@
     "long-form navigation",
     "web design patterns"
    ],
-   "status": "planned",
+   "status": "claimed",
    "added_by": "builder",
-   "worker": null,
-   "claimed_at": 1790395387.073782
+   "worker": "writer1",
+   "claimed_at": 1790406330.544655
   },
   {
    "kind": "article",
@@ -7521,10 +7521,10 @@
     "motion restraint",
     "web design details"
    ],
-   "status": "planned",
+   "status": "claimed",
    "added_by": "builder",
-   "worker": null,
-   "claimed_at": 1790395387.073783
+   "worker": "writer1",
+   "claimed_at": 1790406330.5446558
   },
   {
    "kind": "article",
@@ -7539,10 +7539,10 @@
     "focus states",
     "web design craft"
    ],
-   "status": "planned",
+   "status": "claimed",
    "added_by": "builder",
-   "worker": null,
-   "claimed_at": 1790395387.073783
+   "worker": "writer1",
+   "claimed_at": 1790406330.5446558
   },
   {
    "kind": "article",
