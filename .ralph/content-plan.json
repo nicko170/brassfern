@@ -5414,10 +5414,11 @@
     "pre-seed",
     "brand on a budget"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790405415.040232
+   "claimed_at": 1790405415.040232,
+   "done_at": "2026-09-26T16:57:57"
   },
   {
    "kind": "article",
@@ -5431,10 +5432,11 @@
     "product naming",
     "brand architecture"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790405415.040234
+   "claimed_at": 1790405415.040234,
+   "done_at": "2026-09-26T16:57:58"
   },
   {
    "kind": "article",
@@ -5448,10 +5450,11 @@
     "design ops",
     "asset management"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790405415.040234
+   "claimed_at": 1790405415.040234,
+   "done_at": "2026-09-26T16:58:00"
   },
   {
    "kind": "article",
@@ -5465,10 +5468,11 @@
     "brand ethics",
     "AI disclosure"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790405415.040234
+   "claimed_at": 1790405415.040234,
+   "done_at": "2026-09-26T16:58:01"
   },
   {
    "kind": "article",
@@ -6807,10 +6811,11 @@
     "content model",
     "CMS design"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790405331.012279
+   "claimed_at": 1790405331.012279,
+   "done_at": "2026-09-26T16:57:23"
   },
   {
    "kind": "article",
@@ -6824,10 +6829,11 @@
     "project success criteria",
     "agency measurement"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790405331.01228
+   "claimed_at": 1790405331.01228,
+   "done_at": "2026-09-26T16:57:23"
   },
   {
    "kind": "article",
@@ -6841,10 +6847,11 @@
     "buying design services",
     "request for proposal"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790405331.01228
+   "claimed_at": 1790405331.01228,
+   "done_at": "2026-09-26T16:57:23"
   },
   {
    "kind": "article",
@@ -6858,10 +6865,11 @@
     "agency agreement",
     "creative services contract"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790405331.01228
+   "claimed_at": 1790405331.01228,
+   "done_at": "2026-09-26T16:57:23"
   },
   {
    "kind": "article",
@@ -7139,10 +7147,11 @@
     "brand evolution",
     "identity update"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790405744.59657
+   "claimed_at": 1790405744.59657,
+   "done_at": "2026-09-26T16:57:55"
   },
   {
    "kind": "article",
@@ -7156,10 +7165,11 @@
     "brand naming architecture",
     "naming governance"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790405744.596571
+   "claimed_at": 1790405744.596571,
+   "done_at": "2026-09-26T16:59:19"
   },
   {
    "kind": "article",
@@ -7173,10 +7183,11 @@
     "apology copy",
     "tone of voice product"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790405744.596571
+   "claimed_at": 1790405744.596571,
+   "done_at": "2026-09-26T17:01:08"
   },
   {
    "kind": "article",
@@ -7190,10 +7201,11 @@
     "font pairing guide",
     "typeface selection brand"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer4",
-   "claimed_at": 1790405744.596571
+   "claimed_at": 1790405744.596571,
+   "done_at": "2026-09-26T17:02:49"
   },
   {
    "kind": "article",
@@ -7207,8 +7219,10 @@
     "scrollytelling report",
     "nonprofit annual report"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790405768.177175
   },
   {
    "kind": "article",
@@ -7222,8 +7236,10 @@
     "microcopy brand",
     "brand details"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790405768.177176
   },
   {
    "kind": "article",
@@ -7273,8 +7289,10 @@
     "doorway pages",
     "programmatic SEO local"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790405944.902894
   },
   {
    "kind": "article",
@@ -7288,8 +7306,10 @@
     "event content marketing",
     "content atomization"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790405944.9028962
   },
   {
    "kind": "article",
@@ -7303,8 +7323,10 @@
     "customer stories marketing",
     "social proof content"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790405944.9028962
   },
   {
    "kind": "article",
@@ -7318,8 +7340,10 @@
     "marketing analytics hygiene",
     "UTM parameters"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790405944.9028962
   },
   {
    "kind": "article",
@@ -8903,8 +8927,10 @@
     "copywriting",
     "brand strategy"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790405768.177176
   },
   {
    "kind": "article",
@@ -8919,8 +8945,10 @@
     "brand identity",
     "design tokens"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790405768.177176
   },
   {
    "kind": "article",
@@ -8935,8 +8963,10 @@
     "checklist",
     "brand strategy"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790405848.808762
   },
   {
    "kind": "article",
@@ -8951,8 +8981,10 @@
     "design systems",
     "commissioning"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790405848.8087628
   },
   {
    "kind": "article",
@@ -8967,8 +8999,10 @@
     "brand strategy",
     "legal"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790405848.8087628
   },
   {
    "kind": "article",
@@ -8983,8 +9017,10 @@
     "audio UX",
     "accessibility"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790405848.808764
   },
   {
    "kind": "article",
@@ -9382,6 +9418,422 @@
     "engagement",
     "product design",
     "restraint"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "drag-and-drop-ux",
+   "title": "Drag and drop that everyone can use",
+   "cluster": "product",
+   "intent": "D&D as a progressive enhancement, never the only path: handle vs whole-card grabs, live ghost previews and drop-slot affordances, the announcement contract with screen readers (aria-grabbed is dead, use live regions), the keyboard shuttle as a first-class interaction, touch long-press vs explicit move menus, and collision rules for kanban/lists/reorder. Reference the Switchyard kanban demo.",
+   "keywords": [
+    "drag and drop ux",
+    "accessible drag and drop",
+    "kanban interaction design",
+    "keyboard reorder",
+    "dnd-kit patterns"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "filter-sort-ux",
+   "title": "Filters, facets and sorts that hold up",
+   "cluster": "product",
+   "intent": "Faceted filtering in product UI: per-facet counts and when they lie, applied-filter chips as readable state (not a sentence), URL-synced filter state so views are shareable, zero-results recovery that suggests the filter to drop, sort persistence per user vs per view, and the mobile filter drawer contract. Distinct from product search UX.",
+   "keywords": [
+    "faceted filter ux",
+    "filter chips",
+    "zero results recovery",
+    "sort persistence",
+    "url state filters"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "sparklines-and-micro-viz",
+   "title": "Sparklines, micro-bars and the honest 40-pixel chart",
+   "cluster": "product",
+   "intent": "Micro-visualisation in tables and cards: when a sparkline beats a number, baseline discipline (truncation lies tiny too), colour restraint to one signal hue, hover/tap detail escalation to the full chart, accessible text equivalents as the primary data, and animation rules for 40px canvases. Pairs with dashboard hierarchy pieces, small-viz lens.",
+   "keywords": [
+    "sparkline design",
+    "micro charts",
+    "data ink ratio",
+    "small visualisations",
+    "table visualisation ux"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "dark-mode-product-strategy",
+   "title": "Dark mode is a product decision, not a theme toggle",
+   "cluster": "product",
+   "intent": "The business case first (whose jobs does dark mode serve?), token-architecture cost audit before promising it, the surfaces that never go dark confidently (data viz, media, receipts), elevation-by-lightness rules, images and brand assets on dark, auto-switching as the default with manual override stored honestly, and when the honest answer is 'not this year'.",
+   "keywords": [
+    "dark mode strategy",
+    "dark theme design tokens",
+    "dark mode cost",
+    "theme toggle ux",
+    "dark ui data visualisation"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "internationalisation-ux",
+   "title": "Designing for the world before you translate a word",
+   "cluster": "product",
+   "intent": "i18n as an interface discipline: name fields that accept reality (single field, no surname law), address forms that don't assume postcode, phone input that doesn't fight the user, pluralisation and gender in strings, 30–40% text expansion budgets in layouts, RTL as a mirror not a reskin, locale-aware dates/currency/units, and pseudo-localisation in CI.",
+   "keywords": [
+    "i18n ux",
+    "internationalisation design",
+    "rtl interface design",
+    "name input ux",
+    "localisation product design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "account-deletion-design",
+   "title": "Account deletion as a trust surface",
+   "cluster": "product",
+   "intent": "Distinction from cancellation flows: deletion is data, not billing. Export-first pattern (download before the cliff), honest retention statements (what we keep, why, how long), cooling-off with a real undo window vs instant-erase options, deletion receipts, dependent-data handling (teams, published content), and measuring deletion-support ticket deflection. Dark-pattern audit of 'are you sure' labyrinths.",
+   "keywords": [
+    "account deletion ux",
+    "data export before delete",
+    "gdpr erasure design",
+    "retention honesty",
+    "destructive action design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "scheduling-availability-ux",
+   "title": "Scheduling and availability UX without the timezone trap",
+   "cluster": "product",
+   "intent": "Booking/scheduling inside products: always show the user's timezone and the other party's, slot generation honesty (buffering side-effects visible), conflict presentation (soft vs hard), DST week weirdness with concrete examples, recurring-slot editing (this one vs series), and confirmation artefacts that survive calendar apps. Lessons from the Pylon and Wattle & Daub booking demos.",
+   "keywords": [
+    "scheduling ux",
+    "booking flow design",
+    "timezone display",
+    "availability picker",
+    "calendar ui patterns"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "detail-views-drawers-pages",
+   "title": "Drawers, split views and full pages: choosing the detail surface",
+   "cluster": "product",
+   "intent": "A decision framework for where detail lives: drawer for peek-and-return with live context, split view for comparison-heavy work, full page for deep work and shareable URLs. Rules per surface (drawer never spans 96%, split panes need independent scroll, pages need working back behaviour), deep-linking per surface, focus management on open/close, and mobile collapse plans.",
+   "keywords": [
+    "drawer vs modal",
+    "split view ux",
+    "detail view design",
+    "side panel interaction",
+    "deep linking ui"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "avatars-identity-surfaces",
+   "title": "Avatars, initials and identity surfaces in product UI",
+   "cluster": "product",
+   "intent": "The small circle that carries the person: generated identity systems (initials on deterministic hues, geometric sprites — Brassfern's own team portraits as the example), never defaulting to grey silhouettes, presence indicators that respect privacy, avatar stacks and overflow counts, upload UX with crop and fallback, alt-text strategy (name, not 'avatar of'), and why photoreal fake faces are off the table.",
+   "keywords": [
+    "avatar ui design",
+    "user identity surfaces",
+    "initials avatar",
+    "presence indicator ux",
+    "avatar alt text"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "offline-first-ux",
+   "title": "Offline states designed before the wifi drops",
+   "cluster": "product",
+   "intent": "Offline as a designed mode: the honest connection banner (offline vs server-down vs slow), queued actions with visible outbox, read-only degradation with cached content stamps, sync conflict surfaces on reconnect, per-feature offline triage matrix (what must work, what may queue, what gracefully refuses), and testing with actually-offline devices not just devtools throttling.",
+   "keywords": [
+    "offline first ux",
+    "offline mode design",
+    "sync conflict ui",
+    "connectivity states",
+    "pwa offline patterns"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "in-product-survey-design",
+   "title": "In-product surveys that don't burn goodwill",
+   "cluster": "product",
+   "intent": "Survey design inside the product: moment selection tied to completed jobs not timers, the one-question-first progressive pattern, NPS reality check (a weak signal used loudly), sampling and frequency caps across teams, dismissal as a recorded answer, closing the loop visibly ('you said, we did'), and when a survey is the wrong instrument entirely.",
+   "keywords": [
+    "in-product surveys",
+    "nps criticism",
+    "survey timing ux",
+    "micro survey design",
+    "feedback fatigue"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "confirmation-screens-next-step",
+   "title": "Confirmation screens and receipts that earn the next step",
+   "cluster": "product",
+   "intent": "Post-action success surfaces as designed product: what the confirmation must prove (it worked, what happens next, when), reference numbers humans can read aloud, the single suggested next action vs the catalogue of cross-sells, email receipt as the durable twin, undo windows stated here not hidden, and error-honesty (don't confirm what you only queued). Pairs with transactional email engineering.",
+   "keywords": [
+    "confirmation page design",
+    "success message ux",
+    "receipt design",
+    "post purchase experience",
+    "optimistic confirmation"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "saved-views-power-users",
+   "title": "Saved views, presets and the power-user dividend",
+   "cluster": "product",
+   "intent": "Designing personalisation surfaces: saved filter/column/density configurations as named objects, per-user vs per-team sharing and the politics of defaults, the reset-to-studio-default escape hatch, discoverability for the 20% who build them and invisible-to-the-rest rule, migration when the underlying schema changes, and measuring power-user feature ROI honestly.",
+   "keywords": [
+    "saved views ux",
+    "user preferences design",
+    "power user features",
+    "custom filters",
+    "workspace personalisation"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "status-page-design",
+   "title": "The status page is a product surface",
+   "cluster": "product",
+   "intent": "Public status pages and incident comms for product teams: component-level honesty vs one big green light, the incident lifecycle copy pattern (investigating/identified/monitoring/resolved with timestamps), uptime history granularity decisions, subscriber experience for incident updates, separating marketing polish from operational truth, and the postmortem link as trust-builder. Pairs with error-pages-as-system but this is live-ops, not static pages.",
+   "keywords": [
+    "status page design",
+    "incident communication",
+    "uptime reporting",
+    "incident copywriting",
+    "service status ux"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "admin-panel-ux-neglect",
+   "title": "Admin panels deserve product design too",
+   "cluster": "product",
+   "intent": "Internal/ops surfaces as first-class design scope: the cost ledger of neglected admin (support hours, data errors, workarounds), designing for the Tuesday power user not the demo, table+detail+bulk-action as the core grammar, audit trails as UI, guardrails for destructive ops actions, and the 80/20 scoping that keeps admin builds from becoming a second product.",
+   "keywords": [
+    "admin panel design",
+    "internal tools ux",
+    "back office interface",
+    "ops tooling design",
+    "admin ux patterns"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "brand-in-product-ui",
+   "title": "Where brand lives inside the product",
+   "cluster": "brand",
+   "intent": "Brand beyond the marketing site: the product surfaces that carry voice and identity (empty states, loaders, error copy, transactional email, settings), the restraint budget (brand intensity inversely proportional to task frequency), tokens as the brand-to-product bridge, motion as identity inside flows, and the audit that finds rogue off-brand corners. Fictional examples from Brassfern client work.",
+   "keywords": [
+    "brand in product",
+    "product brand expression",
+    "brand tokens",
+    "experiential brand moments",
+    "voice and tone in ui"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "colour-accessibility-brand",
+   "title": "Brand colour that passes: accessibility without beige surrender",
+   "cluster": "brand",
+   "intent": "Designing brand palettes that survive WCAG AA: the tints-and-shades ladder as a brand deliverable (not one hero hex), pairing charts that state legal combinations upfront, semantic alias layer separating brand hue from functional colour, testing brand colour in real components not swatches, the honest conversation when the founder's favourite fails contrast, and APCA as a look-forward tool.",
+   "keywords": [
+    "accessible brand colour",
+    "wcag colour palette",
+    "contrast ratio brand",
+    "colour alias tokens",
+    "apca contrast"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "wordmark-vs-symbol",
+   "title": "Wordmark, symbol or monogram: choosing the logo's workhorse",
+   "cluster": "brand",
+   "intent": "The primary-mark decision with real criteria: name length and distinctiveness vs wordmark viability, when a symbol earns its licence (and the decade it takes), monograms for long names and favicon survival, lockup systems for sub-brands, the 16px test and the favicon audit, and why most young brands should lead with the wordmark. Distinct from logo-systems-not-logos (which is about the whole system).",
+   "keywords": [
+    "wordmark vs symbol",
+    "logotype design decision",
+    "monogram logo",
+    "favicon branding",
+    "logo lockup system"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "internal-brand-launch",
+   "title": "Launching the brand to your own team first",
+   "cluster": "brand",
+   "intent": "Internal brand adoption as the rebrand's make-or-break: sequencing internal before external launch, the story deck that explains why not just what, tooling that makes the right thing easy (templates, asset libraries, tokens in the product), the ambassador recruitment pattern, what to never do (brand police memos), and measuring internal adoption honestly. Distinct from brand-governance-no-police by focusing on launch moment.",
+   "keywords": [
+    "internal brand launch",
+    "rebrand rollout internal",
+    "brand adoption",
+    "brand templates",
+    "employee brand engagement"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "conversation-repair-design",
+   "title": "Conversation repair: designing the turn after the bot misunderstands",
+   "cluster": "ai",
+   "intent": "The repair turn as the core chatbot skill: detecting misunderstanding signals (rephrases, 'no I meant'), repair offer patterns (clarify with guessed interpretation vs open question), dead-end budgets and the graceful human handoff, correction memory within a session, apology economy (once, shorter, then fix), and evaluating repair rate as a first-class metric alongside containment.",
+   "keywords": [
+    "conversation repair",
+    "chatbot misunderstanding",
+    "conversational ai ux",
+    "bot escalation design",
+    "repair turn design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "shadow-ai-governance",
+   "title": "Shadow AI: governing the tools your team already uses",
+   "cluster": "ai",
+   "intent": "The pragmatic governance playbook: discover what's actually in use (survey not surveillance), classify usage by data risk not tool brand, provide the sanctioned path (licensed tools, clear patterns, redacted-data norms), policy as two pages people read, the product opportunity when shadow usage signals a missing tool, and honest trade-offs of hard blocks.",
+   "keywords": [
+    "shadow ai",
+    "ai governance policy",
+    "enterprise ai usage",
+    "ai tool policy",
+    "data leakage llm"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ai-copy-review-workflow",
+   "title": "An editorial workflow for AI-assisted copy",
+   "cluster": "ai",
+   "intent": "Team workflow for AI-drafted content that stays in voice: briefs as the real input prompt, the two-pass review (facts then voice), style-rule enforcement via evals not vibes, disclosure decisions by surface, the rot curve when drafts stop being read properly, and the writer-AI split that keeps judgement human. Companion to AI brand-voice guardrails with an ops lens.",
+   "keywords": [
+    "ai copywriting workflow",
+    "editorial review ai",
+    "ai content pipeline",
+    "brand voice enforcement",
+    "llm content quality"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "evaluating-ai-vendors",
+   "title": "Build, buy, or wait: evaluating AI vendors without the demo dazzle",
+   "cluster": "ai",
+   "intent": "The vendor evaluation rubric for AI features: bake-off on YOUR data not their deck, exit-cost analysis (data formats, fine-tune lock-in, pricing cliffs at scale), latency and residency questions procurement forgets, model-agnostic seams as insurance, the 'wait' option as a decision with a review date, and red flags in AI vendor claims (accuracy without a dataset name).",
+   "keywords": [
+    "ai vendor evaluation",
+    "build vs buy ai",
+    "llm vendor lock in",
+    "ai procurement",
+    "ai bake off"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "wishlist-save-for-later",
+   "title": "Wishlists and save-for-later: intent capture that respects the moment",
+   "cluster": "ecommerce",
+   "intent": "The wishlist as a commercial instrument: anonymous save with merge-on-login, save-for-later in cart vs wishlist distinction, price-drop and back-in-stock alerts as the payoff loop (with honest cadence), gift-registry adjacency, measuring wishlist-to-purchase without attribution fantasy, and the prune/archival experience.",
+   "keywords": [
+    "wishlist ux",
+    "save for later",
+    "price drop alerts",
+    "intent capture ecommerce",
+    "wishlist conversion"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "click-and-collect-ux",
+   "title": "Click-and-collect without the car-park chaos",
+   "cluster": "ecommerce",
+   "intent": "BOPIS flows designed end to end: availability honesty per store before checkout, the handoff-window promise (ready in 2 hours vs aspirational), pickup instructions that survive a text message, substitution and partial-pickup flows, the collect experience states (ready, delayed, expired), and post-pickup loyalty hooks that aren't creepy.",
+   "keywords": [
+    "click and collect ux",
+    "bopis design",
+    "store pickup flow",
+    "omnichannel checkout",
+    "pickup notification copy"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "address-forms-international",
+   "title": "Address forms for the world: one field doesn't fit all",
+   "cluster": "ecommerce",
+   "intent": "International shipping forms at checkout: format-per-country ordering (postcode first in Japan, last in Australia), when autocomplete helps and when it confidently invents addresses, label language vs local terms, phone field as shipping tool not marketing capture, PO box and rural delivery honesty, validation that corrects format not content, and testing with real international parcels.",
+   "keywords": [
+    "address form design",
+    "international checkout",
+    "address autocomplete",
+    "shipping form ux",
+    "postcode validation"
    ],
    "status": "planned",
    "added_by": "builder"
