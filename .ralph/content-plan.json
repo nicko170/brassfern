@@ -5039,10 +5039,11 @@
     "CI/CD",
     "developer workflow"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790404164.4548469
+   "claimed_at": 1790404164.4548469,
+   "done_at": "2026-09-26T16:39:09"
   },
   {
    "kind": "article",
@@ -5056,10 +5057,11 @@
     "idempotency",
     "reliability engineering"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790404164.454848
+   "claimed_at": 1790404164.454848,
+   "done_at": "2026-09-26T16:39:09"
   },
   {
    "kind": "article",
@@ -5073,10 +5075,11 @@
     "DKIM SPF",
     "email HTML"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790404164.454848
+   "claimed_at": 1790404164.454848,
+   "done_at": "2026-09-26T16:39:09"
   },
   {
    "kind": "article",
@@ -5090,10 +5093,11 @@
     "web security",
     "content security policy"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790404164.454848
+   "claimed_at": 1790404164.454848,
+   "done_at": "2026-09-26T16:39:09"
   },
   {
    "kind": "article",
@@ -6341,10 +6345,11 @@
    "cluster": "demos",
    "intent": "A build-your-own charcuterie/providore box for Tallow & Co.: pick a box size, fill slots from a pantry grid (cheeses, smallgoods, preserves, crackers) with a live box-fill visual and price tally, 'curator's choice' autofill per theme (picnic, fireside, celebration), gift-note composer and delivery-date picker with honest cutoffs. Art direction: butcher-paper kraft, deep green ink, wax-seal red accents, engraved-woodcut illustration style via CSS/SVG textures. Cart persists; reduced-motion swaps swells for fades. Ties to case study tallow-and-co-providore.",
    "keywords": [],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "demo3",
-   "claimed_at": 1790397150.7033448
+   "claimed_at": 1790397150.7033448,
+   "done_at": "2026-09-26T16:39:01"
   },
   {
    "kind": "article",
@@ -8291,8 +8296,10 @@
     "sample data UX",
     "product activation"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790404645.522253
   },
   {
    "kind": "article",
@@ -8307,8 +8314,10 @@
     "import validation UX",
     "product onboarding"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790404645.522254
   },
   {
    "kind": "article",
@@ -8323,8 +8332,10 @@
     "in-app documentation",
     "support deflection"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790404645.522254
   },
   {
    "kind": "article",
@@ -8339,8 +8350,10 @@
     "pro shortcut UI",
     "keyboard help design"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer3",
+   "claimed_at": 1790404645.522254
   },
   {
    "kind": "article",
