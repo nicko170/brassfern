@@ -3024,8 +3024,10 @@
     "hospitality web design",
     "booking flow ux"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790387048.489822
   },
   {
    "kind": "article",
@@ -3039,8 +3041,10 @@
     "design system case study",
     "dashboard ux"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790387048.489824
   },
   {
    "kind": "article",
@@ -3054,8 +3058,10 @@
     "checkout design",
     "two-sided marketplace"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790387048.489824
   },
   {
    "kind": "article",
@@ -3069,8 +3075,10 @@
     "responsible ai design",
     "triage chatbot ux"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790387048.489824
   },
   {
    "kind": "article",
@@ -6108,10 +6116,11 @@
     "zero data ux",
     "product onboarding"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790386691.427111
+   "claimed_at": 1790386691.427111,
+   "done_at": "2026-09-26T11:46:36"
   },
   {
    "kind": "article",
@@ -6126,10 +6135,11 @@
     "feature flags settings",
     "ux audit"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790386691.427111
+   "claimed_at": 1790386691.427111,
+   "done_at": "2026-09-26T11:46:39"
   },
   {
    "kind": "article",
@@ -6144,10 +6154,11 @@
     "cmd k pattern",
     "search ux"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790386691.4271119
+   "claimed_at": 1790386691.4271119,
+   "done_at": "2026-09-26T11:46:39"
   },
   {
    "kind": "article",
@@ -6162,10 +6173,11 @@
     "reversible actions",
     "trust in software design"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer3",
-   "claimed_at": 1790386691.4271119
+   "claimed_at": 1790386691.4271119,
+   "done_at": "2026-09-26T11:46:41"
   },
   {
    "kind": "article",
@@ -6403,6 +6415,632 @@
     "vibe coding design",
     "ai generated ui",
     "design engineering ai"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "pilot-projects-that-prove-fit",
+   "title": "Pilot projects: proving fit before the retainer",
+   "cluster": "playbooks",
+   "intent": "How to structure a paid 2–4 week pilot with an agency: what a good pilot proves (and can't), pricing pilots honestly, the exit criteria both sides should name, converting a pilot into an engagement without renegotiating everything.",
+   "keywords": [
+    "pilot project agency",
+    "agency trial engagement",
+    "paid discovery",
+    "choosing an agency"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "kickoff-workshop-that-sets-the-tone",
+   "title": "The kickoff workshop agenda we run before every build",
+   "cluster": "playbooks",
+   "intent": "Our actual half-day kickoff agenda for a 12-week build: the decision log that starts in hour one, naming the risk room, role mapping (decider vs contributor), the 'what would make this fail' round. Includes a reusable agenda table.",
+   "keywords": [
+    "project kickoff workshop",
+    "agency kickoff agenda",
+    "project kickoff client",
+    "workshop facilitation"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "reference-calls-agency",
+   "title": "Reference calls: what to ask an agency's past clients",
+   "cluster": "playbooks",
+   "intent": "Twelve questions for agency reference calls that surface reality: how they handled the first missed date, what the invoice looked like at month three, whether the senior people stayed on. How to read hedged answers.",
+   "keywords": [
+    "agency reference check",
+    "hiring a design agency",
+    "reference call questions",
+    "vetting an agency"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "switching-agencies-mid-flight",
+   "title": "Switching agencies mid-flight: a transition playbook",
+   "cluster": "playbooks",
+   "intent": "How to leave an agency (or absorb a fired one's work) without losing the project: asset and credential inventory, code handover audit, the two-sprint overlap rule, the diplomatic email scripts, what to demand on the way out.",
+   "keywords": [
+    "switching agencies",
+    "agency handover",
+    "firing your agency",
+    "project transition"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "content-model-workshop",
+   "title": "Running a content model workshop before the design starts",
+   "cluster": "playbooks",
+   "intent": "A two-hour workshop format that produces a CMS content model: listing entities, fields and relationships on index cards, the cardinality questions that hurt later, naming conventions, and how the model constrains design honestly.",
+   "keywords": [
+    "content modelling workshop",
+    "headless CMS planning",
+    "content model",
+    "CMS design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "goals-for-redesign-projects",
+   "title": "Setting goals for a redesign that aren't vibes",
+   "cluster": "playbooks",
+   "intent": "Turning 'make it feel modern' into measurable goals: choosing 2–3 primary metrics per project, writing kill criteria, baseline capture before kickoff, the outcome-vs-output goal table, reporting cadence that survives launch fog.",
+   "keywords": [
+    "website redesign goals",
+    "redesign metrics",
+    "project success criteria",
+    "agency measurement"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "rfp-alternative-better-way",
+   "title": "Skip the RFP: a better way to buy creative work",
+   "cluster": "playbooks",
+   "intent": "Why RFP processes select for proposal-writing skill rather than building skill; the 'request for conversations' alternative (shortlist three, paid discovery with two), how to keep procurement happy, scoring rubrics that reward judgement.",
+   "keywords": [
+    "RFP alternative",
+    "agency procurement",
+    "buying design services",
+    "request for proposal"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "agency-contracts-ip-terms",
+   "title": "Reading agency contracts: IP, liability and the licence traps",
+   "cluster": "playbooks",
+   "intent": "Plain-English tour of the contract clauses that matter in creative engagements: assignment vs licence of IP, portfolio rights, open-source clauses, liability caps, kill fees, warranty windows. Not legal advice — a sharp checklist before the lawyer.",
+   "keywords": [
+    "agency contract terms",
+    "design contract IP",
+    "agency agreement",
+    "creative services contract"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "demo-day-client-habits",
+   "title": "Getting the most from weekly demos as a client",
+   "cluster": "playbooks",
+   "intent": " companion to our weekly-demo culture piece, written for the client side: what to prepare, how to give feedback in the room vs the follow-up, who's in the chair, screenshots-and-decisions note-taking habit, red flags in a bad demo.",
+   "keywords": [
+    "weekly demos client",
+    "agency collaboration",
+    "demo feedback",
+    "client enablement"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "second-brain-agency-questions",
+   "title": "The questions a good agency asks you back",
+   "cluster": "playbooks",
+   "intent": "A fingerprint list: the discovery questions (about churn, politics, past failures, who really decides) that separate studios with judgement from studios with decks. What your answers reveal, and what to do when nobody asks.",
+   "keywords": [
+    "choosing an agency",
+    "agency discovery questions",
+    "client qualification",
+    "agency selection"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "import-export-csv-ux",
+   "title": "CSV import and export: the UX of tabular handoffs",
+   "cluster": "product",
+   "intent": "Import flows that survive real spreadsheets: mapping columns with fuzzy headers, preview rows, error files people can actually fix, partial-success reporting. Export honesty: timestamps, filters applied, and stable schemas for downstream tools.",
+   "keywords": [
+    "CSV import UX",
+    "data import design",
+    "bulk import product design",
+    "export UX"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "date-time-pickers-ux",
+   "title": "Dates and times: pickers, zones and the lies of relative time",
+   "cluster": "product",
+   "intent": "Product design for dates: when a calendar grid beats typing (and vice versa), timezone display rules for teams, relative timestamps that decay to absolute, recurring-event editing scope questions, and DST edge cases that bite quarters later.",
+   "keywords": [
+    "date picker UX",
+    "timezone UX",
+    "date input design",
+    "relative time display"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "workspace-switching-ux",
+   "title": "Workspaces and orgs: the UX of switching context",
+   "cluster": "product",
+   "intent": "Multi-tenant navigation patterns: where the workspace switcher lives, URL strategy per workspace, notifications across spaces, empty states after switching, and making it impossible to post to the wrong org without a nannying confirm dialog.",
+   "keywords": [
+    "workspace switcher UX",
+    "multi-tenant SaaS design",
+    "org switching",
+    "multi-account navigation"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "upgrade-prompts-timing",
+   "title": "Upgrade prompts that don't feel like ransom notes",
+   "cluster": "product",
+   "intent": "In-product upsell timing and copy: moments of demonstrated value vs interruption, usage-limit nudges with honest numbers, the 'remember dismissed state' contract, pricing-page handoff, and measuring prompt-influenced upgrades without fooling yourself.",
+   "keywords": [
+    "upsell UX",
+    "upgrade prompt design",
+    "PLG prompts",
+    "paywall timing"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "session-timeout-autosave-ux",
+   "title": "Timeouts, autosave and recovery: designing for interruption",
+   "cluster": "product",
+   "intent": "Session management UX: draft autosave contracts and their conflict states, timeout warnings that respect long forms, recovery banners after crash, 'unsaved changes' guards that don't cry wolf, and the audit-trail view for collaborative edits.",
+   "keywords": [
+    "autosave UX",
+    "session timeout design",
+    "draft recovery",
+    "form interruption design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "template-galleries-onboarding",
+   "title": "Template galleries: the shortcut to the aha moment",
+   "cluster": "product",
+   "intent": "Designing starter-template galleries that convert trial users: categorisation by job not industry, live preview vs screenshot, 'blank' placement, template quality governance (pruning bad templates), and measuring template-to-activation rate.",
+   "keywords": [
+    "template gallery UX",
+    "product onboarding templates",
+    "starter content design",
+    "activation design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "feature-parity-mobile-web",
+   "title": "Feature parity: deciding what mobile doesn't get",
+   "cluster": "product",
+   "intent": "A decision framework for mobile/web parity: the task-context matrix, explicit de-scoping documents, 'desktop-only' messaging that doesn't shame, resume-handoff between devices, and when parity is a competitive weapon worth the cost.",
+   "keywords": [
+    "mobile feature parity",
+    "responsive product design",
+    "mobile app scoping",
+    "cross-device UX"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "health-score-design",
+   "title": "Customer health scores: design them like you mean it",
+   "cluster": "product",
+   "intent": "Health-score UI for CS teams: transparent component signals vs opaque single numbers, trend over point-in-time, alerting thresholds that avoid noise fatigue, and why showing customers their own score sometimes changes behaviour for the better.",
+   "keywords": [
+    "customer health score",
+    "customer success dashboard",
+    "churn signal design",
+    "health score UX"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "prompt-injection-defence",
+   "title": "Prompt injection: the threat model your LLM feature needs",
+   "cluster": "ai",
+   "intent": "A practical defensive playbook for shipped LLM features: untrusted-content labelling, privilege separation for tools, output screening, canary tokens, red-team fixtures in CI, and the honest limits of instruction-based defence.",
+   "keywords": [
+    "prompt injection",
+    "LLM security",
+    "AI red teaming",
+    "LLM threat model"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "evals-first-development",
+   "title": "Evals-first development: the build order that actually works",
+   "cluster": "ai",
+   "intent": "Companion workflow piece to our evals guides: writing the 30-case golden set before the prompt, versioning prompts like code, the eval-vs-vibes review in PRs, staging eval gates, and how eval-first changes what designers ship.",
+   "keywords": [
+    "eval-driven development",
+    "LLM evals workflow",
+    "AI product workflow",
+    "prompt versioning"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "rag-chunking-design",
+   "title": "Chunking is a design decision: RAG retrieval craft",
+   "cluster": "ai",
+   "intent": "Retrieval quality as the product: chunk sizing trade-offs, structure-aware splitting, metadata that earns its keep, hybrid retrieval, the reranking step, and the chunked-once-forever regret — reindexing as a migration you plan for.",
+   "keywords": [
+    "RAG chunking",
+    "retrieval design",
+    "vector search UX",
+    "RAG architecture"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ai-support-triage-routing",
+   "title": "AI triage for support: routing, not deflecting",
+   "cluster": "ai",
+   "intent": "Designing AI/human support handoff: intent detection that errs toward humans, context-rich handoff packages, the customer-visible 'you're talking to a person' line, measuring escalation quality, and the deflection metric trap.",
+   "keywords": [
+    "AI customer support",
+    "support triage AI",
+    "human handoff chatbot",
+    "support automation"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ai-feature-kill-switch",
+   "title": "Every AI feature needs a kill switch",
+   "cluster": "ai",
+   "intent": "Operational reversibility for LLM features: config-driven disable paths, graceful degradation to non-AI flows, incident comms for model-caused bugs, provider outage posture, and the quarterly drill where you actually flip the switch.",
+   "keywords": [
+    "AI feature kill switch",
+    "LLM incident response",
+    "AI feature flags",
+    "model outage"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "brand-refresh-vs-rebrand",
+   "title": "Refresh or rebrand? A decision tree for tired identities",
+   "cluster": "brand",
+   "intent": "Diagnostic questions that route a tired brand to refresh, evolution or full rebrand: what equity audits actually measure, the 'is the problem the logo or the product' test, cost and risk curves for each path, and announcing the small change well.",
+   "keywords": [
+    "brand refresh vs rebrand",
+    "rebrand decision",
+    "brand evolution",
+    "identity update"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "naming-products-features",
+   "title": "Naming products and features inside a masterbrand",
+   "cluster": "brand",
+   "intent": "Feature/product naming under a masterbrand: the descriptive–invented spectrum, when a feature earns a name at all, avoiding name sprawl (governance and a naming budget), trademark-light approaches, and renaming features mid-life without chaos.",
+   "keywords": [
+    "feature naming",
+    "product naming conventions",
+    "brand naming architecture",
+    "naming governance"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "brand-voice-in-errors",
+   "title": "Brand voice in the bad moments: errors, churn and apologies",
+   "cluster": "brand",
+   "intent": "Voice principles for the unhappy paths: error states, downtime notices, price-rise emails, cancellation screens. Why brands break character exactly when character matters, a register map for severity levels, and apology copy that isn't theatre.",
+   "keywords": [
+    "brand voice error messages",
+    "UX writing brand",
+    "apology copy",
+    "tone of voice product"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "type-pairing-brand-systems",
+   "title": "Type pairing for brand systems: two voices, one argument",
+   "cluster": "brand",
+   "intent": "How we pair display and text faces in identity work: contrast ratios that aren't about colour, superfamilies vs strangers, the third-face rule (usually don't), testing pairs in the ugliest real context first, and pricing type licences into brand budgets.",
+   "keywords": [
+    "type pairing",
+    "brand typography",
+    "font pairing guide",
+    "typeface selection brand"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "annual-report-web-moment",
+   "title": "The annual report as a web moment",
+   "cluster": "brand",
+   "intent": "Turning the mandated annual report into the year's best brand surface: narrative structure for impact reports, scrollytelling restraint, data-viz honesty, print-web parity decisions, and keeping it accessible and indexable.",
+   "keywords": [
+    "annual report website",
+    "impact report design",
+    "scrollytelling report",
+    "nonprofit annual report"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "brand-gestures-small-moments",
+   "title": "Brand is the small moments: gestures worth systemising",
+   "cluster": "brand",
+   "intent": "The unglamorous brand surfaces that compound: email signatures, invoice footers, Slack app icons, 404 pages, empty states. A gesture audit method, deciding which moments get polish, and the maintenance cost of whimsy.",
+   "keywords": [
+    "brand touchpoints audit",
+    "small brand moments",
+    "microcopy brand",
+    "brand details"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "marketing-site-ia",
+   "title": "Information architecture for marketing sites",
+   "cluster": "growth",
+   "intent": "IA as a growth lever: mapping nav to buying stages, the three-level ceiling rule, footer as second nav, URL structure decisions that outlive redesigns, card sorting that works, and measuring nav performance with real data.",
+   "keywords": [
+    "website information architecture",
+    "marketing site nav",
+    "IA SEO",
+    "navigation design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "og-images-growth-surface",
+   "title": "OG images: the growth surface hiding in your metadata",
+   "cluster": "growth",
+   "intent": "Designing social share images as a system: template architecture (titles, categories, authors), generated vs designed trade-offs, testing unfurls, dark-mode-aware OG cards, and measuring the CTR difference good cards make.",
+   "keywords": [
+    "OG image design",
+    "social share cards",
+    "open graph images",
+    "link preview design"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "local-pages-without-doorway-spam",
+   "title": "Location pages that earn their rankings",
+   "cluster": "growth",
+   "intent": "Building local/location pages that aren't doorway-page spam: unique-value requirements per page, templating with genuine local data, internal linking structure, Google's helpful-content lens, and when fewer pages win.",
+   "keywords": [
+    "location pages SEO",
+    "local SEO pages",
+    "doorway pages",
+    "programmatic SEO local"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "webinar-repurposing-engine",
+   "title": "The webinar repurposing engine: one event, twelve assets",
+   "cluster": "growth",
+   "intent": "Turning one webinar into a quarter of content: the slicing taxonomy (clips, transcript-to-article, quote graphics, FAQ posts),SEO value mapping, tooling that isn't a full-time job, and measuring asset-level performance honestly.",
+   "keywords": [
+    "webinar repurposing",
+    "content repurposing strategy",
+    "event content marketing",
+    "content atomization"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "customer-stories-that-rank",
+   "title": "Customer stories that rank and convert",
+   "cluster": "growth",
+   "intent": "Case-study production as a growth program: interview questions that get quotable numbers, structure for skimmers and deep readers, SEO packaging (industry + problem keywords), syndication, and keeping permissions tidy.",
+   "keywords": [
+    "customer case studies",
+    "case study SEO",
+    "customer stories marketing",
+    "social proof content"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "campaign-naming-conventions",
+   "title": "Campaign naming conventions: boring is the feature",
+   "cluster": "growth",
+   "intent": "UTM and campaign naming systems that survive staff turnover: the grammar (channel_source_campaign_date), case and separator rules, enforcing conventions with tooling not memos, cleaning historical messes, and reports that only work because names do.",
+   "keywords": [
+    "UTM naming conventions",
+    "campaign tracking",
+    "marketing analytics hygiene",
+    "UTM parameters"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "size-fit-confidence-ux",
+   "title": "Size and fit UX: the returns you can design away",
+   "cluster": "ecommerce",
+   "intent": "Reducing fit-related returns with design: size-guide UX that gets used, comparison anchoring ('similar to Brand X'), fit feedback loops from past purchases, model-and-measurement photography standards, and measuring fit-confidence lift.",
+   "keywords": [
+    "size guide UX",
+    "fit finder ecommerce",
+    "reduce returns fashion",
+    "apparel sizing UX"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "order-tracking-page-design",
+   "title": "The order-tracking page is an owned channel",
+   "cluster": "ecommerce",
+   "intent": "Designing post-purchase tracking pages that reduce WISMO support load and quietly cross-sell: status timelines with honest uncertainty, exception states that pre-empt support tickets, delivery-day notifications, and the merchandising line you shouldn't cross.",
+   "keywords": [
+    "order tracking UX",
+    "post-purchase experience",
+    "WISMO reduction",
+    "shipment tracking page"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "wholesale-portal-design",
+   "title": "B2B wholesale portals: design for the reorder",
+   "cluster": "ecommerce",
+   "intent": "Wholesale portal UX where the buyer is a professional: quick-order tables and SKU paste upload, standing orders, net-terms display, account hierarchies, sales-rep handoff, and why the catalogue should assume competence.",
+   "keywords": [
+    "wholesale portal design",
+    "B2B ecommerce UX",
+    "reorder UX",
+    "B2B ordering platform"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "glade-ingredient-explorer",
+   "title": "GLADE Rituals — ingredient-honesty explorer & routine builder",
+   "cluster": "demos",
+   "intent": "Demo product for skincare brand GLADE (case study: glade-skincare-ingredient-honesty). A searchable, savable ingredient encyclopaedia plus a routine builder. Features: 40+ ingredient index with search, category and 'what it actually does' plain-English chips; ingredient detail sheets with provenance, concentration ranges and evidence notes; routine builder (drag/step order) with conflict warnings (retinoid + AHA etc.) and morning/evening split; 'radar card' comparison of two formulations; save/share a routine via URL state. Fully deterministic fake data, localStorage persistence for saved routines with export. Art direction: apothecary restraint — bone-white paper, sage green, soft terracotta marks, serif for names + mono for INCI lists; everything scoped under .gix; honours prefers-reduced-motion. Stack: React + hand-rolled SVG, no new deps. meta.caseStudy = 'glade-skincare-ingredient-honesty'.",
+   "keywords": [
+    "skincare ingredients",
+    "routine builder",
+    "transparency ecommerce"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "postcards-archive-explorer",
+   "title": "Postcards Archive — a museum's century of cards, explorable",
+   "cluster": "demos",
+   "intent": "Demo for the fictional Museum of Correspondence (case study: postcards-museum-archive). An archival browsing experience: decade-timeline nav (1900–1990), a filterable masonry wall of ~120 generatively-drawn SVG postcards (seeded scenes, stamps, cancellation marks), faceted filters (origin city, decade, theme, 'has reply'), a lightbox reading view with recto/verso flip and transcribed message, and curated collections rail. URL-synced filters, keyboard lightbox with focus trap, lazy rendering for perf. Art direction: archive index-card — aged paper tints, bureaucratic-green, red accession ink, slab display + mono catalogue numbers; scoped under .pcx; reduced-motion static. React-only, no deps. meta.caseStudy = 'postcards-museum-archive'.",
+   "keywords": [
+    "museum archive",
+    "digital collections",
+    "timeline UI"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "brightmarsh-course-finder",
+   "title": "Brightmarsh Courses — catalogue, compare & enrolment flow",
+   "cluster": "demos",
+   "intent": "Demo for education client Brightmarsh (case study: brightmarsh-onboarding). A course-discovery mini-product: 24-course catalogue with honest scarcity chips (starts soon / nearly full), filters by mood, level, day & price with live counts, course compare tray (up to 3 side-by-side), syllabus accordion with week-by-week outline, and a 3-step enrolment checkout with member pricing and gift options, all mocked. Compare + shortlist persist to localStorage. Includes an 'advisor quiz' (5 questions → recommended shortlist). Art direction: study-room — olive and oxblood on cream, engraved-detail borders, serif headings, mono timetable chips; scoped under .bcf; full reduced-motion support, aria-live filter counts. No new deps. meta.caseStudy = 'brightmarsh-onboarding'.",
+   "keywords": [
+    "course catalogue",
+    "education UX",
+    "compare UI"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "signal-noise-studio",
+   "title": "Signal & Noise Studio — podcast network hub with clip maker",
+   "cluster": "demos",
+   "intent": "Demo for podcast network Signal & Noise (case study: signal-and-noise-podcast-network). A network landing + show browser: hero reel of shows with cover art drawn in CSS/SVG; episode browser with season filtering and per-show accents; a mock audio player bar (persistent bottom bar, scrub waveform drawn as seeded SVG bars, playback simulation with timer); and a 'clip maker' — select a 15–60s window on the waveform, title it, and export a shareable link (URL state) with a transcript excerpt. Subscribe hub with platform badges. Art direction: broadcast-industrial — deep teal night, cream type, signal-red accents, condensed display lettering; scoped under .sns; player reduced-motion = static waveform with keyboard controls. React-only. meta.caseStudy = 'signal-and-noise-podcast-network'.",
+   "keywords": [
+    "podcast website",
+    "audio player UI",
+    "clip sharing"
    ],
    "status": "planned",
    "added_by": "builder"
